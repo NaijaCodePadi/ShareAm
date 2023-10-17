@@ -1,6 +1,6 @@
 {
-  "name": "shaream",
-  "productName": "shaream",
+  "name": "shareAm",
+  "productName": "shareAm",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": {
-    "name": "Amospikins",
+    "name": "Sanmi Amos",
     "email": "sanmco2013@gmail.com"
   },
   "license": "MIT",
