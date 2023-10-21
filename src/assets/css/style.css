@@ -4,4 +4,6 @@ body {
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
+  background: linear-gradient(to right, yellow, red)
 }
+
