@@ -1,8 +1,82 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
-  background: linear-gradient(to right, yellow, red)
+/*---------------LOG IN BUTTON FOR BOTH LIGHT AND DARK MODE--------------*/
+.login-btn{
+  border: none;
+  width: 393px;
+  height: 48px;
+  border-radius: 10px;
+  padding: 12px 21px;
+  gap: 10px;
+  background-color: #1058E8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*----------------RECOVER PASSWORD BUTTON FOR LIGHT MODE-------------*/
+.light-recover-password-btn{
+  border: none;
+  width: 388px;
+  height: 48px;
+  border-radius: 18px;
+  padding: 12px 14px;
+  gap: 10px;
+  background-color: #1058E8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*----------------RECOVER PASSWORD BUTTON FOR DARK MODE-------------*/
+.dark-recover-password-btn{
+  border: none;
+  width: 177px;
+  height: 48px;
+  border-radius: 18px;
+  padding: 12px 14px;
+  gap: 10px;
+  background-color: #1058E8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*------------------RESET PASSWORD BUTTON FOR BOTH LIGHT AND DARK MODE------------------*/
+.reset-password-btn{
+  border: none;
+  width: 402px;
+  height: 50px;
+  border-radius: 18px;
+  padding: 12px 14px;
+  gap: 10px;
+  background-color: #1058E8;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/*--------------------SIGN UP BUTTON FOR BOTH LIGHT AND DARK MODE--------------------*/
+.signup-btn{
+  border: none;
+  width: 393px;
+  height: 48px;
+  border-radius: 18px;
+  padding: 12px 13px;
+  gap: 10px;
+  background-color: #1058E8;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*--------------------SAVE BUTTON FOR BOTH LIGHT AND DARK MODE--------------------*/
+.save-btn{
+  border: none;
+  width: 133.51px;
+  height: 41.81;
+  border-radius: 4px;
+  padding: 17.39px 22.2px;
+  background-color: #1058E8;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 14px;
 }
