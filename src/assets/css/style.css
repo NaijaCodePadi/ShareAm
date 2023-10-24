@@ -6,3 +6,852 @@ body {
   padding: 2rem;
   background: linear-gradient(to right, yellow, red)
 }
+
+/* text styles */ 
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(/fonts/Poppins-Regular.ttf);
+} 
+@font-face {
+  font-family: poppins-medium;
+  src: url(/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(/fonts/Rubik-VariableFont_wght.ttf);
+} 
+body {
+  background: #7B7B7B ;
+} 
+
+
+/* home page */
+
+.share {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 50px;
+  font-weight: 800;
+ 
+}
+.share > span {
+  color: #6F3FE3;
+}
+.share-subtitle {
+  color: #E4EDF6;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* has same color as the light mode */
+
+/* my profile */
+.cover-photo-text {
+  color: #585858;
+  text-align: center;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.cover-photo-text-light-mode {color: #0272BC;}
+
+
+.display-name-text {
+  color: #150AA1;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
+}
+.user-id-text {
+  color: #686868;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bio-text {
+  color: #FFFCFC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.bio-text-light-mood { color: #0272BC;}
+
+.bio-input-text {
+  color: #9A9A9A;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* reuseable at message interface(send button) */
+.save-btn-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.change-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.change-text-light-mood {color: #0272BC;}
+
+.change-input-text {
+  color: #9A9A9A;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.change-btn-text {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.url-input-text {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.url-input-text-light-mood { color: rgba(34, 32, 32, 0.90);}
+
+.share-btn-text {
+  color: #FFF;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px; 
+}
+.show {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.show-light-mood {color: #0272BC; }
+
+.delete-text {
+  color: #F52A1D;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.delete-btn-text {
+  color: #F52A1D;
+  text-align: center;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-texts {
+  color: #000000;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; 
+}
+.footer-share-text {
+  color: #0021f5;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.nav-texts {
+  color: #A9A9A9;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.nav-text-active-light-mood { color: rgba(34, 32, 32, 0.90);}
+
+/* message-1 */
+.new-message {
+  color: #0490EC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
+}
+.new-message-light-mood {color: #0272BC;}
+
+.write-message {
+  color: #FFF;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+.follower-btn-text {
+  color: #545454;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+}
+.select-all {
+  color: #0490EC;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+.select-all-light-mood {color: #150AA1;}
+
+
+.followers-display-name-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 700;
+}
+.followers-display-name-text-light-mood {color: #494949;}
+
+
+.followers-user-id-text {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.followers-user-id-text-light-mood {color: #494949;}
+
+/* message interface */
+
+
+.friends-display-name-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.friends-display-name-text-active-light-mood {color: rgba(34, 32, 32, 0.90);}
+
+/* also works for date */
+.message-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.message-text-active-light-mood {color: #686868;}
+
+.message-text-active > span {
+  color: #0272BC;
+}
+.friends-display-name-text {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+/* also works for date */
+.message-text {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.disappear-text {
+  color: #A9A9A9;
+  text-align: right;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; 
+}
+.disappear-text-light-mood {color: #686868;}
+
+.textarea-text {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.textarea-text-light-mood {color: #9A9A9A;}
+
+/* can be reused at (notificaton) && (mesaage and chat setting) && (contacts) && (calling)
+&& (setting)*/
+.menu-title-texts {
+  color: #0389E1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.menu-title-texts-light-mood {color: #150AA1;}
+
+.menu-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.menu-subtitle-texts-light-mood {color: #373737;}
+
+.contact-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact-subtitle-texts {color: #000;}
+
+/* calling */
+.call-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.call-subtitle-texts-light-mood {color: #000;}
+
+.call-window-text {
+  color: #7B7B7B;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.call-window-text-light-mood {color: #373737;}
+
+/* reused at (calling{disable and never text}) && (privacy)*/
+.menu-toggle-texts {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.setting-subtitle-texts{
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.setting-subtitle-text-light-mood {color: #000;}
+
+
+.change-background-text {
+  color: #E4E4E4;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.audio-subtitle-text {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.audio-subtitle-text-light-mood {color: #373737;}
+
+.audio-default-setting-text {
+  color: #585858;
+  font-family:  Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.privacy-subtitle-text {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.privacy-subtitle-text-light-mode {color: #373737;}
+
+.chat-text {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.preview-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.preview-subtitle-texts-light-mode {color: #000;}
+
+
+/* login styles */
+
+/* use also in signup page (signup text) */
+.login-text {
+  color: #048AD7;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.login-text-light-mode {color: #0272BC;}
+
+/* used by email and password input labels */
+.login-title-texts {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.login-title-texts-light-mode {color: #585858;}
+
+.login-subtitle-texts {
+  color: #FFF;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.login-subtitle-texts-light-mode {color: #585858;}
+
+.login-subtitle-texts > span {
+  color: #048AD7;
+  font-weight: 600;
+}
+.login-subtitle-texts-light-mode > span {color: #150AA1;}
+
+.login-forget-password-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.login-forget-password-text-light-mode { color: #7B7B7B;}
+
+/* use also in sign up page */
+.login-option {
+  color: #7B7B7B;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.login-option > span {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 500;
+}
+.logUp-btn-texts {
+  color: #7B7B7B;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.recover-password-texts {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.recover-password-texts-light-mode {color: rgba(34, 32, 32, 0.90);}
+
+.password-btn-text {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+}
+.reset-password-subtitle-texts {
+  color: rgba(255, 252, 252, 0.90);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* use also in signup page (input labels text) */
+.password-input-text {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* landing page text styles */
+
+.new-user {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-weight: 700;
+}
+.user-status {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* use for also meet now and new chat inputs*/
+.user-input-text {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.user-menu-bar-text {
+  color: rgba(255, 252, 252, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400
+}
+.user-menu-bar-text-light-mode {color: #979797;}
+
+.user-menu-bar-text-active {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* use for also 'landing-page2 subtitle(actions)' */
+.user-chats-fav-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.user-chats-fav-txt-light-mode {color: #979797;}
+/* use for also New User (You) */
+.chats-text {
+  color: rgba(255, 252, 252, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.chat-text {color: #979797;}
+
+.start-chatting-txt {
+  color: #048AD7;
+  font-family: Poppins-bold;
+  font-size: 22.163px;
+  font-weight: 700;
+}
+.start-chatting-tx t{color: #0272BC}
+
+.start-chatting-subtitle-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 12.858px;
+  font-weight: 500;
+}
+.start-chatting-subtitle-txt {color: #979797}
+
+.welcome-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 400;
+}
+.welcome-txt {color: #303030;}
+
+.new-user-txt {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-weight: 700;
+}
+.new-user-txt-light-mode {color: #22074A;}
+.user-instru-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.user-instru-txt-light-mode {color: #585858;}
+
+.password-reseted-txt {
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+}
+.actions-txts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 12px;
+  font-weight: 400;
+}
+.actions-txts-light-mode {color: #585858;}
+
+.time-txt {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 24px;
+  font-weight: 500;
+}
+.date-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.add-calendar {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.switch-acc-title-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.switch-acc-title-txt-light-mode {color: #303030;}
+
+.switch-acc-title-txt > span {
+  color: #FFFCFC;
+  font-family:Poppins-regular;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
+.switch-acc-title-txt-light-mode > span {color: #303030;}
+
+.switch-acc-subtitle-txt {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.switch-acc-subtitle-txt-light-mode {color: #303030;}
+
+.switch-acc-subtitle-txt > span{
+  color: #048AD7;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.switch-acc-subtitle-txt-light-mode > span {color: #0272BC;}
+
+.learn-more {
+  color: #048AD7;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.learn-more-light-mode {color: #0272BC;}
+
+/* signup page */
+.signUp-subtitle-txt {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; 
+}
+.signUp-subtitle-txt-light-mode {color: #000;}
+
+.signUp-subtitle-txt > span {
+  color: #048AD7;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+}
+.signUp-subtitle-txt-light-mode > span {color: #5858FA;}
+
+.create-acc-title-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 24px;
+  font-weight: 700;
+}
+.create-acc-title-txt-light-mode {color: #000;}
+
+/* .create-acc-subtitle-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.create-acc-input-txts {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.create-acc-btn-txt {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+} */
+.one-time-subtitle-txt {
+  color: #A9A9A9;
+  font-family: Poppin-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.one-time-subtitle-txt-light-mode {color: rgba(0, 0, 0, 0.52);}
+
+.one-time-btn-txt {
+  color: #303030;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+.one-time-subtitle-txt > span {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+/* startup styles */
+
+.startUp-title-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.startUp-title-txt-light-mode {color: #000;}
+
+.startUp-subtitle-txt {
+  color: #A9A9A9;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.startUp-subtitle-txt-light-mode {color: rgba(34, 32, 32, 0.90)}
+
+.startup-btn-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+}
+.startup-btn-txt-light-mode {color: #303030;}
+
+.notified-btn-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* personal styles */
+.personal-profie-pic-txt {
+  color: #1058E8;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.personal-input-label-txt {
+  color: #A9A9A9;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+.personal-input-label-txt-light-mode {color: #585858;}
+
+.prev-txt {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.skip-txt {
+  color: #1058E8;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.desktop-title-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.desktop-subtitle-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.desktop-tagline-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 10px;
+  font-weight: 400;
+}
+.desktop-welcome-txt {
+  color: #FFF;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.desktop-msg-title-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.desktop-msg-subtitle-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.desktop-msg-graphic-title-txt {
+  color: rgba(218, 217, 217, 0.70);
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.desktop-sent-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 12px;
+  font-weight: 500;
+}
+.desktop-sent-date-txt {
+  color: rgba(218, 217, 217, 0.80);
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.notification-title-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 24px;
+  font-weight: 700;
+}
+.notification-subtitle-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 16px;
+  font-weight: 400;
+}
