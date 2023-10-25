@@ -1,83 +1,252 @@
+/* This removes padding & margin from every container */
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Splash Screen -- Light Mode */
+.light-splash,
+.light-splash-logo,
+.light-splash-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.light-splash {
+  background: linear-gradient(to right, rgb(52, 2, 90), rgb(31, 4, 61));
+  height: 100vh;
+  width: 100%;
+  padding: 0 0 40px 0;
+}
+
+.light-splash .light-splash-logo img {
+  width: 495px;
+  height: 423px;
+}
+
+.light-splash-text {
+  gap: 1rem;
+  margin-top: -1rem;
+}
+
+.light-splash-text-heading,
+.light-splash-text-pg {
+  text-align: center;
+  line-height: normal;
+  font-style: normal;
+}
+
+.light-splash-text-heading {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.light-splash-text-heading span {
+  color: #6f3fe3;
+}
+
+.light-splash-text-pg {
+  color: #e4edf6;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Signup Screen -- Light Mode */
+.light-signup-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #dad9d9;
+}
+
+.light-signup-container .light-signup-splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #22074a;
+  padding: 0 20px;
+  width: 40%;
+  height: 100%;
+}
+
+.light-signup-container .light-signup-splash .light-signup-splash-logo img {
+  width: 355px;
+  height: 423px;
+}
+
+.light-signup-container .light-signup-splash .light-signup-splash-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  top: -20px;
+}
+
+.light-signup-container
+  .light-signup-splash
+  .light-signup-splash-text
+  .light-signup-splash-text-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.light-signup-container
+  .light-signup-splash
+  .light-signup-splash-text
+  .light-signup-splash-text-heading
+  span {
+  color: #6f3fe3;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.light-signup-container
+  .light-signup-splash
+  .light-signup-splash-text
+  .light-signup-splash-text-pg {
+  color: #e4edf6;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.light-signup-container .light-signup-form-wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.light-signup-container .light-signup-form-wrapper h2 {
+  color: #150aa1;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.light-signup-container .light-signup-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.light-signup-form-wrapper form .full-name,
+.user-name,
+.email,
+.password,
+.confirm-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-signup-form-wrapper form > div label {
+  color: rgba(34, 32, 32, 0.9);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /*---------------LOG IN BUTTON FOR BOTH LIGHT AND DARK MODE--------------*/
-.login-btn{
+.login-btn {
   border: none;
   width: 393px;
   height: 48px;
   border-radius: 10px;
   padding: 12px 21px;
   gap: 10px;
-  background-color: #1058E8;
-  color: #FFFFFF;
+  background-color: #1058e8;
+  color: #ffffff;
   font-weight: 600;
   font-size: 16px;
 }
 
-
 /*----------------RECOVER PASSWORD BUTTON FOR LIGHT MODE-------------*/
-.light-recover-password-btn{
+.light-recover-password-btn {
   border: none;
   width: 388px;
   height: 48px;
   border-radius: 18px;
   padding: 12px 14px;
   gap: 10px;
-  background-color: #1058E8;
-  color: #FFFFFF;
+  background-color: #1058e8;
+  color: #ffffff;
   font-weight: 600;
   font-size: 16px;
 }
 
 /*----------------RECOVER PASSWORD BUTTON FOR DARK MODE-------------*/
-.dark-recover-password-btn{
+.dark-recover-password-btn {
   border: none;
   width: 177px;
   height: 48px;
   border-radius: 18px;
   padding: 12px 14px;
   gap: 10px;
-  background-color: #1058E8;
-  color: #FFFFFF;
+  background-color: #1058e8;
+  color: #ffffff;
   font-weight: 600;
   font-size: 16px;
 }
 
 /*------------------RESET PASSWORD BUTTON FOR BOTH LIGHT AND DARK MODE------------------*/
-.reset-password-btn{
+.reset-password-btn {
   border: none;
   width: 402px;
   height: 50px;
   border-radius: 18px;
   padding: 12px 14px;
   gap: 10px;
-  background-color: #1058E8;
-  color: #FFFFFF;
+  background-color: #1058e8;
+  color: #ffffff;
   font-weight: 600;
   font-size: 16px;
 }
 
 /*--------------------SIGN UP BUTTON FOR BOTH LIGHT AND DARK MODE--------------------*/
-.signup-btn{
+.signup-btn {
   border: none;
   width: 393px;
   height: 48px;
   border-radius: 18px;
   padding: 12px 13px;
   gap: 10px;
-  background-color: #1058E8;
-  color: #FFFFFF;
+  background-color: #1058e8;
+  color: #ffffff;
   font-weight: 400;
   font-size: 16px;
 }
 
 /*--------------------SAVE BUTTON FOR BOTH LIGHT AND DARK MODE--------------------*/
-.save-btn{
+.save-btn {
   border: none;
   width: 133.51px;
   height: 41.81;
   border-radius: 4px;
   padding: 17.39px 22.2px;
-  background-color: #1058E8;
-  color: #FFFFFF;
+  background-color: #1058e8;
+  color: #ffffff;
   font-weight: 500;
   font-size: 14px;
 }
