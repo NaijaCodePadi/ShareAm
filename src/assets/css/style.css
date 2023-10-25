@@ -250,3 +250,910 @@
   font-weight: 500;
   font-size: 14px;
 }
+
+/* text styles */ 
+
+@font-face {
+  font-family: poppins-bold;
+  src: url(/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(/fonts/Poppins-Regular.ttf);
+} 
+@font-face {
+  font-family: poppins-medium;
+  src: url(/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(/fonts/Rubik-VariableFont_wght.ttf);
+} 
+body {
+  background: #7B7B7B ;
+} 
+
+
+/* home page */
+
+.share {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 50px;
+  font-weight: 800;
+ 
+}
+.share > span {
+  color: #6F3FE3;
+}
+.share-subtitle {
+  color: #E4EDF6;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* has same color as the light mode */
+
+/* my profile */
+.cover-photo-text {
+  color: #585858;
+  text-align: center;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.light-cover-photo-text-mode {color: #0272BC;}
+
+
+.display-name-text {
+  color: #150AA1;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
+}
+.user-id-text {
+  color: #686868;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.bio-text {
+  color: #FFFCFC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-bio-text-mode { color: #0272BC;}
+
+.bio-input-text {
+  color: #9A9A9A;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* reuseable at message interface(send button) */
+.save-btn-text {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.change-label-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-change-label-text-mode {color: #0272BC;}
+
+.change-input-text {
+  color: #9A9A9A;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.change-input-btn-text {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.url-input-text {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.light-url-input-text-mode { color: rgba(34, 32, 32, 0.90);}
+
+.share-btn-text {
+  color: #FFF;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px; 
+}
+.profile-show-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-profile-show-mode {color: #0272BC; }
+
+.delete-text {
+  color: #F52A1D;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.delete-btn-text {
+  color: #F52A1D;
+  text-align: center;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-texts {
+  color: #000000;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; 
+}
+.footer-share-text {
+  color: #0021f5;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+/* profile side nav styles */
+.nav-texts {
+  color: #A9A9A9;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-nav-text-active-mode { color: rgba(34, 32, 32, 0.90);}
+
+/* message-1 styles */
+.new-message-txt {
+  color: #0490EC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
+}
+.light-new-message-mode {color: #0272BC;}
+
+.write-message-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* also used by calls and fans buttons*/
+.follower-btn-text {
+  color: #545454;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+}
+.select-all {
+  color: #0490EC;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+.light-select-all-mode {color: #150AA1;}
+
+
+.followers-display-name-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 700;
+}
+.light-followers-display-name-text-mode {color: #494949;}
+
+
+.followers-user-id-text {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-followers-user-id-text-mood {color: #494949;}
+
+/* message interface styles */
+.friends-display-name-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-friends-display-name-text-active-mode {color: rgba(34, 32, 32, 0.90);}
+
+/* also works for date */
+.message-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.light-message-text-active-mode {color: #686868;}
+
+.message-text-active > span {
+  color: #0272BC;
+}
+.friends-display-name-text {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+/* also works for date text*/
+.friend-message-text {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.disappear-text {
+  color: #A9A9A9;
+  text-align: right;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; 
+}
+.light-disappear-text-mode {color: #686868;}
+
+.textarea-text {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.light-textarea-text-mode {color: #9A9A9A;}
+
+
+/* profile notification */
+
+/* can be reused at (notificaton) && (mesaage and chat setting) && (contacts) && (calling)
+&& (setting)*/
+.menu-title-texts {
+  color: #0389E1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-menu-title-texts-mode {color: #150AA1;}
+
+.menu-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-menu-subtitle-texts-mode {color: #373737;}
+
+/* mesage chat page  uses menu-title-texts and menu-subtitle-texts */
+
+/* contact styles 
+contact title uses (menu-title-texts)
+*/
+
+.contact-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-contact-subtitle-texts-mode {color: #000;}
+
+/* calling styles 
+calling title uses (menu-title-texts)
+*/
+.call-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-call-subtitle-texts-mode {color: #000;}
+
+.call-window-text {
+  color: #7B7B7B;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-call-window-text-mode {color: #373737;}
+
+/* reused at (calling{disable and never text}) && (privacy)*/
+.menu-toggle-texts {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* setting styles 
+setting title text uses (menu-title-texts) */
+.setting-subtitle-texts{
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.light-setting-subtitle-text-mode {color: #000;}
+
+
+.change-background-text {
+  color: #E4E4E4;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.audio-subtitle-text {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-audio-subtitle-text-mode {color: #373737;}
+
+.audio-default-setting-text {
+  color: #585858;
+  font-family:  Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* privacy styles
+privacy title uses (menu-title-texts) && (menu-toggle-txt)
+*/
+
+.privacy-subtitle-text {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-privacy-subtitle-text-mode {color: #373737;}
+/* preview styles 
+preview title uses (menu-title-texts)
+*/
+.preview-chat-text {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.preview-subtitle-texts {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.light-preview-subtitle-texts-mode {color: #000;}
+
+
+/* login styles */
+
+/* use also in signup page (signup text) */
+.login-text {
+  color: #048AD7;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.login-text-light-mode {color: #0272BC;}
+
+/* used by email and password input labels */
+.login-title-texts {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-login-title-texts-mode {color: #585858;}
+
+.login-subtitle-texts {
+  color: #FFF;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-login-subtitle-texts-mode {color: #585858;}
+
+.login-subtitle-texts > span {
+  color: #048AD7;
+  font-weight: 600;
+}
+.light-login-subtitle-texts-mode > span {color: #150AA1;}
+
+.login-forget-password-text {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.light-login-forget-password-text-mode { color: #7B7B7B;}
+
+/* use also in sign up page */
+.login-option {
+  color: #7B7B7B;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.login-option > span {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 500;
+}
+.logUp-btn-texts {
+  color: #7B7B7B;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* forget-password-page
+forgetten password title uses (login-text)
+*/
+.recover-password-texts {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-recover-password-texts-mode {color: rgba(34, 32, 32, 0.90);}
+
+.password-btn-text {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* reset password page
+reset your password uses (login-text)
+HI USER ..... uses (recover-password-texts)
+reset password button text uses (.password-btn-text)
+*/
+.reset-password-subtitle-texts {
+  color: rgba(255, 252, 252, 0.90);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* use also in signup page (input labels text) */
+.password-input-text {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* landing page text styles */
+
+.new-user {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-weight: 700;
+}
+.user-status {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* use for also meet now and new chat inputs*/
+.user-input-text {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* also used in (chats, calls, today, contacts) */
+.user-menu-bar-text {
+  color: rgba(255, 252, 252, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400
+}
+.light-user-menu-bar-text-mode {color: #979797;}
+
+.user-menu-bar-text-active {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+/* use for also 'landing-page2 subtitle(actions)' */
+.user-chats-fav-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-user-chats-fav-txt-mode {color: #979797;}
+/* use for also New User (You) */
+.chats-text {
+  color: rgba(255, 252, 252, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.chat-text {color: #979797;}
+
+.start-chatting-txt {
+  color: #048AD7;
+  font-family: Poppins-bold;
+  font-size: 22.163px;
+  font-weight: 700;
+}
+.light-start-chatting-txt-mode{color: #0272BC}
+
+.start-chatting-subtitle-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 12.858px;
+  font-weight: 500;
+}
+.light-start-chatting-subtitle-txt-mode {color: #979797}
+
+
+/* landing-page2 */
+.welcome-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 400;
+}
+.light-welcome-txt-mode {color: #303030;}
+
+.new-user-txt {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-weight: 700;
+}
+.light-new-user-txt-mode {color: #22074A;}
+.user-instru-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-user-instru-txt-mode {color: #585858;}
+
+/* .password-reseted-txt {
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600; 
+}*/
+/* used by new meeting, join, share screen,schedule text */
+.actions-txts {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 12px;
+  font-weight: 400;
+}
+.light-actions-txts-mode {color: #585858;}
+
+.time-txt {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 24px;
+  font-weight: 500;
+}
+.date-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.add-calendar {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.switch-acc-title-txt {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.light-switch-acc-title-txt-mode {color: #303030;}
+
+.switch-acc-title-txt > span {
+  color: #FFFCFC;
+  font-family:Poppins-regular;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
+.light-switch-acc-title-txt-mode > span {color: #303030;}
+
+.switch-acc-subtitle-txt {
+  color: #FFFCFC;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.light-switch-acc-subtitle-txt-mode {color: #303030;}
+
+.switch-acc-subtitle-txt > span{
+  color: #048AD7;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.light-switch-acc-subtitle-txt-mode > span {color: #0272BC;}
+
+.learn-more {
+  color: #048AD7;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-learn-more-mode {color: #0272BC;}
+
+/* signup page 
+SIGN UP uses (login-text)
+Username uses (password-input-text)
+Or sigin up with && goggle and facebook btn (login-option)
+Already have account (signUp-subtitle-txt)
+*/
+.signUp-subtitle-txt {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; 
+}
+.light-signUp-subtitle-txt-mode {color: #000;}
+
+.signUp-subtitle-txt > span {
+  color: #048AD7;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+}
+.light-signUp-subtitle-txt-mode > span {color: #5858FA;}
+
+.create-acc-title-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 24px;
+  font-weight: 700;
+}
+.light-create-acc-title-txt-mode {color: #000;}
+
+/* .create-acc-subtitle-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.create-acc-input-txts {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.create-acc-btn-txt {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+} */
+
+/*one-time-passcode-page 
+ONE TIME PASSCODE uses (create-acc-title-txt)
+*/
+.one-time-subtitle-txt {
+  color: #A9A9A9;
+  font-family: Poppin-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-one-time-subtitle-txt-mode {color: rgba(0, 0, 0, 0.52);}
+
+.one-time-btn-txt {
+  color: #303030;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+.one-time-subtitle-txt > span {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+/* startup styles 
+*/
+
+.startUp-title-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-startUp-title-txt-mode {color: #000;}
+
+.startUp-subtitle-txt {
+  color: #A9A9A9;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.light-startUp-subtitle-txt-mode {color: rgba(34, 32, 32, 0.90)}
+
+.startup-btn-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+}
+.light-startup-btn-txt-mode {color: #303030;}
+
+/* notification page
+Get notified uses (startUp-title-txt)
+Allow notification (startUp-subtitle-txt)
+*/
+
+.notified-btn-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* personal styles 
+Personalize your profile uses (startUp-title-txt)
+your profile pic uses (startUp-subtitle-txt)
+next button (notified-btn-txt)
+*/
+.personal-profie-pic-txt {
+  color: #1058E8;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+.personal-input-label-txt {
+  color: #A9A9A9;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-personal-input-label-txt-mode {color: #585858;}
+
+.prev-txt {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.skip-txt {
+  color: #1058E8;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*last-startUP-page
+You're all set! uses (startUp-title-txt)
+youre ready to start... uses (startUp-subtitle-txt)
+lets go button uses (notified-btn-txt)
+*/
+/* desktop-2 page  */
+.desktop-title-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.desktop-subtitle-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.desktop-tagline-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 10px;
+  font-weight: 400;
+}
+.desktop-welcome-txt {
+  color: #FFF;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.desktop-msg-title-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.desktop-msg-subtitle-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.desktop-msg-graphic-title-txt {
+  color: rgba(218, 217, 217, 0.70);
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.desktop-sent-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 12px;
+  font-weight: 500;
+}
+.desktop-sent-date-txt {
+  color: rgba(218, 217, 217, 0.80);
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
+.notification-title-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 24px;
+  font-weight: 700;
+}
+.notification-subtitle-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 16px;
+  font-weight: 400;
+}
