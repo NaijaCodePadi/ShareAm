@@ -415,7 +415,12 @@ preview title uses (menu-title-texts)
 
 /* login styles */
 
-/* use also in signup page (signup text) */
+/* use also in signup page (signup text)
+Login uses (login-text)
+Forgot Password? uses (login-text)
+Reset your password uses (login-text)
+sign up uses (login-text)
+*/
 .login-text {
   color: #048AD7;
   text-align: center;
@@ -689,11 +694,19 @@ reset password button text uses (.password-btn-text)
 .light-learn-more-mode {color: #0272BC;}
 
 /* signup page 
-SIGN UP uses (login-text)
+sign up uses (signUp-title-txt)
 Username uses (password-input-text)
 Or sigin up with && goggle and facebook btn (login-option)
 Already have account (signUp-subtitle-txt)
 */
+.signUp-title-txt {
+  color: #048AD7;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.light-signUp-title-txt-mode {color: #150AA1; }
+
 .signUp-subtitle-txt {
   color: #A9A9A9;
   font-family: Poppins-regular;
