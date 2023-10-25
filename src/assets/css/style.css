@@ -6,6 +6,27 @@
   margin: 0;
 }
 
+/* text styles */ 
+@font-face {
+  font-family: poppins-bold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../fonts/Poppins-Regular.ttf);
+} 
+@font-face {
+  font-family: poppins-medium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+} 
+body {
+  background: #7B7B7B ;
+} 
+
 /* Splash Screen -- Light Mode */
 .light-splash,
 .light-splash-logo,
@@ -250,28 +271,6 @@
   font-weight: 500;
   font-size: 14px;
 }
-
-/* text styles */ 
-
-@font-face {
-  font-family: poppins-bold;
-  src: url(/fonts/Poppins-Bold.ttf);
-}
-@font-face {
-  font-family: poppins-regular;
-  src: url(/fonts/Poppins-Regular.ttf);
-} 
-@font-face {
-  font-family: poppins-medium;
-  src: url(/fonts/Poppins-Medium.ttf);
-}
-@font-face {
-  font-family: Rubik;
-  src: url(/fonts/Rubik-VariableFont_wght.ttf);
-} 
-body {
-  background: #7B7B7B ;
-} 
 
 
 /* home page */
