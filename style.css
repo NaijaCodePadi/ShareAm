@@ -1,0 +1,438 @@
+/*---------------LOG IN BUTTON FOR BOTH LIGHT AND DARK MODE--------------*/
+.login-btn{
+  display: flex;
+  width: 393px;
+  padding: 12px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1058E8;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+
+/*----------------RECOVER PASSWORD BUTTON FOR LIGHT MODE-------------*/
+.light-recover-password-btn{
+  display: flex;
+  width: 388px;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+/*----------------RECOVER PASSWORD BUTTON FOR DARK MODE-------------*/
+.dark-recover-password-btn{
+  display: flex;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+/*------------------RESET PASSWORD BUTTON FOR BOTH LIGHT AND DARK MODE------------------*/
+.reset-password-btn{
+  display: flex;
+  width: 402px;
+  height: 50px;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+/*--------------------SIGN UP BUTTON FOR BOTH LIGHT AND DARK MODE--------------------*/
+.signup-btn{
+  display: flex;
+  width: 393px;
+  padding: 12px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+
+/*---------------------------VERIFY BUTTON FOR BOTH LIGHT AND DARK MODE----------------------------*/
+.verify-btn{
+  display: flex;
+  width: 388px;
+  padding: 10px 94px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897FB;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+/*------------------------GET STARTED BUTTON FOR LIGHT MODE------------------------*/
+.light-get-started-btn{
+  display: flex;
+  width: 388px;
+  padding: 10px 94px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897FB;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
+
+
+/*------------------------GET STARTED BUTTON FOR DARK MODE---------------------*/
+
+.dark-get-started-btn{
+  display: flex;
+  width: 388px;
+  padding: 10px 94px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #1376E3;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/*--------------------OPEN SYSTEM SETTINGS BUTTON FOR BOTH LIGHT AND DARK MODE--------------------*/
+
+.open-system-settings-btn{
+  display: flex;
+  width: 342px;
+  padding: 10px 94px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #1376E3;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*--------------------------------NEXT BUTTON FOR BOTH LIGHT AND DARK MODE-----------------------------------*/
+
+.next-btn{
+  display: flex;
+  width: 342px;
+  padding: 10px 94px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1376E3;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+/*--------------------------------LET'S GO BUTTON FOR BOTH LIGHT AND DARK MODE-----------------------------------*/
+
+.lets-go-btn{
+  display: flex;
+  width: 342px;
+  padding: 10px 94px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1376E3;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+/*--------------------------------SAVE BUTTON FOR BOTH LIGHT AND DARK MODE-----------------------------------*/
+.save-btn{
+  width: 133.512px;
+  height: 41.806px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+/*--------------------------------CHANGE BUTTON FOR BOTH LIGHT AND DARK MODE-----------------------------------*/
+
+.change-btn{
+  width: 75.179px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  border: 1px solid #E4E4E4;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+/*--------------------------------SET BUTTON FOR BOTH LIGHT AND DARK MODE-----------------------------------*/
+
+.set-btn{
+  width: 75.397px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  border: 1px solid #E4E4E4;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------DELETE BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.delete-btn{
+  width: 145.406px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  border: 1px solid #F52B1E;
+  background: #FFF;
+  color: #F52B1E;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*------------------------WRITE MESSAGE BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.write-message-btn{
+  display: flex;
+  width: 158px;
+  padding: 7px 10px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px; 
+  border-radius: 4px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+/*------------------------ALL BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.all-btn{
+  width: 49px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #C7C7F9;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------FOLLOWERS BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.followers-btn{
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #F1F1F1;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------FANS BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.fans-btn{
+  display: flex;
+  padding: 7px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #F1F1F1;  
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------NEW MESSAGE BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.new-message-btn{
+  width: 170.047px;
+  height: 44.376px;
+  border-radius: 4px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+/*------------------------SEND BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.send-btn{
+  width: 113.746px;
+  height: 45.885px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: #1376E3;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+/*------------------------MEET NOW BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.meet-now-btn{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  height: 34px;
+  border-radius: 15px;
+  border: 0.5px solid #CECECE;
+  background: #FFF;
+  color:  #979797;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*------------------------NEW CHAT BUTTON FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.new-chat-btn{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 200px;
+  height: 34px;
+  border-radius: 15px;
+  border: 0.5px solid #CECECE;
+  background: #FFF;
+  color:  #979797;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*------------------------WOW! NICE THEME! PREVIEW CHAT BUBBLE FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.wow-nice-theme-preview-chat-bubble{
+  width: 193px;
+  height: 51px;
+  border-radius: 0px 20px 20px 20px;
+  background: #F1F1F1;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------HI GUYS! PREVIEW CHAT BUBBLE FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.hi-guys-preview-chat-bubble{
+  width: 109px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 0px 20px 20px 20px;
+  background: #F1F1F1;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------THIS IS MY FAVOURITE COLOR PREVIEW CHAT BUBBLE FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.this-is-my-fav-color-preview-chat-bubble{
+  width: 212px;
+  height: 51px;
+  border-radius: 0px 20px 20px 20px;
+  background: #CCF7FF;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+}
+
+/*------------------------USER CHAT BUBBLE FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.user-chat-bubble{
+  display: flex;
+  align-items: center;
+  width: auto;
+  min-width: 20vw;
+  max-width: 40vw;
+  height: auto;
+  min-height: 7vh;
+  padding: 0px 10px;
+  flex-shrink: 0;
+  text-align: left;
+  border-radius: 7px 0px 7px 7px;
+  background: rgba(48, 48, 48, 0.75);
+  color: #DAD9D9;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+/*------------------------OTHERS CHAT BUBBLE FOR BOTH LIGHT AND DARK MODE------------------------*/
+
+.others-chat-bubble{
+  display: flex;
+  align-items: center;
+  width: auto;
+  min-width: 20vw;
+  max-width: 40vw;
+  height: auto;
+  min-height: 7vh;
+  padding: 0px 10px;
+  gap: 12px;
+  text-align: left;
+  border-radius: 0px 7px 7px 7px;
+  background: rgba(88, 88, 88, 0.75);
+  color: #DAD9D9;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+}
