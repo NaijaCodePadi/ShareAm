@@ -329,6 +329,14 @@ body {
 .light-cover-photo-text-mode {
   color: #0272bc;
 }
+.light-cover-photo-text-mode {
+  color: #0272BC;
+  text-align: center;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
 .display-name-text {
   color: #150aa1;
@@ -350,6 +358,12 @@ body {
 }
 .light-bio-text-mode {
   color: #0272bc;
+}
+.light-bio-text-mode { 
+  color: #0272BC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .bio-input-text {
@@ -375,6 +389,12 @@ body {
 .light-change-label-text-mode {
   color: #0272bc;
 }
+.light-change-label-text-mode {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .change-input-text {
   color: #9a9a9a;
@@ -398,6 +418,13 @@ body {
 .light-url-input-text-mode {
   color: rgba(34, 32, 32, 0.9);
 }
+.light-url-input-text-mode {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
 .share-btn-text {
   color: #fff;
@@ -415,6 +442,12 @@ body {
 .light-profile-show-mode {
   color: #0272bc;
 }
+.light-profile-show-mode { 
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+ }
 
 .delete-text {
   color: #f52a1d;
@@ -461,6 +494,12 @@ body {
 .light-nav-text-active-mode {
   color: rgba(34, 32, 32, 0.9);
 }
+.light-nav-text-active-mode {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+   ;}
 
 /* message-1 styles */
 .new-message-txt {
@@ -471,6 +510,12 @@ body {
 }
 .light-new-message-mode {
   color: #0272bc;
+}
+.light-new-message-mode {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .write-message-txt {
@@ -496,6 +541,13 @@ body {
 .light-select-all-mode {
   color: #150aa1;
 }
+.light-select-all-mode {
+  color: #150AA1;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+
 
 .followers-display-name-text {
   color: #fffcfc;
@@ -506,6 +558,13 @@ body {
 .light-followers-display-name-text-mode {
   color: #494949;
 }
+.light-followers-display-name-text-mode {
+  color: #494949;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 
 .followers-user-id-text {
   color: #979797;
@@ -515,6 +574,12 @@ body {
 }
 .light-followers-user-id-text-mood {
   color: #494949;
+}
+.light-followers-user-id-text-mood {
+  color: #494949;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* message interface styles */
@@ -527,6 +592,12 @@ body {
 .light-friends-display-name-text-active-mode {
   color: rgba(34, 32, 32, 0.9);
 }
+.light-friends-display-name-text-active-mode {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 /* also works for date */
 .message-text-active {
@@ -538,6 +609,13 @@ body {
 }
 .light-message-text-active-mode {
   color: #686868;
+}
+.light-message-text-active-mode {
+  color: #686868;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .message-text-active > span {
@@ -568,6 +646,14 @@ body {
 .light-disappear-text-mode {
   color: #686868;
 }
+.light-disappear-text-mode {
+  color: #686868;
+  text-align: right;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; 
+}
 
 .textarea-text {
   color: rgba(34, 32, 32, 0.9);
@@ -580,6 +666,15 @@ body {
 .light-textarea-text-mode {
   color: #9a9a9a;
 }
+.light-textarea-text-mode {
+  color: #9A9A9A;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 
 /* profile notification */
 
@@ -594,6 +689,12 @@ body {
 .light-menu-title-texts-mode {
   color: #150aa1;
 }
+.light-menu-title-texts-mode {
+  color: #150AA1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 .menu-subtitle-texts {
   color: #fffcfc;
@@ -603,6 +704,12 @@ body {
 }
 .light-menu-subtitle-texts-mode {
   color: #373737;
+}
+.light-menu-subtitle-texts-mode {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* mesage chat page  uses menu-title-texts and menu-subtitle-texts */
@@ -620,6 +727,12 @@ contact title uses (menu-title-texts)
 .light-contact-subtitle-texts-mode {
   color: #000;
 }
+.light-contact-subtitle-texts-mode {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 /* calling styles 
 calling title uses (menu-title-texts)
@@ -633,6 +746,12 @@ calling title uses (menu-title-texts)
 .light-call-subtitle-texts-mode {
   color: #000;
 }
+.light-call-subtitle-texts-mode {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 .call-window-text {
   color: #7b7b7b;
@@ -642,6 +761,12 @@ calling title uses (menu-title-texts)
 }
 .light-call-window-text-mode {
   color: #373737;
+}
+.light-call-window-text-mode {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* reused at (calling{disable and never text}) && (privacy)*/
@@ -663,6 +788,13 @@ setting title text uses (menu-title-texts) */
 .light-setting-subtitle-text-mode {
   color: #000;
 }
+.light-setting-subtitle-text-mode {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 
 .change-background-text {
   color: #e4e4e4;
@@ -678,6 +810,12 @@ setting title text uses (menu-title-texts) */
 }
 .light-audio-subtitle-text-mode {
   color: #373737;
+}
+.light-audio-subtitle-text-mode {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .audio-default-setting-text {
@@ -699,6 +837,12 @@ privacy title uses (menu-title-texts) && (menu-toggle-txt)
 .light-privacy-subtitle-text-mode {
   color: #373737;
 }
+.light-privacy-subtitle-text-mode {
+  color: #373737;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
 /* preview styles 
 preview title uses (menu-title-texts)
 */
@@ -717,10 +861,21 @@ preview title uses (menu-title-texts)
 .light-preview-subtitle-texts-mode {
   color: #000;
 }
+.light-preview-subtitle-texts-mode {
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
 /* login styles */
 
-/* use also in signup page (signup text) */
+/* use also in signup page (signup text)
+Login uses (login-text)
+Forgot Password? uses (login-text)
+Reset your password uses (login-text)
+*/
 .login-text {
   color: #048ad7;
   text-align: center;
@@ -730,6 +885,13 @@ preview title uses (menu-title-texts)
 }
 .login-text-light-mode {
   color: #0272bc;
+}
+.login-text-light-mode {
+  color: #0272BC;
+  text-align: center;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 /* used by email and password input labels */
@@ -741,6 +903,12 @@ preview title uses (menu-title-texts)
 }
 .light-login-title-texts-mode {
   color: #585858;
+}
+.light-login-title-texts-mode {
+  color: #585858;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .login-subtitle-texts {
@@ -760,6 +928,10 @@ preview title uses (menu-title-texts)
 .light-login-subtitle-texts-mode > span {
   color: #150aa1;
 }
+.light-login-subtitle-texts-mode > span {
+  color: #150AA1;
+  font-weight: 600;
+}
 
 .login-forget-password-text {
   color: #fffcfc;
@@ -773,6 +945,15 @@ preview title uses (menu-title-texts)
 .light-login-forget-password-text-mode {
   color: #7b7b7b;
 }
+.light-login-forget-password-text-mode {
+  color: #7B7B7B;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  }
 
 /* use also in sign up page */
 .login-option {
@@ -804,6 +985,12 @@ forgetten password title uses (login-text)
 }
 .light-recover-password-texts-mode {
   color: rgba(34, 32, 32, 0.9);
+}
+.light-recover-password-texts-mode {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .password-btn-text {
@@ -863,6 +1050,12 @@ reset password button text uses (.password-btn-text)
 .light-user-menu-bar-text-mode {
   color: #979797;
 }
+.light-user-menu-bar-text-mode {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400
+}
 
 .user-menu-bar-text-active {
   color: #0272bc;
@@ -880,6 +1073,12 @@ reset password button text uses (.password-btn-text)
 .light-user-chats-fav-txt-mode {
   color: #979797;
 }
+.light-user-chats-fav-txt-mode {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
 /* use for also New User (You) */
 .chats-text {
   color: rgba(255, 252, 252, 0.9);
@@ -892,6 +1091,14 @@ reset password button text uses (.password-btn-text)
 .chat-text {
   color: #979797;
 }
+.light.chat-text-mode {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 .start-chatting-txt {
   color: #048ad7;
@@ -901,6 +1108,13 @@ reset password button text uses (.password-btn-text)
 }
 .light-start-chatting-txt-mode {
   color: #0272bc;
+}
+.light-start-chatting-txt-mode{
+  color: #0272BC;
+  font-family: Poppins-bold;
+  font-size: 22.163px;
+  font-weight: 700;
+
 }
 
 .start-chatting-subtitle-txt {
@@ -912,6 +1126,13 @@ reset password button text uses (.password-btn-text)
 .light-start-chatting-subtitle-txt-mode {
   color: #979797;
 }
+.light-start-chatting-subtitle-txt-mode {
+  color: #979797;
+  font-family: Poppins-regular;
+  font-size: 12.858px;
+  font-weight: 500;
+}
+
 
 /* landing-page2 */
 .welcome-txt {
@@ -923,6 +1144,12 @@ reset password button text uses (.password-btn-text)
 .light-welcome-txt-mode {
   color: #303030;
 }
+.light-welcome-txt-mode {
+  color: #303030;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 400;
+}
 
 .new-user-txt {
   color: #fff;
@@ -933,6 +1160,12 @@ reset password button text uses (.password-btn-text)
 .light-new-user-txt-mode {
   color: #22074a;
 }
+.light-new-user-txt-mode {
+  color: #22074A;
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-weight: 700;
+}
 .user-instru-txt {
   color: #fffcfc;
   font-family: Poppins-regular;
@@ -941,6 +1174,12 @@ reset password button text uses (.password-btn-text)
 }
 .light-user-instru-txt-mode {
   color: #585858;
+}
+.light-user-instru-txt-mode {
+  color: #585858;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* .password-reseted-txt {
@@ -958,6 +1197,12 @@ reset password button text uses (.password-btn-text)
 }
 .light-actions-txts-mode {
   color: #585858;
+}
+.light-actions-txts-mode {
+  color: #585858;
+  font-family: Poppins-medium;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .time-txt {
@@ -989,6 +1234,12 @@ reset password button text uses (.password-btn-text)
 .light-switch-acc-title-txt-mode {
   color: #303030;
 }
+.light-switch-acc-title-txt-mode {
+  color: #303030;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .switch-acc-title-txt > span {
   color: #fffcfc;
@@ -1000,6 +1251,13 @@ reset password button text uses (.password-btn-text)
 .light-switch-acc-title-txt-mode > span {
   color: #303030;
 }
+.light-switch-acc-title-txt-mode > span {
+  color: #303030;
+  font-family:Poppins-regular;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
 
 .switch-acc-subtitle-txt {
   color: #fffcfc;
@@ -1009,6 +1267,12 @@ reset password button text uses (.password-btn-text)
 }
 .light-switch-acc-subtitle-txt-mode {
   color: #303030;
+}
+.light-switch-acc-subtitle-txt-mode {
+  color: #303030;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
 }
 
 .switch-acc-subtitle-txt > span {
@@ -1020,6 +1284,12 @@ reset password button text uses (.password-btn-text)
 .light-switch-acc-subtitle-txt-mode > span {
   color: #0272bc;
 }
+.light-switch-acc-subtitle-txt-mode > span {
+  color: #0272BC;
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
 
 .learn-more {
   color: #048ad7;
@@ -1030,13 +1300,32 @@ reset password button text uses (.password-btn-text)
 .light-learn-more-mode {
   color: #0272bc;
 }
+.light-learn-more-mode {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 /* signup page 
-SIGN UP uses (login-text)
+sign up uses (signUp-title-txt)
 Username uses (password-input-text)
 Or sigin up with && goggle and facebook btn (login-option)
 Already have account (signUp-subtitle-txt)
 */
+.signUp-title-txt {
+  color: #048AD7;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.light-signUp-title-txt-mode {
+  color: #150AA1;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+ }
+
 .signUp-subtitle-txt {
   color: #a9a9a9;
   font-family: Poppins-regular;
@@ -1046,6 +1335,13 @@ Already have account (signUp-subtitle-txt)
 }
 .light-signUp-subtitle-txt-mode {
   color: #000;
+}
+.light-signUp-subtitle-txt-mode {
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px; 
 }
 
 .signUp-subtitle-txt > span {
@@ -1059,6 +1355,15 @@ Already have account (signUp-subtitle-txt)
 .light-signUp-subtitle-txt-mode > span {
   color: #5858fa;
 }
+.light-signUp-subtitle-txt-mode > span {
+  color: #5858FA;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+
+}
 
 .create-acc-title-txt {
   color: #fff;
@@ -1068,6 +1373,12 @@ Already have account (signUp-subtitle-txt)
 }
 .light-create-acc-title-txt-mode {
   color: #000;
+}
+.light-create-acc-title-txt-mode {
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /* .create-acc-subtitle-txt {
@@ -1101,6 +1412,12 @@ ONE TIME PASSCODE uses (create-acc-title-txt)
 .light-one-time-subtitle-txt-mode {
   color: rgba(0, 0, 0, 0.52);
 }
+.light-one-time-subtitle-txt-mode {
+  color: rgba(0, 0, 0, 0.52);
+  font-family: Poppin-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 .one-time-btn-txt {
   color: #303030;
@@ -1127,6 +1444,13 @@ ONE TIME PASSCODE uses (create-acc-title-txt)
 .light-startUp-title-txt-mode {
   color: #000;
 }
+.light-startUp-title-txt-mode {
+  color: #000;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
 
 .startUp-subtitle-txt {
   color: #a9a9a9;
@@ -1138,6 +1462,13 @@ ONE TIME PASSCODE uses (create-acc-title-txt)
 .light-startUp-subtitle-txt-mode {
   color: rgba(34, 32, 32, 0.9);
 }
+.light-startUp-subtitle-txt-mode {
+  color: rgba(34, 32, 32, 0.90);
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
 
 .startup-btn-txt {
   color: #fff;
@@ -1147,6 +1478,12 @@ ONE TIME PASSCODE uses (create-acc-title-txt)
 }
 .light-startup-btn-txt-mode {
   color: #303030;
+}
+.light-startup-btn-txt-mode {
+  color: #303030;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /* notification page
@@ -1181,6 +1518,13 @@ next button (notified-btn-txt)
 }
 .light-personal-input-label-txt-mode {
   color: #585858;
+}
+.light-personal-input-label-txt-mode {
+  color: #585858;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .prev-txt {
