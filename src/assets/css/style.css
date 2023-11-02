@@ -1215,4 +1215,95 @@ hr{
 
   /* ..............END OF COLOR SETTINGS PAGE */
 
+  /* ...........START OF NOTIFICATION PAGE */
+.notification-page{
+  font-family: poppins;
+  background-color: #DAD9D9;
+  padding:125px 0px 279px 30px;
+}
 
+
+.notification-page-item1{
+  width: 70%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.notification-page-item1 h4{
+  color: #150AA1;
+  font-size: 14px;
+  font-weight: 600;
+}
+.notification-page-item1 p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* ..............START OF TOOGLE BUTTON */
+.toogle-button{
+   margin-left: auto;
+}
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+}
+
+.toggle input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #C7C7F9;
+  border-radius: 15px;
+  top: 0;
+  left: -8px;
+  right: 0px;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: -10px;
+  bottom: -3px;
+  background-color: #A9A9A9;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #C7C7F9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+/* ...........END OF TOOGLE BUTTON */
+hr{
+  border: 1px solid #979797;
+  margin: 10px 0px 10px 0px;
+}
+
+/*..............FOR COLOR PAGE DARK MODE */
+
+/* .notification-page{
+  background-color: #222020;
+}
+
+.notification-page-item1 h4{
+  color: #0389E1;
+  font-size: 14px;
+  font-weight: 600;
+}
+.notification-page-item1 p{
+  color: #FFFCFC;
+} */
+/* ...........END OF NOTIFICATION PAGE */
