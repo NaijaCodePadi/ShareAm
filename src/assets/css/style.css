@@ -988,3 +988,231 @@ lets go button uses (notified-btn-txt)
   font-size: 16px;
   font-weight: 400;
 }
+
+/* ..............START OF COLOR SETTINGS PAGE */
+/* ..............START OF COLOR MODE BODY */
+.color-mode-display{
+  font-family: Poppins;
+  padding:125px 0px 279px 30px;
+  background-color: #DAD9D9;
+}
+
+.color-preview h3,
+.color-preview p{
+  color: #150AA1;
+}
+
+/* ..............START OF PREVIEW DISPLAY */
+.preview-display{
+  text-align: left;
+  margin: 10px 0px 15px 10px;
+  padding: 10px;
+  width: 45%;
+  border-radius: 10px;
+  background-color: rgb(248, 249, 250);
+}
+.preview-display p{
+  max-width: 30%;
+  margin: 7px 0px 15px 0px;
+  padding: 10px 0px 10px 20px;
+  background-color: #F1F1F1;
+  line-height: 30px;
+  border-radius: 0px 20px 20px 20px;
+  font-weight: 400;
+  color: black
+}
+.preview-display1{
+  width: 50%;
+}
+.preview-display-right p{
+  max-width: 45%;
+  background-color: #CCF7FF;
+  margin-left: auto;
+}
+/* ..............END OF PREVIEW DISPLAY */
+
+/* ..............START OF COLOR PICK */
+.color-pick{
+  width: 50%;
+  display: flex;
+  gap: 10px;
+}
+.color-pick-item1{
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #CCF7FF;
+}
+.color-pick1-item1{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.color-pick-item2{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FCE2D4;
+}
+.color-pick-item3{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFF1CC;
+}
+.color-pick-item4{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #CBFBD6;
+}
+.color-pick-item5{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #F9D7EC;
+}
+.color-pick-item6{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #DFDEF2;
+}
+.color-pick-item7{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #00D1FF;
+}
+.color-pick-item8{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #00D1FF;
+}
+.color-pick-item9{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #D4F8FF;
+}
+.color-pick-item10{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
+.color-pick-item11{
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
+/* ..............END OF COLOR PICK */
+
+/* ..............START OF COLOR MODE */
+.color-mode{
+  margin: 15px 0px 10px 20px;
+}
+.color-mode h4{
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #150AA1;
+}
+.color-mode h5{
+  font-weight: 700;
+  font-size: 16px;
+}
+.color-mode1{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.color-mode12{
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.color-mode-item1{
+  align-items: center;
+  background-color: #150AA1;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.color-mode-item{
+  border: 1px solid black;
+  margin: 8px 0px 10px 0px ;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #DAD9D9;
+}
+/* ..............END OF COLOR MODE */
+
+hr{
+  border: 1px solid #979797;
+  margin: 0px 20px 10px 0px;
+}
+
+
+
+/*..............FOR COLOR PAGE DARK MODE */
+
+/* .color-preview h3,
+.color-preview p,
+.color-mode h4{
+  color: #0389E1;
+}
+
+.color-mode-display{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:125px 0px 279px 30px;
+  background-color: #222020;
+}
+
+.preview-display p{
+  color: black;
+}
+
+hr{
+  border: 1px solid #ffffff;
+  margin: 0px 20px 10px 0px;
+}
+
+.color-mode-item{
+  border: 1px solid #FFFFFF;
+  background-color: #DAD9D9;
+}
+
+.color-mode h5{
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+} 
+.color-mode12{
+   margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+  */
+
+  /* ..............END OF COLOR SETTINGS PAGE */
+
+
