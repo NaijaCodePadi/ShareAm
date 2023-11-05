@@ -1,15 +1,16 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif;
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
-  background: linear-gradient(to right, yellow, red)
+  background: linear-gradient(to right, yellow, red);
 }
 
 /* RESPONSE MESSAGE */
 
-.response-message{
+
+.response-message {
   display: flex;
   align-items: center;
   height: 30px;
@@ -18,16 +19,13 @@ body {
   border-radius: 25px;
   background-color: rgb(123, 123, 177);
   font-weight: 700;
-  
 }
 
-.checkmark{
+.checkmark {
   margin-left: 70px;
   margin-right: 30px;
 }
 
-.cancel{
-  
+.cancel {
   margin-left: 30px;
-
 }
