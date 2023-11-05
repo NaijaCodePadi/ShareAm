@@ -7,11 +7,8 @@ body {
   background: linear-gradient(to right, yellow, red);
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
 
+/*-------------CALL INTERFACE BUTTON---------- */
 :root{
   --bgclr:#585858;
   --bgblue:#0B0A7E;
