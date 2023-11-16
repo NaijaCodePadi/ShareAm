@@ -155,8 +155,11 @@
   
   .light-google,
   .light-facebook {
+    background-color: #f1f1f1;
     gap: 0.5rem;
     padding: 7px 10px;
     width: 203px;
+    height: 43px;
+    border-radius: 4px;
     justify-content: center;
   }
