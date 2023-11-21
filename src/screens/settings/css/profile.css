@@ -24,3 +24,53 @@
   }
 
   /* DO NOT REMOVE THE CODE ABOVE */
+
+  /* CSS FOR PROFILE PAGE FOOTER */
+  footer{
+    width: 991px;
+    background: #B0B0B0;
+  }
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+    padding: 26px 49.5px 28px 15px;
+
+  }
+  .section-1{
+    display: flex;
+    gap: 272px;
+  }
+
+  .section-1 a{
+    display:inline-flex;
+    margin-bottom: 18px;
+  
+  }
+
+  .section-1 a:last-child{
+    margin-bottom: 0;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+  }
+  .links p{
+margin-bottom: 20px;
+  }
+
+  .section-2{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: auto;
+  }
+
+  .social-handles{
+    display: inline-flex;
+    gap: 14px;
+    justify-content:flex-start;
+  }
