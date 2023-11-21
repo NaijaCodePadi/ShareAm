@@ -24,3 +24,31 @@
   }
 
   /* DO NOT REMOVE THE CODE ABOVE */
+
+  /* ...........START OF NOTIFICATION PAGE */
+  .light-notification-page{
+    background-color: #DAD9D9;
+    padding:134px 0px 134px 30px;
+  }
+  .light-notification-page-item1{
+    width: 60%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  hr{
+    border: 1px solid #979797;
+    margin: 10px 0px 10px 0px;
+  }
+  /* ---------- START OF TOOGLE BUTTON----------- */
+  .toogle-button{
+    margin-left: auto;
+ }
+
+
+
+  /* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
+  
+/* .light-notification-page{
+    background-color: #222020;
+  } */
