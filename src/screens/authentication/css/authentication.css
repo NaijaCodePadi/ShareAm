@@ -160,3 +160,82 @@
     width: 203px;
     justify-content: center;
   }
+
+  /* ---------------------------------Texts style--------------------------- */
+
+/* splash page */
+
+/* has same color as the light mode */
+
+.splash-text-heading {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 50px;
+  font-weight: 800;
+}
+.splash-text-heading > span {
+  color: #6f3fe3;
+}
+.splash-subtitle-text {
+  color: #e4edf6;
+  font-family: Poppins-regular;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* login page */
+.login-text,
+.dark-login-text-mode {
+  color: #0272bc;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.dark-login-text-mode {
+  color: #048ad7 !important;
+}
+.login-label-texts,
+.dark-login-label-text-mode {
+  color: #585858;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.dark-login-label-text-mode {
+  color: #fffcfc !important;
+}
+.login-subtitle-texts,
+.dark-login-subtitle-texts-mode {
+  color: #585858;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dark-login-subtitle-texts-mode {
+  color: #fff !important;
+}
+.login-subtitle-text> a,
+.dark-login-subtitle-texts-mode > a {
+  color: #150aa1;
+  font-weight: 600;
+}
+.dark-login-subtitle-texts-mode > a { 
+  color: #048ad7 !important;
+}
+.login-option {
+  color: #7b7b7b;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.login-option > span {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 500;
+}
+.logUp-btn-texts {
+  color: #7b7b7b;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
