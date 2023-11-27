@@ -76,7 +76,17 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
-
+.light-google,
+.light-facebook {
+  background-color: #f1f1f1;
+  gap: 0.5rem;
+  padding: 7px 10px;
+  width: 203px;
+  height: 43px;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+  justify-content: center;
+}
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /*---------------LOG IN BUTTON FOR BOTH LIGHT AND DARK MODE--------------*/

@@ -164,3 +164,18 @@
     border-radius: 4px;
     justify-content: center;
   }
+
+  .signup-btn{
+    display: flex;
+    width: 393px;
+    padding: 12px 13px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    background: #1058E8;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+  }
