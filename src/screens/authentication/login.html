@@ -15,38 +15,40 @@
           />
         </div>
         <div class="light-signup-splash-text">
-          <h2 class="light-signup-splash-text-heading">Share<span>Am</span></h2>
-          <p class="light-signup-splash-text-pg">
+          <h2 class="light-signup-splash-text-heading splash-text-heading">Share<span>Am</span></h2>
+          <p class="light-signup-splash-text-pg splash-subtitle-text">
             Seamless Conversations, Anytime, Anywhere.
           </p>
         </div>
       </section>
 
       <section class="light-signup-form-wrapper">
-        <h2>Login</h2>
+        <h2 class="login-text">Login</h2>
         <form>
           <div class="email">
-            <label for="email" class="login-title-texts">Email</label>
+            <label for="email" class="login-label-texts">Email</label>
             <input name="email" id="email" type="email" />
           </div>
           <div class="password">
-            <label for="email" class="login-title-texts">Password</label>
+            <label for="email" class="login-label-texts">Password</label>
             <input name="password" id="password" type="password" />
           </div>
+          <!-- there are two missing texts that should be here //commented by Osita/text -->
           <button type="submit" class="signup-btn">Log In</button>
         </form>
-        <p>Don’t have an account? <a href="./signup.html">Sign Up</a></p>
-
-        <div class="light-sigup-with">or Log In With</div>
-
+        <p class="login-subtitle-texts">Don’t have an account? <a href="./signup.html">Sign Up</a></p>
+        <!-- there should be a span tag here which should have "log in with" as the innerText because the text "or" has a different style // commented by osita/text -->
+        <!-- NB : because of the current background color the below text isn't showing -->
+        <div class="light-sigup-with login-option">or Log In With</div> 
+        <!-- NB : because of the current background color the below text isn't showing -->
         <div class="light-socials">
           <div class="light-google">
             <img src="../../assets/icons/google-icon.svg" alt="" />
-            <span>Google</span>
+            <span class="logUp-btn-texts">Google</span>
           </div>
           <div class="light-facebook">
             <img src="../../assets/icons/facebook-icon.svg" alt="" />
-            <span>Facebook</span>
+            <span class="logUp-btn-texts">Facebook</span>
           </div>
         </div>
       </section>

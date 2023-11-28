@@ -1,30 +1,30 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../fonts/Rubik-VariableFont_wght.ttf);
-  }
+@font-face {
+  font-family: poppins-bold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
 
-  /* DO NOT REMOVE THE CODE ABOVE */
+/* DO NOT REMOVE THE CODE ABOVE */
 
-  /* Sign Up Screen & Log In -- Light Mode */
+/* Sign Up Screen & Log In -- Light Mode */
 .light-signup-container {
     display: flex;
     align-items: center;
@@ -155,27 +155,8 @@
   
   .light-google,
   .light-facebook {
-    background-color: #f1f1f1;
     gap: 0.5rem;
     padding: 7px 10px;
     width: 203px;
-    height: 43px;
-    border: 1px solid #E4E4E4;
-    border-radius: 4px;
     justify-content: center;
-  }
-
-  .signup-btn{
-    display: flex;
-    width: 393px;
-    padding: 12px 13px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 18px;
-    background: #1058E8;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    border: none;
   }
