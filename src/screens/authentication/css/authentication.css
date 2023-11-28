@@ -137,8 +137,8 @@
   }
   
   .light-signup-container .light-signup-form-wrapper .light-socials,
-  .light-google,
-  .light-facebook {
+  .login-google,
+  .login-facebook {
     display: flex;
     align-items: center;
   }
@@ -153,10 +153,28 @@
     height: 54px;
   }
   
-  .light-google,
-  .light-facebook {
+  .login-google,
+  .login-facebook {
     gap: 0.5rem;
     padding: 7px 10px;
     width: 203px;
+    height: 40px;
     justify-content: center;
+    background: #F1F1F1;
+    border-radius: 4px;
+  }
+
+  .signup-btn{
+    display: flex;
+    width: 393px;
+    padding: 12px 13px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    background: #1058E8;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
   }

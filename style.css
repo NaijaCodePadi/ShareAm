@@ -96,9 +96,6 @@
 }
 
 
-
-
-
 /*---RESET PASSWORD BUTTON FOR BOTH LIGHT AND DARK MODE---*/
 .reset-password-btn{
   display: flex;
@@ -148,10 +145,6 @@
   font-weight: 600;
   border: none;
 }
-
-
-
-
 
 
 /*---OPEN SYSTEM SETTINGS BUTTON FOR BOTH LIGHT AND DARK MODE---*/
