@@ -39,9 +39,7 @@
   --dm-active-menu: #fffcfc;
   --dm-active-menu-bg-color: #373737;
 }
-
-/*/------------------- CSS FOR SIDEBAR LIGHT MODE -------------------/*/
-
+/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .sidebar-nav{
   width: 310px;
   padding: 43px 0 41px 0;
@@ -50,19 +48,10 @@
   gap: 41px;
 }
 
-.light-sidebar-nav {
-  background-color: var(--lm-sidebar-bg-color);
-}
-
-header .light-prof-pic,
-.light-menu-link {
-  padding-left: 72px;
-}
-
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  /* gap: 16px; */
 }
 
 .nav-link-container a{
@@ -70,8 +59,23 @@ header .light-prof-pic,
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
+  height: 58px;
   transition: all 0.5s ease;
+}
+
+header .prof-pic,
+.menu-link {
+  padding-left: 72px;
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
 }
 
 .light-nav-link-container a:hover {
@@ -83,17 +87,15 @@ header .light-prof-pic,
   color: var(--lm-active-menu);
 }
 
-svg {
-  color: var(--svg-color);
-}
-
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
 }
+
 a.light-active-menu svg {
   color: var(--lm-active-menu);
 }
 
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
 
 .dark-sidebar-nav {
   background-color: var(--dm-sidebar-bg-color);
