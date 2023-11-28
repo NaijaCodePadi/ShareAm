@@ -24,3 +24,233 @@
   }
 
   /* DO NOT REMOVE THE CODE ABOVE */
+
+  /*/----------------LANDING PAGE CARD--------------/*/
+
+:root {
+  /* light mode */
+  --lm-landing-pg-card-bg-color: #f4f1f8;
+  --lm-calender-bg-color: #fff;
+  --lm-date-time-bg-color: #22074a;
+
+  /* dark mode */
+  --dm-landing-pg-card-bg-color: #1f201f;
+  --dm-calender-bg-color: #3e3c3c;
+  --dm-date-time-bg-color: #00000040;
+}
+
+/*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
+.light-landing-page-container,
+.light-landing-page-container {
+  width: 907px;
+}
+
+.light-landing-page-card,
+.dark-landing-page-card {
+  display: flex;
+  flex-direction: column;
+  padding-left: 38px;
+  padding-right: 81px;
+  padding-top: 55.5px;
+  gap: 7.5px;
+}
+
+.light-landing-page-card {
+  background-color: var(--lm-landing-pg-card-bg-color);
+}
+.dark-landing-page-card {
+  background-color: var(--dm-landing-pg-card-bg-color);
+}
+
+.light-section-1-container {
+  display: flex;
+  gap: 25px;
+  align-items: self-end;
+}
+
+.light-profile-pic-box {
+  position: relative;
+}
+
+.light-profile-pic {
+  position: relative;
+}
+
+.light-profile-pic .new-user-initials {
+  position: absolute;
+  top: 38px;
+  left: 35px;
+}
+
+.light-online-status {
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+}
+
+.light-welcome-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.light-section-2-container {
+  display: flex;
+  height: 49px;
+  align-items: center;
+}
+
+.light-popup-notification {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  padding: 0px 20px;
+  margin-left: 96px;
+  gap: 32px;
+}
+
+.light-verified-icon {
+  height: 45px;
+}
+
+.light-popup-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  height: 28px;
+}
+.light-close-popup-btn {
+  height: 28px;
+  cursor: pointer;
+}
+
+.light-section-3-container {
+  display: flex;
+  gap: 61px;
+  padding-bottom: 30.5px;
+}
+
+.light-call-to-action-section {
+  height: 340px;
+  margin-top: 74.5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 139px;
+  row-gap: 28px;
+}
+
+.light-cta-text {
+  grid-column: 1/3;
+  align-self: self-end;
+}
+
+.light-cta-icon-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  width: 108px;
+}
+
+.light-cta-icon-box-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.light-cta-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-action-txt-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.light-dropdowm-icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.light-time-date-section {
+  display: grid;
+  width: 372px;
+  height: 488px;
+  grid-template-rows: 202px 1fr;
+}
+
+.light-time-date-box,
+.dark-time-date-box {
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.light-time-date-box {
+  background-color: var(--lm-date-time-bg-color);
+}
+.dark-time-date-box {
+  background-color: var(--dm-date-time-bg-color);
+}
+
+.light-time-date {
+  width: 298px;
+  display: flex;
+  gap: 50px;
+  align-items: flex-end;
+  position: absolute;
+  left: 35px;
+  bottom: 18px;
+  overflow-x: hidden;
+}
+
+.light-time-date-text {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.light-flower-box {
+  display: flex;
+  align-items: end;
+}
+
+.light-calender-box,
+.dark-calender-box {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.light-calender-box {
+  background-color: var(--lm-calender-bg-color);
+}
+
+.dark-calender-box {
+  background-color: var(--dm-calender-bg-color);
+}
+
+.light-section-4-container {
+  margin: 35px 0 74.5px 0;
+  display: grid;
+  row-gap: 3px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.light-new-user-email-txt {
+  grid-column: 1/3;
+}
+
+.light-switch-acct-txt {
+  padding: 10px 0 10px 0;
+}
+
+.light-cta-learn {
+  margin-left: auto;
+}
