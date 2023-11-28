@@ -144,8 +144,8 @@
   height: 60px;
   border-radius: 100%;
   background-color: #FFFFFF;
-}
-/* ..............END OF COLOR PICK */
+} */
+/* ..............END OF COLOR PICK
 
 /* ..............START OF COLOR MODE */
 .color-mode{
@@ -155,37 +155,75 @@
   margin-bottom: 10px;
 }
 
-.color-mode1{
-  margin-bottom: 20px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.color-mode12{
-  margin-bottom: 20px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.color-mode-item1{
-  align-items: center;
-  background-color: #150AA1;
-  width: 50px;
-  height: 50px;
-  padding: 15px;
-  border-radius: 100%;
+.container {
+  margin: 30px 0px 40px 0px;
+  display: block;
+  position: relative;
+  padding: 7px 0px 0px 60px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.color-mode-item{
-  border: 1px solid black;
-  margin: 8px 0px 10px 0px ;
-  width: 40px;
+/* Hide the browser's default checkbox */
+.container input { 
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 40px;
-  border-radius: 100%;
-  background-color: #DAD9D9;
+  width: 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container:hover input ~ .checkmark {
+  background-color: #fff;
+} */
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #150AA1;
+  border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 12px;
+  top: 5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 /* ..............END OF COLOR MODE */
-
 hr{
   border: 1px solid #979797;
   margin: 0px 20px 10px 0px;
@@ -213,6 +251,10 @@ hr{
     border: 1px solid #FFFFFF;
     background-color: #DAD9D9;
   }
+  .checkmark {
+    border: 1px solid #FFF;
+    background-color: #DAD9D9;
+  }
   
   .color-mode12{
      margin-bottom: 20px;
@@ -220,6 +262,11 @@ hr{
     gap: 20px;
     align-items: center;
   }
+
+  .container input:checked ~ .checkmark {
+  background-color: #150AA1;
+  border: none;
+}
     */
   
     /* ..............END OF COLOR SETTINGS PAGE */

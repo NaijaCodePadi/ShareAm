@@ -25,12 +25,12 @@
 
   /* DO NOT REMOVE THE CODE ABOVE */
 
-  /* ...........START OF NOTIFICATION PAGE */
-  .light-notification-page{
+  /* ...........START OF NOTIFICATION LIGHT PAGE */
+  .notification-page{
     background-color: #DAD9D9;
     padding:134px 0px 134px 30px;
   }
-  .light-notification-page-item1{
+  .notification-page-item1{
     width: 60%;
     display: flex;
     padding-top: 10px;
