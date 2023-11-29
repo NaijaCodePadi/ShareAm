@@ -105,25 +105,27 @@
   gap: 1rem;
 }
 
-.light-signup-container .light-signup-form-wrapper h2 {
+/* .light-signup-container .light-signup-form-wrapper h2 {
   color: #150aa1;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-}
+} */
 
 .light-signup-container .light-signup-form-wrapper form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
+  gap: 2rem;
 }
 
 .light-signup-form-wrapper form .full-name,
 .user-name,
 .email,
 .password,
-.confirm-password {
+.confirm-password,
+.enter-number {
   display: flex;
   flex-direction: column;
 }
@@ -184,6 +186,7 @@
 }
 
 /* login page */
+.light-signup-container 
 .login-text {
   color: #0272bc;
   font-family: Poppins-bold;
@@ -245,3 +248,118 @@
   font-size: 14px;
   font-weight: 400;
 }
+.light-reset-password-subtitle-text-mode {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.dark-reset-password-subtitle-text-mode {
+  color: rgba(255, 252, 252, 0.9);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.password-input-text {
+  color: #a9a9a9;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  /* padding-left: 0.5rem; */
+}
+
+
+/* ----------------------------------optimazing login page styles //Osita ------------------------- */
+
+
+
+/*  ----------login password page--------------------  */
+.light-signup-container >
+.light-signup-form-wrapper >
+.login-form
+{
+  gap: 0.5rem;
+  position: relative;
+}
+.password {
+  position: relative;
+
+}
+
+.light-signup-form-wrapper
+.login-input {
+  width: 388px;
+  height: 51px;
+  border-radius: 10px;
+  border: 1px solid #E4E4E4;
+  background: #F1F1F1;
+  padding-left: 0.5rem;
+}
+.light-signup-form-wrapper
+.password
+.open-eye-icon {
+  width: 19px;
+  height: 13px;
+  position: absolute;
+  right: 11.55px;
+  bottom: 19.5px;
+}
+.login-password-subtitle {
+  /* margin-left: 15%;
+  margin-right: 25%; */
+  width: 300px;
+  box-sizing: border-box;
+  height: auto;
+  /* background: #000; */
+  /* height: 21px; */
+  display: flex;
+  /* justify-content: space-around; */
+  /* margin: auto;
+  display: flex;
+  margin-top: 1rem; */
+  /* display: flex; 
+  align-items: flex-start; */
+  /* gap: 100px; */
+  
+}
+.stay-signed-in {
+  display: flex;
+  justify-content: center;
+  gap: -20px;
+  align-items: center;
+}
+.check-rectangle {
+  width: 9px;
+  height: 9px;
+  border: 0.5px solid #585858;
+  background: rgba(255, 255, 255, 0.87);
+}
+.stay-signed-in-text {
+  color: #585858;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*  ----------forget password page--------------------  */
+.light-signup-container >
+.light-signup-form-wrapper >
+.forget-password-form
+{
+  margin-top: 32px;
+}
+
+.forget-password {
+  color: #7B7B7B;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
