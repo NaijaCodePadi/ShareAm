@@ -1,0 +1,9 @@
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect id="Chat Room" width="42" height="42" fill="url(#pattern0)" fill-opacity="0.05"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_576_2184" transform="scale(0.0111111)"/>
+</pattern>
+<image id="image0_576_2184" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACaUlEQVR4nO2cMY4TQRREHQECERDDAYBDcBSIIILlGkicAAkugkhIgI3YFSSQIwcmMPVm4kYtbYDEGjzjdv+emSrpx+5+Kld7Sp5erSzLsizLsizLspailNI14DlwCnRAmunkvX0CTlJKV6tC7vv+jqTzBiCkmiPpLO+9mpOXCJk/YFdx9kVcpIXPsxqgTxvYaAqejzVA08BGU/BwdNBz0nq9viHprqTHkt4OgR299klL0gPgm0FX0Ha7vQW8t6Prwf7u6KgXI87oGpL0rvhh6O7ib0l6UhS0u4vLlX/6FQPt7kI7u4vNZnOzGGh3F/yzuygJ2t0Fu7uLkqDdXbC7uygJOrqgSS2MQWPQ4S7EjiYcnKODeKjOaAw63HHY0fGQcHQQDtAZTVvjBxYMOtyF2NGEg3N0EA/VGY1BhzsOOzoeEo4OwgE6o2lr/MCCQYe7EDuacHCODuKhOqMx6HDHYUfHQ8LRQThAZzRtjR9YMOhwF2JHM/fo+OW/7VIF9PCX7qOdRCMzkM9Tg+a4oCV9TildMWiOBzpD7vv+9mDIjg72AZ31IcfFKCcbNHs5upiiDyEaGYPGoMNdiB1NODhHB8vNaL+izIjuYgRov3RPnQsDT6K/tsTP8O5iqPKlIPli0wY2myJmdHdxwFU/i4OtQ7qLQ5ydb2LJeTXzA7JMd1FTIzbZSbofve7JaSjoruseRa95CaDfRK93shpw6HxNKV2PXu9k5VyupD1z+WGt9SwZ9OvoNc5C/8nlL87l44PuJN0r9TmLl6QfzuUKAl5cAvpVjc9elHJXkGFfOPunpJeT6Q8sy7JWzeg34v1wL9nB3+YAAAAASUVORK5CYII="/>
+</defs>
+</svg>
