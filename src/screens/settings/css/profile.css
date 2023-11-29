@@ -42,15 +42,14 @@
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .profile{
-  display: flex;
+  display: grid;
+  grid-template-columns: 310px auto;
 }
 .sidebar-nav{
-  width: 310px;
   padding: 43px 0 41px 0;
   display: flex;
   flex-direction: column;
   gap: 41px;
-  /* position: fixed; */
 }
 
 .nav-link-container {
@@ -132,7 +131,6 @@ a.light-active-menu svg {
 
   /* CSS FOR PROFILE PAGE FOOTER */
   footer{
-    width: 1056px;
     background: #B0B0B0;
   }
 
@@ -164,7 +162,7 @@ a.light-active-menu svg {
     flex-direction: column;
   }
   .links p{
-margin-bottom: 20px;
+    margin-bottom: 20px;
   }
 
   .section-2{
