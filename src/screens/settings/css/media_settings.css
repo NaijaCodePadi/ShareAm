@@ -46,15 +46,22 @@
     grid-template-columns: 310px auto;
 }
 .sidebar-nav{
-  padding: 43px 0 41px 0;
+  width: 310px;
+  height:100%;
   display: flex;
   flex-direction: column;
   gap: 41px;
+  padding: 43px 0 41px 0;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 1; 
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .nav-link-container a{
@@ -62,7 +69,7 @@
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 58px;
+  height: 54px;
   transition: all 0.5s ease;
 }
 
