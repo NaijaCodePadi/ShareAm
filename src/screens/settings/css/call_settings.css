@@ -106,7 +106,7 @@
   
   /*[------------ DARK MODE ICON-------------  */
   /* 
-  .main{
+  .Dark-main{
     width: 420px;
     height: 350px;
     display: flex;
@@ -121,7 +121,7 @@
   
   }
   
-  .container{
+  .Dark-container{
     width: 108px;
     height: 125px;
     display: flex;
@@ -130,7 +130,7 @@
     margin-left: 20px;
   }
   
-  .video-icon{
+  .Dark-video-icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,7 +142,7 @@
     padding: 24px 20px 24px 20px;
   }
   
-  .container p{
+  .Dark-container p{
     color:#FFFCFC;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -152,7 +152,7 @@
     margin-top: 10px;
   } 
   
-  .other-icons{
+  .Dark-other-icons{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +166,7 @@
   
   
    
-  .video-icon img{
+  .Dark-video-icon img{
     width: 73px;
     height: 73px;
   } */
