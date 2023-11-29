@@ -187,47 +187,47 @@
 
 /* login page */
 .light-signup-container 
-.login-text {
+.light-login-text {
   color: #0272bc;
   font-family: Poppins-bold;
   font-size: 26px;
   font-weight: 700;
 }
-.dark-login-text-mode {
+.dark-login-text {
   color: #048ad7;
   font-family: Poppins-bold;
   font-size: 26px;
   font-weight: 700;
 }
-.login-label-texts {
+.light-login-label-texts {
   color: #585858;
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 700;
 }
-.dark-login-label-text-mode {
+.dark-login-label-text {
   color: #fffcfc;
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 700;
 }
-.login-subtitle-texts {
+.light-login-subtitle-text {
   color: #585858;
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
-.dark-login-subtitle-texts-mode {
+.dark-login-subtitle-text {
   color: #fff;
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
-.login-subtitle-text > a {
+.light-login-subtitle-text > a {
   color: #150aa1;
   font-weight: 600;
 }
-.dark-login-subtitle-texts-mode > a {
+.dark-login-subtitle-text > a {
   color: #048ad7;
   font-weight: 600;
 }
