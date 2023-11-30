@@ -185,3 +185,9 @@ a.light-active-menu svg {
     gap: 14px;
     justify-content:flex-start;
   }
+
+  .fa-brands{
+    font-size: 25.77px;
+    color: #0021f5;
+    padding:4px;
+  }
