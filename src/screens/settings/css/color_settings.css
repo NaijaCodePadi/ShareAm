@@ -28,9 +28,16 @@
   /* ------- COLOR SETTINGS PAGE -------- */
 
 /* --------FOR COLOR SETTINGS LIGHT MODE --> */
+
+.color-mode-body{
+  display: grid;
+  grid-template-columns: 310px auto;
+}
+
 .light-color-mode-display{
-    padding:134px 0px 134px 30px;
-    background-color: #DAD9D9;
+  width: 100%;
+  padding:134px 0px 134px 53px;
+  background-color: #DAD9D9;
 }
 
   /* ..............START OF PREVIEW DISPLAY */
@@ -38,7 +45,7 @@
   text-align: left;
   margin: 10px 0px 15px 10px;
   padding: 10px;
-  width: 45%;
+  width: 50%;
   height: 228px;
   border-radius: 6px;
   background-color: rgb(248, 249, 250);
@@ -48,18 +55,15 @@
   padding: 10px 0px 10px 20px;
   line-height: 40px;
 }
-.preview-display1{
-  width: 50%;
-}
 .bubble-chat-right{
-  max-width: 45%;
+  max-width: 40%;
   margin-left: auto;
 }
 /* ..............END OF PREVIEW DISPLAY */
 
 /* ..............START OF COLOR PICK */
 .color-pick{
-  width: 50%;
+  /* width: 100%; */
   display: flex;
   gap: 10px;
 }
@@ -433,3 +437,103 @@ hr{
 } */
 
   /* ..............END OF COLOR SETTINGS PAGE */
+
+  /* /-----------------------SIDE BAR -------------------------/ */
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* dark mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+/*/------------------- CSS FOR SIDEBAR LIGHT MODE -------------------/*/
+
+.sidebar-nav{
+  width: 310px;
+  padding: 43px 0 41px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  position: fixed;
+}
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+header .light-prof-pic,
+.light-menu-link {
+  padding-left: 72px;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-link-container a{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  height: 54px;
+  transition: all 0.5s ease;
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+}
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px, top 395px right 250px,
+    top 450px right 18px, top 547px right 160px, top 789px right 231px;
+}
+
+  .dark-nav-link-container a:hover {
+    background-color: var(--dm-active-menu-bg-color);
+  }
+  
+  .dark-nav-link-container a:hover svg {
+    color: var(--dm-active-menu);
+  }
+
+    a.dark-active-menu {
+      background-color: var(--dm-active-menu-bg-color);
+    }
+    
+    a.dark-active-menu svg {
+      color: var(--dm-active-menu);
+    }

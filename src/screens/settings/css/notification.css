@@ -26,12 +26,16 @@
   /* DO NOT REMOVE THE CODE ABOVE */
 
   /* ...........START OF NOTIFICATION LIGHT PAGE */
-  .notification-page{
+  .notification-body{
+    display: grid;
+    grid-template-columns: 310px auto;
+  }
+  .light-notification-page{
     background-color: #DAD9D9;
-    padding:134px 0px 134px 30px;
+    padding:134px 0px 134px 53px;
   }
   .notification-page-item1{
-    width: 60%;
+    width: 70%;
     display: flex;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -52,3 +56,103 @@
 /* .dark-notification-page{
     background-color: #222020;
   } */
+
+  /* /-----------------------SIDE BAR -------------------------/ */
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* dark mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+/*/------------------- CSS FOR SIDEBAR LIGHT MODE -------------------/*/
+
+.sidebar-nav{
+  width: 310px;
+  padding: 43px 0 41px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  position: fixed;
+}
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+header .light-prof-pic,
+.light-menu-link {
+  padding-left: 72px;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-link-container a{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  height: 54px;
+  transition: all 0.5s ease;
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+}
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px, top 395px right 250px,
+    top 450px right 18px, top 547px right 160px, top 789px right 231px;
+}
+
+  .dark-nav-link-container a:hover {
+    background-color: var(--dm-active-menu-bg-color);
+  }
+  
+  .dark-nav-link-container a:hover svg {
+    color: var(--dm-active-menu);
+  }
+
+    a.dark-active-menu {
+      background-color: var(--dm-active-menu-bg-color);
+    }
+    
+    a.dark-active-menu svg {
+      color: var(--dm-active-menu);
+    }
