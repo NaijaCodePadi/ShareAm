@@ -3,14 +3,14 @@
   <head><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color_settings | ShareAm</title>
-    <link rel="stylesheet" href="../settings/css/color_settings.css" />
+    <link rel="stylesheet" href="css/color_settings.css" />
 </head>
 <body>
     <div class="colormode-page">
         <!-- DIV CREATED TO INSERT SIDE BAR -->
 
         <!--------- START OF COLOR-MODE-DISPLAY  -->
-        <div class="color-mode-display">
+        <div class="light-color-mode-display dark-color-mode-display">
             <section class="color-preview">
                 <h3>Preview</h3>
                 <!----------- START OF PREVIEW-DISPLAY  -->
@@ -30,94 +30,96 @@
                 <p>COLOR</p>
                  <!-------------- START OF COLOR-PICK  -->
                 <div class="color-pick">
-                    <div class="color-pick-item1">
-                        <div 
-                            class="color-pick1-item1">
-                           <img src="../../assets/icons/markIcon.svg"/>
-                        </div>   
-                    </div>
-                    <div class="color-pick-item2">
-
-                    </div>
-                    <div class="color-pick-item3">
-
-                    </div>
-                    <div class="color-pick-item4">
-
-                    </div>
-                    <div class="color-pick-item5">
-
-                    </div>
-                    <div class="color-pick-item6">
-
-                    </div>
-                    <div class="color-pick-item7">
-
-                    </div>
+                    <label class="color-pick-item1">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item2">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item3">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item4">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item5">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item6">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item7">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
                 </div>
-                <div class="color-pick">    
-                    <div class="color-pick-item8">
-
-                    </div>
-                    <div class="color-pick-item9">
-
-                    </div>
-                    <div class="color-pick-item10">
-
-                    </div>
-                    <div class="color-pick-item11">
-
-                    </div>
-
+                <div class="color-pick">
+                    <label class="color-pick-item8">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item9">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item10">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>  
+                    <label class="color-pick-item11">
+                        <input type="radio" name="color">
+                        <span class="checkmark1"></span>
+                    </label>
                 </div>
             </section>
              <!----------- END OF COLOR-PICK  -->
 
              <!------------- START OF COLOR-MODE  -->
-             <div class="color-mode">
+            <div class="color-mode">
                 <h4>MODE</h4>
-                <label class="container">Light
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
+                <label class="light-container dark-container">Light
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="light-checkmark dark-checkmark"></span>
                 </label>
 
                 <hr/>
 
-                <label class="container">Dark
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
+                <label class="light-container">Dark
+                    <input type="radio" name="radio">
+                    <span class="light-checkmark dark-checkmark"></span>
                 </label>
 
                 <hr/>
 
-                <label class="container">Use system settings
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
+                <label class="light-container">Use system settings
+                    <input type="radio" name="radio">
+                    <span class="light-checkmark dark-checkmark"></span>
                 </label>
             </div>
-            <div class="color-mode">
+            <div class="accessible-mode">
                 <h4>ACCESSIBLE MODES</h4>
-                <label class="container">High contrast light
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
+                <label class="light-container">High contrast light
+                    <input type="radio" checked="checked" name="mode">
+                    <span class="light-checkmark dark-checkmark"></span>
                 </label>
 
                   <hr/>
 
-                <label class="container">High contrast Dark
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
+                <label class="light-container">High contrast Dark
+                        <input type="radio" name="mode">
+                        <span class="light-checkmark dark-checkmark"></span>
                 </label>
 
                  <hr>
 
             </div>
-
-           <label class="container round-color-checkbox">
-            <input type="checkbox">
-            <span class="checkmark round-color-checkmark"></span>
-           </label>
-            <!------------- END OF COLOR-MODE  -->
+                     <!------------- END OF COLOR-MODE  -->
         
         </div>
     </div>
