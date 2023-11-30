@@ -25,6 +25,38 @@
 
   /* DO NOT REMOVE THE CODE ABOVE */
 
+  /* ...........START OF NOTIFICATION LIGHT PAGE */
+  .notification-body{
+    display: grid;
+    grid-template-columns: 310px auto;
+  }
+  .light-notification-page{
+    background-color: #DAD9D9;
+    padding:134px 0px 134px 53px;
+  }
+  .notification-page-item1{
+    width: 70%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  hr{
+    border: 1px solid #979797;
+    margin: 10px 0px 10px 0px;
+  }
+  /* ---------- START OF TOOGLE BUTTON----------- */
+  .toogle-button{
+    margin-left: auto;
+ }
+
+
+
+  /* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
+  
+/* .dark-notification-page{
+    background-color: #222020;
+  } */
+
   /* /-----------------------SIDE BAR -------------------------/ */
 :root {
   /* General */
@@ -48,6 +80,7 @@
   display: flex;
   flex-direction: column;
   gap: 41px;
+  position: fixed;
 }
 
 .light-sidebar-nav {

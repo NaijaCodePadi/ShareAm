@@ -25,6 +25,419 @@
 
   /* DO NOT REMOVE THE CODE ABOVE */
 
+  /* ------- COLOR SETTINGS PAGE -------- */
+
+/* --------FOR COLOR SETTINGS LIGHT MODE --> */
+
+.color-mode-body{
+  display: grid;
+  grid-template-columns: 310px auto;
+}
+
+.light-color-mode-display{
+  width: 100%;
+  padding:134px 0px 134px 53px;
+  background-color: #DAD9D9;
+}
+
+  /* ..............START OF PREVIEW DISPLAY */
+.preview-display{
+  text-align: left;
+  margin: 10px 0px 15px 10px;
+  padding: 10px;
+  width: 50%;
+  height: 228px;
+  border-radius: 6px;
+  background-color: rgb(248, 249, 250);
+}
+.bubble-chat p{
+  margin: 7px 0px 15px 0px;
+  padding: 10px 0px 10px 20px;
+  line-height: 40px;
+}
+.bubble-chat-right{
+  max-width: 40%;
+  margin-left: auto;
+}
+/* ..............END OF PREVIEW DISPLAY */
+
+/* ..............START OF COLOR PICK */
+.color-pick{
+  /* width: 100%; */
+  display: flex;
+  gap: 10px;
+}
+.color-pick-item1 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #CCF7FF;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item2 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FCE2D4;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item3 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFF1CC;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item4 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #CBFBD6;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item5 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #F9D7EC;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item6 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #DFDEF2;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item7 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #00D1FF;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item8 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #F9D7EC;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item9 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #D4F8FF;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item10 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item11 {
+  position: relative;
+  margin: 10px 0px 10px 0px ;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  display: block;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* ............Hide the browser's default checkbox */
+.color-pick-item1 input,
+.color-pick-item2 input,
+.color-pick-item3 input,
+.color-pick-item4 input,
+.color-pick-item5 input,
+.color-pick-item6 input,
+.color-pick-item7 input,
+.color-pick-item8 input,
+.color-pick-item9 input,
+.color-pick-item10 input,
+.color-pick-item11 input { 
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ............Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 20px;
+}
+
+/* ..........When the checkbox is checked, add a blue background */
+.color-pick-item1 input:checked ~ .checkmark1,
+.color-pick-item2 input:checked ~ .checkmark1,
+.color-pick-item3 input:checked ~ .checkmark1,
+.color-pick-item4 input:checked ~ .checkmark1,
+.color-pick-item5 input:checked ~ .checkmark1,
+.color-pick-item6 input:checked ~ .checkmark1,
+.color-pick-item7 input:checked ~ .checkmark1,
+.color-pick-item8 input:checked ~ .checkmark1,
+.color-pick-item9 input:checked ~ .checkmark1,
+.color-pick-item10 input:checked ~ .checkmark1,
+.color-pick-item11 input:checked ~ .checkmark1 {
+  background-color: #150AA1;
+  border: none;
+}
+
+/* ...........Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* ...........Show the checkmark when checked */
+.color-pick-item1 input:checked ~ .checkmark1:after, 
+.color-pick-item2 input:checked ~ .checkmark1:after, 
+.color-pick-item3 input:checked ~ .checkmark1:after, 
+.color-pick-item4 input:checked ~ .checkmark1:after, 
+.color-pick-item5 input:checked ~ .checkmark1:after, 
+.color-pick-item6 input:checked ~ .checkmark1:after, 
+.color-pick-item7 input:checked ~ .checkmark1:after, 
+.color-pick-item8 input:checked ~ .checkmark1:after, 
+.color-pick-item9 input:checked ~ .checkmark1:after, 
+.color-pick-item10 input:checked ~ .checkmark1:after, 
+.color-pick-item11 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* ............Style the checkmark/indicator */
+.color-pick-item1 .checkmark1:after,
+.color-pick-item2 .checkmark1:after,
+.color-pick-item3 .checkmark1:after,
+.color-pick-item4 .checkmark1:after,
+.color-pick-item5 .checkmark1:after,
+.color-pick-item6 .checkmark1:after,
+.color-pick-item7 .checkmark1:after,
+.color-pick-item8 .checkmark1:after,
+.color-pick-item9 .checkmark1:after,
+.color-pick-item10 .checkmark1:after,
+.color-pick-item11 .checkmark1:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ..............END OF COLOR PICK
+
+/* ..............START OF COLOR MODE */
+.color-mode,
+.accessible-mode {
+  margin: 15px 0px 10px 20px;
+}
+.color-mode h4{
+  margin-bottom: 10px;
+}
+
+.light-container {
+  margin: 30px 0px 40px 0px;
+  display: block;
+  position: relative;
+  padding: 7px 0px 0px 60px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* .........Hide the browser's default checkbox */
+.light-container input { 
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ..........Create a custom checkbox */
+.light-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+/* ......When the checkbox is checked, add a blue background */
+.light-container input:checked ~ .light-checkmark {
+  background-color: #150AA1;
+  border: none;
+}
+
+/* ...........Create the checkmark/indicator (hidden when not checked) */
+.light-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* ...........Show the checkmark when checked */
+.light-container input:checked ~ .light-checkmark:after {
+  display: block;
+}
+
+/* ..........Style the checkmark/indicator */
+.light-container .light-checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* ..............END OF COLOR MODE */
+hr{
+  border: 1px solid #979797;
+  margin: 0px 20px 10px 0px;
+}
+
+
+/*..............FOR COLOR PAGE DARK MODE */
+  
+/* .dark-color-mode-display{
+    background-color: #222020;
+  }
+  
+  hr{
+    border: 1px solid #ffffff;
+    margin: 0px 20px 10px 0px;
+  }
+  
+  .color-mode-item{
+    border: 1px solid #FFFFFF;
+    background-color: #DAD9D9;
+  }
+
+  .dark-checkmark {
+    border: 1px solid #FFF;
+    background-color: #DAD9D9;
+  }
+  
+  .color-mode12{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .dark-container input:checked ~ .dark-checkmark {
+  background-color: #150AA1;
+  border: none;
+} */
+
+  /* ..............END OF COLOR SETTINGS PAGE */
+
   /* /-----------------------SIDE BAR -------------------------/ */
 :root {
   /* General */
@@ -48,6 +461,7 @@
   display: flex;
   flex-direction: column;
   gap: 41px;
+  position: fixed;
 }
 
 .light-sidebar-nav {
