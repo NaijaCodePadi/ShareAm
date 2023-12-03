@@ -167,3 +167,35 @@ a.light-active-menu svg {
     a.dark-active-menu svg {
       color: var(--dm-active-menu);
     }
+
+
+     /* ------------------------------------texts styes --------------------------- */
+    /* NAVBAR */
+    .light-nav-texts {
+      color: rgba(169, 169, 169, 0.90);
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .Dark-nav-texts {
+      color: #A9A9A9;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 500;
+  }
+
+  .dark-nav-texts-active {
+      color: #FFFCFC;
+      font-family: Poppins-regular;
+      font-size: 16px;
+      font-weight: 700;
+  }
+  .light-nav-texts-active { 
+      color: rgba(34, 32, 32, 0.90);
+      font-family: Poppins-regular;
+      font-size: 16px;
+      font-weight: 700;
+
+  }
