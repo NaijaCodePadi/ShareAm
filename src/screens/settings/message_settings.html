@@ -2,23 +2,27 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello ShareAm!</title>
-    <link rel="stylesheet" href="../../screens/settings/css/message_settings.css" />
+    <title>Message_settings | ShareAm</title>
+    <link rel="stylesheet" href="css/message_settings.css" />
   </head>
   <body>
-    <!-- ------------HTML FOR SIDEBAR LIGHT MODE --------------- -->
-    <div class="light-sidebar-container">
-      <nav class="light-sidebar-nav sidebar-nav">
+    <div class="message">
+    <!-- ------------ HTML FOR SIDEBAR --------------- -->
+    <div class="sidebar-container">
+      <nav class="sidebar-nav light-sidebar-nav">
+
         <header>
           <a href="#">
             <img
-              class="light-prof-pic"
-              src="../../assets/icons/profile-pic.svg"
+              class="prof-pic"
+              src="../../assets/images/eth portrait 1.png"
               alt="user profile picture"
-          /></a>
+          />
+        </a>
         </header>
-        <div class="light-nav-link-container nav-link-container">
-          <a class="light-menu-link" href="#">
+
+        <div class="nav-link-container light-nav-link-container">
+          <a class="menu-link" href="../dashboard/dashboard.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -45,7 +49,7 @@
             Home
           </a>
           
-          <a class="light-menu-link" href="../settings/profile.html">
+          <a class="menu-link" href="../settings/profile.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -62,7 +66,7 @@
             My profile
         </a>
 
-          <a class="light-menu-link light-active-menu" href="../settings/message_settings.html">
+          <a class="menu-link light-active-menu" href="../settings/message_settings.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -80,7 +84,7 @@
             Message</a
           >
 
-          <a class="light-menu-link" href="../settings/privacy_settings.html">
+          <a class="menu-link" href="../settings/contact_settings.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
@@ -89,27 +93,70 @@
               height="20"
               x="0"
               y="0"
-              viewBox="0 0 24 24"
+              viewBox="0 0 32 32"
               style="enable-background: new 0 0 512 512"
               xml:space="preserve"
               class=""
             >
-              <g>
+              <g
+                transform="matrix(0.9999999999999973,2.449293598294702e-16,-2.449293598294702e-16,0.9999999999999973,4.085620730620576e-14,3.019806626980426e-14)"
+              >
                 <path
+                  d="M24 3H8C5.243 3 3 5.243 3 8v16c0 2.757 2.243 5 5 5h16c2.757 0 5-2.243 5-5V8c0-2.757-2.243-5-5-5zm-7.997 4.826c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4zM22 24.522H10a1 1 0 0 1-1-1c0-3.86 3.141-7 7-7s7 3.14 7 7a1 1 0 0 1-1 1z"
                   fill="currentColor"
-                  fill-rule="evenodd"
-                  d="M18 6v2h1a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3h1V6a6 6 0 1 1 12 0zm-2 2H8V6a4 4 0 1 1 8 0zm-4 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
-                  clip-rule="evenodd"
                   opacity="1"
                   data-original="#000000"
                   class=""
                 ></path>
               </g>
             </svg>
-            Privacy
-          </a>
+            Contacts</a
+          >
 
-          <a class="light-menu-link" href="../settings/media_settings.html">
+          <a class="menu-link" href="../settings/call_settings.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20"
+              height="20"
+              x="0"
+              y="0"
+              viewBox="0 0 108.27 108.27"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="M51.954 66.588c-9.284-7.634-15.483-17.054-18.742-22.414l-2.431-4.583c.85-.912 7.332-7.853 10.141-11.619 3.53-4.729-1.588-9-1.588-9S24.933 4.569 21.651 1.712C18.369-1.149 14.591.44 14.591.44 7.693 4.897.542 8.772.113 27.408.097 44.856 13.342 62.852 27.665 76.784c14.346 15.734 34.043 31.504 53.086 31.486 18.634-.425 22.508-7.575 26.965-14.473 0 0 1.59-3.775-1.268-7.06-2.86-3.284-17.265-17.688-17.265-17.688s-4.268-5.119-8.998-1.586c-3.525 2.635-9.855 8.496-11.38 9.917.003.005-10.586-5.64-16.851-10.792z"
+                  fill="currentColor"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+              </g>
+            </svg>
+            Calling</a
+          >
+
+          <a class="menu-link" href="../settings/notification.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="20px"
+              width="20px"
+              viewBox="0 0 448 512"
+              class="icon"
+            >
+              <path
+                d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
+                fill="currentColor"
+              />
+            </svg>
+            Notifications</a
+          >
+
+          <a class="menu-link" href="../settings/media_settings.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               version="1.1"
@@ -143,120 +190,7 @@
             Settings</a
           >
 
-          <a class="light-menu-link" href="../settings/contact_settings.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="20"
-              height="20"
-              x="0"
-              y="0"
-              viewBox="0 0 32 32"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              class=""
-            >
-              <g
-                transform="matrix(0.9999999999999973,2.449293598294702e-16,-2.449293598294702e-16,0.9999999999999973,4.085620730620576e-14,3.019806626980426e-14)"
-              >
-                <path
-                  d="M24 3H8C5.243 3 3 5.243 3 8v16c0 2.757 2.243 5 5 5h16c2.757 0 5-2.243 5-5V8c0-2.757-2.243-5-5-5zm-7.997 4.826c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4zM22 24.522H10a1 1 0 0 1-1-1c0-3.86 3.141-7 7-7s7 3.14 7 7a1 1 0 0 1-1 1z"
-                  fill="currentColor"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-              </g>
-            </svg>
-            Contacts</a
-          >
-
-          <a class="light-menu-link" href="../settings/call_settings.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="20"
-              height="20"
-              x="0"
-              y="0"
-              viewBox="0 0 108.27 108.27"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              class=""
-            >
-              <g>
-                <path
-                  d="M51.954 66.588c-9.284-7.634-15.483-17.054-18.742-22.414l-2.431-4.583c.85-.912 7.332-7.853 10.141-11.619 3.53-4.729-1.588-9-1.588-9S24.933 4.569 21.651 1.712C18.369-1.149 14.591.44 14.591.44 7.693 4.897.542 8.772.113 27.408.097 44.856 13.342 62.852 27.665 76.784c14.346 15.734 34.043 31.504 53.086 31.486 18.634-.425 22.508-7.575 26.965-14.473 0 0 1.59-3.775-1.268-7.06-2.86-3.284-17.265-17.688-17.265-17.688s-4.268-5.119-8.998-1.586c-3.525 2.635-9.855 8.496-11.38 9.917.003.005-10.586-5.64-16.851-10.792z"
-                  fill="currentColor"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-              </g>
-            </svg>
-            Calling</a
-          >
-
-          <a class="light-menu-link" href="../settings/color_settings.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="20"
-              height="20"
-              x="0"
-              y="0"
-              viewBox="0 0 64 64"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              class=""
-            >
-              <g transform="matrix(1,0,0,1,0,3.552713678800501e-15)">
-                <path
-                  d="M18 41.345A17.466 17.466 0 0 1 13 29c0-9.389 7.163-17 16-17a15.6 15.6 0 0 1 12.2 6zM6 59a1 1 0 0 1-.707-1.707l52-52a1 1 0 1 1 1.414 1.414l-52 52A1 1 0 0 1 6 59zM13 14a1 1 0 0 1-.707-.293l-4-4a1 1 0 0 1 1.414-1.414l4 4A1 1 0 0 1 13 14zM7 30H1a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM9 50a1 1 0 0 1-.707-1.707l4-4a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 9 50zM45 14a1 1 0 0 1-.707-1.707l4-4a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 45 14zM29 8a1 1 0 0 1-1-1V1a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1zM62.97 50.137A16.093 16.093 0 1 1 42.252 32a13.833 13.833 0 0 0-1.744 6.73 14.116 14.116 0 0 0 14.216 14 14.276 14.276 0 0 0 8.246-2.593zM56 33h-4a1 1 0 0 1 0-2h4a1 1 0 0 1 0 2z"
-                  fill="currentColor"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-                <path
-                  d="M54 35a1 1 0 0 1-1-1v-4a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zM63 44h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2z"
-                  fill="currentColor"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-                <path
-                  d="M60 47a1 1 0 0 1-1-1v-6a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1z"
-                  fill="currentColor"
-                  opacity="1"
-                  data-original="#000000"
-                  class=""
-                ></path>
-              </g>
-            </svg>
-            Color Mode</a
-          >
-
-          <a class="light-menu-link" href="../settings/notification.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20px"
-              width="20px"
-              viewBox="0 0 448 512"
-              class="icon"
-            >
-              <path
-                d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
-                fill="currentColor"
-              />
-            </svg>
-            Notifications</a
-          >
-
-          <a class="light-menu-link" href="#">
+          <a class="menu-link" href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="23"
@@ -275,5 +209,8 @@
         </div>
       </nav>
     </div>
+
+    <div class="mainbody"></div>
+  </div>
   </body>
 </html>
