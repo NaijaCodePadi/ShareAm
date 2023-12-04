@@ -224,3 +224,32 @@ a.light-active-menu svg {
       font-weight: 700;
 
   }
+  /* -------profile texts styles------- */
+
+  /* ------footer------ */
+  
+.mainbody >
+.links
+p, a {
+  color: #000000;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; 
+  text-decoration: none;
+}
+/* .footer-texts {
+    color: #000000;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; 
+} */
+.footer-share-text {
+    color: #0021f5;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
