@@ -677,3 +677,48 @@ a.light-active-menu svg {
       font-weight: 700;
 
   }
+
+/* -----color texts------- */
+.dark-menu-title-texts-mode {
+  color: #0389E1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-menu-title-texts-mode {
+  color: #150AA1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.chat-text {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-color-text-mode {
+  color: #150AA1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dark-color-text-mode {
+  color: #0389E1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dark-preview-subtitle-text-mode {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.light-preview-subtitle-text-mode {
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+
+}
