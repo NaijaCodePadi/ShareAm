@@ -197,5 +197,30 @@ a.light-active-menu svg {
       font-family: Poppins-regular;
       font-size: 16px;
       font-weight: 700;
-
   }
+
+  /* --------notification texts------- */
+  .dark-menu-title-texts-mode {
+    color: #0389E1;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .light-menu-title-texts-mode {
+    color: #150AA1;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .dark-menu-subtitle-texts-mode {
+    color: #FFFCFC;
+    font-family: Poppins-medium;
+    font-size: 14px;
+    font-weight: 400;
+}
+.light-menu-subtitle-texts-mode {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
