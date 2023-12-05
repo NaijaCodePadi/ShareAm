@@ -34,34 +34,35 @@
 
   .landing-page-container {
     display: flex;
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     height: 900px;
     flex-shrink: 0;
   }
 
   .section1-div1{
     display: flex;
-    width: 503px;
+    width: 100%;
     align-items: center;
-    gap: 159px;
+    justify-content: space-between;
   }
 
   .section1-div1-left{
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 20px;
   }
   
   .section1-div1-left-profile-pic{
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    position: relative;
   }
 
   #green-circle{
-    position: relative;
-    right: 35px;
-    top: 75px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
   }
   
   .section1-div1-left-new-user{
@@ -71,17 +72,19 @@
   .section1-div1-right{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
   
   .section1-div2{
     display: flex;
+    width: 95%;
     align-items: center;
-    gap: 29px;
+    justify-content: space-between;
   }
   
   .section1-div2-left{
       display: flex;
+      width: 80%;
       gap: 46px;
       align-items: center;
   }
@@ -98,13 +101,13 @@
 
   .section2-container{
     display: flex;
-    width: 468px;
-    margin: 26px 32.5px 37px 32.5px;
-    padding: 0 1px;
+    width: 100%;
+    padding:26px 0 15px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 36px;
+    /* border: 1px red solid; */
   }
   
   .section2-div1{
@@ -125,20 +128,19 @@
   }
   
   .section2-div1-nav-icon-div{
-    width: 31px;
+    position: relative;
     height: 31px;
   }
   
   #red-circle{
-    position: relative;
-    right: -24px;
-    top: -34px;
+    position: absolute;
+    right: -1.571px;
+    top: 4px;
   }
   
   .section2-div2{
     display: flex;
     height: 34px;
-    padding: 2px 29.5px 0px 13.5px;
     align-items: flex-start;
     gap: 23px;
   }
@@ -151,7 +153,6 @@
     display: flex;
     align-items: center;
     gap: 36px;
-    width: 200px;
     height: 34px;
     padding: 5px 12.5px;
     border-radius: 15px;
@@ -166,7 +167,6 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    width: 200px;
     height: 34px;
     padding: 5px 12.5px;
     border-radius: 15px;
@@ -178,19 +178,20 @@
   }
 
   .section3-container{
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 13px;
+    border-top: 1px solid #CECECE;
   }
   
   .section3-div1{
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 34px;
-    padding: 37px 300px 13px 41px;
-    width: 100%;
-    border-top: 1px solid #CECECE;
+    padding: 34px 0 0 41px;
   }
   
   .section3-div1 h5{
@@ -219,14 +220,12 @@
   }
   
   .section3-div2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 0 113px 82px 90px;
+    width: 100%;
+    padding: 0 0 82px 90px;
   }
   
   .section3-div2 h2{
+    margin-bottom: 8px;
     color: #0272BC;
   }
   
@@ -234,23 +233,13 @@
     color: #979797;
   }
 
-  .section4-text-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  
   .section4-share-am-div{
     display: flex;
     align-items: center;
-    gap: 140px;
+    justify-content: flex-start;
+    gap:80px;
   }
   
-  .section4-share-am-div img{
-    margin-left: -200px;
-  }
   
   .section4-share-am-div h1{
     color: #fff;
@@ -261,6 +250,7 @@
   }
   
   .section4-text-div p{
+    margin-left: 46px;
     color: #E4EDF6;
   }
   
@@ -282,16 +272,16 @@
 
 
   .light-landing-page-left-side{
-    width: 533px;
+    width: 38%;
     height: 906px;
     flex-shrink: 0;
   }
 
   .light-section1-container{
     display: flex;
-    width: 533px;
+    width: 100%;
     height: 231px;
-    padding: 21px 24px;
+    padding: 21px 13px 21px 24px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
@@ -301,23 +291,21 @@
   
   .light-profile-pic-intials{
     position: absolute;
-    left: 55px;
-    top: 55px;
+    left: 33px;
+    top: 38px;
     color: #FFF;
   }
   
   .light-section4-container{
     display: flex;
-    width: 533px;
-    height: 128px;
+    width: 100%;
+    /* height: 128px; */
     padding: 0px 15px;
-    margin-top: 10px;
     align-items: center;
-    justify-content: center;
     gap: 0px 119px;
     flex-shrink: 0;
     flex-wrap: wrap;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
     background: #22074A;
   }
 
@@ -326,7 +314,7 @@
   /*----DARK MODE FOR LANDING PAGE LEFT SIDE----*/
 
   .dark-landing-page-left-side{
-    width: 533px;
+    /* width: 533px; */
     height: 906px;
     flex-shrink: 0;
     background: #1F201F;
@@ -335,9 +323,9 @@
 
   .dark-section1-container{
     display: flex;
-    width: 533px;
+    width: 100%;
     height: 231px;
-    padding: 21px 24px;
+    padding: 21px 13px 21px 24px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;
@@ -354,7 +342,7 @@
 
   .dark-section4-container{
     display: flex;
-    width: 533px;
+    /* width: 533px; */
     height: 128px;
     padding: 0px 15px;
     margin-top: 10px;
@@ -390,10 +378,15 @@
 
 .light-landing-page-card,
 .dark-landing-page-card {
+  width: 62%;
+  /* height: 100%; */
+}
+
+.landing-page-card-container{
+  width: 95%;
   display: flex;
   flex-direction: column;
   padding-left: 38px;
-  padding-right: 81px;
   padding-top: 55.5px;
   gap: 7.5px;
 }
@@ -406,6 +399,7 @@
 }
 
 .light-section-1-container {
+ 
   display: flex;
   gap: 25px;
   align-items: self-end;
@@ -468,19 +462,22 @@
 }
 
 .light-section-3-container {
+  width: 100%;
   display: flex;
-  gap: 61px;
+  justify-content: space-between;
   padding-bottom: 30.5px;
 }
 
 .light-call-to-action-section {
+  width: 44%;
   height: 340px;
   margin-top: 74.5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 139px;
+  column-gap: 102px;
   row-gap: 28px;
+  justify-content: space-between;
 }
 
 .light-cta-text {
@@ -489,12 +486,12 @@
 }
 
 .light-cta-icon-box {
+  width: 108px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 11px;
-  width: 108px;
 }
 
 .light-cta-icon-box-1 {
@@ -507,6 +504,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 108px;
+  height: 100px;
 }
 
 .light-action-txt-box {
@@ -522,7 +521,7 @@
 
 .light-time-date-section {
   display: grid;
-  width: 372px;
+  width: 46%;
   height: 488px;
   grid-template-rows: 202px 1fr;
 }
@@ -541,9 +540,8 @@
 }
 
 .light-time-date {
-  width: 298px;
   display: flex;
-  gap: 50px;
+  gap: 40px;
   align-items: flex-end;
   position: absolute;
   left: 35px;
@@ -552,7 +550,7 @@
 }
 
 .light-time-date-text {
-  width: 200px;
+  width: 180px;
   flex-shrink: 0;
 }
 
@@ -579,8 +577,9 @@
 }
 
 .light-section-4-container {
-  margin: 35px 0 74.5px 0;
   display: grid;
+  width: 100%;
+  margin: 35px 0 0 0;
   row-gap: 3px;
   grid-template-columns: 1fr auto;
   align-items: center;
