@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="../../screens/dashboard/css/dashboard.css" />
   </head>
   <body>
-    <section class="landing-page-container">
-      <div class="light-landing-page-left-side dark-landing-page-left-side">
-        <div class="light-section1-container dark-section1-container">
+    <div class="landing-page-container">
+      <section class="light-landing-page-left-side">
+        <div class="light-section1-container">
           <div class="section1-div1">
             <div class="section1-div1-left">
               <div class="section1-div1-left-profile-pic">
@@ -18,7 +18,7 @@
                 <svg id="green-circle" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                   <circle cx="7" cy="7" r="6.75" fill="#3CEA43" stroke="white" stroke-width="0.5"/>
                 </svg>
-                <p class="light-profile-pic-intials dark-profile-pic-intials">NU</p>
+                <p class="light-profile-pic-intials">NU</p>
               </div>
               <div class="section1-div1-left-new-user">
                 <h3>New User</h3>
@@ -26,6 +26,7 @@
               </div>
             </div>
             <div class="section1-div1-right">
+              <div class="toogle-btn"></div>
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
                 <path d="M6.5 16C7.52491 16 8.35627 15.1047 8.35627 14H4.64373C4.64373 15.1047 5.47509 16 6.5 16ZM12.7501 11.3216C12.1895 10.6728 11.1405 9.69687 11.1405 6.5C11.1405 4.07188 9.55963 2.12812 7.42799 1.65125V1C7.42799 0.447812 7.01245 0 6.5 0C5.98755 0 5.57201 0.447812 5.57201 1V1.65125C3.44037 2.12812 1.85948 4.07188 1.85948 6.5C1.85948 9.69687 0.810486 10.6728 0.249863 11.3216C0.0757564 11.5231 -0.00143083 11.7641 2.00625e-05 12C0.00321202 12.5125 0.376671 13 0.93149 13H12.0685C12.6233 13 12.9971 12.5125 13 12C13.0014 11.7641 12.9242 11.5228 12.7501 11.3216Z" fill="#D9D9D9"/>
               </svg>
@@ -53,25 +54,25 @@
         </div>
         <div class="section2-container">
           <div class="section2-div1">
-            <div class="section2-div1-nav">
+            <a href="#" class="section2-div1-nav">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                 <path d="M12.5001 0.285645C5.81259 0.285645 0.392578 5.62939 0.392578 12.2244C0.392578 15.0714 1.40469 17.6772 3.08839 19.7263C2.49721 22.6192 0.520275 25.1964 0.496627 25.2251C0.392578 25.3571 0.364201 25.5522 0.425685 25.7244C0.487168 25.8966 0.619594 25.9999 0.770938 25.9999C3.9066 25.9999 6.25716 24.1747 7.42062 23.0497C8.96716 23.7557 10.684 24.1632 12.5001 24.1632C19.1876 24.1632 24.6076 18.8194 24.6076 12.2244C24.6076 5.62939 19.1876 0.285645 12.5001 0.285645Z" fill="#0272BC"/>
               </svg>
               <p>Chats</p>
-            </div>
-            <div class="section2-div1-nav">
+            </a>
+            <a href="#" class="section2-div1-nav">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18" fill="none">
                 <path d="M14.592 0L2.07465 0C0.928819 0 0 1.00313 0 2.24063L0 15.7594C0 16.9969 0.928819 18 2.07465 18H14.592C15.7378 18 16.6667 16.9969 16.6667 15.7594V2.24063C16.6667 1.00313 15.7378 0 14.592 0ZM22.8125 1.76719L18.0556 5.31094V12.6891L22.8125 16.2281C23.7326 16.9125 25 16.2141 25 15.0187V2.97656C25 1.78594 23.737 1.08281 22.8125 1.76719Z" fill="#979797"/>
               </svg>
               <p>Calls</p>
-            </div>
-            <div class="section2-div1-nav">
+            </a>
+            <a href="#" class="section2-div1-nav">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
                 <path d="M12.5001 13.1428C16.3215 13.1428 19.4187 10.265 19.4187 6.71422C19.4187 3.16343 16.3215 0.285645 12.5001 0.285645C8.67866 0.285645 5.58152 3.16343 5.58152 6.71422C5.58152 10.265 8.67866 13.1428 12.5001 13.1428ZM17.3431 14.7499H16.4404C15.2405 15.2622 13.9054 15.5535 12.5001 15.5535C11.0948 15.5535 9.7651 15.2622 8.55975 14.7499H7.65709C3.64647 14.7499 0.392578 17.7734 0.392578 21.4999L0.392578 23.5892C0.392578 24.9201 1.55468 25.9999 2.98705 25.9999H22.0132C23.4455 25.9999 24.6076 24.9201 24.6076 23.5892V21.4999C24.6076 17.7734 21.3537 14.7499 17.3431 14.7499Z" fill="#979797"/>
               </svg>
               <p>Contacts</p>
-            </div>
-            <div class="section2-div1-nav">
+            </a>
+            <a href="#" class="section2-div1-nav">
               <div class="section2-div1-nav-icon-div">
                 <img src="../../assets/icons/b5e6be93-7cb9-469c-8bd1-bb2e708164bf-removebg-preview 1.svg" alt="">
                 <svg id="red-circle" xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9" fill="none">
@@ -80,7 +81,7 @@
                 </svg>
               </div>
               <p>Today</p>
-            </div>
+            </a>
           </div>
           <div class="section2-div2">
             <a href="" class="meet-now-btn">
@@ -121,7 +122,7 @@
             </svg> Search to find anyone on ShareAm</p>
           </div>
         </div>
-        <div class="light-section4-container dark-section4-container">
+        <div class="light-section4-container">
           <div class="section4-text-div">
             <div class="section4-share-am-div">
               <img src="../../assets/icons/001 1.svg" alt="">
@@ -133,9 +134,11 @@
           <img class="section4-img2" src="../../assets/icons/worldwide-location.svg" alt="">
           <img class="section4-img3" src="../../assets/icons/chat-room.svg" alt="">
         </div>
-      </div>
-      <div class="light-landing-page-card">
-        <section class="light-section-1-container">
+      </section>
+
+      <section class="light-landing-page-card">
+        <div class="landing-page-card-container">
+        <div class="light-section-1-container">
           <div class="light-profile-pic-box">
             <div class="light-profile-pic">
               <svg
@@ -179,8 +182,8 @@
             <p class="light-welcome-txt">Welcome!</p>
             <p class="light-new-user-txt">New user</p>
           </div>
-        </section>
-        <section class="light-section-2-container">
+        </div>
+        <div class="light-section-2-container">
           <div class="light-popup-notification">
             <div class="light-verified-icon">
               <svg
@@ -219,9 +222,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="light-section-3-container">
+        <div class="light-section-3-container">
           <div class="light-call-to-action-section">
             <p class="light-cta-text">
               Here are some actions to get you started
@@ -430,9 +433,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
-        <section class="light-section-4-container">
+        <div class="light-section-4-container">
           <p class="light-new-user-email-txt">
             You signed in as
             <span class="light-new-user-email-address">
@@ -450,8 +453,9 @@
           <div class="light-cta-learn">
             <a href="#" class="light-learn-txt">Learn more</a>
           </div>
-        </section>
+        </div>
       </div>
-    </section>
+      </section>
+    </div>
   </body>
 </html>
