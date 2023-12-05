@@ -95,18 +95,11 @@
   gap: 1rem;
 }
 
-/* .light-signup-container .light-signup-form-wrapper h2 {
-  color: #150aa1;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-} */
+
 
 .light-signup-container .light-signup-form-wrapper form {
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
   gap: 2rem;
 }
 
@@ -248,7 +241,6 @@
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 400;
-  /* padding-left: 0.5rem; */
 }
 
 
