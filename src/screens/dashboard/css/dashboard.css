@@ -34,9 +34,8 @@
 
   .landing-page-container {
     display: flex;
-    /* width: 1440px; */
     width: 100%;
-    height: 900px;
+    height: 100%;
     flex-shrink: 0;
   }
 
@@ -107,7 +106,6 @@
     justify-content: center;
     align-items: center;
     gap: 36px;
-    /* border: 1px red solid; */
   }
   
   .section2-div1{
@@ -213,7 +211,7 @@
     align-items: center;
     justify-content: center;
     width: 40px;
-    height: 40px;
+    /* height: 40px; */
     border-radius: 3.5px;
     background: #CFDAE2;
     color: #fff;
@@ -273,14 +271,11 @@
 
   .light-landing-page-left-side{
     width: 38%;
-    height: 906px;
-    flex-shrink: 0;
   }
 
   .light-section1-container{
     display: flex;
     width: 100%;
-    height: 231px;
     padding: 21px 13px 21px 24px;
     flex-direction: column;
     align-items: flex-start;
@@ -299,7 +294,6 @@
   .light-section4-container{
     display: flex;
     width: 100%;
-    /* height: 128px; */
     padding: 0px 15px;
     align-items: center;
     gap: 0px 119px;
@@ -379,11 +373,11 @@
 .light-landing-page-card,
 .dark-landing-page-card {
   width: 62%;
-  /* height: 100%; */
 }
 
 .landing-page-card-container{
-  width: 95%;
+  width: 96%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-left: 38px;
@@ -399,18 +393,19 @@
 }
 
 .light-section-1-container {
- 
+  width: 216px;
+  height: 90px;
   display: flex;
   gap: 25px;
   align-items: self-end;
 }
 
-.light-profile-pic-box {
+.light-profile-pic-box, .light-profile-pic, .light-profile-pic svg {
   position: relative;
+  height: 90px;
 }
-
-.light-profile-pic {
-  position: relative;
+.light-profile-pic, .light-profile-pic svg {
+  width: 90px;
 }
 
 .light-profile-pic .new-user-initials {
@@ -421,8 +416,9 @@
 
 .light-online-status {
   position: absolute;
-  right: 7px;
-  bottom: 7px;
+  height: 14px;
+  right: 5px;
+  bottom: 5px;
 }
 
 .light-welcome-box {
@@ -432,6 +428,7 @@
 }
 .light-section-2-container {
   display: flex;
+  width: 100%;
   height: 49px;
   align-items: center;
 }
@@ -440,8 +437,7 @@
   display: flex;
   height: 45px;
   align-items: center;
-  padding: 0px 20px;
-  margin-left: 96px;
+  padding: 0px 20px 0 116px;
   gap: 32px;
 }
 
@@ -450,12 +446,13 @@
 }
 
 .light-popup-message {
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 14px;
-  height: 28px;
 }
+
 .light-close-popup-btn {
   height: 28px;
   cursor: pointer;
@@ -463,7 +460,9 @@
 
 .light-section-3-container {
   width: 100%;
+  height: 488px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   padding-bottom: 30.5px;
 }
@@ -471,11 +470,9 @@
 .light-call-to-action-section {
   width: 44%;
   height: 340px;
-  margin-top: 74.5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 102px;
+  column-gap: 90px;
   row-gap: 28px;
   justify-content: space-between;
 }
@@ -486,10 +483,11 @@
 }
 
 .light-cta-icon-box {
-  width: 108px;
+  width: auto;
+  height: 129px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 11px;
 }
@@ -522,13 +520,16 @@
 .light-time-date-section {
   display: grid;
   width: 46%;
-  height: 488px;
-  grid-template-rows: 202px 1fr;
+  height: 457.5px;
+  grid-template-rows: 180px 1fr;
 }
 
 .light-time-date-box,
 .dark-time-date-box {
-  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
 
@@ -540,13 +541,13 @@
 }
 
 .light-time-date {
+  width: 92%;
   display: flex;
-  gap: 40px;
+  gap: 35px;
   align-items: flex-end;
-  position: absolute;
-  left: 35px;
-  bottom: 18px;
   overflow-x: hidden;
+  margin:0 0 18px 32px ;
+  
 }
 
 .light-time-date-text {
