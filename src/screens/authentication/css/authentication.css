@@ -4,7 +4,6 @@
   padding: 0;
   margin: 0;
 }
-
 @font-face {
   font-family: poppins-bold;
   src: url(../fonts/Poppins-Bold.ttf);
@@ -21,175 +20,304 @@
   font-family: Rubik;
   src: url(../fonts/Rubik-VariableFont_wght.ttf);
 }
-
 /* DO NOT REMOVE THE CODE ABOVE */
-
 /* Sign Up Screen & Log In -- Light Mode */
 .light-signup-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #dad9d9;
-  }
-  
-  .light-signup-container .light-signup-splash {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #22074a;
-    padding: 0 20px;
-    width: 40%;
-    height: 100%;
-  }
-  
-  .light-signup-container .light-signup-splash .light-signup-splash-logo img {
-    width: 355px;
-    height: 423px;
-  }
-  
-  .light-signup-container .light-signup-splash .light-signup-splash-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    position: relative;
-    top: -20px;
-  }
-  
-  .light-signup-container
-    .light-signup-splash
-    .light-signup-splash-text
-    .light-signup-splash-text-heading {
-    color: #fff;
-    text-align: center;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-  
-  .light-signup-container
-    .light-signup-splash
-    .light-signup-splash-text
-    .light-signup-splash-text-heading
-    span {
-    color: #6f3fe3;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-  
-  .light-signup-container
-    .light-signup-splash
-    .light-signup-splash-text
-    .light-signup-splash-text-pg {
-    color: #e4edf6;
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  
-  .light-signup-container .light-signup-form-wrapper {
-    width: 60%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .light-signup-container .light-signup-form-wrapper h2 {
-    color: #150aa1;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  
-  .light-signup-container .light-signup-form-wrapper form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .light-signup-form-wrapper form .full-name,
-  .user-name,
-  .email,
-  .password,
-  .confirm-password {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .light-signup-form-wrapper form > div label {
-    color: rgba(34, 32, 32, 0.9);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .light-signup-container .light-signup-form-wrapper .light-socials,
-  .login-google,
-  .login-facebook {
-    display: flex;
-    align-items: center;
-  }
-  
-  .light-signup-container .light-signup-form-wrapper .light-socials {
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  
-  .light-signup-form-wrapper p{
-    width: 354px;
-    height: 54px;
-  }
-  
-  .login-google,
-  .login-facebook {
-    gap: 0.5rem;
-    padding: 7px 10px;
-    width: 203px;
-    height: 40px;
-    justify-content: center;
-    background: #F1F1F1;
-    border-radius: 4px;
-  }
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #dad9d9;
+}
+.light-signup-container .light-signup-splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #22074a;
+  padding: 0 20px;
+  width: 40%;
+  height: 100%;
+}
+.light-signup-container .light-signup-splash .light-signup-splash-logo img {
+  width: 355px;
+  height: 423px;
+}
+.light-signup-container .light-signup-splash .light-signup-splash-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  top: -20px;
+}
+.light-signup-container
+  .light-signup-splash
+  .light-signup-splash-text
+  .light-signup-splash-text-heading {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.light-signup-container
+  .light-signup-splash
+  .light-signup-splash-text
+  .light-signup-splash-text-heading
+  span {
+  color: #6f3fe3;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.light-signup-container
+  .light-signup-splash
+  .light-signup-splash-text
+  .light-signup-splash-text-pg {
+  color: #e4edf6;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.light-signup-container .light-signup-form-wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
 
-  .signup-btn{
-    display: flex;
-    width: 393px;
-    padding: 12px 13px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 18px;
-    background: #1058E8;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    border: none;
-  }
 
-  .login-btn{
-    display: flex;
-    width: 393px;
-    padding: 12px 21px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 10px;
-    background: #1058E8;
-    color: #FFF;
-    font-weight: 600;
-    font-size: 16px;
-    border: none;
-  }
+
+.light-signup-container .light-signup-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.light-signup-form-wrapper form .full-name,
+.user-name,
+.email,
+.password,
+.confirm-password,
+.enter-number {
+  display: flex;
+  flex-direction: column;
+}
+.light-signup-form-wrapper form > div label {
+  color: rgba(34, 32, 32, 0.9);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.light-signup-container .light-signup-form-wrapper .light-socials,
+.light-google,
+.light-facebook {
+  display: flex;
+  align-items: center;
+}
+.light-signup-container .light-signup-form-wrapper .light-socials {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.light-signup-form-wrapper p {
+  width: 354px;
+  height: 54px;
+}
+.light-google,
+.light-facebook {
+  gap: 0.5rem;
+  padding: 7px 10px;
+  width: 203px;
+  justify-content: center;
+}
+/* ---------------------------------Texts style--------------------------- */
+/* splash page */
+/* has same color as the light mode */
+.splash-text-heading {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 50px;
+  font-weight: 800;
+}
+.splash-text-heading > span {
+  color: #6f3fe3;
+}
+.splash-subtitle-text {
+  color: #e4edf6;
+  font-family: Poppins-regular;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* login page */
+.light-signup-container 
+.light-login-text {
+  color: #0272bc;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.dark-login-text {
+  color: #048ad7;
+  font-family: Poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.light-login-label-texts {
+  color: #585858;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.dark-login-label-text {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-login-subtitle-text {
+  color: #585858;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dark-login-subtitle-text {
+  color: #fff;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-login-subtitle-text > a {
+  color: #150aa1;
+  font-weight: 600;
+}
+.dark-login-subtitle-text > a {
+  color: #048ad7;
+  font-weight: 600;
+}
+.login-option {
+  color: #7b7b7b;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.login-option > span {
+  color: #595959;
+  font-size: 16px;
+  font-weight: 500;
+}
+.logUp-btn-texts {
+  color: #7b7b7b;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-reset-password-subtitle-text-mode {
+  color: #000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.dark-reset-password-subtitle-text-mode {
+  color: rgba(255, 252, 252, 0.9);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+.password-input-text {
+  color: #a9a9a9;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* ----------------------------------optimazing login page styles //Osita ------------------------- */
+
+
+
+/*  ----------login password page--------------------  */
+.light-signup-container >
+.light-signup-form-wrapper >
+.login-form
+{
+  gap: 0.5rem;
+  width: 399px;
+}
+
+.password {
+  position: relative;
+}
+
+.light-signup-form-wrapper
+.login-input {
+  width: 100%;
+  height: 51px;
+  border-radius: 10px;
+  border: 1px solid #E4E4E4;
+  background: #F1F1F1;
+  padding-left: 0.5rem;
+}
+.light-signup-form-wrapper
+.password
+.open-eye-icon {
+  width: 19px;
+  height: 13px;
+  position: absolute;
+  right: 11.55px;
+  bottom: 19.5px;
+}
+.login-password-subtitle {
+  display: flex;
+}
+.stay-signed-in {
+  display: flex;
+  justify-content: center;
+  margin-left: 2px;
+}
+
+.check-rectangle {
+  width: 9px;
+  height: 9px;
+  border: 0.5px solid #585858;
+  background: rgba(255, 255, 255, 0.87);
+}
+.stay-signed-in-text {
+  color: #585858;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*  ----------forget password page--------------------  */
+.light-signup-container >
+.light-signup-form-wrapper >
+.forget-password-form
+{
+  margin-top: 32px;
+}
+
+.forget-password {
+  color: #7B7B7B;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  margin-left: auto;
+}
