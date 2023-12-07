@@ -26,44 +26,60 @@
   /* DO NOT REMOVE THE CODE ABOVE */
 
 
+/* **************************** LANDING PAGE DASHBOARD ****************************************/
 
+  .landing-page-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
 
   /****************************LANDING PAGE LEFT SIDE******************************************/
 
   /*----FOR BOTH LIGHT MODE AND DARK MODE OF LANDING PAGE LEFT SIDE----*/
 
-  .landing-page-container {
+  .section1-container{
     display: flex;
-    width: 1440px;
-    height: 900px;
+    width: 100%;
+    padding: 21px 13px 21px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
     flex-shrink: 0;
   }
 
   .section1-div1{
     display: flex;
-    width: 503px;
+    width: 100%;
     align-items: center;
-    gap: 159px;
+    justify-content: space-between;
   }
 
   .section1-div1-left{
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 20px;
   }
   
   .section1-div1-left-profile-pic{
     display: flex;
     align-items: flex-start;
-    gap: 10px;
+    position: relative;
   }
 
   #green-circle{
-    position: relative;
-    right: 35px;
-    top: 75px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
   }
-  
+
+  .profile-pic-intials{
+    position: absolute;
+    left: 33px;
+    top: 38px;
+  }
+
   .section1-div1-left-new-user{
     color: #fff;
   }
@@ -71,17 +87,19 @@
   .section1-div1-right{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
   }
   
   .section1-div2{
     display: flex;
+    width: 95%;
     align-items: center;
-    gap: 29px;
+    justify-content: space-between;
   }
   
   .section1-div2-left{
       display: flex;
+      width: 80%;
       gap: 46px;
       align-items: center;
   }
@@ -98,9 +116,8 @@
 
   .section2-container{
     display: flex;
-    width: 468px;
-    margin: 26px 32.5px 37px 32.5px;
-    padding: 0 1px;
+    width: 100%;
+    padding:26px 0 15px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,14 +127,17 @@
   .section2-div1{
     display: flex;
     align-items: flex-end;
+    height: 68px;
     gap: 60px;
   }
   
   .section2-div1-nav{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    height: 68px;
+    align-items:center;
+    justify-content: space-between;
+
   }
   
   .section2-div1-nav p{
@@ -125,20 +145,19 @@
   }
   
   .section2-div1-nav-icon-div{
-    width: 31px;
+    position: relative;
     height: 31px;
   }
   
   #red-circle{
-    position: relative;
-    right: -24px;
-    top: -34px;
+    position: absolute;
+    right: -1.571px;
+    top: 4px;
   }
   
   .section2-div2{
     display: flex;
     height: 34px;
-    padding: 2px 29.5px 0px 13.5px;
     align-items: flex-start;
     gap: 23px;
   }
@@ -151,7 +170,6 @@
     display: flex;
     align-items: center;
     gap: 36px;
-    width: 200px;
     height: 34px;
     padding: 5px 12.5px;
     border-radius: 15px;
@@ -166,7 +184,6 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    width: 200px;
     height: 34px;
     padding: 5px 12.5px;
     border-radius: 15px;
@@ -178,19 +195,20 @@
   }
 
   .section3-container{
+    width: 100%;
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 13px;
+    border-top: 1px solid #CECECE;
   }
   
   .section3-div1{
     display: flex;
+    width: 100%;
     flex-direction: column;
     gap: 34px;
-    padding: 37px 300px 13px 41px;
-    width: 100%;
-    border-top: 1px solid #CECECE;
+    padding: 34px 0 0 41px;
   }
   
   .section3-div1 h5{
@@ -219,14 +237,12 @@
   }
   
   .section3-div2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 0 113px 82px 90px;
+    width: 100%;
+    padding: 0 0 82px 90px;
   }
   
   .section3-div2 h2{
+    margin-bottom: 8px;
     color: #0272BC;
   }
   
@@ -234,22 +250,22 @@
     color: #979797;
   }
 
-  .section4-text-div{
+  .section4-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+    padding: 0px 15px;
+    align-items: center;
+    gap: 0px 119px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    border-radius: 5px 5px 0 0;
   }
-  
+
   .section4-share-am-div{
     display: flex;
     align-items: center;
-    gap: 140px;
-  }
-  
-  .section4-share-am-div img{
-    margin-left: -200px;
+    justify-content: flex-start;
+    gap:80px;
   }
   
   .section4-share-am-div h1{
@@ -261,6 +277,7 @@
   }
   
   .section4-text-div p{
+    margin-left: 46px;
     color: #E4EDF6;
   }
   
@@ -268,10 +285,12 @@
     position: relative;
     top: 9px;
   }
+
   .section4-img2{
     position: relative;
     bottom: 15px;
   }
+
   .section4-img3{
     position: relative;
   }
@@ -280,45 +299,21 @@
 
   /*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
 
-
   .light-landing-page-left-side{
-    width: 533px;
-    height: 906px;
-    flex-shrink: 0;
+    width: 38%;
+    background: #fff;
   }
 
   .light-section1-container{
-    display: flex;
-    width: 533px;
-    height: 231px;
-    padding: 21px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px;
-    flex-shrink: 0;
     background: #22074A;
   }
   
   .light-profile-pic-intials{
-    position: absolute;
-    left: 55px;
-    top: 55px;
     color: #FFF;
   }
   
   .light-section4-container{
-    display: flex;
-    width: 533px;
-    height: 128px;
-    padding: 0px 15px;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    gap: 0px 119px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    border-radius: 5px;
-    background: #22074A;
+     background: #22074A;
   }
 
   
@@ -326,50 +321,21 @@
   /*----DARK MODE FOR LANDING PAGE LEFT SIDE----*/
 
   .dark-landing-page-left-side{
-    width: 533px;
-    height: 906px;
-    flex-shrink: 0;
+    width: 38%;
     background: #1F201F;
   }
 
-
   .dark-section1-container{
-    display: flex;
-    width: 533px;
-    height: 231px;
-    padding: 21px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 48px;
-    flex-shrink: 0;
     background: #181918;
   }
 
   .dark-profile-pic-intials{
-    position: absolute;
-    left: 55px;
-    top: 55px;
     color: #585858;
   }
 
   .dark-section4-container{
-    display: flex;
-    width: 533px;
-    height: 128px;
-    padding: 0px 15px;
-    margin-top: 10px;
-    align-items: center;
-    justify-content: center;
-    gap: 0px 119px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    border-radius: 5px;
     background: #181918;
   }
-
-
-
-
 
 
   /*/----------------LANDING PAGE CARD--------------/*/
@@ -386,183 +352,176 @@
   --dm-date-time-bg-color: #00000040;
 }
 
-/*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
+/*/ ------------------ CSS FOR LANDING PAGE CARD ------------------ /*/
 
-.light-landing-page-card,
-.dark-landing-page-card {
+
+.landing-page-card-container{
+  width: 96%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   padding-left: 38px;
-  padding-right: 81px;
   padding-top: 55.5px;
-  gap: 7.5px;
 }
 
-.light-landing-page-card {
-  background-color: var(--lm-landing-pg-card-bg-color);
-}
-.dark-landing-page-card {
-  background-color: var(--dm-landing-pg-card-bg-color);
-}
-
-.light-section-1-container {
+.section-1-container {
+  width: 216px;
+  height: 90px;
   display: flex;
   gap: 25px;
   align-items: self-end;
 }
 
-.light-profile-pic-box {
+.profile-pic-box, .profile-pic, .profile-pic svg {
   position: relative;
+  height: 90px;
+}
+.profile-pic, .profile-pic svg {
+  width: 90px;
 }
 
-.light-profile-pic {
-  position: relative;
-}
-
-.light-profile-pic .new-user-initials {
+.profile-pic .new-user-initials {
   position: absolute;
   top: 38px;
   left: 35px;
 }
 
-.light-online-status {
+.online-status {
   position: absolute;
+  height: 14px;
   right: 7px;
   bottom: 7px;
 }
 
-.light-welcome-box {
+.welcome-box {
   display: flex;
   flex-direction: column;
   gap: 3px;
 }
-.light-section-2-container {
+
+.section-2-container {
   display: flex;
+  width: 100%;
   height: 49px;
   align-items: center;
+  margin: 7.5px 0;
 }
 
-.light-popup-notification {
+.popup-notification {
   display: flex;
   height: 45px;
   align-items: center;
-  padding: 0px 20px;
-  margin-left: 96px;
+  padding: 0px 20px 0 116px;
   gap: 32px;
 }
 
-.light-verified-icon {
+.verified-icon {
   height: 45px;
 }
 
-.light-popup-message {
+.popup-message {
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 14px;
-  height: 28px;
 }
-.light-close-popup-btn {
+
+.close-popup-btn {
   height: 28px;
   cursor: pointer;
 }
 
-.light-section-3-container {
+.section-3-container {
+  width: 100%;
+  height: 488px;
   display: flex;
-  gap: 61px;
-  padding-bottom: 30.5px;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 25px;
 }
 
-.light-call-to-action-section {
+.call-to-action-section {
+  width: 45%;
   height: 340px;
-  margin-top: 74.5px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  column-gap: 139px;
+  column-gap: 90px;
   row-gap: 28px;
+  justify-content: space-between;
 }
 
-.light-cta-text {
+.cta-text {
   grid-column: 1/3;
   align-self: self-end;
 }
 
-.light-cta-icon-box {
+.cta-icon-box {
+  width: auto;
+  height: 129px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 11px;
-  width: 108px;
 }
 
-.light-cta-icon-box-1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.light-cta-icon {
+.cta-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 108px;
+  height: 100px;
 }
 
-.light-action-txt-box {
+.action-txt-box {
   display: flex;
   justify-content: space-between;
 }
 
-.light-dropdowm-icon {
+.dropdowm-icon {
   cursor: pointer;
   background: none;
   border: none;
 }
 
-.light-time-date-section {
+.time-date-section {
   display: grid;
-  width: 372px;
-  height: 488px;
-  grid-template-rows: 202px 1fr;
+  width: 45%;
+  height: 457.5px;
+  grid-template-rows: 180px 1fr;
 }
 
-.light-time-date-box,
-.dark-time-date-box {
-  position: relative;
+.time-date-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
   border-radius: 10px 10px 0 0;
 }
 
-.light-time-date-box {
-  background-color: var(--lm-date-time-bg-color);
-}
-.dark-time-date-box {
-  background-color: var(--dm-date-time-bg-color);
-}
-
-.light-time-date {
-  width: 298px;
+.time-date-wrap {
+  width: 95%;
   display: flex;
-  gap: 50px;
+  gap: 35px;
   align-items: flex-end;
-  position: absolute;
-  left: 35px;
-  bottom: 18px;
   overflow-x: hidden;
+  margin:0 0 18px 35px ;
+  
 }
 
-.light-time-date-text {
-  width: 200px;
+.time-date-text {
+  width: 180px;
   flex-shrink: 0;
 }
 
-.light-flower-box {
+.flower-box {
   display: flex;
   align-items: end;
 }
 
-.light-calender-box,
-.dark-calender-box {
+.calender-box {
   display: flex;
   gap: 11px;
   align-items: center;
@@ -570,30 +529,54 @@
   border-radius: 0 0 10px 10px;
 }
 
-.light-calender-box {
-  background-color: var(--lm-calender-bg-color);
-}
-
-.dark-calender-box {
-  background-color: var(--dm-calender-bg-color);
-}
-
-.light-section-4-container {
-  margin: 35px 0 74.5px 0;
+.section-4-container {
   display: grid;
+  width: 100%;
+  margin-top: 25px;
   row-gap: 3px;
   grid-template-columns: 1fr auto;
   align-items: center;
 }
 
-.light-new-user-email-txt {
+.new-user-email-txt {
   grid-column: 1/3;
 }
 
-.light-switch-acct-txt {
+.switch-acct-txt {
   padding: 10px 0 10px 0;
 }
 
-.light-cta-learn {
+.cta-learn {
   margin-left: auto;
+}
+
+/*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
+
+.light-landing-page-card {
+  width: 62%;
+  background-color: var(--lm-landing-pg-card-bg-color);
+}
+
+.light-time-date-box {
+  background-color: var(--lm-date-time-bg-color);
+}
+
+.light-calender-box {
+  background-color: var(--lm-calender-bg-color);
+}
+
+
+/*/ ------------------DARK MODE CSS FOR LANDING PAGE CARD------------------ /*/
+
+.dark-landing-page-card {
+  width: 62%;
+  background-color: var(--dm-landing-pg-card-bg-color);
+}
+
+.dark-time-date-box {
+  background-color: var(--dm-date-time-bg-color);
+}
+
+.dark-calender-box {
+  background-color: var(--dm-calender-bg-color);
 }
