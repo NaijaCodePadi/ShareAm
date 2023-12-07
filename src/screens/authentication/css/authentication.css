@@ -101,6 +101,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 399px;
 }
 
 .light-signup-form-wrapper form .full-name,
@@ -231,14 +232,14 @@
 }
 .dark-reset-password-subtitle-text-mode {
   color: rgba(255, 252, 252, 0.9);
-  font-family: Poppins;
+  font-family: poppins;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
 .password-input-text {
   color: #a9a9a9;
-  font-family: Poppins-medium;
+  font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
