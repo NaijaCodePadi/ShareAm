@@ -597,3 +597,71 @@
 .light-cta-learn {
   margin-left: auto;
 }
+
+/*-----colors for call interface buttons----*/
+
+:root{
+  --bgclr:#585858;
+  --bgblue:#0B0A7E;
+  --darkmdclr:#FF9900;
+  --darkmdblue:#1058E8E5;
+}
+
+/* ------------LIGHT MODE CALL INTERFACE----------- */
+
+.light-video-icon-call-interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: var(--bgclr);
+  border-radius: 25px;
+  padding: 24px 20px 24px 20px;
+}
+
+.light-other-icons-call-interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: var(--bgblue);
+  border-radius: 25px;
+  padding: 24px 20px 24px 20px;
+} 
+
+
+/* -------------CALL INTERFACE DARK MODE-------- */
+
+.dark-video-icon-call-interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: var(--darkmdclr);
+  border-radius: 25px;
+  padding: 24px 20px 24px 20px;
+}
+
+.dark-other-icons-call-interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  background-color: var(--darkmdblue);
+  border-radius: 25px;
+  padding: 24px 20px 24px 20px;
+}
+
+
+
+
+
+
