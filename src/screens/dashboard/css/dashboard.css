@@ -230,7 +230,7 @@
     align-items: center;
     justify-content: center;
     width: 40px;
-    /* height: 40px; */
+    height: 40px;
     border-radius: 3.5px;
     background: #CFDAE2;
     color: #fff;
@@ -338,10 +338,6 @@
   }
 
 
-
-
-
-
   /*/----------------LANDING PAGE CARD--------------/*/
 
 :root {
@@ -402,6 +398,7 @@
   flex-direction: column;
   gap: 3px;
 }
+
 .section-2-container {
   display: flex;
   width: 100%;
@@ -445,7 +442,7 @@
 }
 
 .call-to-action-section {
-  width: 44%;
+  width: 45%;
   height: 340px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -491,7 +488,7 @@
 
 .time-date-section {
   display: grid;
-  width: 46%;
+  width: 45%;
   height: 457.5px;
   grid-template-rows: 180px 1fr;
 }
@@ -505,12 +502,12 @@
 }
 
 .time-date-wrap {
-  width: 92%;
+  width: 95%;
   display: flex;
   gap: 35px;
   align-items: flex-end;
   overflow-x: hidden;
-  margin:0 0 18px 32px ;
+  margin:0 0 18px 35px ;
   
 }
 
