@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border: red 1px solid; */
   }
   
   /* text styles */
@@ -43,7 +44,9 @@
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .profile{
   display: grid;
+  width: 100%;
   grid-template-columns:310px auto;
+  overflow: hidden;
 }
 
 .sidebar-nav{
@@ -137,9 +140,202 @@ a.light-active-menu svg {
       color: var(--dm-active-menu);
     }
 
-  /* CSS FOR PROFILE FOOTER */
+
+    /******************** CSS FOR PROFILE PAGE MAIN BODY  **********************/
+.top{
+  height: 80px;
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.mainbody button{
+  cursor: pointer;
+}
+
+.main-section{
+  width: auto ;
+  display: flex;
+  flex-direction: column;
+  background-color:#FFFFFF;
+}
+
+.main-section-1{
+  margin: 0 42px 65px 42px;
+  height: 275px;
+  border:1px solid #979797;
+  border-top: 0;
+  background: #F1F1FF;
+}
+
+.back-arrow{
+ margin-top: 12.75px;
+ margin-left: 12px;
+}
+.camera-photo{
+  display: flex;
+  flex-direction: column;
+  gap: 10.79px;
+  align-items: center;
+  justify-content: center;
+  padding: 62px 0 42px 0;
+}
+
+.camera-photo svg, h3{
+  cursor: pointer;
+}
+
+.user-pic-user-names{
+  display: flex;
+  height: 60px;
+  gap: 18px;
+  padding-left:10px;
+}
+
+.user-names{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section-2{
+  border-bottom: 1px solid #979797;
+}
+
+.main-section-2-wrap{
+  height: 159px;
+  margin:65px 42px 65px 42px;
+}
+
+.bio{
+margin-bottom: 16px;
+}
+
+#bio-write-up{
+  width: 100%;
+  padding: 17px;
+  margin-bottom: 22px;
+}
+
+.main-section-2-wrap label{
+  position: relative;
+}
+
+.text-limit{
+  width: 61px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+}
+
+#save-btn{
+  display: flex;
+  margin-left: auto;
+}
+
+.main-section-3{
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 69px 180px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 65px auto 114px auto;
+}
+
+.main-section-3 h3{
+  margin-bottom: 28px;
+  
+}
+
+.main-section-3 input{
+  width: 345px;
+}
+
+.main-section-3 label{
+  position: relative;
+}
+
+#change-btn{
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+}
+
+.input-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.main-section-4{
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+.main-section-4-wrap{
+  display: flex;
+  gap: 203px;
+  margin: 34px 93px 120px 93px;
+}
+
+.location-input-wrap{
+  display: flex;
+  gap: 39px;
+  padding: 11px;
+  border-radius: 4px;
+  border: 1px solid #E4E4E4;
+  background: #FFF;
+
+}
+
+.unique-url{
+display: flex;
+flex-direction: column;
+gap: 19px;
+}
+
+.social-media-handles{
+  display:flex;
+  gap: 21px;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.main-section-5{
+  border-bottom: 1px solid #979797;
+}
+
+.status{
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+  margin:0 80px 0 80px;
+  padding: 58px 0;
+}
+
+.active-status, .sub-status{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 34px;
+}
+
+.main-section-6{
+  border-bottom: 1px solid #979797;
+}
+
+.main-section-6-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding:63px 80px 61px 80px;
+}
+
+  /**************** CSS FOR PROFILE FOOTER ******************/
   footer{
+    width: auto;
     background: #B0B0B0;
+    margin-top: 15px;
   }
 
   .footer-container{
@@ -178,6 +374,7 @@ a.light-active-menu svg {
     flex-direction: column;
     gap: 6px;
     margin-left: auto;
+    margin-right: 36px;
   }
 
   .social-handles{
