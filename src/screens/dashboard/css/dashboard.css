@@ -641,3 +641,8 @@
   border-radius: 25px;
   padding: 24px 20px 24px 20px;
 }
+
+.popup-message{
+  border-radius: 18px;
+background: linear-gradient(90deg, #A0A0F6 1.22%, rgba(228, 208, 249, 0.00) 100%);
+}
