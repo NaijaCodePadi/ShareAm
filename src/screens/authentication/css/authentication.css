@@ -6,19 +6,19 @@
 }
 @font-face {
   font-family: poppins-bold;
-  src: url(../fonts/Poppins-Bold.ttf);
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
 }
 @font-face {
   font-family: poppins-regular;
-  src: url(../fonts/Poppins-Regular.ttf);
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: poppins-medium;
-  src: url(../fonts/Poppins-Medium.ttf);
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: Rubik;
-  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 /* DO NOT REMOVE THE CODE ABOVE */
 /* Sign Up Screen & Log In -- Light Mode */
@@ -29,12 +29,29 @@
   height: 100vh;
   background-color: #dad9d9;
 }
+.dark-signup-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(42, 40, 45, 0.90);
+}
 .light-signup-container .light-signup-splash {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #22074a;
+  padding: 0 20px;
+  width: 40%;
+  height: 100%;
+}
+.dark-signup-splash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1F201F;
   padding: 0 20px;
   width: 40%;
   height: 100%;
@@ -94,8 +111,6 @@
   justify-content: center;
   gap: 1rem;
 }
-
-
 
 .light-signup-container .light-signup-form-wrapper form {
   display: flex;
@@ -180,7 +195,7 @@
 /* has same color as the light mode */
 .splash-text-heading {
   color: #fff;
-  font-family: Poppins-bold;
+  font-family: poppins-bold;
   font-size: 50px;
   font-weight: 800;
 }
@@ -189,14 +204,83 @@
 }
 .splash-subtitle-text {
   color: #e4edf6;
-  font-family: Poppins-regular;
+  font-family: poppins-regular;
   font-size: 18px;
+  font-weight: 500;
+}
+/* sign up page */
+.light-signUp-title-text {
+  color: #150AA1;
+  font-family: poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.dark-signUp-title-text {
+  color: #048AD7;
+  font-family: poppins-bold;
+  font-size: 26px;
+  font-weight: 700;
+}
+.light-signUp-label-texts {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.dark-signUp-label-texts {
+  color: #a9a9a9;
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+.light-signIn-terms-text {
+  color: #000;
+  font-family: poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.light-signIn-terms-text > a {
+  color: #5858fa;
+  font-family: poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+}
+.dark-signIn-terms-text {
+  color: #a9a9a9;
+  font-family: poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.dark-signIn-terms-text > a {
+  color: #048ad7;
+  font-family: poppins-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration-line: underline;
+}
+
+.sigup-with {
+  color: #7b7b7b;
+  font-family: poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sigup-with > span {
+  color: #595959;
+  font-family: poppins-regular;
+  font-size: 16px;
   font-weight: 500;
 }
 
 /* login page */
-.light-signup-container 
-.light-login-text {
+
+.light-signup-container .light-login-text {
   color: #0272bc;
   font-family: Poppins-bold;
   font-size: 26px;
@@ -204,31 +288,31 @@
 }
 .dark-login-text {
   color: #048ad7;
-  font-family: Poppins-bold;
+  font-family: poppins-bold;
   font-size: 26px;
   font-weight: 700;
 }
 .light-login-label-texts {
   color: #585858;
-  font-family: Poppins-regular;
+  font-family: poppins-regular;
   font-size: 16px;
   font-weight: 700;
 }
 .dark-login-label-text {
   color: #fffcfc;
-  font-family: Poppins-regular;
+  font-family: poppins-regular;
   font-size: 16px;
   font-weight: 700;
 }
 .light-login-subtitle-text {
   color: #585858;
-  font-family: Poppins-medium;
+  font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
 .dark-login-subtitle-text {
   color: #fff;
-  font-family: Poppins-medium;
+  font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
@@ -242,7 +326,7 @@
 }
 .login-option {
   color: #7b7b7b;
-  font-family: Poppins-regular;
+  font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
 }
@@ -253,20 +337,20 @@
 }
 .logUp-btn-texts {
   color: #7b7b7b;
-  font-family: Poppins-medium;
+  font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
 .light-reset-password-subtitle-text-mode {
   color: #000;
-  font-family: Poppins;
+  font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
 .dark-reset-password-subtitle-text-mode {
   color: rgba(255, 252, 252, 0.9);
-  font-family: poppins;
+  font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
@@ -279,16 +363,10 @@
 }
 
 
-
 /* ----------------------------------optimazing login page styles //Osita ------------------------- */
 
-
-
 /*  ----------login password page--------------------  */
-.light-signup-container >
-.light-signup-form-wrapper >
-.login-form
-{
+.light-signup-container > .light-signup-form-wrapper > .login-form {
   gap: 0.5rem;
   width: 399px;
 }
@@ -296,18 +374,18 @@
 .password {
   position: relative;
 }
+.confirm-password {
+  position: relative;
+}
 
-.light-signup-form-wrapper
-.login-input {
+.light-signup-form-wrapper .login-input {
   width: 100%;
   height: 51px;
   border-radius: 10px;
-  border: 1px solid #E4E4E4;
-  background: #F1F1F1;
+  border: 1px solid #e4e4e4;
+  background: #f1f1f1;
   padding-left: 0.5rem;
 }
-.light-signup-form-wrapper
-.password
 .open-eye-icon {
   width: 19px;
   height: 13px;
@@ -332,7 +410,7 @@
 }
 .stay-signed-in-text {
   color: #585858;
-  font-family: Poppins;
+  font-family: poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -352,18 +430,27 @@
   font-size: 16px;
   border: none;
 }
-
+.logUp-with-div {
+  display: flex;
+  align-items: center;
+}
+.logUp-with-div > span {
+  width: 9rem;
+  border-top: 1px solid #b99dea;
+}
+.logUp-with {
+  padding: 0.5rem;
+  border-radius: 27px;
+  background: #b99dea;
+}
 /*  ----------forget password page--------------------  */
-.light-signup-container >
-.light-signup-form-wrapper >
-.forget-password-form
-{
+.light-signup-container > .light-signup-form-wrapper > .forget-password-form {
   margin-top: 32px;
 }
 
 .forget-password {
-  color: #7B7B7B;
-  font-family: Poppins;
+  color: #7b7b7b;
+  font-family: poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

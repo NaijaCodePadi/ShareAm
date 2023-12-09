@@ -8,19 +8,18 @@
   /* text styles */
   @font-face {
     font-family: poppins-bold;
-    src: url(../fonts/Poppins-Bold.ttf);
+    src: url(../../../assets/fonts/Poppins-Bold.ttf);
   }
   @font-face {
     font-family: poppins-regular;
-    src: url(../fonts/Poppins-Regular.ttf);
+    src: url(../../../assets/fonts/Poppins-Regular.ttf);
   }
   @font-face {
     font-family: poppins-medium;
-    src: url(../fonts/Poppins-Medium.ttf);
+    src: url(../../../assets/fonts/Poppins-Medium.ttf);
   }
   @font-face {
     font-family: Rubik;
-    src: url(../fonts/Rubik-VariableFont_wght.ttf);
+    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
   }
-
   /* DO NOT REMOVE THE CODE ABOVE */
