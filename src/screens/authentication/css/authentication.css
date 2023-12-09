@@ -6,19 +6,19 @@
 }
 @font-face {
   font-family: poppins-bold;
-  src: url(/src/assets/fonts/Poppins-Bold.ttf);
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
 }
 @font-face {
   font-family: poppins-regular;
-  src: url(/src/assets/fonts/Poppins-Regular.ttf);
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: poppins-medium;
-  src: url(/src/assets/fonts/Poppins-Medium.ttf);
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
 }
 @font-face {
   font-family: Rubik;
-  src: url(/src/assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 /* DO NOT REMOVE THE CODE ABOVE */
 /* Sign Up Screen & Log In -- Light Mode */
@@ -309,14 +309,14 @@
 }
 .light-reset-password-subtitle-text-mode {
   color: #000;
-  font-family: poppins;
+  font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
 }
 .dark-reset-password-subtitle-text-mode {
   color: rgba(255, 252, 252, 0.9);
-  font-family: poppins;
+  font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
