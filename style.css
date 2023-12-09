@@ -1,21 +1,7 @@
 
 /***********************************************ALL LIGHT MODE*******************************************************/
 
-/*---RECOVER PASSWORD BUTTON FOR LIGHT MODE---*/
-.light-recover-password-btn{
-  display: flex;
-  width: 388px;
-  padding: 12px 14px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 18px;
-  background: #1058E8;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-}
+
 
 /*---GET STARTED BUTTON FOR LIGHT MODE---*/
 .light-get-started-btn{
@@ -38,21 +24,6 @@
 
 
 /***********************************************ALL DARK MODE*******************************************************/
-
-/*---RECOVER PASSWORD BUTTON FOR DARK MODE---*/
-.dark-recover-password-btn{
-  display: flex;
-  padding: 12px 14px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 18px;
-  background: #1058E8;
-  color: #FFF;
-  font-size: 16px;
-  font-weight: 600;
-  border: none;
-}
 
 /*---GET STARTED BUTTON FOR DARK MODE---*/
 
@@ -95,6 +66,21 @@
   border: none;
 }
 
+/*---RECOVER PASSWORD BUTTON FOR BOTH LIGHT AND DARK MODE---*/
+.recover-password-btn{
+  display: flex;
+  width: 388px;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+}
 
 /*---RESET PASSWORD BUTTON FOR BOTH LIGHT AND DARK MODE---*/
 .reset-password-btn{
