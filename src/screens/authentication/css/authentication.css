@@ -134,12 +134,46 @@
   width: 354px;
   height: 54px;
 }
-.light-google,
-.light-facebook {
-  gap: 0.5rem;
+.login-google,
+.login-facebook {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 7px 10px;
   width: 203px;
   justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #E4E4E4;
+  background: #F1F1F1;
+}
+.signup-btn{
+  display: flex;
+  width: 393px;
+  padding: 12px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+.reset-password-btn{
+  display: flex;
+  width: 402px;
+  height: 50px;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
 }
 /* ---------------------------------Texts style--------------------------- */
 /* splash page */
@@ -245,6 +279,7 @@
 }
 
 
+
 /* ----------------------------------optimazing login page styles //Osita ------------------------- */
 
 
@@ -303,6 +338,20 @@
   font-weight: 400;
   line-height: normal;
 }
+.login-btn{
+  display: flex;
+  width: 393px;
+  padding: 12px 21px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1058E8;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
 
 /*  ----------forget password page--------------------  */
 .light-signup-container >
@@ -321,4 +370,18 @@
   line-height: normal;
   text-decoration-line: underline;
   margin-left: auto;
+}
+.recover-password-btn{
+  display: flex;
+  width: 388px;
+  padding: 12px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 18px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
 }
