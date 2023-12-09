@@ -368,7 +368,7 @@
 /*  ----------login password page--------------------  */
 .light-signup-container > .light-signup-form-wrapper > .login-form {
   gap: 0.5rem;
-  width: 399px;
+  width: 388px;
 }
 
 .password {
@@ -379,19 +379,26 @@
 }
 
 .light-signup-form-wrapper .login-input {
-  width: 100%;
+  width: 388px;
   height: 51px;
   border-radius: 10px;
   border: 1px solid #e4e4e4;
   background: #f1f1f1;
-  padding-left: 0.5rem;
+  padding-left: 15px;
 }
 .open-eye-icon {
-  width: 19px;
-  height: 13px;
+  width: 16px;
+  height: 16px;
   position: absolute;
-  right: 11.55px;
-  bottom: 19.5px;
+  right: 12px;
+  bottom: 17px;
+}
+#open-eye-icon{
+  width: 16px;
+  height: 16px;
+  position: absolute; 
+  right: 16px;
+  bottom: 16px;
 }
 .login-password-subtitle {
   display: flex;
