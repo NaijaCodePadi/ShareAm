@@ -416,7 +416,7 @@
 }
 
 .verified-icon {
-  height: 45px;
+  height: 40px;
 }
 
 .popup-message {
@@ -592,57 +592,33 @@
 /* ------------LIGHT MODE CALL INTERFACE----------- */
 
 .light-video-icon-call-interface{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
   background-color: var(--bgclr);
   border-radius: 25px;
-  padding: 24px 20px 24px 20px;
+  
 }
 
 .light-other-icons-call-interface{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
   background-color: var(--bgblue);
   border-radius: 25px;
-  padding: 24px 20px 24px 20px;
 } 
 
 
 /* -------------CALL INTERFACE DARK MODE-------- */
 
 .dark-video-icon-call-interface{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
   background-color: var(--darkmdclr);
   border-radius: 25px;
-  padding: 24px 20px 24px 20px;
 }
 
 .dark-other-icons-call-interface{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  flex-shrink: 0;
   background-color: var(--darkmdblue);
   border-radius: 25px;
-  padding: 24px 20px 24px 20px;
 }
 
-.popup-message{
+/*------------------------ Pop up message colour gradient--------------- */
+.section-2-container{
   border-radius: 18px;
-background: linear-gradient(90deg, #A0A0F6 1.22%, rgba(228, 208, 249, 0.00) 100%);
+  background: linear-gradient(90deg, #A0A0F6 1.22%, rgba(228, 208, 249, 0.00) 100%);
+  
 }
+
