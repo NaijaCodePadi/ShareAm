@@ -145,13 +145,13 @@ a.dark-active-menu svg {
 .call_settings > h4 {
   border-bottom: 1px solid #979797;
 }
-.call-sec > section {
+.cs-sections > section {
   padding: 25px 0;
   border-bottom: 1px solid #979797;
   display: flex;
   justify-content: space-between;
 }
-.call-sec > section > span {
+.cs-sections > section > span {
   display: flex;
   align-items: center;
   gap: 1px;
@@ -160,23 +160,23 @@ a.dark-active-menu svg {
   font-size: 14px;
   font-weight: 400;
 }
-.call-sec > section > span > .light-arrow-svg {
+.cs-sections > section > span > .light-arrow-svg {
   width: 21px;
   height: 14px;
   color: #000;
 }
-.call-sec > section > span > .dark-arrow-svg {
+.cs-sections > section > span > .dark-arrow-svg {
   width: 21px;
   height: 14px;
   color: #e4e4e4;
 }
-.call-sec > section:nth-child(4) > span > .light-arrow-svg {
+.cs-sections > section:nth-child(4) > span > .light-arrow-svg {
   margin-right: 8px;
 }
-.call-sec > section:nth-child(5) > span > .light-arrow-svg {
+.cs-sections > section:nth-child(5) > span > .light-arrow-svg {
   transform: rotate(90deg);
 }
-.call-sec > section:nth-child(6) {
+.cs-sections > section:last-child {
   border: none;
 }
 
@@ -248,9 +248,4 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 
-.menu-toggle-texts {
-  color: #979797;
-  font-family: Poppins-medium;
-  font-size: 14px;
-  font-weight: 400;
-}
+
