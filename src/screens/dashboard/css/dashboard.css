@@ -92,8 +92,8 @@
   
   .section1-div2{
     display: flex;
-    width: 95%;
     align-items: center;
+    gap: 29px;
     justify-content: space-between;
   }
   
@@ -102,6 +102,11 @@
       width: 80%;
       gap: 46px;
       align-items: center;
+      width: 400px;
+      height: 50.797px;
+      border-radius: 11.043px;
+      background: #fff;
+      padding-left: 14px;
   }
   
   .section1-div2-right{
@@ -138,6 +143,10 @@
     align-items:center;
     justify-content: space-between;
 
+  }
+  
+  #active{
+    color: #0272BC;
   }
   
   .section2-div1-nav p{
