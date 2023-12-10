@@ -780,3 +780,74 @@
   font-size: 16px;
   font-weight: 400;
 }
+
+/*------LIGHT AND DARK MODE COMBINE SWITCH TOGGLE BUTTON FOR DASHBOARD-------*/
+
+
+label {
+	width:48px;
+	height:20px;
+	position: relative;
+	display: block;
+	background: #fef8f8;
+	border-radius: 200px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+label:after {
+	content: "";
+	width:16px;
+	height: 16px;
+	position: absolute;
+	top:2px;
+	left:1.5px;
+	background-color: #383333;
+	border-radius: 180px;
+	transition: 0.3s;
+}
+input {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+input:checked + label {
+	background: #242424;
+}
+input:checked + label:after {
+	transform: translateX(27px);
+	background: linear-gradient(180deg,#777,#3a3a3a);
+}
+/* 
+.background {
+	width:100vw;
+	height: 100vh;
+	background: #e0dbdb;
+	z-index: -1;
+	position: absolute;
+	transition: 0.3s;
+} */
+input:checked + label + .background {
+	background:#242424;
+}
+label svg {
+	position: absolute;
+	width: 13px;
+	top:3.1px;
+	z-index: 100;
+}
+label svg.sun {
+	left:3.1px;
+	fill:#d8860b;
+	transition: 0.3s;
+}
+label svg.moon {
+	left:30px;
+	fill:#050505;
+	transition: 0.3s;
+}
+input:checked + label svg.sun {
+	fill:#d8860b;
+}
+input:checked + label svg.moon {
+	fill:#fff;
+}
