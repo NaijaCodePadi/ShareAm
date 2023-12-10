@@ -1,25 +1,226 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* text styles */
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../../../assets/fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../../../assets/fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
-  }
-  /* DO NOT REMOVE THE CODE ABOVE */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+/* DO NOT REMOVE THE CODE ABOVE */
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10% 58% 32%;
+  background-color: #22074a;
+}
+
+ul {
+  list-style: none;
+}
+
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 134px;
+  padding: 30px 0;
+  border-right: 1px solid #979797;
+}
+
+.side-nav img {
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.call-interface {
+  /* border: 1px red solid; */
+  margin: 30px 50px 0 50px;
+}
+
+.interface-section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #979797;
+}
+
+.back-dir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 29px;
+  height: 29px;
+  padding: 9px 11px;
+  border-radius: 5px;
+  background-color: #585858;
+}
+
+.interface-section-1-followers {
+  display: flex;
+  padding: 3px;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  border-radius: 5px;
+  background-color: #585858;
+  margin-right: 44px;
+}
+.interface-section-2 {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 9px 0;
+}
+
+.add-user {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.add-user a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interface-section-3 {
+  background: url("../../../assets/images/call-wallpaper.png");
+  background-size: cover;
+  background-position: center;
+  height: 630px;
+  margin-bottom: 15px;
+}
+
+.users-display {
+  width: 70.929px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin: 0px 30px 160px auto;
+  padding-top: 30px;
+}
+
+.interface-section-3 .user-img {
+  display: flex;
+  position: relative;
+  width: 70.929px;
+  height: 67.741px;
+  border-radius: 3.985px;
+  border: 0.797px solid #dad9d9;
+}
+
+.interface-section-3 .user-1 {
+  background: url("../../../assets/images/user\ 1.png");
+  background-size: cover;
+  background-position: center;
+}
+.interface-section-3 .user-2 {
+  background: url("../../../assets/images/user\ 2.png");
+  background-size: cover;
+  background-position: center;
+}
+.interface-section-3 .user-3 {
+  background: url("../../../assets/images/user\ 3.png");
+  background-size: cover;
+  background-position: center;
+}
+.interface-section-3 .user-4 {
+  background: url("../../../assets/images/user\ 4.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.user-img svg {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.action-btn-wrap {
+  width: 383px;
+  display: flex;
+  gap: 21px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 144px;
+}
+.action-btn {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5a4849;
+  border-radius: 10px;
+}
+
+.call-btn {
+  width: 60px;
+  height: 60px;
+  background-color: #e9e8e8;
+  border-radius: 20px;
+}
+
+.interface-section-4 {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+  height: 54px;
+}
+
+.interface-section-4 .wave {
+  width: 54px;
+  height: 54px;
+  border-radius: 4px;
+  background: #979797;
+  padding: 0 3px;
+}
+
+.now-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 10px;
+}
+
+.chat-box {
+  border-radius: 14px;
+  background: linear-gradient(
+    181deg,
+    rgba(218, 217, 217, 0.67) 5%,
+    rgba(218, 217, 217, 0) 154.43%
+  );
+  margin: 10px 29px 0 0;
+}
