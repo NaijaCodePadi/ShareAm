@@ -8,19 +8,19 @@
   /* text styles */
   @font-face {
     font-family: poppins-bold;
-    src: url(../fonts/Poppins-Bold.ttf);
+    src: url(../../../assets/fonts/Poppins-Bold.ttf);
   }
   @font-face {
     font-family: poppins-regular;
-    src: url(../fonts/Poppins-Regular.ttf);
+    src: url(../../../assets/fonts/Poppins-Regular.ttf);
   }
   @font-face {
     font-family: poppins-medium;
-    src: url(../fonts/Poppins-Medium.ttf);
+    src: url(../../../assets/fonts/Poppins-Medium.ttf);
   }
   @font-face {
     font-family: Rubik;
-    src: url(../fonts/Rubik-VariableFont_wght.ttf);
+    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
   }
 
   /* DO NOT REMOVE THE CODE ABOVE */
@@ -70,8 +70,8 @@
 
   #green-circle{
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 8px;
+    bottom: 8px;
   }
 
   .profile-pic-intials{
@@ -622,3 +622,161 @@
   
 }
 
+
+
+
+
+/* -----------------------------------------Texts stlyes ----------------------------------------- */
+
+/* .desktop-title-text {
+  color: #FFF;
+  font-family: poppins-medium;
+  font-size: 20px;
+  font-weight: 700;
+}
+.desktop-status-text {
+  color: #FFF;
+  font-family: poppins-regular;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.desktop-subtitle-text {
+  color: #979797;
+  font-family: poppins-medium;
+  font-size: 16px;
+  font-weight: 500;
+}
+.desktop-features-text {
+  color: #979797;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.desktop-features-text-active {
+  color: #0272BC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+} */
+
+.light-welcome-txt {
+  color: #303030;
+  font-family: poppins-medium;
+  font-size: 20px;
+  font-weight: 400;
+}
+.dark-welcome-txt {
+  color: #FFFCFC;
+  font-family: poppins-medium;
+  font-size: 20px;
+  font-weight: 400;
+}
+.light-new-user-txt {
+  color: #22074A;
+  font-family: poppins-medium;
+  font-size: 20px;
+  font-weight: 700;
+}
+.dark-new-user-txt {
+  color: #F1F1F1;
+  font-family: poppins-medium;
+  font-size: 20px;
+  font-weight: 700;
+}
+.popup-txt {
+  color: #000;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
+}
+.light-cta-text {
+  color: #585858;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.dark-cta-text {
+  color: #FFFCFC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-action-txt {
+  color: #585858;
+  font-family: poppins-regular;
+  font-size: 12px;
+  font-weight: 400;
+}
+.dark-action-txt {
+  color: #FFFCFC;
+  font-family: poppins-regular;
+  font-size: 12px;
+  font-weight: 400;
+}
+.light-new-user-email-txt {
+  color: #303030;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.dark-new-user-email-txt {
+  color: #FFFCFC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.light-switch-acct-txt {
+  color: #303030;
+  font-family: poppins-regular;
+  font-size: 10px;
+  font-weight: 500;
+}
+.dark-switch-acct-txt {
+  color: #FFFCFC;
+  font-family: poppins-regular;
+  font-size: 10px;
+  font-weight: 500;
+
+}
+.light-switch-acct-txt > a {
+  color: #0272BC;
+  font-family: poppins-regular;
+  font-size: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.dark-switch-acct-txt > a {
+  color: #048AD7;
+  font-family: poppins-regular;
+  font-size: 10px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.light-cta-learn-txt > a {
+  color: #0272BC;
+  font-family: poppins-medium;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.time-txt {
+  color: #FFF;
+  font-family: poppins-medium;
+  font-size: 24px;
+  font-weight: 500;
+}
+.date-txt {
+  color: #FFF;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+.cal-txt {
+  color: #979797;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 400;
+}
