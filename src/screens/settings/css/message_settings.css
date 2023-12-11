@@ -166,3 +166,142 @@ a.light-active-menu svg {
       font-weight: 700;
 
   }
+
+
+
+/*------------------FOR MAIN BODY----------------*/
+
+.light-mainbody{
+  background: #DAD9D9;
+  padding: 25px 20px;
+}
+
+.dark-mainbody{
+  background: #222020;
+  padding: 25px 20px;
+}
+
+.light-mainbody-container{
+  display: flex;
+  width: 999px;
+  height: 812px;
+  padding: 17px;
+  flex-direction: column;
+  gap: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.dark-mainbody-container{
+  display: flex;
+  width: 999px;
+  height: 812px;
+  padding: 17px;
+  flex-direction: column;
+  gap: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #272727;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.section1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1-div1{
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.write-message-btn{
+  display: flex;
+  width: 158px;
+  padding: 7px 10px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 12px; 
+  border-radius: 4px;
+  background: #1058E8;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+}
+
+.section2{
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+#all-btn{
+  width: 49px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #C7C7F9;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+#followers-btn{
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #F1F1F1;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+#fans-btn{
+  display: flex;
+  padding: 7px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #F1F1F1;  
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+}
+
+.section3{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#checkbox{
+  width: 15.611px;
+  height: 15px;
+  border-radius: 4px;
+  border: 1px solid #979797;
+}
+
+.section4{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-profile{
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 26px;
+  width: 100%;
+  border-bottom: 1px solid #979797;
+}
