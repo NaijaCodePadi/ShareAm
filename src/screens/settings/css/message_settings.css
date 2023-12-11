@@ -231,6 +231,7 @@ a.light-active-menu svg {
   font-size: 14px;
   font-weight: 500;
   border: none;
+  cursor: pointer;
 }
 
 .section2{
