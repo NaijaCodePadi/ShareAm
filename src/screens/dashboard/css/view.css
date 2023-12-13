@@ -325,15 +325,16 @@ ul {
   display: block;
 }
 
+.chat-bubbles-wrapper {
+  height: 300px;
+  /* overflow-y: scroll; */
+}
+
 .chat-bubbles {
   display: grid;
   grid-template-columns: 53px auto;
   column-gap: 6px;
   margin-bottom: 18px;
-}
-
-.third-user-chat {
-  margin-bottom: 0;
 }
 
 .user-profile-picture {
@@ -397,7 +398,7 @@ ul {
   align-items: center;
   justify-content: flex-start;
   gap: 13px;
-  margin: 48px 0 18px 0;
+  margin: 18px 0 10px 0;
 }
 
 .loading-circle {
