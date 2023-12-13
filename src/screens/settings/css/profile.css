@@ -202,6 +202,7 @@ a.light-active-menu svg {
 .main-section-2-wrap{
   height: 159px;
   margin:65px 42px 65px 42px;
+  position: relative;
 }
 
 .bio{
@@ -211,24 +212,23 @@ margin-bottom: 16px;
 #bio-write-up{
   width: 100%;
   padding: 17px;
-  margin-bottom: 22px;
+  padding-right: 80px;
+  margin: 16px 0 22px;
 }
 
-.main-section-2-wrap label{
-  position: relative;
-}
 
 .text-limit{
   width: 61px;
   position: absolute;
-  top: 0;
+  top: 65px;
   right: 20px;
   bottom: 0;
 }
 
-#save-btn{
-  display: flex;
-  margin-left: auto;
+.save-btn{
+  position: absolute;
+  right: 5px;
+  bottom: 20px;
 }
 
 .main-section-3{
@@ -241,30 +241,39 @@ margin-bottom: 16px;
   margin: 65px auto 114px auto;
 }
 
-.main-section-3 h3{
-  margin-bottom: 28px;
-  
+.main-section-3 > form {
+  width: 345px;
+  position: relative;
 }
-
 .main-section-3 input{
   width: 345px;
 }
 
-.main-section-3 label{
-  position: relative;
+
+.display-name-section > input,
+.username-section > input,
+.email-section > input {
+  margin-top: 26px;
 }
+
+.password-section > input{
+  margin-top: 20px;
+}
+
 
 #change-btn{
   position: absolute;
-  top: 0;
+  top: 53px;
   right: 10px;
   bottom: 0;
 }
 
-.input-wrap{
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
+.password-section > #change-btn {
+  position: absolute;
+  top: 135px;
+  right: 10px;
+  bottom: 0;
+
 }
 
 .main-section-4{
@@ -422,6 +431,138 @@ gap: 19px;
 
   }
   /* -------profile texts styles------- */
+
+.dark-cover-photo-text {
+    color: #585858;
+    font-family: Poppins-medium;
+    font-size: 16px;
+    font-weight: 400;
+}
+.light-cover-photo-text{
+  color: #0272BC;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.display-name-text {
+    color: #150AA1;
+    font-family: Poppins-regular;
+    font-size: 20px;
+    font-weight: 700;
+}
+.user-id-text {
+    color: #686868;
+    font-family: Poppins-medium;
+    font-size: 16px;
+    font-weight: 400;
+}
+.dark-bio-text {
+    color: #FFFCFC;
+    font-family: poppins-regular;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.light-bio-text { 
+  color: #0272BC;
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bio-input-text {
+    color: #9A9A9A;
+    font-family: Poppins-medium;
+    font-size: 16px;
+    font-weight: 400;
+}
+.input-limit-text {
+  color: #494949;
+  font-family: poppins-regular;
+  font-size: 12px;
+  font-weight: 300;
+}
+/* reuseable at message interface(send button) */
+.save-btn-text {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 500;
+}
+.dark-change-text {
+    color: #FFFCFC;
+    font-family: Poppins-regular;
+    font-size: 16px;
+    font-weight: 700;
+}
+.light-change-text {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.change-input-text {
+    color: #9A9A9A;
+    font-family: Poppins-medium;
+    font-size: 14px;
+    font-weight: 400;
+}
+.change-btn-text {
+    color: #fff;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 400;
+}
+.dark-url-input-text {
+    color: #A9A9A9;
+    font-family: Poppins-medium;
+    font-size: 16px;
+    font-weight: 400;
+}
+.light-url-input-text { 
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.share-btn-text {
+    color: #FFF;
+    font-family: Poppins-medium;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px; 
+}
+.dark-show-text {
+    color: #FFFCFC;
+    font-family: Poppins-regular;
+    font-size: 16px;
+    font-weight: 700;
+}
+.light-show-text {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 16px;
+}
+
+.delete-text {
+    color: #F52A1D;
+    font-family: Poppins-regular;
+    font-size: 16px;
+    font-weight: 700;
+}
+.delete-btn-text {
+    color: #F52A1D;
+    text-align: center;
+    font-family: Poppins-medium;
+    font-size: 16px;
+    font-weight: 400;
+}
 
   /* ------footer------ */
   
