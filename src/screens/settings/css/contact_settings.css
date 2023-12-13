@@ -136,6 +136,44 @@ a.light-active-menu svg {
       color: var(--dm-active-menu);
     }
 
+    /* ---------------------------------------------main body ------------------------------- */
+.contact_settings {
+  margin: 160px 98px 0 52px;
+}
+.contact_settings > h4 {
+  border-bottom: 1px solid #979797;
+  padding-bottom: 25px;
+}
+.cs-sections > section {
+  padding: 25px 0;
+  border-bottom: 1px solid #979797;
+  display: flex;
+  justify-content: space-between;
+}
+.cs-sections > section > span {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cs-sections > section > span > .light-arrow-svg {
+  width: 21px;
+  height: 14px;
+  color: #000;
+}
+.cs-sections > section > span > .dark-arrow-svg {
+  width: 21px;
+  height: 14px;
+  color: #e4e4e4;
+}
+.cs-sections > section:last-child {
+  border: none;
+}
+
 
      /* ------------------------------------texts styes --------------------------- */
     /* NAVBAR */
@@ -167,3 +205,29 @@ a.light-active-menu svg {
       font-weight: 700;
 
   }
+  /* -----------------------main body texts styles --------------- */
+  .dark-menu-title-texts {
+    color: #0389e1;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .light-menu-title-texts {
+    color: #150aa1;
+    font-family: Poppins-regular;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .dark-setting-subtitle-texts{
+    color: #FFFCFC;
+    font-family: Poppins-medium;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.light-setting-subtitle-texts {
+  color: #000;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+}
