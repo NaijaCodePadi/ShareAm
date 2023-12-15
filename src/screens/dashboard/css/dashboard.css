@@ -762,14 +762,14 @@
 .light-switch-acct-txt > a {
   color: #0272BC;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }
 .dark-switch-acct-txt > a {
   color: #048AD7;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }
