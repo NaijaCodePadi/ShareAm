@@ -713,6 +713,7 @@ footer {
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
 }
 .delete-btn-text {
   color: #f52a1d;
