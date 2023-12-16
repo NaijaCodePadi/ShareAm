@@ -335,6 +335,8 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+
 /* <------- FOR DARK MODE --------> */
 .dark-color-mode{
   width: 220px;
