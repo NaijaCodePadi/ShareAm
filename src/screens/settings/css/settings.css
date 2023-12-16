@@ -168,14 +168,14 @@ a.light-active-menu svg {
   }
 
  /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
-  .mainbody{
+  .light-mainbody{
     background-color: #DAD9D9;
-    padding:15px 0px 10px 0px;
+    padding: 15px 0px 10px 0px;
   }
-  .mainbody h4{
+  .light-mainbody h4{
     margin-left: 10px;
   }
-  .mainbody p{
+  .light-mainbody p{
     line-height: 35px;
     margin-left: 20px;
     margin-top: 5px;
@@ -316,3 +316,15 @@ a.light-active-menu svg {
     transform: rotate(45deg);
   }
 
+  /* <------DARK MODE FOR SETTINGS PAGE ------> */
+  .dark-mainbody{
+    background-color: #585858;
+  }
+  .checkmark {
+    background-color: #DAD9D9;
+    border: 0.1px solid rgba(0, 0, 0);
+  }
+  .checkmark2 {
+    background-color: rgba(218, 217, 217, 0.5);
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+  }
