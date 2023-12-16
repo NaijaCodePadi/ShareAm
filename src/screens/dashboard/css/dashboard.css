@@ -737,14 +737,14 @@ span {
 .light-switch-acct-txt > a {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }
 .dark-switch-acct-txt > a {
   color: #048ad7;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 500;
   text-decoration: none;
 }

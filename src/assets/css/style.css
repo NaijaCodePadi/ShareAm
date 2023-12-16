@@ -65,16 +65,19 @@ body {
   color: #fff;
   font-size: 50px;
   font-weight: 800;
+  font-family: poppins-bold;
 }
 
 .light-splash-text-heading span {
   color: #6f3fe3;
+  font-family: poppins-bold;
 }
 
 .light-splash-text-pg {
   color: #e4edf6;
   font-size: 18px;
   font-weight: 500;
+  font-family: poppins-medium;
 }
 .light-google,
 .light-facebook {
