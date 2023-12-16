@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: Rubik;
-  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 /* DO NOT REMOVE THE CODE ABOVE */
 
@@ -214,6 +214,10 @@ a.dark-active-menu svg {
   display: flex;
   align-items: center;
   gap: 26px;
+}
+
+.section1-div1 svg {
+  cursor: pointer;
 }
 
 .write-message-btn {

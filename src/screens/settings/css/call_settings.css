@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: Rubik;
-  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf)
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -140,7 +140,7 @@ a.dark-active-menu svg {
 
 /* ---------------------------------------------main body ------------------------------- */
 .call_settings {
-  margin: 143px 40px 0 20px;
+  margin: 143px 40px 0 52px;
 }
 .call_settings > h4 {
   border-bottom: 1px solid #979797;

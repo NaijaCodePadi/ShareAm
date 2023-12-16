@@ -428,3 +428,55 @@ ul {
   display: flex;
   align-items: center;
 }
+
+/* ------------------------------ Texts styles -------------------------------------- */
+.desktop-msg-title-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+}
+.desktop-msg-subtitle-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
+.desktop-viewer {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.desktop-now-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 10px;
+  font-weight: 400;
+}
+.desktop-thanks-txt {
+  color: #FFF;
+  font-family: Poppins-regular;
+  font-size: 10px;
+  font-weight: 500;
+}
+.desktop-msg-graphic-title-txt {
+  color: rgba(218, 217, 217, 0.70);
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.desktop-sent-txt {
+  color: #DAD9D9;
+  font-family: Poppins-regular;
+  font-size: 12px;
+  font-weight: 500;
+}
+.desktop-sent-date-txt {
+  color: rgba(218, 217, 217, 0.80);
+  font-family: Poppins-medium;
+  font-size: 10px;
+  font-weight: 500;
+}
