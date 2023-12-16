@@ -1,0 +1,318 @@
+/* This removes padding & margin from every container */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* text styles */
+  @font-face {
+    font-family: poppins-bold;
+    src: url(../../../assets/fonts/Poppins-Bold.ttf);
+  }
+  @font-face {
+    font-family: poppins-regular;
+    src: url(../../../assets/fonts/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: poppins-medium;
+    src: url(../../../assets/fonts/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  }
+
+  /* DO NOT REMOVE THE CODE ABOVE */
+
+  /* /-----------------------SIDE BAR -------------------------/ */
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* dark mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+.privacy{
+  display: grid;
+  grid-template-columns: 310px auto;
+}
+.sidebar-nav{
+  width: 310px;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+  padding: 43px 0 41px 0;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  z-index: 1; 
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-link-container a{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  height: 54px;
+  transition: all 0.5s ease;
+}
+
+header .prof-pic,
+.menu-link {
+  padding-left: 72px;
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+}
+
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px, top 395px right 250px,
+    top 450px right 18px, top 547px right 160px, top 789px right 231px;
+}
+
+  .dark-nav-link-container a:hover {
+    background-color: var(--dm-active-menu-bg-color);
+  }
+  
+  .dark-nav-link-container a:hover svg {
+    color: var(--dm-active-menu);
+  }
+
+    a.dark-active-menu {
+      background-color: var(--dm-active-menu-bg-color);
+    }
+    
+    a.dark-active-menu svg {
+      color: var(--dm-active-menu);
+    }
+
+
+     /* ------------------------------------texts styes --------------------------- */
+    /* NAVBAR */
+    .light-nav-texts {
+      color: rgba(169, 169, 169, 0.90);
+      font-family: Rubik;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .Dark-nav-texts {
+      color: #A9A9A9;
+      font-family: Rubik;
+      font-size: 16px;
+      font-weight: 500;
+  }
+
+  .dark-nav-texts-active {
+      color: #FFFCFC;
+      font-family: Poppins-regular;
+      font-size: 16px;
+      font-weight: 700;
+  }
+  .light-nav-texts-active { 
+      color: rgba(34, 32, 32, 0.90);
+      font-family: Poppins-regular;
+      font-size: 16px;
+      font-weight: 700;
+  }
+
+ /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
+  .mainbody{
+    background-color: #DAD9D9;
+    padding:15px 0px 10px 0px;
+  }
+  .mainbody h4{
+    margin-left: 10px;
+  }
+  .mainbody p{
+    line-height: 35px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+  .horizontal-line{
+    margin: 8px 20px 0px 0px;
+    border-bottom: 1px solid #979797;
+  }
+  .horizontal-line1{
+    margin: 10px 0px 15px 0px;
+    border-bottom: 1px solid #979797;
+  }
+  section{
+    margin: 0px 20px 0px 0px;
+  }
+  .camera-settings,
+  .audio-settings,
+  .audio-settings1,
+  .speaker,
+  .colour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .camera-right-text p,
+  .audio-settings-right-text p,
+  .speaker-right-text {
+    color: #585858;
+  }
+  .camera-preview{
+    display: flex;
+    gap: 60px;
+  }
+  .camera-preview1{
+    width: 500px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .camera-preview-right {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: auto auto;
+  }
+  .camera-preview2 p{
+    margin-top: 0px;
+    margin-left: 0;
+    line-height: 30px;
+  }
+  .camera-preview3 {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
+  .mode{
+    display: flex;
+    align-items: center;
+    gap: 78px;
+  }
+  .container {
+    margin: 0px 0px 5px 0px;
+    display: block;
+    position: relative;
+    padding: 5px 0px 0px 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 550;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* .........Hide the browser's default checkbox */
+  .container input { 
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ..........Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    background-color: #DAD9D9;
+    border: 0.1px solid rgba(0, 0, 0);
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+  }
+  .checkmark2 {
+    position: absolute;
+    background-color: #DAD9D9;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+  }
+  
+  /* ......When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark, 
+  .container input:checked ~ .checkmark2 {
+    background-color: #150AA1;
+    border: none;
+  }
+  
+  /* ...........Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after,
+  .checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* ...........Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after,
+  .container input:checked ~ .checkmark2:after {
+    display: block;
+  }
+  
+  /* ..........Style the checkmark/indicator */
+  .container .checkmark:after,
+  .container .checkmark2:after {
+    left: 8px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
