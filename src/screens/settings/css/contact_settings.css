@@ -209,13 +209,13 @@ a.light-active-menu svg {
   /* -----------------------main body texts styles --------------- */
   .dark-menu-title-texts {
     color: #0389e1;
-    font-family: Poppins-regular;
+    font-family: Poppins-bold;
     font-size: 14px;
     font-weight: 600;
   }
   .light-menu-title-texts {
     color: #150aa1;
-    font-family: Poppins-regular;
+    font-family: Poppins-bold;
     font-size: 14px;
     font-weight: 600;
   }
