@@ -129,7 +129,7 @@
   
 }
 .signUp-only {
-  padding-top: 100px;
+  padding-top: 70px;
   height: 100% !important
 }
 
@@ -253,12 +253,14 @@
   font-family: poppins-bold;
   font-size: 26px;
   font-weight: 700;
+  padding-bottom: 1.5rem;
 }
 .dark-signUp-title-text {
   color: #048AD7;
   font-family: poppins-bold;
   font-size: 26px;
   font-weight: 700;
+  padding-bottom: 1.5rem;
 }
 .light-signUp-label-texts {
   color: rgba(34, 32, 32, 0.9);
