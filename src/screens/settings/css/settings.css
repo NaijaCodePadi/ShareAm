@@ -20,8 +20,7 @@
   }
   @font-face {
     font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf)
-
+    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
   }
 
   /* DO NOT REMOVE THE CODE ABOVE */
@@ -42,7 +41,7 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.contact{
+.privacy{
   display: grid;
   grid-template-columns: 310px auto;
 }
@@ -137,44 +136,6 @@ a.light-active-menu svg {
       color: var(--dm-active-menu);
     }
 
-    /* ---------------------------------------------main body ------------------------------- */
-.contact_settings {
-  margin: 160px 98px 0 52px;
-}
-.contact_settings > h4 {
-  border-bottom: 1px solid #979797;
-  padding-bottom: 25px;
-}
-.cs-sections > section {
-  padding: 25px 0;
-  border-bottom: 1px solid #979797;
-  display: flex;
-  justify-content: space-between;
-}
-.cs-sections > section > span {
-  display: flex;
-  align-items: center;
-  gap: 1px;
-  color: #979797;
-  font-family: Poppins-medium;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.cs-sections > section > span > .light-arrow-svg {
-  width: 21px;
-  height: 14px;
-  color: #000;
-}
-.cs-sections > section > span > .dark-arrow-svg {
-  width: 21px;
-  height: 14px;
-  color: #e4e4e4;
-}
-.cs-sections > section:last-child {
-  border: none;
-}
-
 
      /* ------------------------------------texts styes --------------------------- */
     /* NAVBAR */
@@ -204,31 +165,166 @@ a.light-active-menu svg {
       font-family: Poppins-regular;
       font-size: 16px;
       font-weight: 700;
+  }
 
+ /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
+  .light-mainbody{
+    background-color: #DAD9D9;
+    padding: 15px 0px 10px 0px;
   }
-  /* -----------------------main body texts styles --------------- */
-  .dark-menu-title-texts {
-    color: #0389e1;
-    font-family: Poppins-bold;
-    font-size: 14px;
-    font-weight: 600;
+  .light-mainbody h4{
+    margin-left: 10px;
   }
-  .light-menu-title-texts {
-    color: #150aa1;
-    font-family: Poppins-bold;
-    font-size: 14px;
-    font-weight: 600;
+  .light-mainbody p{
+    line-height: 35px;
+    margin-left: 20px;
+    margin-top: 5px;
   }
-  .dark-setting-subtitle-texts{
-    color: #FFFCFC;
-    font-family: Poppins-medium;
+  .horizontal-line{
+    margin: 8px 20px 0px 0px;
+    border-bottom: 1px solid #979797;
+  }
+  .horizontal-line1{
+    margin: 10px 0px 15px 0px;
+    border-bottom: 1px solid #979797;
+  }
+  section{
+    margin: 0px 20px 0px 0px;
+  }
+  .camera-settings,
+  .audio-settings,
+  .audio-settings1,
+  .speaker,
+  .colour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .camera-right-text p,
+  .audio-settings-right-text p,
+  .speaker-right-text {
+    color: #585858;
+  }
+  .camera-preview{
+    display: flex;
+    gap: 60px;
+  }
+  .camera-preview1{
+    width: 500px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .camera-preview-right {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: auto auto;
+  }
+  .camera-preview2 p{
+    margin-top: 0px;
+    margin-left: 0;
+    line-height: 30px;
+  }
+  .camera-preview3 {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
+  .mode{
+    display: flex;
+    align-items: center;
+    gap: 78px;
+  }
+  .container {
+    margin: 0px 0px 5px 0px;
+    display: block;
+    position: relative;
+    padding: 5px 0px 0px 30px;
+    cursor: pointer;
     font-size: 14px;
-    font-weight: 400;
-}
+    font-weight: 550;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* .........Hide the browser's default checkbox */
+  .container input { 
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* ..........Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    background-color: #DAD9D9;
+    border: 0.1px solid rgba(0, 0, 0);
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+  }
+  .checkmark2 {
+    position: absolute;
+    background-color: #DAD9D9;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 20px;
+  }
+  
+  /* ......When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark, 
+  .container input:checked ~ .checkmark2 {
+    background-color: #150AA1;
+    border: none;
+  }
+  
+  /* ...........Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after,
+  .checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* ...........Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after,
+  .container input:checked ~ .checkmark2:after {
+    display: block;
+  }
+  
+  /* ..........Style the checkmark/indicator */
+  .container .checkmark:after,
+  .container .checkmark2:after {
+    left: 8px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 
-.light-setting-subtitle-texts {
-  color: #000;
-  font-family: Poppins-medium;
-  font-size: 14px;
-  font-weight: 400;
-}
+  /* <------DARK MODE FOR SETTINGS PAGE ------> */
+  .dark-mainbody{
+    background-color: #585858;
+  }
+  .checkmark {
+    background-color: #DAD9D9;
+    border: 0.1px solid rgba(0, 0, 0);
+  }
+  .checkmark2 {
+    background-color: rgba(218, 217, 217, 0.5);
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
+  }

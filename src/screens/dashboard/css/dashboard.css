@@ -144,11 +144,10 @@
   height: 68px;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 
-.section2-div1-nav p {
-  color: #979797;
-}
+
 
 .section2-div1-nav-icon-div {
   position: relative;
@@ -184,6 +183,7 @@
   color: #979797;
   font-size: 16px;
   font-weight: 500;
+  font-family: poppins-regular;
 }
 
 .new-chat-btn {
@@ -198,6 +198,7 @@
   color: #979797;
   font-size: 16px;
   font-weight: 500;
+  font-family: poppins-regular;
 }
 
 .section3-container {
@@ -219,6 +220,9 @@
 
 .section3-div1 h5 {
   color: #979797;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: poppins-bold;
 }
 
 .section3-div1-new-user-div {
@@ -229,6 +233,9 @@
 
 .section3-div1-new-user-div p {
   color: #979797;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .section3-div1-new-user-profile-pic {
@@ -250,10 +257,17 @@
 .section3-div2 h2 {
   margin-bottom: 8px;
   color: #0272bc;
+  font-family: Poppins-bold;
+  font-size: 22.163px;
+  font-weight: 700;
+
 }
 
 .section3-div2 p {
   color: #979797;
+  font-family: Poppins-regular;
+  font-size: 12.858px;
+  font-weight: 500;
 }
 
 .section4-container {
@@ -276,15 +290,25 @@
 
 .section4-share-am-div h1 {
   color: #fff;
+  font-family: Poppins-bold;
+  font-size: 50px;
+  font-weight: 800;
 }
 
-span {
+.section4-share-am-div h1 > span {
   color: #6f3fe3;
+  font-family: Poppins-bold;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .section4-text-div p {
   margin-left: 46px;
   color: #e4edf6;
+  font-family: Poppins-medium;
+  font-size: 18px;
+  font-weight: 500;
+  
 }
 
 .section4-img1 {
@@ -626,7 +650,7 @@ span {
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
-/* .desktop-title-text {
+.desktop-title-text {
   color: #FFF;
   font-family: poppins-medium;
   font-size: 20px;
@@ -640,13 +664,13 @@ span {
   font-weight: 500;
   line-height: normal;
 }
-
+/* 
 .desktop-subtitle-text {
   color: #979797;
   font-family: poppins-medium;
   font-size: 16px;
   font-weight: 500;
-}
+}*/
 .desktop-features-text {
   color: #979797;
   font-family: poppins-regular;
@@ -658,7 +682,7 @@ span {
   font-family: poppins-regular;
   font-size: 16px;
   font-weight: 400;
-} */
+} 
 
 .light-welcome-txt {
   color: #303030;
