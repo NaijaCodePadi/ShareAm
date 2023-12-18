@@ -82,39 +82,7 @@
     cursor: pointer;
 }
 
-.light-progress {
-    display: flex;
-    align-items: center;
-}
 
-.light-progress 
-span:nth-child(1), 
-span:nth-child(3), 
-span:nth-child(5) {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #222020E5;
-    border-radius: 50%;
-}
-.dark-progress 
-span:nth-child(1), 
-span:nth-child(3), 
-span:nth-child(5) {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #A9A9A9;
-    border-radius: 50%;
-}
-.light-progress 
-span:nth-child(1) {
-    border: 2px solid #1058E8;
-}
-.light-progress 
-span:nth-child(2), 
-span:nth-child(4) {
-    width: 30px;
-    border-top : 2px solid #000;
-}
 /*--------------------------- set up shareAm----------------- */
 
 
