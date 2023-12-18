@@ -22,7 +22,9 @@
   font-family: Rubik;
   src: url(../fonts/Rubik-VariableFont_wght.ttf);
 }
-
+a {
+  text-decoration: none;
+}
 body {
   background: #7b7b7b;
 }
