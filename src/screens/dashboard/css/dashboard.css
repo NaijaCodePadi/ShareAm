@@ -88,6 +88,11 @@
   align-items: center;
   gap: 20px;
 }
+
+.section1-div1-right svg {
+  cursor: pointer;
+}
+
 .toogle-btn {
   display: flex;
   align-items: center;
@@ -95,15 +100,19 @@
 
 .section1-div2 {
   display: flex;
-  width: 95%;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
 .section1-div2-left {
   display: flex;
-  width: 80%;
-  gap: 46px;
+  width: 400px;
+  height: 50.797px;
+  border-radius: 11.043px;
+  background: #fff;
+  gap: 40px;
+  padding-left: 14px;
   align-items: center;
 }
 
@@ -115,6 +124,7 @@
   height: 49px;
   background: #fff;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .section2-container {
