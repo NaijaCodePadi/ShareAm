@@ -234,7 +234,7 @@
         <div class="light-mainbody-left-side">
           <div class="left-side-div1">
             <div class="left-side-div1-left">
-              <h1>Messages</h1>
+              <h1 class="light-new-message-txt">Messages</h1>
               <a href="" class="new-message-btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <p class="">New Message</p>
+                <p class="write-message-txt">New Message</p>
               </a>
             </div>
             <div class="left-side-div1-right">
@@ -292,9 +292,9 @@
           </div>
           <div class="left-side-div2">
             <div class="left-side-div2-top">
-              <a href="" class="all-btn">All</a>
-              <a href="" class="followers-btn">Followers</a>
-              <a href="" class="fans-btn">Fans</a>
+              <a href="" class="all-btn follower-btn-text">All</a>
+              <a href="" class="followers-btn follower-btn-text">Followers</a>
+              <a href="" class="fans-btn follower-btn-text">Fans</a>
             </div>
             <hr />
             <div class="left-side-div2-bottom">
@@ -305,15 +305,15 @@
                     alt="User Profile Pic"
                   />
                   <div class="user-details-div1-1">
-                    <p>Mason Mount</p>
-                    <p>
+                    <p class="light-friends-display-name-text-active">Mason Mount</p>
+                    <p class="light-disappear-text">
                       Sent you a
                       <span id="blue-text">Dissapearing Message</span>
                     </p>
                   </div>
                 </div>
                 <div class="user-details-div2">
-                  <p>October 4</p>
+                  <p class="message-text">October 4</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -347,12 +347,12 @@
                     alt="User Profile Pic"
                   />
                   <div class="user-details-div1-1">
-                    <p>Steph Curry</p>
-                    <p>Break the ice, say hello!</p>
+                    <p class="light-friends-display-name-text">Steph Curry</p>
+                    <p class="message-text">Break the ice, say hello!</p>
                   </div>
                 </div>
                 <div class="user-details-div2">
-                  <p>October 4</p>
+                  <p class="message-text">October 4</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -386,12 +386,12 @@
                     alt="User Profile Pic"
                   />
                   <div class="user-details-div1-1">
-                    <p>Lincoln Abraham</p>
-                    <p>Break the ice, say hello!</p>
+                    <p class=".light-friends-display-name-text ">Lincoln Abraham</p>
+                    <p class="message-text">Break the ice, say hello!</p>
                   </div>
                 </div>
                 <div class="user-details-div2">
-                  <p>October 4</p>
+                  <p class="message-text">October 4</p>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -430,8 +430,8 @@
                   alt="User Profile Pic"
                 />
                 <div class="user-details-div1-1">
-                  <p>Mason Mount</p>
-                  <p>
+                  <p class="light-friends-display-name-text-active">Mason Mount</p>
+                  <p class="light-disappear-text">
                     Sent you a
                     <span id="blue-text">Dissapearing Message</span>
                   </p>
@@ -441,19 +441,20 @@
                 <img src="../../assets/images/ONANANANA 1.svg" alt="" />
               </div>
               <div class="disappearing-message-warning-text">
-                <p>This message will disappear in 24:00 hours</p>
+                <p class="light-disappear-text">This message will disappear in 24:00 hours</p>
                 <img src="../../assets/images/Sport Stopwatch.svg" alt="" />
               </div>
             </div>
             <div class="right-side-div1-right">
-              <p>October 4</p>
+              <p class="message-text">October 4</p>
             </div>
           </div>
           <div class="right-side-div2">
             <input
               type="text"
               placeholder="Type message"
-              class="right-side-div2-top"
+              class="right-side-div2-top light-textarea-text"
+              
             />
             <div class="right-side-div2-bottom">
               <div class="right-side-div2-bottom-icons">
@@ -533,7 +534,7 @@
                   </defs>
                 </svg>
               </div>
-              <div class="send-btn">Send</div>
+              <div class="send-btn write-message-txt">Send</div>
             </div>
           </div>
         </div>
