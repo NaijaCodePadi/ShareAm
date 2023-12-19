@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./auth_modal.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <!-- <h1>one time passcode</h1> -->
+      <div class="light-startUp-container">
+        <div class="exit">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path
+              d="M9.89324 3.45816L7.51247 5.92536L5.04527 3.54459C4.74253 3.25245 4.26009 3.26105 3.96795 3.56379L3.43889 4.11206C3.14675 4.4148 3.15535 4.89724 3.45809 5.18938L5.92529 7.57015L3.54452 10.0373C3.25238 10.3401 3.26098 10.8225 3.56372 11.1147L4.11199 11.6437C4.41473 11.9359 4.89717 11.9273 5.18931 11.6245L7.57008 9.15733L10.0373 11.5381C10.34 11.8302 10.8225 11.8216 11.1146 11.5189L11.6437 10.9706C11.9358 10.6679 11.9272 10.1854 11.6245 9.8933L9.15726 7.51253L11.538 5.04534C11.8302 4.7426 11.8216 4.26016 11.5188 3.96802L10.9706 3.43896C10.6678 3.14682 10.1854 3.15542 9.89324 3.45816Z"
+              fill="#979797"
+            />
+          </svg>
+        </div>
+        <section class="startUp-content-wallaper">
+          <h1 class="light-create-acc-title-txt">One-Time Passcode</h1>
+          <p class="light-one-time-subtitle-txt">
+            To create your ShareAm account, check your email
+            (UserEmail@Domain.com) and enter the verification code below.
+          </p>
+          <div class="input-container">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+          </div>
+          <button class="one-time-btn-txt">verify</button>
+          <p class="one-time-subtitle-txt">
+            Can't find the email? <span>Resend</span> in <strong>3s</strong>
+          </p>
+        </section>
+
+        <p class="back">Back</p>
+      </div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./auth_modal.css">
-    <title>Document</title>
+    <title>Modals</title>
 </head>
 <body>
-    <main>
+    <main class="startup-body">
         <!-- <h1>one time passcode</h1> -->
         <div class="light-startUp-container">
             <div class="exit">
@@ -28,7 +73,6 @@
                 <button class="one-time-btn-txt">verify</button>
                 <p class="one-time-subtitle-txt">Can't find the email? <span>Resend</span> in <strong>3s</strong></p>
             </section>
-            
             <p class="back">Back</p>
         </div>
 
@@ -56,6 +100,25 @@
                 <button class="light-startup-btn-txt">Get Started</button>
             </section>
         </div>
+
+        <div class="light-startUp-container">
+            <div class="exit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M9.89324 3.45816L7.51247 5.92536L5.04527 3.54459C4.74253 3.25245 4.26009 3.26105 3.96795 3.56379L3.43889 4.11206C3.14675 4.4148 3.15535 4.89724 3.45809 5.18938L5.92529 7.57015L3.54452 10.0373C3.25238 10.3401 3.26098 10.8225 3.56372 11.1147L4.11199 11.6437C4.41473 11.9359 4.89717 11.9273 5.18931 11.6245L7.57008 9.15733L10.0373 11.5381C10.34 11.8302 10.8225 11.8216 11.1146 11.5189L11.6437 10.9706C11.9358 10.6679 11.9272 10.1854 11.6245 9.8933L9.15726 7.51253L11.538 5.04534C11.8302 4.7426 11.8216 4.26016 11.5188 3.96802L10.9706 3.43896C10.6678 3.14682 10.1854 3.15542 9.89324 3.45816Z" fill="#979797"/>
+                </svg>
+            </div>
+            <section class="startUp-content-wallaper">
+                <img src="../../assets/images/completeProgress.svg" alt="complete progress svg">
+                <h1 class="light-startUp-title-txt">You're all set!</h1>
+                <p class="light-startUp-subtitle-txt">You're ready to start using Zoom—the all-in-one app for collaboration, communication, and more.</p>
+                <div>
+                    <img src="../../assets/images/checklist-icon-3d-clipboard-with-survey-pen 1.png" alt="">
+                </div>
+                <button class="light-startup-btn-txt">Let’s Go</button>
+            </section>
+            <p class="back">Back</p>
+        </div>
+        <div><a href="../modal/settings_modal.html">Setting modal</a></div>
 
 
         <!------START OF PERSONA MODAL -->
@@ -108,5 +171,5 @@
         </div>
 
     </main>
-</body>
+  </body>
 </html>
