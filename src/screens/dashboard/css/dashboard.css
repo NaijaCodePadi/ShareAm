@@ -153,8 +153,6 @@
   text-decoration: none;
 }
 
-
-
 .section2-div1-nav-icon-div {
   position: relative;
   height: 31px;
@@ -266,7 +264,6 @@
   font-family: Poppins-bold;
   font-size: 22.163px;
   font-weight: 700;
-
 }
 
 .section3-div2 p {
@@ -314,7 +311,6 @@
   font-family: Poppins-medium;
   font-size: 18px;
   font-weight: 500;
-  
 }
 
 .section4-img1 {
@@ -657,13 +653,13 @@
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
 .desktop-title-text {
-  color: #FFF;
+  color: #fff;
   font-family: poppins-medium;
   font-size: 20px;
   font-weight: 700;
 }
 .desktop-status-text {
-  color: #FFF;
+  color: #fff;
   font-family: poppins-regular;
   font-size: 14px;
   font-style: normal;
@@ -684,11 +680,11 @@
   font-weight: 400;
 }
 .desktop-features-text-active {
-  color: #0272BC;
+  color: #0272bc;
   font-family: poppins-regular;
   font-size: 16px;
   font-weight: 400;
-} 
+}
 
 .light-welcome-txt {
   color: #303030;
@@ -876,4 +872,69 @@ input:checked + label svg.sun {
 }
 input:checked + label svg.moon {
   fill: #fff;
+}
+
+/*-----NOTIFICATION BOX CSS----------- */
+
+.notification-container {
+  width: 546px;
+  height: 585.013px;
+  background: linear-gradient(to bottom, #5b4971 0%, black);
+  backdrop-filter: blur(3px);
+  margin-top: 50px;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 291px;
+}
+
+.section1-div1-left {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 25px;
+}
+
+.section1-div1-left p {
+  margin-top: 0px;
+}
+
+.section1-div1-right {
+  width: 43px;
+  height: 45px;
+  background: url(<path-to-image>) / contain no-repeat;
+  margin-top: 30px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.section2-span {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.section2 p {
+  width: 314px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
 }
