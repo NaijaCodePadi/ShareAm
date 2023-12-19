@@ -883,14 +883,14 @@ input:checked + label svg.moon {
   backdrop-filter: blur(3px);
   margin-top: 50px;
 }
-.section1 {
+.notification-section1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 291px;
 }
 
-.section1-div1-left {
+.notification-section1-div1-left {
   color: #fff;
   font-family: Poppins;
   font-size: 28px;
@@ -900,25 +900,25 @@ input:checked + label svg.moon {
   margin-top: 25px;
 }
 
-.section1-div1-left p {
+.notification-section1-div1-left p {
   margin-top: 0px;
 }
 
-.section1-div1-right {
+.notification-section1-div1-right {
   width: 43px;
   height: 45px;
   background: url(<path-to-image>) / contain no-repeat;
   margin-top: 30px;
 }
 
-.section2 {
+.notification-section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
 }
 
-.section2-span {
+.notification-section2-span {
   color: #fff;
   font-family: Poppins;
   font-size: 26px;
@@ -928,7 +928,7 @@ input:checked + label svg.moon {
   margin-bottom: 5px;
 }
 
-.section2 p {
+.notification-section2 p {
   width: 314px;
   color: #fff;
   text-align: center;
