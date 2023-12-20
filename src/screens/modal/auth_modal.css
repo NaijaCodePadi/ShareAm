@@ -31,6 +31,30 @@
   gap: 50px;
   padding: 50px 0;
 }
+.light-one-time-contaimer {
+  background: #fff;
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+.dark-one-time-contaimer {
+  background: rgba(31, 32, 31, 0.9);
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
 .light-startUp-container {
   background: #fff;
   height: 512px;
@@ -68,30 +92,6 @@
   display: flex;
   gap: 14px;
 }
-.verify-btn {
-  display: flex;
-  width: 388px;
-  padding: 10px 94px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: #9897fb;
-  border: none;
-}
-
-.lets-go-btn {
-  display: flex;
-  width: 342px;
-  padding: 10px 94px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: #1376e3;
-  border: none;
-}
-
 .input-container input {
   width: 52px;
   height: 65.333px;
@@ -113,6 +113,48 @@
   font-family: poppins-medium;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------------------- GET NOTIFIED MODAL ------------------ */
+.get-notified-container {
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+.light-get-notified-container {
+  background: #fff;
+}
+
+.dark-get-notified-container {
+  background: rgba(31, 32, 31, 0.9);
+}
+
+.get-notified-sec-wrapper {
+  width: 495px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 28px 57px 0 65px;
+}
+
+.back-skip-btns {
+  width: 561px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 39px 0 27px;
+}
+
+.back-click,
+.skip-click {
   cursor: pointer;
 }
 
@@ -144,6 +186,19 @@
   font-size: 14px;
   font-weight: 400;
   text-align: center;
+}
+
+.verify-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 388px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897fb;
+  border: none;
 }
 
 .one-time-btn-txt {
