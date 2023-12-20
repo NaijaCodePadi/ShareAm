@@ -193,19 +193,22 @@
 /* <-------- START OF PERSONAL PAGE MODAL CSS --------> */
 .light-personal-page-container {
   justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   border-radius: 20px;
   width: 549px;
   height: 501px;
   background-color: #FFFFFF;
-  padding: 17px 27px;
+  padding: 20px 27px;
 }
 .top-heading {
   margin-top: 25px;
+  margin-left: 200px;
   display: flex;
   justify-content: flex-end;
-  gap: 170px;
+  gap: 190px;
 }
 .personal-text{
   margin: 25px 0px 25px 0px;
@@ -217,19 +220,17 @@
   display: none;
 }
 .personal-input {
-  text-align: center;
+  text-align: start;
   margin-bottom: 22px;
-}
-.personal-input input {
-  margin-top: 22px;
 }
 .back-text {
   margin-top: 22px;
   display: flex;
+  gap: 430px;
   justify-content: space-between;
 }
 /* <------PERSONAL MODAL PAGE DARK MODE-------> */
 .dark-personal-page-container {
   background-color: #1F201FE5;
 }
-
+/* <-------- END OF PERSONAL PAGE MODAL CSS --------> */
