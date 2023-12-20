@@ -287,6 +287,7 @@
   border-radius: 10px;
   border: 1px solid rgba(42, 40, 45, 0.9);
   background: #1376e3;
+  border: none;
 }
 
 .lets-go-btn {
