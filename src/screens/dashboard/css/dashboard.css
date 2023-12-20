@@ -450,10 +450,17 @@
 
 .popup-notification {
   display: flex;
-  height: 45px;
+  width: 100%;
+  height: 49px;
   align-items: center;
   padding: 0px 20px 0 116px;
   gap: 32px;
+  border-radius: 18px;
+  background: linear-gradient(
+    90deg,
+    #a0a0f6 1.22%,
+    rgba(228, 208, 249, 0) 100%
+  );
 }
 
 .verified-icon {
@@ -650,16 +657,6 @@
 .dark-other-icons-call-interface {
   background-color: var(--darkmdblue);
   border-radius: 25px;
-}
-
-/*------------------------ Pop up message colour gradient--------------- */
-.section-2-container {
-  border-radius: 18px;
-  background: linear-gradient(
-    90deg,
-    #a0a0f6 1.22%,
-    rgba(228, 208, 249, 0) 100%
-  );
 }
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
