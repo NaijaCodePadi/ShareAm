@@ -28,7 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 .setting-modal-body {
     width: 383px;
