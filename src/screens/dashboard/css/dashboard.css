@@ -111,9 +111,21 @@
   height: 50.797px;
   border-radius: 11.043px;
   background: #fff;
-  gap: 40px;
+  gap: 2px;
   padding-left: 14px;
   align-items: center;
+}
+
+.section1-div2-left svg {
+  cursor: pointer;
+}
+
+.section1-div2-left input {
+  width: 100%;
+  height: 100%;
+  border-radius: 11.043px;
+  padding-left: 36px;
+  border: none;
 }
 
 .section1-div2-right {
@@ -663,13 +675,13 @@
   font-weight: 500;
   line-height: normal;
 }
-/* 
+
 .desktop-subtitle-text {
   color: #979797;
   font-family: poppins-medium;
   font-size: 16px;
   font-weight: 500;
-}*/
+}
 .desktop-features-text {
   color: #979797;
   font-family: poppins-regular;
@@ -764,14 +776,14 @@
 .light-switch-acct-txt > a {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 500;
   text-decoration: none;
 }
 .dark-switch-acct-txt > a {
   color: #048ad7;
   font-family: poppins-regular;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 500;
   text-decoration: none;
 }
@@ -824,7 +836,7 @@ label:after {
   border-radius: 180px;
   transition: 0.3s;
 }
-input {
+#darkmode-toggle {
   width: 0;
   height: 0;
   visibility: hidden;
@@ -836,15 +848,7 @@ input:checked + label:after {
   transform: translateX(27px);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
-/* 
-.background {
-	width:100vw;
-	height: 100vh;
-	background: #e0dbdb;
-	z-index: -1;
-	position: absolute;
-	transition: 0.3s;
-}*/
+
 input:checked + label + .background {
   background: #242424;
 }
@@ -870,3 +874,4 @@ input:checked + label svg.sun {
 input:checked + label svg.moon {
   fill: #fff;
 }
+

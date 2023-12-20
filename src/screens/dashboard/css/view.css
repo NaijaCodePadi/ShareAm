@@ -248,6 +248,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .message:hover {
@@ -347,7 +348,7 @@ ul {
 }
 
 .chat-bubbles-wrapper {
-  height: 280px;
+  height: 320px;
   overflow-y: hidden;
 }
 
@@ -373,9 +374,13 @@ ul {
 
 .text-and-time-wrapper {
   display: flex;
-  align-items: center;
+  padding: 6px 7px 10px 16px;
+  align-items: flex-end;
+  width: fit-content;
   gap: 12px;
   margin: 6px 0 0 24px;
+  border-radius: 0px 7px 7px 7px;
+  background: rgba(88, 88, 88, 0.75);
 }
 .user-text-delivery-time {
   margin-left: auto;
@@ -409,9 +414,16 @@ ul {
 
 .you-text-and-time-wrapper {
   display: flex;
-  align-items: center;
+  width: fit-content;
+  padding: 8px 7px 8px 16px;
+  align-items: flex-end;
   gap: 12px;
   margin: 6px 0 0 24px;
+  border-radius: 7px 0px 7px 7px;
+  background: rgba(48, 48, 48, 0.75);
+}
+.fa-sm {
+  padding-bottom: 10px;
 }
 
 .user-typing-indicator {
@@ -447,12 +459,39 @@ ul {
 
 .input-wrapper {
   display: flex;
-  align-items: center;
   height: 50px;
   border-radius: 7px;
   background: #585858;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 12px 14px 15px 31px;
+  padding: 0 14px 0 21px;
+}
+
+.img-btn {
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+.bar {
+  width: 1px;
+  height: 29px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #d9d9d9;
+  margin: 12px 0 10px 15px;
+}
+
+#messages {
+  height: 100%;
+  width: 250px;
+  padding-left: 26px;
+  background: none;
+  border: none;
+}
+
+.send-btn {
+  margin-top: 8px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 /* ------------------------------ Texts styles -------------------------------------- */
