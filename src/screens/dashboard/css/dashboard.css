@@ -153,8 +153,6 @@
   text-decoration: none;
 }
 
-
-
 .section2-div1-nav-icon-div {
   position: relative;
   height: 31px;
@@ -266,7 +264,6 @@
   font-family: Poppins-bold;
   font-size: 22.163px;
   font-weight: 700;
-
 }
 
 .section3-div2 p {
@@ -314,7 +311,6 @@
   font-family: Poppins-medium;
   font-size: 18px;
   font-weight: 500;
-  
 }
 
 .section4-img1 {
@@ -442,10 +438,17 @@
 
 .popup-notification {
   display: flex;
-  height: 45px;
+  width: 100%;
+  height: 49px;
   align-items: center;
   padding: 0px 20px 0 116px;
   gap: 32px;
+  border-radius: 18px;
+  background: linear-gradient(
+    90deg,
+    #a0a0f6 1.22%,
+    rgba(228, 208, 249, 0) 100%
+  );
 }
 
 .verified-icon {
@@ -644,26 +647,16 @@
   border-radius: 25px;
 }
 
-/*------------------------ Pop up message colour gradient--------------- */
-.section-2-container {
-  border-radius: 18px;
-  background: linear-gradient(
-    90deg,
-    #a0a0f6 1.22%,
-    rgba(228, 208, 249, 0) 100%
-  );
-}
-
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
 .desktop-title-text {
-  color: #FFF;
+  color: #fff;
   font-family: poppins-medium;
   font-size: 20px;
   font-weight: 700;
 }
 .desktop-status-text {
-  color: #FFF;
+  color: #fff;
   font-family: poppins-regular;
   font-size: 14px;
   font-style: normal;
@@ -684,11 +677,11 @@
   font-weight: 400;
 }
 .desktop-features-text-active {
-  color: #0272BC;
+  color: #0272bc;
   font-family: poppins-regular;
   font-size: 16px;
   font-weight: 400;
-} 
+}
 
 .light-welcome-txt {
   color: #303030;
