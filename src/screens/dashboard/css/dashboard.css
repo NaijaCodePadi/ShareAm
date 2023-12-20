@@ -885,3 +885,68 @@ input:checked + label svg.sun {
 input:checked + label svg.moon {
   fill: #fff;
 }
+
+/*-----NOTIFICATION BOX CSS----------- */
+
+.notification-container {
+  width: 546px;
+  height: 585.013px;
+  background: linear-gradient(to bottom, #5b4971 0%, black);
+  backdrop-filter: blur(3px);
+  margin-top: 50px;
+}
+.notification-section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 291px;
+}
+
+.notification-section1-div1-left {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 25px;
+}
+
+.notification-section1-div1-left p {
+  margin-top: 0px;
+}
+
+.notification-section1-div1-right {
+  width: 43px;
+  height: 45px;
+  background: url(<path-to-image>) / contain no-repeat;
+  margin-top: 30px;
+}
+
+.notification-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.notification-section2-span {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.notification-section2 p {
+  width: 314px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
