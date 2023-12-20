@@ -31,6 +31,30 @@
   gap: 50px;
   padding: 50px 0;
 }
+.light-one-time-contaimer {
+  background: #fff;
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+.dark-one-time-contaimer {
+  background: rgba(31, 32, 31, 0.9);
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
 .light-startUp-container {
   background: #fff;
   height: 512px;
@@ -93,8 +117,7 @@
 }
 
 /* ---------------------- GET NOTIFIED MODAL ------------------ */
-.light-get-notified-container {
-  background: #fff;
+.get-notified-container {
   height: 512px;
   width: 561px;
   display: inline-flex;
@@ -104,6 +127,13 @@
   gap: 10px;
   position: relative;
   border-radius: 20px;
+}
+.light-get-notified-container {
+  background: #fff;
+}
+
+.dark-get-notified-container {
+  background: rgba(31, 32, 31, 0.9);
 }
 
 .get-notified-sec-wrapper {
