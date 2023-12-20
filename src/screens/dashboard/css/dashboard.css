@@ -852,15 +852,7 @@ input:checked + label:after {
   transform: translateX(27px);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
-/* 
-.background {
-	width:100vw;
-	height: 100vh;
-	background: #e0dbdb;
-	z-index: -1;
-	position: absolute;
-	transition: 0.3s;
-}*/
+
 input:checked + label + .background {
   background: #242424;
 }
@@ -886,3 +878,4 @@ input:checked + label svg.sun {
 input:checked + label svg.moon {
   fill: #fff;
 }
+
