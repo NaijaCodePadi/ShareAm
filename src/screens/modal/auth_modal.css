@@ -194,6 +194,19 @@
   text-align: center;
 }
 
+.verify-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 388px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897fb;
+  border: none;
+}
+
 .one-time-btn-txt {
   color: #303030;
   font-family: Poppins;
@@ -228,6 +241,18 @@
   font-weight: 700;
 }
 
+.get-started-btn {
+  display: flex;
+  width: 388px;
+  padding: 10px 94px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897fb;
+  border: none;
+}
+
 .dark-startUp-subtitle-txt {
   color: #a9a9a9;
   text-align: center;
@@ -254,4 +279,30 @@
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 600;
+}
+
+.open-system-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 342px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(42, 40, 45, 0.9);
+  background: #1376e3;
+}
+
+.lets-go-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 342px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1376e3;
+  border: none;
 }
