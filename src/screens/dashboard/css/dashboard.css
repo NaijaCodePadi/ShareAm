@@ -75,8 +75,8 @@
 
 .profile-pic-intials {
   position: absolute;
-  left: 33px;
-  top: 38px;
+  left: 30px;
+  top: 30px;
 }
 
 .section1-div1-left-new-user {
@@ -350,9 +350,9 @@
   background: #22074a;
 }
 
-.light-profile-pic-intials {
+/* .light-profile-pic-intials {
   color: #fff;
-}
+} */
 
 .light-section4-container {
   background: #22074a;
@@ -423,8 +423,8 @@
 
 .profile-pic .new-user-initials {
   position: absolute;
-  top: 38px;
-  left: 35px;
+  top: 30px;
+  left: 30px;
 }
 
 .online-status {
@@ -660,7 +660,14 @@
 }
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
-
+.intial-txt {
+  color: #FFF;
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  
+}
 .desktop-title-text {
   color: #fff;
   font-family: poppins-medium;
