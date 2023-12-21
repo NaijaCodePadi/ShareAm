@@ -24,7 +24,8 @@
 /* Sign Up Screen & Log In -- Light Mode */
 .light-signup-container {
   display: flex;
-  height: auto;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   background-color: #dad9d9;
@@ -32,7 +33,6 @@
 }
 .dark-signup-container {
   display: flex;
-  height: auto;
   width: 100%;
   height: 100%;
   background: rgba(42, 40, 45, 0.9);
@@ -44,7 +44,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 600px;
   padding: 0 20px;
   width: 40%;
   height: 100vh;
@@ -79,10 +78,7 @@
   position: relative;
   top: -20px;
 }
-.light-signup-container
-  .light-signup-splash
-  .light-signup-splash-text
-  .light-signup-splash-text-heading {
+.light-signup-container .light-signup-splash .light-signup-splash-text .light-signup-splash-text-heading {
   color: #fff;
   text-align: center;
   font-size: 50px;
@@ -91,11 +87,7 @@
   line-height: normal;
   font-family: poppins-bold;
 }
-.light-signup-container
-  .light-signup-splash
-  .light-signup-splash-text
-  .light-signup-splash-text-heading
-  span {
+.light-signup-container .light-signup-splash .light-signup-splash-text .light-signup-splash-text-heading span {
   color: #6f3fe3;
   font-size: 50px;
   font-style: normal;
@@ -103,10 +95,7 @@
   line-height: normal;
   font-family: poppins-bold;
 }
-.light-signup-container
-  .light-signup-splash
-  .light-signup-splash-text
-  .light-signup-splash-text-pg {
+.light-signup-container .light-signup-splash .light-signup-splash-text .light-signup-splash-text-pg {
   color: #e4edf6;
   text-align: center;
   font-size: 18px;
@@ -137,12 +126,7 @@
   width: 399px;
 }
 
-.light-signup-form-wrapper form .full-name,
-.user-name,
-.email,
-.password,
-.confirm-password,
-.enter-number {
+.light-signup-form-wrapper form .full-name, .user-name, .email, .password, .confirm-password, .enter-number {
   display: flex;
   flex-direction: column;
 }
@@ -153,9 +137,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.light-signup-container .light-signup-form-wrapper .light-socials,
-.light-google,
-.light-facebook {
+.light-signup-container .light-signup-form-wrapper .light-socials, .light-google, .light-facebook {
   display: flex;
   align-items: center;
 }
@@ -167,8 +149,7 @@
   width: 354px;
   height: 54px;
 }
-.login-google,
-.login-facebook {
+.login-google, .login-facebook {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -230,23 +211,6 @@
   cursor: pointer;
 }
 /* ---------------------------------Texts style--------------------------- */
-/* splash page */
-/* has same color as the light mode */
-.splash-text-heading {
-  color: #fff;
-  font-family: poppins-bold;
-  font-size: 50px;
-  font-weight: 800;
-}
-.splash-text-heading > span {
-  color: #6f3fe3;
-}
-.splash-subtitle-text {
-  color: #e4edf6;
-  font-family: poppins-regular;
-  font-size: 18px;
-  font-weight: 500;
-}
 /* sign up page */
 .light-signUp-title-text {
   color: #150aa1;
@@ -266,7 +230,6 @@
   color: rgba(34, 32, 32, 0.9);
   font-family: poppins-bold;
   font-size: 14px;
-  /* font-weight: 900; */
 }
 .dark-signUp-label-texts {
   color: #a9a9a9;
@@ -490,13 +453,6 @@
   font-size: 14px;
   font-weight: 400;
 }
-
-/* .check-rectangle {
-  width: 9px;
-  height: 9px;
-  border: 0.5px solid #585858;
-  background: rgba(255, 255, 255, 0.87);
-} */
 .stay-signed-in-text {
   color: #585858;
   font-family: poppins;
