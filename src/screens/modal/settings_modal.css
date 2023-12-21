@@ -22,7 +22,6 @@
 }
 /* DO NOT REMOVE THE CODE ABOVE */
 body {
-  /* background: #000; */
   background: #f1f1f1;
   display: flex;
   padding-top: 50px;
@@ -78,24 +77,33 @@ body {
 /*-----NOTIFICATION BOX CSS----------- */
 
 .notification-container {
-  width: 546px;
-  height: 585.013px;
+  height: 512px;
+  width: 461px;
+  backdrop-filter: blur(3px);
   background: linear-gradient(
     180deg,
     #584273 0%,
     rgb(31, 66, 90) 60%,
     rgba(0, 0, 0, 0.8)
   );
-  backdrop-filter: blur(3px);
-  margin-top: 50px;
   border-radius: 12px;
 }
+
+/* .light-notification-container {
+  background: linear-gradient(
+    180deg,
+    #584273 0%,
+    rgb(51, 104, 139) 70%,
+    rgba(241, 241, 241, 0.8)
+  );
+} */
+
 .notification-section1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 27px;
-  /* gap: 291px; */
+  height: 45px;
+  margin: 33px 27px 27px 27px;
 }
 
 .notification-section1-div1-left {
@@ -105,25 +113,14 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 25px;
-}
-
-.notification-section1-div1-left p {
-  margin-top: 0px;
-}
-
-.notification-section1-div1-right {
-  width: 43px;
-  height: 45px;
-  background: url(<path-to-image>) / contain no-repeat;
-  margin-top: 30px;
 }
 
 .notification-section2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
+  padding-top: 37px;
+  border-top: 1.4px solid #000;
 }
 
 .notification-section2-span {
