@@ -301,3 +301,47 @@
   background: #1376e3;
   border: none;
 }
+/* <-------- START OF PERSONAL PAGE MODAL CSS --------> */
+.light-personal-page-container {
+  justify-content: center;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 461px;
+  height: 501px;
+  background-color: #FFFFFF;
+  padding: 20px 27px;
+}
+.top-heading {
+  margin-top: 25px;
+  margin-left: 160px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 150px;
+}
+.personal-text{
+  margin: 25px 0px 25px 0px;
+}
+.upload-picture form{
+  margin: 17px 0px 25px 0px;
+}
+#profilePic {
+  display: none;
+}
+.personal-input {
+  text-align: start;
+  margin-bottom: 22px;
+}
+.back-text {
+  margin-top: 22px;
+  display: flex;
+  gap: 360px;
+  justify-content: space-between;
+}
+/* <------PERSONAL MODAL PAGE DARK MODE-------> */
+.dark-personal-page-container {
+  background-color: #1F201FE5;
+}
+/* <-------- END OF PERSONAL PAGE MODAL CSS --------> */
