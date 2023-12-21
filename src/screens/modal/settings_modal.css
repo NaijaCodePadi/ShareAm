@@ -108,7 +108,7 @@ body {
 
 .notification-section1-div1-left {
   color: #fff;
-  font-family: Poppins;
+  font-family: Poppins-bold;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -125,7 +125,7 @@ body {
 
 .notification-section2-span {
   color: #fff;
-  font-family: Poppins;
+  font-family: Poppins-bold;
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -137,7 +137,7 @@ body {
   width: 314px;
   color: #fff;
   text-align: center;
-  font-family: Poppins;
+  font-family: Poppins-medium;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

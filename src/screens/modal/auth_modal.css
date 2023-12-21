@@ -152,11 +152,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 39px 0 27px;
+  
 }
 
 .back-click,
 .skip-click {
   cursor: pointer;
+  color: #979797;
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /*--------------------------- set up shareAm----------------- */
