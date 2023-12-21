@@ -1,28 +1,28 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../../../assets/fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../../../assets/fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
-  }
-  /* DO NOT REMOVE THE CODE ABOVE */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+/* DO NOT REMOVE THE CODE ABOVE */
 
-  /* -----------------------------one time passcode------------------------- */
+/* -----------------------------one time passcode------------------------- */
 .startup-body {
   background: #f1f1f1;
   display: flex;
@@ -30,166 +30,277 @@
   align-items: center;
   gap: 50px;
   padding: 50px 0;
-  
 }
-  .light-startUp-container {
-    background: #fff;
-    height: 512px;
-    width: 561px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-    border-radius: 20px;
-    
+.light-one-time-contaimer {
+  background: #fff;
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
 }
-  .dark-startUp-container{
-    background: rgba(31, 32, 31, 0.90);
-    height: 100vh;
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: relative;
-  }
-  
-  .startUp-content-wallaper {
-    width: 495px;
-    height: 467px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 27px;
-    padding: 28px 39px 17px 27px;
-  }
-  .input-container {
-    display: flex;
-    gap: 14px;
-  }
-  .input-container input {
-    width: 52px;
-    height: 65.333px;
-    border-radius: 5px;
-    border: 1px solid #9C9B9B;
-    outline: none;
-  }
-.exit {
-    position: absolute;
-    top: 30px ;
-    right: 50px;
-    cursor: pointer;
+.dark-one-time-contaimer {
+  background: rgba(31, 32, 31, 0.9);
+  height: 512px;
+  width: 561px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
 }
-.back {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    color: #979797;
-    font-family: poppins-medium;
-    font-size: 14px;
-    font-weight: 600;
-    cursor: pointer;
+.light-startUp-container {
+  background: #fff;
+  height: 512px;
+  width: 461px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+.dark-startUp-container {
+  background: rgba(31, 32, 31, 0.9);
+  height: 512px;
+  width: 461px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
 }
 
+.startUp-content-wallaper {
+  width: 495px;
+  height: 467px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 27px;
+  padding: 28px 39px 17px 27px;
+}
+.input-container {
+  display: flex;
+  gap: 14px;
+}
+.input-container input {
+  width: 52px;
+  height: 65.333px;
+  border-radius: 5px;
+  border: 1px solid #9c9b9b;
+  outline: none;
+}
+.exit {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  cursor: pointer;
+}
+.back {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #979797;
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------------------- GET NOTIFIED MODAL ------------------ */
+.get-notified-container {
+  height: 512px;
+  width: 461px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  border-radius: 20px;
+}
+.light-get-notified-container {
+  background: #fff;
+}
+
+.dark-get-notified-container {
+  background: rgba(31, 32, 31, 0.9);
+}
+
+.get-notified-sec-wrapper {
+  width: 495px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  padding: 28px 57px 0 65px;
+}
+
+.back-skip-btns {
+  width: 461px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 39px 0 27px;
+}
+
+.back-click,
+.skip-click {
+  cursor: pointer;
+}
 
 /*--------------------------- set up shareAm----------------- */
 
-
-  /* --------------------texts -------------------------- */
+/* --------------------texts -------------------------- */
 .dark-create-acc-title-txt {
-    color: #FFF;
-    font-family: Poppins-regular;
-    font-size: 24px;
-    font-weight: 700;
+  color: #fff;
+  font-family: Poppins-regular;
+  font-size: 24px;
+  font-weight: 700;
 }
 .light-create-acc-title-txt {
-    color: #000;
-    font-family: Poppins-regular;
-    font-size: 24px;
-    font-weight: 700;
+  color: #000;
+  font-family: Poppins-regular;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .dark-one-time-subtitle-txt {
-    color: #A9A9A9;
-    font-family: Poppin-regular;
-    font-size: 14px;
-    font-weight: 400;
+  color: #a9a9a9;
+  font-family: Poppin-regular;
+  font-size: 14px;
+  font-weight: 400;
 }
 .light-one-time-subtitle-txt {
-    color: rgba(0, 0, 0, 0.52);
-    font-family: Poppin-regular;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
+  color: rgba(0, 0, 0, 0.52);
+  font-family: Poppin-regular;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.verify-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 388px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897fb;
+  border: none;
 }
 
 .one-time-btn-txt {
-    color: #303030;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 600;
+  color: #303030;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
 }
-.one-time-subtitle-txt  span{
-    color: #585858;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 500;
+.one-time-subtitle-txt span {
+  color: #585858;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
 }
-.one-time-subtitle-txt  strong {
-    color: #0272BC;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 400;
-
+.one-time-subtitle-txt strong {
+  color: #0272bc;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
 }
 /*----------------- set up--------- */
 .dark-startUp-title-txt {
-    color: #FFF;
-    text-align: center;
-    font-family: Poppins-regular;
-    font-size: 16px;
-    font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
 }
 .light-startUp-title-txt {
-    color: #000;
-    text-align: center;
-    font-family: Poppins-regular;
-    font-size: 16px;
-    font-weight: 700;
+  color: #000;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.get-started-btn {
+  display: flex;
+  width: 388px;
+  padding: 10px 94px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #9897fb;
+  border: none;
 }
 
 .dark-startUp-subtitle-txt {
-    color: #A9A9A9;
-    text-align: center;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 500;
- }
+  color: #a9a9a9;
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
+}
 .light-startUp-subtitle-txt {
-    color: rgba(34, 32, 32, 0.90);
-    text-align: center;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 500;
+  color: rgba(34, 32, 32, 0.9);
+  text-align: center;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .dark-startup-btn-txt {
-    color: #FFF;
-    font-family: Poppins-regular;
-    font-size: 16px;
-    font-weight: 600;
+  color: #fff;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
 }
 .light-startup-btn-txt {
-    color: #303030;
-    font-family: Poppins-regular;
-    font-size: 16px;
-    font-weight: 600;
+  color: #303030;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 600;
 }
 
+.open-system-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 342px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(42, 40, 45, 0.9);
+  background: #1376e3;
+}
 
+.lets-go-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 342px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1376e3;
+  border: none;
+}
 /* <-------- START OF PERSONAL PAGE MODAL CSS --------> */
 .light-personal-page-container {
   justify-content: center;
@@ -198,17 +309,17 @@
   text-align: center;
   align-items: center;
   border-radius: 20px;
-  width: 549px;
+  width: 461px;
   height: 501px;
   background-color: #FFFFFF;
   padding: 20px 27px;
 }
 .top-heading {
   margin-top: 25px;
-  margin-left: 200px;
+  margin-left: 160px;
   display: flex;
   justify-content: flex-end;
-  gap: 190px;
+  gap: 150px;
 }
 .personal-text{
   margin: 25px 0px 25px 0px;
@@ -226,7 +337,7 @@
 .back-text {
   margin-top: 22px;
   display: flex;
-  gap: 430px;
+  gap: 360px;
   justify-content: space-between;
 }
 /* <------PERSONAL MODAL PAGE DARK MODE-------> */

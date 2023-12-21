@@ -1,182 +1,304 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* text styles */
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../../../assets/fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../../../assets/fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf)
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+/* DO NOT REMOVE THE CODE ABOVE */
+body {
+  /* background: #000; */
+  background: #f1f1f1;
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.setting-modal-body {
+  width: 383px;
+  height: 208px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
-  }
+.setting-modal-container h1 {
+  color: rgba(21, 10, 161, 0.8);
+  font-family: Poppins-bold;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+.setting-modal-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+.setting-modal-container span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.setting-modal-container p {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 12px;
+  font-weight: 500;
+}
+.controll-txt {
+  color: #000 !important;
+}
+.setting-modal-container h2 {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 2px;
+}
 
-  /* DO NOT REMOVE THE CODE ABOVE */
+/*-----NOTIFICATION BOX CSS----------- */
+
+.notification-container {
+  width: 546px;
+  height: 585.013px;
+  background: linear-gradient(
+    180deg,
+    #584273 0%,
+    rgb(31, 66, 90) 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+  backdrop-filter: blur(3px);
+  margin-top: 50px;
+  border-radius: 12px;
+}
+.notification-section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 27px;
+  /* gap: 291px; */
+}
+
+.notification-section1-div1-left {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 25px;
+}
+
+.notification-section1-div1-left p {
+  margin-top: 0px;
+}
+
+.notification-section1-div1-right {
+  width: 43px;
+  height: 45px;
+  background: url(<path-to-image>) / contain no-repeat;
+  margin-top: 30px;
+}
+
+.notification-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.notification-section2-span {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.notification-section2 p {
+  width: 314px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
 /* <-------- START OF COLOR MODAL PAGE CSS --------> */
-  .light-color-mode{
-    width: 220px;
-    height: 200px;
-    border-radius: 10px;
-    background-color: #FFF;
-    padding: 7px 12px 6.599px 10px;
+.light-color-mode{
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #FFF;
+  padding: 7px 12px 6.599px 10px;
 }
 .preview p{
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 .color-pick {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 5px;
+  display: flex;
+  gap: 4px;
+  margin-bottom: 5px;
 }
 .color-pick-item1 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #CCF7FF;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item2 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #FCE2D4;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item3 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #FFF1CC;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item4 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #CBFBD6;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item5 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #F9D7EC;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item6 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #DFDEF2;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item7 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #00D1FF;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item8 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #F9D7EC;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .color-pick-item9 {
-    position: relative;
-    margin-top: 5px;
-    width: 17.96px;
-    height: 17.96px;
-    border-radius: 100%;
-    background-color: #D4F8FF;
-    border: 0.3px solid rgba(0, 0, 0, .15);
-    display: block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  /* ............Hide the browser's default checkbox */
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #CCF7FF;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item2 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #FCE2D4;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item3 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #FFF1CC;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item4 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #CBFBD6;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item5 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #F9D7EC;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item6 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #DFDEF2;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item7 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #00D1FF;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item8 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #F9D7EC;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item9 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #D4F8FF;
+  border: 0.3px solid rgba(0, 0, 0, .15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* ............Hide the browser's default checkbox */
 .color-pick-item1 input,
 .color-pick-item2 input,
 .color-pick-item3 input,
@@ -186,21 +308,21 @@
 .color-pick-item7 input,
 .color-pick-item8 input,
 .color-pick-item9 input { 
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
 }
 
 /* ............Create a custom checkbox */
 .checkmark1 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 7.483px;
-  width: 7.334px;
-  border-radius: 20px;
+position: absolute;
+right: 0;
+bottom: 0;
+height: 7.483px;
+width: 7.334px;
+border-radius: 20px;
 }
 
 /* ..........When the checkbox is checked, add a blue background */
@@ -213,15 +335,15 @@
 .color-pick-item7 input:checked ~ .checkmark1,
 .color-pick-item8 input:checked ~ .checkmark1,
 .color-pick-item9 input:checked ~ .checkmark1 {
-  background-color: #150AA1;
-  border: none;
+background-color: #150AA1;
+border: none;
 }
 
 /* ...........Create the checkmark/indicator (hidden when not checked) */
 .checkmark1:after {
-  content: "";
-  position: absolute;
-  display: none;
+content: "";
+position: absolute;
+display: none;
 }
 
 /* ...........Show the checkmark when checked */
@@ -234,7 +356,7 @@
 .color-pick-item7 input:checked ~ .checkmark1:after, 
 .color-pick-item8 input:checked ~ .checkmark1:after, 
 .color-pick-item9 input:checked ~ .checkmark1:after {
-  display: block;
+display: block;
 }
 
 /* ............Style the checkmark/indicator */
@@ -247,104 +369,104 @@
 .color-pick-item7 .checkmark1:after,
 .color-pick-item8 .checkmark1:after,
 .color-pick-item9 .checkmark1:after {
-  left: 3px;
-  top: 1.5px;
-  width: 1px;
-  height: 3px;
-  border: solid white;
-  border-width: 0 0.1px 0.1px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+left: 3px;
+top: 1.5px;
+width: 1px;
+height: 3px;
+border: solid white;
+border-width: 0 0.1px 0.1px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 
 .container {
-  margin: 2px 0px 5px 0px;
-  display: block;
-  position: relative;
-  padding: 0px 0px 0px 20px;
-  cursor: pointer;
-  font-size: 15px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+margin: 2px 0px 5px 0px;
+display: block;
+position: relative;
+padding: 0px 0px 0px 20px;
+cursor: pointer;
+font-size: 15px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 /* .........Hide the browser's default checkbox */
 .container input { 
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
 }
 
 /* ..........Create a custom checkbox */
 .checkmark {
-  position: absolute;
-  background-color: #DAD9D9;
-  border: 0.1px solid rgba(0, 0, 0, .15);
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  border-radius: 20px;
+position: absolute;
+background-color: #DAD9D9;
+border: 0.1px solid rgba(0, 0, 0, .15);
+top: 0;
+left: 0;
+height: 15px;
+width: 15px;
+border-radius: 20px;
 }
 .checkmark2 {
-  position: absolute;
-  background-color: #585858;
-  border: 0.1px solid rgba(0, 0, 0, .15);
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  border-radius: 20px;
+position: absolute;
+background-color: #585858;
+border: 0.1px solid rgba(0, 0, 0, .15);
+top: 0;
+left: 0;
+height: 15px;
+width: 15px;
+border-radius: 20px;
 }
 
 /* ......When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark, 
 .container input:checked ~ .checkmark2 {
-  background-color: #150AA1;
-  border: none;
+background-color: #150AA1;
+border: none;
 }
 
 /* ...........Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after, 
 .checkmark2:after {
-  content: "";
-  position: absolute;
-  display: none;
+content: "";
+position: absolute;
+display: none;
 }
 
 /* ...........Show the checkmark when checked */
 .container input:checked ~ .checkmark:after, 
 .container input:checked ~ .checkmark2:after {
-  display: block;
+display: block;
 }
 
 /* ..........Style the checkmark/indicator */
 .container .checkmark:after,
 .container .checkmark2:after {
-  left: 5px;
-  top: 3px;
-  width: 3px;
-  height: 6px;
-  border: solid white;
-  border-width: 0 1px 1px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+left: 5px;
+top: 3px;
+width: 3px;
+height: 6px;
+border: solid white;
+border-width: 0 1px 1px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
 }
 
 
 /* <------- FOR DARK MODE --------> */
 .dark-color-mode{
-  width: 220px;
-  height: 200px;
-  border-radius: 10px;
-  background-color: #D9D9D9;
-  border: 1px solid #A9A9A9;
-  padding: 7px 12px 6.599px 10px;
+width: 220px;
+height: 200px;
+border-radius: 10px;
+background-color: #D9D9D9;
+border: 1px solid #A9A9A9;
+padding: 7px 12px 6.599px 10px;
 }
 /* <------- END OF COLOR MODAL PAGE CSS -------> */

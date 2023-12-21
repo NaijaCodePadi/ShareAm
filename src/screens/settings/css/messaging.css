@@ -165,7 +165,10 @@ a.dark-active-menu svg {
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 700;
+
+  
 }
+
 
 /*-----------------MAIN BODY FOR MESSAGING--------------*/
 
@@ -219,9 +222,14 @@ a.dark-active-menu svg {
   padding: 23px 12.5px;
 }
 
-.left-side-div1-left h1 {
+/* .left-side-div1-left h1 {
   color: #0272bc;
-}
+  font-family: Poppins-bold;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+} */
 
 .new-message-btn {
   display: flex;
@@ -254,6 +262,15 @@ a.dark-active-menu svg {
   gap: 13px;
   padding-left: 12.5px;
   padding-bottom: 15px;
+}
+.write-message-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .left-side-div2-top a {
@@ -448,4 +465,98 @@ a.dark-active-menu svg {
   border: none;
   margin-right: 12px;
   cursor: pointer;
+}
+
+/* ------------------------------------text ---------------------- */
+.dark-new-message-txt {
+  color: #0490EC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
+}
+.light-new-message-txt {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 20px;
+  font-weight: 700;
+}
+.dark-friends-display-name-text-active {
+  color: #FFFCFC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-friends-display-name-text-active{
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-friends-display-name-text {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.write-message-txt {
+  color: #FFF;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
+}
+.follower-btn-text {
+  color: #545454;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.message-text {
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.dark-disappear-text {
+  color: #A9A9A9;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; 
+}
+.light-disappear-text {
+  color: #686868;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* the below text has the same color in both mode */
+.light-disappear-text span {
+  color: #0272BC;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.textarea-text {
+  color: rgba(34, 32, 32, 0.90);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.light-textarea-text {
+  color: #9A9A9A;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

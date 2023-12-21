@@ -253,6 +253,7 @@ h3 {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
+  font-family: Poppins-regular;
   border: none;
 }
 
@@ -644,13 +645,7 @@ footer {
   font-weight: 300;
 }
 /* reuseable at message interface(send button) */
-.save-btn-text {
-  color: #fff;
-  text-align: center;
-  font-family: Poppins-regular;
-  font-size: 14px;
-  font-weight: 500;
-}
+
 .dark-change-text {
   color: #fffcfc;
   font-family: Poppins-regular;
@@ -689,8 +684,8 @@ footer {
   font-weight: 400;
 }
 
-.share-btn-text {
-  color: #fff;
+.share-txt {
+  color: #222020E5;
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 700;
