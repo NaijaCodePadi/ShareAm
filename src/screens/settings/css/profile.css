@@ -220,6 +220,7 @@ h3 {
   border-radius: 4px;
   border: 1px solid #979797;
   background: #f6f6f6;
+  outline: none;
 }
 
 #dark-bio-write-up {
@@ -231,6 +232,7 @@ h3 {
   border-radius: 4px;
   border: 1px solid #979797;
   background: #585858;
+  outline: none;
 }
 
 .text-limit {
@@ -310,6 +312,7 @@ h3 {
   padding-left: 15.95px;
   border: 1px solid #979797;
   background: #fff;
+  outline: none;
 }
 
 #dark-display-name,
@@ -321,6 +324,7 @@ h3 {
   padding-left: 15.95px;
   border: 1px solid #979797;
   background: #585858;
+  outline: none;
 }
 
 #light-old-password,
@@ -333,6 +337,7 @@ h3 {
   border-radius: 4px;
   border: 1px solid #979797;
   background: #fff;
+  outline: none;
 }
 
 #light-confirm {
@@ -342,6 +347,7 @@ h3 {
   padding: 11px 20px;
   border: 1px solid #979797;
   background: #fff;
+  outline: none;
 }
 
 #dark-old-password,
@@ -389,23 +395,30 @@ h3 {
 }
 
 .light-location-input-wrap {
+  width: 345px;
+  height: 52px;
   display: flex;
-  align-items: center;
-  gap: 39px;
-  padding: 11px;
+  justify-content: space-between;
+  padding: 0 11px;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
   background: #fff;
 }
 
 .dark-location-input-wrap {
+  width: 345px;
+  height: 52px;
   display: flex;
-  align-items: center;
-  gap: 39px;
-  padding: 11px;
+  justify-content: space-between;
+  padding: 0 11px;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
   background: #585858;
+}
+
+.light-location-input-wrap svg,
+.dark-location-input-wrap svg {
+  margin-top: 16px;
 }
 
 #location {
@@ -413,6 +426,7 @@ h3 {
   height: 100%;
   border: none;
   background: inherit;
+  outline: none;
 }
 
 .set-btn {
@@ -426,6 +440,7 @@ h3 {
   font-size: 14px;
   font-weight: 400;
   border: none;
+  margin: 11px 0;
 }
 
 .unique-url {
@@ -685,7 +700,7 @@ footer {
 }
 
 .share-txt {
-  color: #222020E5;
+  color: #222020e5;
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 700;

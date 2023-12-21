@@ -165,10 +165,7 @@ a.dark-active-menu svg {
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 700;
-
-  
 }
-
 
 /*-----------------MAIN BODY FOR MESSAGING--------------*/
 
@@ -264,7 +261,7 @@ a.dark-active-menu svg {
   padding-bottom: 15px;
 }
 .write-message-txt {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Poppins;
   font-size: 14px;
@@ -425,7 +422,6 @@ a.dark-active-menu svg {
   height: 132px;
   flex-direction: column;
   margin-left: 16px;
-  gap: 10px;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid rgba(34, 32, 32, 0.17);
@@ -436,6 +432,7 @@ a.dark-active-menu svg {
 .right-side-div2-top {
   padding: 22px 0 26px 18px;
   border: none;
+  outline: none;
 }
 
 .right-side-div2-bottom {
@@ -469,25 +466,25 @@ a.dark-active-menu svg {
 
 /* ------------------------------------text ---------------------- */
 .dark-new-message-txt {
-  color: #0490EC;
+  color: #0490ec;
   font-family: Poppins-regular;
   font-size: 20px;
   font-weight: 700;
 }
 .light-new-message-txt {
-  color: #0272BC;
+  color: #0272bc;
   font-family: Poppins-regular;
   font-size: 20px;
   font-weight: 700;
 }
 .dark-friends-display-name-text-active {
-  color: #FFFCFC;
+  color: #fffcfc;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 600;
 }
-.light-friends-display-name-text-active{
-  color: rgba(34, 32, 32, 0.90);
+.light-friends-display-name-text-active {
+  color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 600;
@@ -500,7 +497,7 @@ a.dark-active-menu svg {
 }
 
 .write-message-txt {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Rubik;
   font-size: 14px;
@@ -521,11 +518,11 @@ a.dark-active-menu svg {
   line-height: 20px;
 }
 .dark-disappear-text {
-  color: #A9A9A9;
+  color: #a9a9a9;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 400;
-  line-height: 20px; 
+  line-height: 20px;
 }
 .light-disappear-text {
   color: #686868;
@@ -536,7 +533,7 @@ a.dark-active-menu svg {
 }
 /* the below text has the same color in both mode */
 .light-disappear-text span {
-  color: #0272BC;
+  color: #0272bc;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 400;
@@ -544,7 +541,7 @@ a.dark-active-menu svg {
 }
 
 .textarea-text {
-  color: rgba(34, 32, 32, 0.90);
+  color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
   font-size: 16px;
   font-style: normal;
@@ -553,7 +550,7 @@ a.dark-active-menu svg {
 }
 
 .light-textarea-text {
-  color: #9A9A9A;
+  color: #9a9a9a;
   font-family: Poppins-regular;
   font-size: 16px;
   font-style: normal;

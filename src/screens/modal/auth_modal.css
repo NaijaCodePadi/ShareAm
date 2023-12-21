@@ -200,6 +200,7 @@
   border-radius: 10px;
   background: #9897fb;
   border: none;
+  cursor: pointer;
 }
 
 .one-time-btn-txt {
@@ -246,6 +247,7 @@
   border-radius: 10px;
   background: #9897fb;
   border: none;
+  cursor: pointer;
 }
 
 .dark-startUp-subtitle-txt {
@@ -288,6 +290,7 @@
   border: 1px solid rgba(42, 40, 45, 0.9);
   background: #1376e3;
   border: none;
+  cursor: pointer;
 }
 
 .lets-go-btn {
@@ -301,4 +304,5 @@
   border-radius: 10px;
   background: #1376e3;
   border: none;
+  cursor: pointer;
 }

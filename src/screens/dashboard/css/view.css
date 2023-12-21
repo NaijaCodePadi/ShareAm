@@ -486,12 +486,14 @@ ul {
   padding-left: 26px;
   background: none;
   border: none;
+  outline: none;
 }
 
 .send-btn {
   margin-top: 8px;
   margin-left: 10px;
   cursor: pointer;
+  outline: none;
 }
 
 /* ------------------------------ Texts styles -------------------------------------- */
