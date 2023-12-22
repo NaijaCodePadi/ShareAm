@@ -152,7 +152,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 39px 0 27px;
-  
 }
 
 .back-click,
@@ -311,6 +310,35 @@
   border: none;
   cursor: pointer;
 }
+
+.add-pp-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#username {
+  width: 342px;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid #585858;
+  outline: none;
+  padding-left: 5px;
+}
+
+.next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 342px;
+  padding: 10px 94px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  background: #1376e3;
+  border: none;
+  cursor: pointer;
+}
 /* <-------- START OF PERSONAL PAGE MODAL CSS --------> */
 .light-personal-page-container {
   justify-content: center;
@@ -321,7 +349,7 @@
   border-radius: 20px;
   width: 461px;
   height: 501px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 20px 27px;
 }
 .top-heading {
@@ -331,10 +359,10 @@
   justify-content: flex-end;
   gap: 150px;
 }
-.personal-text{
+.personal-text {
   margin: 25px 0px 25px 0px;
 }
-.upload-picture form{
+.upload-picture form {
   margin: 17px 0px 25px 0px;
 }
 #profilePic {
@@ -352,6 +380,6 @@
 }
 /* <------PERSONAL MODAL PAGE DARK MODE-------> */
 .dark-personal-page-container {
-  background-color: #1F201FE5;
+  background-color: #1f201fe5;
 }
 /* <-------- END OF PERSONAL PAGE MODAL CSS --------> */
