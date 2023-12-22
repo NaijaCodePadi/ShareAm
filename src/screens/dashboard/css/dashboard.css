@@ -126,6 +126,7 @@
   border-radius: 11.043px;
   padding-left: 36px;
   border: none;
+  outline: none;
 }
 
 .section1-div2-right {
@@ -684,7 +685,7 @@
 }
 
 .desktop-subtitle-text {
-  color: #979797;
+  color: #000;
   font-family: poppins-medium;
   font-size: 16px;
   font-weight: 500;
