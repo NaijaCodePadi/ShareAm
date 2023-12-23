@@ -110,10 +110,6 @@
   position: absolute;
   bottom: 20px;
   left: 30px;
-  color: #979797;
-  font-family: poppins-medium;
-  font-size: 14px;
-  font-weight: 600;
   cursor: pointer;
 }
 
@@ -158,10 +154,7 @@
 .back-click,
 .skip-click {
   cursor: pointer;
-  color: #979797;
-  font-family: poppins-medium;
-  font-size: 14px;
-  font-weight: 600;
+  
 }
 
 /*--------------------------- set up shareAm----------------- */
@@ -241,6 +234,26 @@
   font-size: 16px;
   font-weight: 700;
 }
+.back-txt {
+  color: #A9A9A9;
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
+}
+.username-txt {
+  color: #A9A9A9;
+  font-family: Poppins-medium;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.skip-txt {
+  color: #1058E8;
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
 
 .get-started-btn {
   display: flex;
@@ -277,7 +290,7 @@
   font-weight: 600;
 }
 .light-startup-btn-txt {
-  color: #303030;
+  color: #FFF;
   font-family: Poppins-regular;
   font-size: 16px;
   font-weight: 600;
@@ -349,6 +362,10 @@
   display: flex;
   gap: 360px;
   justify-content: space-between;
+  color: #A9A9A9;
+  font-family: poppins-medium;
+  font-size: 14px;
+  font-weight: 600;
 }
 /* <------PERSONAL MODAL PAGE DARK MODE-------> */
 .dark-personal-page-container {
