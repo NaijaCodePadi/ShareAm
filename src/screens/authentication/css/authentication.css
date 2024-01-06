@@ -188,6 +188,10 @@
   margin-top: 15px;
   cursor: pointer;
 }
+
+.signup-btn a, .login-btn a{
+  text-decoration: none ;
+}
 .reset-password-btn {
   display: flex;
   width: 402px;
