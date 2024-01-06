@@ -139,6 +139,20 @@
 #fullName {
   outline: none;
 }
+.enter-number {
+  position: relative;
+}
+.enter-number span {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  border-right: 1px solid #a9a9a9;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.enter-number input {
+  padding-left: 70px !important;
+}
 
 .light-signup-form-wrapper form > div label {
   color: rgba(34, 32, 32, 0.9);
@@ -403,7 +417,7 @@
   border-radius: 10px;
   border: 1px solid #e4e4e4;
   background: #f1f1f1;
-  padding-left: 0.5rem;
+  padding: 0 2rem 0 1rem;
 }
 .light-login-link {
   color: #000;
@@ -434,7 +448,7 @@
   border-radius: 10px;
   border: 1px solid #e4e4e4;
   background: #f1f1f1;
-  padding-left: 15px;
+  padding: 0 30px;
 }
 .open-eye-icon {
   width: 16px;
@@ -447,30 +461,22 @@
   width: 19px;
   height: 13px;
   position: absolute;
-  right: 16px;
-  bottom: 16px;
+  right: 19px;
+  bottom: 18px;
+  cursor: pointer;
 }
 .login-password-subtitle {
   display: flex;
   margin: 16px 0 34px;
 }
 .stay-signed-in {
-  display: flex;
-  justify-content: center;
   margin-left: 2px;
   color: #585858;
   font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
 }
-.stay-signed-in-text {
-  color: #585858;
-  font-family: poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+
 .login-btn {
   display: flex;
   width: 393px;
