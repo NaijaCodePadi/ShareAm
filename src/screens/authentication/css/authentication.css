@@ -334,6 +334,9 @@
   font-weight: 400;
   margin-top: 10px;
 }
+.light-login-subtitle-text a{
+  text-decoration: none;
+}
 .dark-login-subtitle-text {
   color: #fff;
   font-family: poppins-medium;
