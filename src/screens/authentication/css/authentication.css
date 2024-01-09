@@ -202,6 +202,10 @@
   margin-top: 15px;
   cursor: pointer;
 }
+
+.signup-btn a, .login-btn a{
+  text-decoration: none ;
+}
 .reset-password-btn {
   display: flex;
   width: 402px;
@@ -343,6 +347,9 @@
   font-size: 14px;
   font-weight: 400;
   margin-top: 10px;
+}
+.light-login-subtitle-text a{
+  text-decoration: none;
 }
 .dark-login-subtitle-text {
   color: #fff;
