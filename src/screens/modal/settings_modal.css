@@ -511,7 +511,6 @@ body {
 
 input:checked + .slider:before {
   background-color: #150aa1;
-  border: solid 2px white;
 }
 
 input:focus + .slider {
