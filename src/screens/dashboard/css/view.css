@@ -602,8 +602,8 @@ ul {
   height: 16px;
   width: 16px;
   top: 1.75px;
-  left: 2px;
-  bottom: 0;
+  left: 4px;
+  bottom: 3px;
   background-color: #a9a9a9;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -611,7 +611,6 @@ ul {
 
 input:checked + .slider:before {
   background-color: #ff0000;
-  border: solid 2px white;
 }
 
 input:focus + .slider {
