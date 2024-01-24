@@ -32,8 +32,9 @@
     grid-template-columns: 310px auto;
   }
   .light-notification-page{
+    height: 100vh;
     background-color: #DAD9D9;
-    padding:134px 0px 134px 53px;
+    padding:50px 0px 134px 53px;
   }
   .notification-page-item1{
     width: 70%;
@@ -54,9 +55,10 @@
 
   /* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
   
-/* .dark-notification-page{
+.dark-notification-page{
+    height: 100vh;
     background-color: #222020;
-  } */
+  }
 
   /* /-----------------------SIDE BAR -------------------------/ */
 :root {

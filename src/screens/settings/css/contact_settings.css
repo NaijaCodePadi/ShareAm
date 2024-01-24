@@ -138,8 +138,9 @@ a.light-active-menu svg {
     }
 
     /* ---------------------------------------------main body ------------------------------- */
-.contact_settings {
-  margin: 160px 98px 0 52px;
+.mainbody {
+  height: 100vh;
+  padding: 160px 98px 0 52px;
 }
 .contact_settings > h4 {
   border-bottom: 1px solid #979797;

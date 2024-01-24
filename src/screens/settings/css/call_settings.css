@@ -139,8 +139,9 @@ a.dark-active-menu svg {
 }
 
 /* ---------------------------------------------main body ------------------------------- */
-.call_settings {
-  margin: 143px 40px 0 52px;
+.mainbody {
+  height: 100vh;
+  padding: 143px 40px 0 52px;
 }
 .call_settings > h4 {
   border-bottom: 1px solid #979797;
