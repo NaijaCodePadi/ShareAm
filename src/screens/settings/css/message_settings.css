@@ -237,6 +237,7 @@ a.dark-active-menu svg {
 /*------------------FOR MAIN BODY----------------*/
 
 .light-mainbody {
+  height: 100vh;
   background: #dad9d9;
   padding: 25px 20px;
 }
@@ -248,8 +249,6 @@ a.dark-active-menu svg {
 
 .light-mainbody-container {
   display: flex;
-  width: 999px;
-  height: 812px;
   padding: 17px;
   flex-direction: column;
   gap: 41px;

@@ -252,6 +252,7 @@ a.dark-active-menu svg {
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
 .light-mainbody {
+  height: 100vh;
   background-color: #dad9d9;
   padding: 15px 0px 10px 0px;
 }
@@ -401,6 +402,7 @@ section {
 
 /* <------DARK MODE FOR SETTINGS PAGE ------> */
 .dark-mainbody {
+  height: 100vh;
   background-color: #585858;
 }
 .checkmark {
