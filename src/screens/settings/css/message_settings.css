@@ -39,6 +39,9 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .message {
   display: grid;

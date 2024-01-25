@@ -40,6 +40,9 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .privacy {
   display: grid;
@@ -251,9 +254,9 @@ a.dark-active-menu svg {
 }
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
+
 .light-mainbody {
   height: 100%;
-  background-color: #dad9d9;
   padding: 15px 0px 10px 0px;
 }
 .light-mainbody h4 {
