@@ -40,6 +40,17 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+.light-body {
+  height: 100vh;
+  background-color: #dad9d9;
+}
+
+.dark-body {
+  height: 100vh;
+  background-color: #272727;
+}
+
 .message {
   display: grid;
   grid-template-columns: 310px auto;
@@ -171,27 +182,27 @@ a.dark-active-menu svg {
 
 .light-mainbody {
   display: flex;
-  width: auto;
-  background-color: #dad9d9;
-  padding: 7px 0 16px 11px;
+  width: 100vw;
+  height: 100vh;
+  /* padding: 7px 0 16px 11px; */
 }
 
 .dark-mainbody {
   display: flex;
   width: auto;
-  background-color: #272727;
   padding: 7px 0 16px 11px;
 }
 
 .light-mainbody-left-side {
   display: flex;
   flex-direction: column;
-  gap: 104px;
+  gap: 15vh;
   width: 382px;
-  height: 842px;
+  height: 100vh;
   border-radius: 10px;
   border: 1px solid #979797;
-  background: #f4f1f8;
+  background-color: green;
+  /* background: #f4f1f8; */
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -252,6 +263,7 @@ a.dark-active-menu svg {
 .left-side-div2 {
   display: flex;
   flex-direction: column;
+  border: 1px solid blue;
 }
 
 .left-side-div2-top {
@@ -324,9 +336,17 @@ a.dark-active-menu svg {
   border: none;
 }
 
+.chat-list {
+  border: 1px solid yellow;
+  height: 56.5vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 .left-side-div2-bottom {
   display: flex;
   flex-direction: column;
+  border: 1px solid;
 }
 
 .user-div {
@@ -390,12 +410,12 @@ a.dark-active-menu svg {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: red;
 }
 
 .right-side-div1 {
   width: 100%;
   display: flex;
-  gap: 60px;
 }
 
 .right-side-div1-left {

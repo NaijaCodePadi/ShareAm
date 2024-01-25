@@ -288,9 +288,6 @@ h3 {
 }
 
 #change-btn {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
   width: 75.179px;
   height: 30px;
   flex-shrink: 0;
