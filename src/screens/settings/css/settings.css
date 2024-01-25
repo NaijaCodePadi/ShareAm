@@ -252,7 +252,7 @@ a.dark-active-menu svg {
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
 .light-mainbody {
-  height: 100vh;
+  height: 100%;
   background-color: #dad9d9;
   padding: 15px 0px 10px 0px;
 }
