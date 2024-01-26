@@ -182,36 +182,36 @@ a.dark-active-menu svg {
 
 .light-mainbody {
   display: flex;
-  width: 100vw;
+  width: 77.3vw;
   height: 100vh;
-  /* padding: 7px 0 16px 11px; */
+  padding: 2px 0 20px 11px;
 }
 
 .dark-mainbody {
   display: flex;
-  width: auto;
-  padding: 7px 0 16px 11px;
+  width: 77.3vw;
+  height: 100vh;
+  padding: 2px 0 20px 11px;
 }
 
 .light-mainbody-left-side {
   display: flex;
   flex-direction: column;
   gap: 15vh;
-  width: 382px;
-  height: 100vh;
+  width: 35%;
+  height: 99vh;
   border-radius: 10px;
   border: 1px solid #979797;
-  background-color: green;
-  /* background: #f4f1f8; */
+  background: #f4f1f8;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .dark-mainbody-left-side {
   display: flex;
   flex-direction: column;
-  gap: 104px;
-  width: 382px;
-  height: 842px;
+  gap: 15vh;
+  width: 35%;
+  height: 99vh;
   border-radius: 10px;
   border: 1px solid #979797;
   background: #222020;
@@ -263,7 +263,6 @@ a.dark-active-menu svg {
 .left-side-div2 {
   display: flex;
   flex-direction: column;
-  border: 1px solid blue;
 }
 
 .left-side-div2-top {
@@ -337,16 +336,32 @@ a.dark-active-menu svg {
 }
 
 .chat-list {
-  border: 1px solid yellow;
-  height: 56.5vh;
+  height: 57.9vh;
   overflow-y: scroll;
-  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .left-side-div2-bottom {
   display: flex;
   flex-direction: column;
-  border: 1px solid;
 }
 
 .user-div {
@@ -406,16 +421,15 @@ a.dark-active-menu svg {
 }
 
 .mainbody-right-side {
-  width: fit-content;
+  width: 65%;
   display: flex;
+  padding: 3vh 0;
   flex-direction: column;
-  justify-content: space-around;
-  background-color: red;
 }
 
 .right-side-div1 {
-  width: 100%;
   display: flex;
+  gap: 20vw;
 }
 
 .right-side-div1-left {
@@ -431,15 +445,24 @@ a.dark-active-menu svg {
   padding-bottom: 24px;
 }
 
+.right-side-div2 {
+  padding-left: 16px;
+  height: 72vh;
+  overflow-y: scroll;
+}
+
 .disappearing-message-warning-text {
   display: flex;
   gap: 9px;
-  justify-content: flex-end;
+  padding: 5px 0px 5px 20vw;
 }
 
-.right-side-div2 {
+.right-side-div3 {
+  position: absolute;
+  bottom: 1vh;
   display: flex;
-  height: 132px;
+  height: 100px;
+  width: 47vw;
   flex-direction: column;
   margin-left: 16px;
   flex-shrink: 0;
@@ -449,18 +472,19 @@ a.dark-active-menu svg {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.right-side-div2-top {
-  padding: 22px 0 26px 18px;
+.right-side-div3-top {
+  padding: 10px 0 9px 18px;
   border: none;
   outline: none;
 }
 
-.right-side-div2-bottom {
+.right-side-div3-bottom {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.right-side-div2-bottom-icons {
+.right-side-div3-bottom-icons {
   display: flex;
   gap: 28px;
   padding-left: 18px;

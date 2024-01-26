@@ -215,7 +215,7 @@ h3 {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 17px;
+  padding: 17px 90px 17px 17px;
   margin-bottom: 22px;
   border-radius: 4px;
   border: 1px solid #979797;
@@ -283,8 +283,40 @@ h3 {
   margin-top: 26px;
 }
 
-.password-section > input {
-  margin-top: 20px;
+.display-name-section,
+.username-section,
+.email-section {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.light-inputs {
+  display: flex;
+  align-items: center;
+  border: 1px solid #979797;
+  width: 344px;
+  height: 52px;
+  border-radius: 4px;
+  padding-left: 15.95px;
+  padding-right: 11px;
+}
+
+.dark-inputs {
+  display: flex;
+  align-items: center;
+  border: 1px solid #979797;
+  background-color: #585858;
+  width: 344px;
+  height: 52px;
+  border-radius: 4px;
+  padding-left: 15.95px;
+  padding-right: 11px;
+}
+.password-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 #change-btn {
@@ -302,26 +334,21 @@ h3 {
 
 #light-display-name,
 #light-change-username,
-#light-email {
-  width: 344px;
-  height: 52px;
-  border-radius: 4px;
-  padding-left: 15.95px;
-  border: 1px solid #979797;
-  background: #fff;
+#light-email,
+#light-confirm {
+  padding-right: 10px;
   outline: none;
+  border: none;
 }
 
 #dark-display-name,
 #dark-change-username,
-#dark-email {
-  width: 344px;
-  height: 52px;
-  border-radius: 4px;
-  padding-left: 15.95px;
-  border: 1px solid #979797;
-  background: #585858;
+#dark-email,
+#dark-confirm {
+  padding-right: 10px;
   outline: none;
+  border: none;
+  background: #585858;
 }
 
 #light-old-password,
@@ -337,16 +364,6 @@ h3 {
   outline: none;
 }
 
-#light-confirm {
-  width: 345px;
-  height: 52px;
-  border-radius: 4px;
-  padding: 11px 20px;
-  border: 1px solid #979797;
-  background: #fff;
-  outline: none;
-}
-
 #dark-old-password,
 #dark-new-password {
   display: flex;
@@ -355,15 +372,6 @@ h3 {
   align-items: center;
   gap: 10px;
   border-radius: 4px;
-  border: 1px solid #979797;
-  background: #585858;
-}
-
-#dark-confirm {
-  width: 345px;
-  height: 44px;
-  border-radius: 4px;
-  padding: 11px 20px;
   border: 1px solid #979797;
   background: #585858;
 }
