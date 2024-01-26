@@ -380,3 +380,8 @@ a.dark-active-menu svg {
   text-decoration: none;
   color: #000;
 }
+
+.user-profile > img {
+  width: 62.44px;
+  height: 60px;
+}
