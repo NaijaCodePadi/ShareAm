@@ -39,6 +39,9 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
 .light-body {
@@ -246,7 +249,9 @@ a.dark-active-menu svg {
 }
 
 .light-mainbody {
-  padding: 5px 20px;
+  height: 100vh;
+  background: #dad9d9;
+  padding: 25px 20px;
 }
 
 .dark-mainbody {
@@ -255,8 +260,6 @@ a.dark-active-menu svg {
 
 .light-mainbody-container {
   display: flex;
-  width: 999px;
-  height: auto;
   padding: 17px;
   flex-direction: column;
   gap: 41px;

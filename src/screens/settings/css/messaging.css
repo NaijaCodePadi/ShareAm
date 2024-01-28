@@ -39,6 +39,9 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
 .light-body {
@@ -446,15 +449,57 @@ a.dark-active-menu svg {
 }
 
 .right-side-div2 {
-  padding-left: 16px;
-  height: 72vh;
+  display: flex;
+  flex-direction: column;
+  height: 67vh;
+  padding: 0 2vw;
   overflow-y: scroll;
+}
+
+.sender-message {
+  min-width: 5vw;
+  max-width: 25vw;
+  height: auto;
+  padding: 10px;
+  text-align: left;
+  gap: 12px;
+  margin-left: auto;
+  border-radius: 10px 0px 10px 10px;
+  color: #fff;
+  font-weight: 300;
+  font-family: poppins-medium;
+  background: #390c7c;
+}
+
+.receiver-message {
+  padding: 10px;
+  min-width: 10vw;
+  max-width: 25vw;
+  height: auto;
+  gap: 12px;
+  margin-right: auto;
+  text-align: left;
+  border-radius: 0px 10px 10px 10px;
+  color: #fff;
+  font-weight: 300;
+  font-family: poppins-medium;
+  background: rgba(88, 88, 88, 0.75);
+}
+
+.user-text-delivery-time {
+  color: gold;
+  text-align: right;
+}
+
+.receiver-message img {
+  width: 200px;
+  height: 200px;
 }
 
 .disappearing-message-warning-text {
   display: flex;
   gap: 9px;
-  padding: 5px 0px 5px 20vw;
+  margin: -35px 0 0 20vw;
 }
 
 .right-side-div3 {
@@ -473,7 +518,8 @@ a.dark-active-menu svg {
 }
 
 .right-side-div3-top {
-  padding: 10px 0 9px 18px;
+  padding: 15px 0 9px 18px;
+  font-size: 23px;
   border: none;
   outline: none;
 }
