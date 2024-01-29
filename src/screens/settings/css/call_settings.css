@@ -139,8 +139,9 @@ a.dark-active-menu svg {
 }
 
 /* ---------------------------------------------main body ------------------------------- */
-.call_settings {
-  margin: 143px 40px 0 52px;
+.mainbody {
+  height: 100vh;
+  padding: 143px 40px 0 52px;
 }
 .call_settings > h4 {
   border-bottom: 1px solid #979797;
@@ -184,7 +185,7 @@ a.dark-active-menu svg {
 /* NAVBAR */
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
-  font-family: Rubik;
+  font-family: poppins-regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

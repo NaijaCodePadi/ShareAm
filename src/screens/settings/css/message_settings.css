@@ -39,7 +39,17 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+.light-body {
+  background-color: #dad9d9;
+}
+.dark-body {
+  background-color: #222020;
+}
 .message {
   display: grid;
   grid-template-columns: 310px auto;
@@ -141,7 +151,7 @@ a.dark-active-menu svg {
 /* NAVBAR */
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
-  font-family: Rubik;
+  font-family: poppins-regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -168,20 +178,20 @@ a.dark-active-menu svg {
 }
 /* message-1 */
 .dark-new-message-txt {
-  color: #0490EC;
+  color: #0490ec;
   font-family: Poppins-regular;
   font-size: 20px;
   font-weight: 700;
 }
 .light-new-message-txt {
-  color: #0272BC;
+  color: #0272bc;
   font-family: Poppins-regular;
   font-size: 20px;
   font-weight: 700;
 }
 
 .write-message-txt {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: Rubik;
   font-size: 14px;
@@ -194,21 +204,20 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 .dark-select-all-txt {
-  color: #0490EC;
+  color: #0490ec;
   font-family: Rubik;
   font-size: 14px;
   font-weight: 500;
 }
-.light-select-all-txt{
-  color: #150AA1;
+.light-select-all-txt {
+  color: #150aa1;
   font-family: Rubik;
   font-size: 14px;
   font-weight: 500;
 }
-
 
 .dark-followers-display-name-text {
-  color: #FFFCFC;
+  color: #fffcfc;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 700;
@@ -219,7 +228,6 @@ a.dark-active-menu svg {
   font-size: 14px;
   font-weight: 700;
 }
-
 
 .dark-followers-user-id-text {
   color: #979797;
@@ -236,20 +244,22 @@ a.dark-active-menu svg {
 
 /*------------------FOR MAIN BODY----------------*/
 
+::-webkit-scrollbar {
+  overflow: hidden;
+}
+
 .light-mainbody {
+  height: 100vh;
   background: #dad9d9;
   padding: 25px 20px;
 }
 
 .dark-mainbody {
-  background: #222020;
   padding: 25px 20px;
 }
 
 .light-mainbody-container {
   display: flex;
-  width: 999px;
-  height: 812px;
   padding: 17px;
   flex-direction: column;
   gap: 41px;
@@ -361,6 +371,7 @@ a.dark-active-menu svg {
   height: 15px;
   border-radius: 4px;
   border: 1px solid #979797;
+  cursor: pointer;
 }
 
 .section4 {
@@ -368,6 +379,7 @@ a.dark-active-menu svg {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  overflow-y: scroll;
 }
 
 .user-profile {
@@ -379,4 +391,9 @@ a.dark-active-menu svg {
   border-bottom: 1px solid #979797;
   text-decoration: none;
   color: #000;
+}
+
+.user-profile > img {
+  width: 62.44px;
+  height: 60px;
 }

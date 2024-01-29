@@ -40,6 +40,9 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .privacy {
   display: grid;
@@ -142,7 +145,7 @@ a.dark-active-menu svg {
 /* NAVBAR */
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
-  font-family: Rubik;
+  font-family: poppins-regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -169,25 +172,25 @@ a.dark-active-menu svg {
 }
 /* <-------------MAIN BODY TEXTS---------------> */
 .dark-menu-title-texts {
-  color: #0389E1;
+  color: #0389e1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 600;
 }
 .light-menu-title-texts {
-  color: #150AA1;
+  color: #150aa1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 600;
 }
 .light-setting-title-text {
-  color: #150AA1;
+  color: #150aa1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 500;
 }
 .dark-setting-title-text {
-  color: #0389E1;
+  color: #0389e1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 500;
@@ -213,13 +216,13 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 .dark-change-background-text {
-  color: #FFFCFC;
+  color: #fffcfc;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 400;
 }
 .dark-audio-subtitle-text {
-  color: #FFFCFC;
+  color: #fffcfc;
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 400;
@@ -238,21 +241,22 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 .light-current-mode-text {
-  color: rgba(34, 32, 32, 0.90);
+  color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 500;
 }
 .dark-current-mode-text {
-  color: #A9A9A9;
+  color: #a9a9a9;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 500;
 }
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
+
 .light-mainbody {
-  background-color: #dad9d9;
+  height: 100%;
   padding: 15px 0px 10px 0px;
 }
 .light-mainbody h4 {
@@ -401,6 +405,7 @@ section {
 
 /* <------DARK MODE FOR SETTINGS PAGE ------> */
 .dark-mainbody {
+  height: 100vh;
   background-color: #585858;
 }
 .checkmark {
@@ -411,3 +416,69 @@ section {
   background-color: rgba(218, 217, 217, 0.5);
   border: 0.1px solid rgba(0, 0, 0, 0.5);
 }
+
+/*-------Start of Toggle Switch Key-----------------*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c7c7f9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: -3.1px;
+  background-color: #a9a9a9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  background-color: #150aa1;
+  /* border: solid 2px white; */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c7c7f9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+/*-------END---------*/
