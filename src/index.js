@@ -11,11 +11,14 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    minWidth: 400,
     webPreferences: {
+    //  devTools: true,
       preload: path.join(__dirname, 'preload.js'),
     },
   });
-
+  mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
+ // mainWindow.removeMenu()
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, 'splash.html'));
 
