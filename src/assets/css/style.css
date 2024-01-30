@@ -22,39 +22,28 @@
   font-family: Rubik;
   src: url(../fonts/Rubik-VariableFont_wght.ttf);
 }
+html{
+  width: 100vw;
+  height: 100vh;
+}
 a {
   text-decoration: none;
 }
 body {
-  background: #7b7b7b;
+  background: linear-gradient(to right, rgb(52, 2, 90), rgb(31, 4, 61));
+
 }
 
 /* Splash Screen -- Light Mode */
-.light-splash,
-.light-splash-logo,
-.light-splash-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.light-splash {
-  background: linear-gradient(to right, rgb(52, 2, 90), rgb(31, 4, 61));
-  height: 100vh;
-  width: 100%;
-  padding: 0 0 40px 0;
-}
 
 .light-splash .light-splash-logo img {
-  width: 495px;
-  height: 423px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.light-splash-text {
-  gap: 1rem;
-  margin-top: -1rem;
-}
 
 .light-splash-text-heading,
 .light-splash-text-pg {
@@ -65,7 +54,7 @@ body {
 
 .light-splash-text-heading {
   color: #fff;
-  font-size: 50px;
+  font-size: 8vw;
   font-weight: 800;
   font-family: poppins-bold;
 }
@@ -77,7 +66,7 @@ body {
 
 .light-splash-text-pg {
   color: #e4edf6;
-  font-size: 18px;
+  font-size: 2vw;
   font-weight: 500;
   font-family: poppins-medium;
 }
@@ -91,4 +80,35 @@ body {
   border: 1px solid #E4E4E4;
   border-radius: 4px;
   justify-content: center;
+}
+
+@media (min-width:320px)  { 
+  /* smartphones, iPhone, portrait 480x320 phones */ 
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */
+
+  .light-splash-text {
+    margin-top: 0%;
+  }
+  .light-splash .light-splash-logo img {
+    margin-top: 2%;
+    max-width: 30%;
+  }
+
+}
+@media (min-width:1281px) { 
+
+  /* hi-res laptops and desktops */
+  .light-splash-text {
+    margin-top: 0%;
+  }
+  .light-splash .light-splash-logo img {
+    margin-top: 2%;
+    max-width: 30%;
+  }
+
 }
