@@ -3,7 +3,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: red 1px solid; */
 }
 
 /* text styles */
@@ -45,12 +44,12 @@
 .profile {
   display: grid;
   width: 100%;
-  grid-template-columns: 310px auto;
+  grid-template-columns: 20vw auto;
   overflow: hidden;
 }
 
 .sidebar-nav {
-  width: 310px;
+  width: 20vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -66,6 +65,8 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 75%;
+  margin: auto;
 }
 
 .nav-link-container a {
@@ -74,12 +75,15 @@
   align-items: center;
   gap: 19px;
   height: 54px;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
-header .prof-pic,
+header {
+  margin: auto;
+}
+
 .menu-link {
-  padding-left: 72px;
+  padding: 0 25px;
 }
 
 svg {
@@ -95,6 +99,8 @@ svg {
 .light-nav-link-container a:hover {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 0 25px;
 }
 
 .light-nav-link-container a:hover svg {
@@ -103,6 +109,8 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 0 25px;
 }
 
 a.light-active-menu svg {
@@ -128,6 +136,8 @@ a.light-active-menu svg {
 
 .dark-nav-link-container a:hover {
   background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 0 25px;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -136,6 +146,8 @@ a.light-active-menu svg {
 
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 0 25px;
 }
 
 a.dark-active-menu svg {
@@ -153,14 +165,14 @@ a.dark-active-menu svg {
 }
 
 .main-section {
-  width: auto;
+  /* width: auto; */
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
 }
 
 .main-section-1 {
-  margin: 0 42px 65px 42px;
+  margin: 0 3% 65px 3%;
   height: 275px;
   border: 1px solid #979797;
   border-top: 0;
@@ -178,6 +190,7 @@ a.dark-active-menu svg {
   align-items: center;
   justify-content: center;
   padding: 62px 0 42px 0;
+  background-color: red;
 }
 
 .camera-photo svg,
@@ -190,6 +203,7 @@ h3 {
   height: 60px;
   gap: 18px;
   padding-left: 10px;
+  background-color: blueviolet;
 }
 
 .user-names {
@@ -203,7 +217,7 @@ h3 {
 
 .main-section-2-wrap {
   height: 159px;
-  margin: 65px 42px 65px 42px;
+  /* margin: 65px 42px 65px 42px; */
   position: relative;
 }
 
