@@ -306,17 +306,23 @@
 
           <div class="main-section-2">
             <div class="main-section-2-wrap">
-              <h3 class="bio light-bio-text">Add Bio/About</h3>
-              <label for="bio-write-up">
-                <input
-                  type="text"
-                  id="light-bio-write-up"
-                  placeholder="Write here..."
-                  class="bio-input-text"
-                />
-                <p class="text-limit input-limit-text">150/888</p>
-              </label>
-              <button id="save-btn">Save</button>
+              <form class="bio-form">
+                <label for="bio-write-up" class="cdn light-change-text">
+                  Add Bio/About
+                </label>
+
+                <div class="bio-input-wrap">
+                  <input
+                    type="text"
+                    id="light-bio-write-up"
+                    placeholder="Write here..."
+                    class="bio-input-text"
+                  />
+                  <p class="text-limit input-limit-text">150/888</p>
+                </div>
+
+                <div><button id="save-btn">Save</button></div>
+              </form>
             </div>
           </div>
 
@@ -397,30 +403,32 @@
           <div class="main-section-4">
             <div class="main-section-4-wrap">
               <div class="location">
-                <h3 class="light-change-text">Location</h3>
-                <div class="light-location-input-wrap">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="18"
-                    viewBox="0 0 20 18"
-                    fill="none"
+                <form class="location-form">
+                  <label for="location" class="light-change-text"
+                    >Location</label
                   >
-                    <path
-                      d="M10.1338 1.37207C8.36393 1.3739 6.66712 1.99016 5.41562 3.08568C4.16412 4.1812 3.4601 5.66652 3.45801 7.21582C3.4559 8.48191 3.92834 9.71364 4.80289 10.7221C4.80289 10.7221 4.98495 10.9319 5.01469 10.9622L10.1338 16.2471L15.2554 10.9595C15.2821 10.9314 15.4648 10.7221 15.4648 10.7221L15.4654 10.7205C16.3395 9.71249 16.8117 8.48133 16.8096 7.21582C16.8075 5.66652 16.1035 4.1812 14.852 3.08568C13.6005 1.99016 11.9037 1.3739 10.1338 1.37207ZM10.1338 9.34082C9.65369 9.34082 9.18435 9.21619 8.78514 8.98269C8.38593 8.7492 8.07478 8.41732 7.89104 8.02902C7.70731 7.64073 7.65923 7.21346 7.7529 6.80125C7.84657 6.38904 8.07777 6.01041 8.41727 5.71322C8.75677 5.41603 9.18933 5.21364 9.66023 5.13165C10.1311 5.04966 10.6192 5.09174 11.0628 5.25258C11.5064 5.41341 11.8855 5.68578 12.1523 6.03523C12.419 6.38469 12.5614 6.79554 12.5614 7.21582C12.5606 7.77919 12.3046 8.31928 11.8495 8.71765C11.3944 9.11601 10.7774 9.34012 10.1338 9.34082Z"
-                      fill="#1058E8"
-                    />
-                  </svg>
-                  <label for="location">
+                  <div class="light-location-input-wrap">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="18"
+                      viewBox="0 0 20 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M10.1338 1.37207C8.36393 1.3739 6.66712 1.99016 5.41562 3.08568C4.16412 4.1812 3.4601 5.66652 3.45801 7.21582C3.4559 8.48191 3.92834 9.71364 4.80289 10.7221C4.80289 10.7221 4.98495 10.9319 5.01469 10.9622L10.1338 16.2471L15.2554 10.9595C15.2821 10.9314 15.4648 10.7221 15.4648 10.7221L15.4654 10.7205C16.3395 9.71249 16.8117 8.48133 16.8096 7.21582C16.8075 5.66652 16.1035 4.1812 14.852 3.08568C13.6005 1.99016 11.9037 1.3739 10.1338 1.37207ZM10.1338 9.34082C9.65369 9.34082 9.18435 9.21619 8.78514 8.98269C8.38593 8.7492 8.07478 8.41732 7.89104 8.02902C7.70731 7.64073 7.65923 7.21346 7.7529 6.80125C7.84657 6.38904 8.07777 6.01041 8.41727 5.71322C8.75677 5.41603 9.18933 5.21364 9.66023 5.13165C10.1311 5.04966 10.6192 5.09174 11.0628 5.25258C11.5064 5.41341 11.8855 5.68578 12.1523 6.03523C12.419 6.38469 12.5614 6.79554 12.5614 7.21582C12.5606 7.77919 12.3046 8.31928 11.8495 8.71765C11.3944 9.11601 10.7774 9.34012 10.1338 9.34082Z"
+                        fill="#1058E8"
+                      />
+                    </svg>
                     <input
                       type="text"
                       id="location"
                       placeholder="Kubwa, Abuja"
                       class="change-input-text"
                     />
-                  </label>
-                  <button class="set-btn change-btn-text">Set</button>
-                </div>
+                    <button class="set-btn change-btn-text">Set</button>
+                  </div>
+                </form>
               </div>
               <div class="unique-url">
                 <h3 class="light-change-text">My ShareAm Unique URL</h3>
@@ -477,7 +485,7 @@
                 <a href="#"> Cookie Notice</a>
               </div>
 
-              <div class="links">
+              <div class="links right-links">
                 <p>Contact</p>
                 <a href="#">Help</a>
                 <a href="#">Referral</a>

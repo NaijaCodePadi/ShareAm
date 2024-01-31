@@ -172,7 +172,7 @@ a.dark-active-menu svg {
 }
 
 .main-section-1 {
-  margin: 0 3% 65px 3%;
+  margin: 0 3%;
   height: 275px;
   border: 1px solid #979797;
   border-top: 0;
@@ -190,7 +190,6 @@ a.dark-active-menu svg {
   align-items: center;
   justify-content: center;
   padding: 62px 0 42px 0;
-  background-color: red;
 }
 
 .camera-photo svg,
@@ -203,7 +202,6 @@ h3 {
   height: 60px;
   gap: 18px;
   padding-left: 10px;
-  background-color: blueviolet;
 }
 
 .user-names {
@@ -217,43 +215,47 @@ h3 {
 
 .main-section-2-wrap {
   height: 159px;
-  /* margin: 65px 42px 65px 42px; */
-  position: relative;
+  margin: 65px 3%;
+  /* position: relative; */
 }
 
-.bio {
+.bio-form {
+  /* background-color: #1058e8; */
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-form label {
   margin-bottom: 16px;
+}
+
+.bio-input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  border: 1px solid #979797;
+  background: #f6f6f6;
+  margin-bottom: 22px;
+  padding: 17px;
 }
 
 #light-bio-write-up {
   display: flex;
+  width: 85%;
   align-items: center;
-  width: 100%;
-  padding: 17px 90px 17px 17px;
-  margin-bottom: 22px;
-  border-radius: 4px;
-  border: 1px solid #979797;
-  background: #f6f6f6;
   outline: none;
+  border: none;
+  background: #f6f6f6;
 }
 
 #dark-bio-write-up {
   display: flex;
+  width: 85%;
   align-items: center;
-  width: 100%;
-  padding: 17px;
-  margin-bottom: 22px;
-  border-radius: 4px;
-  border: 1px solid #979797;
-  background: #585858;
   outline: none;
-}
-
-.text-limit {
-  width: 61px;
-  position: absolute;
-  right: 20px;
-  top: 65px;
+  border: none;
+  background: #585858;
 }
 
 #save-btn {
@@ -275,31 +277,24 @@ h3 {
 
 .main-section-3 {
   display: flex;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 69px 180px;
+  gap: 69px 0px;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 65px auto 114px auto;
+  justify-content: space-between;
+  margin: 65px 6% 114px 6%;
 }
 
 .main-section-3 > form {
-  width: 345px;
-  position: relative;
-}
-.main-section-3 input {
-  width: 345px;
+  width: 35%;
 }
 
-.display-name-section > input,
-.username-section > input,
-.email-section > input {
-  margin-top: 26px;
+.main-section-3 input {
+  width: 60%;
 }
 
 .display-name-section,
 .username-section,
-.email-section {
+.email-section,
+.password-section {
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -308,6 +303,7 @@ h3 {
 .light-inputs {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid #979797;
   width: 344px;
   height: 52px;
@@ -319,6 +315,7 @@ h3 {
 .dark-inputs {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border: 1px solid #979797;
   background-color: #585858;
   width: 344px;
@@ -327,10 +324,10 @@ h3 {
   padding-left: 15.95px;
   padding-right: 11px;
 }
+
 .password-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 #change-btn {
@@ -403,21 +400,21 @@ h3 {
 
 .main-section-4-wrap {
   display: flex;
-  gap: 203px;
-  margin: 34px 93px 120px 93px;
+  justify-content: space-between;
+  margin: 34px 4% 120px 7%;
 }
 
-.location {
+.location-form {
   display: flex;
   flex-direction: column;
   gap: 29px;
 }
 
 .light-location-input-wrap {
-  width: 345px;
-  height: 52px;
   display: flex;
-  justify-content: space-between;
+  width: 345px;
+  gap: 30px;
+  align-items: center;
   padding: 0 11px;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
@@ -425,23 +422,18 @@ h3 {
 }
 
 .dark-location-input-wrap {
-  width: 345px;
-  height: 52px;
   display: flex;
-  justify-content: space-between;
+  width: 345px;
+  gap: 30px;
+  align-items: center;
   padding: 0 11px;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
   background: #585858;
 }
 
-.light-location-input-wrap svg,
-.dark-location-input-wrap svg {
-  margin-top: 16px;
-}
-
 #location {
-  width: 100%;
+  width: 50%;
   height: 100%;
   border: none;
   background: inherit;
@@ -505,7 +497,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 54px;
-  margin: 0 80px 0 80px;
+  margin: 0 7%;
   padding: 58px 0;
 }
 
@@ -524,7 +516,7 @@ h3 {
 .main-section-6-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 63px 80px 61px 80px;
+  padding: 63px 7% 61px 7%;
 }
 
 .delete-btn {
@@ -541,7 +533,7 @@ h3 {
 
 /**************** CSS FOR PROFILE FOOTER ******************/
 footer {
-  width: auto;
+  /* width: auto; */
   background: #b0b0b0;
   margin-top: 15px;
 }
@@ -551,8 +543,10 @@ footer {
   flex-direction: column;
   align-items: start;
   gap: 11px;
-  padding: 26px 49.5px 28px 15px;
+  margin: 0 49px 0 15px;
+  padding: 26px 0 28px 0;
 }
+
 .section-1 {
   display: flex;
   gap: 272px;
@@ -571,6 +565,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
 .links p {
   margin-bottom: 20px;
 }
@@ -735,6 +730,7 @@ footer {
   color: #0272bc;
   font-family: Poppins-regular;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .delete-text {
@@ -763,13 +759,14 @@ a {
   line-height: 22px;
   text-decoration: none;
 }
-/* .footer-texts {
-    color: #000000;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px; 
-} */
+.links p {
+  color: #585858;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 .footer-share-text {
   color: #0021f5;
   font-family: Poppins;
