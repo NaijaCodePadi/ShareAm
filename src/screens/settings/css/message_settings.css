@@ -56,6 +56,7 @@ body {
 }
 .sidebar-nav {
   width: 20vw;
+  min-width: 220px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -89,7 +90,7 @@ header {
 }
 
 .menu-link {
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 svg {
@@ -106,7 +107,7 @@ svg {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
   border-radius: 12px;
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -116,7 +117,7 @@ svg {
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 a.light-active-menu svg {
@@ -143,7 +144,7 @@ a.light-active-menu svg {
 .dark-nav-link-container a:hover {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -153,7 +154,7 @@ a.light-active-menu svg {
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 a.dark-active-menu svg {

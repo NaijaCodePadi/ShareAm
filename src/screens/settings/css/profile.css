@@ -43,8 +43,6 @@
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .profile {
   display: flex;
-  /* width: 100vw; */
-  /* grid-template-columns: 20vw 80vw; */
   overflow: hidden;
 }
 
@@ -56,10 +54,6 @@
   flex-direction: column;
   gap: 41px;
   padding: 43px 0 41px 0;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1; */
 }
 
 .nav-link-container {
@@ -138,7 +132,7 @@ a.light-active-menu svg {
 .dark-nav-link-container a:hover {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -148,7 +142,7 @@ a.light-active-menu svg {
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 25px;
+  padding: 0 1vw;
 }
 
 a.dark-active-menu svg {
