@@ -40,8 +40,11 @@
   --dm-active-menu-bg-color: #373737;
 }
 
-body {
+.light-body {
   background-color: #dad9d9;
+}
+.dark-body {
+  background-color: #222020;
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 .privacy {
@@ -307,10 +310,10 @@ section {
 }
 .camera-preview {
   display: flex;
-  gap: 60px;
+  gap: 3vw;
 }
 .camera-preview1 {
-  width: 500px;
+  width: 35vw;
   height: 250px;
   background-color: #fff;
   border-radius: 5px;
@@ -334,7 +337,7 @@ section {
 .mode {
   display: flex;
   align-items: center;
-  gap: 78px;
+  gap: 3vw;
 }
 .container {
   margin: 0px 0px 5px 0px;
