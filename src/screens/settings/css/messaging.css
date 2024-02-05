@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
 
 /* text styles */
@@ -44,6 +45,7 @@
 .light-body {
   height: 100vh;
   background-color: #dad9d9;
+  overflow: hidden;
 }
 
 .dark-body {
@@ -52,27 +54,22 @@
 }
 
 .message {
-  display: grid;
-  grid-template-columns: 20vw auto;
+  display: flex;
 }
 .sidebar-nav {
   width: 20vw;
   min-width: 220px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 41px;
-  padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.5vh;
   width: 75%;
   margin: auto;
 }
@@ -82,7 +79,8 @@
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
   transition: all 0.2s ease;
 }
 
@@ -90,8 +88,14 @@ header {
   margin: auto;
 }
 
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
 .menu-link {
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 svg {
@@ -108,7 +112,7 @@ svg {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -118,7 +122,7 @@ svg {
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -194,10 +198,14 @@ a.dark-active-menu svg {
 
 /*-----------------MAIN BODY FOR MESSAGING--------------*/
 
+main {
+  width: 80%;
+}
+
 .light-mainbody {
   display: flex;
   height: 100vh;
-  padding: 12px 0 20px 11px;
+  padding: 12px 0 0 11px;
 }
 
 .dark-mainbody {
@@ -230,36 +238,44 @@ a.dark-active-menu svg {
 }
 
 .left-side-div1 {
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
 }
 
 .left-side-div1-left {
   display: flex;
+  width: 100%;
   flex-direction: column;
   gap: 7px;
   padding: 0 12.5px 0 12.5px;
 }
 
+.left-side-div1-left-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .new-message-btn {
   display: flex;
   align-items: center;
-  gap: 13px;
-  padding: 0 14px;
-  width: 170.047px;
-  height: 44.376px;
+  gap: 1vw;
+  padding: 1.5vh 2vw;
   border-radius: 4px;
+  margin-right: 0.5vw;
   background: #1058e8;
   color: #fff;
-  font-size: 14px;
+  font-size: 2vw;
   font-weight: 500;
   border: none;
   text-decoration: none;
 }
 
 .left-side-div1-right {
-  padding: 37px 21px;
   cursor: pointer;
+  background: none;
+  border: none;
 }
 
 .left-side-div2 {
@@ -270,9 +286,9 @@ a.dark-active-menu svg {
 
 .left-side-div2-top {
   display: flex;
-  gap: 13px;
-  padding-left: 12.5px;
-  padding-bottom: 15px;
+  gap: 1vw;
+  padding-left: 1vw;
+  padding-bottom: 1.5vh;
 }
 .write-message-txt {
   color: #fff;
@@ -289,11 +305,8 @@ a.dark-active-menu svg {
 }
 
 .all-btn {
-  width: 53.412px;
-  height: 43.108px;
-  flex-shrink: 0;
   display: flex;
-  padding: 7px 13px;
+  padding: 1vh 2vw;
   justify-content: center;
   align-items: center;
   border-radius: 60px;
@@ -306,11 +319,8 @@ a.dark-active-menu svg {
 }
 
 .followers-btn {
-  width: 109.004px;
-  height: 43.108px;
-  flex-shrink: 0;
   display: flex;
-  padding: 7px 13px;
+  padding: 2vh 2vw;
   justify-content: center;
   align-items: center;
   border-radius: 60px;
@@ -322,11 +332,8 @@ a.dark-active-menu svg {
 }
 
 .fans-btn {
-  width: 69.763px;
-  height: 43.108px;
-  flex-shrink: 0;
   display: flex;
-  padding: 7px 13px;
+  padding: 2vh 2vw;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -369,8 +376,8 @@ a.dark-active-menu svg {
 
 .user-div {
   display: flex;
-  justify-content: space-between;
-  padding: 26px 0;
+  gap: 1vw;
+  padding: 4vh 1vw;
   border-bottom: 2px solid #979797;
 }
 
@@ -381,10 +388,10 @@ a.dark-active-menu svg {
   padding-left: 12px;
 }
 
-.user-details-div1-1 {
+.user-details {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
 }
 
 #blue-text {
@@ -392,12 +399,10 @@ a.dark-active-menu svg {
 }
 
 .user-details-div2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  width: fit-content;
-  gap: 18px;
-  padding-right: 10px;
+  gap: 1vh;
 }
 
 .active-dark {
@@ -423,6 +428,10 @@ a.dark-active-menu svg {
   cursor: pointer;
 }
 
+.bookmark {
+  margin-left: auto;
+}
+
 .mainbody-right-side {
   width: 65%;
   display: flex;
@@ -432,7 +441,8 @@ a.dark-active-menu svg {
 
 .right-side-div1 {
   display: flex;
-  gap: 20vw;
+  gap: 1vw;
+  padding: 1vh 1vw;
 }
 
 .right-side-div1-left {
@@ -452,6 +462,7 @@ a.dark-active-menu svg {
   display: flex;
   flex-direction: column;
   height: 67vh;
+  gap: 1.5vh;
   padding: 0 2vw;
   overflow-y: scroll;
 }
@@ -460,9 +471,8 @@ a.dark-active-menu svg {
   min-width: 5vw;
   max-width: 25vw;
   height: auto;
-  padding: 10px;
+  padding: 1vh 1vw;
   text-align: left;
-  gap: 12px;
   margin-left: auto;
   border-radius: 10px 0px 10px 10px;
   color: #fff;
@@ -472,11 +482,10 @@ a.dark-active-menu svg {
 }
 
 .receiver-message {
-  padding: 10px;
-  min-width: 10vw;
+  padding: 1vh 1vw;
+  min-width: 5vw;
   max-width: 25vw;
   height: auto;
-  gap: 12px;
   margin-right: auto;
   text-align: left;
   border-radius: 0px 10px 10px 10px;
@@ -492,7 +501,7 @@ a.dark-active-menu svg {
 }
 
 .receiver-message img {
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 
@@ -518,7 +527,7 @@ a.dark-active-menu svg {
 }
 
 .right-side-div3-top {
-  padding: 15px 0 9px 18px;
+  padding: 15px 9px 9px 18px;
   font-size: 23px;
   border: none;
   outline: none;
@@ -596,7 +605,7 @@ a.dark-active-menu svg {
 .follower-btn-text {
   color: #545454;
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 1.2vw;
   font-weight: 400;
 }
 

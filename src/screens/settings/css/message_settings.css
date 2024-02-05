@@ -51,8 +51,8 @@ body {
   background-color: #222020;
 }
 .message {
-  display: grid;
-  grid-template-columns: 20vw auto;
+  display: flex;
+  /* grid-template-columns: 20vw auto; */
 }
 .sidebar-nav {
   width: 20vw;
@@ -62,10 +62,6 @@ body {
   flex-direction: column;
   gap: 41px;
   padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .nav-link-container {
@@ -204,13 +200,6 @@ a.dark-active-menu svg {
   font-weight: 700;
 }
 
-.write-message-txt {
-  color: #fff;
-  text-align: center;
-  font-family: Rubik;
-  font-size: 14px;
-  font-weight: 500;
-}
 .follower-btn-text {
   color: #545454;
   font-family: Rubik;
@@ -266,15 +255,20 @@ a.dark-active-menu svg {
   height: 100vh;
   background: #dad9d9;
   padding: 25px 20px;
+  width: 100%;
 }
 
 .dark-mainbody {
+  height: 100vh;
   padding: 25px 20px;
+  width: 100%;
+  background-color: #222020;
 }
 
 .light-mainbody-container {
   display: flex;
   padding: 17px;
+  height: 100vh;
   flex-direction: column;
   gap: 41px;
   flex-shrink: 0;
@@ -313,11 +307,8 @@ a.dark-active-menu svg {
 
 .write-message-btn {
   display: flex;
-  width: 158px;
-  padding: 7px 10px;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 12px;
+  padding: 2vh 1vw;
+  gap: 1vw;
   border-radius: 4px;
   background: #1058e8;
   color: #fff;
@@ -325,6 +316,10 @@ a.dark-active-menu svg {
   font-weight: 500;
   border: none;
   cursor: pointer;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .section2 {
