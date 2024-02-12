@@ -47,28 +47,23 @@
   background-color: #222020;
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.privacy {
-  display: grid;
-  grid-template-columns: 20vw auto;
+.settings {
+  display: flex;
 }
 .sidebar-nav {
   width: 20vw;
   min-width: 220px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 41px;
-  padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.5vh;
   width: 75%;
   margin: auto;
 }
@@ -78,7 +73,8 @@
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
   transition: all 0.2s ease;
 }
 
@@ -86,8 +82,14 @@ header {
   margin: auto;
 }
 
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
 .menu-link {
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 svg {
@@ -104,7 +106,7 @@ svg {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -114,7 +116,7 @@ svg {
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -139,9 +141,10 @@ a.light-active-menu svg {
 }
 
 .dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -151,7 +154,7 @@ a.light-active-menu svg {
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 a.dark-active-menu svg {
@@ -272,10 +275,16 @@ a.dark-active-menu svg {
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
 
-.light-mainbody {
-  height: 100%;
-  padding: 15px 0px 10px 0px;
+.mainbody {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
+
+.content-wrapper {
+  height: 100vh;
+}
+
 .light-mainbody h4 {
   margin-left: 10px;
 }

@@ -25,35 +25,6 @@
 
 /* DO NOT REMOVE THE CODE ABOVE */
 
-/* ...........START OF NOTIFICATION LIGHT PAGE */
-
-.light-notification-page {
-  height: 100vh;
-  background-color: #dad9d9;
-  padding: 30px 0px 0px 53px;
-}
-.notification-page-item1 {
-  width: 70%;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-hr {
-  border: 1px solid #979797;
-  margin: 10px 0px 10px 0px;
-}
-/* ---------- START OF TOOGLE BUTTON----------- */
-.toogle-button {
-  margin-left: auto;
-}
-
-/* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
-
-.dark-notification-page {
-  height: 100vh;
-  background-color: #222020;
-}
-
 /* /-----------------------SIDE BAR -------------------------/ */
 :root {
   /* General */
@@ -70,28 +41,36 @@ hr {
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.notification {
-  display: grid;
-  grid-template-columns: 20vw auto;
+.light-body {
+  height: 100vh;
+  background-color: #dad9d9;
+  overflow: hidden;
 }
+
+.dark-body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #272727;
+}
+
+.notification {
+  display: flex;
+}
+
 .sidebar-nav {
   width: 20vw;
   min-width: 220px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 41px;
-  padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.5vh;
   width: 75%;
   margin: auto;
 }
@@ -101,7 +80,8 @@ hr {
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
   transition: all 0.2s ease;
 }
 
@@ -109,8 +89,14 @@ header {
   margin: auto;
 }
 
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
 .menu-link {
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 svg {
@@ -127,7 +113,7 @@ svg {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -137,7 +123,7 @@ svg {
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -162,9 +148,10 @@ a.light-active-menu svg {
 }
 
 .dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -174,11 +161,45 @@ a.light-active-menu svg {
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 0 1vw;
+  padding: 1.7vh 1vw;
 }
 
 a.dark-active-menu svg {
   color: var(--dm-active-menu);
+}
+
+/* ...........START OF NOTIFICATION LIGHT PAGE */
+
+.light-notification-page {
+  height: 100vh;
+  width: 80vw;
+  background-color: #dad9d9;
+  padding: 30px 0px 0px 53px;
+  overflow-y: scroll;
+}
+.notification-page-item1 {
+  width: 70%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+hr {
+  border: 1px solid #979797;
+  margin: 10px 0px 10px 0px;
+}
+/* ---------- START OF TOOGLE BUTTON----------- */
+.toogle-button {
+  margin-left: auto;
+}
+
+/* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
+
+.dark-notification-page {
+  height: 100vh;
+  width: 80vw;
+  background-color: #222020;
+  padding: 30px 0px 0px 53px;
+  overflow-y: scroll;
 }
 
 /*---------------TOGGLE KEY--------------*/
