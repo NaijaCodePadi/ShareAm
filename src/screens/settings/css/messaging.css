@@ -177,7 +177,7 @@ a.dark-active-menu svg {
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -185,20 +185,20 @@ a.dark-active-menu svg {
 .dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .dark-nav-texts-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -272,11 +272,12 @@ main {
   border-radius: 4px;
   margin-right: 0.5vw;
   background: #1058e8;
-  color: #fff;
-  font-size: 2vw;
-  font-weight: 500;
   border: none;
   text-decoration: none;
+  color: #fff;
+  font-family: Poppins-regular;
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 .left-side-div1-right {
@@ -297,15 +298,15 @@ main {
   padding-left: 1vw;
   padding-bottom: 1.5vh;
 }
-.write-message-txt {
+/* .write-message-txt {
   color: #fff;
   text-align: center;
-  font-family: Poppins;
-  font-size: 14px;
+  font-family: Poppins-regular;
+  font-size: .9rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-}
+} */
 
 .left-side-div2-top a {
   text-decoration: none;
@@ -333,7 +334,7 @@ main {
   border-radius: 60px;
   background: #f1f1f1;
   color: #545454;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   border: none;
 }
@@ -477,6 +478,13 @@ main {
   padding: 0 2vw;
 }
 
+.time-tick-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: .7rem;
+  font-family: poppins-medium;
+}
+
 .sender-message {
   min-width: 5vw;
   max-width: 25vw;
@@ -581,31 +589,31 @@ main {
 .dark-new-message-txt {
   color: #0490ec;
   font-family: Poppins-regular;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .light-new-message-txt {
   color: #0272bc;
   font-family: Poppins-regular;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .dark-friends-display-name-text-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .light-friends-display-name-text-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .light-friends-display-name-text {
   color: #979797;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 
@@ -613,34 +621,34 @@ main {
   color: #fff;
   text-align: center;
   font-family: Rubik;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 500;
 }
 .follower-btn-text {
   color: #545454;
   font-family: Rubik;
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .message-text {
   color: #979797;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 20px;
 }
 .dark-disappear-text {
   color: #a9a9a9;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 20px;
 }
 .light-disappear-text {
   color: #686868;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 20px;
 }
@@ -648,7 +656,7 @@ main {
 .light-disappear-text span {
   color: #0272bc;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 20px;
 }
@@ -656,7 +664,7 @@ main {
 .textarea-text {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -665,8 +673,16 @@ main {
 .light-textarea-text {
   color: #9a9a9a;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width : 800px) {
+
+  html {
+    font-size: 12px;
+  }
+
 }
