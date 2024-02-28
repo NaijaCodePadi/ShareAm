@@ -5,6 +5,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 /* text styles */
 @font-face {
   font-family: poppins-bold;
@@ -300,7 +304,7 @@ h3 {
   border-radius: 4px;
   background: #1058e8;
   color: #fff;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 500;
   font-family: Poppins-regular;
   border: none;
@@ -481,7 +485,7 @@ h3 {
   border: 1px solid #e4e4e4;
   background: #1058e8;
   color: #fff;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   border: none;
   margin: 11px 0;
@@ -560,7 +564,7 @@ h3 {
   border: 1px solid #f52b1e;
   background: #fff;
   color: #f52b1e;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -618,7 +622,7 @@ footer {
 }
 
 .fa-brands {
-  font-size: 25.77px;
+  font-size: 1.5rem;
   color: #0021f5;
   padding: 4px;
 }
@@ -628,7 +632,7 @@ footer {
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -636,20 +640,20 @@ footer {
 .dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .dark-nav-texts-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 /* -------profile texts styles------- */
@@ -657,13 +661,13 @@ footer {
 .light-cover-photo-text {
   color: #585858;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .dark-cover-photo-text {
   color: #0272bc;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -676,20 +680,20 @@ footer {
 .user-id-text {
   color: #686868;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .light-bio-text {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 5px;
 }
 .dark-bio-text {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -697,13 +701,13 @@ footer {
 .bio-input-text {
   color: #9a9a9a;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .input-limit-text {
   color: #494949;
   font-family: poppins-regular;
-  font-size: 12px;
+  font-size: .8rem;
   font-weight: 300;
 }
 /* reuseable at message interface(send button) */
@@ -711,65 +715,65 @@ footer {
 .light-change-text {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .dark-change-text {
   color: #0272bc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .change-input-text {
   color: #9a9a9a;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .change-btn-text {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .light-url-input-text {
   color: #a9a9a9;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .dark-url-input-text {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .share-txt {
   color: #222020e5;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 700;
   line-height: 22px;
 }
 .light-show-text {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .dark-show-text {
   color: #0272bc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .delete-text {
   color: #f52a1d;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
 }
@@ -777,7 +781,7 @@ footer {
   color: #f52a1d;
   text-align: center;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -787,7 +791,7 @@ footer {
 a {
   color: #000000;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 22px;
   text-decoration: none;
@@ -795,16 +799,24 @@ a {
 .links p {
   color: #585858;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   line-height: 22px;
 }
 
 .footer-share-text {
   color: #0021f5;
-  font-family: Poppins;
-  font-size: 14px;
+  font-family: Poppins-regular;
+  font-size: .9rem;
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
+}
+
+@media (max-width: 800px) {
+  
+  html {
+    font-size: 12px;
+  }
+  
 }
