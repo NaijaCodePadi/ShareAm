@@ -1,32 +1,31 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* text styles */
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../../../assets/fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../../../assets/fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf)
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  }
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
 
-  /* DO NOT REMOVE THE CODE ABOVE */
+/* DO NOT REMOVE THE CODE ABOVE */
 
-  /* /-----------------------SIDE BAR -------------------------/ */
+/* /-----------------------SIDE BAR -------------------------/ */
 :root {
   /* General */
   --svg-color: #a9a9a9;
@@ -42,41 +41,49 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.contact{
-  display: grid;
-  grid-template-columns: 310px auto;
+.contact {
+  display: flex;
 }
-.sidebar-nav{
-  width: 310px;
-  height:100%;
+.sidebar-nav {
+  width: 20vw;
+  min-width: 220px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 41px;
-  padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0; 
-  z-index: 1; 
+  gap: 2vh;
+  padding: 4vh 0 0 0;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.5vh;
+  width: 75%;
+  margin: auto;
 }
 
-.nav-link-container a{
+.nav-link-container a {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
-  transition: all 0.5s ease;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
 }
 
-header .prof-pic,
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
 .menu-link {
-  padding-left: 72px;
+  padding: 1.7vh 1vw;
 }
 
 svg {
@@ -92,6 +99,8 @@ svg {
 .light-nav-link-container a:hover {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -100,6 +109,8 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -116,30 +127,39 @@ a.light-active-menu svg {
     url("../../../assets/icons/video-conference.svg"),
     url("../../../assets/icons/chat-room.svg"),
     url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px, top 395px right 250px,
-    top 450px right 18px, top 547px right 160px, top 789px right 231px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
 }
 
-  .dark-nav-link-container a:hover {
-    background-color: var(--dm-active-menu-bg-color);
-  }
-  
-  .dark-nav-link-container a:hover svg {
-    color: var(--dm-active-menu);
-  }
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
 
-    a.dark-active-menu {
-      background-color: var(--dm-active-menu-bg-color);
-    }
-    
-    a.dark-active-menu svg {
-      color: var(--dm-active-menu);
-    }
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
 
-    /* ---------------------------------------------main body ------------------------------- */
-.contact_settings {
-  margin: 160px 98px 0 52px;
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
+
+/* ---------------------------------------------main body ------------------------------- */
+.mainbody {
+  height: 100vh;
+  width: 100%;
+  padding: 20vh 5vw 0 5vw;
 }
 .contact_settings > h4 {
   border-bottom: 1px solid #979797;
@@ -175,55 +195,53 @@ a.light-active-menu svg {
   border: none;
 }
 
+/* ------------------------------------texts styes --------------------------- */
+/* NAVBAR */
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+}
 
-     /* ------------------------------------texts styes --------------------------- */
-    /* NAVBAR */
-    .light-nav-texts {
-      color: rgba(169, 169, 169, 0.90);
-      font-family: Rubik;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    .Dark-nav-texts {
-      color: #A9A9A9;
-      font-family: Rubik;
-      font-size: 16px;
-      font-weight: 500;
-  }
-
-  .dark-nav-texts-active {
-      color: #FFFCFC;
-      font-family: Poppins-regular;
-      font-size: 16px;
-      font-weight: 700;
-  }
-  .light-nav-texts-active { 
-      color: rgba(34, 32, 32, 0.90);
-      font-family: Poppins-regular;
-      font-size: 16px;
-      font-weight: 700;
-
-  }
-  /* -----------------------main body texts styles --------------- */
-  .dark-menu-title-texts {
-    color: #0389e1;
-    font-family: Poppins-bold;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .light-menu-title-texts {
-    color: #150aa1;
-    font-family: Poppins-bold;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .dark-setting-subtitle-texts{
-    color: #FFFCFC;
-    font-family: Poppins-medium;
-    font-size: 14px;
-    font-weight: 400;
+.dark-nav-texts-active {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+/* -----------------------main body texts styles --------------- */
+.dark-menu-title-texts {
+  color: #0389e1;
+  font-family: Poppins-bold;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-menu-title-texts {
+  color: #150aa1;
+  font-family: Poppins-bold;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dark-setting-subtitle-texts {
+  color: #fffcfc;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .light-setting-subtitle-texts {

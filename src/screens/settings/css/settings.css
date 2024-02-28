@@ -40,28 +40,32 @@
   --dm-active-menu-bg-color: #373737;
 }
 
+.light-body {
+  background-color: #dad9d9;
+}
+.dark-body {
+  background-color: #222020;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.privacy {
-  display: grid;
-  grid-template-columns: 310px auto;
+.settings {
+  display: flex;
 }
 .sidebar-nav {
-  width: 310px;
-  height: 100%;
+  width: 20vw;
+  min-width: 220px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 41px;
-  padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.5vh;
+  width: 75%;
+  margin: auto;
 }
 
 .nav-link-container a {
@@ -69,13 +73,23 @@
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
-  transition: all 0.5s ease;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
 }
 
-header .prof-pic,
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
 .menu-link {
-  padding-left: 72px;
+  padding: 1.7vh 1vw;
 }
 
 svg {
@@ -91,6 +105,8 @@ svg {
 .light-nav-link-container a:hover {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -99,6 +115,8 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -123,7 +141,10 @@ a.light-active-menu svg {
 }
 
 .dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
   background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -132,6 +153,8 @@ a.light-active-menu svg {
 
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 a.dark-active-menu svg {
@@ -142,7 +165,7 @@ a.dark-active-menu svg {
 /* NAVBAR */
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
-  font-family: Rubik;
+  font-family: poppins-regular;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -169,25 +192,25 @@ a.dark-active-menu svg {
 }
 /* <-------------MAIN BODY TEXTS---------------> */
 .dark-menu-title-texts {
-  color: #0389E1;
+  color: #0389e1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 600;
 }
 .light-menu-title-texts {
-  color: #150AA1;
+  color: #150aa1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 600;
 }
 .light-setting-title-text {
-  color: #150AA1;
+  color: #150aa1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 500;
 }
 .dark-setting-title-text {
-  color: #0389E1;
+  color: #0389e1;
   font-family: Poppins-bold;
   font-size: 14px;
   font-weight: 500;
@@ -213,13 +236,13 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 .dark-change-background-text {
-  color: #FFFCFC;
+  color: #fffcfc;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 400;
 }
 .dark-audio-subtitle-text {
-  color: #FFFCFC;
+  color: #fffcfc;
   font-family: Poppins-medium;
   font-size: 14px;
   font-weight: 400;
@@ -238,23 +261,30 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 .light-current-mode-text {
-  color: rgba(34, 32, 32, 0.90);
+  color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 500;
 }
 .dark-current-mode-text {
-  color: #A9A9A9;
+  color: #a9a9a9;
   font-family: Poppins-regular;
   font-size: 14px;
   font-weight: 500;
 }
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
-.light-mainbody {
-  background-color: #dad9d9;
-  padding: 15px 0px 10px 0px;
+
+.mainbody {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
+
+.content-wrapper {
+  height: 100vh;
+}
+
 .light-mainbody h4 {
   margin-left: 10px;
 }
@@ -290,10 +320,10 @@ section {
 }
 .camera-preview {
   display: flex;
-  gap: 60px;
+  gap: 3vw;
 }
 .camera-preview1 {
-  width: 500px;
+  width: 35vw;
   height: 250px;
   background-color: #fff;
   border-radius: 5px;
@@ -317,7 +347,7 @@ section {
 .mode {
   display: flex;
   align-items: center;
-  gap: 78px;
+  gap: 3vw;
 }
 .container {
   margin: 0px 0px 5px 0px;
@@ -401,6 +431,7 @@ section {
 
 /* <------DARK MODE FOR SETTINGS PAGE ------> */
 .dark-mainbody {
+  height: 100vh;
   background-color: #585858;
 }
 .checkmark {
@@ -411,3 +442,69 @@ section {
   background-color: rgba(218, 217, 217, 0.5);
   border: 0.1px solid rgba(0, 0, 0, 0.5);
 }
+
+/*-------Start of Toggle Switch Key-----------------*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c7c7f9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: -3.1px;
+  background-color: #a9a9a9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  background-color: #150aa1;
+  /* border: solid 2px white; */
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c7c7f9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+/*-------END---------*/

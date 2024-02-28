@@ -1,64 +1,31 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* text styles */
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../../../assets/fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../../../assets/fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf)
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  }
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
 
-  /* DO NOT REMOVE THE CODE ABOVE */
+/* DO NOT REMOVE THE CODE ABOVE */
 
-  /* ...........START OF NOTIFICATION LIGHT PAGE */
-  .notification-body{
-    display: grid;
-    grid-template-columns: 310px auto;
-  }
-  .light-notification-page{
-    background-color: #DAD9D9;
-    padding:134px 0px 134px 53px;
-  }
-  .notification-page-item1{
-    width: 70%;
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  hr{
-    border: 1px solid #979797;
-    margin: 10px 0px 10px 0px;
-  }
-  /* ---------- START OF TOOGLE BUTTON----------- */
-  .toogle-button{
-    margin-left: auto;
- }
-
-
-
-  /* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
-  
-/* .dark-notification-page{
-    background-color: #222020;
-  } */
-
-  /* /-----------------------SIDE BAR -------------------------/ */
+/* /-----------------------SIDE BAR -------------------------/ */
 :root {
   /* General */
   --svg-color: #a9a9a9;
@@ -74,41 +41,62 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.notification{
-    display: grid;
-    grid-template-columns: 310px auto;
+.light-body {
+  height: 100vh;
+  background-color: #dad9d9;
+  overflow: hidden;
 }
-.sidebar-nav{
-  width: 310px;
-  height:100%;
+
+.dark-body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #272727;
+}
+
+.notification {
+  display: flex;
+}
+
+.sidebar-nav {
+  width: 20vw;
+  min-width: 220px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 41px;
-  padding: 43px 0 41px 0;
-  position: fixed;
-  top: 0;
-  left: 0; 
-  z-index: 1; 
+  gap: 2vh;
+  padding: 4vh 0 0 0;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1.5vh;
+  width: 75%;
+  margin: auto;
 }
 
-.nav-link-container a{
+.nav-link-container a {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  height: 54px;
-  transition: all 0.5s ease;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
 }
 
-header .prof-pic,
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
 .menu-link {
-  padding-left: 72px;
+  padding: 1.7vh 1vw;
 }
 
 svg {
@@ -124,6 +112,8 @@ svg {
 .light-nav-link-container a:hover {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -132,6 +122,8 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -148,28 +140,69 @@ a.light-active-menu svg {
     url("../../../assets/icons/video-conference.svg"),
     url("../../../assets/icons/chat-room.svg"),
     url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px, top 395px right 250px,
-    top 450px right 18px, top 547px right 160px, top 789px right 231px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
 }
 
-  .dark-nav-link-container a:hover {
-    background-color: var(--dm-active-menu-bg-color);
-  }
-  
-  .dark-nav-link-container a:hover svg {
-    color: var(--dm-active-menu);
-  }
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
 
-    a.dark-active-menu {
-      background-color: var(--dm-active-menu-bg-color);
-    }
-    
-    a.dark-active-menu svg {
-      color: var(--dm-active-menu);
-    }
-    
-    /*---------------TOGGLE KEY--------------*/
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
+
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
+
+/* ...........START OF NOTIFICATION LIGHT PAGE */
+
+.light-notification-page {
+  height: 100vh;
+  width: 80vw;
+  background-color: #dad9d9;
+  padding: 30px 0px 0px 53px;
+  overflow-y: scroll;
+}
+.notification-page-item1 {
+  width: 70%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+hr {
+  border: 1px solid #979797;
+  margin: 10px 0px 10px 0px;
+}
+/* ---------- START OF TOOGLE BUTTON----------- */
+.toogle-button {
+  margin-left: auto;
+}
+
+/* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
+
+.dark-notification-page {
+  height: 100vh;
+  width: 80vw;
+  background-color: #222020;
+  padding: 30px 0px 0px 53px;
+  overflow-y: scroll;
+}
+
+/*---------------TOGGLE KEY--------------*/
 /* The switch - the box around the slider */
 .toggle {
   position: relative;
@@ -193,9 +226,9 @@ a.light-active-menu svg {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #C7C7F9;
-  -webkit-transition: .2s;
-  transition: .2s;
+  background-color: #c7c7f9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .slider:before {
@@ -205,20 +238,17 @@ a.light-active-menu svg {
   width: 20px;
   left: 0px;
   bottom: -3.1px;
-  background-color: #A9A9A9;
-  -webkit-transition: .2s;
-  transition: .2s;
+  background-color: #a9a9a9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-
 input:checked + .slider:before {
-  background-color: #150AA1;
-  border: solid 2px white;
-  
+  background-color: #150aa1;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #C7C7F9;
+  box-shadow: 0 0 1px #c7c7f9;
 }
 
 input:checked + .slider:before {
@@ -228,7 +258,7 @@ input:checked + .slider:before {
 }
 
 /* Rounded sliders */
-.slider  {
+.slider {
   border-radius: 34px;
 }
 
@@ -236,56 +266,54 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* ------------------------------------texts styes --------------------------- */
+/* NAVBAR */
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+}
 
+.dark-nav-texts-active {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
 
-     /* ------------------------------------texts styes --------------------------- */
-    /* NAVBAR */
-    .light-nav-texts {
-      color: rgba(169, 169, 169, 0.90);
-      font-family: Rubik;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    .Dark-nav-texts {
-      color: #A9A9A9;
-      font-family: Rubik;
-      font-size: 16px;
-      font-weight: 500;
-  }
-
-  .dark-nav-texts-active {
-      color: #FFFCFC;
-      font-family: Poppins-regular;
-      font-size: 16px;
-      font-weight: 700;
-  }
-  .light-nav-texts-active { 
-      color: rgba(34, 32, 32, 0.90);
-      font-family: Poppins-regular;
-      font-size: 16px;
-      font-weight: 700;
-  }
-
-  /* --------notification texts------- */
-  .dark-menu-title-texts-mode {
-    color: #0389E1;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .light-menu-title-texts-mode {
-    color: #150AA1;
-    font-family: Poppins-regular;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .dark-menu-subtitle-texts-mode {
-    color: #FFFCFC;
-    font-family: Poppins-medium;
-    font-size: 14px;
-    font-weight: 400;
+/* --------notification texts------- */
+.dark-menu-title-texts-mode {
+  color: #0389e1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.light-menu-title-texts-mode {
+  color: #150aa1;
+  font-family: Poppins-regular;
+  font-size: 14px;
+  font-weight: 600;
+}
+.dark-menu-subtitle-texts-mode {
+  color: #fffcfc;
+  font-family: Poppins-medium;
+  font-size: 14px;
+  font-weight: 400;
 }
 .light-menu-subtitle-texts-mode {
   color: #373737;

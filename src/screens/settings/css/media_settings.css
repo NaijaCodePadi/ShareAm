@@ -1,31 +1,30 @@
 /* This removes padding & margin from every container */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* text styles */
-  @font-face {
-    font-family: poppins-bold;
-    src: url(../../../assets/fonts/Poppins-Bold.ttf);
-  }
-  @font-face {
-    font-family: poppins-regular;
-    src: url(../../../assets/fonts/Poppins-Regular.ttf);
-  }
-  @font-face {
-    font-family: poppins-medium;
-    src: url(../../../assets/fonts/Poppins-Medium.ttf);
-  }
-  @font-face {
-    font-family: Rubik;
-    src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf)
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  }
-  /* DO NOT REMOVE THE CODE ABOVE */
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+/* DO NOT REMOVE THE CODE ABOVE */
 
-  /* /-----------------------SIDE BAR -------------------------/ */
+/* /-----------------------SIDE BAR -------------------------/ */
 :root {
   /* General */
   --svg-color: #a9a9a9;
@@ -41,41 +40,47 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.media-setting{
+.media-setting {
   display: grid;
-    grid-template-columns: 310px auto;
+  grid-template-columns: 20vw auto;
 }
-.sidebar-nav{
-  width: 310px;
-  height:100%;
+.sidebar-nav {
+  width: 20vw;
+  min-width: 220px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 41px;
   padding: 43px 0 41px 0;
   position: fixed;
   top: 0;
-  left: 0; 
-  z-index: 1; 
+  left: 0;
+  z-index: 1;
 }
 
 .nav-link-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 75%;
+  margin: auto;
 }
 
-.nav-link-container a{
+.nav-link-container a {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 19px;
   height: 54px;
-  transition: all 0.5s ease;
+  transition: all 0.2s ease;
 }
 
-header .prof-pic,
+header {
+  margin: auto;
+}
+
 .menu-link {
-  padding-left: 72px;
+  padding: 0 1vw;
 }
 
 svg {
@@ -91,6 +96,8 @@ svg {
 .light-nav-link-container a:hover {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 0 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -99,6 +106,8 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 0 1vw;
 }
 
 a.light-active-menu svg {
@@ -115,55 +124,59 @@ a.light-active-menu svg {
     url("../../../assets/icons/video-conference.svg"),
     url("../../../assets/icons/chat-room.svg"),
     url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px, top 395px right 250px,
-    top 450px right 18px, top 547px right 160px, top 789px right 231px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
 }
 
-  .dark-nav-link-container a:hover {
-    background-color: var(--dm-active-menu-bg-color);
-  }
-  
-  .dark-nav-link-container a:hover svg {
-    color: var(--dm-active-menu);
-  }
+.dark-nav-link-container a:hover {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 0 1vw;
+}
 
-    a.dark-active-menu {
-      background-color: var(--dm-active-menu-bg-color);
-    }
-    
-    a.dark-active-menu svg {
-      color: var(--dm-active-menu);
-    }
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
 
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 0 1vw;
+}
 
-     /* ------------------------------------texts styes --------------------------- */
-    /* NAVBAR */
-    .light-nav-texts {
-      color: rgba(169, 169, 169, 0.90);
-      font-family: Rubik;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-    .Dark-nav-texts {
-      color: #A9A9A9;
-      font-family: Rubik;
-      font-size: 16px;
-      font-weight: 500;
-  }
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
 
-  .dark-nav-texts-active {
-      color: #FFFCFC;
-      font-family: Poppins-regular;
-      font-size: 16px;
-      font-weight: 700;
-  }
-  .light-nav-texts-active { 
-      color: rgba(34, 32, 32, 0.90);
-      font-family: Poppins-regular;
-      font-size: 16px;
-      font-weight: 700;
+/* ------------------------------------texts styes --------------------------- */
+/* NAVBAR */
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 500;
+}
 
-  }
+.dark-nav-texts-active {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: Poppins-regular;
+  font-size: 16px;
+  font-weight: 700;
+}

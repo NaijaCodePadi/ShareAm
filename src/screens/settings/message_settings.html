@@ -5,7 +5,7 @@
     <title>Message_settings | ShareAm</title>
     <link rel="stylesheet" href="css/message_settings.css" />
   </head>
-  <body>
+  <body class="light-body">
     <div class="message">
       <!-- ------------ HTML FOR SIDEBAR --------------- -->
       <div class="sidebar-container">
@@ -248,7 +248,7 @@
                 />
               </svg>
             </div>
-            <button class="section1-div2 write-message-btn">
+            <button class="write-message-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -271,7 +271,7 @@
                   stroke-linejoin="round"
                 />
               </svg>
-              <p class="write-message-txt">Write Message</p>
+              Write Message
             </button>
           </div>
           <div class="section2">
@@ -280,10 +280,11 @@
             <button id="fans-btn" class="follower-btn-text">Fans</button>
           </div>
           <div class="section3">
-            <div id="checkbox"></div>
+            <input type="checkbox" id="checkbox">
             <p class="light-select-all-txt">Select All</p>
           </div>
-          <div class="section4">
+          <div class="section4-wrapper">
+            <div class="section4">
             <a href="messaging.html" class="user-profile">
               <img
                 src="../../assets/images/Screenshot (173) 1.svg"
@@ -394,6 +395,8 @@
                 />
               </svg>
             </a>
+        
+            </div>
           </div>
         </div>
       </div>
