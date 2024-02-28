@@ -170,14 +170,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 19px;
-  margin: 0px 4vh 0vw auto;
+  /* margin: 0 4vh 0 auto; */
+  margin-left: 87%;
   padding-top: 20px;
 }
 
 .caller-user {
   display: flex;
   background: #69508f;
-  width: 4vw;
+  width: 4.5vw;
   height: 8vh;
   border-radius: 4px;
   border: 0.797px solid #dad9d9;
@@ -284,6 +285,41 @@ ul {
   border-radius: 4px;
   border: none;
   margin-left: auto;
+}
+
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #5f5f5f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  position: absolute;
+  bottom: 100%;
+  right: 70%;
+  z-index: 1;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 85%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5f5f5f transparent transparent transparent;
 }
 
 .chat-box {
