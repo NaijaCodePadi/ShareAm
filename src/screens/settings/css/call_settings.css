@@ -23,6 +23,10 @@
   src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
+html {
+  font-size: 1rem;
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* /-----------------------SIDE BAR -------------------------/ */
@@ -184,7 +188,7 @@ a.dark-active-menu svg {
   gap: 1px;
   color: #979797;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .cs-sections > section > span > .light-arrow-svg {
@@ -212,7 +216,7 @@ a.dark-active-menu svg {
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -220,58 +224,58 @@ a.dark-active-menu svg {
 .Dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .dark-nav-texts-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 /* ------------main body text ----------------------- */
 .dark-menu-title-texts {
   color: #0389e1;
   font-family: Poppins-bold;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .light-menu-title-texts {
   color: #150aa1;
   font-family: Poppins-bold;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .dark-call-subtitle-text {
   color: #fffcfc;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .light-call-subtitle-text {
   color: #000;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 
 .dark-call-window-text {
   color: #7b7b7b;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .light-call-window-text {
   color: #373737;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -341,3 +345,10 @@ input:checked + .slider:before {
 }
 
 /*----------------End of Toggle Switch key---------*/
+
+
+@media (max-width : 800px) {
+  html {
+    font-size: 12px;
+  }
+}
