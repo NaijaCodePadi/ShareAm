@@ -504,10 +504,14 @@ ul {
 }
 
 .chat-bubbles {
-  display: grid;
-  grid-template-columns: 53px auto;
-  column-gap: 6px;
   margin-bottom: 18px;
+}
+
+.user-message-box {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  margin-bottom: 1vh;
 }
 
 .user-profile-picture {
@@ -516,11 +520,6 @@ ul {
   height: 45px;
   flex-shrink: 0;
   border-radius: 53px;
-  margin-top: 8px;
-}
-
-.userName {
-  margin-bottom: 6px;
 }
 
 .text-and-time-wrapper {
@@ -661,7 +660,7 @@ ul {
 .desktop-msg-subtitle-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .desktop-viewer {
@@ -674,31 +673,31 @@ ul {
 .desktop-now-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .desktop-thanks-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 500;
 }
 .desktop-msg-graphic-title-txt {
   color: rgba(218, 217, 217, 0.7);
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 .desktop-sent-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .desktop-sent-date-txt {
   color: rgba(218, 217, 217, 0.8);
   font-family: Poppins-medium;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 
@@ -773,7 +772,7 @@ input:checked + .slider:before {
   html {
     font-size: 12px;
   }
-  
+
   .profile-picc,
   .side-nav img {
     width: 40px;

@@ -276,7 +276,7 @@ main {
   text-decoration: none;
   color: #fff;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -480,9 +480,9 @@ main {
 
 .time-tick-wrapper {
   display: flex;
-  justify-content: space-between;
-  font-size: .7rem;
-  font-family: poppins-medium;
+  gap: 0.7vw;
+  width: fit-content;
+  margin-left: auto;
 }
 
 .sender-message {
@@ -516,6 +516,8 @@ main {
 .user-text-delivery-time {
   color: gold;
   text-align: right;
+  font-size: 0.7rem;
+  font-family: poppins-medium;
 }
 
 .receiver-message img {
@@ -550,10 +552,13 @@ main {
   padding: 0 0.3vw;
   text-indent: -40px !important;
   font-family: poppins-regular;
-  /* height: 100px; */
+  background-color: #f4f1f8;
   resize: none;
   border: none;
   outline: none;
+  border-radius: 9px;
+  margin: 0 0.8vw;
+  align-items: center;
 }
 
 .right-side-div3-bottom {
@@ -601,19 +606,19 @@ main {
 .dark-friends-display-name-text-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 .light-friends-display-name-text-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 .light-friends-display-name-text {
   color: #979797;
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -621,7 +626,7 @@ main {
   color: #fff;
   text-align: center;
   font-family: Rubik;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .follower-btn-text {
@@ -634,21 +639,21 @@ main {
 .message-text {
   color: #979797;
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 20px;
 }
 .dark-disappear-text {
   color: #a9a9a9;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 20px;
 }
 .light-disappear-text {
   color: #686868;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 20px;
 }
@@ -656,7 +661,7 @@ main {
 .light-disappear-text span {
   color: #0272bc;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 20px;
 }
@@ -679,10 +684,8 @@ main {
   line-height: normal;
 }
 
-@media (max-width : 800px) {
-
+@media (max-width: 800px) {
   html {
     font-size: 12px;
   }
-
 }
