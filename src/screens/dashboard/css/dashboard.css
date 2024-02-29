@@ -237,14 +237,14 @@ html {
   margin-bottom: 8px;
   color: #0272bc;
   font-family: Poppins-bold;
-  font-size: 22.163px;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 .section3-div2 p {
   color: #979797;
   font-family: Poppins-regular;
-  font-size: 12.858px;
+  font-size: .8rem;
   font-weight: 500;
 }
 
@@ -270,14 +270,14 @@ html {
 .section4-share-am-div h1 {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
 .section4-share-am-div h1 > span {
   color: #6f3fe3;
   font-family: Poppins-bold;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 .section4-text {
@@ -287,7 +287,7 @@ html {
 .section4-text p {
   color: #e4edf6;
   font-family: Poppins-medium;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .section4-images {
@@ -675,20 +675,20 @@ html {
 .intial-txt {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
 }
 .desktop-title-text {
   color: #fff;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .desktop-status-text {
   color: #fff;
   font-family: poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -716,25 +716,28 @@ html {
 .light-welcome-txt {
   color: #303030;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
+
 .dark-welcome-txt {
   color: #fffcfc;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
+
 .light-new-user-txt {
   color: #22074a;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
+
 .dark-new-user-txt {
   color: #f1f1f1;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .popup-txt {
