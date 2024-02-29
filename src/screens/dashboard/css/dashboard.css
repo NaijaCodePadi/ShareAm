@@ -23,6 +23,10 @@
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 
+html {
+  font-size: 1rem;
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* **************************** LANDING PAGE DASHBOARD ****************************************/
@@ -190,7 +194,7 @@
 
 .section3-div1 h6 {
   color: #979797;
-  font-size: 16px;
+  font-size: 1rem;
   /* font-weight: 500; */
   font-family: poppins-bold;
 }
@@ -209,7 +213,7 @@
 .section3-div1-new-user-div p {
   color: #979797;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -500,7 +504,7 @@
   height: 100%;
   background: #fff;
   color: #979797;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   font-family: poppins-regular;
   border: none;
@@ -693,19 +697,19 @@
 .desktop-subtitle-text {
   color: #000;
   font-family: poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .desktop-features-text {
   color: #979797;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .desktop-features-text-active {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -736,94 +740,94 @@
 .popup-txt {
   color: #000;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .light-cta-text {
   color: #585858;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .dark-cta-text {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .light-action-txt {
   color: #585858;
   font-family: poppins-regular;
-  font-size: 12px;
+  font-size: .7rem;
   font-weight: 400;
 }
 .dark-action-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 12px;
+  font-size: .7rem;
   font-weight: 400;
 }
 .light-new-user-email-txt {
   color: #303030;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .dark-new-user-email-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .light-switch-acct-txt {
   color: #303030;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: .6rem;
   font-weight: 500;
 }
 .dark-switch-acct-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: .6rem;
   font-weight: 500;
 }
 .light-switch-acct-txt > a {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: .6rem;
   font-weight: 500;
   text-decoration: none;
 }
 .dark-switch-acct-txt > a {
   color: #048ad7;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: .6rem;
   font-weight: 500;
   text-decoration: none;
 }
 .light-cta-learn-txt > a {
   color: #0272bc;
   font-family: poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
 }
 .time-txt {
   color: #fff;
   font-family: poppins-medium;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .date-txt {
   color: #fff;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .cal-txt {
   color: #979797;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -887,4 +891,10 @@ input:checked + label svg.sun {
 }
 input:checked + label svg.moon {
   fill: #fff;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
 }
