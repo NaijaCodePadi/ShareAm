@@ -23,6 +23,10 @@
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 
+html {
+  font-size: 1rem;
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* **************************** LANDING PAGE DASHBOARD ****************************************/
@@ -95,11 +99,11 @@ stroke="#CFDAE2" */
   display: flex;
 }
 
-#green-circle {
-  /* position: absolute;
+/* #green-circle {
+  position: absolute;
   right: 0%;
-  bottom: 2%; */
-}
+  bottom: 2%;
+} */
 
 .profile-pic-intials {
   /* position: absolute;
@@ -250,7 +254,7 @@ stroke="#CFDAE2" */
 
 .section3-div1 h6 {
   color: #979797;
-  font-size: 16px;
+  font-size: 1rem;
   /* font-weight: 500; */
   font-family: poppins-bold;
 }
@@ -270,7 +274,7 @@ stroke="#CFDAE2" */
 .section3-div1-new-user-div p {
   color: #979797;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -294,25 +298,26 @@ stroke="#CFDAE2" */
   margin-bottom: 8px;
   color: #0272bc;
   font-family: Poppins-bold;
-  font-size: 22.163px;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 .section3-div2 p {
   color: #979797;
   font-family: Poppins-regular;
-  font-size: 12.858px;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .section4-container {
   display: flex;
   width: 100%;
-  height: 8vh;
-  padding-left: 15px;
+  height: 8%;
+  padding: 0 3vw;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   border-radius: 5px 5px 0 0;
+  position: relative;
 }
 
 .section4-share-am-div {
@@ -320,60 +325,107 @@ stroke="#CFDAE2" */
   align-items: center;
   width: 30%;
 }
+
 .section4-share-am-div img {
   width: 47px;
+  height: 8vh;
 }
 
 .section4-share-am-div h1 {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
 .section4-share-am-div h1 > span {
   color: #6f3fe3;
   font-family: Poppins-bold;
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 800;
 }
+
 .section4-text {
   width: 52%;
   text-align: right;
 }
+
 .section4-text p {
   color: #e4edf6;
   font-family: Poppins-medium;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 500;
 }
-.section4-images {
-  width: 9%;
-  justify-content: space-between;
-  position: relative;
-}
+
 .section4-img1 {
-  position: relative;
+  position: absolute;
   width: 32px;
-  top: 15px;
+  right: 18%;
 }
 
 .section4-img2 {
-  position: relative;
+  position: absolute;
   width: 26px;
-  right: 200px;
+  right: 30%;
   /* bottom: 15px; */
 }
 
 .section4-img3 {
-  position: relative;
+  position: absolute;
   width: 26px;
-  right: 150px;
+  right: 25%;
 }
 .section4-img4 {
-  position: relative;
+  position: absolute;
   width: 22px;
-  bottom: 15px;
+  right: 35%;
+}
+.section4-img5 {
+  position: absolute;
+  width: 32px;
+  right: 52%;
+}
+
+.section4-img6 {
+  position: absolute;
+  width: 26px;
+  right: 10%;
+  /* bottom: 15px; */
+}
+
+.section4-img7 {
+  position: absolute;
+  width: 26px;
+  right: 70%;
+}
+.section4-img8 {
+  position: absolute;
+  width: 22px;
+  left: 35%;
+}
+.section4-img9 {
+  position: absolute;
+  width: 32px;
+  left: 6%;
+}
+
+.section4-img10 {
+  position: absolute;
+  width: 26px;
+  right: 25%;
+  /* bottom: 15px; */
+}
+
+.section4-img11 {
+  position: absolute;
+  width: 26px;
+  right: 45%;
+}
+.section4-img12 {
+  position: absolute;
+  width: 22px;
+  left: 15%;
+
 }
 
 /*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
@@ -433,12 +485,15 @@ stroke="#CFDAE2" */
 /*/ ------------------ CSS FOR LANDING PAGE CARD ------------------ /*/
 
 .landing-page-card-container {
-  width: 96%;
+  /* width: 96%;
+  height: 100%;
+  */
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 38px;
-  padding-top: 30px;
+  padding: 4vh 4vw 1vh 4vw;
+  /* padding-left: 38px;
+  padding-top: 30px; */
 }
 
 .section-1-container {
@@ -533,19 +588,17 @@ stroke="#CFDAE2" */
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 25px;
+  justify-content: center;
   height: 53vh;
 }
 
 .call-to-action-section {
-  width: 51%;
+  /* width: 51%; */
   /* height: 340px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  /* background-color: blue; */
 }
 
 .meet-now,
@@ -567,13 +620,20 @@ stroke="#CFDAE2" */
   height: 100%;
   background: #fff;
   color: #979797;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   font-family: poppins-regular;
   border: none;
   outline: none;
   width: 68%;
 }
+
+.date-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
 .cta-text {
   /* grid-column: 1/3; */
   /* align-self: self-end; */
@@ -615,33 +675,33 @@ stroke="#CFDAE2" */
   height: 100%;
 }
 
-.time-date-box {
+/* .time-date-box {
   width: 100%;
   border-radius: 10px 10px 0 0;
   height: 37%;
-}
+} */
 
-.time-date-wrap {
+/* .time-date-wrap {
   width: 100%;
   display: flex;
   align-items: center;
   padding: 0px 28px;
   justify-content: space-between;
-}
+} */
 
 .time-date-text {
-  width: 70%;
-  height: fit-content;
+  /* width: 70%;
+  height: fit-content; */
 }
 
-.flower-box {
+/* .flower-box {
   width: 25%;
   height: fit-content;
   text-align: right;
   vertical-align: middle;
-}
+} */
 
-.calender-box {
+/* .calender-box {
   display: flex;
   gap: 11px;
   align-items: center;
@@ -649,7 +709,7 @@ stroke="#CFDAE2" */
   border-radius: 0 0 5px 5px;
   height: 63%;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
+} */
 
 .section-4-container {
   /* width: 100%; */
@@ -658,16 +718,16 @@ stroke="#CFDAE2" */
   /* background-color: red; */
 }
 
-.new-user-email-txt {
-  /* grid-column: 1/3; */
-}
+/* .new-user-email-txt {
+  grid-column: 1/3;
+} */
 
-.switch-acct-txt {
-  /* padding: 10px 0 10px 0; */
-}
+/* .switch-acct-txt {
+  padding: 10px 0 10px 0;
+} */
 
 .cta-learn {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 /*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
@@ -680,13 +740,13 @@ stroke="#CFDAE2" */
   background-color: var(--lm-landing-pg-card-bg-color);
 }
 
-.light-time-date-box {
+/* .light-time-date-box {
   background-color: var(--lm-date-time-bg-color);
-}
+} */
 
-.light-calender-box {
+/* .light-calender-box {
   background-color: var(--lm-calender-bg-color);
-}
+} */
 
 /*/ ------------------DARK MODE CSS FOR LANDING PAGE CARD------------------ /*/
 
@@ -699,9 +759,9 @@ stroke="#CFDAE2" */
   background-color: var(--dm-date-time-bg-color);
 }
 
-.dark-calender-box {
+/* .dark-calender-box {
   background-color: var(--dm-calender-bg-color);
-}
+} */
 /*-----colors for call interface buttons----*/
 
 :root {
@@ -739,20 +799,20 @@ stroke="#CFDAE2" */
 .intial-txt {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 3vh;
+  font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
 }
 .desktop-title-text {
   color: #fff;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .desktop-status-text {
   color: #fff;
   font-family: poppins-regular;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -761,139 +821,144 @@ stroke="#CFDAE2" */
 .desktop-subtitle-text {
   color: #000;
   font-family: poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
+
 .desktop-features-text {
   color: #979797;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
+
 .desktop-features-text-active {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .light-welcome-txt {
   color: #303030;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
+
 .dark-welcome-txt {
   color: #fffcfc;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
+
 .light-new-user-txt {
   color: #22074a;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
+
 .dark-new-user-txt {
   color: #f1f1f1;
   font-family: poppins-medium;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .popup-txt {
   color: #000;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .light-cta-text {
   color: #585858;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .dark-cta-text {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .light-action-txt {
   color: #585858;
   font-family: poppins-regular;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .dark-action-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 12px;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .light-new-user-email-txt {
   color: #303030;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .dark-new-user-email-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .light-switch-acct-txt {
   color: #303030;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 .dark-switch-acct-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 .light-switch-acct-txt > a {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 0.6rem;
   font-weight: 500;
   text-decoration: none;
 }
 .dark-switch-acct-txt > a {
   color: #048ad7;
   font-family: poppins-regular;
-  font-size: 10px;
+  font-size: 0.6rem;
   font-weight: 500;
   text-decoration: none;
 }
 .light-cta-learn-txt > a {
   color: #0272bc;
   font-family: poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
 }
 .time-txt {
-  color: #fff;
+  color: #0272bc;
   font-family: poppins-medium;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 .date-txt {
-  color: #fff;
+  color: #0272bc;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
-.cal-txt {
+/* .cal-txt {
   color: #979797;
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-}
+} */
 
 /*------LIGHT AND DARK MODE COMBINE SWITCH TOGGLE BUTTON FOR DASHBOARD-------*/
 
@@ -957,6 +1022,12 @@ input:checked + label svg.moon {
   fill: #fff;
 }
 
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .section1-div1 {
     display: block;
@@ -974,6 +1045,18 @@ input:checked + label svg.moon {
   .section3-div1 {
     padding: 2vh 2vw 1vh 2.5vw;
     height: 52vh;
+  }
+
+  .section3-div2 {
+    width: 100%;
+  }
+
+  .section1-div2-left {
+    width: 75%;
+  }
+
+  .desktop-subtitle-text {
+    font-size: 1.2rem;
   }
 
   .start-chatting-search-icon {

@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -44,11 +44,23 @@ html {
   --dm-active-menu-bg-color: #373737;
 }
 
+body {
+  background-color: #dad9d9;
+}
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-.call {
+
+.light-body {
+  height: 100vh;
+  background-color: #dad9d9;
+  overflow: hidden;
+}
+.dark-body {
+  height: 100vh;
+  background-color: #222020;
+}
+.message {
   display: flex;
 }
-
 .sidebar-nav {
   width: 20vw;
   min-width: 220px;
@@ -160,57 +172,6 @@ a.dark-active-menu svg {
   color: var(--dm-active-menu);
 }
 
-/* ---------------------------------------------main body ------------------------------- */
-.mainbody {
-  height: 100vh;
-  width: 100%;
-  /* padding: 20vh 0 0 5vw; */
-}
-
-.call_settings-wrapper {
-  padding: 20vh 5vw 0 5vw;
-  height: 100%;
-  overflow-y: scroll;
-}
-
-.call_settings > h4 {
-  border-bottom: 1px solid #979797;
-}
-.cs-sections > section {
-  padding: 4vh 0;
-  border-bottom: 1px solid #979797;
-  display: flex;
-  justify-content: space-between;
-}
-.cs-sections > section > span {
-  display: flex;
-  align-items: center;
-  gap: 1px;
-  color: #979797;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
-}
-.cs-sections > section > span > .light-arrow-svg {
-  width: 21px;
-  height: 14px;
-  color: #000;
-}
-.cs-sections > section > span > .dark-arrow-svg {
-  width: 21px;
-  height: 14px;
-  color: #e4e4e4;
-}
-.cs-sections > section:nth-child(4) > span > .light-arrow-svg {
-  margin-right: 8px;
-}
-.cs-sections > section:nth-child(5) > span > .light-arrow-svg {
-  transform: rotate(90deg);
-}
-.cs-sections > section:last-child {
-  border: none;
-}
-
 /* ------------------------------------texts styes --------------------------- */
 /* NAVBAR */
 .light-nav-texts {
@@ -221,7 +182,7 @@ a.dark-active-menu svg {
   font-weight: 500;
   line-height: normal;
 }
-.Dark-nav-texts {
+.dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
   font-size: 1rem;
@@ -240,114 +201,234 @@ a.dark-active-menu svg {
   font-size: 1rem;
   font-weight: 700;
 }
-/* ------------main body text ----------------------- */
-.dark-menu-title-texts {
-  color: #0389e1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 600;
+
+/* message-1 */
+.dark-new-message-txt {
+  color: #0490ec;
+  font-family: Poppins-regular;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
-.light-menu-title-texts {
+
+.light-new-message-txt {
+  color: #0272bc;
+  font-family: Poppins-regular;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.follower-btn-text {
+  color: #545454;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.dark-select-all-txt {
+  color: #0490ec;
+  font-family: Rubik;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.light-select-all-txt {
   color: #150aa1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 600;
+  font-family: Rubik;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
-.dark-call-subtitle-text {
+
+.dark-followers-display-name-text {
   color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.light-followers-display-name-text {
+  color: #494949;
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.dark-followers-user-id-text {
+  color: #979797;
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
-.light-call-subtitle-text {
-  color: #000;
+.light-followers-user-id-text {
+  color: #494949;
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
-.dark-call-window-text {
-  color: #7b7b7b;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
-}
-.light-call-window-text {
-  color: #373737;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
+/*------------------FOR MAIN BODY----------------*/
+
+::-webkit-scrollbar {
+  overflow: hidden;
 }
 
-/*-------------Toggle Switch key------------*/
-
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 32px;
-  height: 14px;
+.light-mainbody {
+  height: 100vh;
+  background: #dad9d9;
+  padding: 3vh 2vw;
+  width: 100%;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+.dark-mainbody {
+  height: 100vh;
+  padding: 3vh 2vw;
+  width: 100%;
+  background-color: #222020;
 }
 
-/* The slider */
-.slider {
-  position: absolute;
+.light-mainbody-container {
+  display: flex;
+  padding: 17px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.dark-mainbody-container {
+  display: flex;
+  width: 999px;
+  height: 812px;
+  padding: 17px;
+  flex-direction: column;
+  gap: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #272727;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1-div1 {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.section1-div1 svg {
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #c7c7f9;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 0px;
-  bottom: -3.1px;
-  background-color: #a9a9a9;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+.write-message-btn {
+  display: flex;
+  padding: 2vh 1vw;
+  gap: 1vw;
+  border-radius: 4px;
+  background: #1058e8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: Rubik;
 }
 
-input:checked + .slider:before {
-  background-color: #150aa1;
+.section2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #c7c7f9;
+#all-btn {
+  width: 49px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #c7c7f9;
+  color: #545454;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(13px);
-  -ms-transform: translateX(13px);
-  transform: translateX(13px);
+#followers-btn {
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: #f1f1f1;
+  color: #545454;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
 }
 
-/* Rounded sliders */
-.slider {
-  border-radius: 34px;
+#fans-btn {
+  display: flex;
+  padding: 7px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: #f1f1f1;
+  color: #545454;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
 }
 
-.slider:before {
-  border-radius: 50%;
+.section3 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-/*----------------End of Toggle Switch key---------*/
+#checkbox {
+  width: 15.611px;
+  height: 15px;
+  border-radius: 4px;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
 
+.section4-wrapper {
+  overflow-y: scroll;
+}
 
-@media (max-width : 800px) {
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-profile {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 26px;
+  width: 100%;
+  border-bottom: 1px solid #979797;
+  text-decoration: none;
+  color: #000;
+}
+
+.user-profile > img {
+  width: 62.44px;
+  height: 60px;
+}
+
+@media (max-width: 800px) {
   html {
     font-size: 12px;
   }
