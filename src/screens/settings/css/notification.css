@@ -179,7 +179,7 @@ a.dark-active-menu svg {
   width: 80vw;
   background-color: #dad9d9;
   padding: 30px 0px 0px 53px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .notification-page-item1 {
   width: 70%;
