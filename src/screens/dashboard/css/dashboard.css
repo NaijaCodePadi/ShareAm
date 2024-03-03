@@ -30,12 +30,12 @@ html {
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* **************************** LANDING PAGE DASHBOARD ****************************************/
-
+body {
+  height: 100vh;
+}
 .landing-page-container {
   display: flex;
-  width: 100%;
-  height: 92vh;
-  flex-shrink: 0;
+  height: 92%;
 }
 
 /****************************LANDING PAGE LEFT SIDE******************************************/
@@ -43,13 +43,8 @@ html {
 /*----FOR BOTH LIGHT MODE AND DARK MODE OF LANDING PAGE LEFT SIDE----*/
 
 .section1-container {
-  /* display: flex; */
   width: 100%;
-  padding: 30px 24px 30px 24px;
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* gap: 48px; */
-  /* flex-shrink: 0; */
+  padding: 4vh 3vw;
   border-bottom-right-radius: 25px;
 }
 
@@ -69,19 +64,36 @@ html {
 .section1-div1-left-profile-pic {
   display: flex;
   align-items: flex-start;
+  width: 90px;
+  height: 90px;
   position: relative;
 }
 
 #green-circle {
   position: absolute;
-  right: 8px;
-  bottom: 8px;
+  right: 5%;
+  bottom: 10%;
+}
+
+.section1-div1-left-profile-pic a {
+  text-decoration: none;
+}
+
+.display-profile-pic {
+  width: 90px;
+  height: 90px;
+  background-color: #d9d9d9;
+  border-radius: 100%;
+  border: #cfdae2;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
 }
 
 .profile-pic-intials {
-  position: absolute;
-  left: 30px;
-  top: 30px;
+  height: fit-content;
+  width: fit-content;
 }
 
 .section1-div1-left-new-user {
@@ -113,7 +125,6 @@ html {
   padding-left: 14px;
   align-items: center;
   border: 1px solid #b0b0b0;
-  /* border: 1px solid yellow; */
 }
 
 .section1-div2-left svg {
@@ -168,7 +179,6 @@ html {
 
 .section2-div2 {
   display: flex;
-  /* height: 34px; */
   align-items: center;
   justify-content: space-between;
   padding: 0 1%;
@@ -187,22 +197,48 @@ html {
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 48px;
-  padding: 90px 0 0 41px;
-  /* border: 1px solid blue; */
+  height: 60vh;
+  padding: 9vh 2vw 5vh 2.5vw;
+}
+
+.chat-wrapper {
+  height: 80%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  padding-right: 2vw;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .section3-div1 h6 {
   color: #979797;
   font-size: 1rem;
-  /* font-weight: 500; */
   font-family: poppins-bold;
 }
 .horizontal-line {
   width: 250px;
   height: 1px;
   background-color: #cecece;
-  margin-left: 41px;
+  margin-bottom: 0.5vh;
 }
 .section3-div1-new-user-div {
   display: flex;
@@ -230,7 +266,6 @@ html {
 
 .section3-div2 {
   width: 50%;
-  /* border: 1px solid red; */
 }
 
 .section3-div2 h2 {
@@ -244,18 +279,19 @@ html {
 .section3-div2 p {
   color: #979797;
   font-family: Poppins-regular;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
 .section4-container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
-  height: 8vh;
-  padding-left: 15px;
+  height: 8%;
+  padding: 0 3vw;
   align-items: center;
-  flex-wrap: wrap;
   border-radius: 5px 5px 0 0;
+  position: relative;
 }
 
 .section4-share-am-div {
@@ -263,8 +299,10 @@ html {
   align-items: center;
   width: 30%;
 }
+
 .section4-share-am-div img {
   width: 47px;
+  height: 8vh;
 }
 
 .section4-share-am-div h1 {
@@ -280,59 +318,101 @@ html {
   font-size: 1.8rem;
   font-weight: 800;
 }
+
 .section4-text {
   width: 52%;
   text-align: right;
 }
+
 .section4-text p {
   color: #e4edf6;
   font-family: Poppins-medium;
   font-size: 1rem;
   font-weight: 500;
 }
-.section4-images {
-  width: 9%;
-  justify-content: space-between;
-  position: relative;
-}
+
 .section4-img1 {
-  position: relative;
+  position: absolute;
   width: 32px;
-  top: 15px;
+  right: 18%;
 }
 
 .section4-img2 {
-  position: relative;
+  position: absolute;
   width: 26px;
-  right: 200px;
-  /* bottom: 15px; */
+  right: 30%;
 }
 
 .section4-img3 {
-  position: relative;
+  position: absolute;
   width: 26px;
-  right: 150px;
+  right: 25%;
 }
 .section4-img4 {
-  position: relative;
+  position: absolute;
   width: 22px;
-  bottom: 15px;
+  right: 35%;
+}
+.section4-img5 {
+  position: absolute;
+  width: 32px;
+  right: 52%;
+}
+
+.section4-img6 {
+  position: absolute;
+  width: 26px;
+  right: 10%;
+}
+
+.section4-img7 {
+  position: absolute;
+  width: 26px;
+  right: 70%;
+}
+.section4-img8 {
+  position: absolute;
+  width: 22px;
+  left: 35%;
+}
+.section4-img9 {
+  position: absolute;
+  width: 32px;
+  left: 6%;
+}
+
+.section4-img10 {
+  position: absolute;
+  width: 26px;
+  right: 25%;
+  /* bottom: 15px; */
+}
+
+.section4-img11 {
+  position: absolute;
+  width: 26px;
+  right: 45%;
+}
+.section4-img12 {
+  position: absolute;
+  width: 22px;
+  left: 15%;
+
 }
 
 /*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
 
 .light-landing-page-left-side {
-  width: 34%;
-  background: var(--lm-landing-pg-card-bg-color);
+  width: 34vw;
+  min-width: 220px;
+  position: relative;
+
 }
 
 .light-section1-container {
   background: #22074a;
 }
 
-/* .light-profile-pic-intials {
-  color: #fff;
-} */
 
 .light-section4-container {
   background: #22074a;
@@ -374,12 +454,10 @@ html {
 /*/ ------------------ CSS FOR LANDING PAGE CARD ------------------ /*/
 
 .landing-page-card-container {
-  width: 96%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 38px;
-  padding-top: 30px;
+  padding: 4vh 4vw 1vh 4vw;
 }
 
 .section-1-container {
@@ -413,14 +491,13 @@ html {
   right: 7px;
   bottom: 7px;
 }
-.right-side-top {
-  height: 20vh;
-}
+
 .start-chatting-search-icon {
   display: flex;
   align-items: center;
   padding-bottom: 18px;
 }
+
 .welcome-box {
   display: flex;
   flex-direction: column;
@@ -428,10 +505,7 @@ html {
 }
 
 .section-2-container {
-  display: flex;
-  width: 100%;
   height: 49px;
-  align-items: center;
 }
 
 .popup-notification {
@@ -439,7 +513,7 @@ html {
   width: 100%;
   height: 49px;
   align-items: center;
-  padding: 0px 20px 0 116px;
+  justify-content: center;
   gap: 32px;
   border-radius: 18px;
   background: linear-gradient(
@@ -470,19 +544,14 @@ html {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  height: 53vh;
+  justify-content: center;
+  height: 100%;
 }
 
 .call-to-action-section {
-  width: 51%;
-  /* height: 340px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
-  /* background-color: blue; */
 }
 
 .meet-now,
@@ -496,8 +565,8 @@ html {
   gap: 15px;
   background: #fff;
   width: 47%;
-  /* padding: 0 ; */
 }
+
 .meet-now-btn,
 .new-chat-btn {
   align-items: center;
@@ -511,21 +580,16 @@ html {
   outline: none;
   width: 68%;
 }
-.cta-text {
-  /* grid-column: 1/3; */
-  /* align-self: self-end; */
-  text-align: center;
+
+.date-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
 }
 
-/* .cta-icon-box {
-  width: auto;
-  height: 129px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 11px;
-} */
+.cta-text {
+  text-align: center;
+}
 
 .cta-icon {
   display: flex;
@@ -552,58 +616,10 @@ html {
   height: 100%;
 }
 
-.time-date-box {
-  width: 100%;
-  border-radius: 10px 10px 0 0;
-  height: 37%;
-}
-
-.time-date-wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0px 28px;
-  justify-content: space-between;
-}
-
-.time-date-text {
-  width: 70%;
-  height: fit-content;
-}
-
-.flower-box {
-  width: 25%;
-  height: fit-content;
-  text-align: right;
-  vertical-align: middle;
-}
-
-.calender-box {
-  display: flex;
-  gap: 11px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 0 5px 5px;
-  height: 63%;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-}
-
 .section-4-container {
-  width: 100%;
-  margin-top: 140px;
-  padding-left: 41px;
-}
-
-.new-user-email-txt {
-  /* grid-column: 1/3; */
-}
-
-.switch-acct-txt {
-  /* padding: 10px 0 10px 0; */
-}
-
-.cta-learn {
-  margin-left: auto;
+  padding-left: 2.5vw;
+  position: absolute;
+  bottom: 0;
 }
 
 /*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
@@ -614,14 +630,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--lm-landing-pg-card-bg-color);
-}
-
-.light-time-date-box {
-  background-color: var(--lm-date-time-bg-color);
-}
-
-.light-calender-box {
-  background-color: var(--lm-calender-bg-color);
 }
 
 /*/ ------------------DARK MODE CSS FOR LANDING PAGE CARD------------------ /*/
@@ -635,9 +643,6 @@ html {
   background-color: var(--dm-date-time-bg-color);
 }
 
-.dark-calender-box {
-  background-color: var(--dm-calender-bg-color);
-}
 /*-----colors for call interface buttons----*/
 
 :root {
@@ -688,7 +693,7 @@ html {
 .desktop-status-text {
   color: #fff;
   font-family: poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -700,12 +705,14 @@ html {
   font-size: 1rem;
   font-weight: 500;
 }
+
 .desktop-features-text {
   color: #979797;
   font-family: poppins-regular;
   font-size: 1rem;
   font-weight: 400;
 }
+
 .desktop-features-text-active {
   color: #0272bc;
   font-family: poppins-regular;
@@ -761,13 +768,13 @@ html {
 .light-action-txt {
   color: #585858;
   font-family: poppins-regular;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .dark-action-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .light-new-user-email-txt {
@@ -785,26 +792,26 @@ html {
 .light-switch-acct-txt {
   color: #303030;
   font-family: poppins-regular;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 .dark-switch-acct-txt {
   color: #fffcfc;
   font-family: poppins-regular;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 .light-switch-acct-txt > a {
   color: #0272bc;
   font-family: poppins-regular;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 500;
   text-decoration: none;
 }
 .dark-switch-acct-txt > a {
   color: #048ad7;
   font-family: poppins-regular;
-  font-size: .6rem;
+  font-size: 0.6rem;
   font-weight: 500;
   text-decoration: none;
 }
@@ -816,19 +823,13 @@ html {
   text-decoration: none;
 }
 .time-txt {
-  color: #fff;
+  color: #0272bc;
   font-family: poppins-medium;
   font-size: 1.5rem;
   font-weight: 500;
 }
 .date-txt {
-  color: #fff;
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.cal-txt {
-  color: #979797;
+  color: #0272bc;
   font-family: poppins-regular;
   font-size: 1rem;
   font-weight: 400;
@@ -899,5 +900,59 @@ input:checked + label svg.moon {
 @media (max-width: 800px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .section1-div1 {
+    display: block;
+  }
+
+  .section1-div1-left {
+    margin-bottom: 2vh;
+  }
+
+  .section1-div1-left-profile-pic {
+    display: flex;
+    align-items: flex-start;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  }
+
+  #green-circle {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+  }
+
+  .display-profile-pic {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section1-div1-right {
+    margin-top: 1vh;
+  }
+
+  .section3-div1 {
+    padding: 2vh 2vw 1vh 2.5vw;
+    height: 52vh;
+  }
+
+  .section3-div2 {
+    width: 100%;
+  }
+
+  .section1-div2-left {
+    width: 75%;
+  }
+
+  .desktop-subtitle-text {
+    font-size: 1.2rem;
+  }
+
+  .start-chatting-search-icon {
+    display: block;
   }
 }
