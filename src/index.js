@@ -1,10 +1,15 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+const { setupTitlebar, attachTitlebarToWindow } = require('custom-electron-titlebar/main');
+try {
+  require('electron-reloader')(module)
+} catch(_){}
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
   app.quit();
 }
+//setupTitlebar();
 
 const createWindow = () => {
   // Create the browser window.
@@ -12,15 +17,23 @@ const createWindow = () => {
     width: 800,
     height: 600,
     minWidth: 400,
+    // //frame: false, // needed if process.versions.electron < 14
+    // titleBarStyle: 'hidden',
+    // /* You can use *titleBarOverlay: true* to use the original Windows controls */
+    // titleBarOverlay: true,
     webPreferences: {
     //  devTools: true,
+      sandbox: false,
       preload: path.join(__dirname, 'preload.js'),
     },
   });
+  mainWindow.setThumbarButtons([]);
   mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
  // mainWindow.removeMenu()
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'splash.html'));
+  // attach fullscreen(f11 and not 'maximized') && focus listeners
+  attachTitlebarToWindow(mainWindow);
+  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/login.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
@@ -50,3 +63,4 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
+ /*electron-forge start*/
