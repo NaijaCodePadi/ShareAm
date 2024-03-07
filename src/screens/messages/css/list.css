@@ -45,17 +45,15 @@ html {
 }
 
 body {
-  background-color: #dad9d9;
+  height: 100vh;
+  overflow: hidden;
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
 .light-body {
-  height: 100vh;
   background-color: #dad9d9;
-  overflow: hidden;
 }
 .dark-body {
-  height: 100vh;
   background-color: #222020;
 }
 .message {
@@ -84,7 +82,6 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  padding: 1.7vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
 }
@@ -101,6 +98,10 @@ header {
 
 .menu-link {
   padding: 1.7vh 1vw;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 svg {
@@ -126,8 +127,8 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
-  border-radius: 12px;
-  padding: 1.7vh 1vw;
+  font-family: Poppins-regular;
+  font-weight: 700;
 }
 
 a.light-active-menu svg {
@@ -177,92 +178,77 @@ a.dark-active-menu svg {
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 .dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
 .dark-nav-texts-active {
   color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
 }
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 /* message-1 */
-.dark-new-message-txt {
-  color: #0490ec;
+.new-message-txt {
   font-family: Poppins-regular;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.dark-new-message-txt {
+  color: #0490ec;
 }
 
 .light-new-message-txt {
   color: #0272bc;
-  font-family: Poppins-regular;
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .follower-btn-text {
-  color: #545454;
   font-family: Rubik;
-  font-size: 1rem;
-  font-weight: 400;
+}
+
+.select-all-txt {
+  font-family: Rubik;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .dark-select-all-txt {
   color: #0490ec;
-  font-family: Rubik;
-  font-size: 0.9rem;
-  font-weight: 500;
 }
 
 .light-select-all-txt {
   color: #150aa1;
-  font-family: Rubik;
+}
+
+.followers-display-name-text {
+  font-family: Poppins-regular;
   font-size: 0.9rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .dark-followers-display-name-text {
   color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 0.9rem;
-  font-weight: 700;
 }
 
 .light-followers-display-name-text {
   color: #494949;
-  font-family: Poppins-regular;
+}
+
+.followers-user-id-text {
+  font-family: Poppins-medium;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .dark-followers-user-id-text {
   color: #979797;
-  font-family: Poppins-medium;
-  font-size: 0.9rem;
-  font-weight: 400;
 }
 .light-followers-user-id-text {
   color: #494949;
-  font-family: Poppins-medium;
-  font-size: 0.9rem;
-  font-weight: 400;
 }
 
 /*------------------FOR MAIN BODY----------------*/
@@ -271,21 +257,22 @@ a.dark-active-menu svg {
   overflow: hidden;
 }
 
-.light-mainbody {
+.mainbody {
+  display: flex;
   height: 100vh;
-  background: #dad9d9;
   padding: 3vh 2vw;
   width: 100%;
+}
+
+.light-mainbody {
+  background: #dad9d9;
 }
 
 .dark-mainbody {
-  height: 100vh;
-  padding: 3vh 2vw;
-  width: 100%;
   background-color: #222020;
 }
 
-.light-mainbody-container {
+.mainbody-container {
   display: flex;
   padding: 17px;
   width: 100%;
@@ -294,21 +281,17 @@ a.dark-active-menu svg {
   gap: 41px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
 }
 
+.light-mainbody-container {
+  background: #fff;
+}
+
 .dark-mainbody-container {
-  display: flex;
   width: 999px;
   height: 812px;
-  padding: 17px;
-  flex-direction: column;
-  gap: 41px;
-  flex-shrink: 0;
-  border-radius: 10px;
   background: #272727;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
 }
 
 .section1 {
@@ -346,30 +329,29 @@ a.dark-active-menu svg {
   gap: 12px;
 }
 
-#all-btn {
-  width: 49px;
-  height: 34px;
-  flex-shrink: 0;
-  border-radius: 60px;
-  background: #c7c7f9;
+#all-btn,
+#followers-btn,
+#fans-btn {
   color: #545454;
   font-size: 1rem;
   font-weight: 400;
   border: none;
   cursor: pointer;
+  border-radius: 60px;
+}
+
+#all-btn {
+  width: 49px;
+  height: 34px;
+  flex-shrink: 0;
+  background: #c7c7f9;
 }
 
 #followers-btn {
   width: 100px;
   height: 34px;
   flex-shrink: 0;
-  border-radius: 60px;
   background: #f1f1f1;
-  color: #545454;
-  font-size: 16px;
-  font-weight: 400;
-  border: none;
-  cursor: pointer;
 }
 
 #fans-btn {
@@ -378,13 +360,7 @@ a.dark-active-menu svg {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 60px;
   background: #f1f1f1;
-  color: #545454;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-  cursor: pointer;
 }
 
 .section3 {
