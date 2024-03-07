@@ -3,7 +3,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 16px;
 }
 
 /* text styles */
@@ -41,15 +44,16 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-
-.light-body {
+.body {
   height: 100vh;
-  background-color: #dad9d9;
   overflow: hidden;
 }
 
+.light-body {
+  background-color: #dad9d9;
+}
+
 .dark-body {
-  height: 100vh;
   background-color: #272727;
 }
 
@@ -80,7 +84,6 @@
   display: inline-flex;
   align-items: center;
   gap: 19px;
-  padding: 1.7vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
 }
@@ -97,6 +100,10 @@ header {
 
 .menu-link {
   padding: 1.7vh 1vw;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 svg {
@@ -122,7 +129,6 @@ svg {
 
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
-  border-radius: 12px;
   padding: 1.7vh 1vw;
 }
 
@@ -161,7 +167,6 @@ a.light-active-menu svg {
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 1.7vh 1vw;
 }
 
 a.dark-active-menu svg {
@@ -173,29 +178,23 @@ a.dark-active-menu svg {
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
 }
 .dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
-  font-size: 16px;
-  font-weight: 500;
+}
+
+.nav-texts-active {
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .dark-nav-texts-active {
   color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 16px;
-  font-weight: 700;
 }
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 /*-----------------MAIN BODY FOR MESSAGING--------------*/
@@ -204,59 +203,59 @@ main {
   width: 80%;
 }
 
-.light-mainbody {
+.mainbody {
   display: flex;
   height: 100vh;
+}
+
+.light-mainbody {
   padding: 12px 0 0 11px;
 }
 
 .dark-mainbody {
-  display: flex;
-  height: 100vh;
   padding: 2px 0 20px 11px;
 }
 
-.light-mainbody-left-side {
+.mainbody-left-side {
   display: flex;
   flex-direction: column;
-  width: 35%;
-  height: 97vh;
   border-radius: 10px;
-  border: 1px solid #979797;
-  background: #f4f1f8;
   padding: 23px 0 10px 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.light-mainbody-left-side {
+  width: 35%;
+  height: 97vh;
+  border: 1px solid #979797;
+  background: #f4f1f8;
 }
 
 .dark-mainbody-left-side {
-  display: flex;
-  flex-direction: column;
   width: 35%;
   height: 99.5vh;
-  border-radius: 10px;
   border: 1px solid #979797;
   background: #222020;
-  padding: 23px 0 10px 0;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .left-side-div1 {
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
 }
 
-.left-side-div1-left {
+.left-side-div1-left,
+.left-side-div1-left-bottom {
   display: flex;
   width: 100%;
+}
+
+.left-side-div1-left {
   flex-direction: column;
   gap: 7px;
   padding: 0 12.5px 0 12.5px;
 }
 
 .left-side-div1-left-bottom {
-  display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
@@ -268,11 +267,12 @@ main {
   border-radius: 4px;
   margin-right: 0.5vw;
   background: #1058e8;
-  color: #fff;
-  font-size: 2vw;
-  font-weight: 500;
   border: none;
   text-decoration: none;
+  color: #fff;
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .left-side-div1-right {
@@ -293,59 +293,39 @@ main {
   padding-left: 1vw;
   padding-bottom: 1.5vh;
 }
-.write-message-txt {
-  color: #fff;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
 
 .left-side-div2-top a {
   text-decoration: none;
 }
 
-.all-btn {
+.all-btn,
+.followers-btn,
+.fans-btn {
   display: flex;
-  padding: 1vh 2vw;
   justify-content: center;
   align-items: center;
   border-radius: 60px;
-  background: #c7c7f9;
   color: #545454;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   border: none;
+}
+
+.all-btn {
+  padding: 1vh 2vw;
+  background: #c7c7f9;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .followers-btn {
-  display: flex;
   padding: 2vh 2vw;
-  justify-content: center;
-  align-items: center;
-  border-radius: 60px;
   background: #f1f1f1;
-  color: #545454;
-  font-size: 16px;
-  font-weight: 400;
-  border: none;
 }
 
 .fans-btn {
-  display: flex;
   padding: 2vh 2vw;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
-  border-radius: 60px;
   background: #f1f1f1;
-  color: #545454;
-  font-size: 16px;
-  font-weight: 400;
-  border: none;
 }
 
 .chat-list {
@@ -473,37 +453,43 @@ main {
   padding: 0 2vw;
 }
 
-.sender-message {
+.time-tick-wrapper {
+  display: flex;
+  gap: 0.7vw;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.sender-message,
+.receiver-message {
   min-width: 5vw;
   max-width: 25vw;
-  height: auto;
   padding: 1vh 1vw;
-  text-align: left;
-  margin-left: auto;
-  border-radius: 10px 0px 10px 10px;
   color: #fff;
   font-weight: 300;
   font-family: poppins-medium;
+  text-align: left;
+}
+
+.sender-message {
+  height: auto;
+  margin-left: auto;
+  border-radius: 10px 0px 10px 10px;
   background: #390c7c;
 }
 
 .receiver-message {
-  padding: 1vh 1vw;
-  min-width: 5vw;
-  max-width: 25vw;
   height: auto;
   margin-right: auto;
-  text-align: left;
   border-radius: 0px 10px 10px 10px;
-  color: #fff;
-  font-weight: 300;
-  font-family: poppins-medium;
   background: rgba(88, 88, 88, 0.75);
 }
 
 .user-text-delivery-time {
   color: gold;
   text-align: right;
+  font-size: 0.7rem;
+  font-family: poppins-medium;
 }
 
 .receiver-message img {
@@ -538,10 +524,13 @@ main {
   padding: 0 0.3vw;
   text-indent: -40px !important;
   font-family: poppins-regular;
-  /* height: 100px; */
+  background-color: #f4f1f8;
   resize: none;
   border: none;
   outline: none;
+  border-radius: 9px;
+  margin: 0 0.8vw;
+  align-items: center;
 }
 
 .right-side-div3-bottom {
@@ -574,95 +563,94 @@ main {
 }
 
 /* ------------------------------------text ---------------------- */
+
+.new-message-txt {
+  font-family: Poppins-regular;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .dark-new-message-txt {
   color: #0490ec;
-  font-family: Poppins-regular;
-  font-size: 20px;
-  font-weight: 700;
 }
 .light-new-message-txt {
   color: #0272bc;
-  font-family: Poppins-regular;
-  font-size: 20px;
-  font-weight: 700;
 }
+
+.friends-display-name-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .dark-friends-display-name-text-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 14px;
-  font-weight: 600;
 }
 .light-friends-display-name-text-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 14px;
-  font-weight: 600;
 }
 .light-friends-display-name-text {
   color: #979797;
   font-family: Poppins-medium;
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .write-message-txt {
   color: #fff;
   text-align: center;
   font-family: Rubik;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .follower-btn-text {
-  color: #545454;
   font-family: Rubik;
-  font-size: 1.2vw;
+}
+
+.message-text,
+.dark-disappear-text,
+.light-disappear-text,
+.light-disappear-text span {
+  font-size: 0.9rem;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .message-text {
   color: #979797;
   font-family: Poppins-medium;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
 }
 .dark-disappear-text {
   color: #a9a9a9;
   font-family: Poppins-regular;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
 }
 .light-disappear-text {
   color: #686868;
   font-family: Poppins-regular;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
 }
 /* the below text has the same color in both mode */
 .light-disappear-text span {
-  color: #0272bc;
   font-family: Poppins-regular;
-  font-size: 14px;
+}
+
+.textarea-text,
+.light-textarea-text {
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: normal;
 }
 
 .textarea-text {
   color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .light-textarea-text {
   color: #9a9a9a;
-  font-family: Poppins-regular;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
 }

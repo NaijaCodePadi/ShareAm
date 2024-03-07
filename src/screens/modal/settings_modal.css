@@ -20,6 +20,11 @@
   font-family: Rubik;
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
+
+html {
+  font-size: 16px
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 body {
   background: #f1f1f1;
@@ -44,7 +49,7 @@ body {
 .setting-modal-container h1 {
   color: rgba(21, 10, 161, 0.8);
   font-family: Poppins-bold;
-  font-size: 12px;
+  font-size: .8rem;
   font-weight: 600;
   padding-bottom: 2px;
 }
@@ -60,7 +65,7 @@ body {
 .setting-modal-container p {
   color: #373737;
   font-family: Poppins-medium;
-  font-size: 12px;
+  font-size: .8rem;
   font-weight: 500;
 }
 .controll-txt {
@@ -69,7 +74,7 @@ body {
 .setting-modal-container h2 {
   color: #373737;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
   padding-top: 2px;
 }
@@ -109,7 +114,7 @@ body {
 .notification-section1-div1-left {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 28px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -126,7 +131,7 @@ body {
 .notification-section2-span {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 26px;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -138,7 +143,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Poppins-medium;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
@@ -383,7 +388,7 @@ body {
   position: relative;
   padding: 0px 0px 0px 20px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: .9rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -532,3 +537,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*--------------End of Toggle Switch key----------*/
+
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}

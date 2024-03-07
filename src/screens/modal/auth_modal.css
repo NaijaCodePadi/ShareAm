@@ -20,6 +20,10 @@
   font-family: Rubik;
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
+
+html {
+  font-size: 16px;
+}
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* -----------------------------one time passcode------------------------- */
@@ -162,26 +166,26 @@
 .dark-create-acc-title-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 .light-create-acc-title-txt {
   color: #000;
   font-family: Poppins-regular;
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .dark-one-time-subtitle-txt {
   color: #a9a9a9;
   font-family: Poppin-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .light-one-time-subtitle-txt {
   color: rgba(0, 0, 0, 0.52);
   font-family: Poppin-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
   text-align: center;
 }
@@ -203,19 +207,19 @@
 .one-time-btn-txt {
   color: #303030;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .one-time-subtitle-txt span {
   color: #585858;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 500;
 }
 .one-time-subtitle-txt strong {
   color: #0272bc;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 /*----------------- set up--------- */
@@ -223,33 +227,33 @@
   color: #fff;
   text-align: center;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .light-startUp-title-txt {
   color: #000;
   text-align: center;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .back-txt {
   color: #A9A9A9;
   font-family: poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .username-txt {
   color: #A9A9A9;
   font-family: Poppins-medium;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .skip-txt {
   color: #1058E8;
   font-family: poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
   text-decoration: none;
 }
@@ -271,27 +275,27 @@
   color: #a9a9a9;
   text-align: center;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 500;
 }
 .light-startUp-subtitle-txt {
   color: rgba(34, 32, 32, 0.9);
   text-align: center;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 500;
 }
 
 .dark-startup-btn-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .light-startup-btn-txt {
   color: #FFF;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -392,7 +396,7 @@
   justify-content: space-between;
   color: #A9A9A9;
   font-family: poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 /* <------PERSONAL MODAL PAGE DARK MODE-------> */
@@ -400,3 +404,10 @@
   background-color: #1f201fe5;
 }
 /* <-------- END OF PERSONAL PAGE MODAL CSS --------> */
+
+@media (max-width: 800px) {
+
+  html {
+    font-size: 12px;
+  }
+}

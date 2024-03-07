@@ -23,6 +23,10 @@
   src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
+html {
+  font-size: 16px
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* /-----------------------SIDE BAR -------------------------/ */
@@ -175,7 +179,7 @@ a.dark-active-menu svg {
   width: 80vw;
   background-color: #dad9d9;
   padding: 30px 0px 0px 53px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .notification-page-item1 {
   width: 70%;
@@ -271,7 +275,7 @@ input:checked + .slider:before {
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -279,20 +283,20 @@ input:checked + .slider:before {
 .Dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .dark-nav-texts-active {
   color: #fffcfc;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -300,24 +304,33 @@ input:checked + .slider:before {
 .dark-menu-title-texts-mode {
   color: #0389e1;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .light-menu-title-texts-mode {
   color: #150aa1;
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 600;
 }
 .dark-menu-subtitle-texts-mode {
   color: #fffcfc;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
 }
 .light-menu-subtitle-texts-mode {
   color: #373737;
   font-family: Poppins-medium;
-  font-size: 14px;
+  font-size: .9rem;
   font-weight: 400;
+}
+
+
+@media (max-width: 800px) {
+
+  html {
+    font-size: 12px
+  }
+
 }

@@ -22,6 +22,11 @@
   font-family: Rubik;
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
+
+html {
+  font-size: 16px;
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 .main-container {
@@ -170,14 +175,15 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 19px;
-  margin: 0px 4vh 0vw auto;
+  /* margin: 0 4vh 0 auto; */
+  margin-left: 87%;
   padding-top: 20px;
 }
 
 .caller-user {
   display: flex;
   background: #69508f;
-  width: 4vw;
+  width: 4.5vw;
   height: 8vh;
   border-radius: 4px;
   border: 0.797px solid #dad9d9;
@@ -256,18 +262,23 @@ ul {
 .span-1 {
   height: 30%;
 }
+
 .span-2 {
   height: 70%;
 }
+
 .span-3 {
   height: 40%;
 }
+
 .span-4 {
   height: 100%;
 }
+
 .span-5 {
   height: 50%;
 }
+
 .span-6 {
   height: 90%;
 }
@@ -284,6 +295,41 @@ ul {
   border-radius: 4px;
   border: none;
   margin-left: auto;
+}
+
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #5f5f5f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  position: absolute;
+  bottom: 100%;
+  right: 70%;
+  z-index: 1;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 85%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5f5f5f transparent transparent transparent;
 }
 
 .chat-box {
@@ -458,10 +504,14 @@ ul {
 }
 
 .chat-bubbles {
-  display: grid;
-  grid-template-columns: 53px auto;
-  column-gap: 6px;
   margin-bottom: 18px;
+}
+
+.user-message-box {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  margin-bottom: 1vh;
 }
 
 .user-profile-picture {
@@ -470,11 +520,6 @@ ul {
   height: 45px;
   flex-shrink: 0;
   border-radius: 53px;
-  margin-top: 8px;
-}
-
-.userName {
-  margin-bottom: 6px;
 }
 
 .text-and-time-wrapper {
@@ -609,50 +654,50 @@ ul {
 .desktop-msg-title-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
-  font-size: 2.5vh;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 .desktop-msg-subtitle-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
-  font-size: 2.2vh;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 .desktop-viewer {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
 }
 .desktop-now-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 10px;
+  font-size: 0.7rem;
   font-weight: 400;
 }
 .desktop-thanks-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 10px;
+  font-size: 0.7rem;
   font-weight: 500;
 }
 .desktop-msg-graphic-title-txt {
   color: rgba(218, 217, 217, 0.7);
   font-family: Poppins-regular;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 .desktop-sent-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
-  font-size: 1.8vh;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .desktop-sent-date-txt {
   color: rgba(218, 217, 217, 0.8);
   font-family: Poppins-medium;
-  font-size: 10px;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 
@@ -724,6 +769,10 @@ input:checked + .slider:before {
 /*------End of Toggle Switch Key---------*/
 
 @media screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+
   .profile-picc,
   .side-nav img {
     width: 40px;
