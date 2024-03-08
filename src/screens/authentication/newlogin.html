@@ -1,28 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Signup | ShareAm</title>
-    <link rel="stylesheet" href="./css/newauthentication.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | ShareAm</title>
+  <link rel="stylesheet" href="./css/newauthentication.css" />
 </head>
 
 <body>
-    <main>
-        <!--SIDEBAR-->
-        <section id="sidebar">
-            <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
-            <div class="text">
-                <h2>Share<span>Am</span></h2>
-                <p>Seamless Conversations, Anytime, Anywhere.</p>
-            </div>
-        </section>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="../../assets/images/logo.png" alt="ShareAm_Logo">
+      <h1> Share<span>Am</span></h1>
+      <p class="tagline">Seamless Conversations, Anytime, Anywhere.</p>
+    </aside>
+    <div class="content-sign-up">
+      <div class="auth">
+        <h2>Sign Up</h2>
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="username">Full Name:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+      
+          <button class="btn-login" type="submit">Sign Up</button>
+        </form>
+        <div class="links-sign-up">
+          By signing up you agree to our  <a href="./signup.html">Terms of Service</a> and  <a href="./signup.html">Privacy Policy</a> and confirm that you are at least 18 years old.
+        </div>
+        <div class="logUp-with-div">
+          <span class="lines"></span>
+          <div class="logUp-with"><span class="or">or</span> <span>Log In With</span></div>
+          <span class="lines"></span>
+        </div>
+        <div class="external-auth">
+          <div class="link">
+            <div><img src="../../assets/icons/google-icon.svg"> </div>
+            <div> <a class="btn-external-auth" href="">Google</a></div>
+          </div>
+          <div class="link">
+            <div><img src="../../assets/icons/facebook-icon.svg"> </div>
+            <div> <a class="btn-external-auth" href="">Facebook</a></div>
+          </div>
+        </div>
+        <div class="links" style="text-align: right;">
+          Don’t have an account? <a href="./login.html">Log In </a>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
 
-        <!--CONTENT BODY-->
-        <section id="content"></section>
-    </main>
+    </div>
+  </div>
 </body>
 
 </html>

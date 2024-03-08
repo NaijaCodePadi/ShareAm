@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+
+<!-- <html>
   <head>
     <meta charset="UTF-8" />
     <title>Signup | ShareAm</title>
@@ -20,7 +20,7 @@
           </h2>
           <p class="light-signup-splash-text-pg splash-subtitle-text">
             Seamless Conversations, Anytime, Anywhere.
-          </p>------
+          </p>
         </div>
       </section>
 
@@ -76,11 +76,11 @@
         <div class="light-socials">
           <div class="login-google logUp-btn-texts">
             <img src="../../assets/icons/google-icon.svg" alt="" />
-            <span class="logUp-btn-texts">Google</span>
+            <span class="logUp-btn-texts">Log In with Google</span>
           </div>
           <div class="login-facebook logUp-btn-texts">
             <img src="../../assets/icons/facebook-icon.svg" alt="" />
-            <span class="logUp-btn-texts">Facebook</span>
+            <span class="logUp-btn-texts">Log In with Facebook</span>
           </div>
         </div>
       </section>
@@ -111,7 +111,74 @@
           />
         </svg>
         Back
-      </p> -->
+      </p> 
     </main>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ShareAm</title>
+  <link rel="stylesheet" href="./css/newauthentication.css" />
+</head>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="../../assets/images/logo.png" alt="ShareAm_Logo">
+      <h1> Share<span>Am</span></h1>
+      <p class="tagline">Seamless Conversations, Anytime, Anywhere.</p>
+    </aside>
+    <div class="content">
+      <div class="auth">
+        <h2>Login</h2>
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="checkbox-links">
+            <div style="display: flex; gap: 5px">
+              <input type="checkbox" id="stay-signed-in" name="stay-signed-in">
+              <label for="stay-signed-in">Stay Signed In</label>
+            </div>
+            <div>
+              <a href="./forgot_password.html">Forgot Password?</a>
+            </div>
+
+          </div>
+          <button class="btn-login" type="submit">Log In</button>
+        </form>
+        <div class="links">
+          Don’t have an account? <a href="./signup.html">Sign Up </a>
+        </div>
+        <div class="logUp-with-div">
+          <span class="lines"></span>
+          <div class="logUp-with"><span class="or">or</span> <span>Log In With</span></div>
+          <span class="lines"></span>
+        </div>
+        <div class="external-auth">
+          <div class="link">
+            <div><img src="../../assets/icons/google-icon.svg"> </div>
+            <div> <a class="btn-external-auth" href="">Log In with Google</a></div>
+          </div>
+          <div class="link">
+            <div><img src="../../assets/icons/facebook-icon.svg"> </div>
+            <div> <a class="btn-external-auth" href="">Log In with Google</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
 </html>

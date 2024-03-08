@@ -1,9 +1,9 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
-const { setupTitlebar, attachTitlebarToWindow } = require('custom-electron-titlebar/main');
-try {
-  require('electron-reloader')(module)
-} catch(_){}
+// const { setupTitlebar, attachTitlebarToWindow } = require('custom-electron-titlebar/main');
+// try {
+//   require('electron-reloader')(module)
+// } catch(_){}
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
@@ -16,24 +16,24 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    minWidth: 400,
+    minWidth: 500,
+    minHeight: 500,
     // //frame: false, // needed if process.versions.electron < 14
     // titleBarStyle: 'hidden',
     // /* You can use *titleBarOverlay: true* to use the original Windows controls */
     // titleBarOverlay: true,
+    
     webPreferences: {
     //  devTools: true,
-      sandbox: false,
       preload: path.join(__dirname, 'preload.js'),
     },
   });
-  mainWindow.setThumbarButtons([]);
   mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
  // mainWindow.removeMenu()
   // and load the index.html of the app.
   // attach fullscreen(f11 and not 'maximized') && focus listeners
-  attachTitlebarToWindow(mainWindow);
-  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/login.html'));
+  // attachTitlebarToWindow(mainWindow);
+  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/newlogin.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
