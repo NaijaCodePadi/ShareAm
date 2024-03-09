@@ -44,7 +44,7 @@ body {
 
 .section1-container {
   width: 100%;
-  padding: 4vh 3vw;
+  padding: 4vh 2vw;
   border-bottom-right-radius: 25px;
 }
 
@@ -58,7 +58,7 @@ body {
 .section1-div1-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1vw;
 }
 
 .section1-div1-left-profile-pic {
@@ -103,7 +103,7 @@ body {
 .section1-div1-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1vw;
 }
 
 .section1-div1-right svg {
@@ -154,7 +154,7 @@ body {
   display: flex;
   align-items: flex-end;
   height: 68px;
-  gap: 60px;
+  gap: 4vw;
 }
 
 .section2-div1-nav {
@@ -217,11 +217,13 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -235,7 +237,7 @@ body {
   font-family: poppins-bold;
 }
 .horizontal-line {
-  width: 250px;
+  width: 100%;
   height: 1px;
   background-color: #cecece;
   margin-bottom: 0.5vh;
@@ -514,7 +516,7 @@ body {
   height: 49px;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 3vw;
   border-radius: 18px;
   background: linear-gradient(
     90deg,
@@ -532,7 +534,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 0.8vw;
 }
 
 .close-popup-btn {
@@ -945,7 +947,7 @@ input:checked + label svg.moon {
   }
 
   .section1-div2-left {
-    width: 75%;
+    width: 100%;
   }
 
   .desktop-subtitle-text {

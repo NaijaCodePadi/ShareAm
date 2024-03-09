@@ -171,6 +171,7 @@ a.dark-active-menu svg {
   display: flex;
   justify-content: space-between;
 }
+
 .cs-sections > section > span {
   display: flex;
   align-items: center;
@@ -190,15 +191,19 @@ a.dark-active-menu svg {
 .cs-sections > section > span > .light-arrow-svg {
   color: #000;
 }
+
 .cs-sections > section > span > .dark-arrow-svg {
   color: #e4e4e4;
 }
+
 .cs-sections > section:nth-child(4) > span > .light-arrow-svg {
   margin-right: 8px;
 }
+
 .cs-sections > section:nth-child(5) > span > .light-arrow-svg {
   transform: rotate(90deg);
 }
+
 .cs-sections > section:last-child {
   border: none;
 }
@@ -217,6 +222,7 @@ a.dark-active-menu svg {
   font-style: normal;
   line-height: normal;
 }
+
 .dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
@@ -232,9 +238,11 @@ a.dark-active-menu svg {
 .dark-nav-texts-active {
   color: #fffcfc;
 }
+
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
 }
+
 /* ------------main body text ----------------------- */
 .dark-menu-title-texts,
 .light-menu-title-texts {
@@ -246,6 +254,7 @@ a.dark-active-menu svg {
 .dark-menu-title-texts {
   color: #0389e1;
 }
+
 .light-menu-title-texts {
   color: #150aa1;
 }
@@ -262,6 +271,7 @@ a.dark-active-menu svg {
 .dark-call-subtitle-text {
   color: #fffcfc;
 }
+
 .light-call-subtitle-text {
   color: #000;
 }
@@ -269,6 +279,7 @@ a.dark-active-menu svg {
 .dark-call-window-text {
   color: #7b7b7b;
 }
+
 .light-call-window-text {
   color: #373737;
 }
