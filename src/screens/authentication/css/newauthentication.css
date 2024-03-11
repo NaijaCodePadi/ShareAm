@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
   }
+  html {
+    font-size: 16px;
+  }
   @font-face {
     font-family: poppins-bold;
     src: url(../../../assets/fonts/Poppins-Bold.ttf);
@@ -79,6 +82,7 @@ color: #1058E8;
 .auth h2{
   color: #0272BC;
   font-weight: 700;
+  font-size: 1.5rem;
   font-family: poppins-bold;
   text-align: center;
   margin-bottom: 30px;
@@ -94,7 +98,7 @@ color: #1058E8;
   display: block;
   font-weight: 700;
   font-family: poppins-bold;
-  font-size: 12px;
+  font-size: .75rem;
   color: #585858;
 }
 
@@ -118,7 +122,7 @@ color: #1058E8;
   align-items: center;
   justify-content: space-between;
   font-family: poppins-regular;
-  font-size: 11px;
+  font-size: 0.69rem;
   margin-bottom: 30px;
 }
 
@@ -145,13 +149,13 @@ button{
 .links {
   margin-top: 20px;
   font-family: poppins-regular;
-  font-size: 11px;
+  font-size: 0.69rem;
 }
 
 .links a {
   text-decoration: none;
   font-family: poppins-bold;
-  font-size: 11px;
+  font-size: 0.69rem;
   color: #150AA1;
 }
 
@@ -161,12 +165,12 @@ button{
 .links-sign-up {
   margin-top: 20px;
   font-family: poppins-regular;
-  font-size: 11px;
+  font-size: 0.69rem;
 }
 
 .links-sign-up a {
   font-family: poppins-regular;
-  font-size: 11px;
+  font-size: 0.69rem;
   color: #5858FA;
 }
 
@@ -238,7 +242,7 @@ button{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 50px;
-background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
 }
 
 /* Handle on hover */
