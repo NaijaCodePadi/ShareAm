@@ -274,7 +274,7 @@ a.dark-active-menu svg {
 
 .mainbody-container {
   display: flex;
-  padding: 17px;
+  padding: 2vh 1.5vw;
   width: 100%;
   height: 100%;
   flex-direction: column;
@@ -321,6 +321,8 @@ a.dark-active-menu svg {
   cursor: pointer;
   color: #fff;
   font-family: Rubik;
+  align-items: center;
+  justify-content: center;
 }
 
 .section2 {
@@ -392,7 +394,7 @@ a.dark-active-menu svg {
   display: flex;
   padding: 16px;
   align-items: center;
-  gap: 26px;
+  gap: 2vw;
   width: 100%;
   border-bottom: 1px solid #979797;
   text-decoration: none;
@@ -404,8 +406,32 @@ a.dark-active-menu svg {
   height: 60px;
 }
 
-@media (max-width: 800px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+
   html {
     font-size: 12px;
   }
+
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

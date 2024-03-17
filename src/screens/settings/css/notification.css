@@ -183,7 +183,7 @@ a.dark-active-menu svg {
 }
 
 .notification-page-item1 {
-  width: 70%;
+  width: 75%;
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -335,10 +335,11 @@ input:checked + .slider:before {
 }
 
 
-@media (max-width: 800px) {
-
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  
   html {
-    font-size: 12px
-  }
+    font-size: 12px;
+  } 
 
 }
