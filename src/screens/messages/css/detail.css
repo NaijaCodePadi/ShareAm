@@ -222,6 +222,7 @@ main {
   border-radius: 10px;
   padding: 23px 0 10px 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  min-width: 160px;
 }
 
 .light-mainbody-left-side {
@@ -239,7 +240,13 @@ main {
 }
 
 .left-side-div1 {
+  margin-left: auto;
+  width: fit-content;
+}
+
+.search-div {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -289,8 +296,8 @@ main {
 
 .left-side-div2-top {
   display: flex;
-  gap: 1vw;
-  padding-left: 1vw;
+  gap: 0.5vw;
+  padding-left: 0.5vw;
   padding-bottom: 1.5vh;
 }
 
@@ -312,19 +319,18 @@ main {
 }
 
 .all-btn {
-  padding: 1vh 2vw;
+  padding: 0.8vh 1vw;
   background: #c7c7f9;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .followers-btn {
-  padding: 2vh 2vw;
+  padding: 0.8vh 1vw;
   background: #f1f1f1;
 }
 
 .fans-btn {
-  padding: 2vh 2vw;
-  gap: 10px;
+  padding: 0.8vh 1vw;
   background: #f1f1f1;
 }
 
@@ -340,11 +346,13 @@ main {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -365,15 +373,15 @@ main {
 }
 
 .user-details-div1 {
-  height: fit-content;
-  display: flex;
-  gap: 10px;
-  padding-left: 12px;
+  height: 49px;
+  width: 45px;
+  border-radius: 100%;
 }
 
 .user-details {
   width: 100%;
   display: flex;
+  gap: 1vw;
   justify-content: space-between;
 }
 
@@ -425,13 +433,19 @@ main {
 .right-side-div1 {
   display: flex;
   gap: 1vw;
-  padding: 1vh 1vw;
+  align-items: center;
 }
 
 .right-side-div1-left {
   display: flex;
   flex-direction: column;
   padding-left: 16px;
+}
+
+.chat-header {
+  display: flex;
+  width: 100%;
+  padding: 0 1vw;
 }
 
 .user-details-div {
@@ -494,14 +508,13 @@ main {
 
 .receiver-message img {
   width: 100%;
-  height: 200px;
 }
 
 .disappearing-message-warning-text {
   display: flex;
-  gap: 9px;
   width: fit-content;
   margin-left: auto;
+  align-items: center;
 }
 
 .right-side-div3-wrapper {
@@ -542,7 +555,7 @@ main {
 
 .right-side-div3-bottom-icons {
   display: flex;
-  gap: 28px;
+  gap: 2vw;
   padding-left: 18px;
   cursor: pointer;
 }
@@ -649,8 +662,51 @@ main {
   color: #9a9a9a;
 }
 
-@media (max-width: 800px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mainbody-left-side {
+    display: none;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+
   html {
     font-size: 12px;
   }
+
+  .user-details-div1 {
+    height: 39px;
+    width: 35px;
+    border-radius: 100%;
+  }
+
+  .user-details-div1 img {
+    height: 39px;
+    width: 35px;
+    border-radius: 100%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

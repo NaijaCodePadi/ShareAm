@@ -285,29 +285,30 @@ a.dark-active-menu svg {
   overflow-y: auto;
 }
 
-.content-wrapper {
-  height: 100vh;
-}
-
 .light-mainbody h4 {
   margin-left: 10px;
 }
+
 .light-mainbody p {
   line-height: 35px;
   margin-left: 20px;
   margin-top: 5px;
 }
+
 .horizontal-line {
   margin: 8px 20px 0px 0px;
   border-bottom: 1px solid #979797;
 }
+
 .horizontal-line1 {
   margin: 10px 0px 15px 0px;
   border-bottom: 1px solid #979797;
 }
+
 section {
   margin: 0px 20px 0px 0px;
 }
+
 .camera-settings,
 .audio-settings,
 .audio-settings1,
@@ -317,42 +318,50 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
 .camera-right-text p,
 .audio-settings-right-text p,
 .speaker-right-text {
   color: #585858;
 }
+
 .camera-preview {
   display: flex;
   gap: 3vw;
 }
+
 .camera-preview1 {
   width: 35vw;
   height: 250px;
   background-color: #fff;
   border-radius: 5px;
 }
+
 .camera-preview-right {
   display: grid;
   gap: 14px;
   grid-template-columns: auto auto;
 }
+
 .camera-preview2 p {
   margin-top: 0px;
   margin-left: 0;
   line-height: 30px;
 }
+
 .camera-preview3 {
   background-color: #fff;
   width: 60px;
   height: 60px;
   border-radius: 5px;
 }
+
 .mode {
   display: flex;
   align-items: center;
   gap: 3vw;
 }
+
 .container {
   margin: 0px 0px 5px 0px;
   display: block;
@@ -511,10 +520,32 @@ input:checked + .slider:before {
 .slider:before {
   border-radius: 50%;
 }
-@media (max-width: 800px) {
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
 
   html {
     font-size: 12px;
   }
+
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 /*-------END---------*/

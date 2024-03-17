@@ -178,19 +178,22 @@ a.dark-active-menu svg {
   height: 100vh;
   width: 80vw;
   background-color: #dad9d9;
-  padding: 30px 0px 0px 53px;
+  padding: 4vh 0px 0px 4vw;
   overflow-y: auto;
 }
+
 .notification-page-item1 {
-  width: 70%;
+  width: 75%;
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 hr {
   border: 1px solid #979797;
   margin: 10px 0px 10px 0px;
 }
+
 /* ---------- START OF TOOGLE BUTTON----------- */
 .toogle-button {
   margin-left: auto;
@@ -280,6 +283,7 @@ input:checked + .slider:before {
   font-weight: 500;
   line-height: normal;
 }
+
 .Dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
@@ -293,6 +297,7 @@ input:checked + .slider:before {
   font-size: 1rem;
   font-weight: 700;
 }
+
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
@@ -307,18 +312,21 @@ input:checked + .slider:before {
   font-size: .9rem;
   font-weight: 600;
 }
+
 .light-menu-title-texts-mode {
   color: #150aa1;
   font-family: Poppins-regular;
   font-size: .9rem;
   font-weight: 600;
 }
+
 .dark-menu-subtitle-texts-mode {
   color: #fffcfc;
   font-family: Poppins-medium;
   font-size: .9rem;
   font-weight: 400;
 }
+
 .light-menu-subtitle-texts-mode {
   color: #373737;
   font-family: Poppins-medium;
@@ -327,10 +335,11 @@ input:checked + .slider:before {
 }
 
 
-@media (max-width: 800px) {
-
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  
   html {
-    font-size: 12px
-  }
+    font-size: 12px;
+  } 
 
 }

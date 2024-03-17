@@ -192,12 +192,10 @@ a.dark-active-menu svg {
 }
 
 .light-body-content {
-  margin-top: 10vh;
   background-color: #fff;
 }
 
 .dark-body-content {
-  margin-top: 10vh;
   background-color: var(--dm-sidebar-bg-color);
 }
 
