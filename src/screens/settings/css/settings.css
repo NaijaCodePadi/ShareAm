@@ -195,67 +195,74 @@ a.dark-active-menu svg {
   font-weight: 700;
 }
 /* <-------------MAIN BODY TEXTS---------------> */
+.menu-title-texts {
+  font-family: Poppins-bold;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
 .dark-menu-title-texts {
   color: #0389e1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 600;
 }
+
 .light-menu-title-texts {
   color: #150aa1;
+}
+
+.setting-title-text {
   font-family: Poppins-bold;
   font-size: .9rem;
-  font-weight: 600;
+  font-weight: 500;
 }
+
 .light-setting-title-text {
   color: #150aa1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 500;
 }
+
 .dark-setting-title-text {
   color: #0389e1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 500;
 }
-.dark-setting-subtitle-text {
-  color: #979797;
+
+.setting-subtitle-text {
   font-family: Poppins-medium;
   font-size: .9rem;
   font-weight: 400;
 }
 
+.dark-setting-subtitle-text {
+  color: #979797;
+}
+
 .light-setting-subtitle-text {
   color: #000;
-  font-family: Poppins-medium;
+}
+
+.change-background-text {
+  font-family: Poppins-regular;
   font-size: .9rem;
   font-weight: 400;
 }
 
 .light-change-background-text {
   color: #000;
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 400;
 }
+
 .dark-change-background-text {
   color: #fffcfc;
-  font-family: Poppins-regular;
+}
+
+.audio-subtitle-text {
+  font-family: Poppins-medium;
   font-size: .9rem;
   font-weight: 400;
 }
+
 .dark-audio-subtitle-text {
   color: #fffcfc;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
+
 .light-audio-subtitle-text {
   color: #373737;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
 
 .audio-default-setting-text {
@@ -264,17 +271,19 @@ a.dark-active-menu svg {
   font-size: .9rem;
   font-weight: 400;
 }
+
+.current-mode-text {
+  font-family: Poppins-regular;
+  font-size: .9rem;
+  font-weight: 500;
+} 
+
 .light-current-mode-text {
   color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 500;
 }
+
 .dark-current-mode-text {
   color: #a9a9a9;
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 500;
 }
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
