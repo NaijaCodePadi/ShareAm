@@ -30,11 +30,8 @@ html {
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* **************************** LANDING PAGE DASHBOARD ****************************************/
-body {
-  height: 100vh;
-}
 
-body{
+body {
   user-select: none;
   height: 100vh;
 }
@@ -47,6 +44,11 @@ body{
 /****************************LANDING PAGE LEFT SIDE******************************************/
 
 /*----FOR BOTH LIGHT MODE AND DARK MODE OF LANDING PAGE LEFT SIDE----*/
+
+.left-landing-section {
+  width: 34vw;
+  min-width: 200px;
+}
 
 .section1-container {
   width: 100%;
@@ -69,41 +71,34 @@ body{
 
 .section1-div1-left-profile-pic {
   display: flex;
-  align-items: flex-start;
   width: 60px;
   height: 60px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  border: 1.4px solid #cfdae2;
   position: relative;
 }
 
 #green-circle {
   position: absolute;
-  right: 5%;
+  right: 4%;
   bottom: 10%;
+  width: 12px;
+  height: 12px;
+  background-color: #3cea43;
+  border-radius: 100%;
+  border: 0.5px solid #ffffff;
 }
 
 .section1-div1-left-profile-pic a {
   text-decoration: none;
 }
 
-.display-profile-pic {
-  width: 60px;
-  height: 60px;
-  background-color: #d9d9d9;
-  border-radius: 100%;
-  border: #cfdae2;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-}
-
 .profile-pic-intials {
   height: fit-content;
   width: fit-content;
-}
-
-.section1-div1-left-new-user {
-  color: #fff;
 }
 
 .section1-div1-right {
@@ -190,20 +185,26 @@ body{
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 13px;
 }
 
 .section3-div1 {
   display: flex;
+  gap: 3vh;
   width: 100%;
+  justify-content: center;
   flex-direction: column;
-  height: 60vh;
-  padding: 9vh 2vw 5vh 2.5vw;
+  height: 65vh;
+  padding: 0vh 2vw;
+}
+
+.favorite-list,
+.chat-list {
+  height: 42%;
 }
 
 .chat-wrapper {
   height: 80%;
-  overflow-y: auto;
+  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   gap: 1vh;
@@ -235,13 +236,10 @@ body{
   color: #979797;
   font-size: 1rem;
   font-family: poppins-bold;
+  margin-bottom: 1.5vh;
+  border-bottom: 1px solid #cecece;
 }
-.horizontal-line {
-  width: 100%;
-  height: 1px;
-  background-color: #cecece;
-  margin-bottom: 0.5vh;
-}
+
 .section3-div1-new-user-div {
   display: flex;
   align-items: center;
@@ -397,22 +395,17 @@ body{
   position: absolute;
   width: 22px;
   left: 15%;
-
 }
 
 /*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
 
-.light-landing-page-left-side {
-  width: 34vw;
-  min-width: 200px;
-  position: relative;
-
+.light-left-landing-section {
+  background-color: none;
 }
 
 .light-section1-container {
   background: #22074a;
 }
-
 
 .light-footer-container {
   background: #22074a;
@@ -420,17 +413,12 @@ body{
 
 /*----DARK MODE FOR LANDING PAGE LEFT SIDE----*/
 
-.dark-landing-page-left-side {
-  width: 38%;
-  background: #1f201f;
+.dark-left-landing-section {
+  background-color: #1f201f;
 }
 
 .dark-section1-container {
   background: #181918;
-}
-
-.dark-profile-pic-intials {
-  color: #585858;
 }
 
 .dark-footer-container {
@@ -517,7 +505,6 @@ body{
   );
 }
 
-
 .verified-icon {
   height: 40px;
 }
@@ -587,9 +574,8 @@ body{
 }
 
 .section-4-container {
-  padding-left: 2.5vw;
-  position: absolute;
-  bottom: 0;
+  padding: 0 2vw;
+  margin-top: 2vh;
 }
 
 /*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
@@ -655,12 +641,14 @@ body{
   font-weight: 700;
   text-align: center;
 }
+
 .desktop-title-text {
   color: #fff;
   font-family: poppins-medium;
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 .desktop-status-text {
   color: #fff;
   font-family: poppins-regular;
@@ -754,32 +742,32 @@ body{
   font-weight: 400;
 }
 
+.new-user-email-txt {
+  font-family: poppins-regular;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
 .light-new-user-email-txt {
   color: #303030;
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
 .dark-new-user-email-txt {
   color: #fffcfc;
+}
+
+.switch-acct-txt {
   font-family: poppins-regular;
-  font-size: 1rem;
+  font-size: 0.65rem;
   font-weight: 500;
 }
 
 .light-switch-acct-txt {
   color: #303030;
-  font-family: poppins-regular;
-  font-size: 0.6rem;
-  font-weight: 500;
 }
 
 .dark-switch-acct-txt {
   color: #fffcfc;
-  font-family: poppins-regular;
-  font-size: 0.6rem;
-  font-weight: 500;
 }
 
 .light-switch-acct-txt > a {
@@ -893,16 +881,14 @@ input:checked + label svg.moon {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
   html {
     font-size: 12px;
-  } 
+  }
 
   .section1-container {
     width: 100%;
     padding: 3vh 2vw;
     border-bottom-right-radius: 25px;
-
   }
 
   .section1-div1-left {
@@ -918,12 +904,10 @@ input:checked + label svg.moon {
   #green-circle {
     position: absolute;
     right: 0;
-    bottom: 5%;
-  }
-
-  .display-profile-pic {
-    width: 40px;
-    height: 40px;
+    left: 73%;
+    bottom: 7%;
+    width: 9px;
+    height: 9px;
   }
 
   .section3-div1 {
@@ -966,26 +950,22 @@ input:checked + label svg.moon {
   .new-chat-btn {
     width: 88%;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  
   html {
     font-size: 12px;
-  } 
+  }
 
   .section1-container {
     width: 100%;
     padding: 3vh 2vw;
     border-bottom-right-radius: 25px;
-
   }
 
   .section1-div1-left {
@@ -1000,13 +980,11 @@ input:checked + label svg.moon {
 
   #green-circle {
     position: absolute;
+    left: 73%;
     right: 0;
-    bottom: 5%;
-  }
-
-  .display-profile-pic {
-    width: 50px;
-    height: 50px;
+    bottom: 7%;
+    width: 10px;
+    height: 10px;
   }
 
   .section3-div1 {
@@ -1049,21 +1027,18 @@ input:checked + label svg.moon {
   .new-chat-btn {
     width: 88%;
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
-  
+@media only screen and (max-width: 998px) {
   html {
     font-size: 12px;
-  } 
+  }
 
   .section1-container {
     width: 100%;
     padding: 3vh 2vw;
     border-bottom-right-radius: 25px;
-
   }
 
   .section1-div1-left {
@@ -1078,13 +1053,11 @@ input:checked + label svg.moon {
 
   #green-circle {
     position: absolute;
+    left: 73%;
     right: 0;
-    bottom: 5%;
-  }
-
-  .display-profile-pic {
-    width: 50px;
-    height: 50px;
+    bottom: 7%;
+    width: 10px;
+    height: 10px;
   }
 
   .section3-div1 {
@@ -1107,11 +1080,9 @@ input:checked + label svg.moon {
   .meet-now-btn,
   .new-chat-btn {
     width: 100%;
-  } 
-
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
