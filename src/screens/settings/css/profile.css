@@ -324,8 +324,8 @@ h3 {
   width: 28vw;
   height: 52px;
   border-radius: 4px;
-  padding-left: 15.95px;
-  padding-right: 11px;
+  padding-left: 1vw;
+  padding-right: 1vw;
   border: 1px solid #979797;
 }
 
@@ -343,14 +343,12 @@ h3 {
 }
 
 #change-btn {
-  width: 75.179px;
-  height: 30px;
+  width: 12vw;
+  height: 6vh;
   border-radius: 60px;
   border: 1px solid #e4e4e4;
   background: #1058e8;
   color: #fff;
-  font-size: 14px;
-  font-weight: 400;
   border: none;
 }
 
@@ -435,7 +433,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 3vh;
-  margin-left: 2vw;
+  /* margin-left: 2vw; */
 }
 
 .url-link {
@@ -721,7 +719,7 @@ footer {
 .change-input-text {
   color: #9a9a9a;
   font-family: Poppins-medium;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 

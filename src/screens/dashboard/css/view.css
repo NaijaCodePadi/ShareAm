@@ -211,7 +211,7 @@ ul {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 3.5vh;
   position: absolute;
   top: 5%;
   right: 4%;
@@ -351,10 +351,14 @@ ul {
   padding: 1vh 1vw;
   position: absolute;
   bottom: 100%;
-  left: 50%;
+  left: 1%;
   z-index: 1;
   margin: auto;
   margin-bottom: 1vh;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .action-btn-tooltip:hover .action-btn-tooltip-items {
@@ -365,7 +369,7 @@ ul {
   content: "";
   position: absolute;
   top: 100%;
-  right: 50%;
+  left: 20%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
