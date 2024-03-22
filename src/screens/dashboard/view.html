@@ -239,42 +239,6 @@
                   height="15"
                   x="0"
                   y="0"
-                  viewBox="0 0 384 384"
-                  style="enable-background: new 0 0 512 512"
-                  xml:space="preserve"
-                  class="microphone"
-                >
-                  <rect
-                    width="384"
-                    height="384"
-                    rx="76.8"
-                    ry="76.8"
-                    fill="#04fe3b"
-                    shape="rounded"
-                    transform="matrix(1,0,0,1,0,0)"
-                  ></rect>
-                  <g
-                    transform="matrix(0.5599999999999996,0,0,0.5599999999999996,84.48000000000009,84.48000000000009)"
-                  >
-                    <path
-                      d="M176 288c0 8.832 7.168 16 16 16s16-7.168 16-16V96c0-8.832-7.168-16-16-16s-16 7.168-16 16zM16 96c-8.832 0-16 7.168-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16V112c0-8.832-7.168-16-16-16zM152 256V128c0-8.832-7.168-16-16-16s-16 7.168-16 16v128c0 8.832 7.168 16 16 16s16-7.168 16-16zM80 240c8.832 0 16-7.168 16-16v-64c0-8.832-7.168-16-16-16s-16 7.168-16 16v64c0 8.832 7.168 16 16 16zM264 256V128c0-8.832-7.168-16-16-16s-16 7.168-16 16v128c0 8.832 7.168 16 16 16s16-7.168 16-16zM368 96c-8.832 0-16 7.168-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16V112c0-8.832-7.168-16-16-16zM304 144c-8.832 0-16 7.168-16 16v64c0 8.832 7.168 16 16 16s16-7.168 16-16v-64c0-8.832-7.168-16-16-16zM176 368c0 8.832 7.168 16 16 16s16-7.168 16-16v-16c0-8.832-7.168-16-16-16s-16 7.168-16 16zM192 48c8.832 0 16-7.168 16-16V16c0-8.832-7.168-16-16-16s-16 7.168-16 16v16c0 8.832 7.168 16 16 16zm0 0"
-                      fill="#000000"
-                      opacity="1"
-                      data-original="#000000"
-                      class=""
-                    ></path>
-                  </g>
-                </svg>
-              </div>
-              <div class="user-img caller-user">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  version="1.1"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="15"
-                  height="15"
-                  x="0"
-                  y="0"
                   viewBox="0 0 24 24"
                   style="enable-background: new 0 0 512 512"
                   xml:space="preserve"
@@ -382,11 +346,8 @@
 
             <div class="action-btn-main-wrap">
               <ul class="action-btn-wrap">
-                <li class="action-btn">
-                  <img src="../../assets/icons/call-hand-raise.svg" />
-                </li>
 
-                <li class="action-btn">
+                <li class="action-btn smallscreenhidden-btn">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="13"
@@ -409,6 +370,10 @@
                 </li>
 
                 <li class="action-btn">
+                  <img src="../../assets/icons/call-microphone.svg" />
+                </li>
+
+                <li class="action-btn">
                   <img
                     class="video-call-bt"
                     src="../../assets/icons/call-video-call-cta.svg"
@@ -424,14 +389,54 @@
                 </li>
 
                 <li class="action-btn">
-                  <img src="../../assets/icons/call-microphone.svg" />
+                  <img src="../../assets/icons/call-hand-raise.svg" />
                 </li>
 
-                <li class="action-btn">
+                <li class="action-btn action-btn-tooltip muilti-btn">
+                  <svg width="33px" height="33px" viewBox="0 0 24 24" fill="#DAD9D9" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> <title/> 
+                      <g id="Complete"> 
+                        <g id="F-More"> 
+                          <path 
+                            d="M12,16a2,2,0,1,1-2,2A2,2,0,0,1,12,16ZM10,6a2,2,0,1,0,2-2A2,2,0,0,0,10,6Zm0,6a2,2,0,1,0,2-2A2,2,0,0,0,10,12Z" 
+                            id="Vertical"
+                          /> 
+                        </g> 
+                      </g>  
+                    </g> 
+                  </svg>
+                  <span class="action-btn-tooltip-items">
+                    <img src="../../assets/icons/call-setting-cta.svg" />
+                    <img src="../../assets/icons/call-heart-cta.svg" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="12"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <rect
+                        y="0.0668945"
+                        width="17"
+                        height="15.8667"
+                        fill="#DAD9D9"
+                      />
+                      <path
+                        d="M3.73694 8.55579L3.17762 7.99646C2.94079 7.75963 2.94079 7.37667 3.17762 7.14236L8.07295 2.24452C8.30978 2.00769 8.69274 2.00769 8.92705 2.24452L13.8224 7.13984C14.0592 7.37667 14.0592 7.75963 13.8224 7.99394L13.2631 8.55327C13.0237 8.79262 12.6332 8.78758 12.3989 8.54319L9.50905 5.50975V12.7507C9.50905 13.0858 9.23946 13.3554 8.90437 13.3554H8.09815C7.76306 13.3554 7.49347 13.0858 7.49347 12.7507V5.50975L4.60112 8.54571C4.36681 8.79262 3.97629 8.79765 3.73694 8.55579Z"
+                        fill="black"
+                        fill-opacity="0.5"
+                      />
+                    </svg>
+                  </span>
+                </li>
+
+                <li class="action-btn smallscreenhidden-btn">
                   <img src="../../assets/icons/call-setting-cta.svg" />
                 </li>
 
-                <li class="action-btn">
+                <li class="action-btn smallscreenhidden-btn">
                   <img src="../../assets/icons/call-heart-cta.svg" />
                 </li>
               </ul>
