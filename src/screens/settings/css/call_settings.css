@@ -166,6 +166,10 @@ a.dark-active-menu svg {
   border-bottom: 1px solid #979797;
 }
 
+.call_settings > h4 {
+  padding-bottom: 3vh;
+}
+
 .cs-sections > section {
   padding: 4vh 0;
   display: flex;
@@ -353,9 +357,7 @@ input:checked + .slider:before {
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  
   html {
     font-size: 12px;
-  } 
-
+  }
 }
