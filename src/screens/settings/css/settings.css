@@ -371,6 +371,10 @@ section {
   gap: 3vw;
 }
 
+.mode-item {
+  display: flex;
+  gap: 3vw;
+}
 .container {
   margin: 0px 0px 5px 0px;
   display: block;
@@ -533,6 +537,16 @@ input:checked + .slider:before {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  
+  .mode {
+    display: block;
+  }
+  .mode h4 {
+    margin-bottom: 10px;
+  }
+.mode-item {
+    margin-left: 10px;
+  }
 
 }
 
@@ -542,6 +556,7 @@ input:checked + .slider:before {
   html {
     font-size: 12px;
   }
+  
 
 }
 
