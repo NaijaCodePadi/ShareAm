@@ -258,7 +258,7 @@ input:checked + label svg.moon {
 
 .section-3-container {
   padding: 0 2vw;
-  margin: 2vh 0;
+  margin-top: 2vh;
 }
 
 /*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
@@ -715,7 +715,26 @@ input:checked + label svg.moon {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+
+  .desktop-title-text {
+    font-size: 1.2em;
+  }
+
+  .desktop-status-text {
+    font-size: 0.8rem;
+  }
+
+  .section-2-div1 {
+    height: 60vh;
+  }
+
+  .new-user-email-txt {
+    font-size: 0.8rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 1085px and down) */
@@ -747,7 +766,6 @@ input:checked + label svg.moon {
   }
 
   .section-2-div1 {
-    padding: 2vh 2vw 1vh 2.5vw;
     height: 67vh;
   }
 
@@ -774,7 +792,6 @@ input:checked + label svg.moon {
 
   .desktop-title-text {
     font-size: 1.3em;
-    color: blue;
   }
 
   .desktop-status-text {
@@ -813,19 +830,26 @@ input:checked + label svg.moon {
   .desktop-title-text {
     font-size: 1.3rem;
     margin-top: 0.7vh;
-    color: red;
   }
 
   .desktop-status-text {
     font-size: 1rem;
   }
 
-  .section-2-div1 {
-    padding: 2vh 2vw 1vh 2.5vw;
-    height: 52vh;
+  .new-user-email-txt {
+    font-size: 0.7rem;
   }
 
-  .section-2-div2 {
+  .switch-acct-txt {
+    font-size: 0.5rem;
+  }
+
+  .section-2-div1 {
+    padding: 2vh 2vw 1vh 2.5vw;
+    height: 58vh;
+  }
+
+  .start-chatting-txt {
     width: 100%;
   }
 
@@ -876,7 +900,6 @@ input:checked + label svg.moon {
   }
 
   .desktop-title-text {
-    color: green;
     font-size: 1.25rem;
   }
 
@@ -886,7 +909,7 @@ input:checked + label svg.moon {
 
   .section-2-div1 {
     padding: 2vh 2vw 1vh 2.5vw;
-    height: 55vh;
+    height: 58vh;
   }
 
   .start-chatting-txt {
@@ -960,20 +983,19 @@ input:checked + label svg.moon {
   }
 
   .desktop-title-text {
-    color: yellowgreen;
-    font-size: 1.15rem;
+    font-size: 1.18rem;
   }
 
   .desktop-status-text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .section-2-div1 {
     padding: 2vh 2vw 1vh 2.5vw;
-    height: 58vh;
+    height: 61vh;
   }
 
-  .section-2-div2 {
+  .start-chatting-txt {
     width: 100%;
   }
 
