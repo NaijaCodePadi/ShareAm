@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -341,7 +341,7 @@ input:checked + label svg.moon {
 .popup-notification-container {
   height: 49px;
   margin-top: 2vh;
-  display: block;
+  display: none;
 }
 
 .popup-notification {
