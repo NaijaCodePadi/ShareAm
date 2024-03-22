@@ -245,7 +245,7 @@ ul {
 .action-btn-wrap {
   width: fit-content;
   display: flex;
-  gap: 1vw;
+  gap: 1vh;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -334,9 +334,46 @@ ul {
   margin-left: auto;
 }
 
+.muilti-btn {
+  display: none;
+}
+
+.action-btn-tooltip {
+  position: relative;
+}
+
+.action-btn-tooltip-items {
+  visibility: hidden;
+  background-color: #5a4849;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1;
+  margin: auto;
+  margin-bottom: 1vh;
+}
+
+.action-btn-tooltip:hover .action-btn-tooltip-items {
+  visibility: visible;
+}
+
+.action-btn-tooltip .action-btn-tooltip-items::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5a4849 transparent transparent transparent;
+}
+
 .tooltip {
   position: relative;
-  /* display: inline-block; */
 }
 
 .tooltip-text {
@@ -800,25 +837,12 @@ input:checked + .slider:before {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-
-
-  .action-btn-main-wrap {
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    bottom: 0%;
-    top: 5%;
-    left: 0%;
+  .smallscreenhidden-btn {
+    display: none;
   }
-  
-  .action-btn-wrap {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 1vw;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
+
+  .muilti-btn {
+    display: block;
   }
 
 }
