@@ -46,7 +46,7 @@ ul {
   height: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0 2vw;
+  padding: 0 1vw;
   border-right: 1px solid #979797;
 }
 
@@ -59,14 +59,14 @@ ul {
 }
 
 .side-nav img {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
 }
 
 .profile-picc {
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background-color: #979797;
   border: 1px solid #dad9d9;
@@ -163,21 +163,58 @@ ul {
 }
 
 .interface-section-3 {
-  /* background: url("../../../assets/images/call-wallpaper.png"); */
   height: 72vh;
   background-color: #c3a8ec;
   border-radius: 11px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave-shadow-1 {
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 15px 7px inset #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wave-shadow-2 {
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 15px 7px inset #585858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caller-photo {
+  background-color: #585858;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+}
+
+.caller-photo img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .users-display {
-  width: 50px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 19px;
-  /* margin: 0 4vh 0 auto; */
-  margin-left: 87%;
-  padding-top: 20px;
+  gap: 3.5vh;
+  position: absolute;
+  top: 5%;
+  right: 4%;
 }
 
 .caller-user {
@@ -208,7 +245,7 @@ ul {
 .action-btn-wrap {
   width: fit-content;
   display: flex;
-  gap: 1vw;
+  gap: 1vh;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -297,9 +334,50 @@ ul {
   margin-left: auto;
 }
 
+.muilti-btn {
+  display: none;
+}
+
+.action-btn-tooltip {
+  position: relative;
+}
+
+.action-btn-tooltip-items {
+  visibility: hidden;
+  background-color: #5a4849;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1vh 1vw;
+  position: absolute;
+  bottom: 100%;
+  left: 1%;
+  z-index: 1;
+  margin: auto;
+  margin-bottom: 1vh;
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn-tooltip:hover .action-btn-tooltip-items {
+  visibility: visible;
+}
+
+.action-btn-tooltip .action-btn-tooltip-items::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #5a4849 transparent transparent transparent;
+}
+
 .tooltip {
   position: relative;
-  /* display: inline-block; */
 }
 
 .tooltip-text {
@@ -362,31 +440,20 @@ ul {
   width: 100%;
 }
 
-.msg-txt {
-  padding-bottom: 2vh;
-  border-bottom: 2px solid #585858;
-}
-
-.part-txt {
-  padding-bottom: 2vh;
-  /* border-bottom: 2px solid #585858; */
-}
-
-.message,
-.participant {
+.tab {
   cursor: pointer;
+  padding: 0.5vh 1vw;
+  border-radius: 8px;
+  margin-bottom: 2vh;
 }
 
-.message:hover {
+.tab:hover {
   background: #585858;
+  padding: 0.5vh 1vw;
 }
 
-.participant:hover {
-  background: #585858;
-}
-
-.active-btn-background {
-  background: #585858;
+.active-tab-background {
+  border-bottom: 3px solid #585858;
 }
 
 .graphics-wrapper {
@@ -491,11 +558,13 @@ ul {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
@@ -768,16 +837,78 @@ input:checked + .slider:before {
 }
 /*------End of Toggle Switch Key---------*/
 
-@media screen and (max-width: 800px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .smallscreenhidden-btn {
+    display: none;
+  }
+
+  .muilti-btn {
+    display: block;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  
+  .wave-shadow-1 {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 7px inset #585858;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .wave-shadow-2 {
+    height: 55px;
+    width: 55px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 7px inset #585858;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .caller-photo {
+    background-color: #585858;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+  }
+
+  .caller-photo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+
   html {
     font-size: 12px;
   }
 
   .profile-picc,
   .side-nav img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 
 /* suitable minimum width for this page is 700px */

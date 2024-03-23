@@ -46,19 +46,10 @@ html {
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
-.light-body {
-  height: 100vh;
-  background-color: #dad9d9;
-  overflow: hidden;
-}
-
-.dark-body {
-  height: 100vh;
-  background-color: #272727;
-}
-
-.profile {
+.profile-body {
   display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .sidebar-nav {
@@ -68,7 +59,17 @@ html {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  padding: 4vh 0 0 0;
+  padding-top: 4vh;
+}
+
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
 }
 
 .nav-link-container {
@@ -87,16 +88,6 @@ html {
   padding: 1.7vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
-}
-
-header {
-  margin: auto;
-}
-
-.prof-pic {
-  width: 75px;
-  height: 75px;
-  border-radius: 100%;
 }
 
 .menu-link {
@@ -192,12 +183,10 @@ a.dark-active-menu svg {
 }
 
 .light-body-content {
-  margin-top: 10vh;
   background-color: #fff;
 }
 
 .dark-body-content {
-  margin-top: 10vh;
   background-color: var(--dm-sidebar-bg-color);
 }
 
@@ -205,15 +194,15 @@ a.dark-active-menu svg {
   margin: 0 3%;
   height: 275px;
   border-top: 0;
+  border: 1px solid #979797;
+  border-top: none;
 }
 
 .light-main-section-1 {
-  border: 1px solid #979797;
   background: #f1f1ff;
 }
 
 .dark-main-section-1 {
-  border: 1px solid #979797;
   background: #979797;
 }
 
@@ -221,6 +210,7 @@ a.dark-active-menu svg {
   margin-top: 12.75px;
   margin-left: 12px;
 }
+
 .camera-photo {
   display: flex;
   flex-direction: column;
@@ -240,11 +230,6 @@ h3 {
   height: 60px;
   gap: 18px;
   padding-left: 10px;
-}
-
-.user-names {
-  display: flex;
-  flex-direction: column;
 }
 
 .main-section-2 {
@@ -317,10 +302,6 @@ h3 {
   margin: 5vh 4vw 10vh 4vw;
 }
 
-.main-section-3 input {
-  width: 60%;
-}
-
 .display-username,
 .email-password {
   display: flex;
@@ -336,30 +317,24 @@ h3 {
   gap: 28px;
 }
 
-.light-inputs {
+.inside-input-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #979797;
-  background: #fff;
   width: 28vw;
   height: 52px;
   border-radius: 4px;
-  padding-left: 15.95px;
-  padding-right: 11px;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border: 1px solid #979797;
 }
 
-.dark-inputs {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #979797;
+.light-inside-input-text {
+  background: #fff;
+}
+
+.dark-inside-input-text {
   background-color: #585858;
-  width: 344px;
-  height: 52px;
-  border-radius: 4px;
-  padding-left: 15.95px;
-  padding-right: 11px;
 }
 
 .password-section {
@@ -368,39 +343,23 @@ h3 {
 }
 
 #change-btn {
-  width: 75.179px;
-  height: 30px;
+  width: 12vw;
+  height: 6vh;
   border-radius: 60px;
   border: 1px solid #e4e4e4;
   background: #1058e8;
   color: #fff;
-  font-size: 14px;
-  font-weight: 400;
   border: none;
 }
 
-#light-display-name,
-#light-change-username,
-#light-email,
-#light-confirm {
-  padding-right: 10px;
+.change-inputs {
+  width: 72%;
   outline: none;
   border: none;
   background: none;
 }
 
-#dark-display-name,
-#dark-change-username,
-#dark-email,
-#dark-confirm {
-  padding-right: 10px;
-  outline: none;
-  border: none;
-  background: none;
-}
-
-#light-old-password,
-#light-new-password {
+.enter-password {
   display: flex;
   width: 28vw;
   padding: 11px 20px;
@@ -411,22 +370,11 @@ h3 {
   outline: none;
 }
 
-#dark-old-password,
-#dark-new-password {
-  display: flex;
-  width: 345px;
-  padding: 11px 20px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 4px;
-  border: 1px solid #979797;
-  background: #585858;
+.light-enter-password {
+  background: none;
 }
-
-.input-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
+.dark-enter-password {
+  background: #585858;
 }
 
 .main-section-4 {
@@ -447,25 +395,22 @@ h3 {
 .location-form {
   display: flex;
   flex-direction: column;
-  gap: 29px;
+  gap: 3vh;
 }
 
-.light-location-input-wrap {
+.location-input {
   display: flex;
   align-items: center;
   padding: 1.5vh 1vw;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
+}
+
+.light-location-input {
   background: #fff;
 }
 
-.dark-location-input-wrap {
-  display: flex;
-  width: 28vw;
-  align-items: center;
-  padding: 1.5vh 1vw;
-  border-radius: 4px;
-  border: 1px solid #e4e4e4;
+.dark-location-input {
   background: #585858;
 }
 
@@ -487,30 +432,27 @@ h3 {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 19px;
-  /* background-color: #0021f5; */
+  gap: 3vh;
+  /* margin-left: 2vw; */
 }
 
 .url-link {
-  display: flex;
   width: fit-content;
   padding: 8px 2vw;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 60px;
   border: 1px solid #e4e4e4;
+}
+
+.url-link a {
+  display: inline-block;
+  width: 100%;
+}
+
+.light-url-link {
   background: #f1f1f1;
 }
 
-#dark-link {
-  display: flex;
-  padding: 8px 12px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 60px;
-  border: 1px solid #e4e4e4;
+.dark-url-link {
   background: #585858;
 }
 
@@ -682,6 +624,7 @@ footer {
 
 /* ------------------------------------texts styes --------------------------- */
 /* NAVBAR */
+
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
   font-family: poppins-regular;
@@ -690,6 +633,7 @@ footer {
   font-weight: 500;
   line-height: normal;
 }
+
 .dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
@@ -703,13 +647,19 @@ footer {
   font-size: 1rem;
   font-weight: 700;
 }
+
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
   font-size: 1rem;
   font-weight: 700;
 }
+
 /* -------profile texts styles------- */
+
+.pop-reg-txt {
+  font-family: Poppins-regular;
+}
 
 .light-cover-photo-text {
   color: #0272bc;
@@ -726,29 +676,15 @@ footer {
 
 .display-name-text {
   color: #150aa1;
-  font-family: Poppins-regular;
   font-size: 20px;
   font-weight: 700;
 }
+
 .user-id-text {
   color: #686868;
   font-family: Poppins-medium;
   font-size: 1rem;
   font-weight: 400;
-}
-.light-bio-text {
-  color: #fffcfc;
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.dark-bio-text {
-  color: #0272bc;
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 20px;
 }
 
 .bio-input-text {
@@ -757,50 +693,55 @@ footer {
   font-size: 1rem;
   font-weight: 400;
 }
+
 .input-limit-text {
   color: #494949;
-  font-family: poppins-regular;
   font-size: 0.8rem;
   font-weight: 300;
 }
+
 /* reuseable at message interface(send button) */
 
-.light-change-text {
-  color: #0272bc;
+.change-text {
   font-family: Poppins-regular;
   font-size: 1rem;
   font-weight: 700;
 }
+
+.light-change-text {
+  color: #0272bc;
+}
+
 .dark-change-text {
   color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
 }
 
 .change-input-text {
   color: #9a9a9a;
   font-family: Poppins-medium;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 400;
 }
+
 .change-btn-text {
   color: #fff;
   font-family: Poppins-regular;
   font-size: 0.9rem;
   font-weight: 400;
 }
-.light-url-input-text {
-  color: #a9a9a9;
+
+.url-text {
   font-family: Poppins-medium;
   font-size: 1.3vw;
   font-weight: 400;
 }
-.dark-url-input-text {
+
+.light-url-text {
+  color: #a9a9a9;
+}
+
+.dark-url-text {
   color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-medium;
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 .share-txt {
@@ -810,12 +751,14 @@ footer {
   font-weight: 700;
   line-height: 22px;
 }
+
 .light-show-text {
   color: #0272bc;
   font-family: Poppins-regular;
   font-size: 1rem;
   font-weight: 700;
 }
+
 .dark-show-text {
   color: #fffcfc;
   font-family: Poppins-regular;
@@ -830,6 +773,7 @@ footer {
   font-weight: 700;
   cursor: pointer;
 }
+
 .delete-btn-text {
   color: #f52a1d;
   text-align: center;
@@ -840,21 +784,20 @@ footer {
 
 /* ------footer------ */
 
-.links a {
-  color: #000000;
+.links {
   font-family: Poppins-regular;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 22px;
+}
+
+.links a {
+  color: #000000;
   text-decoration: none;
 }
 
 .links p {
   color: #585858;
-  font-family: Poppins-regular;
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 22px;
 }
 
 .footer-share-text {
@@ -874,20 +817,18 @@ footer {
   .display-username,
   .email-password,
   .main-section-4-wrap {
-    display: flex;
     gap: 5vh;
     flex-direction: column;
   }
 
-  .light-inputs,
-  #light-old-password,
-  #light-new-password,
+  .inside-input-text,
+  .enter-password,
   .location,
   .unique-url {
     width: 100%;
   }
 
-  .light-url-input-text {
+  .url-text {
     font-size: 1rem;
   }
 }

@@ -20,55 +20,66 @@
   font-family: Rubik;
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
+
 /* DO NOT REMOVE THE CODE ABOVE */
 /* Sign Up Screen & Log In -- Light Mode */
 body{
   user-select: none;
 }
+
 .light-signup-container {
   display: flex;
   background-color: #dad9d9;
   height: 100vh;
 }
+
 .dark-signup-container {
   display: flex;
   background: rgba(42, 40, 45, 0.9);
   height: 100vh;
 }
+
 .light-signup-container .light-signup-splash {
   background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
   width: 30vw;
   min-width: 200px;
   
 }
+
 .dark-signup-splash {
   background: #1f201f;
   width: 30vw;
   min-width: 200px;
 }
+
 .light-signup-container .light-signup-splash .light-signup-splash-logo img {
   width: 100%;
 }
+
 .light-signup-container .light-signup-splash .light-signup-splash-text {
   font-style: normal;
   line-height: normal;
   text-align: center;
 }
+
 .light-signup-container .light-signup-splash .light-signup-splash-text h2 {
   color: #fff;
   font-size: 5vw;
   font-weight: 800;
   font-family: poppins-bold;
 }
+
 .light-signup-container .light-signup-splash .light-signup-splash-text h2 span {
   color: #6f3fe3;
 }
+
 .light-signup-container .light-signup-splash .light-signup-splash-text p {
   color: #e4edf6;
   font-size: 1vw;
   font-weight: 500;
   font-family: poppins-medium;
 }
+
 .light-signup-container .light-signup-form-wrapper {
   width: 70vw;
   display: flex;
@@ -76,8 +87,8 @@ body{
   align-items: center;
   gap: 1rem;
   overflow-y: scroll;
-
 }
+
 .signUp-only {
   padding-top: 70px;
   height: 100% !important;
@@ -103,9 +114,11 @@ body{
 #fullName {
   outline: none;
 }
+
 .enter-number {
   position: relative;
 }
+
 .enter-number span {
   position: absolute;
   bottom: 15px;
@@ -114,6 +127,7 @@ body{
   padding-right: 10px;
   margin-right: 10px;
 }
+
 .enter-number input {
   padding-left: 70px !important;
 }
@@ -125,17 +139,17 @@ body{
   font-weight: 400;
   line-height: normal;
 }
+
 .light-signup-container .light-signup-form-wrapper .light-socials, .light-google, .light-facebook {
   display: flex;
   align-items: center;
 }
+
 .light-signup-container .light-signup-form-wrapper .light-socials {
   justify-content: space-between;
   gap: 1rem;
 }
-.light-signup-form-wrapper p {
-  
-}
+
 .login-google, .login-facebook {
   display: flex;
   align-items: center;
@@ -147,6 +161,7 @@ body{
   background: #f1f1f1;
   cursor: pointer;
 }
+
 .signup-btn {
   display: flex;
   width: 393px;
@@ -168,6 +183,7 @@ body{
 .signup-btn a, .login-btn a{
   text-decoration: none ;
 }
+
 .reset-password-btn {
   display: flex;
   width: 402px;
@@ -184,12 +200,14 @@ body{
   border: none;
   cursor: pointer;
 }
+
 .exit {
   position: absolute;
   top: 30px;
   right: 30px;
   cursor: pointer;
 }
+
 .back {
   position: absolute;
   bottom: 5px;
@@ -200,6 +218,7 @@ body{
   font-weight: 600;
   cursor: pointer;
 }
+
 /* ---------------------------------Texts style--------------------------- */
 /* sign up page */
 .light-signUp-title-text {
@@ -209,6 +228,7 @@ body{
   font-weight: 700;
   padding-bottom: 1.5rem;
 }
+
 .dark-signUp-title-text {
   color: #048ad7;
   font-family: poppins-bold;
@@ -216,17 +236,20 @@ body{
   font-weight: 700;
   padding-bottom: 1.5rem;
 }
+
 .light-signUp-label-texts {
   color: rgba(34, 32, 32, 0.9);
   font-family: poppins-bold;
   font-size: 14px;
 }
+
 .dark-signUp-label-texts {
   color: #a9a9a9;
   font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
+
 .light-signIn-terms-text {
   color: #000;
   font-family: poppins-regular;
@@ -235,6 +258,7 @@ body{
   line-height: 21px;
   padding-bottom: 2px;
 }
+
 .light-signIn-terms-text > a {
   color: #5858fa;
   font-family: poppins-regular;
@@ -243,6 +267,7 @@ body{
   line-height: 21px;
   text-decoration-line: underline;
 }
+
 .dark-signIn-terms-text {
   color: #a9a9a9;
   font-family: poppins-regular;
@@ -250,6 +275,7 @@ body{
   font-weight: 400;
   line-height: 21px;
 }
+
 .dark-signIn-terms-text > a {
   color: #048ad7;
   font-family: poppins-regular;
@@ -259,6 +285,7 @@ body{
   line-height: 21px;
   text-decoration-line: underline;
 }
+
 .light-signIn-terms-underline {
   width: 321px;
   border-top: 1px solid #595959;
@@ -270,6 +297,7 @@ body{
   font-size: 14px;
   font-weight: 400;
 }
+
 .sigup-with > span {
   color: #595959;
   font-family: poppins-regular;
@@ -285,24 +313,28 @@ body{
   font-size: 26px;
   font-weight: 700;
 }
+
 .dark-login-text {
   color: #048ad7;
   font-family: poppins-bold;
   font-size: 26px;
   font-weight: 700;
 }
+
 .light-login-label-texts {
   color: #585858;
   font-family: poppins-bold;
   font-size: 14px;
   font-weight: 500;
 }
+
 .dark-login-label-text {
   color: #fffcfc;
   font-family: poppins-bold;
   font-size: 16px;
   font-weight: 700;
 }
+
 .light-login-subtitle-text {
   color: #585858;
   font-family: poppins-medium;
@@ -310,40 +342,48 @@ body{
   font-weight: 400;
   margin-top: 10px;
 }
+
 .light-login-subtitle-text a{
   text-decoration: none;
 }
+
 .dark-login-subtitle-text {
   color: #fff;
   font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
+
 .light-login-subtitle-text > a {
   color: #150aa1;
   font-weight: 600;
 }
+
 .dark-login-subtitle-text > a {
   color: #048ad7;
   font-weight: 600;
 }
+
 .login-option {
   color: #7b7b7b;
   font-family: poppins-regular;
   font-size: 14px;
   font-weight: 400;
 }
+
 .login-option > span {
   color: #595959;
   font-size: 16px;
   font-weight: 500;
 }
+
 .logUp-btn-texts {
   color: #7b7b7b;
   font-family: poppins-medium;
   font-size: 14px;
   font-weight: 400;
 }
+
 .light-reset-password-subtitle-text-mode {
   color: #000;
   font-family: poppins-regular;
@@ -351,6 +391,7 @@ body{
   font-weight: 400;
   text-align: center;
 }
+
 .dark-reset-password-subtitle-text-mode {
   color: rgba(255, 252, 252, 0.9);
   font-family: poppins-regular;
@@ -358,6 +399,7 @@ body{
   font-weight: 400;
   text-align: center;
 }
+
 .password-input-text {
   color: #a9a9a9;
   font-family: poppins-medium;
@@ -376,6 +418,7 @@ body{
 .password {
   position: relative;
 }
+
 .confirm-password {
   position: relative;
 }
@@ -388,6 +431,7 @@ body{
   background: #f1f1f1;
   padding: 0 2rem 0 1rem;
 }
+
 .light-login-link {
   color: #000;
   font-family: poppins-regular;
@@ -396,10 +440,12 @@ body{
   text-align: right;
   margin-bottom: 50px;
 }
+
 .light-login-link > a {
   color: #150aa1;
   text-decoration: none;
 }
+
 .dark-login-link {
   color: #a9a9a9;
   font-family: poppins-regular;
@@ -407,6 +453,7 @@ body{
   font-weight: 400;
   text-align: right;
 }
+
 .dark-login-link > a {
   color: #048ad7;
   text-decoration: none;
@@ -419,6 +466,7 @@ body{
   background: #f1f1f1;
   padding: 0 30px;
 }
+
 .open-eye-icon {
   width: 16px;
   height: 16px;
@@ -426,6 +474,7 @@ body{
   right: 12px;
   bottom: 14px;
 }
+
 #open-eye-icon {
   width: 19px;
   height: 13px;
@@ -434,10 +483,12 @@ body{
   bottom: 18px;
   cursor: pointer;
 }
+
 .login-password-subtitle {
   display: flex;
   margin: 16px 0 34px;
 }
+
 .stay-signed-in {
   margin-left: 2px;
   color: #585858;
@@ -461,19 +512,23 @@ body{
   border: none;
   cursor: pointer;
 }
+
 .logUp-with-div {
   display: flex;
   align-items: center;
 }
+
 .logUp-with-div > span {
   width: 9rem;
   border-top: 1px solid #b99dea;
 }
+
 .logUp-with {
   padding: 2px 10px;
   border-radius: 27px;
   background: #b99dea;
 }
+
 /*  ----------forget password page--------------------  */
 .light-signup-container > .light-signup-form-wrapper > .forget-password-form {
   margin-top: 32px;
@@ -489,6 +544,7 @@ body{
   text-decoration-line: underline;
   margin-left: auto;
 }
+
 .recover-password-btn {
   display: flex;
   width: 388px;

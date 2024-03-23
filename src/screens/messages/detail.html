@@ -233,14 +233,29 @@
           </div>
         </nav>
       </div>
+
       <main>
         <div class="light-mainbody mainbody">
         <div class="light-mainbody-left-side mainbody-left-side">
           <div class="left-side-div1">
             <div class="left-side-div1-left">
-              <h1 class="light-new-message-txt new-message-txt">Messages</h1>
+              <div class="search-div">
+                <h1 class="light-new-message-txt new-message-txt">Messages</h1>
+                  <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M19.728 17.2913L15.8332 13.3971C15.6574 13.2214 15.4191 13.1237 15.1691 13.1237H14.5323C15.6105 11.7449 16.2512 10.0107 16.2512 8.12421C16.2512 3.63636 12.6142 0 8.12559 0C3.63698 0 0 3.63636 0 8.12421C0 12.612 3.63698 16.2484 8.12559 16.2484C10.0125 16.2484 11.747 15.6079 13.126 14.5298V15.1665C13.126 15.4165 13.2236 15.6547 13.3994 15.8305L17.2942 19.7246C17.6614 20.0918 18.2552 20.0918 18.6185 19.7246L19.7241 18.6193C20.0913 18.2521 20.0913 17.6584 19.728 17.2913ZM8.12559 13.1237C5.36367 13.1237 3.12523 10.8896 3.12523 8.12421C3.12523 5.36276 5.35977 3.12469 8.12559 3.12469C10.8875 3.12469 13.126 5.35885 13.126 8.12421C13.126 10.8857 10.8914 13.1237 8.12559 13.1237Z"
+                  fill="#0490EC"
+                />
+              </svg>
+              </div>
               <div class="left-side-div1-left-bottom">
-                <div class="new-message-btn">
+                <button class="new-message-btn write-message-txt">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
@@ -275,28 +290,12 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <p class="write-message-txt">New Message</p>
-                </div>
-                <button class="left-side-div1-right">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="27"
-                    viewBox="0 0 24 27"
-                    fill="none"
-                  >
-                    <path
-                      d="M22.2108 25.0898L17.3209 19.3919M20.0307 11.777C20.0307 14.6352 19.0546 17.3764 17.317 19.3975C15.5794 21.4186 13.2227 22.554 10.7654 22.554C8.30804 22.554 5.95136 21.4186 4.21376 19.3975C2.47617 17.3764 1.5 14.6352 1.5 11.777C1.5 8.91876 2.47617 6.17759 4.21376 4.15651C5.95136 2.13543 8.30804 1 10.7654 1C13.2227 1 15.5794 2.13543 17.317 4.15651C19.0546 6.17759 20.0307 8.91876 20.0307 11.777Z"
-                      stroke="#A8A8A8"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+                  New Message
                 </button>
               </div>
-            </div>
-              
+            </div>   
           </div>
+
           <div class="left-side-div2">
             <div class="left-side-div2-top">
               <a href="" class="all-btn follower-btn-text">All</a>
@@ -315,14 +314,12 @@
                   </div>
                   <div class="user-details-div2">
                     <div class="user-details">
-                      <div>
-                        <p class="light-friends-display-name-text-active friends-display-name-text">
+                      <p class="light-friends-display-name-text-active friends-display-name-text">
                         Mason Mount
                       </p>
-                    </div>
-                      <div>                      
-                        <p class="message-text">November 30</p>
-                      </div>
+                      <p class="message-text">
+                        November 30
+                      </p>
                     </div>
                     <div class="user-details">
                       <p class="light-disappear-text">
@@ -472,7 +469,6 @@
                     </div>
                     <div class="user-details">
                       <p class="message-text">Break the ice, say hello!</p>
-
                     </div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -601,30 +597,36 @@
             </div>
           </div>
         </div>
+        
         <div class="mainbody-right-side">
-          <div class="right-side-div1">
-            <div class="user-details-div1">
-              <img
-                src="../../assets/images/Screenshot (173) 1 (1).svg"
-                alt="User Profile Pic"
-              />
-            </div>
-            <div class="user-details-div2">
-              <div class="user-details">
-                <div>
-                  <p class="light-friends-display-name-text-active friends-display-name-text">
-                  Mason Mount
-                </p>
+          <div class="chat-header">
+            <div class="right-side-div1">
+
+              <div class="user-details-div1">
+                <img
+                  src="../../assets/images/Screenshot (173) 1 (1).svg"
+                  alt="User Profile Pic"
+                />
               </div>
-                <div>                      
-                  <p class="message-text">November 30</p>
-                </div>
-              </div>
-              <div class="user-details">
+              <div>
+                <p class="light-friends-display-name-text-active friends-display-name-text">Mason Mount</p>
                 <p class="light-disappear-text">
                   Sent you a
                   <span id="blue-text">Dissapearing Message</span>
                 </p>
+              </div>
+            </div>
+            <div class="left-side-div1">
+              <p class="message-text">November 30</p>
+            </div>
+          </div>
+            <div class="user-details-div2">
+              <div class="user-details">
+
+
+              </div>
+              <div class="user-details">
+
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -652,11 +654,10 @@
                 </defs>
               </svg>
           </div>
-          </div>
           <div class="right-side-div2-wrapper">
           <div class="right-side-div2">
             <div class="sender-message">
-              <!-- this div shouldn't be overflowing @ x-axis -->
+
               <p>Send the image</p>
               <div class="time-tick-wrapper">
                 <p class="user-text-delivery-time desktop-sent-date-txt">
@@ -794,7 +795,6 @@
               <button class="send-btn write-message-txt">Send</button>
             </div>
           </form>
-        </div>
         </div>
         </div>
       </main>

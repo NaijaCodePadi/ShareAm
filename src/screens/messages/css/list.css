@@ -173,7 +173,7 @@ a.dark-active-menu svg {
   color: var(--dm-active-menu);
 }
 
-/* ------------------------------------texts styes --------------------------- */
+/* ------------------------------------texts styes for sidebar --------------------------- */
 /* NAVBAR */
 .light-nav-texts {
   color: rgba(169, 169, 169, 0.9);
@@ -191,7 +191,177 @@ a.dark-active-menu svg {
   color: rgba(34, 32, 32, 0.9);
 }
 
-/* message-1 */
+/*------------------FOR MAIN BODY----------------*/
+
+::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.mainbody {
+  display: flex;
+  height: 100vh;
+  padding: 3vh 2vw;
+  width: 100%;
+}
+
+.light-mainbody {
+  background: #dad9d9;
+}
+
+.dark-mainbody {
+  background-color: #222020;
+}
+
+.mainbody-container {
+  display: flex;
+  padding: 2vh 1.5vw;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.light-mainbody-container {
+  background: #fff;
+}
+
+.dark-mainbody-container {
+  width: 999px;
+  height: 812px;
+  background: #272727;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1-div1 {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.section1-div1 svg {
+  cursor: pointer;
+}
+
+.write-message-btn {
+  display: flex;
+  padding: 2vh 1vw;
+  gap: 1vw;
+  border-radius: 4px;
+  background: #1058e8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: Rubik;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.section2 button {
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+#all-btn {
+  width: 49px;
+  height: 34px;
+  flex-shrink: 0;
+  background: #c7c7f9;
+}
+
+#followers-btn {
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+#fans-btn {
+  display: flex;
+  padding: 7px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#checkbox {
+  width: 15.611px;
+  height: 15px;
+  border-radius: 4px;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
+
+.section4-wrapper {
+  overflow-y: scroll;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-profile {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 2vw;
+  width: 100%;
+  border-bottom: 1px solid #979797;
+  text-decoration: none;
+  color: #000;
+}
+
+.user-profile > img {
+  width: 62.44px;
+  height: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/**----------- text styles for mainbody --------------**/
 .new-message-txt {
   font-family: Poppins-regular;
   font-size: 1.2rem;
@@ -204,6 +374,22 @@ a.dark-active-menu svg {
 
 .light-new-message-txt {
   color: #0272bc;
+}
+
+.write-message-btn {
+  background: #1058e8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: Rubik;
+}
+
+#all-btn,
+#followers-btn,
+#fans-btn {
+  color: #545454;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .follower-btn-text {
@@ -251,161 +437,26 @@ a.dark-active-menu svg {
   color: #494949;
 }
 
-/*------------------FOR MAIN BODY----------------*/
-
-::-webkit-scrollbar {
-  overflow: hidden;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
 
-.mainbody {
-  display: flex;
-  height: 100vh;
-  padding: 3vh 2vw;
-  width: 100%;
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
 }
 
-.light-mainbody {
-  background: #dad9d9;
-}
-
-.dark-mainbody {
-  background-color: #222020;
-}
-
-.mainbody-container {
-  display: flex;
-  padding: 17px;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  gap: 41px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
-}
-
-.light-mainbody-container {
-  background: #fff;
-}
-
-.dark-mainbody-container {
-  width: 999px;
-  height: 812px;
-  background: #272727;
-}
-
-.section1 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section1-div1 {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-}
-
-.section1-div1 svg {
-  cursor: pointer;
-}
-
-.write-message-btn {
-  display: flex;
-  padding: 2vh 1vw;
-  gap: 1vw;
-  border-radius: 4px;
-  background: #1058e8;
-  font-size: 0.9rem;
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  font-family: Rubik;
-}
-
-.section2 {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-#all-btn,
-#followers-btn,
-#fans-btn {
-  color: #545454;
-  font-size: 1rem;
-  font-weight: 400;
-  border: none;
-  cursor: pointer;
-  border-radius: 60px;
-}
-
-#all-btn {
-  width: 49px;
-  height: 34px;
-  flex-shrink: 0;
-  background: #c7c7f9;
-}
-
-#followers-btn {
-  width: 100px;
-  height: 34px;
-  flex-shrink: 0;
-  background: #f1f1f1;
-}
-
-#fans-btn {
-  display: flex;
-  padding: 7px 13px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: #f1f1f1;
-}
-
-.section3 {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-#checkbox {
-  width: 15.611px;
-  height: 15px;
-  border-radius: 4px;
-  border: 1px solid #979797;
-  cursor: pointer;
-}
-
-.section4-wrapper {
-  overflow-y: scroll;
-}
-
-.section4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.user-profile {
-  display: flex;
-  padding: 16px;
-  align-items: center;
-  gap: 26px;
-  width: 100%;
-  border-bottom: 1px solid #979797;
-  text-decoration: none;
-  color: #000;
-}
-
-.user-profile > img {
-  width: 62.44px;
-  height: 60px;
-}
-
-@media (max-width: 800px) {
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
