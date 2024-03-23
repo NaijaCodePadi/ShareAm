@@ -1,12 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
   <title>Sign Up | ShareAm</title>
-  <link rel="stylesheet" href="./css/newauthentication.css" />
+  <link id="theme-link" rel="stylesheet" href="./css/dark.css" />
 </head>
 
 <body>
@@ -40,11 +41,12 @@
             <label for="password">Confirm Password:</label>
             <input type="password" id="password" name="password" required>
           </div>
-      
+
           <button class="btn-login" type="submit">Sign Up</button>
         </form>
         <div class="links-sign-up">
-          By signing up you agree to our  <a href="./signup.html">Terms of Service</a> and  <a href="./signup.html">Privacy Policy</a> and confirm that you are at least 18 years old.
+          By signing up you agree to our <a href="./signup.html">Terms of Service</a> and <a
+            href="./signup.html">Privacy Policy</a> and confirm that you are at least 18 years old.
         </div>
         <div class="logUp-with-div">
           <span class="lines"></span>
@@ -63,6 +65,8 @@
         </div>
         <div class="links" style="text-align: right;">
           Don’t have an account? <a href="./login.html">Log In </a>
+
+          <button id="toggle-theme">Toggle Theme</button>
           <br>
           <br>
           <br>
@@ -71,6 +75,7 @@
 
     </div>
   </div>
+  <script src="./../../renderer.js"></script>
 </body>
 
 </html>
