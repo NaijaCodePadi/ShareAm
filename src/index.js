@@ -1,9 +1,5 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain, nativeTheme } = require('electron');
 const path = require('path');
-// const { setupTitlebar, attachTitlebarToWindow } = require('custom-electron-titlebar/main');
-// try {
-//   require('electron-reloader')(module)
-// } catch(_){}
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
@@ -11,38 +7,47 @@ if (require('electron-squirrel-startup')) {
 }
 //setupTitlebar();
 
-const createWindow = () => {
+const createSplashWindow = () => {
   // Create the browser window.
-  const mainWindow = new BrowserWindow({
+  const splashWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    minWidth: 500,
-    minHeight: 500,
-    // //frame: false, // needed if process.versions.electron < 14
-    // titleBarStyle: 'hidden',
-    // /* You can use *titleBarOverlay: true* to use the original Windows controls */
-    // titleBarOverlay: true,
-    
-    webPreferences: {
-    //  devTools: true,
-      preload: path.join(__dirname, 'preload.js'),
-    },
+    frame: false,
+    alwaysOnTop: true,
+    center: true,
+    resizable: false,
+    skipTaskbar: true, // Set skipTaskbar to true
   });
-  mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
- // mainWindow.removeMenu()
-  // and load the index.html of the app.
-  // attach fullscreen(f11 and not 'maximized') && focus listeners
-  // attachTitlebarToWindow(mainWindow);
-  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/login.html'));
+  splashWindow.loadFile(path.join(__dirname, 'splash.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
+  return splashWindow;
 };
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow);
+app.on('ready', () => {
+  const splashWindow = createSplashWindow();
+
+  /// Create your mainWindow here
+  const mainWindow = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      //  devTools: true,
+      preload: path.join(__dirname, 'preload.js'),
+    },
+  });
+  mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
+  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/login.html'));
+
+  mainWindow.once('ready-to-show', () => {
+    splashWindow.destroy();
+    mainWindow.show();
+  });
+});
 
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
@@ -63,4 +68,17 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
- /*electron-forge start*/
+/*electron-forge start*/
+
+ipcMain.handle('dark-mode:toggle', () => {
+  if (nativeTheme.shouldUseDarkColors) {
+    nativeTheme.themeSource = 'light'
+  } else {
+    nativeTheme.themeSource = 'dark'
+  }
+  return nativeTheme.shouldUseDarkColors
+})
+
+ipcMain.handle('dark-mode:system', () => {
+  nativeTheme.themeSource = 'system'
+});

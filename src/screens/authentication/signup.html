@@ -1,158 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Signup | ShareAm</title>
-    <link rel="stylesheet" href="./css/authentication.css" />
-  </head>
-  <body>
-    <main class="light-signup-container">
-      <section class="light-signup-splash">
-        <div class="light-signup-splash-logo">
-          <img
-            src="../../assets/images/logo.png"
-            alt="ShareAm_Logo"
-          />
-        </div>
-        <div class="light-signup-splash-text">
-          <h2 class="light-signup-splash-text-heading">Share<span>Am</span></h2>
-          <p class="light-signup-splash-text-pg">
-            Seamless Conversations, Anytime, Anywhere.
-          </p>
-        </div>
-      </section>
-      <section class="light-signup-form-wrapper">
-        <h2 class="light-login-text">Sign Up</h2>
-        <form class="login-form">
-          <div class="full-name">
-            <label for="fullName" class="light-login-label-texts"
-              >Full Name</label
-            >
-            <input
-              name="fullName"
-              id="fullName"
-              class="login-input"
-              type="text"
-            />
-          </div>
-          <div class="user-name">
-            <label for="userName" class="light-login-label-texts"
-              >Username</label
-            >
-            <input
-              name="userName"
-              id="userName"
-              class="login-input"
-              type="text"
-            />
-          </div>
-          <div class="email">
-            <label for="email" class="light-login-label-texts">Email</label>
-            <input name="email" id="email" class="login-input" type="email" />
-          </div>
-          <div class="password">
-            <label for="email" class="light-login-label-texts">Password</label>
-            <input
-              name="password"
-              id="password"
-              class="login-input"
-              type="password"
-            />
-            <span class="open-eye-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M14.1717 7.30816C14.4877 7.7215 14.4877 8.2795 14.1717 8.69216C13.1763 9.9915 10.7883 12.6668 8.00033 12.6668C5.21233 12.6668 2.82433 9.9915 1.829 8.69216C1.67526 8.49425 1.5918 8.25078 1.5918 8.00016C1.5918 7.74955 1.67526 7.50608 1.829 7.30816C2.82433 6.00883 5.21233 3.3335 8.00033 3.3335C10.7883 3.3335 13.1763 6.00883 14.1717 7.30816V7.30816Z"
-                  stroke="#A8A4A4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
-                  stroke="#A8A4A4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-          </div>
-          <div class="confirm-password">
-            <label for="confirmPassword" class="light-signUp-label-texts"
-              >Confirm Password</label
-            >
-            <input
-              name="confirmPassword"
-              id="confirmPassword"
-              class="login-input"
-              type="password"
-            />
-            <span class="open-eye-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                viewBox="0 0 16 16"
-                fill="none"
-              >
-                <path
-                  d="M14.1717 7.30816C14.4877 7.7215 14.4877 8.2795 14.1717 8.69216C13.1763 9.9915 10.7883 12.6668 8.00033 12.6668C5.21233 12.6668 2.82433 9.9915 1.829 8.69216C1.67526 8.49425 1.5918 8.25078 1.5918 8.00016C1.5918 7.74955 1.67526 7.50608 1.829 7.30816C2.82433 6.00883 5.21233 3.3335 8.00033 3.3335C10.7883 3.3335 13.1763 6.00883 14.1717 7.30816V7.30816Z"
-                  stroke="#A8A4A4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z"
-                  stroke="#A8A4A4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </span>
-          </div>
-          <button type="submit" class="signup-btn">
-            <a href="./login.html">Sign Up</a></button>
-        </form>
-       
-        <p class="light-signIn-terms-text">
-          By signing up you agree to our <a href="#">Terms of Service</a> and
-          <a href="#">Privacy Policy</a> and confirm that you are at least 18
-          years old.
-        </p>
-        <span class="light-signIn-terms-underline"></span>
 
-        <div class="sigup-with">or <span>Sign Up With</span></div>
-
-        <div class="light-socials">
-          <div class="login-google">
-            <img src="../../assets/icons/google-icon.svg" alt="" />
-            <span class="login-option">Google</span>
-          </div>
-          <div class="login-facebook">
-            <img src="../../assets/icons/facebook-icon.svg" alt="" />
-            <span class="login-option">Facebook</span>
-          </div>
-        </div>
-        <p class="light-login-link">
-          Already have an account? <a href="./login.html">Log In</a>
-        </p>
-      </section>
-       <div class="exit">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-          <path d="M9.89324 3.45816L7.51247 5.92536L5.04527 3.54459C4.74253 3.25245 4.26009 3.26105 3.96795 3.56379L3.43889 4.11206C3.14675 4.4148 3.15535 4.89724 3.45809 5.18938L5.92529 7.57015L3.54452 10.0373C3.25238 10.3401 3.26098 10.8225 3.56372 11.1147L4.11199 11.6437C4.41473 11.9359 4.89717 11.9273 5.18931 11.6245L7.57008 9.15733L10.0373 11.5381C10.34 11.8302 10.8225 11.8216 11.1146 11.5189L11.6437 10.9706C11.9358 10.6679 11.9272 10.1854 11.6245 9.8933L9.15726 7.51253L11.538 5.04534C11.8302 4.7426 11.8216 4.26016 11.5188 3.96802L10.9706 3.43896C10.6678 3.14682 10.1854 3.15542 9.89324 3.45816Z" fill="#979797"/>
-        </svg>
-      </div> 
-    </main>
-  </body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -161,6 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up | ShareAm</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   <link rel="stylesheet" href="./css/light.css" />
 </head>
 
@@ -170,8 +17,152 @@
       <img src="../../assets/images/logo.png" alt="ShareAm_Logo">
       <h1> Share<span>Am</span></h1>
       <p class="tagline">Seamless Conversations, Anytime, Anywhere.</p>
+      <!-- TOGGLE BUTTON -->
+      <div id="toggle-container">
+        <div class="toogle-btn">
+          <input type="checkbox" id="darkmode-toggle" />
+          <label for="darkmode-toggle">
+            <svg
+              version="1.1"
+              class="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://		www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 49.739 49.739"
+              style="enable-background: new 0 0 49.739 49.739"
+              xml:space="preserve"
+            >
+              <path
+                d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+                c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+                c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+                C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+                c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+                c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"
+              />
+            </svg>
+
+            <svg
+              version="1.1"
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.	w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 496 496"
+              style="enable-background: new 0 0 496 496"
+              xml:space="preserve"
+            >
+              <rect
+                x="152.994"
+                y="58.921"
+                transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.9"
+                y="164.979"
+                transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.947"
+                y="315.048"
+                transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="164.966"
+                y="409.112"
+                transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
+                width="16"
+                height="39.999"
+              />
+
+              <rect
+                x="303.031"
+                y="421.036"
+                transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.088"
+                y="315.018"
+                transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.054"
+                y="165.011"
+                transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="315.001"
+                y="46.895"
+                transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                width="16"
+                height="39.999"
+              />
+              <path
+                d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+                c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
+              />
+              <rect x="240" width="16" height="72" />
+              <rect
+                x="62.097"
+                y="90.096"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                width="71.999"
+                height="16"
+              />
+              <rect y="240" width="72" height="16" />
+
+              <rect
+                x="90.091"
+                y="361.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
+                width="16"
+                height="71.999"
+              />
+              <rect x="240" y="424" width="16" height="72" />
+
+              <rect
+                x="361.881"
+                y="389.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                width="71.999"
+                height="16"
+              />
+              <rect x="424" y="240" width="72" height="16" />
+              <rect
+                x="389.911"
+                y="62.091"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                width="16"
+                height="71.999"
+              />
+            </svg>
+          </label>
+        </div>
+        <div id="reset-to-system" class="reset_theme">Reset Theme</div>
+      </div>
+      <!--END TOGGLE BUTTON  -->
     </aside>
     <div class="content-sign-up">
+      <div class="close-btn">
+        <img src="../../assets/icons/Close.svg">
+        </div>
       <div class="auth">
         <h2>Sign Up</h2>
         <form action="#" method="post">
@@ -226,6 +217,7 @@
 
     </div>
   </div>
+  <script src="../../renderer.js"></script>
 </body>
 
 </html>
