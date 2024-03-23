@@ -33,7 +33,7 @@ const createWindow = () => {
   // and load the index.html of the app.
   // attach fullscreen(f11 and not 'maximized') && focus listeners
   // attachTitlebarToWindow(mainWindow);
-  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/newlogin.html'));
+  mainWindow.loadFile(path.join(__dirname, 'screens/authentication/login.html'));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
