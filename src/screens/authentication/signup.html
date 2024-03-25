@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up | ShareAm</title>
   <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-  <link rel="stylesheet" href="./css/light.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/control-bar.css" />
 </head>
 
 <body>
+    <!-- Top Control Bar -->
+    <header>
+      <div class="icon-bar">
+        <div>
+          <img src="../../assets/images/logo.png" alt="ShareAm_Logo"> 
+        </div>
+        <div>
+          Share Am
+        </div>
+      </div>
+      <div id="control-box-parent" class="control-box">
+        <div id="minimize-button" class="minimize"> <img src="../../assets/icons/control_box/minimize.svg"></div>
+        <div id="maximize-button" class="maximize"><img src="../../assets/icons/control_box/maximize.svg"></div>
+        <div id="close-button" class="main-close-button"><img src="../../assets/icons/control_box/close.svg"></div>
+      </div>
+    </header>
+    <!-- End Of Top Control Bar -->
   <div class="container">
     <aside class="sidebar">
       <img src="../../assets/images/logo.png" alt="ShareAm_Logo">
@@ -160,9 +176,7 @@
       <!--END TOGGLE BUTTON  -->
     </aside>
     <div class="content-sign-up">
-      <div class="close-btn">
-        <img src="../../assets/icons/Close.svg">
-        </div>
+    
       <div class="auth">
         <h2>Sign Up</h2>
         <form action="#" method="post">
