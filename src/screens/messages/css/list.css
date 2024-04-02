@@ -50,6 +50,10 @@ body {
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
+body {
+  user-select: none;
+}
+
 .light-body {
   background-color: #dad9d9;
 }

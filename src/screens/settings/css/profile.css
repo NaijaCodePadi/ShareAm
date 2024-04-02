@@ -46,6 +46,10 @@ html {
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
+body {
+  user-select: none;
+}
+
 .profile-body {
   display: flex;
   height: 100vh;
