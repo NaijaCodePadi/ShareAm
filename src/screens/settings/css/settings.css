@@ -51,6 +51,11 @@ html {
   background-color: #222020;
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .settings {
   display: flex;
 }
@@ -197,7 +202,7 @@ a.dark-active-menu svg {
 /* <-------------MAIN BODY TEXTS---------------> */
 .menu-title-texts {
   font-family: Poppins-bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -211,7 +216,7 @@ a.dark-active-menu svg {
 
 .setting-title-text {
   font-family: Poppins-bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -225,7 +230,7 @@ a.dark-active-menu svg {
 
 .setting-subtitle-text {
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -239,7 +244,7 @@ a.dark-active-menu svg {
 
 .change-background-text {
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -253,7 +258,7 @@ a.dark-active-menu svg {
 
 .audio-subtitle-text {
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -268,15 +273,15 @@ a.dark-active-menu svg {
 .audio-default-setting-text {
   color: #585858;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
 .current-mode-text {
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
-} 
+}
 
 .light-current-mode-text {
   color: rgba(34, 32, 32, 0.9);
@@ -381,7 +386,7 @@ section {
   position: relative;
   padding: 5px 0px 0px 30px;
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 550;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -534,30 +539,24 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
   .mode {
     display: block;
   }
   .mode h4 {
     margin-bottom: 10px;
   }
-.mode-item {
+  .mode-item {
     margin-left: 10px;
   }
-
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-
   html {
     font-size: 12px;
   }
-  
-
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
@@ -565,11 +564,9 @@ input:checked + .slider:before {
   html {
     font-size: 12px;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
 /*-------END---------*/

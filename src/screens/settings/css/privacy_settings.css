@@ -41,6 +41,11 @@
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .privacy {
   display: grid;
   grid-template-columns: 20vw auto;

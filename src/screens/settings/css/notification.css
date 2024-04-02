@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -45,6 +45,11 @@ html {
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .light-body {
   height: 100vh;
   background-color: #dad9d9;
@@ -205,9 +210,6 @@ hr {
   margin-left: auto;
 }
 
-
-
-
 /*---------------TOGGLE KEY--------------*/
 /* The switch - the box around the slider */
 .toggle {
@@ -307,42 +309,35 @@ input:checked + .slider:before {
 /* --------notification texts------- */
 .menu-title-texts-mode {
   font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 600; 
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .dark-menu-title-texts-mode {
   color: #0389e1;
-  
 }
 
 .light-menu-title-texts-mode {
   color: #150aa1;
 }
 
-
 .menu-subtitle-texts-mode {
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
 .dark-menu-subtitle-texts-mode {
   color: #fffcfc;
-  
 }
 
 .light-menu-subtitle-texts-mode {
   color: #373737;
 }
 
-
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  
-  html 
-  {
+  html {
     font-size: 12px;
-  } 
-
+  }
 }
