@@ -22,7 +22,7 @@
 }
 
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -34,6 +34,7 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
+  user-select: none;
 }
 .setting-modal-body {
   width: 383px;
@@ -49,7 +50,7 @@ body {
 .setting-modal-container h1 {
   color: rgba(21, 10, 161, 0.8);
   font-family: Poppins-bold;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   padding-bottom: 2px;
 }
@@ -65,7 +66,7 @@ body {
 .setting-modal-container p {
   color: #373737;
   font-family: Poppins-medium;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .controll-txt {
@@ -74,7 +75,7 @@ body {
 .setting-modal-container h2 {
   color: #373737;
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding-top: 2px;
 }
@@ -388,7 +389,7 @@ body {
   position: relative;
   padding: 0px 0px 0px 20px;
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 0.9rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -537,7 +538,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /*--------------End of Toggle Switch key----------*/
-
 
 @media (max-width: 800px) {
   html {
