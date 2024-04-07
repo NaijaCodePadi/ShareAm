@@ -574,7 +574,7 @@ body{
 /* Handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 50px;
-background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
 }
 
 /* Handle on hover */

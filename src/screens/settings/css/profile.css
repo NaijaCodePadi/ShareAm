@@ -27,6 +27,8 @@ html {
   src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
+
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* /-----------------------SIDE BAR -------------------------/ */
@@ -42,6 +44,27 @@ html {
   --dm-sidebar-bg-color: #1f201f;
   --dm-active-menu: #fffcfc;
   --dm-active-menu-bg-color: #373737;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
@@ -174,9 +197,6 @@ a.dark-active-menu svg {
   overflow-y: auto;
 }
 
-.light-mainbody {
-  background-color: var(--lm-sidebar-bg-color);
-}
 
 .dark-mainbody {
   background-color: #262626;

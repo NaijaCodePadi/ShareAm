@@ -27,6 +27,29 @@ html {
   font-size: 16px;
 }
 
+/*     scrollbar    */
+
+::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* **************************** LANDING PAGE DASHBOARD ****************************************/
@@ -216,27 +239,6 @@ input:checked + label svg.moon {
   flex-direction: column;
   gap: 1vh;
   padding-right: 2vw;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .section-2-div1-new-user-div {
