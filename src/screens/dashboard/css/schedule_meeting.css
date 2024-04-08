@@ -31,7 +31,6 @@ html {
 
 ::-webkit-scrollbar {
   width: 6px;
-
 }
 
 /* Track */
@@ -309,6 +308,7 @@ input:checked + label svg.moon {
 .start-chatting-search-icon {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .start-chatting-txt {
@@ -317,7 +317,7 @@ input:checked + label svg.moon {
 
 .search-box {
   display: flex;
-  width: 50%;
+  width: 40%;
   height: 51px;
   border-radius: 11.043px;
   background: #fff;
@@ -769,7 +769,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   margin-bottom: 8px;
   color: #0272bc;
   font-family: Poppins-bold;
-  font-size: 1.4rem;
+  font-size: 1.6vw;
   font-weight: 700;
 }
 
@@ -783,7 +783,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .desktop-subtitle-text {
   color: #000;
   font-family: poppins-medium;
-  font-size: 1rem;
+  font-size: 1.2vw;
   font-weight: 500;
 }
 
@@ -938,11 +938,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 
   .search-box {
-    width: 100%;
+    width: 70%;
   }
 
   .desktop-subtitle-text {
-    font-size: 1.2rem;
+    font-size: 1.4vw;
   }
 
   .footer-container {
@@ -1013,11 +1013,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 
   .search-box {
-    width: 100%;
+    width: 70%;
   }
 
   .desktop-subtitle-text {
-    font-size: 1.2rem;
+    font-size: 1.4vw;
   }
 
   .footer-container {
@@ -1072,11 +1072,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 
   .search-box {
-    width: 100%;
+    width: 60%;
   }
 
   .desktop-subtitle-text {
-    font-size: 1.2rem;
+    font-size: 1.6vw;
   }
 
   .start-chatting-search-icon {
@@ -1091,6 +1091,14 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     justify-content: space-between;
     padding: 0 1%;
     width: 98%;
+  }
+
+  .schedule-purpose {
+    width: 25vw;
+  }
+
+  .div1-contact-details-container {
+    height: 55vh;
   }
 
   .footer-container {
@@ -1144,11 +1152,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   }
 
   .search-box {
-    width: 100%;
+    width: 60%;
   }
 
   .desktop-subtitle-text {
-    font-size: 1.2rem;
+    font-size: 1.6vw;
   }
 
   .start-chatting-search-icon {
