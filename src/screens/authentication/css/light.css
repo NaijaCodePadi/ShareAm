@@ -234,7 +234,7 @@ html {
     margin-bottom: 15px;
   }
 
-  .input-group label {
+  .input-group label p {
     display: block;
     font-weight: 700;
     font-family: poppins-bold;
@@ -279,7 +279,12 @@ html {
     width: 100%;
   }
 
-  .btn-login {
+  .btn-login,
+  .start-call-btn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
     background-color: #1058E8;
     padding: 10px;
     border-radius: 10px;

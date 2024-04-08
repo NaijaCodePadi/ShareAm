@@ -207,6 +207,10 @@ body{
   cursor: pointer;
 }
 
+/* .reset-password-btn a {
+  text-decoration: none;
+} */
+
 .exit {
   position: absolute;
   top: 30px;
@@ -565,90 +569,4 @@ body{
   font-weight: 600;
   border: none;
   cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 50px;
-  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #14042c;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  
-  .light-signup-container .light-signup-splash {
-    display: none;
-  }
-  .dark-signup-splash {
-    display: none;
-  }
-  .light-signup-container .light-signup-form-wrapper{
-    width: 100vw;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  .light-signup-container .light-signup-splash {
-    padding-top: 10vh;
-  }
-  .dark-signup-splash {
-    padding-top: 10vh;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .light-signup-container .light-signup-splash {
-    padding-top: 10vh;
-  }
-  .dark-signup-splash {
-    padding-top: 10vh;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .light-signup-container .light-signup-splash {
-    padding-top: 10vh;
-  }
-  .dark-signup-splash {
-    padding-top: 10vh;
-  }
-  .light-signup-container .light-signup-form-wrapper {
-
-    justify-content: center;
-
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .light-signup-container .light-signup-splash {
-    padding-top: 10vh;
-  }
-  .dark-signup-splash {
-    padding-top: 10vh;
-  }
-  .light-signup-container .light-signup-form-wrapper {
-
-    justify-content: center;
-
-  }
 }
