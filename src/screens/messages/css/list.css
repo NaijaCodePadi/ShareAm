@@ -50,6 +50,10 @@ body {
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
+body {
+  user-select: none;
+}
+
 .light-body {
   background-color: #dad9d9;
 }
@@ -341,24 +345,24 @@ a.dark-active-menu svg {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
+
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
+  background: transparent;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #14042c;
 }
 
 /**----------- text styles for mainbody --------------**/

@@ -45,6 +45,11 @@ html {
 }
 
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .contact {
   display: flex;
 }

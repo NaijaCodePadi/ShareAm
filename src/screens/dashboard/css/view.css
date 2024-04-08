@@ -27,6 +27,28 @@ html {
   font-size: 16px;
 }
 
+::-webkit-scrollbar {
+  width: 6px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 .main-container {
@@ -48,6 +70,7 @@ ul {
   justify-content: center;
   padding: 0 1vw;
   border-right: 1px solid #979797;
+  user-select: none;
 }
 
 .side-nav-wrapper {
@@ -85,6 +108,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  user-select: none;
 }
 
 .call-interface-wrapper {
@@ -438,6 +462,7 @@ ul {
   justify-content: space-around;
   border-bottom: 1px solid #585858;
   width: 100%;
+  user-select: none;
 }
 
 .tab {
@@ -463,6 +488,7 @@ ul {
   padding: 1.5vh 2vh;
   margin-top: 12px;
   width: 100%;
+  user-select: none;
 }
 
 .graphics-text {
@@ -526,6 +552,7 @@ ul {
 
 .msg-line {
   width: 100%;
+  user-select: none;
 }
 
 .msg-text {
@@ -549,27 +576,6 @@ ul {
   height: 90%;
   overflow-y: auto;
   padding-right: 1vw;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 .chat-bubbles {
@@ -604,6 +610,15 @@ ul {
   gap: 0.8vw;
   margin-left: auto;
   width: fit-content;
+  user-select: none;
+}
+
+.userName,
+.you-username,
+.user-text-delivery-time,
+.user-typing-text,
+.desktop-msg-subtitle-txt {
+  user-select: none;
 }
 
 .first-user-profile-picture {
@@ -837,10 +852,8 @@ input:checked + .slider:before {
 }
 /*------End of Toggle Switch Key---------*/
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
   .smallscreenhidden-btn {
     display: none;
   }
@@ -848,12 +861,10 @@ input:checked + .slider:before {
   .muilti-btn {
     display: block;
   }
-
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  
   .wave-shadow-1 {
     height: 70px;
     width: 70px;
@@ -863,7 +874,7 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
   }
-  
+
   .wave-shadow-2 {
     height: 55px;
     width: 55px;
@@ -873,7 +884,7 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
   }
-  
+
   .caller-photo {
     background-color: #585858;
     height: 40px;
@@ -888,12 +899,10 @@ input:checked + .slider:before {
     object-fit: cover;
     object-position: 50% 50%;
   }
-
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
-
   html {
     font-size: 12px;
   }
@@ -903,12 +912,10 @@ input:checked + .slider:before {
     width: 30px;
     height: 30px;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
 }
 
 /* suitable minimum width for this page is 700px */

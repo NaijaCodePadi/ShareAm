@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -44,7 +44,35 @@ html {
   --dm-active-menu-bg-color: #373737;
 }
 
+/*                 scrollbar             */
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .light-body {
   height: 100vh;
   background-color: #dad9d9;
@@ -205,9 +233,6 @@ hr {
   margin-left: auto;
 }
 
-
-
-
 /*---------------TOGGLE KEY--------------*/
 /* The switch - the box around the slider */
 .toggle {
@@ -307,42 +332,35 @@ input:checked + .slider:before {
 /* --------notification texts------- */
 .menu-title-texts-mode {
   font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 600; 
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .dark-menu-title-texts-mode {
   color: #0389e1;
-  
 }
 
 .light-menu-title-texts-mode {
   color: #150aa1;
 }
 
-
 .menu-subtitle-texts-mode {
   font-family: Poppins-medium;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
 .dark-menu-subtitle-texts-mode {
   color: #fffcfc;
-  
 }
 
 .light-menu-subtitle-texts-mode {
   color: #373737;
 }
 
-
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  
-  html 
-  {
+  html {
     font-size: 12px;
-  } 
-
+  }
 }
