@@ -5,7 +5,7 @@
     <title>Message_settings | ShareAm</title>
     <link rel="stylesheet" href="css/detail.css" />
   </head>
-  <body class="light-body">
+  <body class="light-body body">
     <div class="message">
       <!-- ------------ HTML FOR SIDEBAR --------------- -->
       <div class="sidebar-container">
@@ -72,7 +72,7 @@
             </a>
 
             <a
-              class="menu-link light-nav-texts-active light-active-menu"
+              class="menu-link light-nav-texts-active nav-texts-active light-active-menu"
               href="../messages/list.html"
             >
               <svg
@@ -233,14 +233,29 @@
           </div>
         </nav>
       </div>
+
       <main>
-        <div class="light-mainbody">
-        <div class="light-mainbody-left-side">
+        <div class="light-mainbody mainbody">
+        <div class="light-mainbody-left-side mainbody-left-side">
           <div class="left-side-div1">
             <div class="left-side-div1-left">
-              <h1 class="light-new-message-txt">Messages</h1>
+              <div class="search-div">
+                <h1 class="light-new-message-txt new-message-txt">Messages</h1>
+                  <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M19.728 17.2913L15.8332 13.3971C15.6574 13.2214 15.4191 13.1237 15.1691 13.1237H14.5323C15.6105 11.7449 16.2512 10.0107 16.2512 8.12421C16.2512 3.63636 12.6142 0 8.12559 0C3.63698 0 0 3.63636 0 8.12421C0 12.612 3.63698 16.2484 8.12559 16.2484C10.0125 16.2484 11.747 15.6079 13.126 14.5298V15.1665C13.126 15.4165 13.2236 15.6547 13.3994 15.8305L17.2942 19.7246C17.6614 20.0918 18.2552 20.0918 18.6185 19.7246L19.7241 18.6193C20.0913 18.2521 20.0913 17.6584 19.728 17.2913ZM8.12559 13.1237C5.36367 13.1237 3.12523 10.8896 3.12523 8.12421C3.12523 5.36276 5.35977 3.12469 8.12559 3.12469C10.8875 3.12469 13.126 5.35885 13.126 8.12421C13.126 10.8857 10.8914 13.1237 8.12559 13.1237Z"
+                  fill="#0490EC"
+                />
+              </svg>
+              </div>
               <div class="left-side-div1-left-bottom">
-                <div class="new-message-btn">
+                <button class="new-message-btn write-message-txt">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="23"
@@ -275,28 +290,12 @@
                       </clipPath>
                     </defs>
                   </svg>
-                  <p class="write-message-txt">New Message</p>
-                </div>
-                <button class="left-side-div1-right">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="27"
-                    viewBox="0 0 24 27"
-                    fill="none"
-                  >
-                    <path
-                      d="M22.2108 25.0898L17.3209 19.3919M20.0307 11.777C20.0307 14.6352 19.0546 17.3764 17.317 19.3975C15.5794 21.4186 13.2227 22.554 10.7654 22.554C8.30804 22.554 5.95136 21.4186 4.21376 19.3975C2.47617 17.3764 1.5 14.6352 1.5 11.777C1.5 8.91876 2.47617 6.17759 4.21376 4.15651C5.95136 2.13543 8.30804 1 10.7654 1C13.2227 1 15.5794 2.13543 17.317 4.15651C19.0546 6.17759 20.0307 8.91876 20.0307 11.777Z"
-                      stroke="#A8A8A8"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+                  New Message
                 </button>
               </div>
-            </div>
-              
+            </div>   
           </div>
+
           <div class="left-side-div2">
             <div class="left-side-div2-top">
               <a href="" class="all-btn follower-btn-text">All</a>
@@ -315,14 +314,12 @@
                   </div>
                   <div class="user-details-div2">
                     <div class="user-details">
-                      <div>
-                        <p class="light-friends-display-name-text-active">
+                      <p class="light-friends-display-name-text-active friends-display-name-text">
                         Mason Mount
                       </p>
-                    </div>
-                      <div>                      
-                        <p class="message-text">November 30</p>
-                      </div>
+                      <p class="message-text">
+                        November 30
+                      </p>
                     </div>
                     <div class="user-details">
                       <p class="light-disappear-text">
@@ -367,7 +364,7 @@
                   <div class="user-details-div2">
                     <div class="user-details">
                       <div>
-                        <p class="light-friends-display-name-text">Steph Curry</p>
+                        <p class="light-friends-display-name-text friends-display-name-text">Steph Curry</p>
 
                     </div>
                       <div>                      
@@ -415,7 +412,7 @@
                   <div class="user-details-div2">
                     <div class="user-details">
                       <div>
-                        <p class="light-friends-display-name-text">Steph Curry</p>
+                        <p class="light-friends-display-name-text friends-display-name-text">Steph Curry</p>
 
                     </div>
                       <div>                      
@@ -463,7 +460,54 @@
                   <div class="user-details-div2">
                     <div class="user-details">
                       <div>
-                        <p class="light-friends-display-name-text">Steph Curry</p>
+                        <p class="light-friends-display-name-text friends-display-name-text">Steph Curry</p>
+
+                    </div>
+                      <div>                      
+                        <p class="message-text">November 30</p>
+                      </div>
+                    </div>
+                    <div class="user-details">
+                      <p class="message-text">Break the ice, say hello!</p>
+                    </div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="26"
+                      viewBox="0 0 24 26"
+                      fill="none"
+                      class="bookmark"
+                    >
+                      <g clip-path="url(#clip0_531_1267)">
+                        <path
+                          d="M3.64258 4.05137C3.64258 3.23744 3.93809 2.45684 4.46411 1.8813C4.99012 1.30576 5.70356 0.982422 6.44746 0.982422L17.667 0.982422C18.4109 0.982422 19.1243 1.30576 19.6503 1.8813C20.1763 2.45684 20.4718 3.23744 20.4718 4.05137V24.7668C20.4718 24.9056 20.4373 25.0417 20.3721 25.1608C20.3069 25.2798 20.2134 25.3773 20.1016 25.4428C19.9898 25.5083 19.8638 25.5394 19.7371 25.5328C19.6104 25.5261 19.4877 25.482 19.3821 25.4051L12.0572 21.0856L4.73227 25.4051C4.62668 25.482 4.504 25.5261 4.3773 25.5328C4.25061 25.5394 4.12464 25.5083 4.01282 25.4428C3.901 25.3773 3.80751 25.2798 3.74231 25.1608C3.67711 25.0417 3.64264 24.9056 3.64258 24.7668V4.05137ZM6.44746 2.5169C6.07551 2.5169 5.71879 2.67857 5.45578 2.96634C5.19277 3.25411 5.04502 3.64441 5.04502 4.05137V23.3336L11.6687 19.525C11.7838 19.4412 11.919 19.3965 12.0572 19.3965C12.1954 19.3965 12.3306 19.4412 12.4457 19.525L19.0694 23.3336V4.05137C19.0694 3.64441 18.9216 3.25411 18.6586 2.96634C18.3956 2.67857 18.0389 2.5169 17.667 2.5169H6.44746Z"
+                          fill-opacity="0.9"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_531_1267">
+                          <rect
+                            width="22.439"
+                            height="24.5516"
+                            fill="white"
+                            transform="translate(0.837891 0.982422)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                </div>
+                </div>
+                <div class="user-div inactive">
+                  <div class="user-details-div1">
+                    <img
+                      src="../../assets/images/Screenshot (172) 1 (1).svg"
+                      alt="User Profile Pic"
+                    />
+                  </div>
+                  <div class="user-details-div2">
+                    <div class="user-details">
+                      <div>
+                        <p class="light-friends-display-name-text friends-display-name-text">Steph Curry</p>
 
                     </div>
                       <div>                      
@@ -511,55 +555,7 @@
                   <div class="user-details-div2">
                     <div class="user-details">
                       <div>
-                        <p class="light-friends-display-name-text">Steph Curry</p>
-
-                    </div>
-                      <div>                      
-                        <p class="message-text">November 30</p>
-                      </div>
-                    </div>
-                    <div class="user-details">
-                      <p class="message-text">Break the ice, say hello!</p>
-
-                    </div>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="26"
-                      viewBox="0 0 24 26"
-                      fill="none"
-                      class="bookmark"
-                    >
-                      <g clip-path="url(#clip0_531_1267)">
-                        <path
-                          d="M3.64258 4.05137C3.64258 3.23744 3.93809 2.45684 4.46411 1.8813C4.99012 1.30576 5.70356 0.982422 6.44746 0.982422L17.667 0.982422C18.4109 0.982422 19.1243 1.30576 19.6503 1.8813C20.1763 2.45684 20.4718 3.23744 20.4718 4.05137V24.7668C20.4718 24.9056 20.4373 25.0417 20.3721 25.1608C20.3069 25.2798 20.2134 25.3773 20.1016 25.4428C19.9898 25.5083 19.8638 25.5394 19.7371 25.5328C19.6104 25.5261 19.4877 25.482 19.3821 25.4051L12.0572 21.0856L4.73227 25.4051C4.62668 25.482 4.504 25.5261 4.3773 25.5328C4.25061 25.5394 4.12464 25.5083 4.01282 25.4428C3.901 25.3773 3.80751 25.2798 3.74231 25.1608C3.67711 25.0417 3.64264 24.9056 3.64258 24.7668V4.05137ZM6.44746 2.5169C6.07551 2.5169 5.71879 2.67857 5.45578 2.96634C5.19277 3.25411 5.04502 3.64441 5.04502 4.05137V23.3336L11.6687 19.525C11.7838 19.4412 11.919 19.3965 12.0572 19.3965C12.1954 19.3965 12.3306 19.4412 12.4457 19.525L19.0694 23.3336V4.05137C19.0694 3.64441 18.9216 3.25411 18.6586 2.96634C18.3956 2.67857 18.0389 2.5169 17.667 2.5169H6.44746Z"
-                          fill-opacity="0.9"
-                        />
-                      </g>
-                      <defs>
-                        <clipPath id="clip0_531_1267">
-                          <rect
-                            width="22.439"
-                            height="24.5516"
-                            fill="white"
-                            transform="translate(0.837891 0.982422)"
-                          />
-                        </clipPath>
-                      </defs>
-                    </svg>
-                </div>
-                </div>
-                <div class="user-div inactive">
-                  <div class="user-details-div1">
-                    <img
-                      src="../../assets/images/Screenshot (172) 1 (1).svg"
-                      alt="User Profile Pic"
-                    />
-                  </div>
-                  <div class="user-details-div2">
-                    <div class="user-details">
-                      <div>
-                        <p class="light-friends-display-name-text">Steph Curry</p>
+                        <p class="light-friends-display-name-text friends-display-name-text">Steph Curry</p>
 
                     </div>
                       <div>                      
@@ -601,30 +597,36 @@
             </div>
           </div>
         </div>
+        
         <div class="mainbody-right-side">
-          <div class="right-side-div1">
-            <div class="user-details-div1">
-              <img
-                src="../../assets/images/Screenshot (173) 1 (1).svg"
-                alt="User Profile Pic"
-              />
-            </div>
-            <div class="user-details-div2">
-              <div class="user-details">
-                <div>
-                  <p class="light-friends-display-name-text-active">
-                  Mason Mount
-                </p>
+          <div class="chat-header">
+            <div class="right-side-div1">
+
+              <div class="user-details-div1">
+                <img
+                  src="../../assets/images/Screenshot (173) 1 (1).svg"
+                  alt="User Profile Pic"
+                />
               </div>
-                <div>                      
-                  <p class="message-text">November 30</p>
-                </div>
-              </div>
-              <div class="user-details">
+              <div>
+                <p class="light-friends-display-name-text-active friends-display-name-text">Mason Mount</p>
                 <p class="light-disappear-text">
                   Sent you a
                   <span id="blue-text">Dissapearing Message</span>
                 </p>
+              </div>
+            </div>
+            <div class="left-side-div1">
+              <p class="message-text">November 30</p>
+            </div>
+          </div>
+            <div class="user-details-div2">
+              <div class="user-details">
+
+
+              </div>
+              <div class="user-details">
+
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -652,11 +654,10 @@
                 </defs>
               </svg>
           </div>
-          </div>
           <div class="right-side-div2-wrapper">
           <div class="right-side-div2">
             <div class="sender-message">
-              <!-- this div shouldn't be overflowing @ x-axis -->
+
               <p>Send the image</p>
               <div class="time-tick-wrapper">
                 <p class="user-text-delivery-time desktop-sent-date-txt">
@@ -794,7 +795,6 @@
               <button class="send-btn write-message-txt">Send</button>
             </div>
           </form>
-        </div>
         </div>
         </div>
       </main>

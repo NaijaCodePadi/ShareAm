@@ -12,10 +12,10 @@
     />
     <link rel="stylesheet" href="css/profile.css" />
   </head>
-  <body class="light-body">
-    <div class="profile">
+  <body>
+    <div class="light-profile-body profile-body">
       <!-- ------------ HTML FOR SIDEBAR --------------- -->
-      <section class="light-sidebar-container">
+      <section>
         <nav class="sidebar-nav light-sidebar-nav">
           <header>
             <a href="#">
@@ -92,8 +92,8 @@
                   fill-opacity="0.9"
                 />
               </svg>
-              Message</a
-            >
+              Message
+            </a>
 
             <a
               class="menu-link light-nav-texts"
@@ -286,19 +286,14 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <h3 class="add-photo light-cover-photo-text">
-                  Add Cover Photo
-                </h3>
+                <h3 class="light-cover-photo-text">Add Cover Photo</h3>
               </div>
               <div class="user-pic-user-names">
-                <img
-                  class="user-prof-pic"
-                  src="../../assets/images/eth portrait 1.png"
-                />
-                <div class="user-names">
-                  <p class="fullname display-name-text">Andre Onana</p>
+                <img src="../../assets/images/eth portrait 1.png" />
+                <div>
+                  <p class="display-name-text pop-reg-txt">Andre Onana</p>
                   <p></p>
-                  <p class="username user-id-text">@AndreShareAm</p>
+                  <p class="user-id-text">@AndreShareAm</p>
                 </div>
               </div>
             </div>
@@ -306,7 +301,10 @@
             <div class="main-section-2">
               <div class="main-section-2-wrap">
                 <form class="bio-form">
-                  <label for="bio-write-up" class="cdn light-change-text">
+                  <label
+                    for="bio-write-up"
+                    class="light-change-text change-text"
+                  >
                     Add Bio/About
                   </label>
 
@@ -317,10 +315,12 @@
                       placeholder="Write here..."
                       class="bio-input-text"
                     />
-                    <p class="text-limit input-limit-text">150/888</p>
+                    <p class="input-limit-text pop-reg-txt">150/888</p>
                   </div>
 
-                  <div><button id="save-btn">Save</button></div>
+                  <div>
+                    <button id="save-btn">Save</button>
+                  </div>
                 </form>
               </div>
             </div>
@@ -328,14 +328,16 @@
             <div class="main-section-3">
               <div class="display-username">
                 <form class="display-name-section">
-                  <label for="display-name" class="cdn light-change-text"
+                  <label
+                    for="display-name"
+                    class="light-change-text change-text"
                     >Change Display Name</label
                   >
-                  <div class="light-inputs">
+                  <div class="light-inside-input-text inside-input-text">
                     <input
                       type="text"
-                      id="light-display-name"
-                      class="change-input-text"
+                      id="display-name"
+                      class="change-input-text change-inputs"
                       placeholder="Andre Onana "
                     />
                     <button id="change-btn" class="change-btn-text">
@@ -345,14 +347,16 @@
                 </form>
 
                 <form class="username-section">
-                  <label for="change-username" class="cdn light-change-text"
+                  <label
+                    for="change-username"
+                    class="light-change-text change-text"
                     >Change Username
                   </label>
-                  <div class="light-inputs">
+                  <div class="light-inside-input-text inside-input-text">
                     <input
                       type="text"
-                      id="light-change-username"
-                      class="change-input-text"
+                      id="change-username"
+                      class="change-input-text change-inputs"
                       placeholder="AndreshareAM "
                     />
                     <button id="change-btn" class="change-btn-text">
@@ -364,14 +368,14 @@
 
               <div class="email-password">
                 <form class="email-section">
-                  <label for="email" class="cdn light-change-text"
+                  <label for="email" class="light-change-text change-text"
                     >Change Email</label
                   >
-                  <div class="light-inputs">
+                  <div class="light-inside-input-text inside-input-text">
                     <input
                       type="text"
-                      id="light-email"
-                      class="change-input-text"
+                      id="email"
+                      class="change-input-text change-inputs"
                       placeholder="Onana02@gmail.com "
                     />
                     <button id="change-btn" class="change-btn-text">
@@ -381,26 +385,26 @@
                 </form>
 
                 <form class="password-section">
-                  <label for="password" class="cdn light-change-text"
+                  <label for="password" class="light-change-text change-text"
                     >Change Password</label
                   >
                   <input
                     type="text"
-                    id="light-old-password"
-                    class="change-input-text"
-                    placeholder="Enter Old Password "
+                    id="password"
+                    class="change-input-text light-enter-password enter-password"
+                    placeholder="Enter Old Password"
                   />
                   <input
                     type="text"
-                    id="light-new-password"
-                    class="change-input-text"
-                    placeholder="Enter New Password "
+                    id="password"
+                    class="change-input-text light-enter-password enter-password"
+                    placeholder="Enter New Password"
                   />
-                  <div class="light-inputs">
+                  <div class="light-inside-input-text inside-input-text">
                     <input
                       type="text"
-                      id="light-confirm"
-                      class="change-input-text"
+                      id=""
+                      class="change-input-text change-inputs"
                       placeholder="Confirm new password"
                     />
                     <button id="change-btn" class="change-btn-text">
@@ -415,10 +419,10 @@
               <div class="main-section-4-wrap">
                 <div class="location">
                   <form class="location-form">
-                    <label for="location" class="light-change-text"
+                    <label for="location" class="light-change-text change-text"
                       >Location</label
                     >
-                    <div class="light-location-input-wrap">
+                    <div class="location-input light-location-input">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -447,13 +451,16 @@
                 </div>
 
                 <div class="unique-url">
-                  <h3 class="light-change-text">My ShareAm Unique URL</h3>
+                  <h3 class="light-change-text change-text">
+                    My ShareAm Unique URL
+                  </h3>
 
-                  <p>
-                    <a href="#" class="light-url-input-text url-link"
-                      >https://www.ShareAm.me/username</a
+                  <p class="url-link light-url-link">
+                    <a href="#" class="light-url-text url-text">
+                      https://www.ShareAm/username</a
                     >
                   </p>
+
                   <div class="social-media-handles">
                     <h5 class="share-txt">Share</h5>
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>

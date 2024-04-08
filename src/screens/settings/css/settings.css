@@ -27,6 +27,29 @@ html {
   font-size: 16px;
 }
 
+/*                scrollBar           */
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
 /* DO NOT REMOVE THE CODE ABOVE */
 
 /* /-----------------------SIDE BAR -------------------------/ */
@@ -51,6 +74,11 @@ html {
   background-color: #222020;
 }
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .settings {
   display: flex;
 }
@@ -195,86 +223,95 @@ a.dark-active-menu svg {
   font-weight: 700;
 }
 /* <-------------MAIN BODY TEXTS---------------> */
+.menu-title-texts {
+  font-family: Poppins-bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .dark-menu-title-texts {
   color: #0389e1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 600;
 }
+
 .light-menu-title-texts {
   color: #150aa1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 600;
 }
+
+.setting-title-text {
+  font-family: Poppins-bold;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 .light-setting-title-text {
   color: #150aa1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 500;
 }
+
 .dark-setting-title-text {
   color: #0389e1;
-  font-family: Poppins-bold;
-  font-size: .9rem;
-  font-weight: 500;
 }
+
+.setting-subtitle-text {
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
 .dark-setting-subtitle-text {
   color: #979797;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
 
 .light-setting-subtitle-text {
   color: #000;
-  font-family: Poppins-medium;
-  font-size: .9rem;
+}
+
+.change-background-text {
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
 .light-change-background-text {
   color: #000;
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 400;
 }
+
 .dark-change-background-text {
   color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: .9rem;
+}
+
+.audio-subtitle-text {
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
   font-weight: 400;
 }
+
 .dark-audio-subtitle-text {
   color: #fffcfc;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
+
 .light-audio-subtitle-text {
   color: #373737;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
 
 .audio-default-setting-text {
   color: #585858;
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
-.light-current-mode-text {
-  color: rgba(34, 32, 32, 0.9);
+
+.current-mode-text {
   font-family: Poppins-regular;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
+
+.light-current-mode-text {
+  color: rgba(34, 32, 32, 0.9);
+}
+
 .dark-current-mode-text {
   color: #a9a9a9;
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 500;
 }
 
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
@@ -282,32 +319,33 @@ a.dark-active-menu svg {
 .mainbody {
   width: 100%;
   height: 100vh;
-  overflow-y: scroll;
-}
-
-.content-wrapper {
-  height: 100vh;
+  overflow-y: auto;
 }
 
 .light-mainbody h4 {
   margin-left: 10px;
 }
+
 .light-mainbody p {
   line-height: 35px;
   margin-left: 20px;
   margin-top: 5px;
 }
+
 .horizontal-line {
   margin: 8px 20px 0px 0px;
   border-bottom: 1px solid #979797;
 }
+
 .horizontal-line1 {
   margin: 10px 0px 15px 0px;
   border-bottom: 1px solid #979797;
 }
+
 section {
   margin: 0px 20px 0px 0px;
 }
+
 .camera-settings,
 .audio-settings,
 .audio-settings1,
@@ -317,40 +355,52 @@ section {
   justify-content: space-between;
   align-items: center;
 }
+
 .camera-right-text p,
 .audio-settings-right-text p,
 .speaker-right-text {
   color: #585858;
 }
+
 .camera-preview {
   display: flex;
   gap: 3vw;
 }
+
 .camera-preview1 {
   width: 35vw;
   height: 250px;
   background-color: #fff;
   border-radius: 5px;
 }
+
 .camera-preview-right {
   display: grid;
   gap: 14px;
   grid-template-columns: auto auto;
 }
+
 .camera-preview2 p {
   margin-top: 0px;
   margin-left: 0;
   line-height: 30px;
 }
+
 .camera-preview3 {
   background-color: #fff;
   width: 60px;
   height: 60px;
   border-radius: 5px;
 }
+
 .mode {
   display: flex;
   align-items: center;
+  gap: 3vw;
+}
+
+.mode-item {
+  display: flex;
   gap: 3vw;
 }
 .container {
@@ -359,7 +409,7 @@ section {
   position: relative;
   padding: 5px 0px 0px 30px;
   cursor: pointer;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 550;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -511,10 +561,35 @@ input:checked + .slider:before {
 .slider:before {
   border-radius: 50%;
 }
-@media (max-width: 800px) {
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mode {
+    display: block;
+  }
+  .mode h4 {
+    margin-bottom: 10px;
+  }
+  .mode-item {
+    margin-left: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
   }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
 /*-------END---------*/

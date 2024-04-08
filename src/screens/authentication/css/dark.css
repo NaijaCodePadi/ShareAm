@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  @font-face {
+    font-family: poppins-bold;
+    src: url(../../../assets/fonts/Poppins-Bold.ttf);
+  }
+  @font-face {
+    font-family: poppins-regular;
+    src: url(../../../assets/fonts/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: poppins-medium;
+    src: url(../../../assets/fonts/Poppins-Medium.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  }
+
+  
+::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide sidebar in responsive mode */
+    }
+    .auth{
+      width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content-sign-up {
+    justify-content: center;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .content-sign-up {
+    justify-content: center;
+}
+}

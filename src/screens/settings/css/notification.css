@@ -24,7 +24,7 @@
 }
 
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 
 /* DO NOT REMOVE THE CODE ABOVE */
@@ -44,7 +44,35 @@ html {
   --dm-active-menu-bg-color: #373737;
 }
 
+/*                 scrollbar             */
+
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
 /*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
 .light-body {
   height: 100vh;
   background-color: #dad9d9;
@@ -173,37 +201,36 @@ a.dark-active-menu svg {
 }
 
 /* ...........START OF NOTIFICATION LIGHT PAGE */
-
-.light-notification-page {
+.notification-page {
   height: 100vh;
   width: 80vw;
-  background-color: #dad9d9;
-  padding: 30px 0px 0px 53px;
-  overflow-y: scroll;
+  padding: 4vh 0px 0px 4vw;
+  overflow-y: auto;
 }
+
+.light-notification-page {
+  background-color: #dad9d9;
+}
+
+.dark-notification-page {
+  background-color: #222020;
+}
+
 .notification-page-item1 {
-  width: 70%;
+  width: 75%;
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 hr {
   border: 1px solid #979797;
   margin: 10px 0px 10px 0px;
 }
+
 /* ---------- START OF TOOGLE BUTTON----------- */
 .toogle-button {
   margin-left: auto;
-}
-
-/* ----------FOR NOTIFICATION PAGE DARK MODE------------- */
-
-.dark-notification-page {
-  height: 100vh;
-  width: 80vw;
-  background-color: #222020;
-  padding: 30px 0px 0px 53px;
-  overflow-y: scroll;
 }
 
 /*---------------TOGGLE KEY--------------*/
@@ -280,6 +307,7 @@ input:checked + .slider:before {
   font-weight: 500;
   line-height: normal;
 }
+
 .Dark-nav-texts {
   color: #a9a9a9;
   font-family: Rubik;
@@ -293,6 +321,7 @@ input:checked + .slider:before {
   font-size: 1rem;
   font-weight: 700;
 }
+
 .light-nav-texts-active {
   color: rgba(34, 32, 32, 0.9);
   font-family: Poppins-regular;
@@ -301,36 +330,37 @@ input:checked + .slider:before {
 }
 
 /* --------notification texts------- */
+.menu-title-texts-mode {
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
 .dark-menu-title-texts-mode {
   color: #0389e1;
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 600;
 }
+
 .light-menu-title-texts-mode {
   color: #150aa1;
-  font-family: Poppins-regular;
-  font-size: .9rem;
-  font-weight: 600;
 }
+
+.menu-subtitle-texts-mode {
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
 .dark-menu-subtitle-texts-mode {
   color: #fffcfc;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
+
 .light-menu-subtitle-texts-mode {
   color: #373737;
-  font-family: Poppins-medium;
-  font-size: .9rem;
-  font-weight: 400;
 }
 
-
-@media (max-width: 800px) {
-
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
   html {
-    font-size: 12px
+    font-size: 12px;
   }
-
 }
