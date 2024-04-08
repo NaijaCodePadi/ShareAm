@@ -425,7 +425,6 @@ stroke="#CFDAE2" */
   position: absolute;
   width: 22px;
   left: 15%;
-
 }
 
 /*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
@@ -689,10 +688,7 @@ stroke="#CFDAE2" */
   justify-content: space-between;
 } */
 
-.time-date-text {
-  /* width: 70%;
-  height: fit-content; */
-}
+
 
 /* .flower-box {
   width: 25%;
@@ -726,9 +722,6 @@ stroke="#CFDAE2" */
   padding: 10px 0 10px 0;
 } */
 
-.cta-learn {
-  /* margin-left: auto; */
-}
 
 /*/ ------------------LIGHT MODE CSS FOR LANDING PAGE CARD------------------ /*/
 
