@@ -1,12 +1,19 @@
 
 
 //  FOR CHANGING THEME
-document.getElementById('darkmode-toggle').addEventListener('click', async () => {
-  const isDarkMode = await window.darkMode.toggle()
-})
-document.getElementById('reset-to-system').addEventListener('click', async () => {
-  await window.darkMode.system()
-})
+
+
+if(document.getElementById('darkmode-toggle')){
+  document.getElementById('darkmode-toggle').addEventListener('click', async () => {
+    const isDarkMode = await window.darkMode.toggle()
+  })
+}
+if(document.getElementById('reset-to-system')){
+  document.getElementById('reset-to-system').addEventListener('click', async () => {
+    await window.darkMode.system()
+  })
+}
+
 
 
 document.getElementById('minimize-button').addEventListener('click', async () => {

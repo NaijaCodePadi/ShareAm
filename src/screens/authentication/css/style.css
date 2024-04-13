@@ -6,7 +6,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: .2s
+  transition: .1s
 }
 
 html {
@@ -114,13 +114,13 @@ html {
   }
   .reset_theme:hover{
     cursor: pointer;
-    text-decoration: underline;
+    
   }
   .toogle-btn {
     display: flex;
     align-items: center;
   }
-  
+
   .toogle-btn label {
     width: 48px;
     height: 20px;
@@ -131,7 +131,7 @@ html {
     cursor: pointer;
     transition: 0.3s;
   }
-  
+
   .toogle-btn label:after {
     content: "";
     width: 16px;
@@ -143,52 +143,53 @@ html {
     border-radius: 180px;
     transition: 0.3s;
   }
-  
+
   .toogle-btn #darkmode-toggle {
     width: 0;
     height: 0;
     visibility: hidden;
   }
-  
-  .toogle-btn input:checked + label {
+
+  .toogle-btn input:checked+label {
     background: #242424;
   }
-  
-  .toogle-btn input:checked + label:after {
+
+  .toogle-btn input:checked+label:after {
     transform: translateX(27px);
     background: linear-gradient(180deg, #777, #3a3a3a);
   }
-  
-  .toogle-btn input:checked + label + .background {
+
+  .toogle-btn input:checked+label+.background {
     background: #242424;
   }
-  
+
   .toogle-btn label svg {
     position: absolute;
     width: 13px;
     top: 3.1px;
     z-index: 100;
   }
-  
+
   .toogle-btnlabel svg.sun {
     left: 2.9px;
     fill: #d8860b;
     transition: 0.3s;
   }
-  
+
   .toogle-btn label svg.moon {
     left: 30px;
     fill: #050505;
     transition: 0.3s;
   }
-  
-  .toogle-btn input:checked + label svg.sun {
+
+  .toogle-btn input:checked+label svg.sun {
     fill: #d8860b;
   }
-  
-  .toogle-btn input:checked + label svg.moon {
+
+  .toogle-btn input:checked+label svg.moon {
     fill: #fff;
   }
+
   .content {
     flex: 1;
     /* padding: 20px; */
@@ -227,7 +228,7 @@ html {
     margin-bottom: 15px;
   }
 
-  .input-group label p {
+  .input-group label {
     display: block;
     font-weight: 700;
     font-family: poppins-bold;
@@ -272,12 +273,7 @@ html {
     width: 100%;
   }
 
-  .btn-login,
-  .start-call-btn {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+  .btn-login {
     background-color: #1058E8;
     padding: 10px;
     border-radius: 10px;

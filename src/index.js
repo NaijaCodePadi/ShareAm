@@ -29,13 +29,13 @@ const createMainWindow = () => {
     minWidth: 600,
     minHeight: 600,
     webPreferences: {
-      devTools: false, // Disable DevTools
+      // devTools: false, // Disable DevTools
       preload: path.join(__dirname, 'preload.js')
     }
   });
   mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
-  mainWindow.loadFile(path.join(__dirname, '/screens/authentication/login.html'));
-
+  mainWindow.loadFile(path.join(__dirname, '/screens/authentication/join_meeting.html'));
+  mainWindow.webContents.openDevTools();
   return mainWindow;
 };
 

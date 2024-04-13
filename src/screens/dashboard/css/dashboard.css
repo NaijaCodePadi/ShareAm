@@ -38,7 +38,7 @@ body {
 
 .landing-page-container {
   display: flex;
-  height: 92%;
+  height: 93%;
 }
 
 /****************************LANDING PAGE LEFT SIDE******************************************/
@@ -46,6 +46,7 @@ body {
 /*----GENERAL PROPERTIES FOR LANDING PAGE LEFT SIDE----*/
 
 .left-landing-section {
+  margin-top: 38px;
   width: 34vw;
   min-width: 200px;
 }
@@ -294,6 +295,7 @@ input:checked + label svg.moon {
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE CARD SIDE----*/
 .landing-page-card {
+  margin-top: 38px;
   width: 100%;
 }
 
@@ -477,10 +479,12 @@ input:checked + label svg.moon {
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
 .footer-container {
+  position: fixed;
+  bottom: 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  height: 8%;
+  height: 7%;
   padding: 0 3vw;
   align-items: center;
   border-radius: 5px 5px 0 0;
