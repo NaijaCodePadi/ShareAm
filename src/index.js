@@ -35,7 +35,7 @@ const createMainWindow = () => {
   });
   mainWindow.setIcon(path.join(__dirname, '/assets/images/logo_with_bg.png'));
   mainWindow.loadFile(path.join(__dirname, '/screens/authentication/join_meeting.html'));
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
   return mainWindow;
 };
 
