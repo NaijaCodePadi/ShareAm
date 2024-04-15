@@ -407,7 +407,7 @@ input:checked + label svg.moon {
 
 .contact-details1-top {
   font-family: poppins-bold;
-  font-size: 1.4vw;
+  font-size: 1.1rem;
 }
 
 .contact-details1-bottom {
@@ -422,7 +422,7 @@ input:checked + label svg.moon {
   gap: 0.5vw;
   align-items: center;
   font-family: poppins-medium;
-  font-size: 0.9vw;
+  font-size: 0.75rem;
   color: #555555;
 }
 
@@ -447,7 +447,7 @@ input:checked + label svg.moon {
   /* padding: 2vh 2vw; */
   border-radius: 8px;
   font-family: poppins-medium;
-  font-size: 1.1vw;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 
@@ -486,7 +486,7 @@ input:checked + label svg.moon {
   background: #22074a;
   color: #fff;
   font-family: poppins-medium;
-  font-size: 0.9vw;
+  font-size: 0.7rem;
   text-align: center;
   padding: 3vh 3vw;
   border-radius: 8px;
@@ -519,7 +519,7 @@ input:checked + label svg.moon {
 
 select {
   font-family: poppins-regular;
-  font-size: 0.8vw;
+  font-size: 0.7rem;
   color: #979797;
   outline: none;
   border: none;
@@ -533,7 +533,7 @@ select {
   text-align: center;
   color: #979797;
   font-family: poppins-regular;
-  font-size: 0.8vw;
+  font-size: 0.7rem;
   border-radius: 11px;
   background-color: #fff;
   padding: 0.3vh 0.2vw;
@@ -579,7 +579,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .purpose-text {
   font-family: poppins-regular;
-  font-size: 1vw;
+  font-size: 0.7rem;
   width: 100%;
 }
 
@@ -615,7 +615,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background: #22074a;
   color: #fff;
   padding: 2vh 3vw;
-  font-size: 0.9vw;
+  font-size: 0.7rem;
   width: fit-content;
   border: none;
   border-radius: 8px;
