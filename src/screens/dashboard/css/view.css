@@ -26,9 +26,17 @@
 html {
   font-size: 16px;
 }
-body {
+
+.content {
   overflow: hidden;
+}
+
+.light-content {
   background-color: #22074a;
+}
+
+.dark-content {
+  background-color: #1f201f;
 }
 
 ::-webkit-scrollbar {
@@ -85,6 +93,26 @@ ul {
   flex-direction: column;
   gap: 2vh;
   padding: 4vh 1vw 2vh 1vw;
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 5vh right 1.5vw, top 10vh right 10vw,
+    top 18vh right 5vw, top 27vh right 11vw, top 35vh right 1vw,
+    top 45vh right 7vw, top 57vh right 12vw, top 64vh right 2vw,
+    top 78vh right 5vw, top 82vh right 11vw, top 90vh right 13vw,
+    top 94vh right 2vw;
+  background-size: 5vh 5vw;
 }
 
 .nav-logo,
@@ -133,9 +161,6 @@ svg {
 .profile-picc {
   width: 50px;
   height: 50px;
-}
-
-.section1-div1-left-profile-pic {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,6 +168,7 @@ svg {
   background-color: #d9d9d9;
   border: 1.4px solid #cfdae2;
   position: relative;
+  text-decoration: none;
 }
 
 .profile-pic-intials {
@@ -190,17 +216,6 @@ a.light-active-menu svg {
 
 .dark-sidebar-nav {
   background-color: var(--dm-sidebar-bg-color);
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px,
-    top 395px right 250px, top 450px right 18px, top 547px right 160px,
-    top 789px right 231px;
 }
 
 .dark-nav-link-container a:hover {
@@ -308,12 +323,19 @@ a.dark-active-menu svg {
 
 .interface-section-3 {
   height: 68vh;
-  background-color: #c3a8ec;
   border-radius: 11px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.light-interface-section-3 {
+  background-color: #c3a8ec;
+}
+
+.dark-interface-section-3 {
+  background-color: #373737;
 }
 
 .wave-shadow-1 {
@@ -558,12 +580,23 @@ a.dark-active-menu svg {
   height: 96%;
   width: 50%;
   border-radius: 14px;
+  margin: 1% 2vw 1% 2vw;
+}
+
+.light-chat-box {
   background: linear-gradient(
     181deg,
     rgba(218, 217, 217, 0.67) 5%,
     rgba(218, 217, 217, 0) 154.43%
   );
-  margin: 1% 2vw 1% 2vw;
+}
+
+.dark-chat-box {
+  background: linear-gradient(
+    181deg,
+    rgba(112, 111, 111, 0.67) 5%,
+    rgba(218, 217, 217, 0) 154.43%
+  );
 }
 
 .chat-box-wrapper {
