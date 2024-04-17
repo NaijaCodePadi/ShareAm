@@ -1,393 +1,911 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello ShareAm!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="../../screens/dashboard/css/dashboard.css" />
+    <link rel="stylesheet" href="./../common/control-bar.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello ShareAm!</title>
-  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-  <link rel="stylesheet" href="../../screens/dashboard/css/dashboard.css" />
-  <link rel="stylesheet" href="./../common/control-bar.css" />
-</head>
+  <body>
+    <!-- Top Control Bar -->
+    <header>
+      <div class="icon-bar">
+        <div>
+          <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
+        </div>
+        <div>Hello ShareAm!</div>
+      </div>
+      <div id="control-box-parent" class="control-box">
+        <div id="minimize-button" class="minimize">
+          <img src="../../assets/icons/control_box/minimize.svg" />
+        </div>
+        <div id="maximize-button" class="maximize">
+          <img src="../../assets/icons/control_box/maximize.svg" />
+        </div>
+        <div id="close-button" class="main-close-button">
+          <img src="../../assets/icons/control_box/close.svg" />
+        </div>
+      </div>
+    </header>
+    <!-- End Of Top Control Bar -->
 
-<body>
-  <!-- Top Control Bar -->
-  <header>
-    <div class="icon-bar">
-      <div>
-        <img src="../../assets/images/logo.png" alt="ShareAm_Logo">
-      </div>
-      <div>
-        Hello ShareAm!
-      </div>
-    </div>
-    <div id="control-box-parent" class="control-box">
-      <div id="minimize-button" class="minimize"> <img src="../../assets/icons/control_box/minimize.svg"></div>
-      <div id="maximize-button" class="maximize"><img src="../../assets/icons/control_box/maximize.svg"></div>
-      <div id="close-button" class="main-close-button"><img src="../../assets/icons/control_box/close.svg"></div>
-    </div>
-  </header>
-  <!-- End Of Top Control Bar -->
-  <main class="landing-page-container">
-    <section class="left-landing-section light-left-landing-section">
-      <div class="section1-container light-section1-container">
-        <div class="section1-div1">
-          <div class="section1-div1-left">
-            <div class="section1-div1-left-profile-pic">
-              <a href="../settings/profile.html">
-                <p class="profile-pic-intials intial-txt">NU</p>
-                <span id="green-circle"></span>
-              </a>
-            </div>
-            <div>
-              <h3 class="desktop-title-text">New User</h3>
-              <p class="desktop-status-text">Set a status</p>
-            </div>
+    <main class="landing-page-container">
+      <aside>
+        <nav class="sidebar-nav light-sidebar-nav">
+          <div class="nav-logo">
+            <img src="../../assets/icons/001 1.svg" alt="" />
           </div>
-          <div class="section1-div1-right">
-            <div class="toogle-btn">
-              <input type="checkbox" id="darkmode-toggle" />
-              <label for="darkmode-toggle">
-                <svg version="1.1" class="moon" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://		www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.739 49.739"
-                  style="enable-background: new 0 0 49.739 49.739" xml:space="preserve">
-                  <path d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+
+          <div class="nav-link-container light-nav-link-container">
+            <a
+              class="menu-link light-nav-texts light-nav-texts-active light-active-menu"
+              href="../dashboard/dashboard.html"
+            >
+              <span>
+                <svg
+                  width="19"
+                  height="20"
+                  viewBox="0 0 21 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.375 22.7495C1.85417 22.7495 1.41146 22.5672 1.04688 22.2026C0.682292 21.8381 0.5 21.3953 0.5 20.8745V8.68701C0.5 8.39535 0.567708 8.11409 0.703125 7.84326C0.838542 7.57243 1.02083 7.35368 1.25 7.18701L9.375 1.09326C9.54167 0.968262 9.71875 0.874512 9.90625 0.812012C10.0938 0.749512 10.2917 0.718262 10.5 0.718262C10.7083 0.718262 10.9062 0.749512 11.0938 0.812012C11.2813 0.874512 11.4583 0.968262 11.625 1.09326L19.75 7.18701C19.9792 7.35368 20.1615 7.57243 20.2969 7.84326C20.4323 8.11409 20.5 8.39535 20.5 8.68701V20.8745C20.5 21.3953 20.3177 21.8381 19.9531 22.2026C19.5885 22.5672 19.1458 22.7495 18.625 22.7495H13V13.9995H8V22.7495H2.375Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+
+              <span class="menu-text"> Home</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/profile.html"
+            >
+              <span>
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5 9.46924C9.125 9.46924 8 9.03174 7.125 8.15674C6.25 7.28174 5.8125 6.15674 5.8125 4.78174C5.8125 3.40674 6.25 2.28174 7.125 1.40674C8 0.531739 9.125 0.0942383 10.5 0.0942383C11.875 0.0942383 13 0.531739 13.875 1.40674C14.75 2.28174 15.1875 3.40674 15.1875 4.78174C15.1875 6.15674 14.75 7.28174 13.875 8.15674C13 9.03174 11.875 9.46924 10.5 9.46924ZM0.5 19.5005V16.563C0.5 15.7713 0.697917 15.0942 1.09375 14.5317C1.48958 13.9692 2 13.5422 2.625 13.2505C4.02083 12.6255 5.35938 12.1567 6.64063 11.8442C7.92188 11.5317 9.20833 11.3755 10.5 11.3755C11.7917 11.3755 13.0729 11.5369 14.3438 11.8599C15.6146 12.1828 16.9479 12.6463 18.3438 13.2505C18.9896 13.5422 19.5104 13.9692 19.9062 14.5317C20.3021 15.0942 20.5 15.7713 20.5 16.563V19.5005H0.5Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> My profile </span>
+            </a>
+
+            <a class="menu-link light-nav-texts" href="../dashboard/view.html">
+              <span>
+                <svg
+                  width="19"
+                  height="15"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.58785 0.5L1.07882 0.5C0.482986 0.5 0 0.945833 0 1.49583L0 7.50417C0 8.05417 0.482986 8.5 1.07882 8.5H7.58785C8.18368 8.5 8.66667 8.05417 8.66667 7.50417V1.49583C8.66667 0.945833 8.18368 0.5 7.58785 0.5ZM11.8625 1.28542L9.38889 2.86042V6.13958L11.8625 7.7125C12.341 8.01667 13 7.70625 13 7.175V1.82292C13 1.29375 12.3432 0.98125 11.8625 1.28542Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Call Interface </span>
+            </a>
+
+            <a class="menu-link light-nav-texts" href="../messages/list.html">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="18"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  class="icon"
+                >
+                  <path
+                    d="M17.5 0.5L2.5 0.5C1.12109 0.5 0 1.62103 0 2.99985L0 14.2492C0 15.628 1.12109 16.749 2.5 16.749H6.25L6.25 20.0301C6.25 20.4129 6.6875 20.6355 6.99609 20.409L11.875 16.749H17.5C18.8789 16.749 20 15.628 20 14.2492V2.99985C20 1.62103 18.8789 0.5 17.5 0.5Z"
+                    fill="currentColor"
+                    fill-opacity="0.9"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Message </span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/contact_settings.html"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20"
+                  height="20"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 32 32"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g
+                    transform="matrix(0.9999999999999973,2.449293598294702e-16,-2.449293598294702e-16,0.9999999999999973,4.085620730620576e-14,3.019806626980426e-14)"
+                  >
+                    <path
+                      d="M24 3H8C5.243 3 3 5.243 3 8v16c0 2.757 2.243 5 5 5h16c2.757 0 5-2.243 5-5V8c0-2.757-2.243-5-5-5zm-7.997 4.826c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4zM22 24.522H10a1 1 0 0 1-1-1c0-3.86 3.141-7 7-7s7 3.14 7 7a1 1 0 0 1-1 1z"
+                      fill="currentColor"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span class="menu-text"> Contacts</span>
+            </a>
+
+            <!-- <a
+              class="menu-link light-nav-texts"
+              href="../settings/call_settings.html"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20"
+                  height="20"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 108.27 108.27"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g>
+                    <path
+                      d="M51.954 66.588c-9.284-7.634-15.483-17.054-18.742-22.414l-2.431-4.583c.85-.912 7.332-7.853 10.141-11.619 3.53-4.729-1.588-9-1.588-9S24.933 4.569 21.651 1.712C18.369-1.149 14.591.44 14.591.44 7.693 4.897.542 8.772.113 27.408.097 44.856 13.342 62.852 27.665 76.784c14.346 15.734 34.043 31.504 53.086 31.486 18.634-.425 22.508-7.575 26.965-14.473 0 0 1.59-3.775-1.268-7.06-2.86-3.284-17.265-17.688-17.265-17.688s-4.268-5.119-8.998-1.586c-3.525 2.635-9.855 8.496-11.38 9.917.003.005-10.586-5.64-16.851-10.792z"
+                      fill="currentColor"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span class="menu-text"> Calling</span>
+            </a> -->
+
+            <a class="menu-link light-nav-texts" href="schedule_meeting.html">
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 23 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.25 14.376V12.501H17.75V14.376H5.25ZM5.25 20.001V18.126H13.9688V20.001H5.25ZM2.125 25.001C1.625 25.001 1.1875 24.8135 0.8125 24.4385C0.4375 24.0635 0.25 23.626 0.25 23.126V3.75098C0.25 3.25098 0.4375 2.81348 0.8125 2.43848C1.1875 2.06348 1.625 1.87598 2.125 1.87598H4.15625V0.000976562H6.1875V1.87598H16.8125V0.000976562H18.8438V1.87598H20.875C21.375 1.87598 21.8125 2.06348 22.1875 2.43848C22.5625 2.81348 22.75 3.25098 22.75 3.75098V23.126C22.75 23.626 22.5625 24.0635 22.1875 24.4385C21.8125 24.8135 21.375 25.001 20.875 25.001H2.125ZM2.125 23.126H20.875V9.68848H2.125V23.126Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text">Calender</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/notification.html"
+            >
+              <span>
+                <svg
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.4375 21.2505C1.16667 21.2505 0.942708 21.1619 0.765625 20.9849C0.588542 20.8078 0.5 20.5838 0.5 20.313C0.5 20.0422 0.588542 19.8182 0.765625 19.6411C0.942708 19.464 1.16667 19.3755 1.4375 19.3755H3.125V9.81299C3.125 8.10466 3.64063 6.55778 4.67188 5.17236C5.70312 3.78695 7.0625 2.91716 8.75 2.56299V1.65674C8.75 1.17757 8.92188 0.781738 9.26562 0.469238C9.60938 0.156738 10.0208 0.000488281 10.5 0.000488281C10.9792 0.000488281 11.3906 0.156738 11.7344 0.469238C12.0781 0.781738 12.25 1.17757 12.25 1.65674V2.56299C13.9375 2.91716 15.3021 3.78695 16.3437 5.17236C17.3854 6.55778 17.9062 8.10466 17.9062 9.81299V19.3755H19.5625C19.8333 19.3755 20.0573 19.464 20.2344 19.6411C20.4115 19.8182 20.5 20.0422 20.5 20.313C20.5 20.5838 20.4115 20.8078 20.2344 20.9849C20.0573 21.1619 19.8333 21.2505 19.5625 21.2505H1.4375ZM10.5 25.0005C9.83333 25.0005 9.25 24.7557 8.75 24.2661C8.25 23.7765 8 23.188 8 22.5005H13C13 23.188 12.7552 23.7765 12.2656 24.2661C11.776 24.7557 11.1875 25.0005 10.5 25.0005Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Notifications</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/settings.html"
+            >
+              <span>
+                <svg
+                  width="22"
+                  height="23"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.53125 14.234H6.46875C6.35417 14.234 6.25261 14.1976 6.16406 14.1248C6.07552 14.052 6.02083 13.9583 6 13.8439L5.75 12.2676C5.55208 12.1947 5.34375 12.0959 5.125 11.971C4.90625 11.8462 4.71354 11.7161 4.54688 11.5809L3.09375 12.252C2.97917 12.304 2.86458 12.3118 2.75 12.2754C2.63542 12.239 2.54688 12.1635 2.48438 12.0491L1.45313 10.2231C1.39063 10.119 1.375 10.0098 1.40625 9.89533C1.4375 9.78088 1.5 9.68724 1.59375 9.6144L2.9375 8.63117C2.91667 8.53753 2.90365 8.43088 2.89844 8.31123C2.89323 8.19158 2.89063 8.08493 2.89063 7.99129C2.89063 7.89765 2.89323 7.791 2.89844 7.67135C2.90365 7.55169 2.91667 7.44505 2.9375 7.35141L1.59375 6.36817C1.5 6.29534 1.4375 6.2017 1.40625 6.08725C1.375 5.9728 1.39063 5.86355 1.45313 5.7595L2.48438 3.9335C2.54688 3.81905 2.63542 3.74361 2.75 3.7072C2.86458 3.67078 2.97917 3.67859 3.09375 3.73061L4.54688 4.40171C4.71354 4.26645 4.90625 4.13639 5.125 4.01153C5.34375 3.88668 5.55208 3.79304 5.75 3.73061L6 2.13871C6.02083 2.02426 6.07552 1.93062 6.16406 1.85778C6.25261 1.78495 6.35417 1.74854 6.46875 1.74854H8.53125C8.64583 1.74854 8.7474 1.78495 8.83594 1.85778C8.92448 1.93062 8.97917 2.02426 9 2.13871L9.25 3.715C9.44792 3.78783 9.65886 3.88408 9.88281 4.00373C10.1068 4.12338 10.2969 4.25604 10.4531 4.40171L11.9063 3.73061C12.0208 3.67859 12.1354 3.67078 12.25 3.7072C12.3646 3.74361 12.4531 3.81905 12.5156 3.9335L13.5469 5.7439C13.6094 5.84794 13.6276 5.95979 13.6016 6.07945C13.5755 6.1991 13.5104 6.29534 13.4063 6.36817L12.0625 7.32019C12.0833 7.42424 12.0964 7.53609 12.1016 7.65574C12.1068 7.77539 12.1094 7.88724 12.1094 7.99129C12.1094 8.09533 12.1068 8.20458 12.1016 8.31903C12.0964 8.43348 12.0833 8.54273 12.0625 8.64678L13.4063 9.6144C13.5 9.68724 13.5625 9.78088 13.5938 9.89533C13.625 10.0098 13.6094 10.119 13.5469 10.2231L12.5156 12.0491C12.4531 12.1635 12.3646 12.239 12.25 12.2754C12.1354 12.3118 12.0208 12.304 11.9063 12.252L10.4531 11.5809C10.2865 11.7161 10.0964 11.8488 9.88281 11.9788C9.66927 12.1089 9.45833 12.2051 9.25 12.2676L9 13.8439C8.97917 13.9583 8.92448 14.052 8.83594 14.1248C8.7474 14.1976 8.64583 14.234 8.53125 14.234ZM7.5 10.0202C8.0625 10.0202 8.54167 9.8225 8.9375 9.42712C9.33333 9.03175 9.53125 8.55314 9.53125 7.99129C9.53125 7.42944 9.33333 6.95083 8.9375 6.55546C8.54167 6.16008 8.0625 5.96239 7.5 5.96239C6.9375 5.96239 6.45833 6.16008 6.0625 6.55546C5.66667 6.95083 5.46875 7.42944 5.46875 7.99129C5.46875 8.55314 5.66667 9.03175 6.0625 9.42712C6.45833 9.8225 6.9375 10.0202 7.5 10.0202Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Settings</span>
+            </a>
+
+            <!-- <a
+              class="menu-link light-nav-texts"
+              href="../modal/auth_modal.html"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="24"
+                  viewBox="0 0 23 24"
+                  fill="none"
+                  class="icon"
+                >
+                  <path
+                    d="M6.57143 13.3518C7.00714 13.3518 7.42501 13.1788 7.7331 12.8707C8.0412 12.5626 8.21429 12.1447 8.21429 11.709C8.21429 11.2733 8.0412 10.8554 7.7331 10.5473C7.42501 10.2392 7.00714 10.0661 6.57143 10.0661C6.13572 10.0661 5.71785 10.2392 5.40975 10.5473C5.10166 10.8554 4.92857 11.2733 4.92857 11.709C4.92857 12.1447 5.10166 12.5626 5.40975 12.8707C5.71785 13.1788 6.13572 13.3518 6.57143 13.3518ZM11.5 13.3518C11.9357 13.3518 12.3536 13.1788 12.6617 12.8707C12.9698 12.5626 13.1429 12.1447 13.1429 11.709C13.1429 11.2733 12.9698 10.8554 12.6617 10.5473C12.3536 10.2392 11.9357 10.0661 11.5 10.0661C11.0643 10.0661 10.6464 10.2392 10.3383 10.5473C10.0302 10.8554 9.85714 11.2733 9.85714 11.709C9.85714 12.1447 10.0302 12.5626 10.3383 12.8707C10.6464 13.1788 11.0643 13.3518 11.5 13.3518ZM18.0714 11.709C18.0714 12.1447 17.8983 12.5626 17.5902 12.8707C17.2822 13.1788 16.8643 13.3518 16.4286 13.3518C15.9929 13.3518 15.575 13.1788 15.2669 12.8707C14.9588 12.5626 14.7857 12.1447 14.7857 11.709C14.7857 11.2733 14.9588 10.8554 15.2669 10.5473C15.575 10.2392 15.9929 10.0661 16.4286 10.0661C16.8643 10.0661 17.2822 10.2392 17.5902 10.5473C17.8983 10.8554 18.0714 11.2733 18.0714 11.709ZM23 11.709C23 18.0603 17.8513 23.209 11.5 23.209C5.14871 23.209 0 18.0603 0 11.709C0 5.3577 5.14871 0.208984 11.5 0.208984C17.8513 0.208984 23 5.3577 23 11.709ZM21.3571 11.709C21.3571 6.26538 16.9436 1.85184 11.5 1.85184C6.05639 1.85184 1.64286 6.26538 1.64286 11.709C1.64286 17.1526 6.05639 21.5661 11.5 21.5661C16.9436 21.5661 21.3571 17.1526 21.3571 11.709Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> More</span>
+            </a> -->
+          </div>
+
+          <div class="section1-div1-left-profile-pic profile-picc">
+            <p class="profile-pic-intials intial-txt">NU</p>
+            <span id="green-circle"></span>
+          </div>
+        </nav>
+      </aside>
+
+      <div class="left/card/footer">
+        <div class="left-and-card">
+          <section class="left-landing-section light-left-landing-section">
+            <div class="section1-container light-section1-container">
+              <div class="section1-div1">
+                <div class="section1-div1-left">
+                  <div>
+                    <h3 class="desktop-title-text">New User</h3>
+                    <p class="desktop-status-text">Set a status</p>
+                  </div>
+                </div>
+                <div class="section1-div1-right">
+                  <div class="toogle-btn">
+                    <input type="checkbox" id="darkmode-toggle" />
+                    <label for="darkmode-toggle">
+                      <svg
+                        version="1.1"
+                        class="moon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://		www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 49.739 49.739"
+                        style="enable-background: new 0 0 49.739 49.739"
+                        xml:space="preserve"
+                      >
+                        <path
+                          d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
                       c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
                       c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
                       C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
                       c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
-                      c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z" />
-                </svg>
+                      c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"
+                        />
+                      </svg>
 
-                <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.	w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496"
-                  style="enable-background: new 0 0 496 496" xml:space="preserve">
-                  <rect x="152.994" y="58.921" transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
-                    width="40.001" height="16" />
-                  <rect x="46.9" y="164.979" transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
-                    width="40.001" height="16" />
-                  <rect x="46.947" y="315.048" transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
-                    width="40.001" height="16" />
+                      <svg
+                        version="1.1"
+                        class="sun"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.	w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 496 496"
+                        style="enable-background: new 0 0 496 496"
+                        xml:space="preserve"
+                      >
+                        <rect
+                          x="152.994"
+                          y="58.921"
+                          transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                          width="40.001"
+                          height="16"
+                        />
+                        <rect
+                          x="46.9"
+                          y="164.979"
+                          transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                          width="40.001"
+                          height="16"
+                        />
+                        <rect
+                          x="46.947"
+                          y="315.048"
+                          transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                          width="40.001"
+                          height="16"
+                        />
 
-                  <rect x="164.966" y="409.112" transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
-                    width="16" height="39.999" />
+                        <rect
+                          x="164.966"
+                          y="409.112"
+                          transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
+                          width="16"
+                          height="39.999"
+                        />
 
-                  <rect x="303.031" y="421.036" transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
-                    width="40.001" height="16" />
+                        <rect
+                          x="303.031"
+                          y="421.036"
+                          transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                          width="40.001"
+                          height="16"
+                        />
 
-                  <rect x="409.088" y="315.018" transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
-                    width="40.001" height="16" />
+                        <rect
+                          x="409.088"
+                          y="315.018"
+                          transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                          width="40.001"
+                          height="16"
+                        />
 
-                  <rect x="409.054" y="165.011" transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
-                    width="40.001" height="16" />
-                  <rect x="315.001" y="46.895" transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
-                    width="16" height="39.999" />
-                  <path d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
-                      c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z" />
-                  <rect x="240" width="16" height="72" />
-                  <rect x="62.097" y="90.096" transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
-                    width="71.999" height="16" />
-                  <rect y="240" width="72" height="16" />
+                        <rect
+                          x="409.054"
+                          y="165.011"
+                          transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                          width="40.001"
+                          height="16"
+                        />
+                        <rect
+                          x="315.001"
+                          y="46.895"
+                          transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                          width="16"
+                          height="39.999"
+                        />
+                        <path
+                          d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+                      c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
+                        />
+                        <rect x="240" width="16" height="72" />
+                        <rect
+                          x="62.097"
+                          y="90.096"
+                          transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                          width="71.999"
+                          height="16"
+                        />
+                        <rect y="240" width="72" height="16" />
 
-                  <rect x="90.091" y="361.915" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
-                    width="16" height="71.999" />
-                  <rect x="240" y="424" width="16" height="72" />
+                        <rect
+                          x="90.091"
+                          y="361.915"
+                          transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
+                          width="16"
+                          height="71.999"
+                        />
+                        <rect x="240" y="424" width="16" height="72" />
 
-                  <rect x="361.881" y="389.915" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
-                    width="71.999" height="16" />
-                  <rect x="424" y="240" width="72" height="16" />
-                  <rect x="389.911" y="62.091" transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
-                    width="16" height="71.999" />
-                </svg>
-              </label>
-            </div>
+                        <rect
+                          x="361.881"
+                          y="389.915"
+                          transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                          width="71.999"
+                          height="16"
+                        />
+                        <rect x="424" y="240" width="72" height="16" />
+                        <rect
+                          x="389.911"
+                          y="62.091"
+                          transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                          width="16"
+                          height="71.999"
+                        />
+                      </svg>
+                    </label>
+                  </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="16" viewBox="0 0 13 16" fill="none">
-              <path
-                d="M6.5 16C7.52491 16 8.35627 15.1047 8.35627 14H4.64373C4.64373 15.1047 5.47509 16 6.5 16ZM12.7501 11.3216C12.1895 10.6728 11.1405 9.69687 11.1405 6.5C11.1405 4.07188 9.55963 2.12812 7.42799 1.65125V1C7.42799 0.447812 7.01245 0 6.5 0C5.98755 0 5.57201 0.447812 5.57201 1V1.65125C3.44037 2.12812 1.85948 4.07188 1.85948 6.5C1.85948 9.69687 0.810486 10.6728 0.249863 11.3216C0.0757564 11.5231 -0.00143083 11.7641 2.00625e-05 12C0.00321202 12.5125 0.376671 13 0.93149 13H12.0685C12.6233 13 12.9971 12.5125 13 12C13.0014 11.7641 12.9242 11.5228 12.7501 11.3216Z"
-                fill="#D9D9D9" />
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="section-2-container">
-        <div class="section-2-div1">
-          <div class="favorite-list">
-            <h6>Favorites</h6>
-
-            <div class="chat-wrapper">
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="16"
+                    viewBox="0 0 13 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M6.5 16C7.52491 16 8.35627 15.1047 8.35627 14H4.64373C4.64373 15.1047 5.47509 16 6.5 16ZM12.7501 11.3216C12.1895 10.6728 11.1405 9.69687 11.1405 6.5C11.1405 4.07188 9.55963 2.12812 7.42799 1.65125V1C7.42799 0.447812 7.01245 0 6.5 0C5.98755 0 5.57201 0.447812 5.57201 1V1.65125C3.44037 2.12812 1.85948 4.07188 1.85948 6.5C1.85948 9.69687 0.810486 10.6728 0.249863 11.3216C0.0757564 11.5231 -0.00143083 11.7641 2.00625e-05 12C0.00321202 12.5125 0.376671 13 0.93149 13H12.0685C12.6233 13 12.9971 12.5125 13 12C13.0014 11.7641 12.9242 11.5228 12.7501 11.3216Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
                 </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-            </div>
-          </div>
-
-          <div class="chat-list">
-            <h6>Chats</h6>
-            <div class="chat-wrapper">
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
-              </div>
-              <div class="section-2-div1-new-user-div">
-                <div class="section-2-div1-new-user-profile-pic intial-txt">
-                  NU
-                </div>
-                <p>New User (You)</p>
-                <img src="../../assets/icons/images__2_-removebg-preview 1.svg" alt="" />
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="section-3-container">
-        <p class="new-user-email-txt light-new-user-email-txt">
-          You signed in as
-          <i> newuser123@gmail.com </i>
-        </p>
+            <div class="section-2-container">
+              <div class="section-2-div1">
+                <div class="favorite-list">
+                  <h6>Favorites</h6>
 
-        <p class="switch-acct-txt light-switch-acct-txt">
-          Try
-          <span class="switch-link light-switch-acct-txt"><a href="../authentication/forgot_password.html">switching
-              accounts</a></span>
-          if you do not see your contacts or conversation history
-        </p>
-      </div>
-    </section>
+                  <div class="chat-wrapper">
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
 
-    <section class="landing-page-card light-landing-page-card">
-      <div class="landing-page-card-container">
-        <div>
-          <div class="start-chatting-search-icon">
-            <div class="start-chatting-txt">
-              <h2>Start chatting on ShareAm</h2>
-              <p>
-                Use
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
-                  <path
-                    d="M9.45775 8.33743L7.68926 6.45976C7.60944 6.37501 7.50123 6.32793 7.38771 6.32793H7.09858C7.58815 5.66312 7.87906 4.82693 7.87906 3.91729C7.87906 1.75336 6.22764 0 4.18953 0C2.15142 0 0.5 1.75336 0.5 3.91729C0.5 6.08122 2.15142 7.83458 4.18953 7.83458C5.04628 7.83458 5.83385 7.52572 6.46001 7.00592V7.3129C6.46001 7.43344 6.50435 7.54832 6.58417 7.63307L8.35266 9.51073C8.5194 9.68776 8.78902 9.68776 8.95399 9.51073L9.45597 8.97775C9.62271 8.80072 9.62271 8.51446 9.45775 8.33743ZM4.18953 6.32793C2.93544 6.32793 1.91905 5.25068 1.91905 3.91729C1.91905 2.58579 2.93367 1.50665 4.18953 1.50665C5.44361 1.50665 6.46001 2.58391 6.46001 3.91729C6.46001 5.24879 5.44539 6.32793 4.18953 6.32793Z"
-                    fill="#979797" />
-                </svg>
-                Search to find anyone on ShareAm
+                <div class="chat-list">
+                  <h6>Chats</h6>
+                  <div class="chat-wrapper">
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="section-2-div1-new-user-div">
+                      <div
+                        class="section-2-div1-new-user-profile-pic intial-txt"
+                      >
+                        NU
+                      </div>
+                      <p>New User (You)</p>
+                      <img
+                        src="../../assets/icons/images__2_-removebg-preview 1.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-3-container">
+              <p class="new-user-email-txt light-new-user-email-txt">
+                You signed in as
+                <i> newuser123@gmail.com </i>
+              </p>
+
+              <p class="switch-acct-txt light-switch-acct-txt">
+                Try
+                <span class="switch-link light-switch-acct-txt"
+                  ><a href="../authentication/forgot_password.html"
+                    >switching accounts</a
+                  ></span
+                >
+                if you do not see your contacts or conversation history
               </p>
             </div>
-            <div class="search-box">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path
-                  d="M23.6736 20.7495L18.9998 16.0766C18.7889 15.8656 18.5029 15.7485 18.2029 15.7485H17.4388C18.7326 14.0939 19.5014 12.0129 19.5014 9.74905C19.5014 4.36364 15.137 0 9.75071 0C4.36438 0 0 4.36364 0 9.74905C0 15.1345 4.36438 19.4981 9.75071 19.4981C12.0149 19.4981 14.0963 18.7294 15.7512 17.4358V18.1998C15.7512 18.4998 15.8683 18.7857 16.0793 18.9966L20.7531 23.6696C21.1937 24.1101 21.9063 24.1101 22.3423 23.6696L23.6689 22.3431C24.1096 21.9025 24.1096 21.1901 23.6736 20.7495ZM9.75071 15.7485C6.43641 15.7485 3.75027 13.0675 3.75027 9.74905C3.75027 6.43531 6.43172 3.74963 9.75071 3.74963C13.065 3.74963 15.7512 6.43062 15.7512 9.74905C15.7512 13.0628 13.0697 15.7485 9.75071 15.7485Z"
-                  fill="#979797" />
-              </svg>
-              <input type="text" placeholder="People, groups, message" class="desktop-subtitle-text" />
-            </div>
-          </div>
+          </section>
 
-          <div class="popup-notification-container">
-            <div class="popup-notification light-popup-notification">
-              <div class="verified-icon">
-                <svg width="40" height="40" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="22.5" cy="22.5" r="22" stroke="#22074A" />
-                  <path d="M32 15.918L11.4286 36.4996L2 27.0664L4.41714 24.648L11.4286 31.6458L37 10L32 15.918Z"
-                    fill="#22074A" />
-                </svg>
-              </div>
-
-              <div class="popup-message">
-                <div class="popup-txt">
-                  <p class="popup-txt">
-                    User, your password reset was successful
-                  </p>
+          <section class="landing-page-card light-landing-page-card">
+            <div class="landing-page-card-container">
+              <div>
+                <div class="start-chatting-search-icon">
+                  <div class="start-chatting-txt">
+                    <h2>Start chatting on ShareAm</h2>
+                    <p>
+                      Use
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M9.45775 8.33743L7.68926 6.45976C7.60944 6.37501 7.50123 6.32793 7.38771 6.32793H7.09858C7.58815 5.66312 7.87906 4.82693 7.87906 3.91729C7.87906 1.75336 6.22764 0 4.18953 0C2.15142 0 0.5 1.75336 0.5 3.91729C0.5 6.08122 2.15142 7.83458 4.18953 7.83458C5.04628 7.83458 5.83385 7.52572 6.46001 7.00592V7.3129C6.46001 7.43344 6.50435 7.54832 6.58417 7.63307L8.35266 9.51073C8.5194 9.68776 8.78902 9.68776 8.95399 9.51073L9.45597 8.97775C9.62271 8.80072 9.62271 8.51446 9.45775 8.33743ZM4.18953 6.32793C2.93544 6.32793 1.91905 5.25068 1.91905 3.91729C1.91905 2.58579 2.93367 1.50665 4.18953 1.50665C5.44361 1.50665 6.46001 2.58391 6.46001 3.91729C6.46001 5.24879 5.44539 6.32793 4.18953 6.32793Z"
+                          fill="#979797"
+                        />
+                      </svg>
+                      Search to find anyone on ShareAm
+                    </p>
+                  </div>
+                  <div class="search-box">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.6736 20.7495L18.9998 16.0766C18.7889 15.8656 18.5029 15.7485 18.2029 15.7485H17.4388C18.7326 14.0939 19.5014 12.0129 19.5014 9.74905C19.5014 4.36364 15.137 0 9.75071 0C4.36438 0 0 4.36364 0 9.74905C0 15.1345 4.36438 19.4981 9.75071 19.4981C12.0149 19.4981 14.0963 18.7294 15.7512 17.4358V18.1998C15.7512 18.4998 15.8683 18.7857 16.0793 18.9966L20.7531 23.6696C21.1937 24.1101 21.9063 24.1101 22.3423 23.6696L23.6689 22.3431C24.1096 21.9025 24.1096 21.1901 23.6736 20.7495ZM9.75071 15.7485C6.43641 15.7485 3.75027 13.0675 3.75027 9.74905C3.75027 6.43531 6.43172 3.74963 9.75071 3.74963C13.065 3.74963 15.7512 6.43062 15.7512 9.74905C15.7512 13.0628 13.0697 15.7485 9.75071 15.7485Z"
+                        fill="#979797"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder="People, groups, message"
+                      class="desktop-subtitle-text"
+                    />
+                  </div>
                 </div>
-                <div class="close-popup-btn">
-                  <svg width="21" height="28" viewBox="0 0 21 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M12.792 20.5L10.376 16.74L8.184 20.5H5.656L9.176 14.868L5.608 9.332H8.184L10.6 13.076L12.776 9.332H15.304L11.8 14.948L15.368 20.5H12.792Z"
-                      fill="black" />
-                    <rect x="0.5" y="1" width="20" height="27" stroke="black" />
-                  </svg>
+
+                <div class="popup-notification-container">
+                  <div class="popup-notification light-popup-notification">
+                    <div class="verified-icon">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 45 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="22.5" cy="22.5" r="22" stroke="#22074A" />
+                        <path
+                          d="M32 15.918L11.4286 36.4996L2 27.0664L4.41714 24.648L11.4286 31.6458L37 10L32 15.918Z"
+                          fill="#22074A"
+                        />
+                      </svg>
+                    </div>
+
+                    <div class="popup-message">
+                      <div class="popup-txt">
+                        <p class="popup-txt">
+                          User, your password reset was successful
+                        </p>
+                      </div>
+                      <div class="close-popup-btn">
+                        <svg
+                          width="21"
+                          height="28"
+                          viewBox="0 0 21 28"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12.792 20.5L10.376 16.74L8.184 20.5H5.656L9.176 14.868L5.608 9.332H8.184L10.6 13.076L12.776 9.332H15.304L11.8 14.948L15.368 20.5H12.792Z"
+                            fill="black"
+                          />
+                          <rect
+                            x="0.5"
+                            y="1"
+                            width="20"
+                            height="27"
+                            stroke="black"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-action-section-container">
+                <div class="call-to-action-section">
+                  <p class="cta-text light-cta-text">
+                    Here are some actions to get you started
+                  </p>
+                  <div class="action-btn-container">
+                    <div class="section2-div1">
+                      <a href="../messages/list.html" class="section2-div1-nav">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="26"
+                          viewBox="0 0 25 26"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.5001 0.285645C5.81259 0.285645 0.392578 5.62939 0.392578 12.2244C0.392578 15.0714 1.40469 17.6772 3.08839 19.7263C2.49721 22.6192 0.520275 25.1964 0.496627 25.2251C0.392578 25.3571 0.364201 25.5522 0.425685 25.7244C0.487168 25.8966 0.619594 25.9999 0.770938 25.9999C3.9066 25.9999 6.25716 24.1747 7.42062 23.0497C8.96716 23.7557 10.684 24.1632 12.5001 24.1632C19.1876 24.1632 24.6076 18.8194 24.6076 12.2244C24.6076 5.62939 19.1876 0.285645 12.5001 0.285645Z"
+                            fill="#0272BC"
+                          />
+                        </svg>
+                        <p
+                          class="desktop-features-text desktop-features-text-active"
+                        >
+                          Chats
+                        </p>
+                      </a>
+                      <a
+                        href="../dashboard/view.html"
+                        class="section2-div1-nav"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="18"
+                          viewBox="0 0 25 18"
+                          fill="none"
+                        >
+                          <path
+                            d="M14.592 0L2.07465 0C0.928819 0 0 1.00313 0 2.24063L0 15.7594C0 16.9969 0.928819 18 2.07465 18H14.592C15.7378 18 16.6667 16.9969 16.6667 15.7594V2.24063C16.6667 1.00313 15.7378 0 14.592 0ZM22.8125 1.76719L18.0556 5.31094V12.6891L22.8125 16.2281C23.7326 16.9125 25 16.2141 25 15.0187V2.97656C25 1.78594 23.737 1.08281 22.8125 1.76719Z"
+                            fill="#979797"
+                          />
+                        </svg>
+                        <p class="desktop-features-text">Calls</p>
+                      </a>
+                      <a
+                        href="../settings/contact_settings.html"
+                        class="section2-div1-nav"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="25"
+                          height="26"
+                          viewBox="0 0 25 26"
+                          fill="none"
+                        >
+                          <path
+                            d="M12.5001 13.1428C16.3215 13.1428 19.4187 10.265 19.4187 6.71422C19.4187 3.16343 16.3215 0.285645 12.5001 0.285645C8.67866 0.285645 5.58152 3.16343 5.58152 6.71422C5.58152 10.265 8.67866 13.1428 12.5001 13.1428ZM17.3431 14.7499H16.4404C15.2405 15.2622 13.9054 15.5535 12.5001 15.5535C11.0948 15.5535 9.7651 15.2622 8.55975 14.7499H7.65709C3.64647 14.7499 0.392578 17.7734 0.392578 21.4999L0.392578 23.5892C0.392578 24.9201 1.55468 25.9999 2.98705 25.9999H22.0132C23.4455 25.9999 24.6076 24.9201 24.6076 23.5892V21.4999C24.6076 17.7734 21.3537 14.7499 17.3431 14.7499Z"
+                            fill="#979797"
+                          />
+                        </svg>
+                        <p class="desktop-features-text">Contacts</p>
+                      </a>
+                      <a href="schedule_meeting.html" class="section2-div1-nav">
+                        <svg
+                          width="37"
+                          height="36"
+                          viewBox="0 0 37 36"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <rect
+                            id="Calendar Plus"
+                            x="0.5"
+                            width="36"
+                            height="36"
+                            fill="url(#pattern3)"
+                          />
+                          <defs>
+                            <pattern
+                              id="pattern3"
+                              patternContentUnits="objectBoundingBox"
+                              width="1"
+                              height="1"
+                            >
+                              <use
+                                xlink:href="#image0_274_3007"
+                                transform="scale(0.0111111)"
+                              />
+                            </pattern>
+                            <image
+                              id="image0_274_3007"
+                              width="90"
+                              height="90"
+                              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE5klEQVR4nO2dy4sdRRTGy4WvpUTEiVEQGcSFJEZUDCRmiC78O0SFYCIKGheiJuBKScgqiYhbVz4wSHA14GK8Xd9XPdfr1cXsXLjJG+LCZHRGD3bgcun3o6qrb31wNn1ruqt+XX2q6vSpHqWCgoKCgoKCgoKCgoKCgoKCgtTq6uo9JN8kGQH4k+T2EA3/t21E8ujGxsbdVm/9aDTaBeBn1xBoH/pY2m6tJy8iZM7AttKzE3fhvMF0C/uIDdCR64bSPeifOgcN4IbrhtI96Budg866uBqo6Kq9ATQD6C4UerQlBdCWFEBbUgBtSQG0JQXQlhRAW1IAbUkB9KKCXjRTATQDaPagJ4YeTffwguuge7DBRzOAdt7rGHo0nYMKroPuIQ7KRwO4CeBdY8xOMQDH5Jgv5X0CfWz+3HLMl/Kqa7X4+C3NnzuKogd9Ka98AW2M2Tl/bjnWVnmBlFL3pZkyEwBfAHhLa/3i9vb2HfPl5Zgx5pCkwQH4jOTUO9BIeVRJvtdWefltvrzW+mUAb49Go0frtl/+FsAbyiPQNwVexcGqdHmSmyQ/1Fo/rHxUW6BpwQCcJ/mY8lGu4bGc/Q7gJeWzPOjF30VRtEP5LtcgmW8fpM0e0iRZ+yRXSJ4g+Q2A3wBcJXkrGQ+uAvg1+e04gINW97D0tBf/Q/JwmfobY55OpmrXa1znGoBzJPcuKuhXStR7L8kfWrzmhSiK9lgHbTMWEUXRjmQOvQng47z6rq2t3UvyNMm/O7jJcv1TsoHKJmjrsQhjzKE8n6y1flxWgBaeqHEcx8uqTfUpFpEnrfUzAC52DXnGrmit96m25Cp2wQqgST7nYlOTXBPAs9ZdR5uxC6SUz3EXl21DnrFLrbgRh7GLWwDeJ/lIwcDXuU8u0bPHjQdI140g+XlO3U43gCM3+Z0klLokM5yCG19kJ70FDWDLGPNEzjy59hROwFaZBZWwzTiOd/sK+secejVdjFSdBZWx730F/XrWsrrpubtorzyBWuunvAPNjNhyErvoHejEzngFGsAfOVG4630FLVHA6XR6lzexDpJfZtRnpY0b2WXH0lq/4E2swxjzWkZ9TvQdNICPvFmCj8fjBzLq860HoL/2BjTJ+9PqI29GqixGKjc4m0OVRc20zgWcxDqijPeAZeIaaYuRtlRyUXOp8oldxTqmGSN3mR6V9vS0pYKn8HZb/6p84jZ8FuvZnX0Evb6+/tCgQE8mk/sauI5SIdY6KkhLa991dG2jjHy5soPhbTelWlLJuX/9wdDh59hWPJ7efeXTBwZfzbjxx/sOWpIt64A+6gI0gHMZoA/2HbQx5kBl0BLEkVc1DmBPcupzrcegr9QKKs181tgqbABbMpVKq0+SpjWsMOlcTzoiH0S1OEAeznmN1TvQ0jk6TRtzIQAXmkBJm/qVWYwUgD6vhqYoivYk2ynqQqm6R6bIpC5PqiEKwKkGoKvmmRSd7xM18H/wEDf1101NPs0vyTxqyIrjeFliCw4hX/R2g1JVSaKhqyRHyWJViyTtIG3XGPO8WkTFcbxsaWEVL4y7KBggTzaZ+uWYnPPTTrZW+Ko4jndLLpys1lrwxVvJrtxhzpPbkOTCkTyb7Cms7IcldjG4ZbXqUBJRk/ClJLdI3kXyiYjLycJFFiryiuwXCdpLGZL7a0fh/rvgv/CRJm7CcpoMAAAAAElFTkSuQmCC"
+                            />
+                          </defs>
+                        </svg>
+                        <p class="desktop-features-text">Calender</p>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="section2-div2">
+                    <div class="meet-now">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="12"
+                        viewBox="0 0 20 12"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.5899 0L2.07674 0C1.2059 0 0.5 0.66875 0.5 1.49375L0.5 10.5063C0.5 11.3313 1.2059 12 2.07674 12H11.5899C12.4608 12 13.1667 11.3313 13.1667 10.5063V1.49375C13.1667 0.66875 12.4608 0 11.5899 0ZM17.8375 1.17812L14.2222 3.54063V8.45938L17.8375 10.8188C18.5368 11.275 19.5 10.8094 19.5 10.0125V1.98438C19.5 1.19062 18.5401 0.721875 17.8375 1.17812Z"
+                          fill="#979797"
+                        />
+                      </svg>
+                      <select
+                        name="cars"
+                        id="cars"
+                        class="meet-now-btn meet-chat-txt"
+                      >
+                        <option value="volvo">Meet Now</option>
+                        <option value="saab">Fix Meeting</option>
+                      </select>
+                    </div>
+
+                    <div class="new-chat">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="13"
+                        viewBox="0 0 12 13"
+                        fill="none"
+                      >
+                        <path
+                          d="M5.21457 2.29102H1.7201C1.4553 2.29102 1.20135 2.40272 1.01411 2.60155C0.82687 2.80038 0.72168 3.07006 0.72168 3.35125L0.72168 10.7729C0.72168 11.0541 0.82687 11.3238 1.01411 11.5226C1.20135 11.7214 1.4553 11.8331 1.7201 11.8331H8.70903C8.97383 11.8331 9.22778 11.7214 9.41502 11.5226C9.60226 11.3238 9.70745 11.0541 9.70745 10.7729V7.06207"
+                          stroke="#979797"
+                          stroke-width="0.695812"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8.9585 1.49588C9.1571 1.28498 9.42645 1.1665 9.70731 1.1665C9.98817 1.1665 10.2575 1.28498 10.4561 1.49588C10.6547 1.70677 10.7663 1.9928 10.7663 2.29105C10.7663 2.5893 10.6547 2.87534 10.4561 3.08623L5.71364 8.12235L3.7168 8.65246L4.21601 6.53199L8.9585 1.49588Z"
+                          stroke="#979797"
+                          stroke-width="0.695812"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <select
+                        name="cars"
+                        id="cars"
+                        class="new-chat-btn meet-chat-txt"
+                      >
+                        <option value="volvo">New Chat</option>
+                        <option value="saab">Existing Chat</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="date-section">
+                <div>
+                  <p class="time-txt">12:00 PM</p>
+                  <p class="date-txt">Tuesday, October 3, 2023</p>
+                </div>
+                <div class="cta-learn-txt">
+                  <a href="#">Learn more</a>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-
-        <div class="card-action-section-container">
-          <div class="call-to-action-section">
-            <p class="cta-text light-cta-text">
-              Here are some actions to get you started
-            </p>
-            <div class="action-btn-container">
-              <div class="section2-div1">
-                <a href="../messages/list.html" class="section2-div1-nav">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
-                    <path
-                      d="M12.5001 0.285645C5.81259 0.285645 0.392578 5.62939 0.392578 12.2244C0.392578 15.0714 1.40469 17.6772 3.08839 19.7263C2.49721 22.6192 0.520275 25.1964 0.496627 25.2251C0.392578 25.3571 0.364201 25.5522 0.425685 25.7244C0.487168 25.8966 0.619594 25.9999 0.770938 25.9999C3.9066 25.9999 6.25716 24.1747 7.42062 23.0497C8.96716 23.7557 10.684 24.1632 12.5001 24.1632C19.1876 24.1632 24.6076 18.8194 24.6076 12.2244C24.6076 5.62939 19.1876 0.285645 12.5001 0.285645Z"
-                      fill="#0272BC" />
-                  </svg>
-                  <p class="desktop-features-text desktop-features-text-active">
-                    Chats
-                  </p>
-                </a>
-                <a href="../dashboard/view.html" class="section2-div1-nav">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18" viewBox="0 0 25 18" fill="none">
-                    <path
-                      d="M14.592 0L2.07465 0C0.928819 0 0 1.00313 0 2.24063L0 15.7594C0 16.9969 0.928819 18 2.07465 18H14.592C15.7378 18 16.6667 16.9969 16.6667 15.7594V2.24063C16.6667 1.00313 15.7378 0 14.592 0ZM22.8125 1.76719L18.0556 5.31094V12.6891L22.8125 16.2281C23.7326 16.9125 25 16.2141 25 15.0187V2.97656C25 1.78594 23.737 1.08281 22.8125 1.76719Z"
-                      fill="#979797" />
-                  </svg>
-                  <p class="desktop-features-text">Calls</p>
-                </a>
-                <a href="../settings/contact_settings.html" class="section2-div1-nav">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
-                    <path
-                      d="M12.5001 13.1428C16.3215 13.1428 19.4187 10.265 19.4187 6.71422C19.4187 3.16343 16.3215 0.285645 12.5001 0.285645C8.67866 0.285645 5.58152 3.16343 5.58152 6.71422C5.58152 10.265 8.67866 13.1428 12.5001 13.1428ZM17.3431 14.7499H16.4404C15.2405 15.2622 13.9054 15.5535 12.5001 15.5535C11.0948 15.5535 9.7651 15.2622 8.55975 14.7499H7.65709C3.64647 14.7499 0.392578 17.7734 0.392578 21.4999L0.392578 23.5892C0.392578 24.9201 1.55468 25.9999 2.98705 25.9999H22.0132C23.4455 25.9999 24.6076 24.9201 24.6076 23.5892V21.4999C24.6076 17.7734 21.3537 14.7499 17.3431 14.7499Z"
-                      fill="#979797" />
-                  </svg>
-                  <p class="desktop-features-text">Contacts</p>
-                </a>
-                <a href="schedule_meeting.html" class="section2-div1-nav">
-                  <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <rect id="Calendar Plus" x="0.5" width="36" height="36" fill="url(#pattern3)" />
-                    <defs>
-                      <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                        <use xlink:href="#image0_274_3007" transform="scale(0.0111111)" />
-                      </pattern>
-                      <image id="image0_274_3007" width="90" height="90"
-                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE5klEQVR4nO2dy4sdRRTGy4WvpUTEiVEQGcSFJEZUDCRmiC78O0SFYCIKGheiJuBKScgqiYhbVz4wSHA14GK8Xd9XPdfr1cXsXLjJG+LCZHRGD3bgcun3o6qrb31wNn1ruqt+XX2q6vSpHqWCgoKCgoKCgoKCgoKCgoKCgtTq6uo9JN8kGQH4k+T2EA3/t21E8ujGxsbdVm/9aDTaBeBn1xBoH/pY2m6tJy8iZM7AttKzE3fhvMF0C/uIDdCR64bSPeifOgcN4IbrhtI96Budg866uBqo6Kq9ATQD6C4UerQlBdCWFEBbUgBtSQG0JQXQlhRAW1IAbUkB9KKCXjRTATQDaPagJ4YeTffwguuge7DBRzOAdt7rGHo0nYMKroPuIQ7KRwO4CeBdY8xOMQDH5Jgv5X0CfWz+3HLMl/Kqa7X4+C3NnzuKogd9Ka98AW2M2Tl/bjnWVnmBlFL3pZkyEwBfAHhLa/3i9vb2HfPl5Zgx5pCkwQH4jOTUO9BIeVRJvtdWefltvrzW+mUAb49Go0frtl/+FsAbyiPQNwVexcGqdHmSmyQ/1Fo/rHxUW6BpwQCcJ/mY8lGu4bGc/Q7gJeWzPOjF30VRtEP5LtcgmW8fpM0e0iRZ+yRXSJ4g+Q2A3wBcJXkrGQ+uAvg1+e04gINW97D0tBf/Q/JwmfobY55OpmrXa1znGoBzJPcuKuhXStR7L8kfWrzmhSiK9lgHbTMWEUXRjmQOvQng47z6rq2t3UvyNMm/O7jJcv1TsoHKJmjrsQhjzKE8n6y1flxWgBaeqHEcx8uqTfUpFpEnrfUzAC52DXnGrmit96m25Cp2wQqgST7nYlOTXBPAs9ZdR5uxC6SUz3EXl21DnrFLrbgRh7GLWwDeJ/lIwcDXuU8u0bPHjQdI140g+XlO3U43gCM3+Z0klLokM5yCG19kJ70FDWDLGPNEzjy59hROwFaZBZWwzTiOd/sK+secejVdjFSdBZWx730F/XrWsrrpubtorzyBWuunvAPNjNhyErvoHejEzngFGsAfOVG4630FLVHA6XR6lzexDpJfZtRnpY0b2WXH0lq/4E2swxjzWkZ9TvQdNICPvFmCj8fjBzLq860HoL/2BjTJ+9PqI29GqixGKjc4m0OVRc20zgWcxDqijPeAZeIaaYuRtlRyUXOp8oldxTqmGSN3mR6V9vS0pYKn8HZb/6p84jZ8FuvZnX0Evb6+/tCgQE8mk/sauI5SIdY6KkhLa991dG2jjHy5soPhbTelWlLJuX/9wdDh59hWPJ7efeXTBwZfzbjxx/sOWpIt64A+6gI0gHMZoA/2HbQx5kBl0BLEkVc1DmBPcupzrcegr9QKKs181tgqbABbMpVKq0+SpjWsMOlcTzoiH0S1OEAeznmN1TvQ0jk6TRtzIQAXmkBJm/qVWYwUgD6vhqYoivYk2ynqQqm6R6bIpC5PqiEKwKkGoKvmmRSd7xM18H/wEDf1101NPs0vyTxqyIrjeFliCw4hX/R2g1JVSaKhqyRHyWJViyTtIG3XGPO8WkTFcbxsaWEVL4y7KBggTzaZ+uWYnPPTTrZW+Ko4jndLLpys1lrwxVvJrtxhzpPbkOTCkTyb7Cms7IcldjG4ZbXqUBJRk/ClJLdI3kXyiYjLycJFFiryiuwXCdpLGZL7a0fh/rvgv/CRJm7CcpoMAAAAAElFTkSuQmCC" />
-                    </defs>
-                  </svg>
-                  <p class="desktop-features-text">Calender</p>
-                </a>
-              </div>
-            </div>
-
-            <div class="section2-div2">
-              <div class="meet-now">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="12" viewBox="0 0 20 12" fill="none">
-                  <path
-                    d="M11.5899 0L2.07674 0C1.2059 0 0.5 0.66875 0.5 1.49375L0.5 10.5063C0.5 11.3313 1.2059 12 2.07674 12H11.5899C12.4608 12 13.1667 11.3313 13.1667 10.5063V1.49375C13.1667 0.66875 12.4608 0 11.5899 0ZM17.8375 1.17812L14.2222 3.54063V8.45938L17.8375 10.8188C18.5368 11.275 19.5 10.8094 19.5 10.0125V1.98438C19.5 1.19062 18.5401 0.721875 17.8375 1.17812Z"
-                    fill="#979797" />
-                </svg>
-                <select name="cars" id="cars" class="meet-now-btn meet-chat-txt">
-                  <option value="volvo">Meet Now</option>
-                  <option value="saab">Fix Meeting</option>
-                </select>
-              </div>
-
-              <div class="new-chat">
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                  <path
-                    d="M5.21457 2.29102H1.7201C1.4553 2.29102 1.20135 2.40272 1.01411 2.60155C0.82687 2.80038 0.72168 3.07006 0.72168 3.35125L0.72168 10.7729C0.72168 11.0541 0.82687 11.3238 1.01411 11.5226C1.20135 11.7214 1.4553 11.8331 1.7201 11.8331H8.70903C8.97383 11.8331 9.22778 11.7214 9.41502 11.5226C9.60226 11.3238 9.70745 11.0541 9.70745 10.7729V7.06207"
-                    stroke="#979797" stroke-width="0.695812" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M8.9585 1.49588C9.1571 1.28498 9.42645 1.1665 9.70731 1.1665C9.98817 1.1665 10.2575 1.28498 10.4561 1.49588C10.6547 1.70677 10.7663 1.9928 10.7663 2.29105C10.7663 2.5893 10.6547 2.87534 10.4561 3.08623L5.71364 8.12235L3.7168 8.65246L4.21601 6.53199L8.9585 1.49588Z"
-                    stroke="#979797" stroke-width="0.695812" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <select name="cars" id="cars" class="new-chat-btn meet-chat-txt">
-                  <option value="volvo">New Chat</option>
-                  <option value="saab">Existing Chat</option>
-                </select>
-              </div>
-            </div>
+        <footer class="footer-container light-footer-container">
+          <div class="section4-share-am-div">
+            <img src="../../assets/icons/001 1.svg" alt="" />
+            <h1>Share<span>Am</span></h1>
           </div>
-        </div>
 
-        <div class="date-section">
-          <div>
-            <p class="time-txt">12:00 PM</p>
-            <p class="date-txt">Tuesday, October 3, 2023</p>
+          <div class="section4-text">
+            <p>Seamless Conversations, Anytime, Anywhere.</p>
           </div>
-          <div class="cta-learn-txt">
-            <a href="#">Learn more</a>
-          </div>
-        </div>
+        </footer>
       </div>
-    </section>
-  </main>
+    </main>
 
-  <footer class="footer-container light-footer-container">
-    <div class="section4-share-am-div">
-      <img src="../../assets/icons/001 1.svg" alt="" />
-      <h1>Share<span>Am</span></h1>
-    </div>
-
-    <div class="section4-text">
-      <p>Seamless Conversations, Anytime, Anywhere.</p>
-    </div>
-  </footer>
-
-  <script src="../../renderer.js"></script>
-</body>
-
+    <script src="../../renderer.js"></script>
+  </body>
 </html>
