@@ -26,14 +26,13 @@
 html {
   font-size: 16px;
 }
-body{
+body {
   overflow: hidden;
   background-color: #22074a;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
-
 }
 
 /* Track */
@@ -52,59 +51,175 @@ body{
   background: #14042c;
 }
 
-
 /* DO NOT REMOVE THE CODE ABOVE */
 
 .main-container {
   width: 100%;
   height: 100vh;
   display: flex;
-  gap: 2vw;
- 
 }
 
 ul {
   list-style: none;
 }
 
-.side-nav {
-  margin-top: 38px;
-  height: 100%;
-  padding: 0 1vw;
-  border-right: 1px solid #979797;
+/* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
+
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* light mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
 }
 
-.side-nav-wrapper {
-  padding-top: 15px;
-  display: flex;
+.sidebar-nav {
   height: 100vh;
+  display: flex;
   flex-direction: column;
-  width: fit-content;
+  gap: 2vh;
+  padding: 4vh 1vw 2vh 1vw;
 }
 
-.side-nav img {
-  width: 50px;
-  height: 50px;
+.nav-logo,
+.profile-picc {
+  margin: auto;
+}
+
+.nav-logo img {
+  width: 70px;
+  height: 70px;
   border-radius: 100%;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  width: fit-content;
+  margin: auto;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 1vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
+  width: 180px;
+}
+
+.menu-link {
+  padding: 1.7vh 1vw;
+}
+
+.menu-text {
+  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
+  display: block;
+}
+
+svg {
+  color: var(--svg-color);
 }
 
 .profile-picc {
-  margin-top: auto;
-  margin-bottom:50px;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
-  background-color: #979797;
-  border: 1px solid #dad9d9;
 }
 
-.nav-link {
-  margin-top: auto;
-  margin-bottom: auto;
+.section1-div1-left-profile-pic {
   display: flex;
-  flex-direction: column;
-  gap: 3.5vh;
   align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  border: 1.4px solid #cfdae2;
+  position: relative;
+}
+
+.profile-pic-intials {
+  height: fit-content;
+  width: fit-content;
+}
+
+#green-circle {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+  width: 12px;
+  height: 12px;
+  background-color: #3cea43;
+  border-radius: 100%;
+  border: 0.5px solid #ffffff;
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+  border-radius: 12px;
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+}
+
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
+}
+
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+}
+
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
+
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
 }
 
 .call-interface {
@@ -448,7 +563,7 @@ ul {
     rgba(218, 217, 217, 0.67) 5%,
     rgba(218, 217, 217, 0) 154.43%
   );
-  margin: 1% 2vw 1% 0;
+  margin: 1% 2vw 1% 2vw;
 }
 
 .chat-box-wrapper {
@@ -736,6 +851,46 @@ ul {
 }
 
 /* ------------------------------ Texts styles -------------------------------------- */
+/* NAVBAR */
+
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dark-nav-texts-active {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.intial-txt {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 .desktop-msg-title-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
@@ -853,19 +1008,77 @@ input:checked + .slider:before {
 }
 /*------End of Toggle Switch Key---------*/
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .smallscreenhidden-btn {
-    display: none;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1085px and up) */
+@media only screen and (max-width: 1085px) {
+  .nav-logo img {
+    height: 65px;
+    width: 65px;
   }
 
-  .muilti-btn {
-    display: block;
+  .profile-picc {
+    width: 45px;
+    height: 45px;
+  }
+
+  #green-circle {
+    position: absolute;
+    left: 73%;
+    right: 0;
+    bottom: 7%;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+
+  .nav-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-picc {
+    width: 45px;
+    height: 45px;
+  }
+
+  #green-circle {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .nav-link-container a {
+    width: 140px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
+  .profile-picc {
+    width: 40px;
+    height: 40px;
+  }
+
+  #green-circle {
+    position: absolute;
+    left: 73%;
+    right: 0;
+    bottom: 7%;
+    width: 10px;
+    height: 10px;
+  }
+
   .wave-shadow-1 {
     height: 70px;
     width: 70px;
@@ -900,23 +1113,36 @@ input:checked + .slider:before {
     object-fit: cover;
     object-position: 50% 50%;
   }
-}
 
-/* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
-  html {
-    font-size: 12px;
+  .nav-link-container a {
+    width: fit-content;
   }
 
-  .profile-picc,
-  .side-nav img {
-    width: 30px;
-    height: 30px;
+  .menu-text {
+    display: none;
+  }
+
+  .sidebar-nav {
+    width: 12vw;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #green-circle {
+    position: absolute;
+    right: 0;
+    left: 73%;
+    bottom: 7%;
+    width: 9px;
+    height: 9px;
+  }
 
-/* suitable minimum width for this page is 700px */
+  .smallscreenhidden-btn {
+    display: none;
+  }
+
+  .muilti-btn {
+    display: block;
+  }
+}

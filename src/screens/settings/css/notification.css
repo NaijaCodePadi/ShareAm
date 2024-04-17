@@ -48,7 +48,6 @@ html {
 
 ::-webkit-scrollbar {
   width: 10px;
-
 }
 
 /* Track */
@@ -103,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.5vh;
-  width: 75%;
+  width: fit-content;
   margin: auto;
 }
 
@@ -115,6 +114,8 @@ body {
   padding: 1.7vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
+  /* ---------------------------------------------------JavaScript will be used to change the width from 100% to fit-content when the menu-text is displayed as none--------------------------------------- */
+  width: 100%;
 }
 
 header {
@@ -133,6 +134,11 @@ header {
 
 svg {
   color: var(--svg-color);
+}
+
+.menu-text {
+  /* -----------------------------------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content --------------------------------------- */
+  display: block;
 }
 
 /*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
@@ -358,9 +364,48 @@ input:checked + .slider:before {
   color: #373737;
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 998px and down) */
+@media only screen and (max-width: 998px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
   }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+  .nav-link-container a {
+    width: fit-content;
+  }
+
+  .menu-text {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
