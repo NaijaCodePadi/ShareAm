@@ -318,7 +318,7 @@ a.dark-active-menu svg {
 }
 
 .section4-wrapper {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .section4 {
