@@ -65,6 +65,7 @@ html {
   width: 100%;
   height: 100vh;
   display: flex;
+  padding: 1vh 0 0 0;
 }
 
 ul {
@@ -238,8 +239,8 @@ a.dark-active-menu svg {
 }
 
 .call-interface {
-  margin-top: 38px;
-  height: 100vh;
+  margin-top: 34px;
+  height: 94.5vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -577,10 +578,10 @@ a.dark-active-menu svg {
 }
 
 .chat-box {
-  height: 96%;
+  height: 90.5vh;
   width: 50%;
   border-radius: 14px;
-  margin: 1% 2vw 1% 2vw;
+  margin: 7vh 2vw 0 2vw;
 }
 
 .light-chat-box {
@@ -600,9 +601,8 @@ a.dark-active-menu svg {
 }
 
 .chat-box-wrapper {
-  margin-top: 18px;
-  padding: 1.5vh 2vw 2vh 2vw;
-  height: 95%;
+  padding: 1.5vh 2vw 1.5vh 2vw;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: flex-start;
