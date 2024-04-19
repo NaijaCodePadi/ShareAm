@@ -38,7 +38,179 @@ body {
 
 .landing-page-container {
   display: flex;
-  height: 92%;
+}
+
+/* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
+
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* light mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+.sidebar-nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 4vh 1vw 2vh 1vw;
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 5vh right 1.5vw, top 10vh right 10vw,
+    top 18vh right 5vw, top 27vh right 11vw, top 35vh right 1vw,
+    top 45vh right 7vw, top 57vh right 12vw, top 64vh right 2vw,
+    top 78vh right 5vw, top 82vh right 11vw, top 90vh right 13vw,
+    top 94vh right 2vw;
+  background-size: 5vh 5vw;
+}
+
+.nav-logo,
+.profile-picc {
+  margin: auto;
+}
+
+.nav-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  width: fit-content;
+  margin: auto;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 1vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
+  width: 180px;
+}
+
+.menu-link {
+  padding: 1.7vh 1vw;
+}
+
+.menu-text {
+  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
+  display: block;
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+.profile-picc {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  border: 1.4px solid #cfdae2;
+  position: relative;
+  text-decoration: none;
+}
+
+.profile-pic-intials {
+  height: fit-content;
+  width: fit-content;
+}
+
+#green-circle {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+  width: 12px;
+  height: 12px;
+  background-color: #3cea43;
+  border-radius: 100%;
+  border: 0.5px solid #ffffff;
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+  border-radius: 12px;
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+}
+
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+}
+
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+}
+
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
+
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
+
+/************* LEFT-AND-CARD GENERAL CSS ****************/
+
+.left-and-card {
+  display: flex;
+  height: 93vh;
 }
 
 /****************************LANDING PAGE LEFT SIDE******************************************/
@@ -46,13 +218,14 @@ body {
 /*----GENERAL PROPERTIES FOR LANDING PAGE LEFT SIDE----*/
 
 .left-landing-section {
-  width: 34vw;
+  margin-top: 38px;
+  width: 40vw;
   min-width: 200px;
 }
 
 .section1-container {
   width: 100%;
-  padding: 4vh 2vw;
+  padding: 2vh 2vw;
   border-bottom-right-radius: 25px;
 }
 
@@ -67,38 +240,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1vw;
-}
-
-.section1-div1-left-profile-pic {
-  display: flex;
-  width: 60px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  background-color: #d9d9d9;
-  border: 1.4px solid #cfdae2;
-  position: relative;
-}
-
-.section1-div1-left-profile-pic a {
-  text-decoration: none;
-}
-
-.profile-pic-intials {
-  height: fit-content;
-  width: fit-content;
-}
-
-#green-circle {
-  position: absolute;
-  right: 3%;
-  bottom: 10%;
-  width: 12px;
-  height: 12px;
-  background-color: #3cea43;
-  border-radius: 100%;
-  border: 0.5px solid #ffffff;
 }
 
 .section1-div1-right {
@@ -206,7 +347,7 @@ input:checked + label svg.moon {
 
 .favorite-list,
 .chat-list {
-  height: 42%;
+  height: 44%;
 }
 
 .chat-wrapper {
@@ -221,7 +362,6 @@ input:checked + label svg.moon {
 /* scrollBar */
 ::-webkit-scrollbar {
   width: 6px;
-
 }
 
 /* Track */
@@ -294,6 +434,7 @@ input:checked + label svg.moon {
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE CARD SIDE----*/
 .landing-page-card {
+  margin-top: 38px;
   width: 100%;
 }
 
@@ -301,7 +442,7 @@ input:checked + label svg.moon {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3vh 4vw 1vh 4vw;
+  padding: 2vh 4vw 1vh 4vw;
 }
 
 .start-chatting-search-icon {
@@ -312,18 +453,21 @@ input:checked + label svg.moon {
 
 .start-chatting-txt {
   width: 50%;
+  margin-right: 0.8vw;
+  margin-bottom: 1vw;
 }
 
 .search-box {
   display: flex;
   width: 50%;
-  height: 51px;
+  height: 40px;
   border-radius: 11.043px;
   background: #fff;
   gap: 2px;
   padding-left: 1vw;
   align-items: center;
   border: 1px solid #b0b0b0;
+  margin-bottom: 1vw;
 }
 
 .search-box svg {
@@ -341,7 +485,7 @@ input:checked + label svg.moon {
 
 .popup-notification-container {
   height: 49px;
-  margin-top: 2vh;
+  /* margin-top: 2vh; */
   display: block;
 }
 
@@ -411,7 +555,7 @@ input:checked + label svg.moon {
   display: flex;
   align-items: flex-end;
   height: 68px;
-  gap: 3.5vw;
+  gap: 2.8vw;
 }
 
 .section2-div1-nav {
@@ -478,12 +622,10 @@ input:checked + label svg.moon {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 8%;
-  padding: 0 3vw;
+  height: 7vh;
+  padding-right: 3vw;
   align-items: center;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0 5px 0 0;
   background-image: url("../../../assets/icons/video-conference.svg"),
     url("../../../assets/icons/worldwide-location.svg"),
     url("../../../assets/icons/chat-room.svg"),
@@ -513,7 +655,7 @@ input:checked + label svg.moon {
 }
 
 .section4-share-am-div img {
-  height: 8vh;
+  height: 7vh;
 }
 
 /*----LIGHT AND DARK MODE FOR LANDING PAGE FOOTER----*/
@@ -526,6 +668,38 @@ input:checked + label svg.moon {
 }
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
+/* NAVBAR */
+
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dark-nav-texts-active {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 .intial-txt {
   color: #fff;
   font-family: Poppins-bold;
@@ -566,7 +740,7 @@ input:checked + label svg.moon {
 
 .new-user-email-txt {
   font-family: poppins-regular;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
@@ -580,7 +754,7 @@ input:checked + label svg.moon {
 
 .switch-acct-txt {
   font-family: poppins-regular;
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 500;
 }
 
@@ -730,11 +904,19 @@ input:checked + label svg.moon {
   }
 
   .section-2-div1 {
-    height: 60vh;
+    height: 64vh;
   }
 
   .new-user-email-txt {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
+  }
+
+  .switch-acct-txt {
+    font-size: 0.6rem;
+  }
+
+  .section1-container {
+    padding: 3vh 2vw;
   }
 }
 
@@ -744,15 +926,12 @@ input:checked + label svg.moon {
     font-size: 12px;
   }
 
-  .section1-container {
-    padding: 3vh 2vw;
+  .nav-logo img {
+    height: 65px;
+    width: 65px;
   }
 
-  .section1-div1-left {
-    width: 60%;
-  }
-
-  .section1-div1-left-profile-pic {
+  .profile-picc {
     width: 45px;
     height: 45px;
   }
@@ -766,8 +945,20 @@ input:checked + label svg.moon {
     height: 10px;
   }
 
+  .nav-link-container a {
+    width: 150px;
+  }
+
+  .section1-container {
+    padding: 3vh 2vw;
+  }
+
+  .section1-div1-left {
+    width: 60%;
+  }
+
   .section-2-div1 {
-    height: 67vh;
+    height: 66vh;
   }
 
   .start-chatting-txt {
@@ -806,26 +997,34 @@ input:checked + label svg.moon {
     font-size: 12px;
   }
 
+  .nav-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-picc {
+    width: 45px;
+    height: 45px;
+  }
+
+  #green-circle {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .nav-link-container a {
+    width: 140px;
+  }
+
   .section1-container {
     padding: 3vh 2vw;
   }
 
   .section1-div1-left {
     display: block;
-  }
-
-  .section1-div1-left-profile-pic {
-    width: 50px;
-    height: 50px;
-  }
-
-  #green-circle {
-    position: absolute;
-    left: 73%;
-    right: 0;
-    bottom: 7%;
-    width: 10px;
-    height: 10px;
   }
 
   .desktop-title-text {
@@ -838,16 +1037,16 @@ input:checked + label svg.moon {
   }
 
   .new-user-email-txt {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 
   .switch-acct-txt {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
 
   .section-2-div1 {
     padding: 2vh 2vw 1vh 2.5vw;
-    height: 58vh;
+    height: 64vh;
   }
 
   .start-chatting-txt {
@@ -870,6 +1069,10 @@ input:checked + label svg.moon {
   .footer-container {
     background-size: 25px;
   }
+
+  .start-chatting-search-icon {
+    display: block;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -878,17 +1081,9 @@ input:checked + label svg.moon {
     font-size: 12px;
   }
 
-  .section1-container {
-    padding: 3vh 2vw;
-  }
-
-  .section1-div1-left {
-    display: block;
-  }
-
-  .section1-div1-left-profile-pic {
-    width: 45px;
-    height: 45px;
+  .profile-picc {
+    width: 40px;
+    height: 40px;
   }
 
   #green-circle {
@@ -900,6 +1095,26 @@ input:checked + label svg.moon {
     height: 10px;
   }
 
+  .nav-link-container a {
+    width: fit-content;
+  }
+
+  .menu-text {
+    display: none;
+  }
+
+  .sidebar-nav {
+    width: 12vw;
+  }
+
+  .section1-container {
+    padding: 3vh 2vw;
+  }
+
+  .section1-div1-left {
+    display: block;
+  }
+
   .desktop-title-text {
     font-size: 1.25rem;
   }
@@ -908,9 +1123,17 @@ input:checked + label svg.moon {
     font-size: 0.8rem;
   }
 
+  .new-user-email-txt {
+    font-size: 0.65rem;
+  }
+
+  .switch-acct-txt {
+    font-size: 0.55rem;
+  }
+
   .section-2-div1 {
     padding: 2vh 2vw 1vh 2.5vw;
-    height: 58vh;
+    height: 65vh;
   }
 
   .start-chatting-txt {
@@ -924,10 +1147,6 @@ input:checked + label svg.moon {
 
   .desktop-subtitle-text {
     font-size: 1.2rem;
-  }
-
-  .start-chatting-search-icon {
-    display: block;
   }
 
   .section2-div2 {
@@ -993,7 +1212,7 @@ input:checked + label svg.moon {
 
   .section-2-div1 {
     padding: 2vh 2vw 1vh 2.5vw;
-    height: 61vh;
+    height: 67vh;
   }
 
   .start-chatting-txt {

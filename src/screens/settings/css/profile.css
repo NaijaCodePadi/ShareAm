@@ -27,28 +27,20 @@ html {
   src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
-
-
 /* DO NOT REMOVE THE CODE ABOVE */
 
-/* /-----------------------SIDE BAR -------------------------/ */
-:root {
-  /* General */
-  --svg-color: #a9a9a9;
-  /* light mode */
-  --lm-sidebar-bg-color: #22074a;
-  --lm-active-menu-bg-color: #ffffff;
-  --lm-active-menu: rgba(34, 32, 32, 0.9);
+body {
+  user-select: none;
+}
 
-  /* light mode */
-  --dm-sidebar-bg-color: #1f201f;
-  --dm-active-menu: #fffcfc;
-  --dm-active-menu-bg-color: #373737;
+.profile-body {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
   width: 10px;
-
 }
 
 /* Track */
@@ -67,35 +59,58 @@ html {
   background: #14042c;
 }
 
-/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+/* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
 
-body {
-  user-select: none;
-}
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
 
-.profile-body {
-  display: flex;
-  height: 100vh;
-  overflow: hidden;
+  /* light mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
 }
 
 .sidebar-nav {
-  width: 20vw;
-  min-width: 220px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  padding-top: 4vh;
+  padding: 4vh 1vw 2vh 1vw;
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/worldwide-location.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 5vh right 1.5vw, top 10vh right 10vw,
+    top 18vh right 5vw, top 27vh right 11vw, top 35vh right 1vw,
+    top 45vh right 7vw, top 57vh right 12vw, top 64vh right 2vw,
+    top 78vh right 5vw, top 82vh right 11vw, top 90vh right 13vw,
+    top 94vh right 2vw;
+  background-size: 5vh 5vw;
 }
 
-header {
+.nav-logo,
+.profile-picc {
   margin: auto;
 }
 
-.prof-pic {
-  width: 75px;
-  height: 75px;
+.nav-logo img {
+  width: 70px;
+  height: 70px;
   border-radius: 100%;
 }
 
@@ -103,26 +118,61 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1.5vh;
-  width: 75%;
+  width: fit-content;
   margin: auto;
 }
 
 .nav-link-container a {
   text-decoration: none;
   display: inline-flex;
-  align-items: center;
-  gap: 19px;
-  padding: 1.7vh 1vw;
+  gap: 15px;
+  padding: 1vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
+  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
+  width: 180px;
 }
 
 .menu-link {
   padding: 1.7vh 1vw;
 }
 
+.menu-text {
+  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
+  display: block;
+}
+
 svg {
   color: var(--svg-color);
+}
+
+.profile-picc {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  border: 1.4px solid #cfdae2;
+  position: relative;
+  text-decoration: none;
+}
+
+.profile-pic-intials {
+  height: fit-content;
+  width: fit-content;
+}
+
+#green-circle {
+  position: absolute;
+  right: 0;
+  bottom: 6%;
+  width: 12px;
+  height: 12px;
+  background-color: #3cea43;
+  border-radius: 100%;
+  border: 0.5px solid #ffffff;
 }
 
 /*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
@@ -135,7 +185,6 @@ svg {
   background-color: var(--lm-active-menu-bg-color);
   color: var(--lm-active-menu);
   border-radius: 12px;
-  padding: 1.7vh 1vw;
 }
 
 .light-nav-link-container a:hover svg {
@@ -145,7 +194,6 @@ svg {
 a.light-active-menu {
   background-color: var(--lm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 1.7vh 1vw;
 }
 
 a.light-active-menu svg {
@@ -156,24 +204,12 @@ a.light-active-menu svg {
 
 .dark-sidebar-nav {
   background-color: var(--dm-sidebar-bg-color);
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px,
-    top 395px right 250px, top 450px right 18px, top 547px right 160px,
-    top 789px right 231px;
 }
 
 .dark-nav-link-container a:hover {
   color: var(--dm-active-menu);
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 1.7vh 1vw;
 }
 
 .dark-nav-link-container a:hover svg {
@@ -183,7 +219,6 @@ a.light-active-menu svg {
 a.dark-active-menu {
   background-color: var(--dm-active-menu-bg-color);
   border-radius: 12px;
-  padding: 1.7vh 1vw;
 }
 
 a.dark-active-menu svg {
@@ -196,7 +231,6 @@ a.dark-active-menu svg {
   height: 100vh;
   overflow-y: auto;
 }
-
 
 .dark-mainbody {
   background-color: #262626;
@@ -679,6 +713,14 @@ footer {
   font-weight: 700;
 }
 
+.intial-txt {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 /* -------profile texts styles------- */
 
 .pop-reg-txt {
@@ -833,9 +875,65 @@ footer {
   line-height: 22px;
 }
 
-@media (max-width: 800px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) {
   html {
     font-size: 12px;
+  }
+
+  .menu-text {
+    font-size: 1.1rem;
+  }
+
+  .nav-logo img {
+    height: 65px;
+    width: 65px;
+  }
+
+  .profile-picc {
+    width: 45px;
+    height: 45px;
+  }
+
+  #green-circle {
+    position: absolute;
+    left: 73%;
+    right: 0;
+    bottom: 7%;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 998px and down) */
+@media only screen and (max-width: 998px) {
+  html {
+    font-size: 12px;
+  }
+
+  .nav-logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profile-picc {
+    width: 45px;
+    height: 45px;
+  }
+
+  #green-circle {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+    width: 10px;
+    height: 10px;
   }
 
   .display-username,
@@ -855,4 +953,61 @@ footer {
   .url-text {
     font-size: 1rem;
   }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  .profile-picc {
+    width: 40px;
+    height: 40px;
+  }
+
+  #green-circle {
+    position: absolute;
+    left: 73%;
+    right: 0;
+    bottom: 7%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .nav-link-container a {
+    width: fit-content;
+  }
+
+  .menu-text {
+    display: none;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+
+  #green-circle {
+    position: absolute;
+    right: 0;
+    left: 73%;
+    bottom: 7%;
+    width: 9px;
+    height: 9px;
+  }
+
+  .nav-link-container a {
+    width: fit-content;
+  }
+
+  .menu-text {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }

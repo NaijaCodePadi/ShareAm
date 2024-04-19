@@ -8,11 +8,28 @@
       http-equiv="Content-Security-Policy"
       content="script-src 'self' 'unsafe-inline';"
     />
-    <link rel="stylesheet" href="./css/light.css" />
-    <!-- <link rel="stylesheet" href="./css/authentication.css"> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./../common/control-bar.css" />
   </head>
 
   <body>
+     <!-- Top Control Bar -->
+     <header>
+      <div class="icon-bar">
+        <div>
+          <img src="../../assets/images/logo.png" alt="ShareAm_Logo"> 
+        </div>
+        <div>
+          Start Meeting | ShareAm
+        </div>
+      </div>
+      <div id="control-box-parent" class="control-box">
+        <div id="minimize-button" class="minimize"> <img src="../../assets/icons/control_box/minimize.svg"></div>
+        <div id="maximize-button" class="maximize"><img src="../../assets/icons/control_box/maximize.svg"></div>
+        <div id="close-button" class="main-close-button"><img src="../../assets/icons/control_box/close.svg"></div>
+      </div>
+    </header>
+    <!-- End Of Top Control Bar -->
     <div class="container">
       <aside class="sidebar">
         <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
@@ -161,19 +178,16 @@
         <!--END TOGGLE BUTTON  -->
       </aside>
       <div class="content">
-        <div class="close-btn">
-          <img src="../../assets/icons/Close.svg" />
-        </div>
         <div class="auth">
-          <!-- Join meeting link -->
-          <a href="join_meeting.html">Join meeting</a>
 
           <h2>Video calls for everyone</h2>
-          <p class="input-group">Start a meeting</p>
-          <button class="start-call-btn" onclick="gotohome()" type="submit">
-            <img src="../../assets/images/Vector.svg" alt="" />
-            click to start call
+          <button class="btn-login" onclick="gotohome()" type="submit">
+            Start a Meeting
           </button>
+          <div class="links" style="text-align: center;">
+            Already have an account? <a href="./login.html">Log In </a>
+         
+          </div>
           <div class="logUp-with-div">
             <span class="lines"></span>
             <div class="logUp-with">
@@ -181,13 +195,14 @@
             </div>
             <span class="lines"></span>
           </div>
+          <br>
           <form action="#" method="post">
             <div class="input-group">
-              <label for="username">Enter link to start meeting:</label>
-              <input type="text" id="username" name="username" required />
+              <label for="meeting_id">Enter link to start meeting:</label>
+              <input type="text" id="meeting_id" required />
             </div>
             <button class="btn-login" onclick="gotohome()" type="submit">
-              Log In
+              Join
             </button>
           </form>
           <div class="links">
