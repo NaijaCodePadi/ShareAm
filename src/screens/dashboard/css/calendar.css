@@ -211,6 +211,7 @@ a.dark-active-menu svg {
 .left-and-card {
   display: flex;
   height: 93vh;
+  /* width: 100%; */
 }
 
 /****************************LANDING PAGE LEFT SIDE******************************************/
@@ -218,10 +219,15 @@ a.dark-active-menu svg {
 /*----GENERAL PROPERTIES FOR LANDING PAGE LEFT SIDE----*/
 
 .left-landing-section {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2vh; */
   margin-top: 38px;
   width: 45vw;
-  min-width: 200px;
-  background-color: green;
+  /* min-width: 200px; */
+  /* padding-bottom: 2vh; */
+  /* background-color: green; */
+  /* height: 100%; */
 }
 
 .section1-container {
@@ -349,15 +355,6 @@ input:checked + label svg.moon {
 .favorite-list,
 .chat-list {
   height: 44%;
-}
-
-.chat-wrapper {
-  height: 80%;
-  overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  padding-right: 2vw;
 }
 
 /* scrollBar */
@@ -538,17 +535,20 @@ input:checked + label svg.moon {
   display: flex;
   align-items: center;
   overflow: hidden;
-  /* justify-content: space-between; */
 }
 
 .card-action-section-div1 {
+  height: 63vh;
+  overflow-y: auto;
+}
+
+.schedules {
   display: flex;
   flex-direction: column;
   gap: 2vh;
-  padding: 3vh 0 0 2vw;
   width: fit-content;
-  /* height: 100%; */
-  background-color: yellow;
+  margin: auto;
+  padding: 0 1vw;
 }
 
 .div1-navbar {
@@ -560,7 +560,7 @@ input:checked + label svg.moon {
 
 .div1-navbar p {
   padding: 1.5vh 1.78vw;
-  font-size: 0.9vw;
+  font-size: 0.8rem;
   font-family: poppins-regular;
   cursor: pointer;
 }
@@ -571,13 +571,9 @@ input:checked + label svg.moon {
 }
 
 .div1-contact-details-container {
-  height: 65vh;
-  overflow: auto;
-}
-
-.div1-contact-details-wrapper {
-  /* overflow-y: auto;
-  background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
 
 .div1-contact-details {
@@ -637,7 +633,7 @@ input:checked + label svg.moon {
 
 .contact-details-actions {
   display: flex;
-  gap: 1vw;
+  justify-content: space-around;
 }
 
 .action-btn {
@@ -670,22 +666,11 @@ input:checked + label svg.moon {
   justify-content: center;
   gap: 3vh;
   height: 100%;
-  /* width: 100%; */
-  background-color: red;
+  margin: auto;
+  padding-top: 5vh;
 }
 
 .schedule-meeting-btn {
-  width: fit-content;
-  background: #22074a;
-  color: #fff;
-  font-family: poppins-medium;
-  text-align: center;
-  padding: 10vh 2vw;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.schedule-meeting-btn2 {
   background: #22074a;
   color: #fff;
   font-family: poppins-medium;
@@ -694,6 +679,7 @@ input:checked + label svg.moon {
   padding: 3vh 3vw;
   border-radius: 8px;
   cursor: pointer;
+  border: none;
 }
 
 .calender-container {
