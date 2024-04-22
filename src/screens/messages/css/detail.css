@@ -368,13 +368,6 @@ main {
   border-radius: 100%;
 }
 
-.user-details {
-  width: 100%;
-  display: flex;
-  gap: 1vw;
-  justify-content: space-between;
-}
-
 #blue-text {
   color: #0272bc;
 }
