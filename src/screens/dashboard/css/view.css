@@ -92,8 +92,8 @@ ul {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
-  padding: 4vh 1vw 2vh 1vw;
+  gap: 1.5vh;
+  padding: 7vh 1vw 2vh 1vw;
   background-image: url("../../../assets/icons/worldwide-location.svg"),
     url("../../../assets/icons/chat-room.svg"),
     url("../../../assets/icons/video-conference.svg"),
@@ -116,15 +116,8 @@ ul {
   background-size: 5vh 5vw;
 }
 
-.nav-logo,
 .profile-picc {
   margin: auto;
-}
-
-.nav-logo img {
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
 }
 
 .nav-link-container {
@@ -160,8 +153,8 @@ svg {
 }
 
 .profile-picc {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -179,13 +172,24 @@ svg {
 
 #green-circle {
   position: absolute;
-  right: 0;
-  bottom: 6%;
+  right: 3%;
+  bottom: 7%;
   width: 12px;
   height: 12px;
   background-color: #3cea43;
   border-radius: 100%;
   border: 0.5px solid #ffffff;
+}
+
+.section4-share-am-div {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.shaream-logo {
+  height: 6vh;
 }
 
 /*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
@@ -924,6 +928,17 @@ a.dark-active-menu svg {
   text-align: center;
 }
 
+.shaream-txt {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.shaream-txt > span {
+  color: #6f3fe3;
+}
+
 .desktop-msg-title-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
@@ -949,10 +964,11 @@ a.dark-active-menu svg {
   font-size: 0.7rem;
   font-weight: 400;
 }
+
 .desktop-thanks-txt {
   color: #fff;
   font-family: Poppins-regular;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 500;
 }
 .desktop-msg-graphic-title-txt {
@@ -1047,21 +1063,20 @@ input:checked + .slider:before {
 
 /* Extra large devices (large laptops and desktops, 1085px and up) */
 @media only screen and (max-width: 1085px) {
-  .nav-logo img {
-    height: 65px;
-    width: 65px;
+  html {
+    font-size: 15px;
   }
 
   .profile-picc {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
   #green-circle {
     position: absolute;
     left: 73%;
-    right: 0;
-    bottom: 7%;
+    right: 2%;
+    bottom: 3%;
     width: 10px;
     height: 10px;
   }
@@ -1070,25 +1085,7 @@ input:checked + .slider:before {
 /* Large devices (laptops/desktops, 992px and down) */
 @media only screen and (max-width: 992px) {
   html {
-    font-size: 12px;
-  }
-
-  .nav-logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .profile-picc {
-    width: 45px;
-    height: 45px;
-  }
-
-  #green-circle {
-    position: absolute;
-    right: 0;
-    bottom: 5%;
-    width: 10px;
-    height: 10px;
+    font-size: 13px;
   }
 
   .nav-link-container a {
@@ -1099,15 +1096,15 @@ input:checked + .slider:before {
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
   .profile-picc {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   #green-circle {
     position: absolute;
     left: 73%;
-    right: 0;
-    bottom: 7%;
+    right: 2%;
+    bottom: 3%;
     width: 10px;
     height: 10px;
   }
@@ -1151,8 +1148,13 @@ input:checked + .slider:before {
     width: fit-content;
   }
 
-  .menu-text {
+  .menu-text,
+  .shaream-txt {
     display: none;
+  }
+
+  .shaream-logo {
+    height: 8vh;
   }
 
   .sidebar-nav {
@@ -1164,9 +1166,9 @@ input:checked + .slider:before {
 @media only screen and (max-width: 600px) {
   #green-circle {
     position: absolute;
-    right: 0;
+    right: 2%;
     left: 73%;
-    bottom: 7%;
+    bottom: 3%;
     width: 9px;
     height: 9px;
   }

@@ -79,8 +79,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
-  padding: 4vh 1vw 2vh 1vw;
+  gap: 1.5vh;
+  padding: 7vh 1vw 2vh 1vw;
   background-image: url("../../../assets/icons/worldwide-location.svg"),
     url("../../../assets/icons/chat-room.svg"),
     url("../../../assets/icons/video-conference.svg"),
@@ -103,15 +103,8 @@ body {
   background-size: 5vh 5vw;
 }
 
-.nav-logo,
 .profile-picc {
   margin: auto;
-}
-
-.nav-logo img {
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
 }
 
 .nav-link-container {
@@ -147,8 +140,8 @@ svg {
 }
 
 .profile-picc {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,13 +159,24 @@ svg {
 
 #green-circle {
   position: absolute;
-  right: 0;
-  bottom: 6%;
+  right: 3%;
+  bottom: 7%;
   width: 12px;
   height: 12px;
   background-color: #3cea43;
   border-radius: 100%;
   border: 0.5px solid #ffffff;
+}
+
+.section4-share-am-div {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 0;
+}
+
+.shaream-logo {
+  height: 6vh;
 }
 
 /*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
@@ -442,8 +446,8 @@ h3 {
 
 .main-section-4-wrap {
   display: flex;
-  justify-content: space-between;
   margin: 4vh 4vw 10vh 4vw;
+  gap: 20vw;
 }
 
 .location {
@@ -486,24 +490,27 @@ h3 {
   outline: none;
 }
 
+.unique-url-wrapper {
+  width: 35%;
+}
+
 .unique-url {
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3vh;
-  /* margin-left: 2vw; */
 }
 
 .url-link {
   width: fit-content;
   padding: 8px 2vw;
-  border-radius: 60px;
+  border-radius: 30px;
   border: 1px solid #e4e4e4;
 }
 
 .url-link a {
   display: inline-block;
-  width: 100%;
+  word-break: break-all;
 }
 
 .light-url-link {
@@ -721,6 +728,17 @@ footer {
   text-align: center;
 }
 
+.shaream-txt {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.shaream-txt > span {
+  color: #6f3fe3;
+}
+
 /* -------profile texts styles------- */
 
 .pop-reg-txt {
@@ -892,21 +910,16 @@ footer {
     font-size: 1.1rem;
   }
 
-  .nav-logo img {
-    height: 65px;
-    width: 65px;
-  }
-
   .profile-picc {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
   #green-circle {
     position: absolute;
     left: 73%;
-    right: 0;
-    bottom: 7%;
+    right: 2%;
+    bottom: 3%;
     width: 10px;
     height: 10px;
   }
@@ -916,24 +929,6 @@ footer {
 @media only screen and (max-width: 998px) {
   html {
     font-size: 12px;
-  }
-
-  .nav-logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .profile-picc {
-    width: 45px;
-    height: 45px;
-  }
-
-  #green-circle {
-    position: absolute;
-    right: 0;
-    bottom: 5%;
-    width: 10px;
-    height: 10px;
   }
 
   .display-username,
@@ -946,7 +941,7 @@ footer {
   .inside-input-text,
   .enter-password,
   .location,
-  .unique-url {
+  .unique-url-wrapper {
     width: 100%;
   }
 
@@ -962,15 +957,15 @@ footer {
   }
 
   .profile-picc {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   #green-circle {
     position: absolute;
     left: 73%;
-    right: 0;
-    bottom: 7%;
+    right: 2%;
+    bottom: 3%;
     width: 10px;
     height: 10px;
   }
@@ -979,8 +974,17 @@ footer {
     width: fit-content;
   }
 
-  .menu-text {
+  .menu-text,
+  .shaream-txt {
     display: none;
+  }
+
+  .shaream-logo {
+    height: 8vh;
+  }
+
+  .sidebar-nav {
+    width: 12vw;
   }
 }
 
@@ -994,7 +998,7 @@ footer {
     position: absolute;
     right: 0;
     left: 73%;
-    bottom: 7%;
+    bottom: 3%;
     width: 9px;
     height: 9px;
   }
