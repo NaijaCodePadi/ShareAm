@@ -60,8 +60,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
-  padding: 4vh 1vw 2vh 1vw;
+  gap: 1.5vh;
+  padding: 7vh 1vw 0vh 1vw;
   background-image: url("../../../assets/icons/worldwide-location.svg"),
     url("../../../assets/icons/chat-room.svg"),
     url("../../../assets/icons/video-conference.svg"),
@@ -128,8 +128,8 @@ svg {
 }
 
 .profile-picc {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,8 +147,8 @@ svg {
 
 #green-circle {
   position: absolute;
-  right: 0;
-  bottom: 6%;
+  right: 3%;
+  bottom: 7%;
   width: 12px;
   height: 12px;
   background-color: #3cea43;
@@ -652,10 +652,12 @@ input:checked + label svg.moon {
 .section4-share-am-div {
   display: flex;
   align-items: center;
+  margin: auto;
+  margin-bottom: 0;
 }
 
-.section4-share-am-div img {
-  height: 7vh;
+.shaream-logo {
+  height: 6vh;
 }
 
 /*----LIGHT AND DARK MODE FOR LANDING PAGE FOOTER----*/
@@ -863,18 +865,15 @@ input:checked + label svg.moon {
   text-decoration: none;
 }
 
-.section4-share-am-div h1 {
+.shaream-txt {
   color: #fff;
   font-family: Poppins-bold;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
 }
 
-.section4-share-am-div h1 > span {
+.shaream-txt > span {
   color: #6f3fe3;
-  font-family: Poppins-bold;
-  font-size: 1.8rem;
-  font-weight: 800;
 }
 
 .section4-text {
@@ -926,21 +925,16 @@ input:checked + label svg.moon {
     font-size: 12px;
   }
 
-  .nav-logo img {
-    height: 65px;
-    width: 65px;
-  }
-
   .profile-picc {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
   #green-circle {
     position: absolute;
     left: 73%;
-    right: 0;
-    bottom: 7%;
+    right: 2%;
+    bottom: 3%;
     width: 10px;
     height: 10px;
   }
@@ -995,24 +989,6 @@ input:checked + label svg.moon {
 @media only screen and (max-width: 998px) {
   html {
     font-size: 12px;
-  }
-
-  .nav-logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .profile-picc {
-    width: 45px;
-    height: 45px;
-  }
-
-  #green-circle {
-    position: absolute;
-    right: 0;
-    bottom: 5%;
-    width: 10px;
-    height: 10px;
   }
 
   .nav-link-container a {
@@ -1082,15 +1058,15 @@ input:checked + label svg.moon {
   }
 
   .profile-picc {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   #green-circle {
     position: absolute;
     left: 73%;
-    right: 0;
-    bottom: 7%;
+    right: 2%;
+    bottom: 3%;
     width: 10px;
     height: 10px;
   }
@@ -1099,8 +1075,13 @@ input:checked + label svg.moon {
     width: fit-content;
   }
 
-  .menu-text {
+  .menu-text,
+  .shaream-txt {
     display: none;
+  }
+
+  .shaream-logo {
+    height: 8vh;
   }
 
   .sidebar-nav {
@@ -1195,9 +1176,9 @@ input:checked + label svg.moon {
 
   #green-circle {
     position: absolute;
-    right: 0;
+    right: 2%;
     left: 73%;
-    bottom: 7%;
+    bottom: 3%;
     width: 9px;
     height: 9px;
   }
