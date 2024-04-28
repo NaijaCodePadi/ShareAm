@@ -593,3 +593,48 @@ input:checked + .slider:before {
 @media only screen and (min-width: 1200px) {
 }
 /*-------END---------*/
+
+
+
+
+
+.cs-sections > section {
+  padding: 0vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cs-sections > section > span {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.cs-sections > section > span > .light-arrow-svg,
+.cs-sections > section > span > .dark-arrow-svg {
+  width: 21px;
+  height: 14px;
+}
+
+.cs-sections > section > span > .light-arrow-svg {
+  color: #000;
+}
+
+.cs-sections > section > span > .dark-arrow-svg {
+  color: #e4e4e4;
+}
+
+.cs-sections > section:nth-child(4) > span > .light-arrow-svg {
+  margin-right: 8px;
+}
+
+.cs-sections > section:nth-child(5) > span > .light-arrow-svg {
+  transform: rotate(90deg);
+}
+
+.cs-sections > section:last-child {
+  border: none;
+}

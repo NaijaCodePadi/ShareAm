@@ -442,7 +442,7 @@ input:checked + label svg.moon {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3vh 4vw 1vh 4vw;
+  padding: 2vh 4vw 1vh 4vw;
 }
 
 .start-chatting-search-icon {
@@ -460,7 +460,7 @@ input:checked + label svg.moon {
 .search-box {
   display: flex;
   width: 50%;
-  height: 51px;
+  height: 40px;
   border-radius: 11.043px;
   background: #fff;
   gap: 2px;
@@ -485,7 +485,7 @@ input:checked + label svg.moon {
 
 .popup-notification-container {
   height: 49px;
-  margin-top: 2vh;
+  /* margin-top: 2vh; */
   display: block;
 }
 
