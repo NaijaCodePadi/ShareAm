@@ -2,14 +2,15 @@
 
 ### A desktop app to schedule and manage your meetings.
 
-![alt text](./src/assets/images/logo.png)
+![alt text](./src/assets/images/snap-shot7.png)
 
 ## Technologies
 
 - HTML
 - CSS
-- Java Script
+- Javascript
 - Node.Js
+- Electron
 
 ## Introduction
 
@@ -18,12 +19,11 @@ collaborate on projects all with one easy-to-use platform. ShareAm offers qualit
 
 ### Project Snap Shots
 
-![alt text](./src/assets/images/snap-shot1.PNG)
-![alt text](./src/assets/images/snap-shot5.PNG)
-![alt text](./src/assets/images/snap-shot6.PNG)
+![splash screen](./src/assets/images/snap-shot1.PNG)
+![schedule meeting view](./src/assets/images/snap-shot5.png)
+![video or call meeting view](./src/assets/images/snap-shot6.png)
 
 ## Features
-
 - Meeting Scheduling
 - High quality voice and video calling
 - Video and Voice Conferencing
@@ -37,10 +37,9 @@ collaborate on projects all with one easy-to-use platform. ShareAm offers qualit
 - Light and Dark mode
 
 ## User Instructions
-
 - User is expected to create an account if he/she doesn't have one.
-  ![alt text](./src/assets/images/snap-shot2.png)
+  ![acces to login](./src/assets/images/snap-shot2.png)
 - user can edit profile in the profile section
-  ![alt text](./src/assets/images/snap-shot3.png)
-- you can either start a call or choose to chat by selecting any of the buttons responsible for either of the functions
-  ![alt text](./src/assets/images/snap-shot3.png)
+  ![profile page](./src/assets/images/snap-shot3.png)
+- you can either start a call or choose to chat by selecting any of the buttons responsible for either of the options
+  ![main page](./src/assets/images/snap-shot4.png)
