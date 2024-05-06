@@ -1,5 +1,5 @@
 {
-  "name": "shareAm",
+  "name": "shaream",
   "productName": "shareAm",
   "version": "1.0.0",
   "description": "My Electron application description",
@@ -9,7 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "eslint ./"
   },
   "keywords": [],
   "author": {
