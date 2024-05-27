@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/view.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Call Interface | ShareAm</title>
+    <link rel="stylesheet" href="./../common/control-bar.css" />
+  </head>
+  <body class="content light-content">
+    <!-- Top Control Bar -->
+    <header>
+      <div class="icon-bar">
+        <div>
+          <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
+        </div>
+        <div>Call Interface | ShareAm</div>
+      </div>
+      <div id="control-box-parent" class="control-box">
+        <div id="minimize-button" class="minimize">
+          <img src="../../assets/icons/control_box/minimize.svg" />
+        </div>
+        <div id="maximize-button" class="maximize">
+          <img src="../../assets/icons/control_box/maximize.svg" />
+        </div>
+        <div id="close-button" class="main-close-button">
+          <img src="../../assets/icons/control_box/close.svg" />
+        </div>
+      </div>
+    </header>
+    <!-- End Of Top Control Bar -->
+    <main class="main-container">
+      <aside>
+        <nav class="sidebar-nav light-sidebar-nav">
+          <a href="../settings/profile.html" class="profile-picc">
+            <p class="profile-pic-intials intial-txt">NU</p>
+            <span id="green-circle"></span>
+          </a>
+
+          <div class="nav-link-container light-nav-link-container">
+            <a
+              class="menu-link light-nav-texts"
+              href="../dashboard/dashboard.html"
+            >
+              <span>
+                <svg
+                  width="19"
+                  height="20"
+                  viewBox="0 0 21 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.375 22.7495C1.85417 22.7495 1.41146 22.5672 1.04688 22.2026C0.682292 21.8381 0.5 21.3953 0.5 20.8745V8.68701C0.5 8.39535 0.567708 8.11409 0.703125 7.84326C0.838542 7.57243 1.02083 7.35368 1.25 7.18701L9.375 1.09326C9.54167 0.968262 9.71875 0.874512 9.90625 0.812012C10.0938 0.749512 10.2917 0.718262 10.5 0.718262C10.7083 0.718262 10.9062 0.749512 11.0938 0.812012C11.2813 0.874512 11.4583 0.968262 11.625 1.09326L19.75 7.18701C19.9792 7.35368 20.1615 7.57243 20.2969 7.84326C20.4323 8.11409 20.5 8.39535 20.5 8.68701V20.8745C20.5 21.3953 20.3177 21.8381 19.9531 22.2026C19.5885 22.5672 19.1458 22.7495 18.625 22.7495H13V13.9995H8V22.7495H2.375Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+
+              <span class="menu-text"> Home</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/profile.html"
+            >
+              <span>
+                <svg
+                  width="19"
+                  height="18"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.5 9.46924C9.125 9.46924 8 9.03174 7.125 8.15674C6.25 7.28174 5.8125 6.15674 5.8125 4.78174C5.8125 3.40674 6.25 2.28174 7.125 1.40674C8 0.531739 9.125 0.0942383 10.5 0.0942383C11.875 0.0942383 13 0.531739 13.875 1.40674C14.75 2.28174 15.1875 3.40674 15.1875 4.78174C15.1875 6.15674 14.75 7.28174 13.875 8.15674C13 9.03174 11.875 9.46924 10.5 9.46924ZM0.5 19.5005V16.563C0.5 15.7713 0.697917 15.0942 1.09375 14.5317C1.48958 13.9692 2 13.5422 2.625 13.2505C4.02083 12.6255 5.35938 12.1567 6.64063 11.8442C7.92188 11.5317 9.20833 11.3755 10.5 11.3755C11.7917 11.3755 13.0729 11.5369 14.3438 11.8599C15.6146 12.1828 16.9479 12.6463 18.3438 13.2505C18.9896 13.5422 19.5104 13.9692 19.9062 14.5317C20.3021 15.0942 20.5 15.7713 20.5 16.563V19.5005H0.5Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> My profile </span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts light-nav-texts-active light-active-menu"
+              href="../dashboard/view.html"
+            >
+              <span>
+                <svg
+                  width="19"
+                  height="15"
+                  viewBox="0 0 13 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.58785 0.5L1.07882 0.5C0.482986 0.5 0 0.945833 0 1.49583L0 7.50417C0 8.05417 0.482986 8.5 1.07882 8.5H7.58785C8.18368 8.5 8.66667 8.05417 8.66667 7.50417V1.49583C8.66667 0.945833 8.18368 0.5 7.58785 0.5ZM11.8625 1.28542L9.38889 2.86042V6.13958L11.8625 7.7125C12.341 8.01667 13 7.70625 13 7.175V1.82292C13 1.29375 12.3432 0.98125 11.8625 1.28542Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Call Interface </span>
+            </a>
+
+            <a class="menu-link light-nav-texts" href="../messages/list.html">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="18"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  class="icon"
+                >
+                  <path
+                    d="M17.5 0.5L2.5 0.5C1.12109 0.5 0 1.62103 0 2.99985L0 14.2492C0 15.628 1.12109 16.749 2.5 16.749H6.25L6.25 20.0301C6.25 20.4129 6.6875 20.6355 6.99609 20.409L11.875 16.749H17.5C18.8789 16.749 20 15.628 20 14.2492V2.99985C20 1.62103 18.8789 0.5 17.5 0.5Z"
+                    fill="currentColor"
+                    fill-opacity="0.9"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Message </span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/contact_settings.html"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="20"
+                  height="20"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 32 32"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class=""
+                >
+                  <g
+                    transform="matrix(0.9999999999999973,2.449293598294702e-16,-2.449293598294702e-16,0.9999999999999973,4.085620730620576e-14,3.019806626980426e-14)"
+                  >
+                    <path
+                      d="M24 3H8C5.243 3 3 5.243 3 8v16c0 2.757 2.243 5 5 5h16c2.757 0 5-2.243 5-5V8c0-2.757-2.243-5-5-5zm-7.997 4.826c2.206 0 4 1.794 4 4s-1.794 4-4 4-4-1.794-4-4 1.794-4 4-4zM22 24.522H10a1 1 0 0 1-1-1c0-3.86 3.141-7 7-7s7 3.14 7 7a1 1 0 0 1-1 1z"
+                      fill="currentColor"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span class="menu-text"> Contacts</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../dashboard/schedule_meeting.html"
+            >
+              <span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 23 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.25 14.376V12.501H17.75V14.376H5.25ZM5.25 20.001V18.126H13.9688V20.001H5.25ZM2.125 25.001C1.625 25.001 1.1875 24.8135 0.8125 24.4385C0.4375 24.0635 0.25 23.626 0.25 23.126V3.75098C0.25 3.25098 0.4375 2.81348 0.8125 2.43848C1.1875 2.06348 1.625 1.87598 2.125 1.87598H4.15625V0.000976562H6.1875V1.87598H16.8125V0.000976562H18.8438V1.87598H20.875C21.375 1.87598 21.8125 2.06348 22.1875 2.43848C22.5625 2.81348 22.75 3.25098 22.75 3.75098V23.126C22.75 23.626 22.5625 24.0635 22.1875 24.4385C21.8125 24.8135 21.375 25.001 20.875 25.001H2.125ZM2.125 23.126H20.875V9.68848H2.125V23.126Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text">Calender</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/notification.html"
+            >
+              <span>
+                <svg
+                  width="21"
+                  height="22"
+                  viewBox="0 0 21 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.4375 21.2505C1.16667 21.2505 0.942708 21.1619 0.765625 20.9849C0.588542 20.8078 0.5 20.5838 0.5 20.313C0.5 20.0422 0.588542 19.8182 0.765625 19.6411C0.942708 19.464 1.16667 19.3755 1.4375 19.3755H3.125V9.81299C3.125 8.10466 3.64063 6.55778 4.67188 5.17236C5.70312 3.78695 7.0625 2.91716 8.75 2.56299V1.65674C8.75 1.17757 8.92188 0.781738 9.26562 0.469238C9.60938 0.156738 10.0208 0.000488281 10.5 0.000488281C10.9792 0.000488281 11.3906 0.156738 11.7344 0.469238C12.0781 0.781738 12.25 1.17757 12.25 1.65674V2.56299C13.9375 2.91716 15.3021 3.78695 16.3437 5.17236C17.3854 6.55778 17.9062 8.10466 17.9062 9.81299V19.3755H19.5625C19.8333 19.3755 20.0573 19.464 20.2344 19.6411C20.4115 19.8182 20.5 20.0422 20.5 20.313C20.5 20.5838 20.4115 20.8078 20.2344 20.9849C20.0573 21.1619 19.8333 21.2505 19.5625 21.2505H1.4375ZM10.5 25.0005C9.83333 25.0005 9.25 24.7557 8.75 24.2661C8.25 23.7765 8 23.188 8 22.5005H13C13 23.188 12.7552 23.7765 12.2656 24.2661C11.776 24.7557 11.1875 25.0005 10.5 25.0005Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Notifications</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../settings/settings.html"
+            >
+              <span>
+                <svg
+                  width="22"
+                  height="23"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.53125 14.234H6.46875C6.35417 14.234 6.25261 14.1976 6.16406 14.1248C6.07552 14.052 6.02083 13.9583 6 13.8439L5.75 12.2676C5.55208 12.1947 5.34375 12.0959 5.125 11.971C4.90625 11.8462 4.71354 11.7161 4.54688 11.5809L3.09375 12.252C2.97917 12.304 2.86458 12.3118 2.75 12.2754C2.63542 12.239 2.54688 12.1635 2.48438 12.0491L1.45313 10.2231C1.39063 10.119 1.375 10.0098 1.40625 9.89533C1.4375 9.78088 1.5 9.68724 1.59375 9.6144L2.9375 8.63117C2.91667 8.53753 2.90365 8.43088 2.89844 8.31123C2.89323 8.19158 2.89063 8.08493 2.89063 7.99129C2.89063 7.89765 2.89323 7.791 2.89844 7.67135C2.90365 7.55169 2.91667 7.44505 2.9375 7.35141L1.59375 6.36817C1.5 6.29534 1.4375 6.2017 1.40625 6.08725C1.375 5.9728 1.39063 5.86355 1.45313 5.7595L2.48438 3.9335C2.54688 3.81905 2.63542 3.74361 2.75 3.7072C2.86458 3.67078 2.97917 3.67859 3.09375 3.73061L4.54688 4.40171C4.71354 4.26645 4.90625 4.13639 5.125 4.01153C5.34375 3.88668 5.55208 3.79304 5.75 3.73061L6 2.13871C6.02083 2.02426 6.07552 1.93062 6.16406 1.85778C6.25261 1.78495 6.35417 1.74854 6.46875 1.74854H8.53125C8.64583 1.74854 8.7474 1.78495 8.83594 1.85778C8.92448 1.93062 8.97917 2.02426 9 2.13871L9.25 3.715C9.44792 3.78783 9.65886 3.88408 9.88281 4.00373C10.1068 4.12338 10.2969 4.25604 10.4531 4.40171L11.9063 3.73061C12.0208 3.67859 12.1354 3.67078 12.25 3.7072C12.3646 3.74361 12.4531 3.81905 12.5156 3.9335L13.5469 5.7439C13.6094 5.84794 13.6276 5.95979 13.6016 6.07945C13.5755 6.1991 13.5104 6.29534 13.4063 6.36817L12.0625 7.32019C12.0833 7.42424 12.0964 7.53609 12.1016 7.65574C12.1068 7.77539 12.1094 7.88724 12.1094 7.99129C12.1094 8.09533 12.1068 8.20458 12.1016 8.31903C12.0964 8.43348 12.0833 8.54273 12.0625 8.64678L13.4063 9.6144C13.5 9.68724 13.5625 9.78088 13.5938 9.89533C13.625 10.0098 13.6094 10.119 13.5469 10.2231L12.5156 12.0491C12.4531 12.1635 12.3646 12.239 12.25 12.2754C12.1354 12.3118 12.0208 12.304 11.9063 12.252L10.4531 11.5809C10.2865 11.7161 10.0964 11.8488 9.88281 11.9788C9.66927 12.1089 9.45833 12.2051 9.25 12.2676L9 13.8439C8.97917 13.9583 8.92448 14.052 8.83594 14.1248C8.7474 14.1976 8.64583 14.234 8.53125 14.234ZM7.5 10.0202C8.0625 10.0202 8.54167 9.8225 8.9375 9.42712C9.33333 9.03175 9.53125 8.55314 9.53125 7.99129C9.53125 7.42944 9.33333 6.95083 8.9375 6.55546C8.54167 6.16008 8.0625 5.96239 7.5 5.96239C6.9375 5.96239 6.45833 6.16008 6.0625 6.55546C5.66667 6.95083 5.46875 7.42944 5.46875 7.99129C5.46875 8.55314 5.66667 9.03175 6.0625 9.42712C6.45833 9.8225 6.9375 10.0202 7.5 10.0202Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> Settings</span>
+            </a>
+
+            <a
+              class="menu-link light-nav-texts"
+              href="../modal/auth_modal.html"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="24"
+                  viewBox="0 0 23 24"
+                  fill="none"
+                  class="icon"
+                >
+                  <path
+                    d="M6.57143 13.3518C7.00714 13.3518 7.42501 13.1788 7.7331 12.8707C8.0412 12.5626 8.21429 12.1447 8.21429 11.709C8.21429 11.2733 8.0412 10.8554 7.7331 10.5473C7.42501 10.2392 7.00714 10.0661 6.57143 10.0661C6.13572 10.0661 5.71785 10.2392 5.40975 10.5473C5.10166 10.8554 4.92857 11.2733 4.92857 11.709C4.92857 12.1447 5.10166 12.5626 5.40975 12.8707C5.71785 13.1788 6.13572 13.3518 6.57143 13.3518ZM11.5 13.3518C11.9357 13.3518 12.3536 13.1788 12.6617 12.8707C12.9698 12.5626 13.1429 12.1447 13.1429 11.709C13.1429 11.2733 12.9698 10.8554 12.6617 10.5473C12.3536 10.2392 11.9357 10.0661 11.5 10.0661C11.0643 10.0661 10.6464 10.2392 10.3383 10.5473C10.0302 10.8554 9.85714 11.2733 9.85714 11.709C9.85714 12.1447 10.0302 12.5626 10.3383 12.8707C10.6464 13.1788 11.0643 13.3518 11.5 13.3518ZM18.0714 11.709C18.0714 12.1447 17.8983 12.5626 17.5902 12.8707C17.2822 13.1788 16.8643 13.3518 16.4286 13.3518C15.9929 13.3518 15.575 13.1788 15.2669 12.8707C14.9588 12.5626 14.7857 12.1447 14.7857 11.709C14.7857 11.2733 14.9588 10.8554 15.2669 10.5473C15.575 10.2392 15.9929 10.0661 16.4286 10.0661C16.8643 10.0661 17.2822 10.2392 17.5902 10.5473C17.8983 10.8554 18.0714 11.2733 18.0714 11.709ZM23 11.709C23 18.0603 17.8513 23.209 11.5 23.209C5.14871 23.209 0 18.0603 0 11.709C0 5.3577 5.14871 0.208984 11.5 0.208984C17.8513 0.208984 23 5.3577 23 11.709ZM21.3571 11.709C21.3571 6.26538 16.9436 1.85184 11.5 1.85184C6.05639 1.85184 1.64286 6.26538 1.64286 11.709C1.64286 17.1526 6.05639 21.5661 11.5 21.5661C16.9436 21.5661 21.3571 17.1526 21.3571 11.709Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </span>
+              <span class="menu-text"> More</span>
+            </a>
+          </div>
+
+          <div class="section4-share-am-div">
+            <img
+              class="shaream-logo"
+              src="../../assets/icons/001 1.svg"
+              alt=""
+            />
+            <h1 class="shaream-txt">Share<span>Am</span></h1>
+          </div>
+        </nav>
+      </aside>
+
+      <section class="call-interface">
+        <div class="call-interface-wrapper">
+          <div class="interface-wrap-1">
+            <div class="interface-section-1">
+              <button class="back-dir">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                >
+                  <path
+                    d="M0.265211 5.43405L4.91994 0.735949C5.24166 0.411227 5.76432 0.408803 6.0856 0.730543L6.86631 1.50405C7.19104 1.82577 7.19346 2.34843 6.87172 2.66971L3.57234 5.99983L6.90246 9.29921C7.22718 9.62094 7.22961 10.1436 6.90787 10.4649L6.13436 11.2456C5.81264 11.5703 5.28998 11.5727 4.9687 11.251L0.270601 6.59627C-0.0540885 6.28142 -0.0565122 5.75877 0.265211 5.43405Z"
+                    fill="#DAD9D9"
+                  />
+                </svg>
+              </button>
+
+              <p class="interface-section-1-text desktop-msg-title-txt">
+                Design Critique - ShareAm App
+              </p>
+              <button class="interface-section-1-followers desktop-viewer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                >
+                  <path
+                    d="M5.65503 6C7.39097 6 8.79789 4.76895 8.79789 3.25C8.79789 1.73105 7.39097 0.5 5.65503 0.5C3.91909 0.5 2.51217 1.73105 2.51217 3.25C2.51217 4.76895 3.91909 6 5.65503 6ZM7.85503 6.6875H7.44498C6.8999 6.90664 6.29342 7.03125 5.65503 7.03125C5.01664 7.03125 4.41262 6.90664 3.86507 6.6875H3.45503C1.63315 6.6875 0.155029 7.98086 0.155029 9.575V10.4688C0.155029 11.0381 0.682931 11.5 1.3336 11.5H9.97646C10.6271 11.5 11.155 11.0381 11.155 10.4688V9.575C11.155 7.98086 9.6769 6.6875 7.85503 6.6875Z"
+                    fill="#DAD9D9"
+                  />
+                </svg>
+                15k
+              </button>
+            </div>
+
+            <div class="interface-section-2">
+              <div class="record">
+                <div class="toggle-btn">
+                  <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider"></span>
+                  </label>
+                </div>
+                <p class="real-time-reading desktop-msg-subtitle-txt">
+                  REC 00: 12:36
+                </p>
+              </div>
+              <div class="add-user">
+                <a href=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="30"
+                    width="30"
+                    viewBox="0 0 448 512"
+                  >
+                    <path
+                      fill="#979797"
+                      d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM200 344V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h64V168c0-13.3 10.7-24 24-24s24 10.7 24 24v64h64c13.3 0 24 10.7 24 24s-10.7 24-24 24H248v64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                    />
+                  </svg>
+                </a>
+                <p class="desktop-msg-subtitle-txt">Add user to the call</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="interface-section-3 light-interface-section-3">
+            <div class="wave-shadow-1">
+              <div class="wave-shadow-2">
+                <div class="caller-photo">
+                  <img src="../../assets/images/call-wallpaper.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <ul class="users-display">
+              <div class="user-img caller-user">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15"
+                  height="15"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class="microphone"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="4.8"
+                    ry="4.8"
+                    fill="#fe0000"
+                    shape="rounded"
+                    transform="matrix(0.85,0,0,0.85,1.8000000000000007,1.8000000000000007)"
+                  ></rect>
+                  <g
+                    transform="matrix(0.6500000000000006,0,0,0.6500000000000006,4.199912548065181,4.200000000000001)"
+                  >
+                    <g fill="#000">
+                      <path
+                        d="M5.847 12c0 3.314 2.548 6 5.692 6 1.23 0 2.369-.41 3.3-1.11l.678.716A6.393 6.393 0 0 1 11.54 19c-3.669 0-6.642-3.134-6.642-7 0-.552-.425-1-.95-1S3 11.448 3 12c0 4.633 3.322 8.448 7.592 8.945l-.001.055v1H8.693c-.524 0-.949.448-.949 1s.425 1 .949 1h5.693c.524 0 .949-.448.949-1s-.425-1-.949-1h-1.898v-1l-.001-.055a8.274 8.274 0 0 0 4.383-1.913l2.51 2.646c.37.39.971.39 1.342 0 .37-.39.37-1.024 0-1.414L4.62 3.293a.915.915 0 0 0-1.342 0c-.37.39-.37 1.024 0 1.414l2.569 2.707zM6.478 3.251l10.368 10.927c.25-.675.387-1.41.387-2.178V6c0-3.314-2.55-6-5.693-6-2.205 0-4.116 1.32-5.062 3.251zM17.569 14.94l1.409 1.485A9.337 9.337 0 0 0 20.078 12c0-.552-.425-1-.949-1s-.949.448-.949 1c0 1.05-.219 2.046-.612 2.94z"
+                        fill="#ffffff"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="user-img caller-user">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15"
+                  height="15"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 384 384"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class="microphone"
+                >
+                  <rect
+                    width="384"
+                    height="384"
+                    rx="76.8"
+                    ry="76.8"
+                    fill="#04fe3b"
+                    shape="rounded"
+                    transform="matrix(1,0,0,1,0,0)"
+                  ></rect>
+                  <g
+                    transform="matrix(0.5599999999999996,0,0,0.5599999999999996,84.48000000000009,84.48000000000009)"
+                  >
+                    <path
+                      d="M176 288c0 8.832 7.168 16 16 16s16-7.168 16-16V96c0-8.832-7.168-16-16-16s-16 7.168-16 16zM16 96c-8.832 0-16 7.168-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16V112c0-8.832-7.168-16-16-16zM152 256V128c0-8.832-7.168-16-16-16s-16 7.168-16 16v128c0 8.832 7.168 16 16 16s16-7.168 16-16zM80 240c8.832 0 16-7.168 16-16v-64c0-8.832-7.168-16-16-16s-16 7.168-16 16v64c0 8.832 7.168 16 16 16zM264 256V128c0-8.832-7.168-16-16-16s-16 7.168-16 16v128c0 8.832 7.168 16 16 16s16-7.168 16-16zM368 96c-8.832 0-16 7.168-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16V112c0-8.832-7.168-16-16-16zM304 144c-8.832 0-16 7.168-16 16v64c0 8.832 7.168 16 16 16s16-7.168 16-16v-64c0-8.832-7.168-16-16-16zM176 368c0 8.832 7.168 16 16 16s16-7.168 16-16v-16c0-8.832-7.168-16-16-16s-16 7.168-16 16zM192 48c8.832 0 16-7.168 16-16V16c0-8.832-7.168-16-16-16s-16 7.168-16 16v16c0 8.832 7.168 16 16 16zm0 0"
+                      fill="#000000"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="user-img caller-user">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="15"
+                  height="15"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  class="microphone"
+                >
+                  <rect
+                    width="24"
+                    height="24"
+                    rx="4.8"
+                    ry="4.8"
+                    fill="#fe0000"
+                    shape="rounded"
+                    transform="matrix(0.85,0,0,0.85,1.8000000000000007,1.8000000000000007)"
+                  ></rect>
+                  <g
+                    transform="matrix(0.6500000000000006,0,0,0.6500000000000006,4.199912548065181,4.200000000000001)"
+                  >
+                    <g fill="#000">
+                      <path
+                        d="M5.847 12c0 3.314 2.548 6 5.692 6 1.23 0 2.369-.41 3.3-1.11l.678.716A6.393 6.393 0 0 1 11.54 19c-3.669 0-6.642-3.134-6.642-7 0-.552-.425-1-.95-1S3 11.448 3 12c0 4.633 3.322 8.448 7.592 8.945l-.001.055v1H8.693c-.524 0-.949.448-.949 1s.425 1 .949 1h5.693c.524 0 .949-.448.949-1s-.425-1-.949-1h-1.898v-1l-.001-.055a8.274 8.274 0 0 0 4.383-1.913l2.51 2.646c.37.39.971.39 1.342 0 .37-.39.37-1.024 0-1.414L4.62 3.293a.915.915 0 0 0-1.342 0c-.37.39-.37 1.024 0 1.414l2.569 2.707zM6.478 3.251l10.368 10.927c.25-.675.387-1.41.387-2.178V6c0-3.314-2.55-6-5.693-6-2.205 0-4.116 1.32-5.062 3.251zM17.569 14.94l1.409 1.485A9.337 9.337 0 0 0 20.078 12c0-.552-.425-1-.949-1s-.949.448-.949 1c0 1.05-.219 2.046-.612 2.94z"
+                        fill="#ffffff"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </ul>
+
+            <div class="action-btn-main-wrap">
+              <ul class="action-btn-wrap">
+                <li class="action-btn smallscreenhidden-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="13"
+                    height="12"
+                    viewBox="0 0 17 16"
+                    fill="none"
+                  >
+                    <rect
+                      y="0.0668945"
+                      width="17"
+                      height="15.8667"
+                      fill="#DAD9D9"
+                    />
+                    <path
+                      d="M3.73694 8.55579L3.17762 7.99646C2.94079 7.75963 2.94079 7.37667 3.17762 7.14236L8.07295 2.24452C8.30978 2.00769 8.69274 2.00769 8.92705 2.24452L13.8224 7.13984C14.0592 7.37667 14.0592 7.75963 13.8224 7.99394L13.2631 8.55327C13.0237 8.79262 12.6332 8.78758 12.3989 8.54319L9.50905 5.50975V12.7507C9.50905 13.0858 9.23946 13.3554 8.90437 13.3554H8.09815C7.76306 13.3554 7.49347 13.0858 7.49347 12.7507V5.50975L4.60112 8.54571C4.36681 8.79262 3.97629 8.79765 3.73694 8.55579Z"
+                      fill="black"
+                      fill-opacity="0.5"
+                    />
+                  </svg>
+                </li>
+
+                <li class="action-btn">
+                  <img src="../../assets/icons/call-microphone.svg" />
+                </li>
+
+                <li class="action-btn">
+                  <img
+                    class="video-call-bt"
+                    src="../../assets/icons/call-video-call-cta.svg"
+                  />
+                </li>
+
+                <li class="call-btn">
+                  <img
+                    src="../../assets/icons/call-end-call-cta.svg"
+                    width="55px"
+                    height="55px"
+                  />
+                </li>
+
+                <li class="action-btn">
+                  <img src="../../assets/icons/call-hand-raise.svg" />
+                </li>
+
+                <li class="action-btn action-btn-tooltip muilti-btn">
+                  <svg
+                    width="33px"
+                    height="33px"
+                    viewBox="0 0 24 24"
+                    fill="#DAD9D9"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <g id="SVGRepo_iconCarrier">
+                      <title />
+                      <g id="Complete">
+                        <g id="F-More">
+                          <path
+                            d="M12,16a2,2,0,1,1-2,2A2,2,0,0,1,12,16ZM10,6a2,2,0,1,0,2-2A2,2,0,0,0,10,6Zm0,6a2,2,0,1,0,2-2A2,2,0,0,0,10,12Z"
+                            id="Vertical"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="action-btn-tooltip-items">
+                    <img src="../../assets/icons/call-setting-cta.svg" />
+                    <img src="../../assets/icons/call-heart-cta.svg" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="12"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <rect
+                        y="0.0668945"
+                        width="17"
+                        height="15.8667"
+                        fill="#DAD9D9"
+                      />
+                      <path
+                        d="M3.73694 8.55579L3.17762 7.99646C2.94079 7.75963 2.94079 7.37667 3.17762 7.14236L8.07295 2.24452C8.30978 2.00769 8.69274 2.00769 8.92705 2.24452L13.8224 7.13984C14.0592 7.37667 14.0592 7.75963 13.8224 7.99394L13.2631 8.55327C13.0237 8.79262 12.6332 8.78758 12.3989 8.54319L9.50905 5.50975V12.7507C9.50905 13.0858 9.23946 13.3554 8.90437 13.3554H8.09815C7.76306 13.3554 7.49347 13.0858 7.49347 12.7507V5.50975L4.60112 8.54571C4.36681 8.79262 3.97629 8.79765 3.73694 8.55579Z"
+                        fill="black"
+                        fill-opacity="0.5"
+                      />
+                    </svg>
+                  </span>
+                </li>
+
+                <li class="action-btn smallscreenhidden-btn">
+                  <img src="../../assets/icons/call-setting-cta.svg" />
+                </li>
+
+                <li class="action-btn smallscreenhidden-btn">
+                  <img src="../../assets/icons/call-heart-cta.svg" />
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="interface-section-4">
+            <div class="wave">
+              <span class="span-1"></span>
+              <span class="span-2"></span>
+              <span class="span-3"></span>
+              <span class="span-4"></span>
+              <span class="span-5"></span>
+              <span class="span-6"></span>
+            </div>
+            <div class="now-text">
+              <p class="desktop-now-txt">now</p>
+              <p class="desktop-thanks-txt">
+                Thank you everyone for joining the design critique meeting. I
+                want everyone's opinion, so please start!
+              </p>
+            </div>
+
+            <button class="activities-btn tooltip">
+              <svg
+                width="35px"
+                height="35px"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#ffffff"
+                stroke="#ffffff"
+                stroke-width="2"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <g id="SVGRepo_iconCarrier">
+                  <defs>
+                    <style>
+                      .a {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+
+                  <rect
+                    class="a"
+                    x="5.5"
+                    y="5.5"
+                    width="15.8571"
+                    height="15.8571"
+                  />
+
+                  <rect
+                    class="a"
+                    x="27.5004"
+                    y="6.3575"
+                    width="14.1421"
+                    height="14.1421"
+                    transform="translate(0.6303 28.3788) rotate(-45)"
+                  />
+
+                  <rect
+                    class="a"
+                    x="5.5"
+                    y="26.6429"
+                    width="15.8571"
+                    height="15.8571"
+                  />
+
+                  <rect
+                    class="a"
+                    x="26.6429"
+                    y="26.6429"
+                    width="15.8571"
+                    height="15.8571"
+                  />
+                </g>
+              </svg>
+              <span class="tooltip-text">Activities</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat-box light-chat-box">
+        <div class="chat-box-wrapper">
+          <div class="chat-box-header">
+            <div class="active-tab-background">
+              <p class="tab desktop-msg-title-txt">Messages(4)</p>
+            </div>
+            <div class="">
+              <p class="tab desktop-msg-title-txt">Participant</p>
+            </div>
+          </div>
+
+          <div class="graphics-wrapper">
+            <p class="graphics-text desktop-msg-title-txt">Use of Graphics</p>
+
+            <div class="progress-bar-wrapper">
+              <div class="illustration-box">
+                <div class="progress-bar">
+                  <span class="illus-progress-bar loading"></span>
+                </div>
+                <div class="bar-text desktop-msg-graphic-title-txt">
+                  <p>Illustrations</p>
+                  <p>25%</p>
+                </div>
+              </div>
+
+              <div class="image-box">
+                <div class="progress-bar">
+                  <span class="image-progress-bar loading"></span>
+                </div>
+                <div class="bar-text desktop-msg-graphic-title-txt">
+                  <p>Images</p>
+                  <p>75%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="msg-line">
+            <p class="msg-text desktop-msg-subtitle-txt">Messages</p>
+          </div>
+
+          <div class="chat-wrap">
+            <div class="chat-bubbles-wrapper">
+              <div class="chat-bubbles first-user-chat">
+                <div class="user-message-box">
+                  <a
+                    href="#"
+                    class="first-user-profile-picture user-profile-picture"
+                  ></a>
+                  <p class="userName desktop-msg-subtitle-txt">Shagari</p>
+                </div>
+
+                <div class="text-and-time-wrapper">
+                  <p class="user-text desktop-sent-txt">
+                    Hello guys, what's your opinion?Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Eaque quibusdam exercitationem
+                    velit adipisci consequuntur error ut corrupti aspernatur
+                    explicabo perferendis delectus ab enim sequi eum aliquam,
+                    culpa, consectetur iusto voluptates! Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Neque odio saepe cumque
+                    mollitia magnam aliquid a expedita nesciunt eius illo,
+                    voluptas autem non dignissimos eum dolore rerum incidunt,
+                    obcaecati cupiditate?
+                  </p>
+                  <p class="user-text-delivery-time desktop-sent-date-txt">
+                    12:05pm
+                  </p>
+                </div>
+              </div>
+
+              <div class="you-chat-bubble">
+                <p class="you-username desktop-msg-subtitle-txt">You</p>
+                <div class="you-text-and-time-wrapper">
+                  <p class="user-text desktop-sent-txt">
+                    Yes, it will decrease the loading 👍 Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Pariatur reprehenderit
+                  </p>
+                  <div class="time-tick-wrapper">
+                    <p class="user-text-delivery-time desktop-sent-date-txt">
+                      12:07pm
+                    </p>
+                    <img src="../../assets/icons/double-tick.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="chat-bubbles second-user-chat">
+                <div class="user-message-box">
+                  <a
+                    href="#"
+                    class="second-user-profile-picture user-profile-picture"
+                  ></a>
+                  <p class="userName desktop-msg-subtitle-txt">Riri-Bi</p>
+                </div>
+
+                <div class="text-and-time-wrapper">
+                  <p class="user-text desktop-sent-txt">Images are better.</p>
+                  <p class="user-text-delivery-time desktop-sent-date-txt">
+                    12:06pm
+                  </p>
+                </div>
+              </div>
+
+              <div class="chat-bubbles first-user-chat">
+                <div class="user-message-box">
+                  <a
+                    href="#"
+                    class="first-user-profile-picture user-profile-picture"
+                  ></a>
+                  <p class="userName desktop-msg-subtitle-txt">Shagari</p>
+                </div>
+
+                <div class="text-and-time-wrapper">
+                  <p class="user-text desktop-sent-txt">
+                    Hello guys, what's your opinion?Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Eaque quibusdam exercitationem
+                    velit adipisci consequuntur error ut corrupti aspernatur
+                    explicabo perferendis delectus ab enim sequi eum aliquam,
+                    culpa, consectetur iusto voluptates! Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Neque odio saepe cumque
+                    mollitia magnam aliquid a expedita nesciunt eius illo,
+                    voluptas autem non dignissimos eum dolore rerum incidunt,
+                    obcaecati cupiditate?
+                  </p>
+                  <p class="user-text-delivery-time desktop-sent-date-txt">
+                    12:05pm
+                  </p>
+                </div>
+              </div>
+              <div class="you-chat-bubble">
+                <p class="you-username desktop-msg-subtitle-txt">You</p>
+                <div class="you-text-and-time-wrapper">
+                  <p class="user-text desktop-sent-txt">
+                    Yes, it will decrease the loading 👍 Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Pariatur reprehenderit
+                  </p>
+                  <div class="time-tick-wrapper">
+                    <p class="user-text-delivery-time desktop-sent-date-txt">
+                      12:07pm
+                    </p>
+                    <img src="../../assets/icons/double-tick.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="chat-bubbles second-user-chat">
+                <div class="user-message-box">
+                  <a
+                    href="#"
+                    class="second-user-profile-picture user-profile-picture"
+                  ></a>
+                  <p class="userName desktop-msg-subtitle-txt">Riri-Bi</p>
+                </div>
+
+                <div class="text-and-time-wrapper">
+                  <p class="user-text desktop-sent-txt">Images are better.</p>
+                  <p class="user-text-delivery-time desktop-sent-date-txt">
+                    12:06pm
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="last-wrapper">
+            <div class="user-typing-indicator">
+              <div class="loading-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                  class="main-circle"
+                >
+                  <circle
+                    cx="14.5"
+                    cy="14.5"
+                    r="14.5"
+                    fill="#585858"
+                    fill-opacity="0.6"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="5"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                  class="circle-1"
+                >
+                  <circle cx="2.5" cy="2.5" r="2.5" fill="#DAD9D9" />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="5"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                  class="circle-2"
+                >
+                  <circle
+                    cx="2.5"
+                    cy="2.5"
+                    r="2.5"
+                    fill="#DAD9D9"
+                    fill-opacity="0.45"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="5"
+                  viewBox="0 0 5 5"
+                  fill="none"
+                  class="circle-3"
+                >
+                  <circle
+                    cx="2.5"
+                    cy="2.5"
+                    r="2.5"
+                    fill="#DAD9D9"
+                    fill-opacity="0.45"
+                  />
+                </svg>
+              </div>
+              <div class="user-typing-text desktop-sent-txt">
+                Riri-Bi is typing...
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <svg
+                width="25"
+                height="25"
+                viewBox="0 0 25 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.6562 25H2.34375C1.04932 25 0 23.6009 0 21.875L0 3.125C0 1.39909 1.04932 0 2.34375 0L22.6562 0C23.9507 0 25 1.39909 25 3.125V21.875C25 23.6009 23.9507 25 22.6562 25ZM5.46875 3.64583C3.95859 3.64583 2.73438 5.27812 2.73438 7.29167C2.73437 9.30521 3.95859 10.9375 5.46875 10.9375C6.97891 10.9375 8.20312 9.30521 8.20312 7.29167C8.20312 5.27812 6.97891 3.64583 5.46875 3.64583ZM3.125 20.8333H21.875V13.5417L17.6018 7.84408C17.373 7.539 17.002 7.539 16.7731 7.84408L10.1562 16.6667L7.44556 13.0524C7.21675 12.7473 6.84575 12.7473 6.61689 13.0524L3.125 17.7083V20.8333Z"
+                  fill="#DAD9D9"
+                />
+              </svg>
+
+              <input
+                type="text"
+                id="messages"
+                placeholder="Write message here"
+                class="desktop-msg-subtitle-txt"
+              />
+
+              <div class="send-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="35"
+                  height="35"
+                  x="0"
+                  y="0"
+                  viewBox="0 0 24 24"
+                  style="enable-background: new 0 0 512 512"
+                  xml:space="preserve"
+                  fill-rule="evenodd"
+                  class=""
+                >
+                  <rect
+                    width="22"
+                    height="22"
+                    rx="4.8"
+                    ry="4.8"
+                    fill="#dad9d9"
+                    shape="rounded"
+                    transform="matrix(1,0,0,1,0,0)"
+                  ></rect>
+                  <g
+                    transform="matrix(0.5999999999999994,0,0,0.5999999999999994,4.800062179565439,4.800000333786021)"
+                  >
+                    <path
+                      d="M1.305 3.542A1.844 1.844 0 0 1 3.92 1.445l17.81 8.905a1.844 1.844 0 0 1 0 3.3L3.92 22.555a1.844 1.844 0 0 1-2.615-2.097L3.17 13 14 12 3.17 11 1.305 3.542z"
+                      fill="#585858"
+                      opacity="1"
+                      data-original="#000000"
+                      class=""
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../../renderer.js"></script>
+  </body>
+</html>

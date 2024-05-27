@@ -1,0 +1,546 @@
+/* This removes padding & margin from every container */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 16px;
+}
+
+/* DO NOT REMOVE THE CODE ABOVE */
+body {
+  background: #f1f1f1;
+  display: flex;
+  padding-top: 50px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  user-select: none;
+}
+.setting-modal-body {
+  width: 383px;
+  height: 208px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 7px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.setting-modal-container h1 {
+  color: rgba(21, 10, 161, 0.8);
+  font-family: Poppins-bold;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+.setting-modal-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+.setting-modal-container span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.setting-modal-container p {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.controll-txt {
+  color: #000 !important;
+}
+.setting-modal-container h2 {
+  color: #373737;
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top: 2px;
+}
+
+/*-----NOTIFICATION BOX CSS----------- */
+
+.notification-container {
+  height: 512px;
+  width: 461px;
+  backdrop-filter: blur(3px);
+  background: linear-gradient(
+    180deg,
+    #584273 0%,
+    rgb(31, 66, 90) 60%,
+    rgba(0, 0, 0, 0.8)
+  );
+  border-radius: 12px;
+}
+
+/* .light-notification-container {
+  background: linear-gradient(
+    180deg,
+    #584273 0%,
+    rgb(51, 104, 139) 70%,
+    rgba(241, 241, 241, 0.8)
+  );
+} */
+
+.notification-section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  margin: 33px 27px 27px 27px;
+}
+
+.notification-section1-div1-left {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.notification-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37px;
+  border-top: 1.4px solid #000;
+}
+
+.notification-section2-span {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.notification-section2 p {
+  width: 314px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins-medium;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+/* <-------- START OF COLOR MODAL PAGE CSS --------> */
+.light-color-mode {
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 7px 12px 6.599px 10px;
+}
+.preview p {
+  margin-bottom: 8px;
+}
+.color-pick {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+.color-pick-item1 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #ccf7ff;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item2 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #fce2d4;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item3 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #fff1cc;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item4 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #cbfbd6;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item5 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #f9d7ec;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item6 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #dfdef2;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item7 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #00d1ff;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item8 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #f9d7ec;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-pick-item9 {
+  position: relative;
+  margin-top: 5px;
+  width: 17.96px;
+  height: 17.96px;
+  border-radius: 100%;
+  background-color: #d4f8ff;
+  border: 0.3px solid rgba(0, 0, 0, 0.15);
+  display: block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* ............Hide the browser's default checkbox */
+.color-pick-item1 input,
+.color-pick-item2 input,
+.color-pick-item3 input,
+.color-pick-item4 input,
+.color-pick-item5 input,
+.color-pick-item6 input,
+.color-pick-item7 input,
+.color-pick-item8 input,
+.color-pick-item9 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ............Create a custom checkbox */
+.checkmark1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 7.483px;
+  width: 7.334px;
+  border-radius: 20px;
+}
+
+/* ..........When the checkbox is checked, add a blue background */
+.color-pick-item1 input:checked ~ .checkmark1,
+.color-pick-item2 input:checked ~ .checkmark1,
+.color-pick-item3 input:checked ~ .checkmark1,
+.color-pick-item4 input:checked ~ .checkmark1,
+.color-pick-item5 input:checked ~ .checkmark1,
+.color-pick-item6 input:checked ~ .checkmark1,
+.color-pick-item7 input:checked ~ .checkmark1,
+.color-pick-item8 input:checked ~ .checkmark1,
+.color-pick-item9 input:checked ~ .checkmark1 {
+  background-color: #150aa1;
+  border: none;
+}
+
+/* ...........Create the checkmark/indicator (hidden when not checked) */
+.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* ...........Show the checkmark when checked */
+.color-pick-item1 input:checked ~ .checkmark1:after,
+.color-pick-item2 input:checked ~ .checkmark1:after,
+.color-pick-item3 input:checked ~ .checkmark1:after,
+.color-pick-item4 input:checked ~ .checkmark1:after,
+.color-pick-item5 input:checked ~ .checkmark1:after,
+.color-pick-item6 input:checked ~ .checkmark1:after,
+.color-pick-item7 input:checked ~ .checkmark1:after,
+.color-pick-item8 input:checked ~ .checkmark1:after,
+.color-pick-item9 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* ............Style the checkmark/indicator */
+.color-pick-item1 .checkmark1:after,
+.color-pick-item2 .checkmark1:after,
+.color-pick-item3 .checkmark1:after,
+.color-pick-item4 .checkmark1:after,
+.color-pick-item5 .checkmark1:after,
+.color-pick-item6 .checkmark1:after,
+.color-pick-item7 .checkmark1:after,
+.color-pick-item8 .checkmark1:after,
+.color-pick-item9 .checkmark1:after {
+  left: 3px;
+  top: 1.5px;
+  width: 1px;
+  height: 3px;
+  border: solid white;
+  border-width: 0 0.1px 0.1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container {
+  margin: 2px 0px 5px 0px;
+  display: block;
+  position: relative;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* .........Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* ..........Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  background-color: #dad9d9;
+  border: 0.1px solid rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+}
+.checkmark2 {
+  position: absolute;
+  background-color: #585858;
+  border: 0.1px solid rgba(0, 0, 0, 0.15);
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+}
+
+/* ......When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark,
+.container input:checked ~ .checkmark2 {
+  background-color: #150aa1;
+  border: none;
+}
+
+/* ...........Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after,
+.checkmark2:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* ...........Show the checkmark when checked */
+.container input:checked ~ .checkmark:after,
+.container input:checked ~ .checkmark2:after {
+  display: block;
+}
+
+/* ..........Style the checkmark/indicator */
+.container .checkmark:after,
+.container .checkmark2:after {
+  left: 5px;
+  top: 3px;
+  width: 3px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* <------- FOR DARK MODE --------> */
+.dark-color-mode {
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  border: 1px solid #a9a9a9;
+  padding: 7px 12px 6.599px 10px;
+}
+/* <------- END OF COLOR MODAL PAGE CSS -------> */
+
+/*------------TOGGLE SWITCH Button--------------*/
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c7c7f9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: -3.1px;
+  background-color: #a9a9a9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  background-color: #150aa1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c7c7f9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+/*--------------End of Toggle Switch key----------*/
+
+@media (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,466 @@
+/* This removes padding & margin from every container */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 16px;
+}
+
+/* DO NOT REMOVE THE CODE ABOVE */
+
+/* /-----------------------SIDE BAR -------------------------/ */
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* dark mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
+.light-body {
+  background-color: #dad9d9;
+}
+.dark-body {
+  background-color: #222020;
+}
+.message {
+  display: flex;
+}
+.sidebar-nav {
+  width: 20vw;
+  min-width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  width: 75%;
+  margin: auto;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
+.menu-link {
+  padding: 1.7vh 1vw;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+  font-family: Poppins-regular;
+  font-weight: 700;
+}
+
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
+}
+
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
+
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
+
+/* ------------------------------------texts styes for sidebar --------------------------- */
+/* NAVBAR */
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+}
+.dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+}
+
+.dark-nav-texts-active {
+  color: #fffcfc;
+}
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+}
+
+/*------------------FOR MAIN BODY----------------*/
+
+::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+.mainbody {
+  display: flex;
+  height: 100vh;
+  padding: 3vh 2vw;
+  width: 100%;
+}
+
+.light-mainbody {
+  background: #dad9d9;
+}
+
+.dark-mainbody {
+  background-color: #222020;
+}
+
+.mainbody-container {
+  display: flex;
+  padding: 2vh 1.5vw;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  gap: 41px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.14);
+}
+
+.light-mainbody-container {
+  background: #fff;
+}
+
+.dark-mainbody-container {
+  width: 999px;
+  height: 812px;
+  background: #272727;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1-div1 {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.section1-div1 svg {
+  cursor: pointer;
+}
+
+.write-message-btn {
+  display: flex;
+  padding: 2vh 1vw;
+  gap: 1vw;
+  border-radius: 4px;
+  background: #1058e8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: Rubik;
+  align-items: center;
+  justify-content: center;
+}
+
+.section2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.section2 button {
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  border-radius: 60px;
+}
+
+#all-btn {
+  width: 49px;
+  height: 34px;
+  flex-shrink: 0;
+  background: #c7c7f9;
+}
+
+#followers-btn {
+  width: 100px;
+  height: 34px;
+  flex-shrink: 0;
+}
+
+#fans-btn {
+  display: flex;
+  padding: 7px 13px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+#checkbox {
+  width: 15.611px;
+  height: 15px;
+  border-radius: 4px;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
+
+.section4-wrapper {
+  overflow-y: auto;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.user-profile {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 2vw;
+  width: 100%;
+  border-bottom: 1px solid #979797;
+  text-decoration: none;
+  color: #000;
+}
+
+.user-profile > img {
+  width: 62.44px;
+  height: 60px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
+/**----------- text styles for mainbody --------------**/
+.new-message-txt {
+  font-family: Poppins-regular;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.dark-new-message-txt {
+  color: #0490ec;
+}
+
+.light-new-message-txt {
+  color: #0272bc;
+}
+
+.write-message-btn {
+  background: #1058e8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: Rubik;
+}
+
+#all-btn,
+#followers-btn,
+#fans-btn {
+  color: #545454;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.follower-btn-text {
+  font-family: Rubik;
+}
+
+.select-all-txt {
+  font-family: Rubik;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dark-select-all-txt {
+  color: #0490ec;
+}
+
+.light-select-all-txt {
+  color: #150aa1;
+}
+
+.followers-display-name-text {
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.dark-followers-display-name-text {
+  color: #fffcfc;
+}
+
+.light-followers-display-name-text {
+  color: #494949;
+}
+
+.followers-user-id-text {
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.dark-followers-user-id-text {
+  color: #979797;
+}
+.light-followers-user-id-text {
+  color: #494949;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

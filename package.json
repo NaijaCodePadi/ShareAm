@@ -14,10 +14,85 @@
   "keywords": [],
   "author": {
     "name": "Sanmi Amos",
-    "email": "sanmco2013@gmail.com"
+    "email": "sanmco2013@gmail.com",
+    "designation": "Chief Technical Officer (CTO)"
   },
+  "contributors": [
+    {
+      "name": "Sanmi Amos",
+      "email": "sanmco2013@gmail.com",
+      "designation": "Chief Technical Officer (CTO)"
+    },
+    {
+      "name": "Teddy Ofure Eragbai",
+      "email": "Teddyeragbai@gmail.com",
+      "designation": "Project manager"
+    },
+    {
+      "name": "Ademyemi Ademola",
+      "email": "ademolaadeyemieric@gmail.com",
+      "designation": "Lead frontend developer"
+    },
+    {
+      "name": "Emuchay Chigozie Kelechi",
+      "email": "kelmuchy@gmail.com",
+      "designation": "Lead UI/UX designer"
+    },
+    {
+      "name": "Osayuki Raymond Okhuarobo",
+      "email": "osayukiraymond@gmail.com",
+      "designation": "Frontend developer"
+    },
+    {
+      "name": "Nwachukwu Chiamaka Juliet",
+      "email": "nwajully@gmail.com",
+      "designation": "Frontend developer"
+    },
+    {
+      "name": "Obayelu Richard Sunday",
+      "email": "richardsunday156@gmail.com",
+      "designation": "Product design"
+    },
+    {
+      "name": "Ekundayo Samuel Oladoyin",
+      "email": "doyinsamuel3@gmail.com",
+      "designation": "UI/UX designer"
+    },
+    {
+      "name": "Osatohanmwen Amayo",
+      "email": "osatoama@gmail.com",
+      "designation": "Frontend developer"
+    }, 
+    {
+      "name": "Deabaver Aondona Patrick",
+      "email": "aondopat@gmail.com",
+      "designation": "Frontend developer"
+    },
+    {
+      "name": "Blessing Thomas Olaboade",
+      "email": "thomasblssng@gmail.com",
+      "designation": "Frontend developer"
+    },
+    {
+      "name": "Blessing Thomas Olaboade",
+      "email": "thomasblssng@gmail.com",
+      "designation": "Frontend developer"
+    },
+    {
+      "name": "Njock Rudiger",
+      "email": "njockrudiger4@gmail.com",
+      "designation": "Frontend developer"
+    },
+    {
+      "name": "Osita Chris Jerry",
+      "email": "chrisjerry070@gmail.com",
+      "designation": "Frontend developer"
+    }
+  ], 
+
   "license": "MIT",
   "dependencies": {
+    "custom-electron-titlebar": "^4.2.8",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
@@ -27,6 +102,7 @@
     "@electron-forge/maker-squirrel": "^6.4.2",
     "@electron-forge/maker-zip": "^6.4.2",
     "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
-    "electron": "26.2.4"
+    "electron": "29.1.5",
+    "electron-reloader": "^1.2.3"
   }
 }

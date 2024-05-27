@@ -1,0 +1,279 @@
+/* This removes padding & margin from every container */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 1rem;
+}
+
+/* DO NOT REMOVE THE CODE ABOVE */
+
+/* /-----------------------SIDE BAR -------------------------/ */
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* dark mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
+.contact {
+  display: flex;
+}
+.sidebar-nav {
+  width: 20vw;
+  min-width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  width: 75%;
+  margin: auto;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  transition: all 0.2s ease;
+}
+
+a.light-active-menu,
+a.dark-active-menu,
+.nav-link-container a:hover {
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
+.menu-link {
+  padding: 1.7vh 1vw;
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+}
+
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
+}
+
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+}
+
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
+
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
+
+/* ---------------------------------------------main body ------------------------------- */
+.mainbody {
+  height: 100vh;
+  width: 100%;
+  padding: 20vh 5vw 0 5vw;
+}
+
+.contact_settings > h4,
+.cs-sections > section {
+  border-bottom: 1px solid #979797;
+}
+.contact_settings > h4 {
+  padding-bottom: 4vh;
+}
+
+.cs-sections > section {
+  padding: 4vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cs-sections > section > span {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  color: #979797;
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.cs-sections > section > span > .light-arrow-svg,
+.cs-sections > section > span > .dark-arrow-svg {
+  width: 21px;
+  height: 14px;
+}
+
+.cs-sections > section > span > .light-arrow-svg {
+  color: #000;
+}
+
+.cs-sections > section > span > .dark-arrow-svg {
+  color: #e4e4e4;
+}
+.cs-sections > section:last-child {
+  border: none;
+}
+
+/* ------------------------------------texts styes --------------------------- */
+/* NAVBAR */
+.light-nav-texts,
+.dark-nav-texts {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-style: normal;
+  line-height: normal;
+}
+.dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+}
+
+.light-nav-texts-active,
+.dark-nav-texts-active {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Poppins-regular;
+}
+
+.dark-nav-texts-active {
+  color: #fffcfc;
+}
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+}
+/* -----------------------main body texts styles --------------- */
+.dark-menu-title-texts,
+.light-menu-title-texts {
+  font-family: Poppins-bold;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.dark-menu-title-texts {
+  color: #0389e1;
+}
+.light-menu-title-texts {
+  color: #150aa1;
+}
+
+.light-setting-subtitle-texts,
+.dark-setting-subtitle-texts {
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.dark-setting-subtitle-texts {
+  color: #fffcfc;
+}
+
+.light-setting-subtitle-texts {
+  color: #000;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}

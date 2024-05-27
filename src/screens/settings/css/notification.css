@@ -1,0 +1,411 @@
+/* This removes padding & margin from every container */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* text styles */
+@font-face {
+  font-family: poppins-bold;
+  src: url(../../../assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url(../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins-medium;
+  src: url(../../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 16px;
+}
+
+/* DO NOT REMOVE THE CODE ABOVE */
+
+/* /-----------------------SIDE BAR -------------------------/ */
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* dark mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+/*                 scrollbar             */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: radial-gradient(circle at -65% -65%, rgb(130, 6, 225), #22074a);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #14042c;
+}
+
+/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
+
+body {
+  user-select: none;
+}
+
+.light-body {
+  height: 100vh;
+  background-color: #dad9d9;
+  overflow: hidden;
+}
+
+.dark-body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #272727;
+}
+
+.notification {
+  display: flex;
+}
+
+.sidebar-nav {
+  width: 20vw;
+  min-width: 220px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding: 4vh 0 0 0;
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  width: fit-content;
+  margin: auto;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 19px;
+  padding: 1.7vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  /* ---------------------------------------------------JavaScript will be used to change the width from 100% to fit-content when the menu-text is displayed as none--------------------------------------- */
+  width: 100%;
+}
+
+header {
+  margin: auto;
+}
+
+.prof-pic {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+}
+
+.menu-link {
+  padding: 1.7vh 1vw;
+}
+
+svg {
+  color: var(--svg-color);
+}
+
+.menu-text {
+  /* -----------------------------------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content --------------------------------------- */
+  display: block;
+}
+
+/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
+
+.light-sidebar-nav {
+  background-color: var(--lm-sidebar-bg-color);
+}
+
+.light-nav-link-container a:hover {
+  background-color: var(--lm-active-menu-bg-color);
+  color: var(--lm-active-menu);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+.light-nav-link-container a:hover svg {
+  color: var(--lm-active-menu);
+}
+
+a.light-active-menu {
+  background-color: var(--lm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+a.light-active-menu svg {
+  color: var(--lm-active-menu);
+}
+
+/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
+
+.dark-sidebar-nav {
+  background-color: var(--dm-sidebar-bg-color);
+  background-image: url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/worldwide-location.svg"),
+    url("../../../assets/icons/video-conference.svg"),
+    url("../../../assets/icons/chat-room.svg"),
+    url("../../../assets/icons/video-conference.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat;
+  background-position: top 56px right 92px, top 198px right 18px,
+    top 395px right 250px, top 450px right 18px, top 547px right 160px,
+    top 789px right 231px;
+}
+
+.dark-nav-link-container a:hover {
+  color: var(--dm-active-menu);
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+.dark-nav-link-container a:hover svg {
+  color: var(--dm-active-menu);
+}
+
+a.dark-active-menu {
+  background-color: var(--dm-active-menu-bg-color);
+  border-radius: 12px;
+  padding: 1.7vh 1vw;
+}
+
+a.dark-active-menu svg {
+  color: var(--dm-active-menu);
+}
+
+/* ...........START OF NOTIFICATION LIGHT PAGE */
+.notification-page {
+  height: 100vh;
+  width: 80vw;
+  padding: 4vh 0px 0px 4vw;
+  overflow-y: auto;
+}
+
+.light-notification-page {
+  background-color: #dad9d9;
+}
+
+.dark-notification-page {
+  background-color: #222020;
+}
+
+.notification-page-item1 {
+  width: 75%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+hr {
+  border: 1px solid #979797;
+  margin: 10px 0px 10px 0px;
+}
+
+/* ---------- START OF TOOGLE BUTTON----------- */
+.toogle-button {
+  margin-left: auto;
+}
+
+/*---------------TOGGLE KEY--------------*/
+/* The switch - the box around the slider */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c7c7f9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: -3.1px;
+  background-color: #a9a9a9;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  background-color: #150aa1;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #c7c7f9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider {
+  border-radius: 34px;
+}
+
+.slider:before {
+  border-radius: 50%;
+}
+
+/* ------------------------------------texts styes --------------------------- */
+/* NAVBAR */
+.light-nav-texts {
+  color: rgba(169, 169, 169, 0.9);
+  font-family: poppins-regular;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.Dark-nav-texts {
+  color: #a9a9a9;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dark-nav-texts-active {
+  color: #fffcfc;
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.light-nav-texts-active {
+  color: rgba(34, 32, 32, 0.9);
+  font-family: Poppins-regular;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* --------notification texts------- */
+.menu-title-texts-mode {
+  font-family: Poppins-regular;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.dark-menu-title-texts-mode {
+  color: #0389e1;
+}
+
+.light-menu-title-texts-mode {
+  color: #150aa1;
+}
+
+.menu-subtitle-texts-mode {
+  font-family: Poppins-medium;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.dark-menu-subtitle-texts-mode {
+  color: #fffcfc;
+}
+
+.light-menu-subtitle-texts-mode {
+  color: #373737;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 998px and down) */
+@media only screen and (max-width: 998px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
+  .nav-link-container a {
+    width: fit-content;
+  }
+
+  .menu-text {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}

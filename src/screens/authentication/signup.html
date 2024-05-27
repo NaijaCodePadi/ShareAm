@@ -1,77 +1,237 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Signup | ShareAm</title>
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-  </head>
-  <body>
-    <section class="light-signup-container">
-      <section class="light-signup-splash">
-        <div class="light-signup-splash-logo">
-          <img
-            src="../../assets/icons/splash-logo-fade.svg"
-            alt="ShareAm Logo"
-          />
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | ShareAm</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./../common/control-bar.css" />
+</head>
+
+<body>
+    <!-- Top Control Bar -->
+    <header>
+      <div class="icon-bar">
+        <div>
+          <img src="../../assets/images/logo.png" alt="ShareAm_Logo"> 
         </div>
-        <div class="light-signup-splash-text">
-          <h2 class="light-signup-splash-text-heading">Share<span>Am</span></h2>
-          <p class="light-signup-splash-text-pg">
-            Seamless Conversations, Anytime, Anywhere.
-          </p>
+        <div>
+          Sign Up | ShareAm
         </div>
-      </section>
-      <section class="light-signup-form-wrapper">
+      </div>
+      <div id="control-box-parent" class="control-box">
+        <div id="minimize-button" class="minimize"> <img src="../../assets/icons/control_box/minimize.svg"></div>
+        <div id="maximize-button" class="maximize"><img src="../../assets/icons/control_box/maximize.svg"></div>
+        <div id="close-button" class="main-close-button"><img src="../../assets/icons/control_box/close.svg"></div>
+      </div>
+    </header>
+    <!-- End Of Top Control Bar -->
+  <div class="container">
+    <aside class="sidebar">
+      <img src="../../assets/images/logo.png" alt="ShareAm_Logo">
+      <h1> Share<span>Am</span></h1>
+      <p class="tagline">Seamless Conversations, Anytime, Anywhere.</p>
+      <!-- TOGGLE BUTTON -->
+      <div id="toggle-container">
+        <div class="toogle-btn">
+          <input type="checkbox" id="darkmode-toggle" />
+          <label for="darkmode-toggle">
+            <svg
+              version="1.1"
+              class="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://		www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 49.739 49.739"
+              style="enable-background: new 0 0 49.739 49.739"
+              xml:space="preserve"
+            >
+              <path
+                d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+                c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+                c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+                C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+                c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+                c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"
+              />
+            </svg>
+
+            <svg
+              version="1.1"
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.	w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 496 496"
+              style="enable-background: new 0 0 496 496"
+              xml:space="preserve"
+            >
+              <rect
+                x="152.994"
+                y="58.921"
+                transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.9"
+                y="164.979"
+                transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.947"
+                y="315.048"
+                transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="164.966"
+                y="409.112"
+                transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
+                width="16"
+                height="39.999"
+              />
+
+              <rect
+                x="303.031"
+                y="421.036"
+                transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.088"
+                y="315.018"
+                transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.054"
+                y="165.011"
+                transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="315.001"
+                y="46.895"
+                transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                width="16"
+                height="39.999"
+              />
+              <path
+                d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+                c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
+              />
+              <rect x="240" width="16" height="72" />
+              <rect
+                x="62.097"
+                y="90.096"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                width="71.999"
+                height="16"
+              />
+              <rect y="240" width="72" height="16" />
+
+              <rect
+                x="90.091"
+                y="361.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
+                width="16"
+                height="71.999"
+              />
+              <rect x="240" y="424" width="16" height="72" />
+
+              <rect
+                x="361.881"
+                y="389.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                width="71.999"
+                height="16"
+              />
+              <rect x="424" y="240" width="72" height="16" />
+              <rect
+                x="389.911"
+                y="62.091"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                width="16"
+                height="71.999"
+              />
+            </svg>
+          </label>
+        </div>
+        <div id="reset-to-system" class="reset_theme">Reset Theme</div>
+      </div>
+      <!--END TOGGLE BUTTON  -->
+    </aside>
+    <div class="content-sign-up">
+    
+      <div class="auth">
         <h2>Sign Up</h2>
-        <form>
-          <div class="full-name">
-            <label for="fullName" class="login-title-texts">Full Name</label>
-            <input name="fullName" id="fullName" type="text" />
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="username">Full Name:</label>
+            <input type="text" id="username" name="username" required>
           </div>
-          <div class="user-name">
-            <label for="userName" class="login-title-texts">Username</label>
-            <input name="userName" id="userName" type="text" />
+          <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
           </div>
-          <div class="email">
-            <label for="email" class="login-title-texts">Email</label>
-            <input name="email" id="email" type="email" />
+          <div class="input-group">
+            <label for="username">Email:</label>
+            <input type="text" id="username" name="username" required>
           </div>
-          <div class="password">
-            <label for="email" class="login-title-texts">Password</label>
-            <input name="password" id="password" type="password" />
+          <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
           </div>
-          <div class="confirm-password">
-            <label for="confirmPassword" class="login-title-texts">Confirm Password</label>
-            <input
-              name="confirmPassword"
-              id="confirmPassword"
-              type="password"
-            />
+          <div class="input-group">
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="password" name="password" required>
           </div>
-          <button type="submit" class="signup-btn">Sign Up</button>
+      
+          <button class="btn-login" type="submit">Sign Up</button>
         </form>
-        <!-- touch only text, leave the rest  -->
-        <p>
-          By signing up you agree to our <a href="#">Terms of Service</a> and
-          <a href="#">Privacy Policy</a> and confirm that you are at least 18
-          years old.
-        </p>
-
-        <div class="light-sigup-with">or Sign Up With</div>
-
-        <div class="light-socials">
-          <div class="light-google">
-            <img src="../../assets/icons/google-icon.svg" alt="" />
-            <span>Google</span>
+        <div class="links-sign-up">
+          By signing up you agree to our  <a href="./signup.html">Terms of Service</a> and  <a href="./signup.html">Privacy Policy</a> and confirm that you are at least 18 years old.
+        </div>
+        <div class="logUp-with-div">
+          <span class="lines"></span>
+          <div class="logUp-with"><span class="or">or</span> <span>Log In With</span></div>
+          <span class="lines"></span>
+        </div>
+        <div class="external-auth">
+          <div class="link">
+            <div><img src="../../assets/icons/google-icon.svg"> </div>
+            <div> <a class="btn-external-auth" href="">Google</a></div>
           </div>
-          <div class="light-facebook">
-            <img src="../../assets/icons/facebook-icon.svg" alt="" />
-            <span>Facebook</span>
+          <div class="link">
+            <div><img src="../../assets/icons/facebook-icon.svg"> </div>
+            <div> <a class="btn-external-auth" href="">Facebook</a></div>
           </div>
         </div>
-        <a href="../../splash.html">splash</a>
-        <a href="./login.html">login</a>
-      </section>
-    </section>
-  </body>
+          <div class="links" style="text-align: right;">
+            Don’t have an account? <a href="./login.html">Log In </a>
+            <br>
+            <br>
+            <br>
+          </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="../../renderer.js"></script>
+</body>
+
 </html>
