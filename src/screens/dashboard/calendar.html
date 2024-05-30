@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="../../screens/dashboard/css/calendar.css" />
     <link rel="stylesheet" href="./../common/control-bar.css" />
+    <link rel="stylesheet" href="./../common/side-bar.css" />
   </head>
 
   <body>
@@ -38,9 +39,26 @@
     <main class="landing-page-container">
       <aside>
         <nav class="sidebar-nav light-sidebar-nav">
-          <a href="../dashboard/dashboard.html" class="nav-logo">
-            <img src="../../assets/icons/001 1.svg" alt="" />
+          <a href="../settings/profile.html" class="profile-picc">
+            <p class="profile-pic-intials intial-txt">NU</p>
+            <span id="green-circle"></span>
           </a>
+
+          <span class="hamburger">
+            <a href="" class="hamburger-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="22"
+                width="17"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </a>
+          </span>
 
           <div class="nav-link-container light-nav-link-container">
             <a
@@ -244,10 +262,14 @@
             </a>
           </div>
 
-          <a href="../settings/profile.html" class="profile-picc">
-            <p class="profile-pic-intials intial-txt">NU</p>
-            <span id="green-circle"></span>
-          </a>
+          <div class="section4-share-am-div">
+            <img
+              class="shaream-logo"
+              src="../../assets/icons/001 1.svg"
+              alt=""
+            />
+            <h1 class="shaream-txt">Share<span>Am</span></h1>
+          </div>
         </nav>
       </aside>
 
@@ -846,9 +868,7 @@
                   <div class="contact-details-div">
                     <div class="contact-details">
                       <div class="contact-details1">
-                        <h1 class="contact-details1-top">
-                          Prof. Amos Dgreat
-                        </h1>
+                        <h1 class="contact-details1-top">Prof. Amos Dgreat</h1>
                         <div class="contact-details1-bottom">
                           <div id="calender">
                             <svg
@@ -988,9 +1008,7 @@
                   <div class="contact-details-div">
                     <div class="contact-details">
                       <div class="contact-details1">
-                        <h1 class="contact-details1-top">
-                          Prof. Amos Dgreat
-                        </h1>
+                        <h1 class="contact-details1-top">Prof. Amos Dgreat</h1>
                         <div class="contact-details1-bottom">
                           <div id="calender">
                             <svg
@@ -1231,6 +1249,7 @@
                   <button class="schedule-meeting-btn">
                     Schedule a new meeting
                   </button>
+
                   <div class="calender-container">
                     <div class="calender-div1">
                       <div class="calender-dropdown">
@@ -1259,12 +1278,8 @@
             </div>
           </section>
         </div>
-        <footer class="footer-container light-footer-container">
-          <div class="section4-share-am-div">
-            <img src="../../assets/icons/001 1.svg" alt="" />
-            <h1>Share<span>Am</span></h1>
-          </div>
 
+        <footer class="footer-container light-footer-container">
           <div class="section4-text">
             <p>Seamless Conversations, Anytime, Anywhere.</p>
           </div>
