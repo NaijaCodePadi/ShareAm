@@ -11,22 +11,36 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="../common/side-bar.css" />
   </head>
   <body>
     <div class="light-profile-body profile-body">
       <!-- ------------ HTML FOR SIDEBAR --------------- -->
       <aside>
-        <nav class="sidebar-nav light-sidebar-nav">
+        <nav class="sidebar-nav">
           <a href="../settings/profile.html" class="profile-picc">
             <p class="profile-pic-intials intial-txt">NU</p>
             <span id="green-circle"></span>
           </a>
 
-          <div class="nav-link-container light-nav-link-container">
-            <a
-              class="menu-link light-nav-texts"
-              href="../dashboard/dashboard.html"
-            >
+          <span class="hamburger">
+            <a href="" class="hamburger-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="22"
+                width="17"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </a>
+          </span>
+
+          <div class="nav-link-container">
+            <a class="menu-link nav-texts" href="../dashboard/dashboard.html">
               <span>
                 <svg
                   width="19"
@@ -46,7 +60,7 @@
             </a>
 
             <a
-              class="menu-link light-nav-texts light-nav-texts-active light-active-menu"
+              class="menu-link nav-texts nav-texts-active active-menu"
               href="../settings/profile.html"
             >
               <span>
@@ -66,7 +80,7 @@
               <span class="menu-text"> My profile </span>
             </a>
 
-            <a class="menu-link light-nav-texts" href="../dashboard/view.html">
+            <a class="menu-link nav-texts" href="../dashboard/view.html">
               <span>
                 <svg
                   width="19"
@@ -84,7 +98,7 @@
               <span class="menu-text"> Call Interface </span>
             </a>
 
-            <a class="menu-link light-nav-texts" href="../messages/list.html">
+            <a class="menu-link nav-texts" href="../messages/list.html">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +119,7 @@
             </a>
 
             <a
-              class="menu-link light-nav-texts"
+              class="menu-link nav-texts"
               href="../settings/contact_settings.html"
             >
               <span>
@@ -120,6 +134,7 @@
                   viewBox="0 0 32 32"
                   style="enable-background: new 0 0 512 512"
                   xml:space="preserve"
+                  class=""
                 >
                   <g
                     transform="matrix(0.9999999999999973,2.449293598294702e-16,-2.449293598294702e-16,0.9999999999999973,4.085620730620576e-14,3.019806626980426e-14)"
@@ -137,7 +152,7 @@
               <span class="menu-text"> Contacts</span>
             </a>
 
-            <a class="menu-link light-nav-texts" href="schedule_meeting.html">
+            <a class="menu-link nav-texts" href="../dashboard/calendar.html">
               <span>
                 <svg
                   width="20"
@@ -155,10 +170,7 @@
               <span class="menu-text">Calender</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../settings/notification.html"
-            >
+            <a class="menu-link nav-texts" href="../settings/notification.html">
               <span>
                 <svg
                   width="21"
@@ -176,10 +188,7 @@
               <span class="menu-text"> Notifications</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../settings/settings.html"
-            >
+            <a class="menu-link nav-texts" href="../settings/settings.html">
               <span>
                 <svg
                   width="22"
@@ -197,15 +206,12 @@
               <span class="menu-text"> Settings</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../modal/auth_modal.html"
-            >
+            <a class="menu-link nav-texts" href="../modal/auth_modal.html">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="24"
+                  width="21"
+                  height="22"
                   viewBox="0 0 23 24"
                   fill="none"
                   class="icon"
