@@ -20,18 +20,18 @@
   flex-direction: column;
   gap: 1.5vh;
   padding: 7vh 1vw 0vh 1vw;
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg");
+  background-image: url("../../assets/icons/worldwide-location.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/worldwide-location.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/worldwide-location.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/worldwide-location.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
     no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top 5vh right 1.5vw, top 10vh right 10vw,

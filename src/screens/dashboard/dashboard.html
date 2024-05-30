@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="../../screens/dashboard/css/dashboard.css" />
     <link rel="stylesheet" href="./../common/control-bar.css" />
+    <script src="../../components/ToastPopUp.js" type="module"></script>
     <link rel="stylesheet" href="../common/side-bar.css" />
   </head>
 
@@ -646,8 +647,8 @@
                   </div>
                 </div>
 
-                <div class="popup-notification-container">
-                  <div class="popup-notification light-popup-notification">
+                <!-- <div class="popup-notification-container">
+                  <div class="popup-notification">
                     <div class="verified-icon">
                       <svg
                         width="40"
@@ -693,7 +694,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <toast-popup>
+                  <p class="popup-txt" slot="message">
+                    User, your password reset was successful
+                  </p>
+                </toast-popup>
+
               </div>
 
               <div class="card-action-section-container">

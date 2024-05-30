@@ -334,20 +334,24 @@ input:checked + label svg.moon {
   border-radius: 18px;
 }
 
-.light-popup-notification {
-  background: linear-gradient(
-    90deg,
-    #a0a0f6 1.22%,
-    rgba(228, 208, 249, 0) 100%
-  );
+@media (prefers-color-scheme: dark) {
+  .popup-notification{
+    background: linear-gradient(
+      90deg,
+      #f1f1f1 1.22%,
+      rgba(228, 208, 249, 0) 100%
+    );
+  }
 }
 
-.dark-popup-notification {
-  background: linear-gradient(
-    90deg,
-    #f1f1f1 1.22%,
-    rgba(228, 208, 249, 0) 100%
-  );
+@media (prefers-color-scheme: light) {
+  .popup-notification{
+    background: linear-gradient(
+      90deg,
+      #a0a0f6 1.22%,
+      rgba(228, 208, 249, 0) 100%
+    );
+  }
 }
 
 .verified-icon {
