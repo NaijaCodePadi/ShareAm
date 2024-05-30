@@ -40,172 +40,6 @@ body {
   display: flex;
 }
 
-/* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
-
-:root {
-  /* General */
-  --svg-color: #a9a9a9;
-  /* light mode */
-  --lm-sidebar-bg-color: #22074a;
-  --lm-active-menu-bg-color: #ffffff;
-  --lm-active-menu: rgba(34, 32, 32, 0.9);
-
-  /* light mode */
-  --dm-sidebar-bg-color: #1f201f;
-  --dm-active-menu: #fffcfc;
-  --dm-active-menu-bg-color: #373737;
-}
-
-.sidebar-nav {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  padding: 4vh 1vw 2vh 1vw;
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 5vh right 1.5vw, top 10vh right 10vw,
-    top 18vh right 5vw, top 27vh right 11vw, top 35vh right 1vw,
-    top 45vh right 7vw, top 57vh right 12vw, top 64vh right 2vw,
-    top 78vh right 5vw, top 82vh right 11vw, top 90vh right 13vw,
-    top 94vh right 2vw;
-  background-size: 5vh 5vw;
-}
-
-.nav-logo,
-.profile-picc {
-  margin: auto;
-}
-
-.nav-logo img {
-  width: 70px;
-  height: 70px;
-  border-radius: 100%;
-}
-
-.nav-link-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  width: fit-content;
-  margin: auto;
-}
-
-.nav-link-container a {
-  text-decoration: none;
-  display: inline-flex;
-  gap: 15px;
-  padding: 1vh 1vw;
-  border-radius: 12px;
-  transition: all 0.2s ease;
-  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
-  width: 180px;
-}
-
-.menu-link {
-  padding: 1.7vh 1vw;
-}
-
-.menu-text {
-  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
-  display: block;
-}
-
-svg {
-  color: var(--svg-color);
-}
-
-.profile-picc {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  background-color: #d9d9d9;
-  border: 1.4px solid #cfdae2;
-  position: relative;
-  text-decoration: none;
-}
-
-.profile-pic-intials {
-  height: fit-content;
-  width: fit-content;
-}
-
-#green-circle {
-  position: absolute;
-  right: 0;
-  bottom: 6%;
-  width: 12px;
-  height: 12px;
-  background-color: #3cea43;
-  border-radius: 100%;
-  border: 0.5px solid #ffffff;
-}
-
-/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
-
-.light-sidebar-nav {
-  background-color: var(--lm-sidebar-bg-color);
-}
-
-.light-nav-link-container a:hover {
-  background-color: var(--lm-active-menu-bg-color);
-  color: var(--lm-active-menu);
-  border-radius: 12px;
-}
-
-.light-nav-link-container a:hover svg {
-  color: var(--lm-active-menu);
-}
-
-a.light-active-menu {
-  background-color: var(--lm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-a.light-active-menu svg {
-  color: var(--lm-active-menu);
-}
-
-/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
-
-.dark-sidebar-nav {
-  background-color: var(--dm-sidebar-bg-color);
-}
-
-.dark-nav-link-container a:hover {
-  color: var(--dm-active-menu);
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-.dark-nav-link-container a:hover svg {
-  color: var(--dm-active-menu);
-}
-
-a.dark-active-menu {
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-a.dark-active-menu svg {
-  color: var(--dm-active-menu);
-}
-
 /************* LEFT-AND-CARD GENERAL CSS ****************/
 
 .left-and-card {
@@ -833,7 +667,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   height: 7vh;
   padding-right: 3vw;
   align-items: center;
-  z-index: 100;
   border-radius: 0 5px 0 0;
   background-image: url("../../../assets/icons/video-conference.svg"),
     url("../../../assets/icons/worldwide-location.svg"),
@@ -858,15 +691,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background-size: 30px;
 }
 
-.section4-share-am-div {
-  display: flex;
-  align-items: center;
-}
-
-.section4-share-am-div img {
-  height: 7vh;
-}
-
 /*----LIGHT AND DARK MODE FOR LANDING PAGE FOOTER----*/
 .light-footer-container {
   background-color: #22074a;
@@ -877,45 +701,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
-/* NAVBAR */
-
-.light-nav-texts {
-  color: rgba(169, 169, 169, 0.9);
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.dark-nav-texts {
-  color: #a9a9a9;
-  font-family: Rubik;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.dark-nav-texts-active {
-  color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.light-nav-texts-active {
-  color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.intial-txt {
-  color: #fff;
-  font-family: Poppins-bold;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-}
 
 .desktop-title-text {
   color: #fff;
@@ -1072,20 +857,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   text-decoration: none;
 }
 
-.section4-share-am-div h1 {
-  color: #fff;
-  font-family: Poppins-bold;
-  font-size: 1.8rem;
-  font-weight: 800;
-}
-
-.section4-share-am-div h1 > span {
-  color: #6f3fe3;
-  font-family: Poppins-bold;
-  font-size: 1.8rem;
-  font-weight: 800;
-}
-
 .section4-text {
   text-align: right;
   margin-left: auto;
@@ -1127,35 +898,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .section1-container {
     padding: 3vh 2vw;
   }
+
+  .schedule-purpose {
+    width: 30vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 1085px and down) */
 @media only screen and (max-width: 1085px) {
   html {
     font-size: 12px;
-  }
-
-  .nav-logo img {
-    height: 65px;
-    width: 65px;
-  }
-
-  .profile-picc {
-    width: 45px;
-    height: 45px;
-  }
-
-  #green-circle {
-    position: absolute;
-    left: 73%;
-    right: 0;
-    bottom: 7%;
-    width: 10px;
-    height: 10px;
-  }
-
-  .nav-link-container a {
-    width: 150px;
   }
 
   .section1-container {
@@ -1206,30 +958,9 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     font-size: 12px;
   }
 
-  .nav-logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .profile-picc {
-    width: 45px;
-    height: 45px;
-  }
-
-  #green-circle {
-    position: absolute;
-    right: 0;
-    bottom: 5%;
-    width: 10px;
-    height: 10px;
-  }
-
-  .nav-link-container a {
-    width: 140px;
-  }
-
   .section1-container {
     padding: 3vh 2vw;
+    /* background-color: red; */
   }
 
   .section1-div1-left {
@@ -1288,32 +1019,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
-  }
-
-  .profile-picc {
-    width: 40px;
-    height: 40px;
-  }
-
-  #green-circle {
-    position: absolute;
-    left: 73%;
-    right: 0;
-    bottom: 7%;
-    width: 10px;
-    height: 10px;
-  }
-
-  .nav-link-container a {
-    width: fit-content;
-  }
-
-  .menu-text {
-    display: none;
-  }
-
-  .sidebar-nav {
-    width: 12vw;
   }
 
   .section1-container {
@@ -1400,15 +1105,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .section1-div1-left-profile-pic {
     width: 40px;
     height: 40px;
-  }
-
-  #green-circle {
-    position: absolute;
-    right: 0;
-    left: 73%;
-    bottom: 7%;
-    width: 9px;
-    height: 9px;
   }
 
   .desktop-title-text {
