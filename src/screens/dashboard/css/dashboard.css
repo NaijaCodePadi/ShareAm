@@ -587,12 +587,12 @@ input:checked + label svg.moon {
   font-weight: 500;
 }
 
-/* .popup-txt {
+.popup-txt {
   color: #000;
   font-family: poppins-regular;
   font-size: 1rem;
   font-weight: 600;
-} */
+}
 
 .cta-text {
   text-align: center;
