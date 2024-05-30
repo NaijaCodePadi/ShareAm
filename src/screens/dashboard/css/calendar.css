@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: Rubik;
-  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
 html {
@@ -593,7 +593,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0px 4px 2px 0px #dfdfdf;
-  width: 35vw;
+  width: 32vw;
   height: 20vh;
   padding: 0.4vh 1.5vw 3vh 1.5vw;
   border-radius: 18.37px;
@@ -960,7 +960,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .section1-container {
     padding: 3vh 2vw;
-    /* background-color: red; */
   }
 
   .section1-div1-left {
@@ -1085,6 +1084,10 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
   .footer-container {
     background-size: 20px;
+  }
+
+  .schedule-purpose {
+    width: 35vw;
   }
 }
 

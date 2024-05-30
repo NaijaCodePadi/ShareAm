@@ -117,96 +117,14 @@
   display: flex;
   align-items: center;
   margin: auto;
-  margin-bottom: 0;
+  margin-bottom: 1.2vh;
 }
 
 .shaream-logo {
   height: 6vh;
 }
 
-/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
-
-.light-sidebar-nav {
-  background-color: var(--lm-sidebar-bg-color);
-}
-
-.light-nav-link-container a:hover {
-  background-color: var(--lm-active-menu-bg-color);
-  color: var(--lm-active-menu);
-  border-radius: 12px;
-}
-
-.light-nav-link-container a:hover svg {
-  color: var(--lm-active-menu);
-}
-
-a.light-active-menu {
-  background-color: var(--lm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-a.light-active-menu svg {
-  color: var(--lm-active-menu);
-}
-
-/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
-
-.dark-sidebar-nav {
-  background-color: var(--dm-sidebar-bg-color);
-}
-
-.dark-nav-link-container a:hover {
-  color: var(--dm-active-menu);
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-.dark-nav-link-container a:hover svg {
-  color: var(--dm-active-menu);
-}
-
-a.dark-active-menu {
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-a.dark-active-menu svg {
-  color: var(--dm-active-menu);
-}
-
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
-
-/* NAVBAR */
-
-.light-nav-texts {
-  color: rgba(169, 169, 169, 0.9);
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.dark-nav-texts {
-  color: #a9a9a9;
-  font-family: Rubik;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.dark-nav-texts-active {
-  color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.light-nav-texts-active {
-  color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
 
 .intial-txt {
   color: #fff;
@@ -311,4 +229,84 @@ a.dark-active-menu svg {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar-nav {
+    background-color: var(--dm-sidebar-bg-color);
+  }
+
+  .nav-link-container a:hover {
+    background-color: var(--dm-active-menu-bg-color);
+    color: var(--dm-active-menu);
+    border-radius: 12px;
+  }
+
+  .nav-link-container a:hover svg {
+    color: var(--dm-active-menu);
+  }
+
+  a.active-menu {
+    background-color: var(--dm-active-menu-bg-color);
+    border-radius: 12px;
+  }
+
+  a.active-menu svg {
+    color: var(--dm-active-menu);
+  }
+
+  .nav-texts {
+    color: #a9a9a9;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .nav-texts-active {
+    color: #fffcfc;
+    font-family: Poppins-regular;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .sidebar-nav {
+    background-color: var(--lm-sidebar-bg-color);
+  }
+
+  .nav-link-container a:hover {
+    background-color: var(--lm-active-menu-bg-color);
+    color: var(--lm-active-menu);
+    border-radius: 12px;
+  }
+
+  .nav-link-container a:hover svg {
+    color: var(--lm-active-menu);
+  }
+
+  a.active-menu {
+    background-color: var(--lm-active-menu-bg-color);
+    border-radius: 12px;
+  }
+
+  a.active-menu svg {
+    color: var(--lm-active-menu);
+  }
+
+  .nav-texts {
+    color: rgba(169, 169, 169, 0.9);
+    font-family: poppins-regular;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .nav-texts-active {
+    color: rgba(34, 32, 32, 0.9);
+    font-family: Poppins-regular;
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }
