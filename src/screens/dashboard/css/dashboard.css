@@ -236,26 +236,6 @@ input:checked + label svg.moon {
   margin-top: 2vh;
 }
 
-/*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
-
-.light-left-landing-section {
-  background-color: none;
-}
-
-.light-section1-container {
-  background-color: #22074a;
-}
-
-/*----DARK MODE FOR LANDING PAGE LEFT SIDE----*/
-
-.dark-left-landing-section {
-  background-color: #1f201f;
-}
-
-.dark-section1-container {
-  background-color: #181918;
-}
-
 /*/----------------LANDING PAGE CARD--------------/*/
 
 :root {
@@ -268,6 +248,10 @@ input:checked + label svg.moon {
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE CARD SIDE----*/
 .landing-page-card {
+  background: url(../../../assets/images/001-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
   margin-top: 38px;
   width: 100%;
 }
@@ -335,7 +319,7 @@ input:checked + label svg.moon {
 }
 
 @media (prefers-color-scheme: dark) {
-  .popup-notification{
+  .popup-notification {
     background: linear-gradient(
       90deg,
       #f1f1f1 1.22%,
@@ -345,7 +329,7 @@ input:checked + label svg.moon {
 }
 
 @media (prefers-color-scheme: light) {
-  .popup-notification{
+  .popup-notification {
     background: linear-gradient(
       90deg,
       #a0a0f6 1.22%,
@@ -442,19 +426,7 @@ input:checked + label svg.moon {
   margin-top: auto;
 }
 
-/*/ ------------------LIGHT AND DARK MODE CSS FOR LANDING PAGE CARD------------------ /*/
 
-.light-landing-page-card {
-  background: url(../../../assets/images/001-2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
-  background-color: var(--lm-landing-pg-card-bg-color);
-}
-
-.dark-landing-page-card {
-  background-color: var(--dm-landing-pg-card-bg-color);
-}
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
@@ -547,24 +519,6 @@ input:checked + label svg.moon {
   font-weight: 500;
 }
 
-.light-switch-acct-txt {
-  color: #303030;
-}
-
-.dark-switch-acct-txt {
-  color: #fffcfc;
-}
-
-.light-switch-acct-txt a {
-  color: #0272bc;
-  text-decoration: none;
-}
-
-.dark-switch-acct-txt a {
-  color: #048ad7;
-  text-decoration: none;
-}
-
 .start-chatting-txt h2 {
   margin-bottom: 8px;
   color: #0272bc;
@@ -599,14 +553,6 @@ input:checked + label svg.moon {
   font-family: poppins-regular;
   font-size: 1rem;
   font-weight: 500;
-}
-
-.light-cta-text {
-  color: #585858;
-}
-
-.dark-cta-text {
-  color: #fffcfc;
 }
 
 .desktop-features-text {
@@ -956,4 +902,67 @@ input:checked + label svg.moon {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+}
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background-color: #2a282d;
+  }
+  .left-landing-section {
+    background-color: #1f201f;
+  }
+  
+  .section1-container {
+    background-color: #181918;
+  }
+  .new-user-email-txt {
+    color: #fffcfc;
+  }
+  .switch-acct-txt {
+    color: #fffcfc;
+  }
+  .switch-acct-txt a {
+    color: #048ad7;
+    text-decoration: none;
+  }
+  .landing-page-card {
+    background-color: var(--dm-landing-pg-card-bg-color);
+  }
+  .cta-text {
+    color: #fffcfc;
+  }
+  .footer-container {
+    background-color: #181918;
+  }
+}
+@media (prefers-color-scheme: light) {
+  header {
+    background-color: #22074a;
+  }
+  .left-landing-section {
+    background-color: none;
+  }
+  
+  .section1-container {
+    background-color: #22074a;
+  }
+  .new-user-email-txt {
+    color: #303030;
+  }
+  .switch-acct-txt {
+    color: #303030;
+  }
+  .switch-acct-txt a {
+    color: #0272bc;
+    text-decoration: none;
+  }
+  .landing-page-card {
+    background-color: var(--lm-landing-pg-card-bg-color);
+  }
+  .cta-text {
+    color: #585858;
+  }
+  .footer-container {
+    background-color: #22074a;
+  }
 }
