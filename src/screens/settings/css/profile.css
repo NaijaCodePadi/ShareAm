@@ -74,28 +74,12 @@ body {
   cursor: pointer;
 }
 
-.light-body-content {
-  background-color: #fff;
-}
-
-.dark-body-content {
-  background-color: var(--dm-sidebar-bg-color);
-}
-
 .main-section-1 {
   margin: 0 3%;
   height: 275px;
   border-top: 0;
   border: 1px solid #979797;
   border-top: none;
-}
-
-.light-main-section-1 {
-  background: #f1f1ff;
-}
-
-.dark-main-section-1 {
-  background: #979797;
 }
 
 .back-arrow {
@@ -149,16 +133,6 @@ h3 {
   border-radius: 4px;
   margin-bottom: 22px;
   padding: 17px;
-}
-
-.light-bio-input-wrap {
-  border: 1px solid #979797;
-  background: #f6f6f6;
-}
-
-.dark-bio-input-wrap {
-  border: 1px solid #e4e4e4;
-  background: #585858;
 }
 
 #bio-write-up {
@@ -221,14 +195,6 @@ h3 {
   border: 1px solid #979797;
 }
 
-.light-inside-input-text {
-  background: #fff;
-}
-
-.dark-inside-input-text {
-  background-color: #585858;
-}
-
 .password-section {
   display: flex;
   flex-direction: column;
@@ -241,7 +207,6 @@ h3 {
   border: 1px solid #e4e4e4;
   background: #1058e8;
   color: #fff;
-  border: none;
 }
 
 .change-inputs {
@@ -260,13 +225,6 @@ h3 {
   border-radius: 4px;
   border: 1px solid #979797;
   outline: none;
-}
-
-.light-enter-password {
-  background: none;
-}
-.dark-enter-password {
-  background: #585858;
 }
 
 .main-section-4 {
@@ -296,14 +254,6 @@ h3 {
   padding: 1.5vh 1vw;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
-}
-
-.light-location-input {
-  background: #fff;
-}
-
-.dark-location-input {
-  background: #585858;
 }
 
 .location-btn-wrapper {
@@ -341,14 +291,6 @@ h3 {
 .url-link a {
   display: inline-block;
   word-break: break-all;
-}
-
-.light-url-link {
-  background: #f1f1f1;
-}
-
-.dark-url-link {
-  background: #585858;
 }
 
 .social-media-handles {
@@ -458,7 +400,7 @@ input:checked + .slider:before {
   flex-shrink: 0;
   border-radius: 60px;
   border: 1px solid #f52b1e;
-  background: #fff;
+  background: #e4e4e4;
   color: #f52b1e;
   font-size: 1rem;
   font-weight: 400;
@@ -466,7 +408,7 @@ input:checked + .slider:before {
 
 /**************** CSS FOR PROFILE FOOTER ******************/
 footer {
-  background: #b0b0b0;
+  background: #979797;
   margin-top: 15px;
 }
 
@@ -524,14 +466,7 @@ footer {
   font-family: Poppins-regular;
 }
 
-.light-cover-photo-text {
-  color: #0272bc;
-  font-family: Poppins-medium;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.dark-cover-photo-text {
-  color: #585858;
+.cover-photo-text {
   font-family: Poppins-medium;
   font-size: 1rem;
   font-weight: 400;
@@ -571,14 +506,6 @@ footer {
   font-weight: 700;
 }
 
-.light-change-text {
-  color: #0272bc;
-}
-
-.dark-change-text {
-  color: #fffcfc;
-}
-
 .change-input-text {
   color: #9a9a9a;
   font-family: Poppins-medium;
@@ -599,14 +526,6 @@ footer {
   font-weight: 400;
 }
 
-.light-url-text {
-  color: #a9a9a9;
-}
-
-.dark-url-text {
-  color: rgba(34, 32, 32, 0.9);
-}
-
 .share-txt {
   color: #222020e5;
   font-family: Poppins-medium;
@@ -615,15 +534,7 @@ footer {
   line-height: 22px;
 }
 
-.light-show-text {
-  color: #0272bc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.dark-show-text {
-  color: #fffcfc;
+.show-text {
   font-family: Poppins-regular;
   font-size: 1rem;
   font-weight: 700;
@@ -661,6 +572,7 @@ footer {
 
 .links p {
   color: #585858;
+  font-weight: 600;
 }
 
 .footer-share-text {
@@ -727,4 +639,101 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+}
+
+/*/--- DARK AND LIGHT MODE PROPERTIES--- /*/
+@media (prefers-color-scheme: dark) {
+  .body-content {
+    background-color: #222020;
+  }
+
+  .main-section-1 {
+    background: #979797;
+  }
+
+  .cover-photo-text {
+    color: #585858;
+  }
+
+  .change-text {
+    color: #fffcfc;
+  }
+
+  .bio-input-wrap {
+    border: 1px solid #979797;
+    background: #585858;
+  }
+
+  .inside-input-text {
+    background-color: #585858;
+  }
+
+  .enter-password {
+    background: #585858;
+  }
+
+  .location-input {
+    background: #585858;
+    border: 1px solid #979797;
+  }
+
+  .url-link {
+    background: #585858;
+    border: 1px solid #979797;
+  }
+
+  .url-text {
+    color: rgba(34, 32, 32, 0.9);
+  }
+
+  .show-text {
+    color: #fffcfc;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .body-content {
+    background-color: #fff;
+  }
+
+  .main-section-1 {
+    background: #f1f1ff;
+  }
+
+  .cover-photo-text {
+    color: #0272bc;
+  }
+
+  .change-text {
+    color: #0272bc;
+  }
+
+  .bio-input-wrap {
+    border: 1px solid #979797;
+    background: #f6f6f6;
+  }
+
+  .inside-input-text {
+    background: #fff;
+  }
+
+  .enter-password {
+    background: none;
+  }
+
+  .location-input {
+    background: #fff;
+  }
+
+  .url-link {
+    background: #f1f1f1;
+  }
+
+  .url-text {
+    color: #a9a9a9;
+  }
+
+  .show-text {
+    color: #0272bc;
+  }
 }
