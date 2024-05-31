@@ -234,25 +234,6 @@ input:checked + label svg.moon {
   margin-top: 2vh;
 }
 
-/*----LIGHT MODE FOR LANDING PAGE LEFT SIDE----*/
-
-.light-left-landing-section {
-  background-color: none;
-}
-
-.light-section1-container {
-  background-color: #22074a;
-}
-
-/*----DARK MODE FOR LANDING PAGE LEFT SIDE----*/
-
-.dark-left-landing-section {
-  background-color: #1f201f;
-}
-
-.dark-section1-container {
-  background-color: #181918;
-}
 
 /*/----------------LANDING PAGE CARD--------------/*/
 
@@ -266,6 +247,10 @@ input:checked + label svg.moon {
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE CARD SIDE----*/
 .landing-page-card {
+  background: url(../../../assets/images/001-2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
   margin-top: 38px;
   width: 100%;
 }
@@ -330,22 +315,6 @@ input:checked + label svg.moon {
   padding: 0 1vw;
   gap: 3vw;
   border-radius: 18px;
-}
-
-.light-popup-notification {
-  background: linear-gradient(
-    90deg,
-    #a0a0f6 1.22%,
-    rgba(228, 208, 249, 0) 100%
-  );
-}
-
-.dark-popup-notification {
-  background: linear-gradient(
-    90deg,
-    #f1f1f1 1.22%,
-    rgba(228, 208, 249, 0) 100%
-  );
 }
 
 .verified-icon {
@@ -646,19 +615,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-/*/ ------------------LIGHT AND DARK MODE CSS FOR LANDING PAGE CARD------------------ /*/
 
-.light-landing-page-card {
-  background: url(../../../assets/images/001-2.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
-  background-color: var(--lm-landing-pg-card-bg-color);
-}
 
-.dark-landing-page-card {
-  background-color: var(--dm-landing-pg-card-bg-color);
-}
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
@@ -691,14 +649,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background-size: 30px;
 }
 
-/*----LIGHT AND DARK MODE FOR LANDING PAGE FOOTER----*/
-.light-footer-container {
-  background-color: #22074a;
-}
 
-.dark-footer-container {
-  background-color: #181918;
-}
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
@@ -1165,4 +1116,55 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+}
+
+@media (prefers-color-scheme: dark) {
+  header{
+    background-color: #2A282D;
+  }
+  .left-landing-section {
+    background-color: #1f201f;
+  }
+  
+  .section1-container {
+    background-color: #181918;
+  }
+  .landing-page-card {
+    background-color: var(--dm-landing-pg-card-bg-color);
+  }
+  .popup-notification {
+    background: linear-gradient(
+      90deg,
+      #f1f1f1 1.22%,
+      rgba(228, 208, 249, 0) 100%
+    );
+  }
+  .footer-container {
+    background-color: #181918;
+  }
+}
+@media (prefers-color-scheme: light) {
+  header{
+    background-color: #22074A;
+  }
+  .left-landing-section {
+    background-color: none;
+  }
+  
+  .section1-container {
+    background-color: #22074a;
+  }
+  .landing-page-card {
+    background-color: var(--lm-landing-pg-card-bg-color);
+  }
+  .popup-notification {
+    background: linear-gradient(
+      90deg,
+      #a0a0f6 1.22%,
+      rgba(228, 208, 249, 0) 100%
+    );
+  }
+  .footer-container {
+    background-color: #22074a;
+  }
 }
