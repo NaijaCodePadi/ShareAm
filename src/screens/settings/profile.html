@@ -15,30 +15,29 @@
     <link rel="stylesheet" href="../common/side-bar.css" />
   </head>
   <body>
+    <!-- Top Control Bar -->
+    <header>
+      <div class="icon-bar">
+        <div>
+          <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
+        </div>
+        <div>Hello ShareAm!</div>
+      </div>
+      <div id="control-box-parent" class="control-box">
+        <div id="minimize-button" class="minimize">
+          <img src="../../assets/icons/control_box/minimize.svg" />
+        </div>
+        <div id="maximize-button" class="maximize">
+          <img src="../../assets/icons/control_box/maximize.svg" />
+        </div>
+        <div id="close-button" class="main-close-button">
+          <img src="../../assets/icons/control_box/close.svg" />
+        </div>
+      </div>
+    </header>
+    <!-- End Of Top Control Bar -->
 
-        <!-- Top Control Bar -->
-        <header>
-          <div class="icon-bar">
-            <div>
-              <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
-            </div>
-            <div>Hello ShareAm!</div>
-          </div>
-          <div id="control-box-parent" class="control-box">
-            <div id="minimize-button" class="minimize">
-              <img src="../../assets/icons/control_box/minimize.svg" />
-            </div>
-            <div id="maximize-button" class="maximize">
-              <img src="../../assets/icons/control_box/maximize.svg" />
-            </div>
-            <div id="close-button" class="main-close-button">
-              <img src="../../assets/icons/control_box/close.svg" />
-            </div>
-          </div>
-        </header>
-        <!-- End Of Top Control Bar -->
-
-    <div class="light-profile-body profile-body">
+    <div class="profile-body">
       <!-- ------------ HTML FOR SIDEBAR --------------- -->
       <aside>
         <nav class="sidebar-nav">
@@ -261,10 +260,10 @@
         </nav>
       </aside>
 
-      <main class="mainbody light-mainbody">
-        <section class="light-body-content">
+      <main class="mainbody">
+        <section class="body-content">
           <main class="main-section">
-            <div class="main-section-1 light-main-section-1">
+            <div class="main-section-1">
               <div>
                 <a href="#">
                   <svg
@@ -311,7 +310,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <h3 class="light-cover-photo-text">Add Cover Photo</h3>
+                <h3 class="cover-photo-text">Add Cover Photo</h3>
               </div>
               <div class="user-pic-user-names">
                 <img src="../../assets/images/eth portrait 1.png" />
@@ -326,14 +325,11 @@
             <div class="main-section-2">
               <div class="main-section-2-wrap">
                 <form class="bio-form">
-                  <label
-                    for="bio-write-up"
-                    class="light-change-text change-text"
-                  >
+                  <label for="bio-write-up" class="change-text">
                     Add Bio/About
                   </label>
 
-                  <div class="bio-input-wrap light-bio-input-wrap">
+                  <div class="bio-input-wrap">
                     <input
                       type="text"
                       id="bio-write-up"
@@ -353,12 +349,10 @@
             <div class="main-section-3">
               <div class="display-username">
                 <form class="display-name-section">
-                  <label
-                    for="display-name"
-                    class="light-change-text change-text"
+                  <label for="display-name" class="change-text"
                     >Change Display Name</label
                   >
-                  <div class="light-inside-input-text inside-input-text">
+                  <div class="inside-input-text">
                     <input
                       type="text"
                       id="display-name"
@@ -372,12 +366,10 @@
                 </form>
 
                 <form class="username-section">
-                  <label
-                    for="change-username"
-                    class="light-change-text change-text"
+                  <label for="change-username" class="change-text"
                     >Change Username
                   </label>
-                  <div class="light-inside-input-text inside-input-text">
+                  <div class="inside-input-text">
                     <input
                       type="text"
                       id="change-username"
@@ -393,10 +385,8 @@
 
               <div class="email-password">
                 <form class="email-section">
-                  <label for="email" class="light-change-text change-text"
-                    >Change Email</label
-                  >
-                  <div class="light-inside-input-text inside-input-text">
+                  <label for="email" class="change-text">Change Email</label>
+                  <div class="inside-input-text">
                     <input
                       type="text"
                       id="email"
@@ -410,22 +400,22 @@
                 </form>
 
                 <form class="password-section">
-                  <label for="password" class="light-change-text change-text"
+                  <label for="password" class="change-text"
                     >Change Password</label
                   >
                   <input
                     type="text"
                     id="password"
-                    class="change-input-text light-enter-password enter-password"
+                    class="change-input-text enter-password"
                     placeholder="Enter Old Password"
                   />
                   <input
                     type="text"
                     id="password"
-                    class="change-input-text light-enter-password enter-password"
+                    class="change-input-text enter-password"
                     placeholder="Enter New Password"
                   />
-                  <div class="light-inside-input-text inside-input-text">
+                  <div class="inside-input-text">
                     <input
                       type="text"
                       id=""
@@ -444,10 +434,8 @@
               <div class="main-section-4-wrap">
                 <div class="location">
                   <form class="location-form">
-                    <label for="location" class="light-change-text change-text"
-                      >Location</label
-                    >
-                    <div class="location-input light-location-input">
+                    <label for="location" class="change-text">Location</label>
+                    <div class="location-input">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -477,12 +465,10 @@
 
                 <div class="unique-url-wrapper">
                   <div class="unique-url">
-                    <h3 class="light-change-text change-text">
-                      My ShareAm Unique URL
-                    </h3>
+                    <h3 class="change-text">My ShareAm Unique URL</h3>
 
-                    <p class="url-link light-url-link">
-                      <a href="#" class="light-url-text url-text">
+                    <p class="url-link">
+                      <a href="#" class="url-text">
                         https://www.ShareAm/username</a
                       >
                     </p>
@@ -503,7 +489,7 @@
             <div class="main-section-5">
               <div class="status">
                 <div class="active-status">
-                  <p class="light-show-text">Show Activity Status</p>
+                  <p class="show-text">Show Activity Status</p>
                   <div class="toogle-button">
                     <label class="toggle">
                       <input type="checkbox" />
@@ -512,7 +498,7 @@
                   </div>
                 </div>
                 <div class="sub-status">
-                  <p class="light-show-text">Show Subscription Status</p>
+                  <p class="show-text">Show Subscription Status</p>
                   <div class="toogle-button">
                     <label class="toggle">
                       <input type="checkbox" />
