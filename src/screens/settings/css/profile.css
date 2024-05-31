@@ -186,7 +186,7 @@ h3 {
 .inside-input-text {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.5vw;
   width: 28vw;
   height: 52px;
   border-radius: 4px;
@@ -201,12 +201,13 @@ h3 {
 }
 
 #change-btn {
-  width: 12vw;
+  width: 8vw;
   height: 6vh;
   border-radius: 60px;
   border: 1px solid #e4e4e4;
   background: #1058e8;
   color: #fff;
+  margin-left: auto;
 }
 
 .change-inputs {
@@ -527,7 +528,6 @@ footer {
 }
 
 .share-txt {
-  color: #222020e5;
   font-family: Poppins-medium;
   font-size: 0.9rem;
   font-weight: 700;
@@ -596,6 +596,10 @@ footer {
   html {
     font-size: 12px;
   }
+
+  #change-btn {
+    width: 12vw;
+  }
 }
 
 /* Large devices (laptops/desktops, 998px and down) */
@@ -644,7 +648,7 @@ footer {
 /*/--- DARK AND LIGHT MODE PROPERTIES--- /*/
 @media (prefers-color-scheme: dark) {
   .body-content {
-    background-color: #222020;
+    background-color: #2a282d;
   }
 
   .main-section-1 {
@@ -655,11 +659,18 @@ footer {
     color: #585858;
   }
 
-  .change-text {
+  .change-text,
+  .show-text {
     color: #fffcfc;
   }
 
-  .bio-input-wrap {
+  .share-txt {
+    color: #979797;
+  }
+
+  .bio-input-wrap,
+  .url-link,
+  .location-input {
     border: 1px solid #979797;
     background: #585858;
   }
@@ -672,40 +683,35 @@ footer {
     background: #585858;
   }
 
-  .location-input {
-    background: #585858;
-    border: 1px solid #979797;
-  }
-
-  .url-link {
-    background: #585858;
-    border: 1px solid #979797;
-  }
-
   .url-text {
-    color: rgba(34, 32, 32, 0.9);
+    color: #a9a9a9;
   }
 
-  .show-text {
-    color: #fffcfc;
+  .location-icon {
+    color: #979797;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .body-content {
+  .body-content,
+  .inside-input-text,
+  .location-input {
     background-color: #fff;
   }
 
-  .main-section-1 {
+  .main-section-1,
+  .url-link {
     background: #f1f1ff;
   }
 
-  .cover-photo-text {
+  .cover-photo-text,
+  .change-text,
+  .show-text {
     color: #0272bc;
   }
 
-  .change-text {
-    color: #0272bc;
+  .share-txt {
+    color: #222020e5;
   }
 
   .bio-input-wrap {
@@ -713,27 +719,15 @@ footer {
     background: #f6f6f6;
   }
 
-  .inside-input-text {
-    background: #fff;
-  }
-
   .enter-password {
     background: none;
-  }
-
-  .location-input {
-    background: #fff;
-  }
-
-  .url-link {
-    background: #f1f1f1;
   }
 
   .url-text {
     color: #a9a9a9;
   }
 
-  .show-text {
-    color: #0272bc;
+  .location-icon {
+    color: #1058e8;
   }
 }
