@@ -198,13 +198,6 @@ a.dark-active-menu svg {
   height: 14px;
 }
 
-.cs-sections > section > span > .light-arrow-svg {
-  color: #000;
-}
-
-.cs-sections > section > span > .dark-arrow-svg {
-  color: #e4e4e4;
-}
 .cs-sections > section:last-child {
   border: none;
 }
@@ -249,9 +242,7 @@ a.dark-active-menu svg {
   font-weight: 600;
 }
 
-.dark-menu-title-texts {
-  color: #0389e1;
-}
+
 .light-menu-title-texts {
   color: #150aa1;
 }
@@ -263,9 +254,7 @@ a.dark-active-menu svg {
   font-weight: 400;
 }
 
-.dark-setting-subtitle-texts {
-  color: #fffcfc;
-}
+
 
 .light-setting-subtitle-texts {
   color: #000;
@@ -275,5 +264,29 @@ a.dark-active-menu svg {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .mainbody{
+    background-color: #222020;
+  }
+  .light-setting-subtitle-texts {
+    color: #fffcfc;
+  }
+  .light-menu-title-texts {
+    color: #0389e1;
+  }
+  .light-arrow-svg {
+    fill: #FFFCFC;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .mainbody{
+    background-color: #dad9d9;
+  }
+  .light-arrow-svg {
+    fill: black;
   }
 }
