@@ -234,7 +234,6 @@ input:checked + label svg.moon {
   margin-top: 2vh;
 }
 
-
 /*/----------------LANDING PAGE CARD--------------/*/
 
 :root {
@@ -279,12 +278,11 @@ input:checked + label svg.moon {
   width: 50%;
   height: 40px;
   border-radius: 11.043px;
-  background: #fff;
   gap: 2px;
   padding-left: 1vw;
   align-items: center;
-  border: 1px solid #b0b0b0;
   margin-bottom: 1vw;
+  border: 1px solid #b0b0b0;
 }
 
 .search-box svg {
@@ -358,7 +356,6 @@ input:checked + label svg.moon {
   display: flex;
   border-radius: 8px;
   color: #5a5a5a;
-  border: 2px solid #22074a;
 }
 
 .div1-navbar p {
@@ -369,7 +366,6 @@ input:checked + label svg.moon {
 }
 
 .active-tab {
-  background-color: #22074a;
   color: #fff;
 }
 
@@ -389,9 +385,7 @@ input:checked + label svg.moon {
 .contact-details-div {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
   border-radius: 9px;
-  box-shadow: 0px 4px 2px 0px #dfdfdf;
   padding: 2vh 1vw;
   gap: 1vh;
 }
@@ -452,11 +446,6 @@ input:checked + label svg.moon {
   cursor: pointer;
 }
 
-.cancel-btn {
-  background-color: #e8f3f1;
-  color: #555555;
-}
-
 .reschedule-btn {
   background-color: #22074a;
   color: #fff;
@@ -477,7 +466,7 @@ input:checked + label svg.moon {
   background: #22074a;
   color: #fff;
   font-family: poppins-medium;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   text-align: center;
   padding: 3vh 3vw;
   border-radius: 8px;
@@ -501,37 +490,32 @@ input:checked + label svg.moon {
 .calender-dropdown {
   display: flex;
   border-radius: 15px;
-  border: 0.5px solid #cecece;
+  border: 0.5px solid #cecccc;
   align-items: center;
   gap: 1vw;
-  background: #fff;
   width: 9vw;
-  box-shadow: 0px 4px 2px 0px #dfdfdf;
 }
 
 select {
   font-family: poppins-regular;
   font-size: 0.7rem;
-  color: #979797;
+  color: #3d3d3d;
   outline: none;
   border: none;
   border-radius: 11px;
-  background-color: #fff;
   width: 8.5vw;
   padding: 0.3vh 1vw;
 }
 
 .calender-time {
   text-align: center;
-  color: #979797;
+  color: #3d3d3d;
   font-family: poppins-regular;
   font-size: 0.7rem;
   border-radius: 11px;
-  background-color: #fff;
   padding: 0.3vh 0.2vw;
-  box-shadow: 0px 4px 2px 0px #dfdfdf;
   outline: none;
-  border: none;
+  border: 0.5px solid #cecccc;
 }
 
 input[type="date"] {
@@ -560,8 +544,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .schedule-purpose {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  box-shadow: 0px 4px 2px 0px #dfdfdf;
   width: 32vw;
   height: 20vh;
   padding: 0.4vh 1.5vw 3vh 1.5vw;
@@ -571,7 +553,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .purpose-text {
   font-family: poppins-regular;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   width: 100%;
 }
 
@@ -579,7 +561,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border: 1px solid #cecece;
+  border: 1px solid #8a8787;
 }
 
 .schedule-purpose-input {
@@ -591,7 +573,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   border-radius: 5px;
   border: none;
-  background: #fff;
   /* width: 100%; */
   height: 80%;
 }
@@ -607,16 +588,13 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   background: #22074a;
   color: #fff;
   padding: 2vh 3vw;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   width: fit-content;
   border: none;
   border-radius: 8px;
   margin-left: auto;
   cursor: pointer;
 }
-
-
-
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
@@ -648,8 +626,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     top 3.5vh right 80vw, top 4vh right 90vw, top 3.7vh right 97vw;
   background-size: 30px;
 }
-
-
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
@@ -858,7 +834,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* Large devices (laptops/desktops, 1085px and down) */
 @media only screen and (max-width: 1085px) {
   html {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .section1-container {
@@ -1119,18 +1095,18 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media (prefers-color-scheme: dark) {
-  header{
-    background-color: #2A282D;
+  header {
+    background-color: #2a282d;
   }
   .left-landing-section {
+    background-color: #2a282d;
+  }
+
+  .section1-container {
     background-color: #1f201f;
   }
-  
-  .section1-container {
-    background-color: #181918;
-  }
   .landing-page-card {
-    background-color: var(--dm-landing-pg-card-bg-color);
+    background-color: #2a282d;
   }
   .popup-notification {
     background: linear-gradient(
@@ -1139,18 +1115,55 @@ input[type="time"]::-webkit-calendar-picker-indicator {
       rgba(228, 208, 249, 0) 100%
     );
   }
+  .search-box {
+    background: #cecccc;
+  }
+  .search-box-input {
+    background-color: #cecccc;
+  }
+  .contact-details-div {
+    background-color: #8a8787;
+    box-shadow: 0px 4px 2px 0px #8a8787;
+  }
+  .cancel-btn {
+    background-color: #cecccc;
+    color: #555555;
+  }
+  .calender-dropdown {
+    background-color: #cecccc;
+  }
+  select {
+    background-color: #cecccc;
+  }
+  .calender-time {
+    background-color: #cecccc;
+  }
+  .schedule-purpose {
+    background-color: #cecccc;
+    box-shadow: 0px 4px 2px 0px #8a8787;
+  }
+  .schedule-purpose-input {
+    background: #cecccc;
+  }
+  .div1-navbar {
+    border: 2px solid #1f201f;
+  }
+  .active-tab {
+    background-color: #1f201f;
+  }
+
   .footer-container {
-    background-color: #181918;
+    background-color: #1f201f;
   }
 }
 @media (prefers-color-scheme: light) {
-  header{
-    background-color: #22074A;
+  header {
+    background-color: #22074a;
   }
   .left-landing-section {
     background-color: none;
   }
-  
+
   .section1-container {
     background-color: #22074a;
   }
@@ -1163,6 +1176,44 @@ input[type="time"]::-webkit-calendar-picker-indicator {
       #a0a0f6 1.22%,
       rgba(228, 208, 249, 0) 100%
     );
+  }
+  .search-box {
+    background: #fff;
+  }
+  .search-box-input {
+    background-color: #fff;
+  }
+  .contact-details-div {
+    background-color: #fff;
+    box-shadow: 0px 4px 2px 0px #dfdfdf;
+  }
+  .cancel-btn {
+    background-color: #e8f3f1;
+    color: #555555;
+  }
+  .calender-dropdown {
+    background-color: #fff;
+    box-shadow: 0px 4px 2px 0px #dfdfdf;
+  }
+  select {
+    background-color: #fff;
+  }
+  .calender-time {
+    background-color: #fff;
+    box-shadow: 0px 4px 2px 0px #dfdfdf;
+  }
+  .schedule-purpose {
+    background-color: #fff;
+    box-shadow: 0px 4px 2px 0px #dfdfdf;
+  }
+  .schedule-purpose-input {
+    background: #fff;
+  }
+  .div1-navbar {
+    border: 2px solid #22074a;
+  }
+  .active-tab {
+    background-color: #22074a;
   }
   .footer-container {
     background-color: #22074a;
