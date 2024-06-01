@@ -1,4 +1,4 @@
-/* This removes padding & margin from every container */
+This removes padding & margin from every container
 * {
   box-sizing: border-box;
   padding: 0;
