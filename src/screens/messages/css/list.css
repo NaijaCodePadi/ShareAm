@@ -1,4 +1,4 @@
-/* This removes padding & margin from every container */
+This removes padding & margin from every container
 * {
   box-sizing: border-box;
   padding: 0;
@@ -119,11 +119,7 @@ body {
   justify-content: center;
 }
 
-.section2 {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-}
+
 
 .section2 button {
   border: none;
@@ -249,19 +245,7 @@ body {
   font-family: Rubik;
 }
 
-.select-all-txt {
-  font-family: Rubik;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
 
-.dark-select-all-txt {
-  color: #0490ec;
-}
-
-.light-select-all-txt {
-  color: #150aa1;
-}
 
 .followers-display-name-text {
   font-family: Poppins-regular;

@@ -56,13 +56,7 @@ main {
   height: 100vh;
 }
 
-.light-mainbody {
-  padding: 12px 0 0 11px;
-}
 
-.dark-mainbody {
-  padding: 2px 0 20px 11px;
-}
 
 .mainbody-left-side {
   width: 38%;
@@ -78,13 +72,7 @@ main {
   user-select: none;
 }
 
-.light-mainbody-left-side {
-  background: #f4f1f8;
-}
 
-.dark-mainbody-left-side {
-  background: #222020;
-}
 
 .left-side-div1 {
   width: fit-content;
@@ -120,6 +108,15 @@ main {
   background: #1058e8;
   border: none;
   text-decoration: none;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 0.8vw;
+  margin-top: 20px;
+  margin-bottom: -30px;
 }
 
 .left-side-div2 {
@@ -207,10 +204,21 @@ main {
   border-bottom: 2px solid #979797;
 }
 
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .user-details-div1 {
   height: 49px;
   width: 45px;
   border-radius: 100%;
+}
+.user-details aside {
+  display: flex;
+  align-items: center;
+  gap: 1px;
 }
 
 #blue-text {
@@ -224,19 +232,17 @@ main {
   gap: 1vh;
 }
 
+.user-details-div2 div {
+  display: flex;
+  align-items: center;
+  gap: 2px
+}
+
 .active-dark {
   background: #494848;
 }
 
-.active-light svg {
-  fill: #222020e5;
-  cursor: pointer;
-}
 
-.active-dark svg {
-  fill: #f1e9e9e5;
-  cursor: pointer;
-}
 
 .inactive {
   color: #979797;
@@ -276,6 +282,8 @@ main {
   padding: 0 1vw;
   user-select: none;
 }
+
+
 
 .user-details-div {
   height: fit-content;
@@ -417,30 +425,22 @@ main {
   font-weight: 700;
 }
 
-.dark-new-message-txt {
-  color: #0490ec;
-}
-.light-new-message-txt {
-  color: #0272bc;
-}
-
-.friends-display-name-text {
+.select-all-txt {
+  font-family: Rubik;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.dark-friends-display-name-text-active {
-  color: #fffcfc;
+.friends-display-name-text,
+.friends-display-name-text-active
+{
+  font-size: 0.8rem;
+  font-weight: 600;
   font-family: Poppins-regular;
 }
-.light-friends-display-name-text-active {
-  color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-}
-.light-friends-display-name-text {
-  color: #979797;
-  font-family: Poppins-medium;
-}
+
+
+
 
 .write-message-txt {
   color: #fff;
@@ -455,33 +455,43 @@ main {
 }
 
 .message-text,
+.date-text,
 .dark-disappear-text,
-.light-disappear-text,
-.light-disappear-text span {
-  font-size: 0.8rem;
+.disappear-text,
+.disappear-text span {
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 20px;
+  
+}
+.date-text,
+.disappear-text
+{
+  color: #979797;
+  font-family: Poppins-medium;
 }
 
 .message-text {
   color: #979797;
   font-family: Poppins-medium;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.dark-disappear-text {
-  color: #a9a9a9;
-  font-family: Poppins-regular;
-}
-.light-disappear-text {
+
+
+
+/* .light-disappear-text {
   color: #686868;
   font-family: Poppins-regular;
-}
-/* the below text has the same color in both mode */
-.light-disappear-text span {
+} */
+
+.disappear-text span {
   font-family: Poppins-regular;
 }
 
-.textarea-text,
-.light-textarea-text {
+.textarea-text {
   font-family: Poppins-regular;
   font-size: 1rem;
   font-style: normal;
@@ -489,16 +499,105 @@ main {
   line-height: normal;
 }
 
-.textarea-text {
-  color: rgba(34, 32, 32, 0.9);
+
+@media (prefers-color-scheme: dark) {
+  .mainbody {
+    padding: 2px 0 20px 11px;
+  }
+
+  .new-message-txt {
+    color: #0490ec;
+  }
+  
+  .select-all-txt {
+    color: #0490ec;
+  }
+  
+  .active .bookmark {
+    fill: #f1e9e9e5;
+    cursor: pointer;
+  }
+
+  .friends-display-name-text-active {
+    color: #fffcfc;
+  }
+
+
+
+  .disappear-text {
+    color: #a9a9a9;
+  }
+
+  .textarea-text {
+    color: rgba(34, 32, 32, 0.9);
+  }
+
+  .mainbody-left-side {
+    background: #222020;
+  }
+  
+  
 }
 
-.light-textarea-text {
-  color: #9a9a9a;
+@media (prefers-color-scheme: light) { 
+  .mainbody {
+    padding: 12px 0 0 11px;
+  }
+
+  .mainbody-left-side {
+    background: #f4f1f8;
+  }
+  
+  
+  .new-message-txt {
+    color: #0272bc;
+  }
+
+  .select-all-txt {
+    color: #150aa1;
+  }
+
+  .active .bookmark {
+    fill: #222020e5;
+    cursor: pointer;
+  }
+  
+  .friends-display-name-text-active {
+    color: rgba(34, 32, 32, 0.9);
+  
+  }
+  .friends-display-name-text {
+    color: #979797;
+  }
+
+  .disappear-text{
+    color: #979797;
+    font-family: Poppins-medium;
+  }
+
+  .textarea-text {
+    color: rgba(34, 32, 32, 0.9);
+  }
+  
+  .textarea-text {
+    color: #9a9a9a;
+  }
+
 }
+
+
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+
+}
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) { 
+  .user-details {
+    display: block;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
@@ -506,6 +605,9 @@ main {
   html {
     font-size: 12px;
   }
+
+  
+
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -513,6 +615,7 @@ main {
   html {
     font-size: 12px;
   }
+
 
   .user-details-div1 {
     height: 39px;
