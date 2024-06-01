@@ -31,14 +31,6 @@ html {
   overflow: hidden;
 }
 
-.light-content {
-  background-color: #22074a;
-}
-
-.dark-content {
-  background-color: #1f201f;
-}
-
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -162,14 +154,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.light-interface-section-3 {
-  background-color: #c3a8ec;
-}
-
-.dark-interface-section-3 {
-  background-color: #373737;
 }
 
 .wave-shadow-1 {
@@ -415,22 +399,6 @@ ul {
   width: 50%;
   border-radius: 14px;
   margin: 7vh 2vw 0 2vw;
-}
-
-.light-chat-box {
-  background: linear-gradient(
-    181deg,
-    rgba(218, 217, 217, 0.67) 5%,
-    rgba(218, 217, 217, 0) 154.43%
-  );
-}
-
-.dark-chat-box {
-  background: linear-gradient(
-    181deg,
-    rgba(112, 111, 111, 0.67) 5%,
-    rgba(218, 217, 217, 0) 154.43%
-  );
 }
 
 .chat-box-wrapper {
@@ -930,5 +898,41 @@ input:checked + .slider:before {
   .wave {
     width: 9vw;
     height: 6vh;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .content {
+    background-color: #22074a;
+  }
+
+  .interface-section-3 {
+    background-color: #c3a8ec;
+  }
+
+  .chat-box {
+    background: linear-gradient(
+      181deg,
+      rgba(218, 217, 217, 0.67) 5%,
+      rgba(218, 217, 217, 0) 154.43%
+    );
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .content {
+    background-color: #1f201f;
+  }
+
+  .interface-section-3 {
+    background-color: #373737;
+  }
+
+  .chat-box {
+    background: linear-gradient(
+      181deg,
+      rgba(112, 111, 111, 0.67) 5%,
+      rgba(218, 217, 217, 0) 154.43%
+    );
   }
 }
