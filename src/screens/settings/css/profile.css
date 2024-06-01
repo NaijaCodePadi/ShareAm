@@ -59,176 +59,6 @@ body {
   background: #14042c;
 }
 
-/* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
-
-:root {
-  /* General */
-  --svg-color: #a9a9a9;
-  /* light mode */
-  --lm-sidebar-bg-color: #22074a;
-  --lm-active-menu-bg-color: #ffffff;
-  --lm-active-menu: rgba(34, 32, 32, 0.9);
-
-  /* light mode */
-  --dm-sidebar-bg-color: #1f201f;
-  --dm-active-menu: #fffcfc;
-  --dm-active-menu-bg-color: #373737;
-}
-
-.sidebar-nav {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  padding: 7vh 1vw 2vh 1vw;
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top 5vh right 1.5vw, top 10vh right 10vw,
-    top 18vh right 5vw, top 27vh right 11vw, top 35vh right 1vw,
-    top 45vh right 7vw, top 57vh right 12vw, top 64vh right 2vw,
-    top 78vh right 5vw, top 82vh right 11vw, top 90vh right 13vw,
-    top 94vh right 2vw;
-  background-size: 5vh 5vw;
-}
-
-.profile-picc {
-  margin: auto;
-}
-
-.nav-link-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  width: fit-content;
-  margin: auto;
-}
-
-.nav-link-container a {
-  text-decoration: none;
-  display: inline-flex;
-  gap: 15px;
-  padding: 1vh 1vw;
-  border-radius: 12px;
-  transition: all 0.2s ease;
-  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
-  width: 180px;
-}
-
-.menu-link {
-  padding: 1.7vh 1vw;
-}
-
-.menu-text {
-  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
-  display: block;
-}
-
-svg {
-  color: var(--svg-color);
-}
-
-.profile-picc {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  background-color: #d9d9d9;
-  border: 1.4px solid #cfdae2;
-  position: relative;
-  text-decoration: none;
-}
-
-.profile-pic-intials {
-  height: fit-content;
-  width: fit-content;
-}
-
-#green-circle {
-  position: absolute;
-  right: 3%;
-  bottom: 7%;
-  width: 12px;
-  height: 12px;
-  background-color: #3cea43;
-  border-radius: 100%;
-  border: 0.5px solid #ffffff;
-}
-
-.section4-share-am-div {
-  display: flex;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 0;
-}
-
-.shaream-logo {
-  height: 6vh;
-}
-
-/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
-
-.light-sidebar-nav {
-  background-color: var(--lm-sidebar-bg-color);
-}
-
-.light-nav-link-container a:hover {
-  background-color: var(--lm-active-menu-bg-color);
-  color: var(--lm-active-menu);
-  border-radius: 12px;
-}
-
-.light-nav-link-container a:hover svg {
-  color: var(--lm-active-menu);
-}
-
-a.light-active-menu {
-  background-color: var(--lm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-a.light-active-menu svg {
-  color: var(--lm-active-menu);
-}
-
-/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
-
-.dark-sidebar-nav {
-  background-color: var(--dm-sidebar-bg-color);
-}
-
-.dark-nav-link-container a:hover {
-  color: var(--dm-active-menu);
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-.dark-nav-link-container a:hover svg {
-  color: var(--dm-active-menu);
-}
-
-a.dark-active-menu {
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-}
-
-a.dark-active-menu svg {
-  color: var(--dm-active-menu);
-}
-
 /******************** CSS FOR PROFILE PAGE MAIN BODY  **********************/
 .mainbody {
   width: 100%;
@@ -244,28 +74,12 @@ a.dark-active-menu svg {
   cursor: pointer;
 }
 
-.light-body-content {
-  background-color: #fff;
-}
-
-.dark-body-content {
-  background-color: var(--dm-sidebar-bg-color);
-}
-
 .main-section-1 {
   margin: 0 3%;
   height: 275px;
   border-top: 0;
   border: 1px solid #979797;
   border-top: none;
-}
-
-.light-main-section-1 {
-  background: #f1f1ff;
-}
-
-.dark-main-section-1 {
-  background: #979797;
 }
 
 .back-arrow {
@@ -321,16 +135,6 @@ h3 {
   padding: 17px;
 }
 
-.light-bio-input-wrap {
-  border: 1px solid #979797;
-  background: #f6f6f6;
-}
-
-.dark-bio-input-wrap {
-  border: 1px solid #e4e4e4;
-  background: #585858;
-}
-
 #bio-write-up {
   display: flex;
   width: 85%;
@@ -382,7 +186,7 @@ h3 {
 .inside-input-text {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.5vw;
   width: 28vw;
   height: 52px;
   border-radius: 4px;
@@ -391,27 +195,19 @@ h3 {
   border: 1px solid #979797;
 }
 
-.light-inside-input-text {
-  background: #fff;
-}
-
-.dark-inside-input-text {
-  background-color: #585858;
-}
-
 .password-section {
   display: flex;
   flex-direction: column;
 }
 
 #change-btn {
-  width: 12vw;
+  width: 8vw;
   height: 6vh;
   border-radius: 60px;
   border: 1px solid #e4e4e4;
   background: #1058e8;
   color: #fff;
-  border: none;
+  margin-left: auto;
 }
 
 .change-inputs {
@@ -431,13 +227,6 @@ h3 {
   border-radius: 4px;
   border: 1px solid #979797;
   outline: none;
-}
-
-.light-enter-password {
-  background: none;
-}
-.dark-enter-password {
-  background: #585858;
 }
 
 .main-section-4 {
@@ -467,14 +256,6 @@ h3 {
   padding: 1.5vh 1vw;
   border-radius: 4px;
   border: 1px solid #e4e4e4;
-}
-
-.light-location-input {
-  background: #fff;
-}
-
-.dark-location-input {
-  background: #585858;
 }
 
 .location-btn-wrapper {
@@ -512,14 +293,6 @@ h3 {
 .url-link a {
   display: inline-block;
   word-break: break-all;
-}
-
-.light-url-link {
-  background: #f1f1f1;
-}
-
-.dark-url-link {
-  background: #585858;
 }
 
 .social-media-handles {
@@ -629,7 +402,7 @@ input:checked + .slider:before {
   flex-shrink: 0;
   border-radius: 60px;
   border: 1px solid #f52b1e;
-  background: #fff;
+  background: #e4e4e4;
   color: #f52b1e;
   font-size: 1rem;
   font-weight: 400;
@@ -637,7 +410,7 @@ input:checked + .slider:before {
 
 /**************** CSS FOR PROFILE FOOTER ******************/
 footer {
-  background: #b0b0b0;
+  background: #979797;
   margin-top: 15px;
 }
 
@@ -689,71 +462,13 @@ footer {
 }
 
 /* ------------------------------------texts styes --------------------------- */
-/* NAVBAR */
-
-.light-nav-texts {
-  color: rgba(169, 169, 169, 0.9);
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.dark-nav-texts {
-  color: #a9a9a9;
-  font-family: Rubik;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.dark-nav-texts-active {
-  color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.light-nav-texts-active {
-  color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.intial-txt {
-  color: #fff;
-  font-family: Poppins-bold;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.shaream-txt {
-  color: #fff;
-  font-family: Poppins-bold;
-  font-size: 1.6rem;
-  font-weight: 800;
-}
-
-.shaream-txt > span {
-  color: #6f3fe3;
-}
-
 /* -------profile texts styles------- */
 
 .pop-reg-txt {
   font-family: Poppins-regular;
 }
 
-.light-cover-photo-text {
-  color: #0272bc;
-  font-family: Poppins-medium;
-  font-size: 1rem;
-  font-weight: 400;
-}
-.dark-cover-photo-text {
-  color: #585858;
+.cover-photo-text {
   font-family: Poppins-medium;
   font-size: 1rem;
   font-weight: 400;
@@ -793,14 +508,6 @@ footer {
   font-weight: 700;
 }
 
-.light-change-text {
-  color: #0272bc;
-}
-
-.dark-change-text {
-  color: #fffcfc;
-}
-
 .change-input-text {
   color: #9a9a9a;
   font-family: Poppins-medium;
@@ -821,31 +528,14 @@ footer {
   font-weight: 400;
 }
 
-.light-url-text {
-  color: #a9a9a9;
-}
-
-.dark-url-text {
-  color: rgba(34, 32, 32, 0.9);
-}
-
 .share-txt {
-  color: #222020e5;
   font-family: Poppins-medium;
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 22px;
 }
 
-.light-show-text {
-  color: #0272bc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.dark-show-text {
-  color: #fffcfc;
+.show-text {
   font-family: Poppins-regular;
   font-size: 1rem;
   font-weight: 700;
@@ -883,6 +573,7 @@ footer {
 
 .links p {
   color: #585858;
+  font-weight: 600;
 }
 
 .footer-share-text {
@@ -907,22 +598,8 @@ footer {
     font-size: 12px;
   }
 
-  .menu-text {
-    font-size: 1.1rem;
-  }
-
-  .profile-picc {
-    width: 50px;
-    height: 50px;
-  }
-
-  #green-circle {
-    position: absolute;
-    left: 73%;
-    right: 2%;
-    bottom: 3%;
-    width: 10px;
-    height: 10px;
+  #change-btn {
+    width: 12vw;
   }
 }
 
@@ -956,37 +633,6 @@ footer {
   html {
     font-size: 12px;
   }
-
-  .profile-picc {
-    width: 45px;
-    height: 45px;
-  }
-
-  #green-circle {
-    position: absolute;
-    left: 73%;
-    right: 2%;
-    bottom: 3%;
-    width: 10px;
-    height: 10px;
-  }
-
-  .nav-link-container a {
-    width: fit-content;
-  }
-
-  .menu-text,
-  .shaream-txt {
-    display: none;
-  }
-
-  .shaream-logo {
-    height: 8vh;
-  }
-
-  .sidebar-nav {
-    width: 12vw;
-  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -994,25 +640,95 @@ footer {
   html {
     font-size: 11px;
   }
-
-  #green-circle {
-    position: absolute;
-    right: 0;
-    left: 73%;
-    bottom: 3%;
-    width: 9px;
-    height: 9px;
-  }
-
-  .nav-link-container a {
-    width: fit-content;
-  }
-
-  .menu-text {
-    display: none;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+}
+
+/*/--- DARK AND LIGHT MODE PROPERTIES--- /*/
+@media (prefers-color-scheme: dark) {
+  .body-content {
+    background-color: #2a282d;
+  }
+
+  .main-section-1 {
+    background: #979797;
+  }
+
+  .cover-photo-text {
+    color: #585858;
+  }
+
+  .change-text,
+  .show-text {
+    color: #fffcfc;
+  }
+
+  .share-txt {
+    color: #979797;
+  }
+
+  .bio-input-wrap,
+  .url-link,
+  .location-input {
+    border: 1px solid #979797;
+    background: #585858;
+  }
+
+  .inside-input-text {
+    background-color: #585858;
+  }
+
+  .enter-password {
+    background: #585858;
+  }
+
+  .url-text {
+    color: #a9a9a9;
+  }
+
+  .location-icon {
+    color: #979797;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .body-content,
+  .inside-input-text,
+  .location-input {
+    background-color: #fff;
+  }
+
+  .main-section-1,
+  .url-link {
+    background: #f1f1ff;
+  }
+
+  .cover-photo-text,
+  .change-text,
+  .show-text {
+    color: #0272bc;
+  }
+
+  .share-txt {
+    color: #222020e5;
+  }
+
+  .bio-input-wrap {
+    border: 1px solid #979797;
+    background: #f6f6f6;
+  }
+
+  .enter-password {
+    background: none;
+  }
+
+  .url-text {
+    color: #a9a9a9;
+  }
+
+  .location-icon {
+    color: #1058e8;
+  }
 }

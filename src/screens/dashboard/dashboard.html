@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="../../screens/dashboard/css/dashboard.css" />
     <link rel="stylesheet" href="./../common/control-bar.css" />
+    <script src="../../components/ToastPopUp.js" type="module"></script>
+    <link rel="stylesheet" href="../common/side-bar.css" />
   </head>
 
   <body>
@@ -37,19 +39,31 @@
 
     <main class="landing-page-container">
       <aside>
-        <nav class="sidebar-nav light-sidebar-nav">
-          <!-- <a href="../dashboard/dashboard.html" class="nav-logo">
-            <img src="../../assets/icons/001 1.svg" alt="" />
-          </a> -->
-
-          <a href="../settings/profile.html" class="profile-picc">
+        <nav class="sidebar-nav">
+          <a href="" class="profile-picc">
             <p class="profile-pic-intials intial-txt">NU</p>
             <span id="green-circle"></span>
           </a>
 
-          <div class="nav-link-container light-nav-link-container">
+          <span class="hamburger">
+            <a href="" class="hamburger-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="22"
+                width="17"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </a>
+          </span>
+
+          <div class="nav-link-container">
             <a
-              class="menu-link light-nav-texts light-nav-texts-active light-active-menu"
+              class="menu-link nav-texts nav-texts-active active-menu"
               href="../dashboard/dashboard.html"
             >
               <span>
@@ -70,10 +84,7 @@
               <span class="menu-text"> Home</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../settings/profile.html"
-            >
+            <a class="menu-link nav-texts" href="../settings/profile.html">
               <span>
                 <svg
                   width="19"
@@ -91,7 +102,7 @@
               <span class="menu-text"> My profile </span>
             </a>
 
-            <a class="menu-link light-nav-texts" href="../dashboard/view.html">
+            <a class="menu-link nav-texts" href="../dashboard/view.html">
               <span>
                 <svg
                   width="19"
@@ -109,7 +120,7 @@
               <span class="menu-text"> Call Interface </span>
             </a>
 
-            <a class="menu-link light-nav-texts" href="../messages/list.html">
+            <a class="menu-link nav-texts" href="../messages/list.html">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +141,7 @@
             </a>
 
             <a
-              class="menu-link light-nav-texts"
+              class="menu-link nav-texts"
               href="../settings/contact_settings.html"
             >
               <span>
@@ -163,7 +174,7 @@
               <span class="menu-text"> Contacts</span>
             </a>
 
-            <a class="menu-link light-nav-texts" href="calendar.html">
+            <a class="menu-link nav-texts" href="calendar.html">
               <span>
                 <svg
                   width="20"
@@ -181,10 +192,7 @@
               <span class="menu-text">Calender</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../settings/notification.html"
-            >
+            <a class="menu-link nav-texts" href="../settings/notification.html">
               <span>
                 <svg
                   width="21"
@@ -202,10 +210,7 @@
               <span class="menu-text"> Notifications</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../settings/settings.html"
-            >
+            <a class="menu-link nav-texts" href="../settings/settings.html">
               <span>
                 <svg
                   width="22"
@@ -223,15 +228,12 @@
               <span class="menu-text"> Settings</span>
             </a>
 
-            <a
-              class="menu-link light-nav-texts"
-              href="../modal/auth_modal.html"
-            >
+            <a class="menu-link nav-texts" href="../modal/auth_modal.html">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="23"
-                  height="24"
+                  width="21"
+                  height="22"
                   viewBox="0 0 23 24"
                   fill="none"
                   class="icon"
@@ -246,11 +248,6 @@
             </a>
           </div>
 
-          <!-- <a href="../settings/profile.html" class="profile-picc">
-            <p class="profile-pic-intials intial-txt">NU</p>
-            <span id="green-circle"></span>
-          </a> -->
-
           <div class="section4-share-am-div">
             <img
               class="shaream-logo"
@@ -264,8 +261,8 @@
 
       <div class="left/card/footer">
         <div class="left-and-card">
-          <section class="left-landing-section light-left-landing-section">
-            <div class="section1-container light-section1-container">
+          <section class="left-landing-section">
+            <div class="section1-container">
               <div class="section1-div1">
                 <div class="section1-div1-left">
                   <div>
@@ -589,14 +586,14 @@
             </div>
 
             <div class="section-3-container">
-              <p class="new-user-email-txt light-new-user-email-txt">
+              <p class="new-user-email-txt">
                 You signed in as
                 <i> newuser123@gmail.com </i>
               </p>
 
-              <p class="switch-acct-txt light-switch-acct-txt">
+              <p class="switch-acct-txt">
                 Try
-                <span class="switch-link light-switch-acct-txt"
+                <span class="switch-link switch-acct-txt"
                   ><a href="../authentication/forgot_password.html"
                     >switching accounts</a
                   ></span
@@ -606,7 +603,7 @@
             </div>
           </section>
 
-          <section class="landing-page-card light-landing-page-card">
+          <section class="landing-page-card">
             <div class="landing-page-card-container">
               <div>
                 <div class="start-chatting-search-icon">
@@ -650,8 +647,8 @@
                   </div>
                 </div>
 
-                <div class="popup-notification-container">
-                  <div class="popup-notification light-popup-notification">
+                <!-- <div class="popup-notification-container">
+                  <div class="popup-notification">
                     <div class="verified-icon">
                       <svg
                         width="40"
@@ -697,12 +694,17 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
+                <toast-popup>
+                  <p class="popup-txt" slot="message">
+                    User, your password reset was successful
+                  </p>
+                </toast-popup>
               </div>
 
               <div class="card-action-section-container">
                 <div class="call-to-action-section">
-                  <p class="cta-text light-cta-text">
+                  <p class="cta-text">
                     Here are some actions to get you started
                   </p>
                   <div class="action-btn-container">
@@ -875,12 +877,7 @@
             </div>
           </section>
         </div>
-        <footer class="footer-container light-footer-container">
-          <!-- <div class="section4-share-am-div">
-            <img src="../../assets/icons/001 1.svg" alt="" />
-            <h1>Share<span>Am</span></h1>
-          </div> -->
-
+        <footer class="footer-container">
           <div class="section4-text">
             <p>Seamless Conversations, Anytime, Anywhere.</p>
           </div>
