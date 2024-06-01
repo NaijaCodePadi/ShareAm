@@ -593,16 +593,20 @@ main {
 
 
 }
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) { 
+  .user-details {
+    display: block;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 992px) {
   html {
     font-size: 12px;
   }
 
-  .user-details {
-    display: block;
-  }
+  
 
 }
 
