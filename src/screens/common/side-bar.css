@@ -1,0 +1,314 @@
+/* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
+
+:root {
+  /* General */
+  --svg-color: #a9a9a9;
+  /* light mode */
+  --lm-sidebar-bg-color: #22074a;
+  --lm-active-menu-bg-color: #ffffff;
+  --lm-active-menu: rgba(34, 32, 32, 0.9);
+
+  /* light mode */
+  --dm-sidebar-bg-color: #1f201f;
+  --dm-active-menu: #fffcfc;
+  --dm-active-menu-bg-color: #373737;
+}
+
+.sidebar-nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  padding: 7vh 1vw 0vh 1vw;
+  background-image: url("../../assets/icons/worldwide-location.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/worldwide-location.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/worldwide-location.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/chat-room.svg"),
+    url("../../assets/icons/video-conference.svg"),
+    url("../../assets/icons/worldwide-location.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 5vh right 1.5vw, top 10vh right 10vw,
+    top 18vh right 5vw, top 27vh right 11vw, top 35vh right 1vw,
+    top 45vh right 7vw, top 57vh right 12vw, top 64vh right 2vw,
+    top 78vh right 5vw, top 82vh right 11vw, top 90vh right 13vw,
+    top 94vh right 2vw;
+  background-size: 5vh 5vw;
+}
+
+.profile-picc {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #d9d9d9;
+  border: 1.4px solid #cfdae2;
+  position: relative;
+  text-decoration: none;
+  margin: auto;
+}
+
+.profile-pic-intials {
+  height: fit-content;
+  width: fit-content;
+}
+
+#green-circle {
+  position: absolute;
+  right: 3%;
+  bottom: 7%;
+  width: 12px;
+  height: 12px;
+  background-color: #3cea43;
+  border-radius: 100%;
+  border: 0.5px solid #ffffff;
+}
+
+.sidebar-nav svg {
+  color: var(--svg-color);
+}
+
+.hamburger {
+  margin-left: 1vw;
+}
+
+.hamburger :hover svg {
+  color: var(--dm-active-menu);
+}
+
+.nav-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  width: fit-content;
+  margin: auto;
+  margin-top: 0;
+}
+
+.nav-link-container a {
+  text-decoration: none;
+  display: inline-flex;
+  gap: 15px;
+  padding: 1vh 1vw;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
+  width: 180px;
+}
+
+.menu-link {
+  padding: 1.7vh 1vw;
+}
+
+.menu-text {
+  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
+  display: block;
+}
+
+.section4-share-am-div {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1.2vh;
+}
+
+.shaream-logo {
+  height: 6vh;
+}
+
+/* -----------------------------------------Texts stlyes ----------------------------------------- */
+
+.intial-txt {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.shaream-txt {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.shaream-txt > span {
+  color: #6f3fe3;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) {
+  .profile-picc {
+    width: 50px;
+    height: 50px;
+  }
+
+  #green-circle {
+    position: absolute;
+    left: 73%;
+    right: 2%;
+    bottom: 3%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .nav-link-container a {
+    width: 150px;
+  }
+}
+
+/* Large devices (laptops/desktops, 998px and down) */
+@media only screen and (max-width: 998px) {
+  .nav-link-container a {
+    width: 140px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .profile-picc {
+    width: 45px;
+    height: 45px;
+  }
+
+  #green-circle {
+    position: absolute;
+    left: 73%;
+    right: 2%;
+    bottom: 3%;
+    width: 10px;
+    height: 10px;
+  }
+
+  .hamburger {
+    margin: auto;
+  }
+
+  .nav-link-container a {
+    width: fit-content;
+  }
+
+  .menu-text,
+  .shaream-txt {
+    display: none;
+  }
+
+  .shaream-logo {
+    height: 8vh;
+  }
+
+  .sidebar-nav {
+    width: 12vw;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #green-circle {
+    position: absolute;
+    right: 2%;
+    left: 73%;
+    bottom: 3%;
+    width: 9px;
+    height: 9px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/*/-- DARK AND LIGHT MODE --/*/
+
+@media (prefers-color-scheme: dark) {
+  .sidebar-nav {
+    background-color: var(--dm-sidebar-bg-color);
+  }
+
+  .nav-link-container a:hover {
+    background-color: var(--dm-active-menu-bg-color);
+    color: var(--dm-active-menu);
+    border-radius: 12px;
+  }
+
+  .nav-link-container a:hover svg {
+    color: var(--dm-active-menu);
+  }
+
+  a.active-menu {
+    background-color: var(--dm-active-menu-bg-color);
+    border-radius: 12px;
+  }
+
+  a.active-menu svg {
+    color: var(--dm-active-menu);
+  }
+
+  .nav-texts {
+    color: #a9a9a9;
+    font-family: Rubik;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .nav-texts-active {
+    color: #fffcfc;
+    font-family: Poppins-regular;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .sidebar-nav {
+    background-color: var(--lm-sidebar-bg-color);
+  }
+
+  .nav-link-container a:hover {
+    background-color: var(--lm-active-menu-bg-color);
+    color: var(--lm-active-menu);
+    border-radius: 12px;
+  }
+
+  .nav-link-container a:hover svg {
+    color: var(--lm-active-menu);
+  }
+
+  a.active-menu {
+    background-color: var(--lm-active-menu-bg-color);
+    border-radius: 12px;
+  }
+
+  a.active-menu svg {
+    color: var(--lm-active-menu);
+  }
+
+  .nav-texts {
+    color: rgba(169, 169, 169, 0.9);
+    font-family: Rubik;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .nav-texts-active {
+    color: rgba(34, 32, 32, 0.9);
+    font-family: Poppins-regular;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

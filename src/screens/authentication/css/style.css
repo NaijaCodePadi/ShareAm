@@ -6,13 +6,12 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  transition: .1s
+  transition: 0.1s;
 }
 
 html {
-  -webkit-user-select: none;
+  user-select: none;
   font-size: 16px;
-
 }
 
 @font-face {
@@ -35,11 +34,9 @@ html {
   src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 
-
 ::-webkit-scrollbar {
   width: 5px;
   margin-left: 5px;
-
 }
 
 /* Track */
@@ -58,16 +55,14 @@ html {
   background: #14042c;
 }
 
-
 @media (prefers-color-scheme: dark) {
-
   .container {
     display: flex;
     height: 100vh;
   }
 
   .sidebar {
-    background-color: #1F201F;
+    background-color: #1f201f;
     color: #fff;
     flex: 0 0 40%;
     padding: 20px;
@@ -89,7 +84,7 @@ html {
   }
 
   .sidebar h1 span {
-    color: #1058E8;
+    color: #1058e8;
   }
 
   .tagline {
@@ -100,21 +95,20 @@ html {
   }
 
   /*TOGGLE THEME BUTTON*/
-  #toggle-container{
+  #toggle-container {
     display: flex;
     align-self: flex-start;
     position: fixed;
     bottom: 1%;
-    gap: 30px
+    gap: 30px;
   }
-  .reset_theme{
-   color: #1058E8;
-   font-family:poppins-regular;
-   font-size: 12px;
+  .reset_theme {
+    color: #1058e8;
+    font-family: poppins-regular;
+    font-size: 12px;
   }
-  .reset_theme:hover{
+  .reset_theme:hover {
     cursor: pointer;
-    
   }
   .toogle-btn {
     display: flex;
@@ -150,16 +144,16 @@ html {
     visibility: hidden;
   }
 
-  .toogle-btn input:checked+label {
+  .toogle-btn input:checked + label {
     background: #242424;
   }
 
-  .toogle-btn input:checked+label:after {
+  .toogle-btn input:checked + label:after {
     transform: translateX(27px);
     background: linear-gradient(180deg, #777, #3a3a3a);
   }
 
-  .toogle-btn input:checked+label+.background {
+  .toogle-btn input:checked + label + .background {
     background: #242424;
   }
 
@@ -182,18 +176,18 @@ html {
     transition: 0.3s;
   }
 
-  .toogle-btn input:checked+label svg.sun {
+  .toogle-btn input:checked + label svg.sun {
     fill: #d8860b;
   }
 
-  .toogle-btn input:checked+label svg.moon {
+  .toogle-btn input:checked + label svg.moon {
     fill: #fff;
   }
 
   .content {
     flex: 1;
     /* padding: 20px; */
-    background: #2A282D;
+    background: #2a282d;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,26 +197,24 @@ html {
   .content-sign-up {
     flex: 1;
     /* padding: 20px; */
-    background: #2A282D;
+    background: #2a282d;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
   }
   .auth {
-    padding-top:45px;
+    padding-top: 45px;
     width: 60%;
   }
 
   .auth h2 {
-    color: #0272BC;
+    color: #0272bc;
     font-weight: 700;
     font-family: poppins-bold;
     text-align: center;
     margin-bottom: 30px;
-
   }
-
 
   .input-group {
     margin-bottom: 15px;
@@ -233,14 +225,14 @@ html {
     font-weight: 700;
     font-family: poppins-bold;
     font-size: 12px;
-    color: #FFFCFC;
+    color: #fffcfc;
   }
 
   .input-group input {
     width: 100%;
     padding: 10px;
-    background-color: #E4E4E4;
-    border: 1px solid #E4E4E4;
+    background-color: #e4e4e4;
+    border: 1px solid #e4e4e4;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
@@ -249,7 +241,6 @@ html {
   .input-group input:focus {
     border-color: #007bff;
   }
-
 
   .checkbox-links {
     display: flex;
@@ -261,12 +252,11 @@ html {
   }
 
   .checkbox-links a {
-    color: #FFFFFF
+    color: #ffffff;
   }
 
   .checkbox-links label {
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   button {
@@ -274,27 +264,27 @@ html {
   }
 
   .btn-login {
-    background-color: #1058E8;
+    background-color: #1058e8;
     padding: 10px;
     border-radius: 10px;
     border: none;
     color: white;
     font-weight: bold;
-
+    cursor: pointer;
   }
 
   .links {
     margin-top: 20px;
     font-family: poppins-regular;
     font-size: 11px;
-    color: #A9A9A9;
+    color: #a9a9a9;
   }
 
   .links a {
     text-decoration: none;
     font-family: poppins-bold;
     font-size: 11px;
-    color: #048AD7;
+    color: #048ad7;
   }
 
   .links a:hover {
@@ -305,13 +295,13 @@ html {
     margin-top: 20px;
     font-family: poppins-regular;
     font-size: 11px;
-    color: #A9A9A9
+    color: #a9a9a9;
   }
 
   .links-sign-up a {
     font-family: poppins-regular;
     font-size: 11px;
-    color: #048AD7;
+    color: #048ad7;
   }
 
   .links-sign-up a:hover {
@@ -354,7 +344,7 @@ html {
   }
 
   .external-auth a {
-    color: #7B7B7B;
+    color: #7b7b7b;
     text-decoration: none;
     font-family: poppins-regular;
     font-size: 8px;
@@ -363,7 +353,7 @@ html {
 
   .external-auth .link {
     display: flex;
-    background-color: #E4E4E4;
+    background-color: #e4e4e4;
     border-radius: 4px;
     padding-left: 5px;
     padding-right: 5px;
@@ -377,14 +367,13 @@ html {
 }
 
 @media (prefers-color-scheme: light) {
- 
   .container {
     display: flex;
     height: 100vh;
   }
 
   .sidebar {
-    background: radial-gradient(circle at -65% -65%, #910BFA, #22074A);
+    background: radial-gradient(circle at -65% -65%, #910bfa, #22074a);
     color: #fff;
     flex: 0 0 40%;
     padding: 20px;
@@ -406,7 +395,7 @@ html {
   }
 
   .sidebar h1 span {
-    color: #1058E8;
+    color: #1058e8;
   }
 
   .tagline {
@@ -417,21 +406,20 @@ html {
   }
 
   /*TOGGLE THEME BUTTON*/
-  #toggle-container{
+  #toggle-container {
     display: flex;
     align-self: flex-start;
     position: fixed;
     bottom: 1%;
-    gap: 30px
+    gap: 30px;
   }
-  .reset_theme{
-   color: #1058E8;
-   font-family:poppins-regular;
-   font-size: 12px;
+  .reset_theme {
+    color: #1058e8;
+    font-family: poppins-regular;
+    font-size: 12px;
   }
-  .reset_theme:hover{
+  .reset_theme:hover {
     cursor: pointer;
-    
   }
   .toogle-btn {
     display: flex;
@@ -467,16 +455,16 @@ html {
     visibility: hidden;
   }
 
-  .toogle-btn input:checked+label {
+  .toogle-btn input:checked + label {
     background: #242424;
   }
 
-  .toogle-btn input:checked+label:after {
+  .toogle-btn input:checked + label:after {
     transform: translateX(27px);
     background: linear-gradient(180deg, #777, #3a3a3a);
   }
 
-  .toogle-btn input:checked+label+.background {
+  .toogle-btn input:checked + label + .background {
     background: #242424;
   }
 
@@ -499,11 +487,11 @@ html {
     transition: 0.3s;
   }
 
-  .toogle-btn input:checked+label svg.sun {
+  .toogle-btn input:checked + label svg.sun {
     fill: #d8860b;
   }
 
-  .toogle-btn input:checked+label svg.moon {
+  .toogle-btn input:checked + label svg.moon {
     fill: #fff;
   }
 
@@ -529,20 +517,18 @@ html {
     overflow-y: scroll;
   }
   .auth {
-    padding-top:45px;
+    padding-top: 45px;
     width: 60%;
   }
 
   .auth h2 {
-    color: #0272BC;
+    color: #0272bc;
     font-weight: 700;
     font-size: 1.5rem;
     font-family: poppins-bold;
     text-align: center;
     margin-bottom: 30px;
-
   }
-
 
   .input-group {
     margin-bottom: 15px;
@@ -552,15 +538,15 @@ html {
     display: block;
     font-weight: 700;
     font-family: poppins-bold;
-    font-size: .75rem;
+    font-size: 0.75rem;
     color: #585858;
   }
 
   .input-group input {
     width: 100%;
     padding: 10px;
-    background-color: #E4E4E4;
-    border: 1px solid #E4E4E4;
+    background-color: #e4e4e4;
+    border: 1px solid #e4e4e4;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
@@ -569,7 +555,6 @@ html {
   .input-group input:focus {
     border-color: #007bff;
   }
-
 
   .checkbox-links {
     display: flex;
@@ -581,12 +566,11 @@ html {
   }
 
   .checkbox-links a {
-    color: #585858
+    color: #585858;
   }
 
   .checkbox-links label {
     color: #585858;
-
   }
 
   button {
@@ -594,13 +578,13 @@ html {
   }
 
   .btn-login {
-    background-color: #1058E8;
+    background-color: #1058e8;
     padding: 10px;
     border-radius: 10px;
     border: none;
     color: white;
     font-weight: bold;
-
+    cursor: pointer;
   }
 
   .links {
@@ -613,7 +597,7 @@ html {
     text-decoration: none;
     font-family: poppins-bold;
     font-size: 0.69rem;
-    color: #150AA1;
+    color: #150aa1;
   }
 
   .links a:hover {
@@ -629,7 +613,7 @@ html {
   .links-sign-up a {
     font-family: poppins-regular;
     font-size: 0.69rem;
-    color: #5858FA;
+    color: #5858fa;
   }
 
   .links-sign-up a:hover {
@@ -672,7 +656,7 @@ html {
   }
 
   .external-auth a {
-    color: #7B7B7B;
+    color: #7b7b7b;
     text-decoration: none;
     font-family: poppins-regular;
     font-size: 8px;
@@ -681,7 +665,7 @@ html {
 
   .external-auth .link {
     display: flex;
-    background-color: #E4E4E4;
+    background-color: #e4e4e4;
     border-radius: 4px;
     padding-left: 5px;
     padding-right: 5px;
@@ -704,8 +688,6 @@ html {
     width: 80%;
   }
 }
-
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

@@ -29,136 +29,12 @@ html {
 
 /* DO NOT REMOVE THE CODE ABOVE */
 
-/* /-----------------------SIDE BAR -------------------------/ */
-:root {
-  /* General */
-  --svg-color: #a9a9a9;
-  /* light mode */
-  --lm-sidebar-bg-color: #22074a;
-  --lm-active-menu-bg-color: #ffffff;
-  --lm-active-menu: rgba(34, 32, 32, 0.9);
-
-  /* dark mode */
-  --dm-sidebar-bg-color: #1f201f;
-  --dm-active-menu: #fffcfc;
-  --dm-active-menu-bg-color: #373737;
-}
-
-/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
-
 body {
   user-select: none;
 }
 
 .contact {
   display: flex;
-}
-.sidebar-nav {
-  width: 20vw;
-  min-width: 220px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  padding: 4vh 0 0 0;
-}
-
-.nav-link-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  width: 75%;
-  margin: auto;
-}
-
-.nav-link-container a {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 19px;
-  transition: all 0.2s ease;
-}
-
-a.light-active-menu,
-a.dark-active-menu,
-.nav-link-container a:hover {
-  border-radius: 12px;
-  padding: 1.7vh 1vw;
-}
-
-header {
-  margin: auto;
-}
-
-.prof-pic {
-  width: 75px;
-  height: 75px;
-  border-radius: 100%;
-}
-
-.menu-link {
-  padding: 1.7vh 1vw;
-}
-
-svg {
-  color: var(--svg-color);
-}
-
-/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
-
-.light-sidebar-nav {
-  background-color: var(--lm-sidebar-bg-color);
-}
-
-.light-nav-link-container a:hover {
-  background-color: var(--lm-active-menu-bg-color);
-  color: var(--lm-active-menu);
-}
-
-.light-nav-link-container a:hover svg {
-  color: var(--lm-active-menu);
-}
-
-a.light-active-menu {
-  background-color: var(--lm-active-menu-bg-color);
-}
-
-a.light-active-menu svg {
-  color: var(--lm-active-menu);
-}
-
-/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
-
-.dark-sidebar-nav {
-  background-color: var(--dm-sidebar-bg-color);
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px,
-    top 395px right 250px, top 450px right 18px, top 547px right 160px,
-    top 789px right 231px;
-}
-
-.dark-nav-link-container a:hover {
-  color: var(--dm-active-menu);
-  background-color: var(--dm-active-menu-bg-color);
-}
-
-.dark-nav-link-container a:hover svg {
-  color: var(--dm-active-menu);
-}
-
-a.dark-active-menu {
-  background-color: var(--dm-active-menu-bg-color);
-}
-
-a.dark-active-menu svg {
-  color: var(--dm-active-menu);
 }
 
 /* ---------------------------------------------main body ------------------------------- */
@@ -202,38 +78,6 @@ a.dark-active-menu svg {
   border: none;
 }
 
-/* ------------------------------------texts styes --------------------------- */
-/* NAVBAR */
-.light-nav-texts,
-.dark-nav-texts {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.light-nav-texts {
-  color: rgba(169, 169, 169, 0.9);
-  font-family: poppins-regular;
-  font-style: normal;
-  line-height: normal;
-}
-.dark-nav-texts {
-  color: #a9a9a9;
-  font-family: Rubik;
-}
-
-.light-nav-texts-active,
-.dark-nav-texts-active {
-  font-size: 1rem;
-  font-weight: 700;
-  font-family: Poppins-regular;
-}
-
-.dark-nav-texts-active {
-  color: #fffcfc;
-}
-.light-nav-texts-active {
-  color: rgba(34, 32, 32, 0.9);
-}
 /* -----------------------main body texts styles --------------- */
 .dark-menu-title-texts,
 .light-menu-title-texts {
@@ -258,6 +102,27 @@ a.dark-active-menu svg {
 
 .light-setting-subtitle-texts {
   color: #000;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1085px and down) */
+@media only screen and (max-width: 1085px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Large devices (laptops/desktops, 998px and down) */
+@media only screen and (max-width: 998px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */

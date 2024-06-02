@@ -20,7 +20,7 @@
 }
 @font-face {
   font-family: Rubik;
-  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
 html {
@@ -31,7 +31,6 @@ html {
 
 ::-webkit-scrollbar {
   width: 10px;
-
 }
 
 /* Track */
@@ -52,28 +51,12 @@ html {
 
 /* DO NOT REMOVE THE CODE ABOVE */
 
-/* /-----------------------SIDE BAR -------------------------/ */
-:root {
-  /* General */
-  --svg-color: #a9a9a9;
-  /* light mode */
-  --lm-sidebar-bg-color: #22074a;
-  --lm-active-menu-bg-color: #ffffff;
-  --lm-active-menu: rgba(34, 32, 32, 0.9);
-
-  /* dark mode */
-  --dm-sidebar-bg-color: #1f201f;
-  --dm-active-menu: #fffcfc;
-  --dm-active-menu-bg-color: #373737;
-}
-
 .light-body {
   background-color: #dad9d9;
 }
 .dark-body {
   background-color: #222020;
 }
-/*/------------------- GENERAL CSS FOR SIDEBAR -------------------/*/
 
 body {
   user-select: none;
@@ -82,146 +65,9 @@ body {
 .settings {
   display: flex;
 }
-.sidebar-nav {
-  width: 20vw;
-  min-width: 220px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 2vh;
-  padding: 4vh 0 0 0;
-}
-
-.nav-link-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  width: 75%;
-  margin: auto;
-}
-
-.nav-link-container a {
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 19px;
-  padding: 1.7vh 1vw;
-  border-radius: 12px;
-  transition: all 0.2s ease;
-}
-
-header {
-  margin: auto;
-}
-
-.prof-pic {
-  width: 75px;
-  height: 75px;
-  border-radius: 100%;
-}
-
-.menu-link {
-  padding: 1.7vh 1vw;
-}
-
-svg {
-  color: var(--svg-color);
-}
-
-/*/-------------------LIGHT MODE CSS FOR SIDEBAR  -------------------/*/
-
-.light-sidebar-nav {
-  background-color: var(--lm-sidebar-bg-color);
-}
-
-.light-nav-link-container a:hover {
-  background-color: var(--lm-active-menu-bg-color);
-  color: var(--lm-active-menu);
-  border-radius: 12px;
-  padding: 1.7vh 1vw;
-}
-
-.light-nav-link-container a:hover svg {
-  color: var(--lm-active-menu);
-}
-
-a.light-active-menu {
-  background-color: var(--lm-active-menu-bg-color);
-  border-radius: 12px;
-  padding: 1.7vh 1vw;
-}
-
-a.light-active-menu svg {
-  color: var(--lm-active-menu);
-}
-
-/*/-------------------DARK MODE CSS FOR SIDEBAR  -------------------/*/
-
-.dark-sidebar-nav {
-  background-color: var(--dm-sidebar-bg-color);
-  background-image: url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/video-conference.svg");
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat;
-  background-position: top 56px right 92px, top 198px right 18px,
-    top 395px right 250px, top 450px right 18px, top 547px right 160px,
-    top 789px right 231px;
-}
-
-.dark-nav-link-container a:hover {
-  color: var(--dm-active-menu);
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-  padding: 1.7vh 1vw;
-}
-
-.dark-nav-link-container a:hover svg {
-  color: var(--dm-active-menu);
-}
-
-a.dark-active-menu {
-  background-color: var(--dm-active-menu-bg-color);
-  border-radius: 12px;
-  padding: 1.7vh 1vw;
-}
-
-a.dark-active-menu svg {
-  color: var(--dm-active-menu);
-}
 
 /* ------------------------------------texts styes --------------------------- */
-/* NAVBAR */
-.light-nav-texts {
-  color: rgba(169, 169, 169, 0.9);
-  font-family: poppins-regular;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-.Dark-nav-texts {
-  color: #a9a9a9;
-  font-family: Rubik;
-  font-size: 1rem;
-  font-weight: 500;
-}
 
-.dark-nav-texts-active {
-  color: #fffcfc;
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
-.light-nav-texts-active {
-  color: rgba(34, 32, 32, 0.9);
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-}
 /* <-------------MAIN BODY TEXTS---------------> */
 .menu-title-texts {
   font-family: Poppins-bold;
