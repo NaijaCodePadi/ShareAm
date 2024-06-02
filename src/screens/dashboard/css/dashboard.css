@@ -280,7 +280,6 @@ input:checked + label svg.moon {
   width: 50%;
   height: 40px;
   border-radius: 11.043px;
-  background: #fff;
   gap: 2px;
   padding-left: 1vw;
   align-items: center;
@@ -425,8 +424,6 @@ input:checked + label svg.moon {
   justify-content: space-between;
   margin-top: auto;
 }
-
-
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
@@ -909,11 +906,11 @@ input:checked + label svg.moon {
     background-color: #2a282d;
   }
   .left-landing-section {
-    background-color: #1f201f;
+    background-color: #2a282d;
   }
-  
+
   .section1-container {
-    background-color: #181918;
+    background-color: #1f201f;
   }
   .new-user-email-txt {
     color: #fffcfc;
@@ -926,13 +923,19 @@ input:checked + label svg.moon {
     text-decoration: none;
   }
   .landing-page-card {
-    background-color: var(--dm-landing-pg-card-bg-color);
+    background-color: #2a282d;
   }
   .cta-text {
     color: #fffcfc;
   }
+  .search-box {
+    background: #cecccc;
+  }
+  .search-box-input {
+    background-color: #cecccc;
+  }
   .footer-container {
-    background-color: #181918;
+    background-color: #1f201f;
   }
 }
 @media (prefers-color-scheme: light) {
@@ -942,7 +945,7 @@ input:checked + label svg.moon {
   .left-landing-section {
     background-color: none;
   }
-  
+
   .section1-container {
     background-color: #22074a;
   }
@@ -961,6 +964,12 @@ input:checked + label svg.moon {
   }
   .cta-text {
     color: #585858;
+  }
+  .search-box {
+    background: #fff;
+  }
+  .search-box-input {
+    background-color: #fff;
   }
   .footer-container {
     background-color: #22074a;
