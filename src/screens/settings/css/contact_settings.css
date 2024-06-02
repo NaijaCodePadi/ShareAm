@@ -91,7 +91,7 @@ body {
   color: #150aa1;
 }
 
-.light-setting-subtitle-texts,
+.setting-subtitle-texts,
 .dark-setting-subtitle-texts {
   font-family: Poppins-medium;
   font-size: 0.9rem;
@@ -100,7 +100,7 @@ body {
 
 
 
-.light-setting-subtitle-texts {
+.setting-subtitle-texts {
   color: #000;
 }
 
@@ -136,7 +136,7 @@ body {
   .mainbody{
     background-color: #222020;
   }
-  .light-setting-subtitle-texts {
+  .setting-subtitle-texts {
     color: #fffcfc;
   }
   .light-menu-title-texts {

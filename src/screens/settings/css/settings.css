@@ -112,27 +112,19 @@ body {
   font-weight: 500;
 }
 
-.light-current-mode-text {
-  color: rgba(34, 32, 32, 0.9);
-}
-
-.dark-current-mode-text {
-  color: #a9a9a9;
-}
-
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
 
 .mainbody {
+  margin-top: 38px;
   width: 100%;
-  height: 100vh;
   overflow-y: auto;
 }
 
-.light-mainbody h4 {
+.mainbody h4 {
   margin-left: 10px;
 }
 
-.light-mainbody p {
+.mainbody p {
   line-height: 35px;
   margin-left: 20px;
   margin-top: 5px;
@@ -433,7 +425,6 @@ input:checked + .slider:before {
 @media (prefers-color-scheme: dark) {
   .mainbody{
     background-color: #222020;
-    height: 100vh;
   }
   .menu-title-texts {
     color: #0389e1;
@@ -447,11 +438,17 @@ input:checked + .slider:before {
   .change-background-text {
     color: #fffcfc;
   }
+  .current-mode-text {
+    color: #a9a9a9;
+  }
   
 }
 
 @media (prefers-color-scheme: light) {
   .mainbody{
     background-color: #dad9d9;
+  }
+  .current-mode-text {
+    color: rgba(34, 32, 32, 0.9);
   }
 }
