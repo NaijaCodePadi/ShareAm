@@ -74,13 +74,6 @@ body {
   height: 14px;
 }
 
-.cs-sections > section > span > .light-arrow-svg {
-  color: #000;
-}
-
-.cs-sections > section > span > .dark-arrow-svg {
-  color: #e4e4e4;
-}
 .cs-sections > section:last-child {
   border: none;
 }
@@ -93,25 +86,21 @@ body {
   font-weight: 600;
 }
 
-.dark-menu-title-texts {
-  color: #0389e1;
-}
+
 .light-menu-title-texts {
   color: #150aa1;
 }
 
-.light-setting-subtitle-texts,
+.setting-subtitle-texts,
 .dark-setting-subtitle-texts {
   font-family: Poppins-medium;
   font-size: 0.9rem;
   font-weight: 400;
 }
 
-.dark-setting-subtitle-texts {
-  color: #fffcfc;
-}
 
-.light-setting-subtitle-texts {
+
+.setting-subtitle-texts {
   color: #000;
 }
 
@@ -143,13 +132,26 @@ body {
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 11px;
+@media (prefers-color-scheme: dark) {
+  .mainbody{
+    background-color: #222020;
+  }
+  .setting-subtitle-texts {
+    color: #fffcfc;
+  }
+  .light-menu-title-texts {
+    color: #0389e1;
+  }
+  .light-arrow-svg {
+    fill: #FFFCFC;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media (prefers-color-scheme: light) {
+  .mainbody{
+    background-color: #dad9d9;
+  }
+  .light-arrow-svg {
+    fill: black;
+  }
 }

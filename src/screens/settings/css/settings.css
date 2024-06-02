@@ -75,26 +75,10 @@ body {
   font-weight: 600;
 }
 
-.dark-menu-title-texts {
-  color: #0389e1;
-}
-
-.light-menu-title-texts {
-  color: #150aa1;
-}
-
 .setting-title-text {
   font-family: Poppins-bold;
   font-size: 0.9rem;
   font-weight: 500;
-}
-
-.light-setting-title-text {
-  color: #150aa1;
-}
-
-.dark-setting-title-text {
-  color: #0389e1;
 }
 
 .setting-subtitle-text {
@@ -103,40 +87,16 @@ body {
   font-weight: 400;
 }
 
-.dark-setting-subtitle-text {
-  color: #979797;
-}
-
-.light-setting-subtitle-text {
-  color: #000;
-}
-
 .change-background-text {
   font-family: Poppins-regular;
   font-size: 0.9rem;
   font-weight: 400;
 }
 
-.light-change-background-text {
-  color: #000;
-}
-
-.dark-change-background-text {
-  color: #fffcfc;
-}
-
 .audio-subtitle-text {
   font-family: Poppins-medium;
   font-size: 0.9rem;
   font-weight: 400;
-}
-
-.dark-audio-subtitle-text {
-  color: #fffcfc;
-}
-
-.light-audio-subtitle-text {
-  color: #373737;
 }
 
 .audio-default-setting-text {
@@ -152,27 +112,19 @@ body {
   font-weight: 500;
 }
 
-.light-current-mode-text {
-  color: rgba(34, 32, 32, 0.9);
-}
-
-.dark-current-mode-text {
-  color: #a9a9a9;
-}
-
 /* <-------   STYLES FOR LIGHT MODE SETTINGS PAGE --------> */
 
 .mainbody {
+  margin-top: 38px;
   width: 100%;
-  height: 100vh;
   overflow-y: auto;
 }
 
-.light-mainbody h4 {
+.mainbody h4 {
   margin-left: 10px;
 }
 
-.light-mainbody p {
+.mainbody p {
   line-height: 35px;
   margin-left: 20px;
   margin-top: 5px;
@@ -330,10 +282,6 @@ section {
 }
 
 /* <------DARK MODE FOR SETTINGS PAGE ------> */
-.dark-mainbody {
-  height: 100vh;
-  background-color: #585858;
-}
 .checkmark {
   background-color: #dad9d9;
   border: 0.1px solid rgba(0, 0, 0);
@@ -440,6 +388,7 @@ input:checked + .slider:before {
 }
 /*-------END---------*/
 
+
 .cs-sections > section {
   padding: 0vh 0;
   display: flex;
@@ -461,14 +410,6 @@ input:checked + .slider:before {
   height: 14px;
 }
 
-.cs-sections > section > span > .light-arrow-svg {
-  color: #000;
-}
-
-.cs-sections > section > span > .dark-arrow-svg {
-  color: #e4e4e4;
-}
-
 .cs-sections > section:nth-child(4) > span > .light-arrow-svg {
   margin-right: 8px;
 }
@@ -479,4 +420,35 @@ input:checked + .slider:before {
 
 .cs-sections > section:last-child {
   border: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .mainbody{
+    background-color: #222020;
+  }
+  .menu-title-texts {
+    color: #0389e1;
+  }
+  .setting-title-text {
+    color: #0389e1;
+  }
+  .setting-subtitle-text {
+    color: white;
+  }
+  .change-background-text {
+    color: #fffcfc;
+  }
+  .current-mode-text {
+    color: #a9a9a9;
+  }
+  
+}
+
+@media (prefers-color-scheme: light) {
+  .mainbody{
+    background-color: #dad9d9;
+  }
+  .current-mode-text {
+    color: rgba(34, 32, 32, 0.9);
+  }
 }
