@@ -454,6 +454,7 @@ input:checked + label svg.moon {
     top 3vh right 52vw, top 2vh right 60vw, top 2vh right 70vw,
     top 3.5vh right 80vw, top 4vh right 90vw, top 3.7vh right 97vw;
   background-size: 30px;
+  border: 1px solid red;
 }
 
 /*----LIGHT AND DARK MODE FOR LANDING PAGE FOOTER----*/
