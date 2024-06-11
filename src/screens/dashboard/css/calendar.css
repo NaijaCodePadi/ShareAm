@@ -598,34 +598,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
-.footer-container {
-  display: flex;
-  height: 7vh;
-  padding-right: 3vw;
-  align-items: center;
-  border-radius: 0 5px 0 0;
-  background-image: url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/Man-On-Phone.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/Man-On-Phone.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/Man-On-Phone.svg");
 
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-
-  background-position: top 1vh right 2vw, top 4vh right 12vw, top 1vh right 20vw,
-    top 3.7vh right 27vw, top 3vh right 34vw, top 4vh right 45vw,
-    top 3vh right 52vw, top 2vh right 60vw, top 2vh right 70vw,
-    top 3.5vh right 80vw, top 4vh right 90vw, top 3.7vh right 97vw;
-  background-size: 30px;
-}
 
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
@@ -1151,10 +1124,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   .active-tab {
     background-color: #1f201f;
   }
-
-  .footer-container {
-    background-color: #1f201f;
-  }
 }
 @media (prefers-color-scheme: light) {
   header {
@@ -1213,9 +1182,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: 2px solid #22074a;
   }
   .active-tab {
-    background-color: #22074a;
-  }
-  .footer-container {
     background-color: #22074a;
   }
 }
