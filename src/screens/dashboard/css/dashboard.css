@@ -427,44 +427,6 @@ input:checked + label svg.moon {
 
 /*----GENERAL PROPERTIES FOR LANDING PAGE FOOTER----*/
 
-.footer-container {
-  display: flex;
-  height: 7vh;
-  padding-right: 3vw;
-  align-items: center;
-  border-radius: 0 5px 0 0;
-  background-image: url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/Man-On-Phone.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/Man-On-Phone.svg"),
-    url("../../../assets/icons/video-conference.svg"),
-    url("../../../assets/icons/worldwide-location.svg"),
-    url("../../../assets/icons/chat-room.svg"),
-    url("../../../assets/icons/Man-On-Phone.svg");
-
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-    no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-
-  background-position: top 1vh right 2vw, top 4vh right 12vw, top 1vh right 20vw,
-    top 3.7vh right 27vw, top 3vh right 34vw, top 4vh right 45vw,
-    top 3vh right 52vw, top 2vh right 60vw, top 2vh right 70vw,
-    top 3.5vh right 80vw, top 4vh right 90vw, top 3.7vh right 97vw;
-  background-size: 30px;
-}
-
-/*----LIGHT AND DARK MODE FOR LANDING PAGE FOOTER----*/
-.light-footer-container {
-  background-color: #22074a;
-}
-
-.dark-footer-container {
-  background-color: #181918;
-}
-
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 .desktop-title-text {
   color: #fff;
@@ -934,9 +896,6 @@ input:checked + label svg.moon {
   .search-box-input {
     background-color: #cecccc;
   }
-  .footer-container {
-    background-color: #1f201f;
-  }
 }
 @media (prefers-color-scheme: light) {
   header {
@@ -970,8 +929,5 @@ input:checked + label svg.moon {
   }
   .search-box-input {
     background-color: #fff;
-  }
-  .footer-container {
-    background-color: #22074a;
   }
 }
