@@ -298,40 +298,6 @@ input:checked + label svg.moon {
   outline: none;
 }
 
-.popup-notification-container {
-  height: 49px;
-  /* margin-top: 2vh; */
-  display: block;
-}
-
-.popup-notification {
-  display: flex;
-  width: 100%;
-  height: 49px;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1vw;
-  gap: 3vw;
-  border-radius: 18px;
-}
-
-.verified-icon {
-  height: 40px;
-}
-
-.popup-message {
-  height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8vw;
-}
-
-.close-popup-btn {
-  height: 28px;
-  cursor: pointer;
-}
-
 .card-action-section-container {
   display: flex;
   align-items: center;
@@ -692,12 +658,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
   font-weight: 500;
 }
 
-.popup-txt {
+/* .popup-txt {
   color: #000;
   font-family: poppins-regular;
   font-size: 1rem;
   font-weight: 600;
-}
+} */
 
 .cta-text {
   text-align: center;
