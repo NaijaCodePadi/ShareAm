@@ -1,30 +1,38 @@
 const template = document.createElement("template");
 template.innerHTML = `
     <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+        }
 
-    @font-face {
-        font-family: poppins-bold;
-        src: url(../assets/fonts/Poppins-Bold.ttf);
-    }
-    @font-face {
-        font-family: poppins-regular;
-        src: url(../assets/fonts/Poppins-Regular.ttf);
-    }
-    @font-face {
-        font-family: poppins-medium;
-        src: url(../assets/fonts/Poppins-Medium.ttf);
-    }
-    @font-face {
-        font-family: Rubik;
-        src: url(../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
-    }
+        @font-face {
+            font-family: poppins-bold;
+            src: url(../assets/fonts/Poppins-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: poppins-regular;
+            src: url(../assets/fonts/Poppins-Regular.ttf);
+        }
+
+        @font-face {
+            font-family: poppins-medium;
+            src: url(../assets/fonts/Poppins-Medium.ttf);
+        }
+
+        @font-face {
+            font-family: Rubik;
+            src: url(../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+        }
 
         .popup-notification-container {
             height: 49px;
             /* margin-top: 2vh; */
             display: block;
         }
-      
+    
         .popup-notification {
             display: flex;
             width: 100%;
@@ -35,7 +43,7 @@ template.innerHTML = `
             gap: 3vw;
             border-radius: 18px;
         }
-      
+    
         .verified-icon {
             height: 40px;
         }
@@ -65,7 +73,7 @@ template.innerHTML = `
                 90deg,
                 #f1f1f1 1.22%,
                 rgba(228, 208, 249, 0) 100%
-              );
+            );
             }
         }
 
@@ -99,7 +107,7 @@ template.innerHTML = `
             </div>
 
             <div class="popup-message">
-                <div class="popupj-txt">
+                <div class="popup-txt">
                     <slot name="message"></slot>
                 </div>
                 <div class="close-popup-btn">

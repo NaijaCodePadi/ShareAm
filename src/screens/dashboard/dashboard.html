@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="../../screens/dashboard/css/dashboard.css" />
     <link rel="stylesheet" href="./../common/control-bar.css" />
-    <script src="../../components/ToastPopUp.js" type="module"></script>
+    <script src="../../components/toast-popup.js" type="module"></script>
+    <script src="../../components/footer-comp.js" type="module"></script>
     <link rel="stylesheet" href="../common/side-bar.css" />
     <script src="../../components/SiderBar.js" type="module"></script>
   </head>
@@ -649,54 +650,8 @@
                   </div>
                 </div>
 
-                <!-- <div class="popup-notification-container">
-                  <div class="popup-notification">
-                    <div class="verified-icon">
-                      <svg
-                        width="40"
-                        height="40"
-                        viewBox="0 0 45 45"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <circle cx="22.5" cy="22.5" r="22" stroke="#22074A" />
-                        <path
-                          d="M32 15.918L11.4286 36.4996L2 27.0664L4.41714 24.648L11.4286 31.6458L37 10L32 15.918Z"
-                          fill="#22074A"
-                        />
-                      </svg>
-                    </div>
+                <!-- ToastPopUp COMPONENT  -->
 
-                    <div class="popup-message">
-                      <div class="popup-txt">
-                        <p class="popup-txt">
-                          User, your password reset was successful
-                        </p>
-                      </div>
-                      <div class="close-popup-btn">
-                        <svg
-                          width="21"
-                          height="28"
-                          viewBox="0 0 21 28"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12.792 20.5L10.376 16.74L8.184 20.5H5.656L9.176 14.868L5.608 9.332H8.184L10.6 13.076L12.776 9.332H15.304L11.8 14.948L15.368 20.5H12.792Z"
-                            fill="black"
-                          />
-                          <rect
-                            x="0.5"
-                            y="1"
-                            width="20"
-                            height="27"
-                            stroke="black"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
                 <toast-popup>
                   <p class="popup-txt" slot="message">
                     User, your password reset was successful
@@ -879,11 +834,9 @@
             </div>
           </section>
         </div>
-        <footer class="footer-container">
-          <div class="section4-text">
-            <p>Seamless Conversations, Anytime, Anywhere.</p>
-          </div>
-        </footer>
+        <footer-comp>
+          <p slot="text">Seamless Conversations, Anytime, Anywhere.</p>
+        </footer-comp>
       </div>
     </main>
 
