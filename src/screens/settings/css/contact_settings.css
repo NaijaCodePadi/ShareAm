@@ -86,7 +86,6 @@ body {
   font-weight: 600;
 }
 
-
 .light-menu-title-texts {
   color: #150aa1;
 }
@@ -97,8 +96,6 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
 }
-
-
 
 .setting-subtitle-texts {
   color: #000;
@@ -133,7 +130,7 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  .mainbody{
+  .mainbody {
     background-color: #222020;
   }
   .setting-subtitle-texts {
@@ -143,37 +140,15 @@ body {
     color: #0389e1;
   }
   .light-arrow-svg {
-    fill: #FFFCFC;
+    fill: #fffcfc;
   }
 }
 
 @media (prefers-color-scheme: light) {
-  .mainbody{
+  .mainbody {
     background-color: #dad9d9;
   }
   .light-arrow-svg {
     fill: black;
   }
 }
-
-/*------------ SIDEBAR ------------*/
-/* ::part(contact) {
-  font-family: Poppins-regular;
-  font-size: 1rem;
-  font-weight: 700;
-  border-radius: 12px;
-}
-
-@media (prefers-color-scheme: light) {
-  ::part(contact) {
-    background-color: #ffffff;
-    color: rgba(34, 32, 32, 0.9);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  ::part(contact) {
-    background-color: #373737;
-    color: #fffcfc;
-  }
-} */

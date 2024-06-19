@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>Message_settings | ShareAm</title>
     <link rel="stylesheet" href="css/list.css" />
-    <link rel="stylesheet" href="../common/side-bar.css" />
     <link rel="stylesheet" href="./../common/control-bar.css" />
+    <script src="../../components/sider-bar.js" type="module"></script>
   </head>
 
   <body class="body">
@@ -33,7 +33,7 @@
 
     <div class="message">
       <!-- ------------ HTML FOR SIDEBAR --------------- -->
-      <aside>
+      <!-- <aside>
         <nav class="sidebar-nav">
           <a href="" class="profile-picc">
             <p class="profile-pic-intials intial-txt">NU</p>
@@ -252,7 +252,9 @@
             <h1 class="shaream-txt">Share<span>Am</span></h1>
           </div>
         </nav>
-      </aside>
+      </aside> -->
+
+      <side-bar active="message"></side-bar>
 
       <main>
         <div class="mainbody">
@@ -272,7 +274,7 @@
                     fill="#0490EC"
                   />
                 </svg>
-                <input placeholder="Search or a new chat"/>
+                <input placeholder="Search or a new chat" />
               </div>
             </div>
 
@@ -300,9 +302,7 @@
                     <div class="user-details-div2">
                       <div class="user-details">
                         <section>
-                          <p class="friends-display-name-text-active">
-                            Mason
-                          </p>
+                          <p class="friends-display-name-text-active">Mason</p>
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="15"
@@ -340,9 +340,7 @@
                             ></path>
                           </g>
                         </svg>
-                        <p class="message-text">
-                          guy howfar na
-                        </p>
+                        <p class="message-text">guy howfar na</p>
                       </div>
 
                       <svg
@@ -602,7 +600,7 @@
                       </svg>
                     </div>
                   </div>
-                </div> 
+                </div>
               </div>
             </div>
           </div>

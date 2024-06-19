@@ -1,19 +1,5 @@
 /* **************************** GENERAL CSS FOR SIDEBAR  ****************************************/
 
-:root {
-  /* General */
-  --svg-color: #a9a9a9;
-  /* light mode */
-  --lm-sidebar-bg-color: #22074a;
-  --lm-active-menu-bg-color: #ffffff;
-  --lm-active-menu: rgba(34, 32, 32, 0.9);
-
-  /* light mode */
-  --dm-sidebar-bg-color: #1f201f;
-  --dm-active-menu: #fffcfc;
-  --dm-active-menu-bg-color: #373737;
-}
-
 .sidebar-nav {
   height: 100vh;
   display: flex;
@@ -73,7 +59,7 @@
 }
 
 .sidebar-nav svg {
-  color: var(--svg-color);
+  color: #a9a9a9;
 }
 
 .hamburger {
@@ -81,7 +67,7 @@
 }
 
 .hamburger :hover svg {
-  color: var(--dm-active-menu);
+  color: #fffcfc;
 }
 
 .nav-link-container {
@@ -95,7 +81,8 @@
 
 .nav-link-container a {
   text-decoration: none;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   gap: 15px;
   padding: 1vh 1vw;
   border-radius: 12px;
@@ -124,6 +111,12 @@
   height: 6vh;
 }
 
+.icon-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* -----------------------------------------Texts stlyes ----------------------------------------- */
 
 .intial-txt {
@@ -143,6 +136,19 @@
 
 .shaream-txt > span {
   color: #6f3fe3;
+}
+
+.active-menu {
+  border-radius: 12px;
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.nav-texts {
+  font-family: Rubik;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -235,80 +241,58 @@
 
 @media (prefers-color-scheme: dark) {
   .sidebar-nav {
-    background-color: var(--dm-sidebar-bg-color);
+    background-color: #1f201f;
   }
 
   .nav-link-container a:hover {
-    background-color: var(--dm-active-menu-bg-color);
-    color: var(--dm-active-menu);
+    background-color: #373737;
+    color: #fffcfc;
     border-radius: 12px;
   }
 
   .nav-link-container a:hover svg {
-    color: var(--dm-active-menu);
+    color: #fffcfc;
   }
 
   a.active-menu {
-    background-color: var(--dm-active-menu-bg-color);
-    border-radius: 12px;
+    background-color: #373737;
+    color: #fffcfc;
   }
 
   a.active-menu svg {
-    color: var(--dm-active-menu);
+    color: #fffcfc;
   }
 
   .nav-texts {
     color: #a9a9a9;
-    font-family: Rubik;
-    font-size: 1rem;
-    font-weight: 500;
-  }
-
-  .nav-texts-active {
-    color: #fffcfc;
-    font-family: Poppins-regular;
-    font-size: 1rem;
-    font-weight: 700;
   }
 }
 
 @media (prefers-color-scheme: light) {
   .sidebar-nav {
-    background-color: var(--lm-sidebar-bg-color);
+    background-color: #22074a;
   }
 
   .nav-link-container a:hover {
-    background-color: var(--lm-active-menu-bg-color);
-    color: var(--lm-active-menu);
+    background-color: #ffffff;
+    color: rgba(34, 32, 32, 0.9);
     border-radius: 12px;
   }
 
   .nav-link-container a:hover svg {
-    color: var(--lm-active-menu);
+    color: rgba(34, 32, 32, 0.9);
   }
 
   a.active-menu {
-    background-color: var(--lm-active-menu-bg-color);
-    border-radius: 12px;
+    background-color: #ffffff;
+    color: rgba(34, 32, 32, 0.9);
   }
 
   a.active-menu svg {
-    color: var(--lm-active-menu);
+    color: rgba(34, 32, 32, 0.9);
   }
 
   .nav-texts {
     color: rgba(169, 169, 169, 0.9);
-    font-family: Rubik;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  .nav-texts-active {
-    color: rgba(34, 32, 32, 0.9);
-    font-family: Poppins-regular;
-    font-size: 1rem;
-    font-weight: 700;
   }
 }
