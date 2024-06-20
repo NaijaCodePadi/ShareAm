@@ -93,12 +93,12 @@ template.innerHTML = `
   text-decoration: none;
   display: flex;
   align-items: center;
-  gap: 15px;
   padding: 1vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
   /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
-  width: 180px;
+  // width: 180px;
+  white-space: nowrap;
 }
 
 .menu-link {
@@ -108,6 +108,7 @@ template.innerHTML = `
 .menu-text {
   /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
   display: block;
+  margin-left:1vw
 }
 
 .section4-share-am-div {
@@ -160,6 +161,7 @@ template.innerHTML = `
   font-size: 1rem;
   font-weight: 500;
 }
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
@@ -316,8 +318,8 @@ template.innerHTML = `
             <span id="green-circle"></span>
           </a>
 
-          <span class="hamburger">
-            <a href="" class="hamburger-icon">
+          <div class="hamburger">
+            <span class="hamburger-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="22"
@@ -329,8 +331,8 @@ template.innerHTML = `
                   d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
                 />
               </svg>
-            </a>
-          </span>
+            </span>
+          </div>
 
           <div class="nav-link-container">
             <a
@@ -562,8 +564,9 @@ template.innerHTML = `
               src="../../assets/icons/001 1.svg"
               alt=""
             />
-            <h1 class="shaream-txt">Share<span>Am</span></h1>
+            <h1 class="shaream-txt menu-text">Share<span>Am</span></h1>
           </div>
+          
         </nav>
       
 `;
@@ -588,7 +591,6 @@ class SideBar extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(this.active);
     switch (this.active) {
       case "dashboard":
         const dashboard = this.shadowRoot.getElementById("dashboard");
@@ -618,12 +620,9 @@ class SideBar extends HTMLElement {
         const notification = this.shadowRoot.getElementById("notification");
         notification.setAttribute("class", "active-menu");
         break;
-      case "settings":
+      default:
         const settings = this.shadowRoot.getElementById("settings");
         settings.setAttribute("class", "active-menu");
-        break;
-
-      default:
         break;
     }
   }
