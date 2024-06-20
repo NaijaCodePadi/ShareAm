@@ -74,6 +74,7 @@ template.innerHTML = `
 
 .hamburger {
   margin-left: 1vw;
+  height:22px;
 }
 
 .hamburger :hover svg {
@@ -211,8 +212,8 @@ template.innerHTML = `
     height: 10px;
   }
 
-  .hamburger {
-    margin: auto;
+  .hamburger-icon {
+    display: none;
   }
 
   .nav-link-container a {
