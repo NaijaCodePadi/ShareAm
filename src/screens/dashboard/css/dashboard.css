@@ -32,15 +32,16 @@ html {
 /* **************************** LANDING PAGE DASHBOARD ****************************************/
 
 body {
+  display: flex;
   user-select: none;
   height: 100vh;
 }
 
-.landing-page-container {
-  display: flex;
-}
-
 /************* LEFT-AND-CARD GENERAL CSS ****************/
+
+.left-card-footer {
+  width: 100%;
+}
 
 .left-and-card {
   display: flex;
