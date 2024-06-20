@@ -38,7 +38,7 @@ template.innerHTML = `
   background-size: 5vh 5vw;
 }
 
-.profile-picc {
+.profile-pic {
   width: 60px;
   height: 60px;
   display: flex;
@@ -109,7 +109,7 @@ template.innerHTML = `
 .menu-text {
   /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
   display: block;
-  margin-left:1vw
+  margin-left:1vw;
 }
 
 .section4-share-am-div {
@@ -170,7 +170,7 @@ template.innerHTML = `
 
 /* Large devices (laptops/desktops, 1085px and down) */
 @media only screen and (max-width: 1085px) {
-  .profile-picc {
+  .profile-pic {
     width: 50px;
     height: 50px;
   }
@@ -198,7 +198,7 @@ template.innerHTML = `
 
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-  .profile-picc {
+  .profile-pic {
     width: 45px;
     height: 45px;
   }
@@ -212,7 +212,7 @@ template.innerHTML = `
     height: 10px;
   }
 
-  .hamburger-icon {
+  #hamburger-icon {
     display: none;
   }
 
@@ -314,13 +314,13 @@ template.innerHTML = `
 </style>
 
  <nav class="sidebar-nav">
-          <a href="" class="profile-picc">
+          <a href="" class="profile-pic">
             <p class="profile-pic-intials intial-txt">NU</p>
             <span id="green-circle"></span>
           </a>
 
           <div class="hamburger">
-            <span class="hamburger-icon">
+            <span id="hamburger-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="22"
