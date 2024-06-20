@@ -134,15 +134,15 @@ template.innerHTML = `
             </div>
         </div>
     </div>
-`
+`;
 
 class ToastPopUp extends HTMLElement {
-    constructor() {
-        super();
-        const shadowRoot = this.attachShadow({ mode: "closed" })
-        let clone = template.content.cloneNode(true);
-        shadowRoot.append(clone);
-    }
+  constructor() {
+    super();
+    const shadowRoot = this.attachShadow({ mode: "closed" });
+    let clone = template.content.cloneNode(true);
+    shadowRoot.append(clone);
+  }
 }
 
 customElements.define("toast-popup", ToastPopUp);
