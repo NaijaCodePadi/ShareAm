@@ -97,9 +97,11 @@ template.innerHTML = `
   padding: 1vh 1vw;
   border-radius: 12px;
   transition: all 0.2s ease;
-  /* ---------------JavaScript will be used to change the width from 180px to fit-content when the menu-text is displayed as none------------- */
-  // width: 180px;
   white-space: nowrap;
+}
+
+#hamburger-icon {
+  cursor: pointer;  
 }
 
 .menu-link {
@@ -107,9 +109,12 @@ template.innerHTML = `
 }
 
 .menu-text {
-  /* ---------------JavaScript will be used to change the disply from block to none when the menu-text width is fit-content ----------------- */
-  display: block;
   margin-left:1vw;
+}
+
+.display-text {
+  /* ---------------JavaScript will be used to change the dispaly from block to none when the menu-text ----------------- */
+  display: none;
 }
 
 .section4-share-am-div {
@@ -573,6 +578,10 @@ template.innerHTML = `
 `;
 
 class SideBar extends HTMLElement {
+
+  hamburger;
+  menuText;
+
   constructor() {
     super();
     const shadowRoot = this.attachShadow({ mode: "open" });
@@ -592,6 +601,11 @@ class SideBar extends HTMLElement {
   }
 
   connectedCallback() {
+
+    this.hamburger = this.shadowRoot.getElementById("hamburger-icon");
+    this.menuText = this.shadowRoot.querySelectorAll(".menu-text");
+    this.hamburger.addEventListener("click", this.handleMenuToggle);
+
     switch (this.active) {
       case "dashboard":
         const dashboard = this.shadowRoot.getElementById("dashboard");
@@ -626,6 +640,12 @@ class SideBar extends HTMLElement {
         settings.setAttribute("class", "active-menu");
         break;
     }
+  }
+
+  handleMenuToggle = () => {
+    this.menuText.forEach(span => {
+      span.classList.toggle('display-text');
+    })
   }
 }
 
