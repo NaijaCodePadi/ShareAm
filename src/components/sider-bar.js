@@ -579,7 +579,6 @@ template.innerHTML = `
 
 class SideBar extends HTMLElement {
 
-  hamburger;
   menuText;
 
   constructor() {
@@ -602,9 +601,9 @@ class SideBar extends HTMLElement {
 
   connectedCallback() {
 
-    this.hamburger = this.shadowRoot.getElementById("hamburger-icon");
+    const hamburger = this.shadowRoot.getElementById("hamburger-icon");
     this.menuText = this.shadowRoot.querySelectorAll(".menu-text");
-    this.hamburger.addEventListener("click", this.handleMenuToggle);
+    hamburger.addEventListener("click", this.handleMenuToggle);
 
     switch (this.active) {
       case "dashboard":

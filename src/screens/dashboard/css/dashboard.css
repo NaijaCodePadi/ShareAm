@@ -185,7 +185,8 @@ input:checked + label svg.moon {
   height: 44%;
 }
 
-.chat-wrapper {
+#chat-wrapper,
+#favorite-wrapper {
   height: 80%;
   overflow-y: scroll;
   display: flex;
@@ -221,7 +222,7 @@ input:checked + label svg.moon {
   gap: 15px;
 }
 
-.section-2-div1-new-user-profile-pic {
+.user-profile-pic-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,6 +231,12 @@ input:checked + label svg.moon {
   border-radius: 3.5px;
   background: #cfdae2;
   color: #fff;
+}
+
+.user-profile-pic {
+  width: 35px;
+  height: 35px;
+  border-radius: 3.5px;
 }
 
 .section-3-container {
