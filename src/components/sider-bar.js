@@ -188,17 +188,10 @@ template.innerHTML = `
     width: 10px;
     height: 10px;
   }
-
-  .nav-link-container a {
-    width: 150px;
-  }
 }
 
 /* Large devices (laptops/desktops, 998px and down) */
 @media only screen and (max-width: 998px) {
-  .nav-link-container a {
-    width: 140px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -219,10 +212,6 @@ template.innerHTML = `
 
   #hamburger-icon {
     display: none;
-  }
-
-  .nav-link-container a {
-    width: fit-content;
   }
 
   .menu-text,
@@ -578,7 +567,6 @@ template.innerHTML = `
 `;
 
 class SideBar extends HTMLElement {
-
   menuText;
 
   constructor() {
@@ -600,7 +588,6 @@ class SideBar extends HTMLElement {
   }
 
   connectedCallback() {
-
     const hamburger = this.shadowRoot.getElementById("hamburger-icon");
     this.menuText = this.shadowRoot.querySelectorAll(".menu-text");
     hamburger.addEventListener("click", this.handleMenuToggle);
@@ -642,10 +629,10 @@ class SideBar extends HTMLElement {
   }
 
   handleMenuToggle = () => {
-    this.menuText.forEach(span => {
-      span.classList.toggle('display-text');
-    })
-  }
+    this.menuText.forEach((span) => {
+      span.classList.toggle("display-text");
+    });
+  };
 }
 
 customElements.define("side-bar", SideBar);
