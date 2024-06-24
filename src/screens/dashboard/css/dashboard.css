@@ -489,14 +489,14 @@ input:checked + label svg.moon {
   font-family: poppins-regular;
 }
 
-.time-txt {
+#time-txt {
   color: #0272bc;
   font-family: poppins-medium;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.date-txt {
+#date-txt {
   color: #0272bc;
   font-family: poppins-regular;
   font-size: 1rem;
