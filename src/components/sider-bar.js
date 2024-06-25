@@ -336,7 +336,6 @@ template.innerHTML = `
               href="../dashboard/dashboard.html"
             >
               <div class="icon-span">
-                <span>
                   <svg
                     width="19"
                     height="20"
@@ -349,16 +348,14 @@ template.innerHTML = `
                       fill="currentColor"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> Home</span>
+              <div class="menu-text">
+                Home
               </div>
             </a>
 
             <a class="menu-link nav-texts" id="profile" href="../settings/profile.html">
               <div class="icon-span">
-                <span>
                   <svg
                     width="19"
                     height="20"
@@ -371,16 +368,14 @@ template.innerHTML = `
                       fill="currentColor"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> My profile </span>
+              <div class="menu-text">
+                 My profile 
               </div>
             </a>
 
             <a class="menu-link nav-texts" id="callInterface" href="../dashboard/view.html">
               <div class="icon-span">
-                <span>
                   <svg
                     width="19"
                     height="20"
@@ -395,14 +390,13 @@ template.innerHTML = `
                   </svg>
                 </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> Call Interface </span>
+              <div class="menu-text">
+               Call Interface
               </div>
             </a>
 
             <a class="menu-link nav-texts" id="message" href="../messages/list.html">
               <div class="icon-span">
-                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="17"
@@ -417,10 +411,9 @@ template.innerHTML = `
                       fill-opacity="0.9"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> Message </span>
+              <div class="menu-text">
+               Message
               </div>
             </a>
 
@@ -430,7 +423,6 @@ template.innerHTML = `
               href="../settings/contact_settings.html"
             >
               <div class="icon-span">
-                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     version="1.1"
@@ -456,16 +448,14 @@ template.innerHTML = `
                       ></path>
                     </g>
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> Contacts</span>
+              <div class="menu-text">
+               Contacts
               </div>
             </a>
 
             <a class="menu-link nav-texts"  id="calendar" href="../dashboard/calendar.html">
               <div class="icon-span">
-                <span>
                   <svg
                     width="18"
                     height="20"
@@ -478,16 +468,14 @@ template.innerHTML = `
                       fill="currentColor"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text">Calendar</span>
+              <div class="menu-text">
+                Calendar
               </div>
             </a>
 
             <a class="menu-link nav-texts" id="notification" href="../settings/notification.html">
               <div class="icon-span">
-                <span>
                   <svg
                     width="21"
                     height="20"
@@ -500,16 +488,14 @@ template.innerHTML = `
                       fill="currentColor"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> Notifications</span>
+              <div class="menu-text">
+                Notifications
               </div>
             </a>
 
             <a class="menu-link nav-texts" id="settings" href="../settings/settings.html">
               <div class="icon-span">
-                <span>
                   <svg
                     width="22"
                     height="20"
@@ -522,16 +508,14 @@ template.innerHTML = `
                       fill="currentColor"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> Settings</span>
+              <div class="menu-text">
+               Settings
               </div>
             </a>
 
             <a class="menu-link nav-texts" href="../modal/auth_modal.html">
               <div class="icon-span">
-                <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="21"
@@ -545,10 +529,9 @@ template.innerHTML = `
                       fill="currentColor"
                     />
                   </svg>
-                </span>
               </div>
-              <div class="text-span">
-                <span class="menu-text"> More</span>
+              <div class="menu-text">
+               More
               </div>
             </a>
           </div>
