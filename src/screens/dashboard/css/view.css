@@ -71,6 +71,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   user-select: none;
+  margin-right: 2vw;
 }
 
 .call-interface-wrapper {
@@ -310,12 +311,17 @@ ul {
   gap: 5px;
 }
 
-.activities-btn {
+#activities-btn {
   background-color: #5f5f5f;
   padding: 0.5vh 0.5vw;
   border-radius: 4px;
   border: none;
   margin-left: auto;
+  display: none;
+}
+
+.display-chat-box {
+  display: none;
 }
 
 .muilti-btn {
@@ -394,11 +400,11 @@ ul {
   border-color: #5f5f5f transparent transparent transparent;
 }
 
-.chat-box {
+#chat-box {
   height: 90.5vh;
   width: 50%;
   border-radius: 14px;
-  margin: 7vh 2vw 0 2vw;
+  margin: 7vh 2vw 0 0;
 }
 
 .chat-box-wrapper {
@@ -832,6 +838,10 @@ input:checked + .slider:before {
     width: 5.5vw;
     height: 7vh;
   }
+
+  #activities-btn {
+    display: block;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and down) */
@@ -876,10 +886,11 @@ input:checked + .slider:before {
     height: 6vh;
   }
 
-  .activities-btn svg {
+  #activities-btn svg {
     width: 5vw;
     height: 5vh;
   }
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -899,6 +910,7 @@ input:checked + .slider:before {
     width: 9vw;
     height: 6vh;
   }
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -910,7 +922,7 @@ input:checked + .slider:before {
     background-color: #c3a8ec;
   }
 
-  .chat-box {
+  #chat-box {
     background: linear-gradient(
       181deg,
       rgba(218, 217, 217, 0.67) 5%,
@@ -928,7 +940,7 @@ input:checked + .slider:before {
     background-color: #373737;
   }
 
-  .chat-box {
+  #chat-box {
     background: linear-gradient(
       181deg,
       rgba(112, 111, 111, 0.67) 5%,
