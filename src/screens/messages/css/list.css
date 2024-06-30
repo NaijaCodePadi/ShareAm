@@ -211,7 +211,10 @@ main {
   display: flex;
   gap: 1vw;
   padding: 1vh 0.5vw 1vh 1vw;
+  border-radius: 15px;
 }
+
+
 
 .user-details {
   display: flex;
@@ -219,9 +222,18 @@ main {
   align-items: center;
 }
 
-.user-details-div1 {
+.user-profile-pic-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #cfdae2;
+  color: #fff;
+}
+
+.user-details-div1,
+.user-profile-pic-placeholder  {
   height: 49px;
-  width: 45px;
+  width: 49px;
   border-radius: 100%;
 }
 .user-details section {
@@ -256,7 +268,7 @@ main {
   color: #979797;
 }
 
-.inactive svg {
+.inactive .bookmark{
   fill: #a9a9a9;
   cursor: pointer;
 }
@@ -525,7 +537,11 @@ main {
   .select-all-txt {
     color: #0490ec;
   }
-  
+
+  .user-div:hover {
+    background: #c7c7f9;
+  }
+
   .active .bookmark {
     fill: #f1e9e9e5;
     cursor: pointer;
@@ -580,6 +596,10 @@ main {
 
   .select-all-txt {
     color: #150aa1;
+  }
+
+  .user-div:hover {
+    background: #8148d7;
   }
 
   .active .bookmark {
@@ -652,11 +672,11 @@ main {
     border-radius: 100%;
   }
 
-  .user-details-div1 img {
+  /* .user-details-div1 img {
     height: 39px;
     width: 35px;
     border-radius: 100%;
-  }
+  } */
 
   .mainbody-left-side {
     display: none;
