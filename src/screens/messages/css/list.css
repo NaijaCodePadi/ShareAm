@@ -268,7 +268,7 @@ main {
   color: #979797;
 }
 
-.inactive .bookmark{
+.bookmark{
   fill: #a9a9a9;
   cursor: pointer;
 }
@@ -547,8 +547,12 @@ main {
     cursor: pointer;
   }
 
-  .friends-display-name-text-active {
+  .active .friends-display-name-text {
     color: #fffcfc;
+  }
+
+  .friends-display-name-text {
+    color: #979797;
   }
 
 
@@ -599,7 +603,7 @@ main {
   }
 
   .user-div:hover {
-    background: #8148d7;
+    background: #7b3fd6;
   }
 
   .active .bookmark {
@@ -607,7 +611,7 @@ main {
     cursor: pointer;
   }
   
-  .friends-display-name-text-active {
+  .active .friends-display-name-text {
     color: rgba(34, 32, 32, 0.9);
   
   }
