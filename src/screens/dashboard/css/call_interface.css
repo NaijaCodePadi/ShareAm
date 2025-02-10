@@ -928,8 +928,9 @@ ul {
 .participant-wrapper {
   height: 80%;
   overflow-y: auto;
-  padding-right: 1vw;
+  /* padding-right: 1vw; */
   margin-top: 3vh;
+  /* background-color: #08e438; */
 }
 
 .participant-list {
@@ -937,6 +938,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2.5vh;
+  /* background-color: red; */
 }
 
 .each-participant {
@@ -948,15 +950,13 @@ ul {
 }
 
 .participant-profile-picture {
-  background: #cfdae2;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  font-family: Poppins-bold;
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a9aeb3;
+  width: 150px;
+  height: 120px;
+  border-radius: 11px;
 }
 
 .participant-profile-wrapper {
@@ -965,35 +965,59 @@ ul {
 
 .online-status {
   position: absolute;
-  right: 1%;
+  right: 5%;
   bottom: 10%;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 100%;
+  border: 0.5px solid #f3f1f1;
 }
 
 .each-participant img {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  border: 0.5px solid #a9a9a9;
+  width: 150px;
+  height: 120px;
+  border-radius: 11px;
   object-fit: cover;
 }
 
-.participant-microphone {
+.participant-profile-pic-placeholder {
+  color: #fff;
+  font-family: Poppins-bold;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.participant-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+}
+
+.mic-ellipsis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
+}
+
+.participant-microphone {
+  /* margin-left: auto; */
 }
 
 .mic-on {
   background-color: #08e438;
-  padding: 6px 8px;
+  padding: 5px 4px;
   border-radius: 6px;
 }
 
 .mic-off {
   background-color: #fe0000;
-  padding: 6px 4.8px;
+  padding: 4px 2px;
   border-radius: 6px;
+}
+
+.ellipsis-menu {
+  /* background-color: aqua; */
 }
 
 .menu-list {
@@ -1085,10 +1109,10 @@ ul {
   font-weight: 500;
 }
 
-.participant-txt {
+.participant-name-txt {
   color: #dad9d9;
   font-family: Poppins-regular;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -1101,6 +1125,12 @@ ul {
 
 .online-status-text {
   color: #101623;
+  font-family: Poppins-regular;
+  font-size: 0.6rem;
+}
+
+.parti-online-status-text {
+  color: #dad9d9;
   font-family: Poppins-regular;
   font-size: 0.6rem;
 }
