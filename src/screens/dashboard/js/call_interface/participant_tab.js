@@ -10,98 +10,6 @@ const handleEachParticiantsList = () => {
   participants.forEach((item, index) => {
     const participantsList = document.createElement("ul");
     participantsList.classList.add("participant-list");
-    //     participantsList.innerHTML = `
-    //                   <li class="each-participant">
-    //                     <div class="participant-profile-wrapper">
-    //                       <div class="participant-profile-picture">
-    //                        ${
-    //                          item.image
-    //                            ? `
-    //                             <img
-    //                                 src="${item.image}"
-    //                                 alt="User Profile Pic"
-    //                             />
-    //                             `
-    //                            : `
-    //                             <div class="user-profile-pic-placeholder">NU</div>`
-    //                        }
-    //                       </div>
-    //                         <span
-    //                           class="online-status" style="background-color: ${
-    //                             item.status === "active" ? "#3cea43" : "orange"
-    //                           }">
-    //                         </span>
-    //                     </div>
-    //                     <p class="participant-txt">${item.name}</p>
-    //                     <span class="participant-microphone">
-    //                      ${
-    //                        item.microphone
-    //                          ? `<div class="mic-on">
-    //                               <svg
-    //                                 xmlns="http://www.w3.org/2000/svg"
-    //                                 height="14"
-    //                                 width="10.5"
-    //                                 viewBox="0 0 384 512"
-
-    //                               >
-    //                                 <path
-    //                                   fill="#dadada"
-    //                                   d="M192 0C139 0 96 43 96 96l0 160c0 53 43 96 96 96s96-43 96-96l0-160c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6c85.8-11.7 152-85.3 152-174.4l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 70.7-57.3 128-128 128s-128-57.3-128-128l0-40z"
-    //                                 />
-    //                               </svg>
-    //                             </div>
-    //                           `
-    //                          : `<div class="mic-off">
-    //                               <svg
-    //                                 xmlns="http://www.w3.org/2000/svg"
-    //                                 height="14"
-    //                                 width="17.5"
-    //                                 viewBox="0 0 640 512"
-
-    //                               >
-    //                                 <path
-    //                                   fill="#dadada"
-    //                                   d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L472.1 344.7c15.2-26 23.9-56.3 23.9-88.7l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c0 21.2-5.1 41.1-14.2 58.7L416 300.8 416 96c0-53-43-96-96-96s-96 43-96 96l0 54.3L38.8 5.1zM344 430.4c20.4-2.8 39.7-9.1 57.3-18.2l-43.1-33.9C346.1 382 333.3 384 320 384c-70.7 0-128-57.3-128-128l0-8.7L144.7 210c-.5 1.9-.7 3.9-.7 6l0 40c0 89.1 66.2 162.7 152 174.4l0 33.6-48 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l72 0 72 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-48 0 0-33.6z"
-    //                                 />
-    //                               </svg>
-    //                             </div>
-    //                           `
-    //                      }
-    //                     </span>
-    //                     <span class="ellipsis-menu" data-index="${index}">
-    //                         <svg
-    //                         width="25px"
-    //                         height="25px"
-    //                         viewBox="0 0 24 24"
-    //                         fill="#DAD9D9"
-    //                         xmlns="http://www.w3.org/2000/svg"
-    //                       >
-    //                         <g id="SVGRepo_bgCarrier" stroke-width="0" />
-    //                         <g
-    //                           id="SVGRepo_tracerCarrier"
-    //                           stroke-linecap="round"
-    //                           stroke-linejoin="round"
-    //                         />
-    //                         <g id="SVGRepo_iconCarrier">
-    //                           <title />
-    //                           <g id="Complete">
-    //                             <g id="F-More">
-    //                               <path
-    //                                 d="M12,16a2,2,0,1,1-2,2A2,2,0,0,1,12,16ZM10,6a2,2,0,1,0,2-2A2,2,0,0,0,10,6Zm0,6a2,2,0,1,0,2-2A2,2,0,0,0,10,12Z"
-    //                                 id="Vertical"
-    //                               />
-    //                             </g>
-    //                           </g>
-    //                         </g>
-    //                       </svg>
-    //                       </span>
-    //                       <ul class="menu-list menu-close">
-    //                           <li class="menu-txt">View profile</li>
-    //                           <li class="menu-txt">Mute</li>
-    //                           <li class="menu-txt">Chat</li>
-    //                        </ul>
-    //                   </li>
-    // `;
     participantsList.innerHTML = `
                       <li class="each-participant">
                         <div class="participant-profile-wrapper">
@@ -252,11 +160,11 @@ getTotalParticipants();
 
 // ------------ Users display ----------//
 const handleParticipantsOnScreenDisplay = () => {
-  participants.slice(1, 4).forEach((item) => {
+  participants.slice(0, 2).forEach((item) => {
     const listenerDisplay = document.createElement("div");
     listenerDisplay.classList.add("listener-display");
     listenerDisplay.innerHTML = `
-          <div class="user-img call-participants listener-display">
+          <div class="call-participants">
             
               ${
                 item.image

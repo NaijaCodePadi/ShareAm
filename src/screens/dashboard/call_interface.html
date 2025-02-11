@@ -144,7 +144,10 @@
               <video id="share-screen-video" autoplay muted></video>
             </div>
 
-            <div class="second-interface-section-3-div">
+            <div
+              class="second-interface-section-3-div"
+              id="call-interface-mouse-control"
+            >
               <div class="shadow-users-display-wrapper">
                 <div class="empty-div"></div>
                 <div class="animation-wrapper">
@@ -159,9 +162,12 @@
                     </div>
                   </div>
                 </div>
-                <ul id="users-display"></ul>
+                <div id="users-display-wrapper">
+                  <ul id="users-display"></ul>
+                </div>
               </div>
-              <div class="action-btn-main-wrap">
+
+              <div class="action-btn-main-wrap" id="action-btns-wrapper">
                 <ul class="action-btn-wrap">
                   <!-- Share screen -->
                   <li
@@ -912,9 +918,9 @@
       </aside>
     </main>
 
-    <modal-container id="rate-call-container">
+    <!-- <modal-container id="rate-call-container">
       <rate-call id="rate-call" slot="content"></rate-call>
-    </modal-container>
+    </modal-container> -->
 
     <script src="../../renderer.js"></script>
     <script
