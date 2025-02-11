@@ -69,7 +69,7 @@ export const participants = [
     name: "James Brown",
     status: "away",
     statusText: "Busy",
-    speaking: true,
+    speaking: false,
   },
 
   {
