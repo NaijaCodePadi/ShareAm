@@ -65,7 +65,7 @@ template.innerHTML = `
       width: 30vw;
       padding: 2.5vh 1vw;
       border-radius: 11px;
-      font-size: 1vw;
+      font-size: 0.9rem;
     }
 
     .btn-login {

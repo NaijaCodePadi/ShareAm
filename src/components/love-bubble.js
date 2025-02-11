@@ -76,11 +76,9 @@ class LoveBubble extends HTMLElement {
     const containerHeight = heartContainer.offsetHeight;
 
     const startX = Math.random() * containerWidth;
-    // const startY = containerHeight;
 
     heartCopy.style.right = `${Math.round(startX) + 10}%`;
     heartCopy.style.left = `${Math.round(startX) + 80}%`;
-    // heartCopy.style.top = `${startY - 130}%`;
 
     heartContainer.appendChild(heartCopy);
 
