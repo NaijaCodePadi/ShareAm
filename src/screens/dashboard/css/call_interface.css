@@ -420,10 +420,6 @@ ul {
   cursor: pointer;
 }
 
-#hand-up {
-  fill: red;
-}
-
 .call-btn {
   display: flex;
   align-items: center;
@@ -966,6 +962,20 @@ ul {
 
 .participant-profile-wrapper {
   position: relative;
+}
+
+.hands-up {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+  right: 78%;
+  bottom: 3%;
+  border: 1px solid #979797;
 }
 
 .online-status {

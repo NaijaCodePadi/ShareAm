@@ -61,6 +61,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: true,
+    handsUp: true,
   },
 
   {
@@ -70,6 +71,7 @@ export const participants = [
     status: "away",
     statusText: "Busy",
     speaking: false,
+    handsUp: true,
   },
 
   {
@@ -79,6 +81,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: true,
+    handsUp: false,
   },
   {
     image: "../../assets/images/parti 1.png",
@@ -87,6 +90,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: false,
+    handsUp: true,
   },
 
   {
@@ -96,6 +100,7 @@ export const participants = [
     status: "away",
     statusText: "Busy",
     speaking: false,
+    handsUp: true,
   },
 
   {
@@ -105,6 +110,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: true,
+    handsUp: true,
   },
   {
     image: "",
@@ -113,6 +119,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: false,
+    handsUp: true,
   },
 
   {
@@ -122,6 +129,7 @@ export const participants = [
     status: "away",
     statusText: "Busy",
     speaking: false,
+    handsUp: true,
   },
 
   {
@@ -131,6 +139,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: false,
+    handsUp: true,
   },
 
   {
@@ -140,6 +149,7 @@ export const participants = [
     status: "active",
     statusText: "Online",
     speaking: false,
+    handsUp: true,
   },
 ];
 
