@@ -124,13 +124,8 @@ const handleEachParticiantsList = () => {
                               }">
                             </span>
                         </div>
-                        <div class="participant-txt">
-                         <p class="participant-name-txt">${item.name}</p>
-                         <p class="parti-online-status-text">${
-                           item.statusText
-                         }</p>
-                        </div>
-                       
+
+                        <div class="participant-txt-mic-wrapper">
                         <div class="mic-ellipsis">
                           <span class="participant-microphone">
                           ${
@@ -193,11 +188,21 @@ const handleEachParticiantsList = () => {
                               </svg>
                             </span>
                             <ul class="menu-list menu-close">
+                              <div class="menu-list-box">
                                 <li class="menu-txt">View profile</li>
                                 <li class="menu-txt">Mute</li>
                                 <li class="menu-txt">Chat</li>
+                              </div>  
                             </ul>
-                        </div>   
+                        </div> 
+
+                        <div class="participant-txt">
+                         <p class="participant-name-txt">${item.name}</p>
+                         <p class="parti-online-status-text">${
+                           item.statusText
+                         }</p>
+                        </div>
+                        </div>  
                       </li>
     `;
     participantWrapper.appendChild(participantsList);

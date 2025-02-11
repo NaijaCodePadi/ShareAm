@@ -74,7 +74,7 @@ export const participants = [
 
   {
     image: "../../assets/images/parti 4.png",
-    microphone: true,
+    microphone: false,
     name: "Asiwaju Titi",
     status: "active",
     statusText: "Online",
