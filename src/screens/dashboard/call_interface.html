@@ -144,7 +144,10 @@
               <video id="share-screen-video" autoplay muted></video>
             </div>
 
-            <div class="second-interface-section-3-div">
+            <div
+              class="second-interface-section-3-div"
+              id="call-interface-mouse-control"
+            >
               <div class="shadow-users-display-wrapper">
                 <div class="empty-div"></div>
                 <div class="animation-wrapper">
@@ -159,9 +162,12 @@
                     </div>
                   </div>
                 </div>
-                <ul id="users-display"></ul>
+                <div id="users-display-wrapper">
+                  <ul id="users-display"></ul>
+                </div>
               </div>
-              <div class="action-btn-main-wrap">
+
+              <div class="action-btn-main-wrap" id="action-btns-wrapper">
                 <ul class="action-btn-wrap">
                   <!-- Share screen -->
                   <li
@@ -931,8 +937,6 @@
                 </button>
               </form>
             </div>
-            <!-- to display the shared acreen -->
-            <!-- <video id="myvideo" autoplay playsinline style="width: 100%; height: 90vh;"></video> -->
             <div id="participant-section" class="tab-content">
               <div class="participant-wrapper"></div>
             </div>
@@ -941,9 +945,9 @@
       </aside>
     </main>
 
-    <modal-container id="rate-call-container">
+    <!-- <modal-container id="rate-call-container">
       <rate-call id="rate-call" slot="content"></rate-call>
-    </modal-container>
+    </modal-container> -->
 
     <script src="../../renderer.js"></script>
     <script

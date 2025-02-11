@@ -55,10 +55,11 @@ export const callInterfaceChatSample = [
 
 export const participants = [
   {
-    image: "../../assets/images/user 3.png",
+    image: "../../assets/images/parti 2.png",
     microphone: true,
     name: "John wick",
     status: "active",
+    statusText: "Online",
     speaking: true,
   },
 
@@ -67,68 +68,77 @@ export const participants = [
     microphone: false,
     name: "James Brown",
     status: "away",
-    speaking: true,
+    statusText: "Busy",
+    speaking: false,
   },
 
   {
-    image: "",
-    microphone: true,
+    image: "../../assets/images/parti 4.png",
+    microphone: false,
     name: "Asiwaju Titi",
     status: "active",
+    statusText: "Online",
     speaking: true,
   },
   {
-    image: "../../assets/images/user 3.png",
+    image: "../../assets/images/parti 1.png",
     microphone: true,
-    name: "John wick",
+    name: "Eddie Erick",
     status: "active",
+    statusText: "Online",
     speaking: false,
   },
 
   {
     image: "",
     microphone: false,
-    name: "James Brown",
+    name: "Osita Basito",
     status: "away",
+    statusText: "Busy",
     speaking: false,
   },
 
   {
-    image: "../../assets/images/user 2.png",
+    image: "../../assets/images/parti 3.png",
     microphone: true,
-    name: "Asiwaju Titi",
+    name: "Teddy Jake",
     status: "active",
+    statusText: "Online",
     speaking: true,
   },
   {
     image: "",
     microphone: true,
-    name: "John wick",
+    name: "James wiseman",
     status: "active",
+    statusText: "Online",
     speaking: false,
   },
 
   {
-    image: "../../assets/images/user 1.png",
+    image: "../../assets/images/parti 5.png",
     microphone: false,
     name: "James Brown",
     status: "away",
+    statusText: "Busy",
+    speaking: false,
+  },
+
+  {
+    image: "../../assets/images/parti 2.png",
+    microphone: true,
+    name: "Asiwaju Titi",
+    status: "active",
+    statusText: "Online",
     speaking: false,
   },
 
   {
     image: "../../assets/images/user 2.png",
     microphone: true,
-    name: "Asiwaju Titi",
+    name: "Donald T",
     status: "active",
-    speaking: false,
-  },
-
-  {
-    image: "../../assets/images/user 2.png",
-    microphone: true,
-    name: "Asiwaju Titi",
-    status: "active",
+    statusText: "Online",
     speaking: false,
   },
 ];
