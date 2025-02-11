@@ -1409,6 +1409,10 @@ input:checked + .slider:before {
     display: block;
   }
 
+  .smallscreen-multi-btn {
+    display: none;
+  }
+
   .action-btn-tooltip svg {
     display: flex;
     margin: auto;
