@@ -420,6 +420,10 @@ ul {
   cursor: pointer;
 }
 
+#hand-up {
+  fill: red;
+}
+
 .call-btn {
   display: flex;
   align-items: center;
