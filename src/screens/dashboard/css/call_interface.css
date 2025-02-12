@@ -969,7 +969,7 @@ ul {
   position: relative;
 }
 
-.hands-up {
+.participant-hands-up {
   width: 30px;
   height: 30px;
   display: flex;
@@ -1297,6 +1297,24 @@ input:checked + .slider:before {
     width: 100%;
     height: 130px;
   }
+
+  .mic-on {
+    padding: 4px 5.8px;
+  }
+
+  .mic-on svg {
+    width: 10px;
+    height: 15px;
+  }
+
+  .mic-off {
+    padding: 2px 3px;
+  }
+
+  .mic-off svg {
+    width: 15px;
+    height: 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
@@ -1332,6 +1350,18 @@ input:checked + .slider:before {
   .send-btn svg {
     width: 28px;
     height: 28px;
+  }
+
+  .participant-hands-up {
+    width: 25px;
+    height: 25px;
+    right: 77%;
+    border-radius: 5px;
+  }
+
+  .participant-hands-up svg {
+    width: 13px;
+    height: 17px;
   }
 }
 
@@ -1396,22 +1426,27 @@ input:checked + .slider:before {
     font-size: 0.7rem;
   }
 
-  .mic-on {
-    padding: 4px 5.8px;
-  }
-
   .mic-on svg {
     width: 8px;
     height: 13px;
   }
 
-  .mic-off {
-    padding: 2px 3px;
-  }
-
   .mic-off svg {
     width: 13px;
     height: 18px;
+  }
+
+  .participant-hands-up {
+    width: 20px;
+    height: 20px;
+    right: 72%;
+    bottom: 4%;
+    border-radius: 5px;
+  }
+
+  .participant-hands-up svg {
+    width: 12px;
+    height: 15px;
   }
 }
 
@@ -1451,6 +1486,17 @@ input:checked + .slider:before {
   .each-participant img {
     width: 100%;
     height: 70px;
+  }
+
+  .participant-hands-up {
+    width: 18px;
+    height: 19px;
+    right: 68%;
+  }
+
+  .participant-hands-up svg {
+    width: 10px;
+    height: 15px;
   }
 }
 
