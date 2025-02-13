@@ -439,6 +439,11 @@ ul {
   margin-top: 8px;
 }
 
+.small-raise-hand {
+  padding: 1vh 1vw;
+  border-radius: 7px;
+}
+
 .interface-section-4 {
   display: flex;
   align-items: center;
@@ -509,7 +514,7 @@ ul {
   margin: auto;
   margin-bottom: 1vh;
   display: flex;
-  gap: 0.7vw;
+  gap: 1vw;
   align-items: center;
   justify-content: center;
 }
@@ -964,6 +969,20 @@ ul {
   position: relative;
 }
 
+.participant-hands-up {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 10px;
+  position: absolute;
+  right: 78%;
+  bottom: 3%;
+  border: 1px solid #979797;
+}
+
 .online-status {
   position: absolute;
   right: 5%;
@@ -1278,6 +1297,24 @@ input:checked + .slider:before {
     width: 100%;
     height: 130px;
   }
+
+  .mic-on {
+    padding: 4px 5.8px;
+  }
+
+  .mic-on svg {
+    width: 10px;
+    height: 15px;
+  }
+
+  .mic-off {
+    padding: 2px 3px;
+  }
+
+  .mic-off svg {
+    width: 15px;
+    height: 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
@@ -1313,6 +1350,18 @@ input:checked + .slider:before {
   .send-btn svg {
     width: 28px;
     height: 28px;
+  }
+
+  .participant-hands-up {
+    width: 25px;
+    height: 25px;
+    right: 77%;
+    border-radius: 5px;
+  }
+
+  .participant-hands-up svg {
+    width: 13px;
+    height: 17px;
   }
 }
 
@@ -1377,22 +1426,27 @@ input:checked + .slider:before {
     font-size: 0.7rem;
   }
 
-  .mic-on {
-    padding: 4px 5.8px;
-  }
-
   .mic-on svg {
     width: 8px;
     height: 13px;
   }
 
-  .mic-off {
-    padding: 2px 3px;
-  }
-
   .mic-off svg {
     width: 13px;
     height: 18px;
+  }
+
+  .participant-hands-up {
+    width: 20px;
+    height: 20px;
+    right: 72%;
+    bottom: 4%;
+    border-radius: 5px;
+  }
+
+  .participant-hands-up svg {
+    width: 12px;
+    height: 15px;
   }
 }
 
@@ -1432,6 +1486,17 @@ input:checked + .slider:before {
   .each-participant img {
     width: 100%;
     height: 70px;
+  }
+
+  .participant-hands-up {
+    width: 18px;
+    height: 19px;
+    right: 68%;
+  }
+
+  .participant-hands-up svg {
+    width: 10px;
+    height: 15px;
   }
 }
 

@@ -21,9 +21,46 @@ const callInterfaceMouseControl = document.getElementById(
 );
 const usersDisplayWrapper = document.getElementById("users-display");
 const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
+const handRaiseElements = document.querySelectorAll(".hand-raise");
 
 // const rateCallContainer = document.getElementById("rate-call-container");
 
+// ------- HAND RAISE TOGGLE -------- //
+
+handRaiseElements.forEach((handRaise) => {
+  const raiseHandSvg = handRaise.querySelector("svg");
+  const raiseHandSvgPaths = raiseHandSvg.querySelectorAll("path");
+  let timeoutId;
+
+  const handleRaiseHandToggle = () => {
+    const handRaisedActive =
+      getComputedStyle(handRaise).backgroundColor === "rgb(255, 255, 255)";
+
+    if (handRaisedActive) {
+      handRaise.style.backgroundColor = "#5a4849";
+      raiseHandSvgPaths.forEach((part) => {
+        part.setAttribute("fill", "#DAD9D9");
+      });
+    } else {
+      handRaise.style.backgroundColor = "#fff";
+      raiseHandSvgPaths.forEach((part) => {
+        part.setAttribute("fill", "#000");
+      });
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      handRaise.style.backgroundColor = "#5a4849";
+      raiseHandSvgPaths.forEach((part) => {
+        part.setAttribute("fill", "#DAD9D9");
+      });
+    }, 10000);
+  };
+
+  handRaise.addEventListener("click", handleRaiseHandToggle);
+});
+
+// ------- MOUSE HOVER EFFECT -------- //
 const handleSharescreenMouseEnter = () => {
   usersDisplayWrapper.style.display = "block";
   actionButtonsWrapper.style.display = "block";
