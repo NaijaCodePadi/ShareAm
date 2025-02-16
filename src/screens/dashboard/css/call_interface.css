@@ -1027,13 +1027,12 @@ ul {
 }
 
 .menu-list {
-  background-color: rgba(88, 88, 88, 1);
   width: fit-content;
   padding: 1.1vh 1vw;
   border-radius: 11px;
   position: absolute;
   top: 30%;
-  right: 4%;
+  right: 6%;
   z-index: 1;
   display: none;
 }
@@ -1470,6 +1469,10 @@ ul {
   .participant-profile-picture {
     background: #373737;
   }
+
+  .menu-list {
+    background-color: #1f201f;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1508,5 +1511,9 @@ ul {
 
   .participant-profile-picture {
     background: #585858;
+  }
+
+  .menu-list {
+    background-color: rgb(88, 88, 88);
   }
 }
