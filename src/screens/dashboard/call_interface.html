@@ -18,14 +18,15 @@
       type="module"
     ></script>
     <script src="../../components/modal-container.js" type="module"></script>
-    <script src="../../components/header.js" type="module"></script>
+    <!-- <script src="../../components/page-header.js" type="module"></script> -->
+    <link rel="stylesheet" href="./../common/control-bar.css" />
+    <script src="../../components/toggle-button.js" type="module"></script>
     <title>Call Interface | ShareAm</title>
-    <!-- <link rel="stylesheet" href="./../common/control-bar.css" /> -->
   </head>
   <body class="content">
     <!-- Top Control Bar -->
 
-    <!-- <header>
+    <header>
       <div class="icon-bar">
         <div>
           <img src="../../assets/images/logo.png" alt="ShareAm_Logo" />
@@ -43,10 +44,10 @@
           <img src="../../assets/icons/control_box/close.svg" />
         </div>
       </div>
-    </header> -->
-    <page-header>
+    </header>
+    <!-- <page-header>
       <p class="" slot="title">Call Interface | ShareAm</p>
-    </page-header>
+    </page-header> -->
 
     <!-- End Of Top Control Bar -->
     <main class="main-container">
@@ -80,14 +81,9 @@
 
             <div class="interface-section-2">
               <div class="record">
-                <div class="toggle-btn">
-                  <label class="switch">
-                    <input type="checkbox" />
-                    <span class="slider"></span>
-                  </label>
-                </div>
+                <toggle-button name="recording" color="red"></toggle-button>
                 <p class="real-time-reading desktop-msg-subtitle-txt">
-                  REC 00: 12:36
+                  REC 00:00:00
                 </p>
               </div>
               <div class="add-user-wrapper">
