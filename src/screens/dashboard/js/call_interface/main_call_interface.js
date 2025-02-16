@@ -16,11 +16,6 @@ const addUser = document.querySelector(".add-user");
 const copyMeetingLink = document.querySelector(".copy-meeting-link");
 const copyMeetingLinkTxt = document.querySelector(".copy-meeting-link-txt");
 const callBtn = document.getElementById("call-btn");
-const callInterfaceMouseControl = document.getElementById(
-  "call-interface-mouse-control"
-);
-const usersDisplayWrapper = document.getElementById("users-display");
-const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
 const handRaiseElements = document.querySelectorAll(".hand-raise");
 
 // const rateCallContainer = document.getElementById("rate-call-container");
@@ -59,27 +54,6 @@ handRaiseElements.forEach((handRaise) => {
 
   handRaise.addEventListener("click", handleRaiseHandToggle);
 });
-
-// ------- MOUSE HOVER EFFECT -------- //
-const handleSharescreenMouseEnter = () => {
-  usersDisplayWrapper.style.display = "block";
-  actionButtonsWrapper.style.display = "block";
-};
-
-callInterfaceMouseControl.addEventListener(
-  "mouseenter",
-  handleSharescreenMouseEnter
-);
-
-const handleSharescreenMouseLeave = () => {
-  usersDisplayWrapper.style.display = "none";
-  actionButtonsWrapper.style.display = "none";
-};
-
-callInterfaceMouseControl.addEventListener(
-  "mouseleave",
-  handleSharescreenMouseLeave
-);
 
 // ------- ADD USER POPUP -------- //
 const handleAddUserPopup = () => {

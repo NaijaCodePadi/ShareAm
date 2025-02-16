@@ -2,6 +2,11 @@ const activateCameraIcon = document.getElementById("camera-icon");
 const cameraVideo = document.getElementById("camera-video");
 const shareScreenVideo = document.getElementById("share-screen-video");
 const animationWave = document.getElementById("animation-wave");
+const callInterfaceMouseControl = document.getElementById(
+  "call-interface-mouse-control"
+);
+const usersDisplayWrapper = document.getElementById("users-display");
+const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
 
 // ---------- ACTIVATION OF CAMERA AND SHARING OF SCREEN ---------- //
 let localStream;
@@ -107,3 +112,28 @@ document.addEventListener("DOMContentLoaded", () => {
   cameraEnabled = sessionStorage.getItem("cameraState") === "true";
   handleCameraActivation();
 });
+
+// ------- MOUSE HOVER EFFECT -------- //
+const handleSharescreenMouseEnter = () => {
+  if (cameraEnabled || isShareScreen) {
+    usersDisplayWrapper.style.display = "block";
+    actionButtonsWrapper.style.display = "block";
+  }
+};
+
+callInterfaceMouseControl.addEventListener(
+  "mouseenter",
+  handleSharescreenMouseEnter
+);
+
+const handleSharescreenMouseLeave = () => {
+  if (cameraEnabled || isShareScreen) {
+    usersDisplayWrapper.style.display = "none";
+    actionButtonsWrapper.style.display = "none";
+  }
+};
+
+callInterfaceMouseControl.addEventListener(
+  "mouseleave",
+  handleSharescreenMouseLeave
+);
