@@ -1,6 +1,11 @@
 const template = document.createElement("template");
 template.innerHTML = `
   <style>
+    .toggle-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      }
 
     .switch {
       position: relative;
@@ -9,14 +14,12 @@ template.innerHTML = `
       height: 14px;
     }
 
-    /* Hide default HTML checkbox */
     .switch input {
       opacity: 0;
       width: 0;
       height: 0;
     }
 
-    /* The slider */
     .slider {
       position: absolute;
       cursor: pointer;
@@ -25,8 +28,8 @@ template.innerHTML = `
       right: 0;
       bottom: 0;
       background-color: #c7c7f9;
-      -webkit-transition: 0.2s;
       transition: 0.2s;
+      border-radius: 34px;
     }
 
     .slider:before {
@@ -37,90 +40,105 @@ template.innerHTML = `
       left: 0px;
       bottom: -3.1px;
       background-color: #a9a9a9;
-      -webkit-transition: 0.2s;
       transition: 0.2s;
-    }
-
-    input:checked + .slider:before {
-      background-color: #150aa1;
-    }
-
-    input:focus + .slider {
-      box-shadow: 0 0 1px #c7c7f9;
-    }
-
-    input:checked + .slider:before {
-      -webkit-transform: translateX(13px);
-      -ms-transform: translateX(13px);
-      transform: translateX(13px);
-    }
-
-    /* Rounded sliders */
-    .slider {
-      border-radius: 34px;
-    }
-
-    .slider:before {
       border-radius: 50%;
     }
 
+    input:checked + .slider:before {
+      background-color: var(--toggle-color, #150aa1); /* Default blue */
+    }
 
-    
+    input:checked + .slider {
+      box-shadow: 0 0 3px var(--toggle-color, #150aa1);
+    }
 
+    input:checked + .slider:before {
+      transform: translateX(13px);
+    }
   </style>
 
- 
-
-  <div>
-
+  <div class="toggle-btn">
     <label class="switch">
-     <input type="checkbox" part="check" id="check">
-     <span class="slider round "></span>
+      <input type="checkbox" id="check">
+      <span class="slider round"></span>
     </label>
-  
   </div>
 `;
 
 class ToggleButton extends HTMLElement {
-  check;
-  state = false;
   constructor() {
     super();
-
-    const shadowRoot = this.attachShadow({ mode: "open" });
-    let clone = template.content.cloneNode(true);
-    shadowRoot.append(clone);
+    this.attachShadow({ mode: "open" }).append(
+      template.content.cloneNode(true)
+    );
+    this.state = false; // Default state
+    this.timerInterval = null; // To store the interval reference
+    this.seconds = 0; // Timer count in seconds
   }
 
-  static get observedAttribute() {
-    return ["name"];
+  static get observedAttributes() {
+    return ["name", "color"];
   }
 
   get name() {
     return this.getAttribute("name");
   }
-  // set name(value) {
-  //   return this.setAttribute("name", value);
-  // }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "color") {
+      this.updateColor(newValue);
+    }
+  }
 
   connectedCallback() {
     this.check = this.shadowRoot.getElementById("check");
     this.check.addEventListener("click", this.handleCheck);
+    this.updateColor(this.getAttribute("color"));
   }
 
   handleCheck = () => {
-    if (this.state) {
-      this.state = false;
-    } else {
-      this.state = true;
-    }
-    const value = {};
-    value[this.name] = this.state;
-    console.log(value);
-    console.log(this.state);
+    this.state = !this.state;
+    const value = { [this.name]: this.state };
+    console.log(value); // Logs the state change
 
-    console.log(this.name);
+    // Find the timer display
+    const timerDisplay = document.querySelector(".real-time-reading");
+    if (timerDisplay) {
+      if (this.state) {
+        // Start the timer
+        this.startTimer(timerDisplay);
+      } else {
+        // Stop the timer
+        this.stopTimer();
+      }
+    }
   };
+
+  updateColor(color) {
+    if (color) {
+      this.style.setProperty("--toggle-color", color);
+    }
+  }
+
+  startTimer(timerDisplay) {
+    if (this.timerInterval) return; // Avoid multiple intervals
+    this.timerInterval = setInterval(() => {
+      this.seconds++;
+      timerDisplay.textContent = `REC ${this.formatTime(this.seconds)}`;
+    }, 1000);
+  }
+
+  stopTimer() {
+    clearInterval(this.timerInterval);
+    this.timerInterval = null;
+  }
+
+  formatTime(seconds) {
+    const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
+    const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+    const secs = String(seconds % 60).padStart(2, "0");
+    return `${hrs}:${mins}:${secs}`;
+  }
 }
 
 customElements.define("toggle-button", ToggleButton);

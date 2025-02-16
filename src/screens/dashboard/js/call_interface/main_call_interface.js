@@ -16,7 +16,70 @@ const addUser = document.querySelector(".add-user");
 const copyMeetingLink = document.querySelector(".copy-meeting-link");
 const copyMeetingLinkTxt = document.querySelector(".copy-meeting-link-txt");
 const callBtn = document.getElementById("call-btn");
+const callInterfaceMouseControl = document.getElementById(
+  "call-interface-mouse-control"
+);
+const usersDisplayWrapper = document.getElementById("users-display");
+const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
+const handRaiseElements = document.querySelectorAll(".hand-raise");
+
 // const rateCallContainer = document.getElementById("rate-call-container");
+
+// ------- HAND RAISE TOGGLE -------- //
+
+handRaiseElements.forEach((handRaise) => {
+  const raiseHandSvg = handRaise.querySelector("svg");
+  const raiseHandSvgPaths = raiseHandSvg.querySelectorAll("path");
+  let timeoutId;
+
+  const handleRaiseHandToggle = () => {
+    const handRaisedActive =
+      getComputedStyle(handRaise).backgroundColor === "rgb(255, 255, 255)";
+
+    if (handRaisedActive) {
+      handRaise.style.backgroundColor = "#5a4849";
+      raiseHandSvgPaths.forEach((part) => {
+        part.setAttribute("fill", "#DAD9D9");
+      });
+    } else {
+      handRaise.style.backgroundColor = "#fff";
+      raiseHandSvgPaths.forEach((part) => {
+        part.setAttribute("fill", "#000");
+      });
+    }
+
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      handRaise.style.backgroundColor = "#5a4849";
+      raiseHandSvgPaths.forEach((part) => {
+        part.setAttribute("fill", "#DAD9D9");
+      });
+    }, 10000);
+  };
+
+  handRaise.addEventListener("click", handleRaiseHandToggle);
+});
+
+// ------- MOUSE HOVER EFFECT -------- //
+const handleSharescreenMouseEnter = () => {
+  usersDisplayWrapper.style.display = "block";
+  actionButtonsWrapper.style.display = "block";
+};
+
+callInterfaceMouseControl.addEventListener(
+  "mouseenter",
+  handleSharescreenMouseEnter
+);
+
+const handleSharescreenMouseLeave = () => {
+  usersDisplayWrapper.style.display = "none";
+  actionButtonsWrapper.style.display = "none";
+};
+
+callInterfaceMouseControl.addEventListener(
+  "mouseleave",
+  handleSharescreenMouseLeave
+);
 
 // ------- ADD USER POPUP -------- //
 const handleAddUserPopup = () => {
@@ -91,13 +154,28 @@ handleAddUserPopup();
 
 // ------- DISPLAY ADD USER POPUP -------- //
 const displayAddUserPopup = () => {
-  if (AddUserPopup.classList.contains("display-add-user-popup")) {
-    AddUserPopup.classList.remove("display-add-user-popup");
+  if (AddUserPopup.style.display === "block") {
+    AddUserPopup.style.display = "none";
   } else {
-    AddUserPopup.classList.add("display-add-user-popup");
+    AddUserPopup.style.display = "block";
   }
 };
-addUserIcon.addEventListener("click", displayAddUserPopup);
+
+addUserIcon.addEventListener("click", (event) => {
+  event.stopPropagation();
+  displayAddUserPopup();
+});
+
+// Close the popup when clicking outside
+document.addEventListener("click", (event) => {
+  if (
+    AddUserPopup.style.display === "block" &&
+    !AddUserPopup.contains(event.target) &&
+    !addUserIcon.contains(event.target)
+  ) {
+    AddUserPopup.style.display = "none";
+  }
+});
 
 // -----------AsideBox toggle and display ------------ //
 const handleChatBoxToggle = () => {
@@ -150,7 +228,6 @@ const handleCopyMeetingLink = () => {
 copyMeetingLink.addEventListener("click", handleCopyMeetingLink);
 
 // -------- EMOJI OVERLAY ----------- //
-
 emojiOverlay.addEventListener("click", (event) => {
   event.stopPropagation();
   if (window.getComputedStyle(emojiOverlayWrapper).display === "none") {
@@ -166,7 +243,8 @@ emojiOverlayWrapper.addEventListener("click", (event) => {
 
 document.addEventListener("click", (event) => {
   if (
-    emojiOverlayWrapper.style.display === "block" &&
+    window.getComputedStyle(emojiOverlayWrapper).display === "block" &&
+    !emojiOverlayWrapper.contains(event.target) &&
     !emojiOverlay.contains(event.target)
   ) {
     emojiOverlayWrapper.style.display = "none";
@@ -175,13 +253,30 @@ document.addEventListener("click", (event) => {
 
 // -------- ATTACHMENT OVERLAY ----------- //
 const displayAttachOverlay = () => {
-  if (attachListWrapper.classList.contains("display-attach-list")) {
-    attachListWrapper.classList.remove("display-attach-list");
+  if (attachListWrapper.style.display === "block") {
+    attachListWrapper.style.display = "none";
   } else {
-    attachListWrapper.classList.add("display-attach-list");
+    attachListWrapper.style.display = "block";
   }
 };
-inputAttachments.addEventListener("click", displayAttachOverlay);
+
+inputAttachments.addEventListener("click", (event) => {
+  event.stopPropagation();
+  displayAttachOverlay();
+});
+
+// Close the overlay when clicking outside
+document.addEventListener("click", (event) => {
+  if (
+    attachListWrapper.style.display === "block" &&
+    !attachListWrapper.contains(event.target) &&
+    !inputAttachments.contains(event.target)
+  ) {
+    attachListWrapper.style.display = "none";
+  }
+});
+
+// -------- HANDLE MEETING STATE ----------- //
 
 const handleMeetingState = () => {
   const meetingToken = sessionStorage.getItem("meetingToken");
