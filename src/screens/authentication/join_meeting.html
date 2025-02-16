@@ -278,7 +278,7 @@
       const joinMeeting = () => {
         event.preventDefault();
         const meetingId = document.getElementById("meeting_id").value;
-        localStorage.setItem("meetingToken", meetingId);
+        sessionStorage.setItem("meetingToken", meetingId);
         openModal(memberContainer);
       };
       form.addEventListener("submit", joinMeeting);
@@ -315,10 +315,10 @@
       });
 
       // const handleShowRateCallModal = () => {
-      //   const meetingToken = localStorage.getItem("meetingToken");
+      //   const meetingToken = sessionStorage.getItem("meetingToken");
       //   if (meetingToken) {
       //     openModal(rateCallContainer);
-      //     localStorage.removeItem("meetingToken");
+      //     sessionStorage.removeItem("meetingToken");
       //   }
       // };
       // handleShowRateCallModal()
