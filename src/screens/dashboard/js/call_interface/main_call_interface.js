@@ -17,11 +17,26 @@ const copyMeetingLink = document.querySelector(".copy-meeting-link");
 const copyMeetingLinkTxt = document.querySelector(".copy-meeting-link-txt");
 const callBtn = document.getElementById("call-btn");
 const handRaiseElements = document.querySelectorAll(".hand-raise");
+const displayMeetingTopic = document.getElementById("meeting-topic");
 
 // const rateCallContainer = document.getElementById("rate-call-container");
 
-// ------- HAND RAISE TOGGLE -------- //
+// ------- MEETING TOPIC DISPLAY ------- //
+let formData = sessionStorage.getItem("meetingToken") === "true";
 
+const handleMeetingTopicDisplay = () => {
+  if (formData && formData.topic) {
+    sessionStorage.setItem("meetingToken", formData.topic); // Store the topic
+  }
+  const savedTopic = sessionStorage.getItem("meetingToken");
+  if (savedTopic) {
+    displayMeetingTopic.innerHTML = savedTopic;
+  }
+};
+
+handleMeetingTopicDisplay();
+
+// ------- HAND RAISE TOGGLE -------- //
 handRaiseElements.forEach((handRaise) => {
   const raiseHandSvg = handRaise.querySelector("svg");
   const raiseHandSvgPaths = raiseHandSvg.querySelectorAll("path");
