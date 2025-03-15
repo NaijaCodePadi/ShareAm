@@ -297,8 +297,10 @@ const handleEndCall = () => {
   const meetingToken = sessionStorage.getItem("meetingToken");
 
   if (meetingToken) {
-    gotojoinmeeting();
+    sessionStorage.removeItem("cameraState");
+    sessionStorage.removeItem("micState");
     sessionStorage.removeItem("meetingToken");
+    gotojoinmeeting();
   }
   // openModal(rateCallContainer);
 };
