@@ -14,8 +14,8 @@
 
 ## Introduction
 
-**ShareAm** is an open-source app with real-time messaging, voice and video call features. It is a calling and messaging app that's designed to foster strong connections among users from various walks of life. This repo contains the source code for ShareAm App. ShareAm is a web-based video conferencing tool with a local, desktop client and a m that allows users to meet online; with or without video. ShareAm users can choose to record sessions,
-collaborate on projects all with one easy-to-use platform. ShareAm offers quality video, audio, and a wireless screen-sharing performance.
+**ShareAm** is an open-source app with real-time messaging, voice, and video call features. It is a calling and messaging app designed to foster strong connections among users from various walks of life. This repo contains the source code for the ShareAm App. ShareAm users can choose to record sessions,
+collaborate on projects all with one easy-to-use platform. ShareAm offers quality video and audio, and a wireless screen-sharing performance.
 
 ### Project Snap Shots
 
