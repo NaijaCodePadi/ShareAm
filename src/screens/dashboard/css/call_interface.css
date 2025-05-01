@@ -807,7 +807,7 @@ ul {
 .overlays {
   width: 100%;
   margin-top: 2vh;
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
   background-color: #2e2e2e;
   position: absolute;
   left: 0;
@@ -817,7 +817,7 @@ ul {
 .overlay-box {
   position: relative;
   background-color: #2e2e2e;
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
 }
 
 .icon-file-name {
@@ -856,17 +856,17 @@ ul {
   position: absolute;
 }
 
-.photo-input #attach-input {
+#photo-input #attach-input {
   right: 7%;
   bottom: 77%;
 }
 
-.video-input #attach-input {
+#video-input #attach-input {
   right: 7%;
   bottom: 52.8%;
 }
 
-.doc-input #attach-input {
+#doc-input #attach-input {
   right: 7%;
   bottom: 30%;
 }

@@ -167,6 +167,50 @@ template.innerHTML = `
   font-weight: 500;
 }
 
+/* -----------------------------------------Tooltip stlyes ----------------------------------------- */
+
+.ci-tooltipText-box {
+visibility: hidden;
+  background-color: #373737;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  position: absolute;
+  top: 43.5%;
+  left: 3%;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.ci-tooltipText-wrapper{
+ display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  margin: 0.8vh 0.6vw;
+ 
+}
+
+.ci-tooltipText {
+  padding: 0.8vh 0.8vw;
+}
+ 
+.ci-tooltipText:hover {
+  background-color: #1f201f;
+  padding: 0.8vh 0.8vw;
+   border-radius: 6px;
+}
+
+.ci-tooltipText-box::after {
+  content: "";
+  position: absolute;
+  bottom: 95%;
+  left: 80%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #373737 transparent transparent transparent;
+}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
@@ -373,7 +417,7 @@ template.innerHTML = `
         </div>
       </a>
 
-      <a class="menu-link nav-texts" id="callInterface" href="../dashboard/call_interface.html">
+      <a class="menu-link nav-texts ci-tooltip" id="callInterface" href="../dashboard/call_interface.html">
         <div class="icon-span">
             <svg
               width="19"
@@ -387,12 +431,18 @@ template.innerHTML = `
                 fill="currentColor"
               />
             </svg>
-          </span>
         </div>
         <div class="menu-text">
           Call Interface
         </div>
+        <div class="ci-tooltipText-box" id="ci-tooltipText-box">
+          <div class="ci-tooltipText-wrapper">
+            <div class="ci-tooltipText">Join Meeting</div>
+            <div class="ci-tooltipText">Create Meeting</div>
+          </div>
+        </div>
       </a>
+        
 
       <a class="menu-link nav-texts" id="message" href="../messages/list.html">
         <div class="icon-span">
@@ -579,6 +629,9 @@ class SideBar extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     let clone = template.content.cloneNode(true);
     shadowRoot.append(clone);
+    document.addEventListener("DOMContentLoaded", () => {
+      this.initTooltip();
+    });
   }
 
   static get observedAttribute() {
@@ -667,6 +720,27 @@ class SideBar extends HTMLElement {
     sessionStorage.clear();
     window.location.href = "../authentication/join_meeting.html";
   };
+
+  initTooltip() {
+    const toolTipContainer =
+      this.shadowRoot?.getElementById("callInterface") ||
+      document.getElementById("callInterface");
+    const tooltipText =
+      this.shadowRoot?.getElementById("ci-tooltipText-box") ||
+      document.getElementById("ci-tooltipText-box");
+
+    if (toolTipContainer && tooltipText) {
+      toolTipContainer.addEventListener("mouseenter", () => {
+        tooltipText.style.visibility = "visible";
+        tooltipText.style.opacity = "1";
+      });
+
+      toolTipContainer.addEventListener("mouseleave", () => {
+        tooltipText.style.visibility = "hidden";
+        tooltipText.style.opacity = "0";
+      });
+    }
+  }
 }
 
 customElements.define("side-bar", SideBar);
