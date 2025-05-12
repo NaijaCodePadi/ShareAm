@@ -8,6 +8,11 @@ contextBridge.exposeInMainWorld("electronAPI", {
   minimizeWindow: () => ipcRenderer.invoke("minimize-window"),
   maximizeWindow: () => ipcRenderer.invoke("maximize-window"),
   closeWindow: () => ipcRenderer.invoke("close-window"),
+  //
+  //
+
+  // openNewWindow: () => ipcRenderer.send("open-new-window"),
+  openCallInterfaceWindow: () => ipcRenderer.send("open-call-interface-window"),
 });
 
 contextBridge.exposeInMainWorld("showState", {
