@@ -22,6 +22,8 @@ const callInterfaceMouseControl = document.getElementById(
 const usersDisplayWrapper = document.getElementById("users-display");
 const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
 const handRaiseElements = document.querySelectorAll(".hand-raise");
+const realTimeReading = document.getElementById("real-time-reading");
+const recordingBtn = document.getElementById("recording-btn");
 
 // const rateCallContainer = document.getElementById("rate-call-container");
 
@@ -89,32 +91,29 @@ const handleAddUserPopup = () => {
     addUserList.innerHTML = `
                   <div>
                       <span class="prof-pic">
-                       ${
-                         item.image
-                           ? `
+                       ${item.image
+        ? `
                             <img
                                 src="${item.image}"
                                 alt="User Profile Pic"
                             />
                             `
-                           : `
+        : `
                             <div class="user-profile-pic-placeholder">NU</div>`
-                       } 
+      } 
                       </div>
                       </span>
                       <p class="username-txt">${item.name}</p>
                       <span class="online-status-vidoe-icon">
                       <div class="online-stat">
-                        <p class="online-status-mode" style="background-color: ${
-                          item.status === "active" ? "#3cea43" : "orange"
-                        }">
+                        <p class="online-status-mode" style="background-color: ${item.status === "active" ? "#3cea43" : "orange"
+      }">
                         </p>
                         <p class="online-status-text">${item.statusText}</p>
                       </div>
                       <div class="video-icon">
-                      ${
-                        item.videoIcon
-                          ? `<svg
+                      ${item.videoIcon
+        ? `<svg
                           width="32"
                           height="31"
                           viewBox="0 0 25 24"
@@ -130,7 +129,7 @@ const handleAddUserPopup = () => {
                             fill="#388E3C"
                           />
                         </svg>`
-                          : `<svg
+        : `<svg
                           width="35"
                           height="24"
                           viewBox="0 0 25 24"
@@ -142,7 +141,7 @@ const handleAddUserPopup = () => {
                             fill="#E4E4E4"
                           />
                         </svg>`
-                      }
+      }
                       </div>
                       </span>
                     </div>
@@ -304,16 +303,7 @@ const openModal = (modal) => {
   modal.open();
 };
 
-const handleEndCall = () => {
-  const meetingToken = sessionStorage.getItem("meetingToken");
 
-  if (meetingToken) {
-    gotojoinmeeting();
-    sessionStorage.removeItem("meetingToken");
-  }
-  // openModal(rateCallContainer);
-};
-callBtn.addEventListener("click", handleEndCall);
 
 // const handleCallRating = () => {
 //   const meetingToken = sessionStorage.getItem("meetingToken");
@@ -333,3 +323,262 @@ callBtn.addEventListener("click", handleEndCall);
 //     console.error("Done button not found");
 //   }
 // });
+
+
+
+
+
+let timerInterval = null;
+let seconds = 0;
+let mediaRecorder;
+let recordedChunks = [];
+let isPaused = false;
+let initialRecordStart = null;
+
+
+const getScreenStream = async () => {
+  return await navigator.mediaDevices.getDisplayMedia({ video: true });
+}
+
+const getAudioStream = async () => {
+  return await navigator.mediaDevices.getUserMedia({ audio: true });
+}
+
+const getCombinedStream = async () => {
+  const screenStream = await getScreenStream();
+  const audioStream = await getAudioStream();
+  const combinedStream = new MediaStream([
+    ...screenStream.getVideoTracks(),
+    ...audioStream.getAudioTracks()
+  ]);
+  return combinedStream;
+}
+
+// const startRecording = async () => {
+//   const stream = await getCombinedStream();
+//   mediaRecorder = new MediaRecorder(stream, { mimeType: 'video/webm; codecs=vp9' });
+
+//   mediaRecorder.ondataavailable = event => {
+//     if (event.data.size > 0) {
+//       recordedChunks.push(event.data);
+//     }
+//   };
+
+//   mediaRecorder.onstop = () => {
+//     const blob = new Blob(recordedChunks, { type: 'video/webm' });
+//     const url = URL.createObjectURL(blob);
+//     const a = document.createElement('a');
+//     a.href = url;
+//     a.download = 'recorded_meeting.webm';
+//     document.body.appendChild(a);
+//     a.click();
+//     recordedChunks = [];
+//     clearInterval(timerInterval);
+//     document.getElementById('timer').textContent = 'Recording Time: 0s';
+//   };
+
+//   mediaRecorder.start();
+// }
+
+
+
+const startRecording = async () => {
+  try {
+    const stream = await getCombinedStream();
+    const mimeTypes = [
+      'video/webm; codecs=vp9',
+      'video/webm; codecs=vp8',
+      'video/webm',
+      'video/mp4'
+    ];
+
+    let selectedMimeType = null;
+    for (const mimeType of mimeTypes) {
+      if (MediaRecorder.isTypeSupported(mimeType)) {
+        selectedMimeType = mimeType;
+        break;
+      }
+    }
+
+    if (!selectedMimeType) {
+      console.error('No supported mimeType found');
+      return;
+    }
+
+    mediaRecorder = new MediaRecorder(stream, { mimeType: selectedMimeType });
+
+    mediaRecorder.ondataavailable = event => {
+      if (event.data.size > 0) {
+        recordedChunks.push(event.data);
+      }
+    };
+
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(recordedChunks, { type: selectedMimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'recorded_meeting.webm';
+      document.body.appendChild(a);
+      a.click();
+      recordedChunks = [];
+      clearInterval(timerInterval);
+      // document.getElementById('timer').textContent = 'Recording Time: 0s';
+    };
+
+    // startTime = Date.now();
+    // timerInterval = setInterval(updateTimer, 1000);
+    mediaRecorder.start();
+  } catch (error) {
+    console.error('Error creating MediaRecorder:', error);
+  }
+}
+
+
+
+
+
+
+
+// Add event listeners to start and stop buttons
+// document.getElementById('startButton').addEventListener('click', startRecording);
+// document.getElementById('stopButton').addEventListener('click', stopRecording);
+
+
+
+
+
+
+
+const pauseRecording = () => {
+  if (mediaRecorder && mediaRecorder.state === 'recording') {
+    mediaRecorder.pause();
+    isPaused = true;
+    clearInterval(timerInterval);
+  }
+}
+
+const resumeRecording = () => {
+  if (mediaRecorder && mediaRecorder.state === 'paused') {
+    mediaRecorder.resume();
+    isPaused = false;
+    // startTime = Date.now() - getElapsedTime() * 1000;
+    // timerInterval = setInterval(updateTimer, 1000);
+  }
+}
+
+const stopRecording = () => {
+  if (mediaRecorder) {
+    mediaRecorder.stop();
+  }
+}
+
+const formatTime = (seconds) => {
+  const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
+  const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+  const secs = String(seconds % 60).padStart(2, "0");
+  return `${hrs}:${mins}:${secs}`;
+}
+
+const startTimer = (timerDisplay) => {
+  if (timerInterval) return; // Avoid multiple intervals
+  timerInterval = setInterval(() => {
+    seconds++;
+    timerDisplay.textContent = `REC ${formatTime(seconds)}`;
+  }, 1000);
+}
+
+const stopTimer = () => {
+  clearInterval(timerInterval);
+  timerInterval = null;
+}
+
+// Function to handle the state change event
+function handleRecording(event) {
+  const value = event.detail;
+
+  if (initialRecordStart === null) {
+    initialRecordStart = "recordStarted";
+    startRecording()
+    return;
+  } else if (initialRecordStart === "recordStarted" && isPaused) {
+    resumeRecording();
+  } else if (initialRecordStart === "recordStarted" && !isPaused) {
+    pauseRecording();
+  }
+
+  // if (realTimeReading) {
+  if (value.recording) {
+    // Start the timer
+    startTimer(realTimeReading);
+    // startRecording()
+  } else {
+    // Stop the timer
+    stopTimer();
+    // stopRecording()
+  }
+  // }
+
+  console.log('State changed:', value);
+  // Access and use the value here
+}
+
+// Add event listener to the custom element
+recordingBtn.addEventListener('recording_value', handleRecording);
+
+const handleEndCall = () => {
+  const meetingToken = sessionStorage.getItem("meetingToken");
+
+  if (meetingToken) {
+    gotojoinmeeting();
+    sessionStorage.removeItem("meetingToken");
+  }
+
+  if (initialRecordStart === "recordStarted") {
+    stopRecording();
+  }
+  // openModal(rateCallContainer);
+};
+callBtn.addEventListener("click", handleEndCall);
+
+
+
+
+// THE RECORD FUNCTION
+
+
+
+
+
+// const startRecording = async () => {
+//   try {
+//     const stream = await getCombinedStream();
+//     const mimeType = MediaRecorder.isTypeSupported('video/webm; codecs=vp9') ? 'video/webm; codecs=vp9' : 'video/webm';
+//     mediaRecorder = new MediaRecorder(stream, { mimeType });
+
+//     mediaRecorder.ondataavailable = event => {
+//       if (event.data.size > 0) {
+//         recordedChunks.push(event.data);
+//       }
+//     };
+
+//     mediaRecorder.onstop = () => {
+//       const blob = new Blob(recordedChunks, { type: mimeType });
+//       const url = URL.createObjectURL(blob);
+//       const a = document.createElement('a');
+//       a.href = url;
+//       a.download = 'recorded_meeting.webm';
+//       document.body.appendChild(a);
+//       a.click();
+//       recordedChunks = [];
+//       clearInterval(timerInterval);
+//       document.getElementById('timer').textContent = 'Recording Time: 0s';
+//     };
+
+//     startTime = Date.now();
+//     timerInterval = setInterval(updateTimer, 1000);
+//     mediaRecorder.start();
+//   } catch (error) {
+//     console.error('Error creating MediaRecorder:', error);
+//   }
+// }

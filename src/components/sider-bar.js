@@ -373,7 +373,7 @@ template.innerHTML = `
         </div>
       </a>
 
-      <a class="menu-link nav-texts" id="callInterface" href="../dashboard/call_interface.html">
+      <a class="menu-link nav-texts" id="callInterface" href="#">
         <div class="icon-span">
             <svg
               width="19"
@@ -656,4 +656,5 @@ class SideBar extends HTMLElement {
   }
 }
 
+// ../dashboard/call_interface.html
 customElements.define("side-bar", SideBar);
