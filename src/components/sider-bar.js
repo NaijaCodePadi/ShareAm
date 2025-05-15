@@ -179,6 +179,7 @@ visibility: hidden;
   top: 43.5%;
   left: 3%;
   z-index: 1;
+  opacity: 0;
   transition: opacity 0.5s ease;
 }
 
@@ -730,14 +731,22 @@ class SideBar extends HTMLElement {
       document.getElementById("ci-tooltipText-box");
 
     if (toolTipContainer && tooltipText) {
-      toolTipContainer.addEventListener("mouseenter", () => {
-        tooltipText.style.visibility = "visible";
-        tooltipText.style.opacity = "1";
+      let isVisible = false;
+
+      toolTipContainer.addEventListener("click", (e) => {
+        e.stopPropagation(); // Prevent bubbling
+        isVisible = !isVisible;
+        tooltipText.style.visibility = isVisible ? "visible" : "hidden";
+        tooltipText.style.opacity = isVisible ? "1" : "0";
       });
 
-      toolTipContainer.addEventListener("mouseleave", () => {
-        tooltipText.style.visibility = "hidden";
-        tooltipText.style.opacity = "0";
+      // Optional: Hide when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!toolTipContainer.contains(e.target)) {
+          isVisible = false;
+          tooltipText.style.visibility = "hidden";
+          tooltipText.style.opacity = "0";
+        }
       });
     }
   }
