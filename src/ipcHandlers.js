@@ -63,30 +63,6 @@ function registerIPCMainHandlers() {
     return sources;
   });
 
-  //
-  //
-  //
-  //
-
-  // ipcMain.on("open-new-window", () => {
-  //   const newWindow = new BrowserWindow({
-  //     frame: false,
-  //     width: 800,
-  //     height: 600,
-  //     minWidth: 600,
-  //     minHeight: 600,
-  //     webPreferences: {
-  //       preload: path.join(__dirname, "preload.js"),
-  //       contextIsolation: true,
-  //       nodeIntegration: false,
-  //     },
-  //   });
-
-  //   newWindow.loadFile(
-  //     path.join(__dirname, "/screens/dashboard/call_interface.html")
-  //   ); // Replace with actual path
-  // });
-
   ipcMain.on("open-call-interface-window", () => {
     const newWindow = new BrowserWindow({
       width: 800,
