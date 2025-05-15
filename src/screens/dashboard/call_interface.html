@@ -57,8 +57,8 @@
         <div class="call-interface-wrapper">
           <div class="interface-wrap-1">
             <div class="interface-section-1">
-              <p class="interface-section-1-text desktop-msg-title-txt">
-                Design Critique - ShareAm App
+              <p class="desktop-msg-title-txt">
+                <span id="meeting-topic"></span>
               </p>
               <div class="interface-section-1-followers desktop-viewer">
                 <svg
@@ -77,8 +77,12 @@
 
             <div class="interface-section-2">
               <div class="record">
-                <toggle-button name="recording" color="red"></toggle-button>
-                <p class="real-time-reading desktop-msg-subtitle-txt">
+                <toggle-button
+                  name="recording"
+                  color="red"
+                  id="recording-btn"
+                ></toggle-button>
+                <p class="desktop-msg-subtitle-txt" id="real-time-reading">
                   REC 00:00:00
                 </p>
               </div>
@@ -647,7 +651,7 @@
                     </svg>
                   </span>
                   <ul id="attach-list-wrapper" class="display-attach-list">
-                    <li class="attach-list photo-input">
+                    <li class="attach-list" id="photo-input">
                       <span>
                         <svg
                           width="25"
@@ -681,7 +685,7 @@
                       </span>
                       <p class="attach-txt">Photo</p>
                     </li>
-                    <li class="attach-list video-input">
+                    <li class="attach-list" id="video-input">
                       <span>
                         <svg
                           width="25"
@@ -715,7 +719,7 @@
                       </span>
                       <p class="attach-txt">Video</p>
                     </li>
-                    <li class="attach-list doc-input">
+                    <li class="attach-list" id="doc-input">
                       <span>
                         <svg
                           width="25"

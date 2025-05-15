@@ -357,7 +357,6 @@ ul {
 #users-display {
   width: fit-content;
   padding-top: 3vh;
-  display: none;
 }
 
 .call-participants {
@@ -808,7 +807,7 @@ ul {
 .overlays {
   width: 100%;
   margin-top: 2vh;
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
   background-color: #2e2e2e;
   position: absolute;
   left: 0;
@@ -818,7 +817,7 @@ ul {
 .overlay-box {
   position: relative;
   background-color: #2e2e2e;
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
 }
 
 .icon-file-name {
@@ -857,17 +856,17 @@ ul {
   position: absolute;
 }
 
-.photo-input #attach-input {
+#photo-input #attach-input {
   right: 7%;
   bottom: 77%;
 }
 
-.video-input #attach-input {
+#video-input #attach-input {
   right: 7%;
   bottom: 52.8%;
 }
 
-.doc-input #attach-input {
+#doc-input #attach-input {
   right: 7%;
   bottom: 30%;
 }
@@ -1028,13 +1027,12 @@ ul {
 }
 
 .menu-list {
-  background-color: rgba(88, 88, 88, 1);
   width: fit-content;
   padding: 1.1vh 1vw;
   border-radius: 11px;
   position: absolute;
   top: 30%;
-  right: 4%;
+  right: 6%;
   z-index: 1;
   display: none;
 }
@@ -1471,6 +1469,10 @@ ul {
   .participant-profile-picture {
     background: #373737;
   }
+
+  .menu-list {
+    background-color: #1f201f;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1509,5 +1511,9 @@ ul {
 
   .participant-profile-picture {
     background: #585858;
+  }
+
+  .menu-list {
+    background-color: rgb(88, 88, 88);
   }
 }

@@ -167,6 +167,50 @@ template.innerHTML = `
   font-weight: 500;
 }
 
+/* -----------------------------------------Tooltip stlyes ----------------------------------------- */
+
+.ci-tooltipText-box {
+visibility: hidden;
+  background-color: #373737;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  position: absolute;
+  top: 43.5%;
+  left: 3%;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+}
+
+.ci-tooltipText-wrapper{
+ display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  margin: 0.8vh 0.6vw;
+ 
+}
+
+.ci-tooltipText {
+  padding: 0.8vh 0.8vw;
+}
+ 
+.ci-tooltipText:hover {
+  background-color: #1f201f;
+  padding: 0.8vh 0.8vw;
+   border-radius: 6px;
+}
+
+.ci-tooltipText-box::after {
+  content: "";
+  position: absolute;
+  bottom: 95%;
+  left: 80%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #373737 transparent transparent transparent;
+}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
@@ -373,7 +417,7 @@ template.innerHTML = `
         </div>
       </a>
 
-      <a class="menu-link nav-texts" id="callInterface" href="../dashboard/call_interface.html">
+      <a class="menu-link nav-texts ci-tooltip" id="callInterface" href="../dashboard/call_interface.html">
         <div class="icon-span">
             <svg
               width="19"
@@ -387,12 +431,18 @@ template.innerHTML = `
                 fill="currentColor"
               />
             </svg>
-          </span>
         </div>
         <div class="menu-text">
           Call Interface
         </div>
+        <div class="ci-tooltipText-box" id="ci-tooltipText-box">
+          <div class="ci-tooltipText-wrapper">
+            <div class="ci-tooltipText">Join Meeting</div>
+            <div class="ci-tooltipText">Create Meeting</div>
+          </div>
+        </div>
       </a>
+        
 
       <a class="menu-link nav-texts" id="message" href="../messages/list.html">
         <div class="icon-span">
@@ -534,16 +584,22 @@ template.innerHTML = `
               </div>
             </a>
             
-            <a class="menu-link nav-texts" href="../authentication/join_meeting.html">
+            <a class="menu-link nav-texts" id="logout" href="#">
               <div class="icon-span">
                   <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="21"
-                      height="20"
-                      viewBox="0 0 512 512"
-                      class="icon"
-                      >
-                      <path d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z" fill="currentColor"/>
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="22"
+                    height="25"
+                    fill="none"
+                    >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      stroke-width="1.8"
+                      d="M7.417 6.3c.258-3 1.8-4.226 5.175-4.226h.108c3.725 0 5.217 1.492 5.217 5.217v5.433c0 3.725-1.492 5.217-5.217 5.217h-.108c-3.35 0-4.892-1.208-5.167-4.158M12.5 10H3.017M4.875 7.209l-2.792 2.792 2.792 2.791"
+                    />
                   </svg>
               </div>
               <div class="menu-text">
@@ -573,6 +629,9 @@ class SideBar extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     let clone = template.content.cloneNode(true);
     shadowRoot.append(clone);
+    document.addEventListener("DOMContentLoaded", () => {
+      this.initTooltip();
+    });
   }
 
   static get observedAttribute() {
@@ -590,6 +649,8 @@ class SideBar extends HTMLElement {
   connectedCallback() {
     const hamburger = this.shadowRoot.getElementById("hamburger-icon");
     this.menuText = this.shadowRoot.querySelectorAll(".menu-text");
+    const logout = this.shadowRoot.getElementById("logout");
+    logout.addEventListener("click", this.handleLogout);
 
     if (hamburger) {
       hamburger.addEventListener("click", this.toggleState);
@@ -653,6 +714,32 @@ class SideBar extends HTMLElement {
     this.menuText.forEach((span) => {
       span.classList.toggle("display-text", state);
     });
+  }
+
+  handleLogout = () => {
+    sessionStorage.clear();
+    window.location.href = "../authentication/join_meeting.html";
+  };
+
+  initTooltip() {
+    const toolTipContainer =
+      this.shadowRoot?.getElementById("callInterface") ||
+      document.getElementById("callInterface");
+    const tooltipText =
+      this.shadowRoot?.getElementById("ci-tooltipText-box") ||
+      document.getElementById("ci-tooltipText-box");
+
+    if (toolTipContainer && tooltipText) {
+      toolTipContainer.addEventListener("mouseenter", () => {
+        tooltipText.style.visibility = "visible";
+        tooltipText.style.opacity = "1";
+      });
+
+      toolTipContainer.addEventListener("mouseleave", () => {
+        tooltipText.style.visibility = "hidden";
+        tooltipText.style.opacity = "0";
+      });
+    }
   }
 }
 
