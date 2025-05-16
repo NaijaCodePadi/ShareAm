@@ -228,31 +228,30 @@ class ToggleButton extends HTMLElement {
   }
 
   attributeChangedCallback(name, _oldValue, newValue) {
-    if (name === "color") {
-      this.updateColor(newValue);
+    attributeChangedCallback(name, _oldValue, newValue) {
+      if (name === "color") {
+        this.updateColor(newValue);
+      }
     }
-  }
 
-  connectedCallback() {
-    this.check = this.shadowRoot.getElementById("check");
-    this.check.addEventListener("click", this.handleCheck);
-    this.updateColor(this.getAttribute("color"));
-  }
-
-  handleCheck = () => {
-    this.state = !this.state;
-    const value = { [this.name]: this.state };
-    this.dispatchEvent(
-      new CustomEvent(`${this.name}_value`, { detail: value })
-    );
-    console.log(value, this.name); // Logs the state change
-  };
-
-  updateColor(color) {
-    if (color) {
-      this.style.setProperty("--toggle-color", color);
+    connectedCallback() {
+      this.check = this.shadowRoot.getElementById("check");
+      this.check.addEventListener("click", this.handleCheck);
+      this.updateColor(this.getAttribute("color"));
     }
+
+    handleCheck = () => {
+      this.state = !this.state;
+      const value = { [this.name]: this.state };
+      this.dispatchEvent(new CustomEvent(`${this.name}_value`, { detail: value }));
+    };
+
+    updateColor(color) {
+      if (color) {
+        this.style.setProperty("--toggle-color", color);
+      }
+    }
+
   }
-}
 
 customElements.define("toggle-button", ToggleButton);
