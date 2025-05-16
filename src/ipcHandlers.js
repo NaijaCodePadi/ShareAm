@@ -1,17 +1,24 @@
-const { BrowserWindow, ipcMain, nativeTheme, desktopCapturer } = require('electron');
-function registerIPCMainHandlers() {
+const path = require("path");
 
-  ipcMain.handle('dark-mode:toggle', () => {
-    nativeTheme.themeSource = nativeTheme.shouldUseDarkColors ? 'light' : 'dark';
+const {
+  BrowserWindow,
+  ipcMain,
+  nativeTheme,
+  desktopCapturer,
+} = require("electron");
+function registerIPCMainHandlers() {
+  ipcMain.handle("dark-mode:toggle", () => {
+    nativeTheme.themeSource = nativeTheme.shouldUseDarkColors
+      ? "light"
+      : "dark";
     return nativeTheme.shouldUseDarkColors;
   });
 
-  ipcMain.handle('dark-mode:system', () => {
-    nativeTheme.themeSource = 'system';
+  ipcMain.handle("dark-mode:system", () => {
+    nativeTheme.themeSource = "system";
   });
 
-
-  ipcMain.handle('minimize-window', async () => {
+  ipcMain.handle("minimize-window", async () => {
     const focusedWindow = BrowserWindow.getFocusedWindow();
     if (focusedWindow) {
       focusedWindow.minimize();
@@ -20,7 +27,7 @@ function registerIPCMainHandlers() {
     return false; // Return false or any error indication if there is no focused window
   });
 
-  ipcMain.handle('maximize-window', async () => {
+  ipcMain.handle("maximize-window", async () => {
     const focusedWindow = BrowserWindow.getFocusedWindow();
     if (focusedWindow) {
       if (focusedWindow.isMaximized()) {
@@ -33,7 +40,7 @@ function registerIPCMainHandlers() {
     return false; // Return false or any error indication if there is no focused window
   });
 
-  ipcMain.handle('close-window', async () => {
+  ipcMain.handle("close-window", async () => {
     const focusedWindow = BrowserWindow.getFocusedWindow();
     if (focusedWindow) {
       focusedWindow.close();
@@ -42,18 +49,37 @@ function registerIPCMainHandlers() {
     return false; // Return false or any error indication if there is no focused window
   });
 
-  ipcMain.handle('show-value:toggle', async (event, newValue) => {
-    console.log('New value:', newValue);
+  ipcMain.handle("show-value:toggle", async (event, newValue) => {
+    console.log("New value:", newValue);
     return newValue;
   });
 
   // For screen sharing
-  ipcMain.handle('get-sources', async () => {
+  ipcMain.handle("get-sources", async () => {
     // console.log('get-sources handler called');
-    const sources = await desktopCapturer.getSources({ types: [ "window", "screen", "audio" ] });
+    const sources = await desktopCapturer.getSources({
+      types: ["window", "screen", "audio"],
+    });
     return sources;
   });
 
+  ipcMain.on("open-call-interface-window", () => {
+    const newWindow = new BrowserWindow({
+      width: 800,
+      height: 600,
+      minWidth: 600,
+      minHeight: 600,
+      frame: false,
+      webPreferences: {
+        preload: path.join(__dirname, "preload.js"),
+        contextIsolation: true,
+        nodeIntegration: false,
+      },
+    });
 
+    newWindow.loadFile(
+      path.join(__dirname, "/screens/dashboard/call_interface.html")
+    );
+  });
 }
 module.exports = { registerIPCMainHandlers };

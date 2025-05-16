@@ -130,7 +130,7 @@ template.innerHTML = `
           required
         />
         <button 
-          class="btn-login blue-btn-txt" 
+          class="btn-login blue-btn-txt"
           type="submit"
         >
           Join
@@ -259,15 +259,39 @@ class JoinMeetingMember extends HTMLElement {
     }
   };
 
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const nameInput = this.shadowRootRef.getElementById("name-input").value;
+  //   sessionStorage.setItem("memberName", nameInput);
+  //   this.gotoCallInterface();
+  // };
+
+  // gotoCallInterface = async () => {
+  //   window.location.href = "../../screens/dashboard/call_interface.html";
+  // };
+
+  // handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   const nameInput = this.shadowRootRef.getElementById("name-input").value;
+  //   sessionStorage.setItem("memberName", nameInput);
+
+  //   if (
+  //     window.electronAPI &&
+  //     typeof window.electronAPI.openNewWindow === "function"
+  //   ) {
+  //     window.electronAPI.openNewWindow(); // call Electron API
+  //   } else {
+  //     console.error("Electron API not available");
+  //   }
+  // };
+
   handleSubmit = (event) => {
     event.preventDefault();
     const nameInput = this.shadowRootRef.getElementById("name-input").value;
     sessionStorage.setItem("memberName", nameInput);
-    this.gotoCallInterface();
-  };
 
-  gotoCallInterface = async () => {
-    window.location.href = "../../screens/dashboard/call_interface.html";
+    // Open new window from main process
+    window.electronAPI.openCallInterfaceWindow();
   };
 }
 

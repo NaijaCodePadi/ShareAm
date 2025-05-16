@@ -277,12 +277,14 @@ class JoinMeetingHost extends HTMLElement {
     };
     sessionStorage.setItem("meetingToken", formData.topic);
     sessionStorage.setItem("formData", JSON.stringify(formData));
-    this.gotoCallInterface();
+    // this.gotoCallInterface();
+
+    window.electronAPI.openCallInterfaceWindow();
   };
 
-  gotoCallInterface = async () => {
-    window.location.href = "../../screens/dashboard/call_interface.html";
-  };
+  // gotoCallInterface = async () => {
+  //   window.location.href = "../../screens/dashboard/call_interface.html";
+  // };
 }
 
 customElements.define("join-meeting-host", JoinMeetingHost);
