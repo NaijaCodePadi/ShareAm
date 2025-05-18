@@ -2,12 +2,24 @@ const activeMicIcon = document.getElementById("active-mic-icon");
 const waveShadow1 = document.querySelector(".wave-shadow-1");
 const lineWave = document.querySelectorAll(".line-wave");
 
-let micEnabled = sessionStorage.getItem("micState") === "true";
+let micEnabled;
 let localStream = null;
 let audioContext = null;
 let analyser = null;
 let microphone = null;
 let isVisualizing = false;
+
+
+// When the form data is received from main process
+window.electronAPI.onReceiveFormData((formData) => {
+  sessionStorage.setItem("callData", JSON.stringify(formData));
+  sessionStorage.setItem("micState", formData.micState);
+  sessionStorage.setItem("cameraState", formData.cameraState);
+
+  micEnabled = formData.micState === "true";
+  handleMicrophoneActivation(); // ✅ Activate microphone immediately based on state
+});
+
 
 async function initAudioProcessing() {
   try {
@@ -137,8 +149,3 @@ const handleMicToggle = () => {
 };
 
 activeMicIcon.addEventListener("click", handleMicToggle);
-
-document.addEventListener("DOMContentLoaded", () => {
-  micEnabled = sessionStorage.getItem("micState") === "true";
-  handleMicrophoneActivation();
-});

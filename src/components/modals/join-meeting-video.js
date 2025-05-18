@@ -372,8 +372,6 @@ class joinVideo extends HTMLElement {
           span.style.height = "20%";
         });
 
-        waveShadow1.style.height = "100px";
-        waveShadow1.style.width = "100px";
       }
     }
   };
