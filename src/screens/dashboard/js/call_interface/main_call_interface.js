@@ -11,8 +11,6 @@ const attachListWrapper = document.getElementById("attach-list-wrapper");
 const AddUserPopup = document.getElementById("add-user-popup");
 const addUserIcon = document.getElementById("add-icon");
 const eachUserWrapper = document.getElementById("each-user-wrapper");
-const sidebarContainer = document.getElementById("sidebar-container");
-const addUser = document.querySelector(".add-user");
 const copyMeetingLink = document.querySelector(".copy-meeting-link");
 const copyMeetingLinkTxt = document.querySelector(".copy-meeting-link-txt");
 const callBtn = document.getElementById("call-btn");
@@ -20,23 +18,26 @@ const handRaiseElements = document.querySelectorAll(".hand-raise");
 const displayMeetingTopic = document.getElementById("meeting-topic");
 const realTimeReading = document.getElementById("real-time-reading");
 const recordingBtn = document.getElementById("recording-btn");
-
 // const rateCallContainer = document.getElementById("rate-call-container");
 
-// ------- MEETING TOPIC DISPLAY ------- //
-let formData = sessionStorage.getItem("meetingToken") === "true";
 
-const handleMeetingTopicDisplay = () => {
+window.electronAPI.onReceiveFormData((formData) => {
+  // Store it in sessionStorage
+  sessionStorage.setItem("callData", JSON.stringify(formData));
+  // sessionStorage.setItem("micState", formData.micState);
+  // sessionStorage.setItem("cameraState", formData.cameraState);
+
+
+  // ✅ Use it to do something immediately
+  handleMeetingTopicDisplay(formData);
+});
+
+// ------- MEETING TOPIC DISPLAY ------- //
+const handleMeetingTopicDisplay = (formData) => {
   if (formData && formData.topic) {
-    sessionStorage.setItem("meetingToken", formData.topic); // Store the topic
-  }
-  const savedTopic = sessionStorage.getItem("meetingToken");
-  if (savedTopic) {
-    displayMeetingTopic.innerHTML = savedTopic;
+    displayMeetingTopic.innerHTML = formData.topic;
   }
 };
-
-handleMeetingTopicDisplay();
 
 // ------- HAND RAISE TOGGLE -------- //
 handRaiseElements.forEach((handRaise) => {
@@ -266,18 +267,6 @@ document.addEventListener("click", (event) => {
 
 // -------- HANDLE MEETING STATE ----------- //
 
-const handleMeetingState = () => {
-  const meetingToken = sessionStorage.getItem("meetingToken");
-
-  if (meetingToken) {
-    sidebarContainer.style.display = "none";
-    addUser.style.display = "none";
-  } else {
-    sidebarContainer.style.display = "block";
-    copyMeetingLink.style.display = "none";
-  }
-};
-handleMeetingState();
 
 async function gotojoinmeeting() {
   window.location.href = "../authentication/join_meeting.html";
@@ -453,22 +442,24 @@ function handleRecording(event) {
 // Add event listener to the custom element
 recordingBtn.addEventListener('recording_value', handleRecording);
 
+
+
 const handleEndCall = () => {
   const meetingToken = sessionStorage.getItem("meetingToken");
 
   if (meetingToken) {
-    sessionStorage.removeItem("cameraState");
-    sessionStorage.removeItem("micState");
-    sessionStorage.removeItem("meetingToken");
-    sessionStorage.removeItem("meetingToken");
+    sessionStorage.clear();
   }
 
   if (initialRecordStart === "recordStarted") {
     stopRecording();
   }
-  // openModal(rateCallContainer);
+
+  window.electronAPI.closeWindow();
 };
+
 callBtn.addEventListener("click", handleEndCall);
+
 
 
 

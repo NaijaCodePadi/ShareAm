@@ -63,8 +63,9 @@ function registerIPCMainHandlers() {
     return sources;
   });
 
-  ipcMain.on("open-call-interface-window", () => {
-    const newWindow = new BrowserWindow({
+
+  ipcMain.on("open-call-interface-window", (event, formData) => {
+    const callWindow = new BrowserWindow({
       width: 800,
       height: 600,
       minWidth: 600,
@@ -77,9 +78,14 @@ function registerIPCMainHandlers() {
       },
     });
 
-    newWindow.loadFile(
+    callWindow.loadFile(
       path.join(__dirname, "/screens/dashboard/call_interface.html")
     );
+
+    callWindow.webContents.once("did-finish-load", () => {
+      callWindow.webContents.send("send-form-data", formData);
+    });
   });
+
 }
 module.exports = { registerIPCMainHandlers };
