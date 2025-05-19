@@ -777,6 +777,11 @@ ul {
   cursor: pointer;
 }
 
+#emoji-btn {
+  background: none;
+  border: none;
+}
+
 #emoji-overlay-wrapper {
   display: none;
 }
@@ -830,11 +835,10 @@ ul {
   max-height: 50px;
   min-width: 25px;
   min-height: 20px;
-  padding: 0.5vh 0vw;
+  padding: 0.1vh 0.1vw 0.4vh 0.1vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: cadetblue;
 }
 
 .emoji:hover {
