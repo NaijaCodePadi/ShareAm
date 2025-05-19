@@ -778,7 +778,7 @@ ul {
 }
 
 #emoji-overlay-wrapper {
-  /* display: none; */
+  display: none;
 }
 
 #emoji-overlay {
@@ -808,7 +808,15 @@ ul {
   margin: 1vh 0;
   height: 20vh;
   overflow: scroll;
-  background-color: red;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.35vw;
+}
+
+.emoji-box::after {
+  content: "";
+  flex: auto;
 }
 
 .emoji-box::-webkit-scrollbar {
@@ -818,12 +826,15 @@ ul {
 .emoji {
   font-size: 1.4rem;
   cursor: pointer;
-  background-color: aqua;
-  /* height: 5vh;
-  width: 5vw; */
-  /* display: flex;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 25px;
+  min-height: 20px;
+  padding: 0.5vh 0vw;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
+  background-color: cadetblue;
 }
 
 .emoji:hover {
