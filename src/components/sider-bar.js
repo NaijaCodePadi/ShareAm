@@ -418,7 +418,7 @@ visibility: hidden;
         </div>
       </a>
 
-      <a class="menu-link nav-texts ci-tooltip" id="callInterface" href="#">
+      <a class="menu-link nav-texts ci-tooltip" id="callInterface" href="../dashboard/call_interface.html">
         <div class="icon-span">
             <svg
               width="19"

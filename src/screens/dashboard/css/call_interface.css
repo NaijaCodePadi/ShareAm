@@ -778,30 +778,86 @@ ul {
 }
 
 #emoji-overlay-wrapper {
-  display: none;
+  /* display: none; */
 }
 
 #emoji-overlay {
-  height: 20vh;
+  height: 30vh;
   position: absolute;
-  top: -285%;
+  bottom: 100%;
   left: 0;
-  overflow: scroll;
   background-color: #2e2e2e;
   border-radius: 7px;
 }
 
-#emoji-overlay::-webkit-scrollbar {
+.emoji-tab-wrapper {
+  color: #dadada;
+  padding: 1vh 0.7vw;
+}
+
+.emoji-tab-content {
+  padding-top: 0.6vh;
   display: none;
 }
 
-.emojis {
-  padding: 1vh 0.7vw;
-  cursor: pointer;
+.emoji-tab-content.active {
+  display: block;
 }
 
-#emoji {
-  font-size: 1.3rem;
+.emoji-box {
+  margin: 1vh 0;
+  height: 20vh;
+  overflow: scroll;
+  background-color: red;
+}
+
+.emoji-box::-webkit-scrollbar {
+  display: none;
+}
+
+.emoji {
+  font-size: 1.4rem;
+  cursor: pointer;
+  background-color: aqua;
+  /* height: 5vh;
+  width: 5vw; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.emoji:hover {
+  background-color: #525252;
+  border-radius: 4px;
+}
+
+.emoji-tab-icon {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vh;
+  padding-bottom: 0.7vw;
+}
+
+.tab-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-emoji svg {
+  color: #8a8a8a;
+  height: 2.8vh;
+}
+
+.tab-emoji.active svg {
+  color: #ffffff;
+}
+
+.flags {
+  font-family: "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji",
+    sans-serif;
 }
 
 .overlays {
@@ -1116,6 +1172,13 @@ ul {
   font-weight: 500;
 }
 
+.emoji-tab-title {
+  font-family: Rubik;
+  font-size: 0.9rem;
+  color: #adadad;
+  border-bottom: 1px solid #585858;
+}
+
 .participant-profile-pic-placeholder {
   color: #fff;
   font-family: Poppins-bold;
@@ -1269,6 +1332,10 @@ ul {
     height: 17vh;
   }
 
+  .tab-emoji svg {
+    height: 2.5vh;
+  }
+
   .participant-profile-picture {
     width: 140px;
     height: 120px;
@@ -1342,6 +1409,10 @@ ul {
   .send-btn svg {
     width: 25px;
     height: 25px;
+  }
+
+  .tab-emoji svg {
+    height: 2vh;
   }
 
   .participant-profile-picture {
