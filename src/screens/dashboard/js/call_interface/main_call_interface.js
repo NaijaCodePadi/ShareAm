@@ -11,22 +11,35 @@ const attachListWrapper = document.getElementById("attach-list-wrapper");
 const AddUserPopup = document.getElementById("add-user-popup");
 const addUserIcon = document.getElementById("add-icon");
 const eachUserWrapper = document.getElementById("each-user-wrapper");
-const sidebarContainer = document.getElementById("sidebar-container");
-const addUser = document.querySelector(".add-user");
 const copyMeetingLink = document.querySelector(".copy-meeting-link");
 const copyMeetingLinkTxt = document.querySelector(".copy-meeting-link-txt");
 const callBtn = document.getElementById("call-btn");
-const callInterfaceMouseControl = document.getElementById(
-  "call-interface-mouse-control"
-);
-const usersDisplayWrapper = document.getElementById("users-display");
-const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
 const handRaiseElements = document.querySelectorAll(".hand-raise");
-
+const displayMeetingTopic = document.getElementById("meeting-topic");
+const realTimeReading = document.getElementById("real-time-reading");
+const recordingBtn = document.getElementById("recording-btn");
 // const rateCallContainer = document.getElementById("rate-call-container");
 
-// ------- HAND RAISE TOGGLE -------- //
 
+window.electronAPI.onReceiveFormData((formData) => {
+  // Store it in sessionStorage
+  sessionStorage.setItem("callData", JSON.stringify(formData));
+  // sessionStorage.setItem("micState", formData.micState);
+  // sessionStorage.setItem("cameraState", formData.cameraState);
+
+
+  // ✅ Use it to do something immediately
+  handleMeetingTopicDisplay(formData);
+});
+
+// ------- MEETING TOPIC DISPLAY ------- //
+const handleMeetingTopicDisplay = (formData) => {
+  if (formData && formData.topic) {
+    displayMeetingTopic.innerHTML = formData.topic;
+  }
+};
+
+// ------- HAND RAISE TOGGLE -------- //
 handRaiseElements.forEach((handRaise) => {
   const raiseHandSvg = handRaise.querySelector("svg");
   const raiseHandSvgPaths = raiseHandSvg.querySelectorAll("path");
@@ -60,27 +73,6 @@ handRaiseElements.forEach((handRaise) => {
   handRaise.addEventListener("click", handleRaiseHandToggle);
 });
 
-// ------- MOUSE HOVER EFFECT -------- //
-const handleSharescreenMouseEnter = () => {
-  usersDisplayWrapper.style.display = "block";
-  actionButtonsWrapper.style.display = "block";
-};
-
-callInterfaceMouseControl.addEventListener(
-  "mouseenter",
-  handleSharescreenMouseEnter
-);
-
-const handleSharescreenMouseLeave = () => {
-  usersDisplayWrapper.style.display = "none";
-  actionButtonsWrapper.style.display = "none";
-};
-
-callInterfaceMouseControl.addEventListener(
-  "mouseleave",
-  handleSharescreenMouseLeave
-);
-
 // ------- ADD USER POPUP -------- //
 const handleAddUserPopup = () => {
   addUsers.forEach((item) => {
@@ -89,32 +81,29 @@ const handleAddUserPopup = () => {
     addUserList.innerHTML = `
                   <div>
                       <span class="prof-pic">
-                       ${
-                         item.image
-                           ? `
+                       ${item.image
+        ? `
                             <img
                                 src="${item.image}"
                                 alt="User Profile Pic"
                             />
                             `
-                           : `
+        : `
                             <div class="user-profile-pic-placeholder">NU</div>`
-                       } 
+      } 
                       </div>
                       </span>
                       <p class="username-txt">${item.name}</p>
                       <span class="online-status-vidoe-icon">
                       <div class="online-stat">
-                        <p class="online-status-mode" style="background-color: ${
-                          item.status === "active" ? "#3cea43" : "orange"
-                        }">
+                        <p class="online-status-mode" style="background-color: ${item.status === "active" ? "#3cea43" : "orange"
+      }">
                         </p>
                         <p class="online-status-text">${item.statusText}</p>
                       </div>
                       <div class="video-icon">
-                      ${
-                        item.videoIcon
-                          ? `<svg
+                      ${item.videoIcon
+        ? `<svg
                           width="32"
                           height="31"
                           viewBox="0 0 25 24"
@@ -130,7 +119,7 @@ const handleAddUserPopup = () => {
                             fill="#388E3C"
                           />
                         </svg>`
-                          : `<svg
+        : `<svg
                           width="35"
                           height="24"
                           viewBox="0 0 25 24"
@@ -142,7 +131,7 @@ const handleAddUserPopup = () => {
                             fill="#E4E4E4"
                           />
                         </svg>`
-                      }
+      }
                       </div>
                       </span>
                     </div>
@@ -278,18 +267,6 @@ document.addEventListener("click", (event) => {
 
 // -------- HANDLE MEETING STATE ----------- //
 
-const handleMeetingState = () => {
-  const meetingToken = sessionStorage.getItem("meetingToken");
-
-  if (meetingToken) {
-    sidebarContainer.style.display = "none";
-    addUser.style.display = "none";
-  } else {
-    sidebarContainer.style.display = "block";
-    copyMeetingLink.style.display = "none";
-  }
-};
-handleMeetingState();
 
 async function gotojoinmeeting() {
   window.location.href = "../authentication/join_meeting.html";
@@ -304,32 +281,224 @@ const openModal = (modal) => {
   modal.open();
 };
 
+
+
+//RECORDING
+let timerInterval = null;
+let seconds = 0;
+let mediaRecorder;
+let recordedChunks = [];
+let isPaused = false;
+let initialRecordStart = null;
+
+const getScreenStream = async () => {
+  return await navigator.mediaDevices.getDisplayMedia({ video: true });
+};
+
+const getAudioStream = async () => {
+  return await navigator.mediaDevices.getUserMedia({ audio: true });
+};
+
+const getCombinedStream = async () => {
+  const screenStream = await getScreenStream();
+  const audioStream = await getAudioStream();
+  const combinedStream = new MediaStream([
+    ...screenStream.getVideoTracks(),
+    ...audioStream.getAudioTracks(),
+  ]);
+  return combinedStream;
+};
+
+const pauseRecording = () => {
+  if (mediaRecorder && mediaRecorder.state === "recording") {
+    mediaRecorder.pause();
+    isPaused = true;
+    clearInterval(timerInterval);
+  }
+};
+
+const resumeRecording = () => {
+  if (mediaRecorder && mediaRecorder.state === "paused") {
+    mediaRecorder.resume();
+    isPaused = false;
+    // startTime = Date.now() - getElapsedTime() * 1000;
+    // timerInterval = setInterval(updateTimer, 1000);
+  }
+};
+
+const stopRecording = () => {
+  if (mediaRecorder) {
+    mediaRecorder.stop();
+  }
+};
+
+const startRecording = async () => {
+  try {
+    const stream = await getCombinedStream();
+    const mimeTypes = [
+      "video/webm; codecs=vp9",
+      "video/webm; codecs=vp8",
+      "video/webm",
+      "video/mp4",
+    ];
+
+    let selectedMimeType = null;
+    for (const mimeType of mimeTypes) {
+      if (MediaRecorder.isTypeSupported(mimeType)) {
+        selectedMimeType = mimeType;
+        break;
+      }
+    }
+
+    if (!selectedMimeType) {
+      console.error("No supported mimeType found");
+      return;
+    }
+
+    mediaRecorder = new MediaRecorder(stream, { mimeType: selectedMimeType });
+
+    mediaRecorder.ondataavailable = (event) => {
+      if (event.data.size > 0) {
+        recordedChunks.push(event.data);
+      }
+    };
+
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(recordedChunks, { type: selectedMimeType });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "recorded_meeting.webm";
+      document.body.appendChild(a);
+      a.click();
+      recordedChunks = [];
+      clearInterval(timerInterval);
+      // document.getElementById('timer').textContent = 'Recording Time: 0s';
+    };
+
+    // startTime = Date.now();
+    // timerInterval = setInterval(updateTimer, 1000);
+    mediaRecorder.start();
+  } catch (error) {
+    console.error("Error creating MediaRecorder:", error);
+  }
+};
+
+const formatTime = (seconds) => {
+  const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
+  const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+  const secs = String(seconds % 60).padStart(2, "0");
+  return `${hrs}:${mins}:${secs}`;
+};
+
+const startTimer = (timerDisplay) => {
+  if (timerInterval) return; // Avoid multiple intervals
+  timerInterval = setInterval(() => {
+    seconds++;
+    timerDisplay.textContent = `REC ${formatTime(seconds)}`;
+  }, 1000);
+};
+
+const stopTimer = () => {
+  clearInterval(timerInterval);
+  timerInterval = null;
+};
+
+
+
+
+
+
+// Function to handle the state change event
+function handleRecording(event) {
+  const value = event.detail;
+
+  if (initialRecordStart === null) {
+    initialRecordStart = "recordStarted";
+    startRecording()
+    return;
+  } else if (initialRecordStart === "recordStarted" && isPaused) {
+    resumeRecording();
+  } else if (initialRecordStart === "recordStarted" && !isPaused) {
+    pauseRecording();
+  }
+
+  // if (realTimeReading) {
+  if (value.recording) {
+    // Start the timer
+    startTimer(realTimeReading);
+    // startRecording()
+  } else {
+    // Stop the timer
+    stopTimer();
+    // stopRecording()
+  }
+  // }
+
+  console.log('State changed:', value);
+  // Access and use the value here
+}
+
+// Add event listener to the custom element
+recordingBtn.addEventListener('recording_value', handleRecording);
+
+
+
 const handleEndCall = () => {
   const meetingToken = sessionStorage.getItem("meetingToken");
 
   if (meetingToken) {
-    gotojoinmeeting();
-    sessionStorage.removeItem("meetingToken");
+    sessionStorage.clear();
   }
-  // openModal(rateCallContainer);
+
+  if (initialRecordStart === "recordStarted") {
+    stopRecording();
+  }
+
+  window.electronAPI.closeWindow();
 };
+
 callBtn.addEventListener("click", handleEndCall);
 
-// const handleCallRating = () => {
-//   const meetingToken = sessionStorage.getItem("meetingToken");
-//   if (meetingToken) {
-//     gotojoinmeeting();
-//     // sessionStorage.removeItem("meetingToken");
-//   }
-//   // closeModal(rateCallContainer)
-// }
 
-// Ensure the event listener for the end call button is attached after the component is defined
-// customElements.whenDefined('rate-call').then(() => {
-//   const done = rateCall.shadowRoot.getElementById("done-btn");
-//   if (done) {
-//     done.addEventListener("click", handleCallRating);
-//   } else {
-//     console.error("Done button not found");
+
+
+
+// THE RECORD FUNCTION
+
+
+
+
+
+// const startRecording = async () => {
+//   try {
+//     const stream = await getCombinedStream();
+//     const mimeType = MediaRecorder.isTypeSupported('video/webm; codecs=vp9') ? 'video/webm; codecs=vp9' : 'video/webm';
+//     mediaRecorder = new MediaRecorder(stream, { mimeType });
+
+//     mediaRecorder.ondataavailable = event => {
+//       if (event.data.size > 0) {
+//         recordedChunks.push(event.data);
+//       }
+//     };
+
+//     mediaRecorder.onstop = () => {
+//       const blob = new Blob(recordedChunks, { type: mimeType });
+//       const url = URL.createObjectURL(blob);
+//       const a = document.createElement('a');
+//       a.href = url;
+//       a.download = 'recorded_meeting.webm';
+//       document.body.appendChild(a);
+//       a.click();
+//       recordedChunks = [];
+//       clearInterval(timerInterval);
+//       document.getElementById('timer').textContent = 'Recording Time: 0s';
+//     };
+
+//     startTime = Date.now();
+//     timerInterval = setInterval(updateTimer, 1000);
+//     mediaRecorder.start();
+//   } catch (error) {
+//     console.error('Error creating MediaRecorder:', error);
 //   }
-// });
+// }

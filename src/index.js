@@ -60,5 +60,19 @@ app.on('activate', () => {
   }
 });
 
+// app.whenReady().then(() => {
+//   const mainWindow = new BrowserWindow({
+//     webPreferences: {
+// nodeIntegration: true,
+// contextIsolation: false
+//     }
+//   });
+
+//   mainWindow.loadFile('index.html');
+// });
+
+// app.commandLine.appendSwitch('enable-usermedia-screen-capturing');
+// app.commandLine.appendSwitch('disable-background-timer-throttling');
+
 // Handle IPC messages for window actions
 registerIPCMainHandlers();

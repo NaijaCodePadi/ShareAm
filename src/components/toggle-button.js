@@ -72,8 +72,6 @@ class ToggleButton extends HTMLElement {
       template.content.cloneNode(true)
     );
     this.state = false; // Default state
-    this.timerInterval = null; // To store the interval reference
-    this.seconds = 0; // Timer count in seconds
   }
 
   static get observedAttributes() {
@@ -84,7 +82,7 @@ class ToggleButton extends HTMLElement {
     return this.getAttribute("name");
   }
 
-  attributeChangedCallback(name, oldValue, newValue) {
+  attributeChangedCallback(name, _oldValue, newValue) {
     if (name === "color") {
       this.updateColor(newValue);
     }
@@ -99,45 +97,15 @@ class ToggleButton extends HTMLElement {
   handleCheck = () => {
     this.state = !this.state;
     const value = { [this.name]: this.state };
-    console.log(value); // Logs the state change
-
-    // Find the timer display
-    const timerDisplay = document.querySelector(".real-time-reading");
-    if (timerDisplay) {
-      if (this.state) {
-        // Start the timer
-        this.startTimer(timerDisplay);
-      } else {
-        // Stop the timer
-        this.stopTimer();
-      }
-    }
+    this.dispatchEvent(
+      new CustomEvent(`${this.name}_value`, { detail: value })
+    );
   };
 
   updateColor(color) {
     if (color) {
       this.style.setProperty("--toggle-color", color);
     }
-  }
-
-  startTimer(timerDisplay) {
-    if (this.timerInterval) return; // Avoid multiple intervals
-    this.timerInterval = setInterval(() => {
-      this.seconds++;
-      timerDisplay.textContent = `REC ${this.formatTime(this.seconds)}`;
-    }, 1000);
-  }
-
-  stopTimer() {
-    clearInterval(this.timerInterval);
-    this.timerInterval = null;
-  }
-
-  formatTime(seconds) {
-    const hrs = String(Math.floor(seconds / 3600)).padStart(2, "0");
-    const mins = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
-    const secs = String(seconds % 60).padStart(2, "0");
-    return `${hrs}:${mins}:${secs}`;
   }
 }
 

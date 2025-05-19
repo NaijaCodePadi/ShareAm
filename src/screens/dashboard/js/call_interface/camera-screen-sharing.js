@@ -2,11 +2,28 @@ const activateCameraIcon = document.getElementById("camera-icon");
 const cameraVideo = document.getElementById("camera-video");
 const shareScreenVideo = document.getElementById("share-screen-video");
 const animationWave = document.getElementById("animation-wave");
+const callInterfaceMouseControl = document.getElementById(
+  "call-interface-mouse-control"
+);
+const usersDisplayWrapper = document.getElementById("users-display");
+const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
 
 // ---------- ACTIVATION OF CAMERA AND SHARING OF SCREEN ---------- //
 let localStream;
-let cameraEnabled = sessionStorage.getItem("cameraState") === "true";
+let cameraEnabled;
 let isShareScreen;
+
+// When the form data is received from main process
+window.electronAPI.onReceiveFormData((formData) => {
+  sessionStorage.setItem("callData", JSON.stringify(formData));
+  sessionStorage.setItem("micState", formData.micState);
+  sessionStorage.setItem("cameraState", formData.cameraState);
+
+  cameraEnabled = formData.cameraEnabled === "true";
+  handleCameraActivation(); // ✅ Activate microphone immediately based on state
+});
+
+
 
 const handleWavePhoto = () => {
   if (cameraEnabled || isShareScreen) {
@@ -103,7 +120,32 @@ const handleCameraToggle = () => {
 
 activateCameraIcon.addEventListener("click", handleCameraToggle);
 
-document.addEventListener("DOMContentLoaded", () => {
-  cameraEnabled = sessionStorage.getItem("cameraState") === "true";
-  handleCameraActivation();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   cameraEnabled = sessionStorage.getItem("cameraState") === "true";
+//   handleCameraActivation();
+// });
+
+// ------- MOUSE HOVER EFFECT -------- //
+const handleSharescreenMouseEnter = () => {
+  if (cameraEnabled || isShareScreen) {
+    usersDisplayWrapper.style.display = "block";
+    actionButtonsWrapper.style.display = "block";
+  }
+};
+
+callInterfaceMouseControl.addEventListener(
+  "mouseenter",
+  handleSharescreenMouseEnter
+);
+
+const handleSharescreenMouseLeave = () => {
+  if (cameraEnabled || isShareScreen) {
+    usersDisplayWrapper.style.display = "none";
+    actionButtonsWrapper.style.display = "none";
+  }
+};
+
+callInterfaceMouseControl.addEventListener(
+  "mouseleave",
+  handleSharescreenMouseLeave
+);
