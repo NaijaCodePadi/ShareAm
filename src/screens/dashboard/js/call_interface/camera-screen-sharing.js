@@ -10,8 +10,20 @@ const actionButtonsWrapper = document.getElementById("action-btns-wrapper");
 
 // ---------- ACTIVATION OF CAMERA AND SHARING OF SCREEN ---------- //
 let localStream;
-let cameraEnabled = sessionStorage.getItem("cameraState") === "true";
+let cameraEnabled;
 let isShareScreen;
+
+// When the form data is received from main process
+window.electronAPI.onReceiveFormData((formData) => {
+  sessionStorage.setItem("callData", JSON.stringify(formData));
+  sessionStorage.setItem("micState", formData.micState);
+  sessionStorage.setItem("cameraState", formData.cameraState);
+
+  cameraEnabled = formData.cameraEnabled === "true";
+  handleCameraActivation(); // ✅ Activate microphone immediately based on state
+});
+
+
 
 const handleWavePhoto = () => {
   if (cameraEnabled || isShareScreen) {
@@ -108,10 +120,10 @@ const handleCameraToggle = () => {
 
 activateCameraIcon.addEventListener("click", handleCameraToggle);
 
-document.addEventListener("DOMContentLoaded", () => {
-  cameraEnabled = sessionStorage.getItem("cameraState") === "true";
-  handleCameraActivation();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   cameraEnabled = sessionStorage.getItem("cameraState") === "true";
+//   handleCameraActivation();
+// });
 
 // ------- MOUSE HOVER EFFECT -------- //
 const handleSharescreenMouseEnter = () => {

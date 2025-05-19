@@ -4,12 +4,21 @@ contextBridge.exposeInMainWorld("darkMode", {
   toggle: () => ipcRenderer.invoke("dark-mode:toggle"),
   system: () => ipcRenderer.invoke("dark-mode:system"),
 });
+
 contextBridge.exposeInMainWorld("electronAPI", {
   minimizeWindow: () => ipcRenderer.invoke("minimize-window"),
   maximizeWindow: () => ipcRenderer.invoke("maximize-window"),
   closeWindow: () => ipcRenderer.invoke("close-window"),
-  openCallInterfaceWindow: () => ipcRenderer.send("open-call-interface-window"),
+
+  openCallInterfaceWindow: (formData) => {
+    ipcRenderer.send("open-call-interface-window", formData); // FIXED name
+  },
+
+  onReceiveFormData: (callback) => {
+    ipcRenderer.on("send-form-data", (_, data) => callback(data));
+  }
 });
+
 
 contextBridge.exposeInMainWorld("showState", {
   toggle: () => {
@@ -29,6 +38,18 @@ contextBridge.exposeInMainWorld("shareScreen", {
   },
 });
 
+
+
+//
+// contextBridge.exposeInMainWorld("electronAPI", {
+//   openCallInterfaceWindow: (formData) => {
+//     ipcRenderer.send("open-call-interface", formData);
+//   },
+//   onReceiveFormData: (callback) => {
+//     ipcRenderer.on("send-form-data", (_, data) => callback(data));
+//   },
+// });
+
 // A SAMPLE ON HOW TO STORE INFORMATION IN LOCAL STORAGE
 
 // contextBridge.exposeInMainWorld('electron', {
@@ -43,3 +64,7 @@ contextBridge.exposeInMainWorld("shareScreen", {
 //     removeItem: (key) => sessionStorage.removeItem(key)
 //   }
 // });
+
+
+
+
