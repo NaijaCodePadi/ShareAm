@@ -66,30 +66,40 @@ template.innerHTML = `
       padding: 2.5vh 1vw;
       border-radius: 11px;
       font-size: 0.9rem;
+      font-family: poppins-medium;
+      font-weight: 500;
     }
 
     .btn-login {
       background-color: #1376e3;
-      padding: 1.5vh 0vw;
+      padding: 2vh 0vw;
       width: 30vw;
       border-radius: 10px;
       border: none;
-      color: white;
-      font-weight: bold;
-      font-size: 1vw;
       cursor: pointer;
       margin-top: 5vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .btn-login:hover {
       background-color: #1058e8;
     }
 
-    .blue-btn-txt {
+    .join-txt{
       color: #fff;
       font-family: Poppins-regular;
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 600;
+      text-align: center;
+    }
+
+    load-spinner {
+      display: none;
+      margin-left: 8px;
+      vertical-align: middle;
     }
 
     @media (prefers-color-scheme: light) {
@@ -130,10 +140,12 @@ template.innerHTML = `
           required
         />
         <button 
-          class="btn-login blue-btn-txt"
+          class="btn-login"
+          id="join-meeting-btn"
           type="submit"
         >
-          Join
+          <span class="join-txt">Join</span>
+          <load-spinner slot="loadSpinner" color="#fff"></load-spinner>
         </button>
       </form>
     </div>
@@ -169,13 +181,25 @@ class JoinMeetingMember extends HTMLElement {
       micState: sessionStorage.getItem("micState"),
     };
 
-    // Send to main process and open window
-    window.electronAPI.openCallInterfaceWindow(formData);
+    // Get the load-spinner inside the button
+    const loadSpinner = this.shadowRootRef.querySelector("load-spinner");
 
-    sessionStorage.clear();
+    const joinText = this.shadowRootRef.querySelector(".join-txt");
+    if (loadSpinner) {
+      loadSpinner.style.display = "inline-block";
+      joinText.style.display = "none";
 
-    // ✅ Clear the input fields
-    nameInputEl.value = "";
+      // Show it after 2 seconds
+      setTimeout(() => {
+        // Send to main process and open window
+        window.electronAPI.openCallInterfaceWindow(formData);
+
+        sessionStorage.clear();
+
+        // ✅ Clear the input fields
+        nameInputEl.value = "";
+      }, 2000);
+    }
   };
 }
 
