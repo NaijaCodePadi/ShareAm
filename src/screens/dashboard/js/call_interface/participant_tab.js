@@ -202,7 +202,7 @@ const getTotalParticipants = () => {
 };
 getTotalParticipants();
 
-// ------------ Users display ----------//
+// ------------Main Call-interface participant display ----------//
 const handleParticipantsOnScreenDisplay = () => {
   participants.slice(0, 2).forEach((item) => {
     const listenerDisplay = document.createElement("div");

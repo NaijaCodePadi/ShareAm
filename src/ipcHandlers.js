@@ -63,7 +63,6 @@ function registerIPCMainHandlers() {
     return sources;
   });
 
-
   ipcMain.on("open-call-interface-window", (event, formData) => {
     const callWindow = new BrowserWindow({
       width: 800,
@@ -78,6 +77,7 @@ function registerIPCMainHandlers() {
       },
     });
 
+    callWindow.setIcon(path.join(__dirname, "/assets/images/logo_with_bg.png"));
     callWindow.loadFile(
       path.join(__dirname, "/screens/dashboard/call_interface.html")
     );
@@ -86,6 +86,5 @@ function registerIPCMainHandlers() {
       callWindow.webContents.send("send-form-data", formData);
     });
   });
-
 }
 module.exports = { registerIPCMainHandlers };

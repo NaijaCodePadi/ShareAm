@@ -4,8 +4,6 @@ const asideBox = document.getElementById("aside-box");
 const activitiesBtn = document.getElementById("activities-btn");
 const tabs = document.querySelectorAll(".tab");
 const tabsContents = document.querySelectorAll(".tab-content");
-const emojiOverlay = document.getElementById("emoji-btn");
-const emojiOverlayWrapper = document.getElementById("emoji-overlay-wrapper");
 const inputAttachments = document.getElementById("attach-icon");
 const attachListWrapper = document.getElementById("attach-list-wrapper");
 const AddUserPopup = document.getElementById("add-user-popup");
@@ -20,13 +18,11 @@ const realTimeReading = document.getElementById("real-time-reading");
 const recordingBtn = document.getElementById("recording-btn");
 // const rateCallContainer = document.getElementById("rate-call-container");
 
-
 window.electronAPI.onReceiveFormData((formData) => {
   // Store it in sessionStorage
   sessionStorage.setItem("callData", JSON.stringify(formData));
   // sessionStorage.setItem("micState", formData.micState);
   // sessionStorage.setItem("cameraState", formData.cameraState);
-
 
   // ✅ Use it to do something immediately
   handleMeetingTopicDisplay(formData);
@@ -81,29 +77,32 @@ const handleAddUserPopup = () => {
     addUserList.innerHTML = `
                   <div>
                       <span class="prof-pic">
-                       ${item.image
-        ? `
+                       ${
+                         item.image
+                           ? `
                             <img
                                 src="${item.image}"
                                 alt="User Profile Pic"
                             />
                             `
-        : `
+                           : `
                             <div class="user-profile-pic-placeholder">NU</div>`
-      } 
+                       } 
                       </div>
                       </span>
                       <p class="username-txt">${item.name}</p>
                       <span class="online-status-vidoe-icon">
                       <div class="online-stat">
-                        <p class="online-status-mode" style="background-color: ${item.status === "active" ? "#3cea43" : "orange"
-      }">
+                        <p class="online-status-mode" style="background-color: ${
+                          item.status === "active" ? "#3cea43" : "orange"
+                        }">
                         </p>
                         <p class="online-status-text">${item.statusText}</p>
                       </div>
                       <div class="video-icon">
-                      ${item.videoIcon
-        ? `<svg
+                      ${
+                        item.videoIcon
+                          ? `<svg
                           width="32"
                           height="31"
                           viewBox="0 0 25 24"
@@ -119,7 +118,7 @@ const handleAddUserPopup = () => {
                             fill="#388E3C"
                           />
                         </svg>`
-        : `<svg
+                          : `<svg
                           width="35"
                           height="24"
                           viewBox="0 0 25 24"
@@ -131,7 +130,7 @@ const handleAddUserPopup = () => {
                             fill="#E4E4E4"
                           />
                         </svg>`
-      }
+                      }
                       </div>
                       </span>
                     </div>
@@ -216,30 +215,6 @@ const handleCopyMeetingLink = () => {
 };
 copyMeetingLink.addEventListener("click", handleCopyMeetingLink);
 
-// -------- EMOJI OVERLAY ----------- //
-emojiOverlay.addEventListener("click", (event) => {
-  event.stopPropagation();
-  if (window.getComputedStyle(emojiOverlayWrapper).display === "none") {
-    emojiOverlayWrapper.style.display = "block";
-  } else {
-    emojiOverlayWrapper.style.display = "none";
-  }
-});
-
-emojiOverlayWrapper.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
-
-document.addEventListener("click", (event) => {
-  if (
-    window.getComputedStyle(emojiOverlayWrapper).display === "block" &&
-    !emojiOverlayWrapper.contains(event.target) &&
-    !emojiOverlay.contains(event.target)
-  ) {
-    emojiOverlayWrapper.style.display = "none";
-  }
-});
-
 // -------- ATTACHMENT OVERLAY ----------- //
 const displayAttachOverlay = () => {
   if (attachListWrapper.style.display === "block") {
@@ -267,7 +242,6 @@ document.addEventListener("click", (event) => {
 
 // -------- HANDLE MEETING STATE ----------- //
 
-
 async function gotojoinmeeting() {
   window.location.href = "../authentication/join_meeting.html";
 }
@@ -280,8 +254,6 @@ const closeModal = (modal) => {
 const openModal = (modal) => {
   modal.open();
 };
-
-
 
 //RECORDING
 let timerInterval = null;
@@ -404,18 +376,13 @@ const stopTimer = () => {
   timerInterval = null;
 };
 
-
-
-
-
-
 // Function to handle the state change event
 function handleRecording(event) {
   const value = event.detail;
 
   if (initialRecordStart === null) {
     initialRecordStart = "recordStarted";
-    startRecording()
+    startRecording();
     return;
   } else if (initialRecordStart === "recordStarted" && isPaused) {
     resumeRecording();
@@ -435,14 +402,12 @@ function handleRecording(event) {
   }
   // }
 
-  console.log('State changed:', value);
+  console.log("State changed:", value);
   // Access and use the value here
 }
 
 // Add event listener to the custom element
-recordingBtn.addEventListener('recording_value', handleRecording);
-
-
+recordingBtn.addEventListener("recording_value", handleRecording);
 
 const handleEndCall = () => {
   const meetingToken = sessionStorage.getItem("meetingToken");
@@ -460,15 +425,7 @@ const handleEndCall = () => {
 
 callBtn.addEventListener("click", handleEndCall);
 
-
-
-
-
 // THE RECORD FUNCTION
-
-
-
-
 
 // const startRecording = async () => {
 //   try {
