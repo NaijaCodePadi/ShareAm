@@ -2,7 +2,7 @@ import { callInterfaceChatSample } from "../../../../variables/mock_variables/mo
 import { presentTime } from "../../../../utils/date_time.js";
 
 const chatBubblesWrapper = document.getElementById("chat-bubbles-wrapper");
-const chatSubmission = document.getElementById("text-submit");
+const chatSubmission = document.getElementById("chat-submit");
 
 // ------ Message Tab -------- //
 const handleChatBubble = () => {

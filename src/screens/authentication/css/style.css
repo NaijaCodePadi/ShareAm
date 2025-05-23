@@ -31,7 +31,7 @@ html {
 
 @font-face {
   font-family: Rubik;
-  src: url(../../../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+  src: url(../../../assets/fonts/Rubik-VariableFont_wght.ttf);
 }
 
 ::-webkit-scrollbar {
@@ -239,6 +239,8 @@ html {
     background-color: #e4e4e4;
     border: 1px solid #e4e4e4;
     color: #050505;
+    font-family: poppins-medium;
+    font-weight: 500;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
@@ -271,11 +273,12 @@ html {
 
   .btn-login {
     background-color: #1058e8;
-    padding: 10px;
+    padding: 12px 10px;
     border-radius: 10px;
     border: none;
     color: white;
-    font-weight: bold;
+    font-family: poppins-bold;
+    font-size: 1rem;
     cursor: pointer;
   }
 
@@ -553,7 +556,9 @@ html {
     padding: 10px;
     background-color: #979797;
     border: 1px solid #979797;
-    color: #fff;
+    color: #000;
+    font-family: poppins-medium;
+    font-weight: 500;
     border-radius: 5px;
     outline: none;
     transition: border-color 0.3s;
@@ -586,11 +591,12 @@ html {
 
   .btn-login {
     background-color: #1058e8;
-    padding: 10px;
+    padding: 12px 10px;
     border-radius: 10px;
     border: none;
     color: white;
-    font-weight: bold;
+    font-family: poppins-bold;
+    font-size: 1rem;
     cursor: pointer;
   }
 
