@@ -1122,6 +1122,89 @@ ul {
   display: block;
 }
 
+#activate-cam-wrapper1,
+#activate-cam-wrapper2 {
+  display: none;
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+}
+
+.activate-cam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+
+#video,
+#photo {
+  width: 100%;
+  height: 50vh;
+}
+
+#canvas {
+  display: none;
+}
+
+#captured-img {
+  width: 100%;
+  height: 95%;
+}
+
+#capture-btn-wrapper {
+  display: none;
+  border: 3px solid #fff;
+  border-radius: 40px;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+#capture-btn {
+  background-color: #fff;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.cam-actions {
+  display: flex;
+  gap: 2vw;
+}
+
+.cam-actions button {
+  padding: 2vh 2.5vw;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#retake {
+  background-color: red;
+  color: #fff;
+}
+
+#done {
+  background-color: #fff;
+  color: #000;
+}
+
+#photo-overlay {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  padding: 2vh 2vw;
+  background-color: #2e2e2e;
+  border-radius: 7px;
+}
+
 /* ------------------------------ Texts styles -------------------------------------- */
 
 .tab-txt {

@@ -588,7 +588,7 @@
                   </svg>
                 </button>
                 <div id="emoji-overlay-wrapper">
-                  <div id="emoji-overlay">
+                  <!-- <div id="emoji-overlay">
                     <div class="emoji-tab-wrapper">
                       <div class="smileys-tab-content emoji-tab-content active">
                         <p class="emoji-tab-title">Smileys & People</p>
@@ -839,6 +839,9 @@
                         </span>
                       </div>
                     </div>
+                  </div> -->
+                  <div id="photo-overlay">
+                    <img id="captured-img" />
                   </div>
                 </div>
                 <button class="attach-icon-wrapper">
@@ -1006,6 +1009,7 @@
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           xmlns:xlink="http://www.w3.org/1999/xlink"
+                          id="cam-icon"
                         >
                           <rect
                             width="25"
@@ -1171,6 +1175,25 @@
           </div>
         </div>
       </aside>
+
+      <div id="activate-cam-wrapper1">
+        <div class="activate-cam">
+          <video id="video" autoplay playsinline></video>
+          <div id="capture-btn-wrapper">
+            <button id="capture-btn"></button>
+          </div>
+        </div>
+      </div>
+      <div id="activate-cam-wrapper2">
+        <div class="activate-cam">
+          <canvas id="canvas"></canvas>
+          <img id="photo" />
+          <div class="cam-actions">
+            <button id="retake">Retake</button>
+            <button id="done">Done</button>
+          </div>
+        </div>
+      </div>
     </main>
     <p id="info"></p>
     <!-- <modal-container id="rate-call-container">
