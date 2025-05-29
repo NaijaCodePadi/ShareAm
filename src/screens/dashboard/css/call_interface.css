@@ -782,15 +782,34 @@ ul {
   border: none;
 }
 
-#emoji-overlay-wrapper {
+.overlay {
+  display: flex;
+  flex-direction: row;
+  /* z-index: 1; */
+  max-width: 50vw;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  /* border: 1px solid red; */
+}
+
+#emoji-overlay-wrapper,
+#photo-overlay-wrapper {
   display: none;
 }
 
 #emoji-overlay {
+  min-width: 25vw;
   height: 30vh;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
+  background-color: #2e2e2e;
+  border-radius: 7px;
+}
+
+#photo-overlay {
+  display: flex;
+  justify-content: center;
+  min-width: 25vw;
+  height: 30vh;
   background-color: #2e2e2e;
   border-radius: 7px;
 }
@@ -1150,7 +1169,7 @@ ul {
 
 #captured-img {
   width: 100%;
-  height: 95%;
+  height: 100%;
 }
 
 #capture-btn-wrapper {
@@ -1194,15 +1213,23 @@ ul {
   color: #000;
 }
 
-#photo-overlay {
+/* --------------------Chat Bubble Photo & Video  -------------*/
+
+.chat-bubble-photo {
+  height: 100%;
   width: 100%;
-  height: 30vh;
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  padding: 2vh 2vw;
-  background-color: #2e2e2e;
+  object-fit: cover;
+}
+
+.chat-bubble-media-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: fit-content; */
+  max-width: 300px;
+  max-height: 150px;
   border-radius: 7px;
+  overflow: hidden;
 }
 
 /* ------------------------------ Texts styles -------------------------------------- */

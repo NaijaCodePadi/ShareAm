@@ -17,19 +17,6 @@ const displayMeetingTopic = document.getElementById("meeting-topic");
 const realTimeReading = document.getElementById("real-time-reading");
 const recordingBtn = document.getElementById("recording-btn");
 // const rateCallContainer = document.getElementById("rate-call-container");
-const cameraIcon = document.getElementById("cam-icon");
-const captureButtonWrapper = document.getElementById("capture-btn-wrapper");
-const captureButton = document.getElementById("capture-btn");
-const activateCamWrapper1 = document.getElementById("activate-cam-wrapper1");
-const activateCamWrapper2 = document.getElementById("activate-cam-wrapper2");
-const video = document.getElementById("video");
-const canvas = document.getElementById("canvas");
-const photo = document.getElementById("photo");
-const retake = document.getElementById("retake");
-const done = document.getElementById("done");
-const capturedImage = document.getElementById("captured-img");
-const emojiOverlayWrapper = document.getElementById("emoji-overlay-wrapper");
-let stream;
 
 window.electronAPI.onReceiveFormData((formData) => {
   // Store it in sessionStorage
@@ -473,46 +460,7 @@ callBtn.addEventListener("click", handleEndCall);
 //   }
 // }
 
-// ----------------ACTIVATE CAMERA -----------------//
 
-cameraIcon.addEventListener("click", async () => {
-  try {
-    stream = await navigator.mediaDevices.getUserMedia({ video: true });
-    video.srcObject = stream;
-  } catch (error) {
-    console.error("Error accessing camera:", error);
-  }
-  captureButtonWrapper.style.display = "block";
-  activateCamWrapper1.style.display = "block";
-  activateCamWrapper2.style.display = "none";
-});
 
-captureButton.addEventListener("click", () => {
-  canvas.width = video.videoWidth;
-  canvas.height = video.videoHeight;
-  let ctx = canvas.getContext("2d");
-  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
 
-  // Convert canvas to an image
-  photo.src = canvas.toDataURL("image/png");
-  photo.style.display = "block";
 
-  activateCamWrapper1.style.display = "none";
-  activateCamWrapper2.style.display = "block";
-});
-
-retake.addEventListener("click", () => {
-  activateCamWrapper1.style.display = "block";
-  activateCamWrapper2.style.display = "none";
-});
-
-done.addEventListener("click", () => {
-  if (stream) {
-    let tracks = stream.getTracks();
-    tracks.forEach((track) => track.stop());
-    video.srcObject = null;
-  }
-  capturedImage.src = canvas.toDataURL("image/png");
-  activateCamWrapper2.style.display = "none";
-  emojiOverlayWrapper.style.display = "block";
-});
