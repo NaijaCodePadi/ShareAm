@@ -1,43 +1,18 @@
 export const callInterfaceChatSample = [
   {
     sent: {
-      message: "Hello guys, what's your opinion?",
+      message: {
+        text: "Nigeria don spoil true true.",
+        type: "photo",
+        attachment: "../../assets/images/user 1.png",
+      },
       deliveryTime: "12:05pm",
     },
-  },
-
-  {
-    received: {
-      image: "../../assets/images/user 1.png",
-      name: "Shagari",
-      username: "@shagarishagari",
-      message: "Nigeria don spoil true true.",
-      deliveryTime: "13:15pm",
-    },
-  },
-
-  {
     sent: {
-      message: "Images are better.",
-      deliveryTime: "12:15pm",
-    },
-  },
-
-  {
-    sent: {
-      message: "Images are better.",
-      deliveryTime: "12:16pm",
-    },
-  },
-
-  {
-    received: {
-      image: "../../assets/images/user 3.png",
-      name: "Riri-Bi",
-      username: "@Riri-Bi_Riri-Bi",
-      message:
-        "Tinubu go kill us Tinubu go kill us Tinubu go kill us Tinubu go kill us",
-      deliveryTime: "14:15pm",
+      message: {
+        text: "Nigeria don spoil true true.",
+      },
+      deliveryTime: "12:05pm",
     },
   },
 
@@ -46,8 +21,140 @@ export const callInterfaceChatSample = [
       image: "../../assets/images/user 2.png",
       name: "",
       username: "@Shina-Rambo",
-      message:
-        "Nigeria is on fire Nigeria is on fire Nigeria is on fire Nigeria is on fire",
+      message: {
+        text: "Nigeria is on fire Nigeria is on fire Nigeria is on fire Nigeria is on fire",
+        type: "document",
+        attachment: "../../assets/documents/tt.pdf",
+      },
+      deliveryTime: "14:20pm",
+    },
+  },
+  {
+    received: {
+      image: "../../assets/images/user 2.png",
+      name: "",
+      username: "@Shina-Rambo",
+      message: {
+        text: "Nigeria is on fire Nigeria is on fire Nigeria is on fire Nigeria is on fire",
+      },
+      deliveryTime: "14:20pm",
+    },
+  },
+
+  {
+    sent: {
+      message: {
+        type: "photo",
+        attachment: "../../assets/images/user 1.png",
+      },
+      deliveryTime: "12:05pm",
+    },
+  },
+
+  {
+    received: {
+      image: "../../assets/images/user 3.png",
+      name: "Riri-Bi",
+      username: "@Riri-Bi_Riri-Bi",
+      message: {
+        text: "Tinubu go kill us Tinubu go kill us Tinubu go kill us Tinubu go kill us",
+        type: "video",
+        attachment: "../../assets/videos/sample_video.mp4",
+      },
+      deliveryTime: "14:15pm",
+    },
+  },
+  {
+    sent: {
+      message: {
+        type: "video",
+        attachment: "../../assets/images/user 1.png",
+      },
+      deliveryTime: "12:05pm",
+    },
+  },
+
+  {
+    sent: {
+      message: {
+        type: "document",
+        attachment: "../../assets/documents/tt.pdf",
+      },
+      deliveryTime: "12:16pm",
+    },
+  },
+
+  {
+    received: {
+      image: "../../assets/images/user 1.png",
+      name: "Shagari",
+      username: "@shagarishagari",
+      message: {
+        text: "Nigeria don spoil true true.",
+        type: "photo",
+        attachment: "../../assets/images/user 1.png",
+      },
+      deliveryTime: "13:15pm",
+    },
+  },
+
+  {
+    received: {
+      image: "../../assets/images/user 2.png",
+      name: "",
+      username: "@Shina-Rambo",
+      message: {
+        type: "photo",
+        attachment: "../../assets/documents/tt.pdf",
+      },
+      deliveryTime: "14:20pm",
+    },
+  },
+
+  {
+    received: {
+      image: "../../assets/images/user 2.png",
+      name: "",
+      username: "@Shina-Rambo",
+      message: {
+        type: "video",
+        attachment: "../../assets/documents/tt.pdf",
+      },
+      deliveryTime: "14:20pm",
+    },
+  },
+
+  {
+    sent: {
+      message: {
+        text: "Tinubu go kill us Tinubu go kill us Tinubu go kill us Tinubu go kill us",
+        type: "video",
+        attachment: "../../assets/videos/sample_video.mp4",
+      },
+      deliveryTime: "12:15pm",
+    },
+  },
+
+  {
+    sent: {
+      message: {
+        text: "Nigeria is on fire Nigeria is on fire Nigeria is on fire Nigeria is on fire",
+        type: "document",
+        attachment: "../../assets/documents/tt.pdf",
+      },
+      deliveryTime: "12:16pm",
+    },
+  },
+
+  {
+    received: {
+      image: "../../assets/images/user 2.png",
+      name: "",
+      username: "@Shina-Rambo",
+      message: {
+        type: "document",
+        attachment: "../../assets/documents/tt.pdf",
+      },
       deliveryTime: "14:20pm",
     },
   },

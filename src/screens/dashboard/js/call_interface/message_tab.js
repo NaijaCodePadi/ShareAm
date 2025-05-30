@@ -3,63 +3,105 @@ import { presentTime } from "../../../../utils/date_time.js";
 
 const chatBubblesWrapper = document.getElementById("chat-bubbles-wrapper");
 const chatSubmission = document.getElementById("chat-submit");
+const cameraIcon = document.getElementById("cam-icon");
+const captureButtonWrapper = document.getElementById("capture-btn-wrapper");
+const captureButton = document.getElementById("capture-btn");
+const activateCamWrapper1 = document.getElementById("activate-cam-wrapper1");
+const activateCamWrapper2 = document.getElementById("activate-cam-wrapper2");
+const video = document.getElementById("video");
+const canvas = document.getElementById("canvas");
+const photo = document.getElementById("photo");
+const retake = document.getElementById("retake");
+const done = document.getElementById("done");
+const capturedImage = document.getElementById("captured-img");
+const photoOverlayWrapper = document.getElementById("photo-overlay-wrapper");
+let fileType;
+let stream;
 
 // ------ Message Tab -------- //
+
 const handleChatBubble = () => {
   callInterfaceChatSample.forEach((item) => {
+    // Handle "sent" messages
     if (Object.keys(item).pop() === "sent") {
+      const { type, attachment, text } = item.sent.message;
+      const deliveryTime = item.sent.deliveryTime;
+
       const sentChat = document.createElement("div");
       sentChat.classList.add("sent-chat");
+
+      // Create media HTML
+      let mediaHTML = "";
+      if (type === "photo") {
+        mediaHTML = `<img class="chat-bubble-photo" src="${attachment}" alt="sent image" />`;
+      } else if (type === "video") {
+        mediaHTML = `<video class="chat-bubble-video" src="${attachment}" controls></video>`;
+      } else if (type === "document") {
+        mediaHTML = `<i class='fas fa-file'></i>`;
+      }
+
       sentChat.innerHTML = `
-          <p class="you-username desktop-msg-subtitle-txt">You</p>
-          <div class="you-text-and-time-wrapper">
-            <p class="user-text desktop-sent-txt">
-               ${item.sent.message}
-            </p>
-            <div class="time-tick-wrapper">
-              <p class="user-text-delivery-time desktop-sent-date-txt">
-                ${item.sent.deliveryTime}
-              </p>
-              <img src="../../assets/icons/double-tick.svg" class="double-tick" alt="" />
-            </div>
+        <p class="you-username desktop-msg-subtitle-txt">You</p>
+        <div class="you-text-and-time-wrapper">
+          <div>
+            <div class="chat-bubble-media-container">${mediaHTML}</div>
+            <p class="user-text desktop-sent-txt">${text || ""}</p>
           </div>
-  `;
+          <div class="time-tick-wrapper">
+            <p class="user-text-delivery-time desktop-sent-date-txt">${deliveryTime}</p>
+            <img src="../../assets/icons/double-tick.svg" class="double-tick" alt="tick" />
+          </div>
+        </div>
+      `;
+
       chatBubblesWrapper.appendChild(sentChat);
       sentChat.scrollTop = sentChat.scrollHeight;
-    } else {
+    } else if (Object.keys(item).pop() === "received") {
+      const {
+        name,
+        username,
+        image,
+        message: { type, attachment, text },
+        deliveryTime,
+      } = item.received;
+
       const receivedChat = document.createElement("div");
       receivedChat.classList.add("received-chat");
-      receivedChat.innerHTML = `
-                <div class="user-message-box">
-                  <div class="profile-pic">
-                      ${
-                        item.received.image
-                          ? `
-                            <img
-                              src="${item.received.image}"
-                              alt="User Profile Pic"
-                            />
-                          `
-                          : `
-                        <div class="user-profile-pic-placeholder">NU</div>`
-                      } 
-                  </div>
-                      <p class="userName">${
-                        item.received.name
-                          ? `<p class="desktop-msg-subtitle-txt">${item.received.name}</p>`
-                          : `<p class="desktop-msg-subtitle-txt">${item.received.username}</p>`
-                      }</p>
-                </div>
 
-                <div class="text-and-time-wrapper">
-                  <p class="user-text desktop-sent-txt">
-                    ${item.received.message}
-                  </p>
-                  <p class="user-text-delivery-time desktop-sent-date-txt">
-                    ${item.received.deliveryTime}
-                  </p>
-                </div>
-    `;
+      // Create profile picture HTML
+      const profilePicHTML = image
+        ? `<img src="${image}" alt="User Profile Pic" />`
+        : `<div class="user-profile-pic-placeholder">NU</div>`;
+
+      // Create name HTML
+      const nameHTML = name
+        ? `<p class="desktop-msg-subtitle-txt">${name}</p>`
+        : `<p class="desktop-msg-subtitle-txt">${username}</p>`;
+
+      // Create media HTML
+      let mediaHTML = "";
+      if (type === "photo") {
+        mediaHTML = `<img src="${attachment}" alt="received image" />`;
+      } else if (type === "video") {
+        mediaHTML = `<video src="${attachment}" controls></video>`;
+      } else if (type === "document") {
+        mediaHTML = `<i class='fas fa-file'></i>`;
+      }
+
+      receivedChat.innerHTML = `
+        <div class="user-message-box">
+          <div class="profile-pic">${profilePicHTML}</div>
+          <div class="userName">${nameHTML}</div>
+        </div>
+        <div class="text-and-time-wrapper">
+          <div>
+            <div class="chat-bubble-media-container">${mediaHTML}</div>
+            <p class="user-text desktop-sent-txt">${text || ""}</p>
+          </div>
+          <p class="user-text-delivery-time desktop-sent-date-txt">${deliveryTime}</p>
+        </div>
+      `;
+
       chatBubblesWrapper.appendChild(receivedChat);
     }
   });
@@ -71,13 +113,17 @@ const handleSendingMessage = (e) => {
   e.preventDefault();
   let input = document.getElementById("messages");
   let messageText = input.value.trim();
-  if (messageText === "") {
+  if (messageText === "" || capturedImage.src === "") {
     return;
   }
   presentTime();
   const messageObject = {
     sent: {
-      message: messageText,
+      message: {
+        text: messageText,
+        type: fileType || "",
+        attachment: capturedImage.src || "",
+      },
       deliveryTime: presentTime(),
     },
   };
@@ -86,9 +132,11 @@ const handleSendingMessage = (e) => {
   updateScroll();
   messageText = "";
   input.value = "";
-
+  fileType = "";
+  photoOverlayWrapper.style.display = "none";
   let attachFile = document.getElementById("attach-input");
   let file = attachFile.value.trim();
+
 };
 
 chatSubmission.addEventListener("submit", handleSendingMessage);
@@ -98,3 +146,49 @@ const updateScroll = () => {
   chatScroll.scrollTop = chatScroll.scrollHeight;
 };
 updateScroll();
+
+
+// ----------------ACTIVATE CAMERA -----------------//
+
+cameraIcon.addEventListener("click", async () => {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ video: true });
+    video.srcObject = stream;
+  } catch (error) {
+    console.error("Error accessing camera:", error);
+  }
+  captureButtonWrapper.style.display = "block";
+  activateCamWrapper1.style.display = "block";
+  activateCamWrapper2.style.display = "none";
+});
+
+captureButton.addEventListener("click", () => {
+  canvas.width = video.videoWidth;
+  canvas.height = video.videoHeight;
+  let ctx = canvas.getContext("2d");
+  ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+  fileType = "photo";
+  // Convert canvas to an image
+  photo.src = canvas.toDataURL("image/png");
+  photo.style.display = "block";
+
+  activateCamWrapper1.style.display = "none";
+  activateCamWrapper2.style.display = "block";
+});
+
+retake.addEventListener("click", () => {
+  activateCamWrapper1.style.display = "block";
+  activateCamWrapper2.style.display = "none";
+});
+
+done.addEventListener("click", () => {
+  if (stream) {
+    let tracks = stream.getTracks();
+    tracks.forEach((track) => track.stop());
+    video.srcObject = null;
+  }
+  capturedImage.src = canvas.toDataURL("image/png");
+  activateCamWrapper2.style.display = "none";
+  photoOverlayWrapper.style.display = "block";
+});
+
