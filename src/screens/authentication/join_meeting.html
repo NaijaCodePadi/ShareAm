@@ -278,9 +278,12 @@
 
       const joinMeeting = () => {
         event.preventDefault();
-        const meetingId = document.getElementById("meeting_id").value;
+        const meetingInputId = document.getElementById("meeting_id");
+        const meetingId = meetingInputId.value;
         sessionStorage.setItem("meetingToken", meetingId);
         openModal(memberContainer);
+
+        meetingInputId.value = ""; // Clear the input field after submission
       };
       form.addEventListener("submit", joinMeeting);
 
