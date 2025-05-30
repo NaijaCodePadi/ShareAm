@@ -438,9 +438,20 @@ visibility: hidden;
         </div>
         <div class="ci-tooltipText-box" id="ci-tooltipText-box">
           <div class="ci-tooltipText-wrapper">
-            <div class="ci-tooltipText">Join Meeting</div>
-            <div class="ci-tooltipText">Create Meeting</div>
+            <div class="ci-tooltipText" id="host-meeting-modal">Create Meeting</div>
+            <div class="ci-tooltipText" id="join-meeting-modal">Join Meeting</div>
           </div>
+
+          <modal-container id="host-container">
+            <join-meeting-host slot="content">
+              <join-video id="join-video-host" slot="videoDisplay"></join-video>
+            </join-meeting-host>
+          </modal-container>
+          <modal-container id="member-container">
+            <join-meeting-member slot="content">
+              <join-video id="join-video-member" slot="videoDisplay"></join-video>
+            </join-meeting-member>
+          </modal-container>
         </div>
       </a>
         
@@ -630,9 +641,10 @@ class SideBar extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     let clone = template.content.cloneNode(true);
     shadowRoot.append(clone);
-    document.addEventListener("DOMContentLoaded", () => {
-      this.initTooltip();
-    });
+    // document.addEventListener("DOMContentLoaded", () => {
+    //   this.initTooltip();
+    //   this.handleModalDisplay();
+    // });
   }
 
   static get observedAttribute() {
@@ -652,6 +664,8 @@ class SideBar extends HTMLElement {
     this.menuText = this.shadowRoot.querySelectorAll(".menu-text");
     const logout = this.shadowRoot.getElementById("logout");
     logout.addEventListener("click", this.handleLogout);
+    this.initTooltip();
+    this.handleModalDisplay();
 
     if (hamburger) {
       hamburger.addEventListener("click", this.toggleState);
@@ -750,6 +764,36 @@ class SideBar extends HTMLElement {
       });
     }
   }
+
+  handleModalDisplay = () => {
+    const DisplayHostMeetingModal =
+      this.shadowRoot.getElementById("host-meeting-modal");
+    const DisplayJoinMeetingModal =
+      this.shadowRoot.getElementById("join-meeting-modal");
+
+    const hostContainer = this.shadowRoot.getElementById("host-container");
+    const memberContainer = this.shadowRoot.getElementById("member-container");
+
+    if (!hostContainer || !memberContainer) {
+      console.warn("Modals not found in shadowRoot.");
+      return;
+    }
+
+    const openModal = (modal) => {
+      if (modal && typeof modal.open === "function") {
+        modal.open();
+      } else {
+        console.warn("modal.open() is not defined or not a function.");
+      }
+    };
+
+    DisplayHostMeetingModal?.addEventListener("click", () =>
+      openModal(hostContainer)
+    );
+    DisplayJoinMeetingModal?.addEventListener("click", () =>
+      openModal(memberContainer)
+    );
+  };
 }
 
 customElements.define("side-bar", SideBar);
