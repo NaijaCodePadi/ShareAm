@@ -438,8 +438,8 @@ visibility: hidden;
         </div>
         <div class="ci-tooltipText-box" id="ci-tooltipText-box">
           <div class="ci-tooltipText-wrapper">
-            <div class="ci-tooltipText" id="host-meeting-modal">Create Meeting</div>
-            <div class="ci-tooltipText" id="join-meeting-modal">Join Meeting</div>
+            <div class="ci-tooltipText" id="host-meeting-btn">Create Meeting</div>
+            <div class="ci-tooltipText" id="join-meeting-btn">Join Meeting</div>
           </div>
 
           <modal-container id="host-container">
@@ -767,9 +767,9 @@ class SideBar extends HTMLElement {
 
   handleModalDisplay = () => {
     const DisplayHostMeetingModal =
-      this.shadowRoot.getElementById("host-meeting-modal");
+      this.shadowRoot.getElementById("host-meeting-btn");
     const DisplayJoinMeetingModal =
-      this.shadowRoot.getElementById("join-meeting-modal");
+      this.shadowRoot.getElementById("join-meeting-btn");
 
     const hostContainer = this.shadowRoot.getElementById("host-container");
     const memberContainer = this.shadowRoot.getElementById("member-container");
