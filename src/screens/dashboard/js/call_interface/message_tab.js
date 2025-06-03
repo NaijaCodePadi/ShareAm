@@ -15,8 +15,10 @@ const retake = document.getElementById("retake");
 const done = document.getElementById("done");
 const capturedImage = document.getElementById("captured-img");
 const photoOverlayWrapper = document.getElementById("photo-overlay-wrapper");
+const closeIcons = document.querySelectorAll("#close-icon");
 let fileType;
 let stream;
+let tracks;
 
 // ------ Message Tab -------- //
 
@@ -136,7 +138,6 @@ const handleSendingMessage = (e) => {
   photoOverlayWrapper.style.display = "none";
   let attachFile = document.getElementById("attach-input");
   let file = attachFile.value.trim();
-
 };
 
 chatSubmission.addEventListener("submit", handleSendingMessage);
@@ -146,7 +147,6 @@ const updateScroll = () => {
   chatScroll.scrollTop = chatScroll.scrollHeight;
 };
 updateScroll();
-
 
 // ----------------ACTIVATE CAMERA -----------------//
 
@@ -183,7 +183,7 @@ retake.addEventListener("click", () => {
 
 done.addEventListener("click", () => {
   if (stream) {
-    let tracks = stream.getTracks();
+    tracks = stream.getTracks();
     tracks.forEach((track) => track.stop());
     video.srcObject = null;
   }
@@ -192,3 +192,17 @@ done.addEventListener("click", () => {
   photoOverlayWrapper.style.display = "block";
 });
 
+closeIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    photoOverlayWrapper.style.display = "none";
+    capturedImage.src = "";
+    fileType = "";
+    if (stream) {
+      tracks = stream.getTracks();
+      tracks.forEach((track) => track.stop());
+      video.srcObject = null;
+    }
+    activateCamWrapper1.style.display = "none";
+    activateCamWrapper2.style.display = "none";
+  });
+});

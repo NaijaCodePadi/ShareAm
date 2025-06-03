@@ -569,7 +569,7 @@ ul {
 
 #aside-box {
   height: 90.5vh;
-  width: 50%;
+  width: 50vw;
   border-radius: 14px;
   margin: 7vh 2vw 0 0;
 }
@@ -605,6 +605,7 @@ ul {
 
 .tab-content-box {
   height: 100%;
+  width: 100%;
 }
 
 .tab-content {
@@ -785,12 +786,11 @@ ul {
 .overlay {
   display: flex;
   flex-direction: row;
-  /* z-index: 1; */
-  max-width: 50vw;
+  max-width: 52vw;
+  height: 30vh;
   position: absolute;
   bottom: 100%;
   right: 0;
-  /* border: 1px solid red; */
 }
 
 #emoji-overlay-wrapper,
@@ -800,27 +800,35 @@ ul {
 
 #emoji-overlay {
   min-width: 25vw;
-  height: 30vh;
+  height: 100%;
   background-color: #2e2e2e;
   border-radius: 7px;
+  padding: 0.5vh 0.5vw;
 }
 
 #photo-overlay {
   display: flex;
-  justify-content: center;
-  min-width: 25vw;
-  height: 30vh;
-  background-color: #2e2e2e;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  min-width: 27vw;
+  height: 100%;
   border-radius: 7px;
+}
+
+#photo-overlay i {
+  position: absolute;
+  top: -8vh;
 }
 
 .emoji-tab-wrapper {
   color: #dadada;
-  padding: 1vh 0.7vw;
+  /* padding: 1vh 0.7vw; */
+  /* height: 100%; */
 }
 
 .emoji-tab-content {
-  padding-top: 0.6vh;
+  /* padding-top: 0.6vh; */
   display: none;
 }
 
@@ -829,7 +837,7 @@ ul {
 }
 
 .emoji-box {
-  margin: 1vh 0;
+  /* margin: 1vh 0; */
   height: 20vh;
   overflow: scroll;
   display: inline-flex;
@@ -867,11 +875,11 @@ ul {
 
 .emoji-tab-icon {
   width: 100%;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4vh;
-  padding-bottom: 0.7vw;
+  /* height: 100%; */
+  padding: 0.5vh 0.3vw;
 }
 
 .tab-emoji {
@@ -1157,6 +1165,21 @@ ul {
   gap: 5vh;
 }
 
+.fa-close {
+  color: #000;
+  background-color: #fff;
+  font-size: 1.5rem;
+  border-radius: 40px;
+  padding: 0.5vh 0.5vw;
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.fa-close:hover {
+  background-color: #f0f0f0;
+}
+
 #video,
 #photo {
   width: 100%;
@@ -1170,6 +1193,7 @@ ul {
 #captured-img {
   width: 100%;
   height: 100%;
+  border-radius: 7px;
 }
 
 #capture-btn-wrapper {
@@ -1188,6 +1212,10 @@ ul {
   height: 100%;
   border-radius: 30px;
   cursor: pointer;
+}
+
+#capture-btn:hover {
+  background-color: #f0f0f0;
 }
 
 .cam-actions {
