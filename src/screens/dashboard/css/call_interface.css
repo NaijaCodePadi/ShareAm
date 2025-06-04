@@ -989,6 +989,7 @@ ul {
 .attach-list:hover {
   background-color: #373737;
   border-radius: 7px;
+    cursor: pointer;
 }
 
 .attach-txt {
@@ -1174,6 +1175,9 @@ ul {
   width: fit-content;
   cursor: pointer;
   border: 1px solid #fff;
+  position: absolute;
+  right: 0;
+  top: -8vh;
 }
 
 .fa-close:hover {
@@ -1236,9 +1240,17 @@ ul {
   color: #fff;
 }
 
+#retake:hover {
+  background-color: #ff4d4d;
+}
+
 #done {
   background-color: #fff;
   color: #000;
+}
+
+#done:hover {
+  background-color: #f0f0f0;
 }
 
 /* --------------------Chat Bubble Photo & Video  -------------*/
