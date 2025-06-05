@@ -816,11 +816,6 @@ ul {
   border-radius: 7px;
 }
 
-#photo-overlay i {
-  position: absolute;
-  top: -8vh;
-}
-
 .emoji-tab-wrapper {
   color: #dadada;
   /* padding: 1vh 0.7vw; */
@@ -1177,7 +1172,7 @@ ul {
   border: 1px solid #fff;
   position: absolute;
   right: 0;
-  top: -8vh;
+  top: -5vh;
 }
 
 .fa-close:hover {
