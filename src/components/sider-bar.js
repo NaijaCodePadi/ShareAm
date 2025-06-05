@@ -787,13 +787,69 @@ class SideBar extends HTMLElement {
       }
     };
 
-    DisplayHostMeetingModal?.addEventListener("click", () =>
-      openModal(hostContainer)
-    );
-    DisplayJoinMeetingModal?.addEventListener("click", () =>
-      openModal(memberContainer)
-    );
+    DisplayHostMeetingModal?.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent bubbling
+      openModal(hostContainer);
+    });
+
+    DisplayJoinMeetingModal?.addEventListener("click", (e) => {
+      e.stopPropagation(); // Prevent bubbling
+      openModal(memberContainer);
+    });
   };
+
+  // handleModalDisplay = () => {
+  //   const menuLink = this.shadowRoot.getElementById("callInterface");
+
+  //   if (!menuLink) {
+  //     console.warn("menu-link not found.");
+  //     return;
+  //   }
+
+  //   const hostContainer = this.shadowRoot.getElementById("host-container");
+  //   const memberContainer = this.shadowRoot.getElementById("member-container");
+
+  //   const openModal = (modal) => {
+  //     if (modal && typeof modal.open === "function") {
+  //       modal.open();
+  //     } else {
+  //       console.warn("modal.open() is not defined or not a function.");
+  //     }
+  //   };
+
+  //   // When user clicks menu, wait a moment, then add listeners
+  //   menuLink.addEventListener("click", () => {
+  //     // Wait a short time to ensure tooltip is rendered
+  //     setTimeout(() => {
+  //       const DisplayHostMeetingModal =
+  //         this.shadowRoot.getElementById("host-meeting-btn");
+  //       const DisplayJoinMeetingModal =
+  //         this.shadowRoot.getElementById("join-meeting-btn");
+
+  //       if (!DisplayHostMeetingModal || !DisplayJoinMeetingModal) {
+  //         console.warn("Tooltip buttons not found yet.");
+  //         return;
+  //       }
+
+  //       // Attach only once
+  //       if (!DisplayHostMeetingModal._listenerAttached) {
+  //         DisplayHostMeetingModal.addEventListener("click", (e) => {
+  //           e.stopPropagation(); // Prevent bubbling
+  //           openModal(hostContainer);
+  //         });
+  //         DisplayHostMeetingModal._listenerAttached = true;
+  //       }
+
+  //       if (!DisplayJoinMeetingModal._listenerAttached) {
+  //         DisplayJoinMeetingModal.addEventListener("click", (e) => {
+  //           e.stopPropagation(); // Prevent bubbling
+  //           openModal(memberContainer);
+  //         });
+  //         DisplayJoinMeetingModal._listenerAttached = true;
+  //       }
+  //     }, 50); // 50ms delay — just enough for the DOM to update
+  //   });
+  // };
 }
 
 customElements.define("side-bar", SideBar);
