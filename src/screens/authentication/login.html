@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./../common/control-bar.css" />
-    <script src="../../components/auth-buttons.js" type="module"></script>
+    <script src="../../components/authButtons.js" type="module"></script>
   </head>
 
   <body>
@@ -192,9 +192,16 @@
               <label for="username">Email:</label>
               <input type="text" id="username" name="username" required />
             </div>
-            <div class="input-group">
+            <div class="password-container">
               <label for="password">Password:</label>
-              <input type="password" id="password" name="password" required />
+              <div class="inner-password-container">
+                <input type="password" id="password" name="password" required />
+                <img
+                  id="eye-image"
+                  src="../../assets/images/eye-open-up.png"
+                  alt=""
+                />
+              </div>
             </div>
             <div class="checkbox-links">
               <div style="display: flex; gap: 5px">
@@ -249,5 +256,6 @@
       }
     </script>
     <script src="../../renderer.js"></script>
+    <script src="../../components/view-password.js"></script>
   </body>
 </html>
