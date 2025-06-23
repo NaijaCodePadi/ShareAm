@@ -441,17 +441,6 @@ visibility: hidden;
             <div class="ci-tooltipText" id="host-meeting-btn">Create Meeting</div>
             <div class="ci-tooltipText" id="join-meeting-btn">Join Meeting</div>
           </div>
-
-          <modal-container id="host-container">
-            <join-meeting-host slot="content">
-              <join-video id="join-video-host" slot="videoDisplay"></join-video>
-            </join-meeting-host>
-          </modal-container>
-          <modal-container id="member-container">
-            <join-meeting-member slot="content">
-              <join-video id="join-video-member" slot="videoDisplay"></join-video>
-            </join-meeting-member>
-          </modal-container>
         </div>
       </a>
         
@@ -629,6 +618,17 @@ visibility: hidden;
       />
       <h1 class="shaream-txt menu-text">Share<span>Am</span></h1>
     </div>
+
+      <modal-container id="host-container">
+            <join-meeting-host slot="content">
+              <join-video id="join-video-host" slot="videoDisplay"></join-video>
+            </join-meeting-host>
+          </modal-container>
+          <modal-container id="member-container">
+            <join-meeting-member slot="content">
+              <join-video id="join-video-member" slot="videoDisplay"></join-video>
+            </join-meeting-member>
+          </modal-container>
     
   </nav>
       
@@ -641,10 +641,6 @@ class SideBar extends HTMLElement {
     const shadowRoot = this.attachShadow({ mode: "open" });
     let clone = template.content.cloneNode(true);
     shadowRoot.append(clone);
-    // document.addEventListener("DOMContentLoaded", () => {
-    //   this.initTooltip();
-    //   this.handleModalDisplay();
-    // });
   }
 
   static get observedAttribute() {
@@ -748,7 +744,7 @@ class SideBar extends HTMLElement {
       let isVisible = false;
 
       toolTipContainer.addEventListener("click", (e) => {
-        e.stopPropagation(); // Prevent bubbling
+        e.stopPropagation();
         isVisible = !isVisible;
         tooltipText.style.visibility = isVisible ? "visible" : "hidden";
         tooltipText.style.opacity = isVisible ? "1" : "0";
@@ -787,69 +783,24 @@ class SideBar extends HTMLElement {
       }
     };
 
+    const closeModal = (modal) => {
+      if (modal && typeof modal.close === "function") {
+        modal.close();
+      } else {
+        console.warn("modal.close() is not defined or not a function.");
+      }
+    };
+
     DisplayHostMeetingModal?.addEventListener("click", (e) => {
-      e.stopPropagation(); // Prevent bubbling
+      e.stopPropagation();
       openModal(hostContainer);
     });
 
     DisplayJoinMeetingModal?.addEventListener("click", (e) => {
-      e.stopPropagation(); // Prevent bubbling
+      e.stopPropagation();
       openModal(memberContainer);
     });
   };
-
-  // handleModalDisplay = () => {
-  //   const menuLink = this.shadowRoot.getElementById("callInterface");
-
-  //   if (!menuLink) {
-  //     console.warn("menu-link not found.");
-  //     return;
-  //   }
-
-  //   const hostContainer = this.shadowRoot.getElementById("host-container");
-  //   const memberContainer = this.shadowRoot.getElementById("member-container");
-
-  //   const openModal = (modal) => {
-  //     if (modal && typeof modal.open === "function") {
-  //       modal.open();
-  //     } else {
-  //       console.warn("modal.open() is not defined or not a function.");
-  //     }
-  //   };
-
-  //   // When user clicks menu, wait a moment, then add listeners
-  //   menuLink.addEventListener("click", () => {
-  //     // Wait a short time to ensure tooltip is rendered
-  //     setTimeout(() => {
-  //       const DisplayHostMeetingModal =
-  //         this.shadowRoot.getElementById("host-meeting-btn");
-  //       const DisplayJoinMeetingModal =
-  //         this.shadowRoot.getElementById("join-meeting-btn");
-
-  //       if (!DisplayHostMeetingModal || !DisplayJoinMeetingModal) {
-  //         console.warn("Tooltip buttons not found yet.");
-  //         return;
-  //       }
-
-  //       // Attach only once
-  //       if (!DisplayHostMeetingModal._listenerAttached) {
-  //         DisplayHostMeetingModal.addEventListener("click", (e) => {
-  //           e.stopPropagation(); // Prevent bubbling
-  //           openModal(hostContainer);
-  //         });
-  //         DisplayHostMeetingModal._listenerAttached = true;
-  //       }
-
-  //       if (!DisplayJoinMeetingModal._listenerAttached) {
-  //         DisplayJoinMeetingModal.addEventListener("click", (e) => {
-  //           e.stopPropagation(); // Prevent bubbling
-  //           openModal(memberContainer);
-  //         });
-  //         DisplayJoinMeetingModal._listenerAttached = true;
-  //       }
-  //     }, 50); // 50ms delay — just enough for the DOM to update
-  //   });
-  // };
 }
 
 customElements.define("side-bar", SideBar);
