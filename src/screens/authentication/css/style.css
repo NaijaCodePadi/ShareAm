@@ -273,6 +273,13 @@ html {
     transition: border-color 0.3s;
   }
 
+  .inner-password-container svg {
+    width: 20px;
+  }
+  .hide {
+    display: none;
+  }
+
   .input-group input:focus {
     border-color: #007bff;
   }
