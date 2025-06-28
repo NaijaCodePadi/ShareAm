@@ -198,6 +198,9 @@ class JoinMeetingMember extends HTMLElement {
 
         // ✅ Clear the input fields
         nameInputEl.value = "";
+        loadSpinner.style.display = "none";
+        joinText.style.display = "inline-block";
+        closeModal(memberContainer);
       }, 2000);
     }
   };

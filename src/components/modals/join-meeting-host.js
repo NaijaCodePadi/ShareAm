@@ -209,6 +209,9 @@ class JoinMeetingHost extends HTMLElement {
         // Clear input fields
         topicInputEl.value = "";
         hostNameInputEl.value = "";
+        loadSpinner.style.display = "none";
+        joinText.style.display = "inline-block";
+        closeModal(hostContainer);
       }, 2000);
     }
   };

@@ -420,12 +420,13 @@ ul {
 }
 
 .call-btn {
+  width: 60px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   background-color: #fff;
-  padding: 2.6vh 0.7vw;
   border-radius: 17px;
 }
 
