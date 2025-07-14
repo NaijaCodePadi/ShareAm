@@ -68,7 +68,7 @@ export const callInterfaceChatSample = [
     sent: {
       message: {
         type: "video",
-        attachment: "../../assets/images/user 1.png",
+        attachment: "../../assets/videos/sample_video.mp4",
       },
       deliveryTime: "12:05pm",
     },
@@ -118,7 +118,7 @@ export const callInterfaceChatSample = [
       username: "@Shina-Rambo",
       message: {
         type: "video",
-        attachment: "../../assets/documents/tt.pdf",
+        attachment: "../../assets/videos/sample_video.mp4",
       },
       deliveryTime: "14:20pm",
     },
