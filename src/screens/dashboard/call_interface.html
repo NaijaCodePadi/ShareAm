@@ -801,6 +801,7 @@
                     <div id="photo-overlay">
                       <i id="close-icon" class="fa fa-close"></i>
                       <img id="captured-img" />
+                      <small id="file-info"></small>
                     </div>
                   </div>
                 </div>
@@ -877,7 +878,7 @@
                             />
                           </defs>
                         </svg>
-                        <input type="file" name="photo" id="attach-input" />
+                        <input type="file" name="photo" class="attach-input" accept="image/*" id="photo-input" />
                       </span>
                       <p class="attach-txt">Photo</p>
                     </li>
@@ -916,7 +917,7 @@
                             />
                           </defs>
                         </svg>
-                        <input type="file" name="video" id="attach-input" />
+                        <input type="file" name="video" class="attach-input" accept="video/*" id="video-input" />
                       </span>
                       <p class="attach-txt">Video</p>
                     </li>
@@ -956,7 +957,7 @@
                             />
                           </defs>
                         </svg>
-                        <input type="file" name="document" id="attach-input" />
+                        <input type="file" name="document" class="attach-input" id="document-input" />
                       </span>
                       <p class="attach-txt">Document</p>
                     </li>

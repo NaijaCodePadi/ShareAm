@@ -944,23 +944,23 @@ ul {
   margin-left: 0.4vw;
 }
 
-#attach-input {
+.attach-input {
   width: 9vw;
   opacity: 0;
   position: absolute;
 }
 
-#photo-input #attach-input {
+#photo-input .attach-input {
   right: 7%;
   bottom: 77%;
 }
 
-#video-input #attach-input {
+#video-input .attach-input {
   right: 7%;
   bottom: 52.8%;
 }
 
-#doc-input #attach-input {
+#doc-input .attach-input {
   right: 7%;
   bottom: 30%;
 }

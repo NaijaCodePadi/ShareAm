@@ -1,5 +1,6 @@
 import { callInterfaceChatSample } from "../../../../variables/mock_variables/mock_call_interface.js";
 import { presentTime } from "../../../../utils/date_time.js";
+import { getFileExtensionSafe, fileBytesToSize, fileNameWithExtention } from "../../../../utils/getFileInfo.js";
 
 const chatBubblesWrapper = document.getElementById("chat-bubbles-wrapper");
 const chatSubmission = document.getElementById("chat-submit");
@@ -14,8 +15,14 @@ const photo = document.getElementById("photo");
 const retake = document.getElementById("retake");
 const done = document.getElementById("done");
 const capturedImage = document.getElementById("captured-img");
+const choosenFileInfo = document.getElementById("choosen-file-info")
 const photoOverlayWrapper = document.getElementById("photo-overlay-wrapper");
 const closeIcons = document.querySelectorAll("#close-icon");
+
+let documentInput = document.getElementById("document-input");
+let videoInput = document.getElementById("video-input");
+let photoInput = document.getElementById("photo-input");
+
 let fileType;
 let stream;
 let tracks;
@@ -115,10 +122,7 @@ const handleSendingMessage = (e) => {
   e.preventDefault();
   let input = document.getElementById("messages");
   let messageText = input.value.trim();
-  if (messageText === "" || capturedImage.src === "") {
-    return;
-  }
-  presentTime();
+
   const messageObject = {
     sent: {
       message: {
@@ -129,15 +133,19 @@ const handleSendingMessage = (e) => {
       deliveryTime: presentTime(),
     },
   };
-  callInterfaceChatSample.push(messageObject);
+
+  if (messageObject.sent.message.text !== "" || messageObject.sent.message.attachment !== "") {
+    callInterfaceChatSample.push(messageObject);
+  } else {
+    return
+  }
+
   handleChatBubble();
   updateScroll();
   messageText = "";
   input.value = "";
   fileType = "";
   photoOverlayWrapper.style.display = "none";
-  let attachFile = document.getElementById("attach-input");
-  let file = attachFile.value.trim();
 };
 
 chatSubmission.addEventListener("submit", handleSendingMessage);
@@ -206,3 +214,46 @@ closeIcons.forEach((icon) => {
     activateCamWrapper2.style.display = "none";
   });
 });
+
+
+const handleFileUpload = (event) => {
+  const videoExtensions = ["mpg", "mp2", "mpeg", "mpe", "mpv", "mp4"];
+  const imageExtensions = ["gif", "jpg", "jpeg", "png"];
+  const documentExtensions = ["pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx", "txt", "csv"];
+
+
+
+  const file = event.target.files[0]; // Get the first selected file
+  if (file) {
+    // choosenFileInfo.textContent = `${fileNameWithExtention(file)} (${fileBytesToSize(file)})`;
+
+    if (choosenFileInfo) {
+      choosenFileInfo.textContent = `${fileNameWithExtention(file)} (${fileBytesToSize(file)})`;
+    } else {
+      console.warn('Target element not found!');
+    }
+
+    const fileExtension = getFileExtensionSafe(file.name);
+
+
+    console.log('File extension:', fileExtension);
+    // console.log('Selected file:', file); // Log file metadata
+    console.log('File name:', file.name);
+    console.log('File size:', file.size, 'bytes');
+    console.log('File type:', file.type);
+
+    // Example: Read the file content (if it's a text file)
+    const reader = new FileReader();
+    reader.onload = function () {
+      console.log('File content:', reader.result);
+      // You can now use reader.result in your code
+    };
+    reader.readAsText(file); // Or readAsDataURL(file) for images
+
+  }
+
+};
+
+documentInput.addEventListener("change", handleFileUpload);
+videoInput.addEventListener("change", handleFileUpload);
+photoInput.addEventListener("change", handleFileUpload);
