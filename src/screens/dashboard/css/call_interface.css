@@ -787,6 +787,7 @@ ul {
 .overlay {
   display: flex;
   flex-direction: row;
+  background-color: #2e2e2e;
   max-width: 52vw;
   height: 30vh;
   position: absolute;
@@ -795,19 +796,18 @@ ul {
 }
 
 #emoji-overlay-wrapper,
-#photo-overlay-wrapper {
+#attachment-overlay-wrapper {
   display: none;
 }
 
 #emoji-overlay {
   min-width: 25vw;
   height: 100%;
-  background-color: #2e2e2e;
   border-radius: 7px;
   padding: 0.5vh 0.5vw;
 }
 
-#photo-overlay {
+#attachment-overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -815,6 +815,11 @@ ul {
   min-width: 27vw;
   height: 100%;
   border-radius: 7px;
+  padding: 0.5rem;
+}
+
+.attachment-content {
+  height: 85%;
 }
 
 .emoji-tab-wrapper {
@@ -985,7 +990,7 @@ ul {
 .attach-list:hover {
   background-color: #373737;
   border-radius: 7px;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .attach-txt {
@@ -1190,10 +1195,16 @@ ul {
   display: none;
 }
 
-#captured-img {
+.captured-img {
   width: 100%;
   height: 100%;
-  border-radius: 7px;
+  object-fit: contain;
+}
+
+.captured-video {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 #capture-btn-wrapper {
