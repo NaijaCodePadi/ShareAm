@@ -270,7 +270,7 @@ const handleFileUpload = (event) => {
         attachmentContent.innerHTML = `<video class='captured-video' src='${reader.result}' controls></video>`;
       } else if (documentExtensions.includes(fileExtension)) {
         fileType = "document";
-        attachmentContent.innerHTML = `<i class='fas fa-file' style="font-size: 2rem;"></i>`;
+        attachmentContent.innerHTML = `<i class='fas fa-file' style="font-size: 4rem; margin: auto 0;"></i>`;
       } else {
         fileType = "unknown";
       }
