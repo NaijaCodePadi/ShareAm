@@ -1,6 +1,10 @@
 import { callInterfaceChatSample } from "../../../../variables/mock_variables/mock_call_interface.js";
 import { presentTime } from "../../../../utils/date_time.js";
-import { getFileExtensionSafe, fileBytesToSize, fileNameWithExtention } from "../../../../utils/getFileInfo.js";
+import {
+  getFileExtensionSafe,
+  fileBytesToSize,
+  fileNameWithExtention,
+} from "../../../../utils/getFileInfo.js";
 
 const chatBubblesWrapper = document.getElementById("chat-bubbles-wrapper");
 const chatSubmission = document.getElementById("chat-submit");
@@ -15,15 +19,19 @@ const photo = document.getElementById("photo");
 const retake = document.getElementById("retake");
 const done = document.getElementById("done");
 const capturedImage = document.getElementById("captured-img");
-const choosenFileInfo = document.getElementById("choosen-file-info")
-const photoOverlayWrapper = document.getElementById("photo-overlay-wrapper");
+const choosenFileInfo = document.getElementById("choosen-file-info");
+const attachmentOverlayWrapper = document.getElementById(
+  "attachment-overlay-wrapper"
+);
 const closeIcons = document.querySelectorAll("#close-icon");
+const attachmentContent = document.getElementById("attachment-content");
 
 let documentInput = document.getElementById("document-input");
 let videoInput = document.getElementById("video-input");
 let photoInput = document.getElementById("photo-input");
 
 let fileType;
+let fileContent;
 let stream;
 let tracks;
 
@@ -127,17 +135,21 @@ const handleSendingMessage = (e) => {
     sent: {
       message: {
         text: messageText,
-        type: fileType || "",
-        attachment: capturedImage.src || "",
+        type: fileType ?? "",
+        attachment: capturedImage.src ?? fileContent ?? "",
       },
       deliveryTime: presentTime(),
     },
   };
-
-  if (messageObject.sent.message.text !== "" || messageObject.sent.message.attachment !== "") {
+  console.log("messageObject");
+  
+  if (
+    messageObject.sent.message.text !== "" ||
+    messageObject.sent.message.attachment !== ""
+  ) {
     callInterfaceChatSample.push(messageObject);
   } else {
-    return
+    return;
   }
 
   handleChatBubble();
@@ -145,7 +157,10 @@ const handleSendingMessage = (e) => {
   messageText = "";
   input.value = "";
   fileType = "";
-  photoOverlayWrapper.style.display = "none";
+  capturedImage.src = "";
+  fileContent = "";
+  attachmentContent.innerHTML = "";
+  attachmentOverlayWrapper.style.display = "none";
 };
 
 chatSubmission.addEventListener("submit", handleSendingMessage);
@@ -195,14 +210,15 @@ done.addEventListener("click", () => {
     tracks.forEach((track) => track.stop());
     video.srcObject = null;
   }
-  capturedImage.src = canvas.toDataURL("image/png");
+  attachmentContent.innerHTML =
+    "<img id='captured-img' src='" + canvas.toDataURL("image/png") + "'/>";
   activateCamWrapper2.style.display = "none";
-  photoOverlayWrapper.style.display = "block";
+  attachmentOverlayWrapper.style.display = "block";
 });
 
 closeIcons.forEach((icon) => {
   icon.addEventListener("click", () => {
-    photoOverlayWrapper.style.display = "none";
+    attachmentOverlayWrapper.style.display = "none";
     capturedImage.src = "";
     fileType = "";
     if (stream) {
@@ -215,43 +231,64 @@ closeIcons.forEach((icon) => {
   });
 });
 
-
 const handleFileUpload = (event) => {
   const videoExtensions = ["mpg", "mp2", "mpeg", "mpe", "mpv", "mp4"];
   const imageExtensions = ["gif", "jpg", "jpeg", "png"];
-  const documentExtensions = ["pdf", "doc", "docx", "ppt", "pptx", "xls", "xlsx", "txt", "csv"];
-
-
+  const documentExtensions = [
+    "pdf",
+    "doc",
+    "docx",
+    "ppt",
+    "pptx",
+    "xls",
+    "xlsx",
+    "txt",
+    "csv",
+  ];
 
   const file = event.target.files[0]; // Get the first selected file
   if (file) {
-    // choosenFileInfo.textContent = `${fileNameWithExtention(file)} (${fileBytesToSize(file)})`;
-
-    if (choosenFileInfo) {
-      choosenFileInfo.textContent = `${fileNameWithExtention(file)} (${fileBytesToSize(file)})`;
-    } else {
-      console.warn('Target element not found!');
-    }
+    attachmentOverlayWrapper.style.display = "block";
+    choosenFileInfo.innerText = `${fileNameWithExtention(
+      file
+    )} of size (${fileBytesToSize(file)})`;
 
     const fileExtension = getFileExtensionSafe(file.name);
 
 
-    console.log('File extension:', fileExtension);
-    // console.log('Selected file:', file); // Log file metadata
-    console.log('File name:', file.name);
-    console.log('File size:', file.size, 'bytes');
-    console.log('File type:', file.type);
-
     // Example: Read the file content (if it's a text file)
     const reader = new FileReader();
     reader.onload = function () {
-      console.log('File content:', reader.result);
+      // console.log("File content:", reader.result);
+      if (imageExtensions.includes(fileExtension)) {
+        fileType = "photo";
+        fileContent = reader.result; // Store the file content
+        attachmentContent.innerHTML = `<img class='captured-img' src='${reader.result}'/>`;
+      } else if (videoExtensions.includes(fileExtension)) {
+        fileType = "video";
+        fileContent = reader.result; // Store the file content
+        attachmentContent.innerHTML = `<video class='captured-video' src='${reader.result}' controls></video>`;
+      } else if (documentExtensions.includes(fileExtension)) {
+        fileType = "document";
+        attachmentContent.innerHTML = `<i class='fas fa-file' style="font-size: 4rem; margin: auto 0;"></i>`;
+      } else {
+        fileType = "unknown";
+      }
+      // attachmentContent.innerHTML = `<img id='captured-img' src='${reader.result}'/>`;
       // You can now use reader.result in your code
     };
-    reader.readAsText(file); // Or readAsDataURL(file) for images
-
+    if (file.type.startsWith("image/")) {
+      reader.readAsDataURL(file); // for base64 preview
+    } else if (file.type.startsWith("video/")) {
+      reader.readAsDataURL(file);
+    } else if (file.type.startsWith("application/")) {
+      reader.readAsDataURL(file);
+    } else {
+      // Handle other types (docx, pdf, etc) if necessary
+      console.warn("Unsupported file type for preview.");
+    }
+    // Or readAsDataURL(file) for images
   }
-
 };
 
 documentInput.addEventListener("change", handleFileUpload);
